@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/memory.html#returns11", "fragment": "\na pointer to the newly allocated copy of the memory or NULL if mem is NULL. \n"});

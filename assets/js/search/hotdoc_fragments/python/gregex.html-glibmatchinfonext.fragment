@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gregex.html#glibmatchinfonext", "fragment": "GLib.MatchInfo.next \nScans for the next match using the same parameters of the previous call to GLib.Regex.match_full or GLib.Regex.match that returned match_info. \nThe match is done on the string passed to the match function so you cannot free it before calling this function. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/conversions.html#parameters10", "fragment": "converter \nconversion descriptor from g_iconv_open not introspectable \ninbuf \nbytes to convert \ninbytes_left \ninout parameter bytes remaining to convert in inbuf \noutbuf \nconverted output bytes \noutbytes_left \ninout parameter bytes available to fill in outbuf \n"});

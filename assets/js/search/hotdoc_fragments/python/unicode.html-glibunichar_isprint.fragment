@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#glibunichar_isprint", "fragment": "GLib.unichar_isprint \nDetermines whether a character is printable. Unlike GLib.unichar_isgraph returns True for spaces. Given some UTF text obtain a character value with GLib.utf8_get_char. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays_pointer.html#g_ptr_array_unref1", "fragment": "g_ptr_array_unref \nAtomically decrements the reference count of array by one. If the reference count drops to the effect is the same as calling g_ptr_array_free with free_segment set to TRUE. This function is MT safe and may be called from any thread. \n"});

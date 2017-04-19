@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdateis_first_of_month", "fragment": "GLib.Date.is_first_of_month \nReturns True if the date is on the first of a month. The date must be valid. \n"});

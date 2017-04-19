@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/sequence.html#glibsequenceis_empty", "fragment": "GLib.Sequence.is_empty \nReturns True if the sequence contains zero items. \nThis function is functionally identical to checking the result of GLib.Sequence.get_length being equal to zero. However this function is implemented in O running time. \n"});

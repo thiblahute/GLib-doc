@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/warnings.html#g_breakpoint", "fragment": "G_BREAKPOINT \nInserts a breakpoint instruction into the code. \nOn x86 and alpha systems this is implemented as a soft interrupt and on other architectures it raises a SIGTRAP signal. \n"});

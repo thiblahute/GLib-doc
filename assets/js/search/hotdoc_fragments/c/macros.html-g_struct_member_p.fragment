@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/macros.html#g_struct_member_p", "fragment": "G_STRUCT_MEMBER_P \nReturns an untyped pointer to a given offset of a struct. \n"});

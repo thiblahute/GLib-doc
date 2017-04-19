@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/checksum.html#glibchecksum", "fragment": "GLib.Checksum \nAn opaque structure representing a checksumming operation. To create a new GChecksum use GLib.Checksum.prototype.new. To free a GChecksum use GLib.Checksum.prototype.free. \n"});

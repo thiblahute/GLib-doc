@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/random_numbers.html#glibrandprototypeint", "fragment": "GLib.Rand.prototype.int \nReturns the next random guint32 from rand_ equally distributed over the range \n"});

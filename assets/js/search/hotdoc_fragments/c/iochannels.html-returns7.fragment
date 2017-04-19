@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#returns7", "fragment": "\nG_IO_ERROR_NONE if the operation was successful. \ndeprecated Use g_io_channel_read_chars instead. \n"});

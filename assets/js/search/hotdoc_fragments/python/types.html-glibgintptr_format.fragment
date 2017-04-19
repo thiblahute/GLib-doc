@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/types.html#glibgintptr_format", "fragment": "GLib.GINTPTR_FORMAT \nThis is the platform dependent conversion specifier for scanning and printing values of type gintptr. \n"});

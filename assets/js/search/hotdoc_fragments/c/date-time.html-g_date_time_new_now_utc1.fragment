@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date-time.html#g_date_time_new_now_utc1", "fragment": "g_date_time_new_now_utc \nCreates a GDateTime corresponding to this exact instant in UTC. \nThis is equivalent to calling g_date_time_new_now with the time zone returned by g_time_zone_new_utc. \n"});

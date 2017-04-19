@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hmac.html#returns3", "fragment": "\nthe newly created GHmac or NULL. Use g_hmac_unref to free the memory allocated by it. \nSince \n"});

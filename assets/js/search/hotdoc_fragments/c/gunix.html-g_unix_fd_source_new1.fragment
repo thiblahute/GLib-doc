@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gunix.html#g_unix_fd_source_new1", "fragment": "g_unix_fd_source_new \nCreates a GSource to watch for a particular IO condition on a file descriptor. \nThe source will never close the fd you must do it yourself. \n"});

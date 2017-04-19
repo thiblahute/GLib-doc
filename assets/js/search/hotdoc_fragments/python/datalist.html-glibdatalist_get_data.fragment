@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/datalist.html#glibdatalist_get_data", "fragment": "GLib.datalist_get_data \nGets a data element using its string identifier. This is slower than GLib.datalist_id_get_data because it compares strings. \n"});

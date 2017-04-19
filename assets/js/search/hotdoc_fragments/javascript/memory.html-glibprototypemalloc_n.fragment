@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/memory.html#glibprototypemalloc_n", "fragment": "GLib.prototype.malloc_n \nThis function is similar to GLib.prototype.malloc allocating n_blocks n_block_bytes bytes but care is taken to detect possible overflow during multiplication. \n"});

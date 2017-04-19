@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>gunix</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="gunix.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="javascript">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="gunix.markdown">
+    </div>
+        
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.36;" id="g_unix_fd_add_full">
+		
+<h3 id="glibprototypeunix_fd_add_full">
+	<span><code>GLib.prototype.unix_fd_add_full</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.unix_fd_add_full(priority: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, fd: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, condition: <a title="GLib.IOCondition" href="iochannels.html#GIOCondition">GLib.IOCondition</a>, function: <a title="GLib.UnixFDSourceFunc" href="gunix.html#GUnixFDSourceFunc">GLib.UnixFDSourceFunc</a>, user_data: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, notify: <a title="GLib.DestroyNotify" href="datasets.html#GDestroyNotify">GLib.DestroyNotify</a>): {
+    // javascript wrapper for 'g_unix_fd_add_full'
+}</pre>
+
+<p>Sets a function to be called when the IO condition, as specified by
+<em>condition</em> becomes true for <em>fd</em>.</p>
+<p>This is the same as <a href="../c/gunix.html#g_unix_fd_add">g_unix_fd_add (not introspectable)</a>, except that it allows you to
+specify a non-default priority and a provide a <a href="datasets.html#GDestroyNotify">GLib.DestroyNotify</a> for
+<em>user_data</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>priority:</code></em></i>
+		</p>
+	</td>
+		<td><p>the priority of the source</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fd:</code></em></i>
+		</p>
+	</td>
+		<td><p>a file descriptor</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>condition:</code></em></i>
+		</p>
+	</td>
+		<td><p>IO conditions to watch for on <em>fd</em></p>
+</td>
+<td>
+<a title="GLib.IOCondition" href="iochannels.html#GIOCondition">GLib.IOCondition</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>function:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gunix.html#GUnixFDSourceFunc">GLib.UnixFDSourceFunc</a></p>
+</td>
+<td>
+<a title="GLib.UnixFDSourceFunc" href="gunix.html#GUnixFDSourceFunc">GLib.UnixFDSourceFunc</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data to pass to <em>function</em></p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>notify:</code></em></i>
+		</p>
+	</td>
+		<td><p>function to call when the idle is removed, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></p>
+</td>
+<td>
+<a title="GLib.DestroyNotify" href="datasets.html#GDestroyNotify">GLib.DestroyNotify</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the ID (greater than 0) of the event source</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.36
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_unix_open_pipe">
+		
+<h3 id="glibprototypeunix_open_pipe">
+	<span><code>GLib.prototype.unix_open_pipe</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.unix_open_pipe(fds: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, flags: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_unix_open_pipe'
+}</pre>
+
+<p>Similar to the UNIX pipe call, but on modern systems like Linux
+uses the pipe2 system call, which atomically creates a pipe with
+the configured flags. The only supported flag currently is
+FD_CLOEXEC. If for example you want to configure O_NONBLOCK, that
+must still be done separately with fcntl.</p>
+<p>This function does not take O_CLOEXEC, it takes FD_CLOEXEC as if
+for fcntl; these are different on Linux/glibc.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fds:</code></em></i>
+		</p>
+	</td>
+		<td><p>Array of two integers</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>Bitfield of file descriptor flags, as for fcntl</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> on success, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> if not (and errno will be set).</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unix_error_quark">
+		
+<h3 id="glibprototypeunix_error_quark">
+	<span><code>GLib.prototype.unix_error_quark</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.unix_error_quark(): {
+    // javascript wrapper for 'g_unix_error_quark'
+}</pre>
+
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		<a title="GLib.Quark" href="quarks.html#GQuark">GLib.Quark</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_unix_set_fd_nonblocking">
+		
+<h3 id="glibprototypeunix_set_fd_nonblocking">
+	<span><code>GLib.prototype.unix_set_fd_nonblocking</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.unix_set_fd_nonblocking(fd: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, nonblock: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_unix_set_fd_nonblocking'
+}</pre>
+
+<p>Control the non-blocking state of the given file descriptor,
+according to <em>nonblock</em>. On most systems this uses O_NONBLOCK, but
+on some older ones may use O_NDELAY.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fd:</code></em></i>
+		</p>
+	</td>
+		<td><p>A file descriptor</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>nonblock:</code></em></i>
+		</p>
+	</td>
+		<td><p>If <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a>, set the descriptor to be non-blocking</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if successful</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_unix_signal_source_new">
+		
+<h3 id="glibprototypeunix_signal_source_new">
+	<span><code>GLib.prototype.unix_signal_source_new</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.unix_signal_source_new(signum: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_unix_signal_source_new'
+}</pre>
+
+<p>Create a <a href="main.html#GSource">GLib.Source</a> that will be dispatched upon delivery of the UNIX
+signal <em>signum</em>.  In GLib versions before 2.36, only <code>SIGHUP</code>, <code>SIGINT</code>,
+<code>SIGTERM</code> can be monitored.  In GLib 2.36, <code>SIGUSR1</code> and <code>SIGUSR2</code>
+were added. In GLib 2.54, <code>SIGWINCH</code> was added.</p>
+<p>Note that unlike the UNIX default, all sources which have created a
+watch will be dispatched, regardless of which underlying thread
+invoked <a href="gunix.html#g_unix_signal_source_new">GLib.prototype.unix_signal_source_new</a>.</p>
+<p>For example, an effective use of this function is to handle <code>SIGTERM</code>
+cleanly; flushing any outstanding files, and then calling
+g_main_loop_quit ().  It is not safe to do any of this a regular
+UNIX signal handler; your handler may be invoked while malloc or
+another library function is running, causing reentrancy if you
+attempt to use it from the handler.  None of the GLib/GObject API
+is safe against this kind of reentrancy.</p>
+<p>The interaction of this source when combined with native UNIX
+functions like sigprocmask is not defined.</p>
+<p>The source will not initially be associated with any <a href="main.html#GMainContext">GLib.MainContext</a>
+and must be added to one with <a href="main.html#g_source_attach">GLib.Source.prototype.attach</a> before it will be
+executed.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>signum:</code></em></i>
+		</p>
+	</td>
+		<td><p>A signal number</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A newly created <a href="main.html#GSource">GLib.Source</a></p>
+
+	</td>
+	<td>
+		<a title="GLib.Source" href="main.html#GSource">GLib.Source</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.36;" id="g_unix_fd_source_new">
+		
+<h3 id="glibprototypeunix_fd_source_new">
+	<span><code>GLib.prototype.unix_fd_source_new</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.unix_fd_source_new(fd: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, condition: <a title="GLib.IOCondition" href="iochannels.html#GIOCondition">GLib.IOCondition</a>): {
+    // javascript wrapper for 'g_unix_fd_source_new'
+}</pre>
+
+<p>Creates a <a href="main.html#GSource">GLib.Source</a> to watch for a particular IO condition on a file
+descriptor.</p>
+<p>The source will never close the fd -- you must do it yourself.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fd:</code></em></i>
+		</p>
+	</td>
+		<td><p>a file descriptor</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>condition:</code></em></i>
+		</p>
+	</td>
+		<td><p>IO conditions to watch for on <em>fd</em></p>
+</td>
+<td>
+<a title="GLib.IOCondition" href="iochannels.html#GIOCondition">GLib.IOCondition</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the newly created <a href="main.html#GSource">GLib.Source</a></p>
+
+	</td>
+	<td>
+		<a title="GLib.Source" href="main.html#GSource">GLib.Source</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.36
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_unix_signal_add_full">
+		
+<h3 id="glibprototypeunix_signal_add_full">
+	<span><code>GLib.prototype.unix_signal_add_full</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.unix_signal_add_full(priority: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, signum: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, handler: <a title="GLib.SourceFunc" href="main.html#GSourceFunc">GLib.SourceFunc</a>, user_data: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, notify: <a title="GLib.DestroyNotify" href="datasets.html#GDestroyNotify">GLib.DestroyNotify</a>): {
+    // javascript wrapper for 'g_unix_signal_add_full'
+}</pre>
+
+<p>A convenience function for <a href="gunix.html#g_unix_signal_source_new">GLib.prototype.unix_signal_source_new</a>, which
+attaches to the default <a href="main.html#GMainContext">GLib.MainContext</a>.  You can remove the watch
+using <a href="main.html#g_source_remove">GLib.prototype.source_remove</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>priority:</code></em></i>
+		</p>
+	</td>
+		<td><p>the priority of the signal source. Typically this will be in
+the range between <a href="main.html#G_PRIORITY_DEFAULT">GLib.PRIORITY_DEFAULT</a> and <a href="main.html#G_PRIORITY_HIGH">GLib.PRIORITY_HIGH</a>.</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>signum:</code></em></i>
+		</p>
+	</td>
+		<td><p>Signal number</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>handler:</code></em></i>
+		</p>
+	</td>
+		<td><p>Callback</p>
+</td>
+<td>
+<a title="GLib.SourceFunc" href="main.html#GSourceFunc">GLib.SourceFunc</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>Data for <em>handler</em></p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>notify:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="datasets.html#GDestroyNotify">GLib.DestroyNotify</a> for <em>handler</em></p>
+</td>
+<td>
+<a title="GLib.DestroyNotify" href="datasets.html#GDestroyNotify">GLib.DestroyNotify</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>An ID (greater than 0) for the event source</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUnixFDSourceFunc">
+		
+<h3 id="glibunixfdsourcefunc">
+	<span><code>GLib.UnixFDSourceFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+(*GLib.UnixFDSourceFunc) (<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>,
+                          <a title="GLib.IOCondition" href="iochannels.html#GIOCondition">GLib.IOCondition</a>,
+                          <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</pre>
+
+<p>The type of functions to be called when a UNIX fd watch source
+triggers.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fd:</code></em></i>
+		</p>
+	</td>
+		<td><p>the fd that triggered the event</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>condition:</code></em></i>
+		</p>
+	</td>
+		<td><p>the IO conditions reported on <em>fd</em></p>
+</td>
+<td>
+<a title="GLib.IOCondition" href="iochannels.html#GIOCondition">GLib.IOCondition</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="../c/gunix.html#g_unix_fd_add">g_unix_fd_add (not introspectable)</a></p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> if the source should be removed</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

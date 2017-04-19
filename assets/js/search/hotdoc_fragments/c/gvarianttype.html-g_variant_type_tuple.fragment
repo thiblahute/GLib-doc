@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvarianttype.html#g_variant_type_tuple", "fragment": "G_VARIANT_TYPE_TUPLE \nAn indefinite type that is a supertype of every tuple type regardless of the number of items in the tuple. \n"});

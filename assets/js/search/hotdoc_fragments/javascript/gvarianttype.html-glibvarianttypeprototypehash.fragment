@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvarianttype.html#glibvarianttypeprototypehash", "fragment": "GLib.VariantType.prototype.hash \nHashes type. \nThe argument type of type is only gconstpointer to allow use with GLib.HashTable without function pointer casting. A valid GLib.VariantType must be provided. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/keyfile.html#g_key_file_set_list_separator", "fragment": "GLib.KeyFile.prototype.set_list_separator \nSets the character which is used to separate values in lists. Typically or are used as separators. The default list separator is \n"});

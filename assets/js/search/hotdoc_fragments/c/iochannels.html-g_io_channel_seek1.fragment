@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#g_io_channel_seek1", "fragment": "g_io_channel_seek \nSets the current position in the GIOChannel similar to the standard library function fseek. \n"});

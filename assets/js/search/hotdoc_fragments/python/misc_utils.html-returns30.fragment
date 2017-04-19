@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/misc_utils.html#returns30", "fragment": "\nthe name of the file without any leading directory components \ndeprecated Use g_path_get_basename instead but notice that g_path_get_basename allocates new memory for the returned string unlike this function which returns a pointer into the argument. \n"});

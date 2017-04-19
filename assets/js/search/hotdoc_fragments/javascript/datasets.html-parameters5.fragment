@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/datasets.html#parameters5", "fragment": "key_id \nthe GLib.Quark id to identifying the data element. \ndata \nthe data element. \nuser_data \nuser data passed to g_dataset_foreach not introspectable \n"});

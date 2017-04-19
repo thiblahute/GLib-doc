@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvarianttype.html#glibvarianttypeelement", "fragment": "GLib.VariantType.element \nDetermines the element type of an array or maybe type. \nThis function may only be used with array or maybe types. \n"});

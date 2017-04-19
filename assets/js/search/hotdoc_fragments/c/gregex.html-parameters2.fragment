@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gregex.html#parameters2", "fragment": "regex \na GRegex structure from g_regex_new \nstring \nthe string to scan for matches \nmatch_options \nmatch options \nmatch_info \npointer to location where to store the GMatchInfo or NULL if you do not need it \n"});

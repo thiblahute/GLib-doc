@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays.html#g_array_ref1", "fragment": "g_array_ref \nAtomically increments the reference count of array by one. This function is MT safe and may be called from any thread. \n"});

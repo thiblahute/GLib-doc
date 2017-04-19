@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_utils.html#returns24", "fragment": "\nthe string \ndeprecated This function is totally broken for the reasons discussed in the g_strncasecmp docs use g_ascii_strdown or g_utf8_strdown instead. \n"});

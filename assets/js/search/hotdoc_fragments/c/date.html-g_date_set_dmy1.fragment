@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date.html#g_date_set_dmy1", "fragment": "g_date_set_dmy \nSets the value of a GDate from a day month and year. The day month year triplet must be valid if you aren t sure it is call g_date_valid_dmy to check before you set it. \n"});

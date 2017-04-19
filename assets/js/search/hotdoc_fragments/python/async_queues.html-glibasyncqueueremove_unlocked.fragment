@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/async_queues.html#glibasyncqueueremove_unlocked", "fragment": "GLib.AsyncQueue.remove_unlocked \nRemove an item from the queue. \nThis function must be called while holding the queue s lock. \n"});

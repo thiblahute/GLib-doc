@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/sequence.html#glibsequenceprototypeis_empty", "fragment": "GLib.Sequence.prototype.is_empty \nReturns true if the sequence contains zero items. \nThis function is functionally identical to checking the result of GLib.Sequence.prototype.get_length being equal to zero. However this function is implemented in O running time. \n"});

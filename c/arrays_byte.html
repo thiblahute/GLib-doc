@@ -1,0 +1,2919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GByteArray</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="arrays_byte.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="arrays_byte.markdown">
+        <h1 id="gbytearray">GByteArray</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GByteArray</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GByteArrayFunctions">Functions</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_byte_array_remove_index">
+		
+<h4 id="g_byte_array_remove_index1">
+	<span><code>g_byte_array_remove_index</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint8
+g_byte_array_remove_index (guint8 array,
+                           guint index_)</pre>
+
+<p>Removes the byte at the given index from a <a href="arrays_byte.html#GByteArray">GByteArray</a>.
+The following bytes are moved down one place.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>index_:</code></em></i>
+		</p>
+	</td>
+		<td><p>the index of the byte to remove</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+
+	</td>
+	<td>
+		guint8
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_byte_array_append">
+		
+<h4 id="g_byte_array_append1">
+	<span><code>g_byte_array_append</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint8
+g_byte_array_append (guint8 array,
+                     const guint8* data,
+                     guint len)</pre>
+
+<p>Adds the given bytes to the end of the <a href="arrays_byte.html#GByteArray">GByteArray</a>.
+The array will grow in size automatically if necessary.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the byte data to be added</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of bytes to add</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+
+	</td>
+	<td>
+		guint8
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_byte_array_remove_index_fast">
+		
+<h4 id="g_byte_array_remove_index_fast1">
+	<span><code>g_byte_array_remove_index_fast</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint8
+g_byte_array_remove_index_fast (guint8 array,
+                                guint index_)</pre>
+
+<p>Removes the byte at the given index from a <a href="arrays_byte.html#GByteArray">GByteArray</a>. The last
+element in the array is used to fill in the space, so this function
+does not preserve the order of the <a href="arrays_byte.html#GByteArray">GByteArray</a>. But it is faster
+than <a href="arrays_byte.html#g_byte_array_remove_index">g_byte_array_remove_index</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>index_:</code></em></i>
+		</p>
+	</td>
+		<td><p>the index of the byte to remove</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+
+	</td>
+	<td>
+		guint8
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_byte_array_ref">
+		
+<h4 id="g_byte_array_ref1">
+	<span><code>g_byte_array_ref</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint8
+g_byte_array_ref (guint8 array)</pre>
+
+<p>Atomically increments the reference count of <em>array</em> by one.
+This function is thread-safe and may be called from any thread.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>A <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The passed in <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+
+	</td>
+	<td>
+		guint8
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_byte_array_set_size">
+		
+<h4 id="g_byte_array_set_size1">
+	<span><code>g_byte_array_set_size</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint8
+g_byte_array_set_size (guint8 array,
+                       guint length)</pre>
+
+<p>Sets the size of the <a href="arrays_byte.html#GByteArray">GByteArray</a>, expanding it if necessary.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>the new size of the <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+
+	</td>
+	<td>
+		guint8
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_byte_array_prepend">
+		
+<h4 id="g_byte_array_prepend1">
+	<span><code>g_byte_array_prepend</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint8
+g_byte_array_prepend (guint8 array,
+                      const guint8* data,
+                      guint len)</pre>
+
+<p>Adds the given data to the start of the <a href="arrays_byte.html#GByteArray">GByteArray</a>.
+The array will grow in size automatically if necessary.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the byte data to be added</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of bytes to add</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+
+	</td>
+	<td>
+		guint8
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_byte_array_sized_new">
+		
+<h4 id="g_byte_array_sized_new1">
+	<span><code>g_byte_array_sized_new</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint8
+g_byte_array_sized_new (guint reserved_size)</pre>
+
+<p>Creates a new <a href="arrays_byte.html#GByteArray">GByteArray</a> with <em>reserved_size</em> bytes preallocated.
+This avoids frequent reallocation, if you are going to add many
+bytes to the array. Note however that the size of the array is still</p>
+<ol start="0">
+<li>
+</ol>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>reserved_size:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of bytes preallocated</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+
+	</td>
+	<td>
+		guint8
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_byte_array_sort_with_data">
+		
+<h4 id="g_byte_array_sort_with_data1">
+	<span><code>g_byte_array_sort_with_data</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_byte_array_sort_with_data (guint8 array,
+                             <a title="GCompareDataFunc" href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> compare_func,
+                             gpointer user_data)</pre>
+
+<p>Like <a href="arrays_byte.html#g_byte_array_sort">g_byte_array_sort</a>, but the comparison function takes an extra
+user data argument.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>compare_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>comparison function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data to pass to <em>compare_func</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_byte_array_remove_range">
+		
+<h4 id="g_byte_array_remove_range1">
+	<span><code>g_byte_array_remove_range</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint8
+g_byte_array_remove_range (guint8 array,
+                           guint index_,
+                           guint length)</pre>
+
+<p>Removes the given number of bytes starting at the given index from a
+<a href="arrays_byte.html#GByteArray">GByteArray</a>.  The following elements are moved to close the gap.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <em>GByteArray</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>index_:</code></em></i>
+		</p>
+	</td>
+		<td><p>the index of the first byte to remove</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of bytes to remove</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+
+	</td>
+	<td>
+		guint8
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_byte_array_sort">
+		
+<h4 id="g_byte_array_sort1">
+	<span><code>g_byte_array_sort</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_byte_array_sort (guint8 array,
+                   <a title="GCompareFunc" href="linked_lists_double.html#GCompareFunc">GCompareFunc</a> compare_func)</pre>
+
+<p>Sorts a byte array, using <em>compare_func</em> which should be a
+qsort-style comparison function (returns less than zero for first
+arg is less than second arg, zero for equal, greater than zero if
+first arg is greater than second arg).</p>
+<p>If two array elements compare equal, their order in the sorted array
+is undefined. If you want equal elements to keep their order (i.e.
+you want a stable sort) you can write a comparison function that,
+if two elements would otherwise compare equal, compares them by
+their addresses.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>compare_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>comparison function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+            <h2 class="symbol_section" id="">GBytes</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GBytesConstructors">Constructors</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_new_take">
+		
+<h4 id="g_bytes_new_take1">
+	<span><code>g_bytes_new_take</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> *
+g_bytes_new_take (guint8* data,
+                  gsize size)</pre>
+
+<p>Creates a new <a href="arrays_byte.html#GBytes">GBytes</a> from <em>data</em>.</p>
+<p>After this call, <em>data</em> belongs to the bytes and may no longer be
+modified by the caller.  <a href="memory.html#g_free">g_free</a> will be called on <em>data</em> when the
+bytes is no longer in use. Because of this <em>data</em> must have been created by
+a call to <a href="memory.html#g_malloc">g_malloc</a>, <a href="memory.html#g_malloc0">g_malloc0</a> or <a href="memory.html#g_realloc">g_realloc</a> or by one of the many
+functions that wrap these calls (such as <a href="memory.html#g_new">g_new</a>, <a href="string_utils.html#g_strdup">g_strdup</a>, etc).</p>
+<p>For creating <a href="arrays_byte.html#GBytes">GBytes</a> with memory from other allocators, see
+<a href="arrays_byte.html#g_bytes_new_with_free_func">g_bytes_new_with_free_func</a>.</p>
+<p><em>data</em> may be <a href="macros.html#NULL">NULL</a> if <em>size</em> is 0.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>(transfer full) (array length=size) (element-type guint8) (nullable):
+the data to be used for the bytes</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>size:</code></em></i>
+		</p>
+	</td>
+		<td><p>the size of <em>data</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="arrays_byte.html#GBytes">GBytes</a></p>
+
+	</td>
+	<td>
+		<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_new">
+		
+<h4 id="g_bytes_new1">
+	<span><code>g_bytes_new</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> *
+g_bytes_new (guint8* data,
+             gsize size)</pre>
+
+<p>Creates a new <a href="arrays_byte.html#GBytes">GBytes</a> from <em>data</em>.</p>
+<p><em>data</em> is copied. If <em>size</em> is 0, <em>data</em> may be <a href="macros.html#NULL">NULL</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>(transfer none) (array length=size) (element-type guint8) (nullable):
+the data to be used for the bytes</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>size:</code></em></i>
+		</p>
+	</td>
+		<td><p>the size of <em>data</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="arrays_byte.html#GBytes">GBytes</a></p>
+
+	</td>
+	<td>
+		<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_new_with_free_func">
+		
+<h4 id="g_bytes_new_with_free_func1">
+	<span><code>g_bytes_new_with_free_func</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> *
+g_bytes_new_with_free_func (guint8* data,
+                            gsize size,
+                            <a title="GDestroyNotify" href="datasets.html#GDestroyNotify">GDestroyNotify</a> free_func,
+                            gpointer user_data)</pre>
+
+<p>Creates a <a href="arrays_byte.html#GBytes">GBytes</a> from <em>data</em>.</p>
+<p>When the last reference is dropped, <em>free_func</em> will be called with the
+<em>user_data</em> argument.</p>
+<p><em>data</em> must not be modified after this call is made until <em>free_func</em> has
+been called to indicate that the bytes is no longer in use.</p>
+<p><em>data</em> may be <a href="macros.html#NULL">NULL</a> if <em>size</em> is 0.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>(array length=size) (element-type guint8) (nullable):
+the data to be used for the bytes</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>size:</code></em></i>
+		</p>
+	</td>
+		<td><p>the size of <em>data</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>free_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call to release the data</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data to pass to <em>free_func</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="arrays_byte.html#GBytes">GBytes</a></p>
+
+	</td>
+	<td>
+		<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_new_static">
+		
+<h4 id="g_bytes_new_static1">
+	<span><code>g_bytes_new_static</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> *
+g_bytes_new_static (guint8* data,
+                    gsize size)</pre>
+
+<p>Creates a new <a href="arrays_byte.html#GBytes">GBytes</a> from static data.</p>
+<p><em>data</em> must be static (ie: never modified or freed). It may be <a href="macros.html#NULL">NULL</a> if <em>size</em>
+is 0.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>(transfer full) (array length=size) (element-type guint8) (nullable):
+the data to be used for the bytes</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>size:</code></em></i>
+		</p>
+	</td>
+		<td><p>the size of <em>data</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="arrays_byte.html#GBytes">GBytes</a></p>
+
+	</td>
+	<td>
+		<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GBytesMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_unref_to_array">
+		
+<h4 id="g_bytes_unref_to_array1">
+	<span><code>g_bytes_unref_to_array</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint8
+g_bytes_unref_to_array (<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> * bytes)</pre>
+
+<p>Unreferences the bytes, and returns a new mutable <a href="arrays_byte.html#GByteArray">GByteArray</a> containing
+the same byte data.</p>
+<p>As an optimization, the byte data is transferred to the array without copying
+if this was the last reference to bytes and bytes was created with
+<a href="arrays_byte.html#g_bytes_new">g_bytes_new</a>, <a href="arrays_byte.html#g_bytes_new_take">g_bytes_new_take</a> or <a href="arrays_byte.html#g_byte_array_free_to_bytes">g_byte_array_free_to_bytes</a>. In all
+other cases the data is copied.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GBytes">GBytes</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new mutable <a href="arrays_byte.html#GByteArray">GByteArray</a> containing the same byte data</p>
+
+	</td>
+	<td>
+		guint8
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_new_from_bytes">
+		
+<h4 id="g_bytes_new_from_bytes1">
+	<span><code>g_bytes_new_from_bytes</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> *
+g_bytes_new_from_bytes (<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> * bytes,
+                        gsize offset,
+                        gsize length)</pre>
+
+<p>Creates a <a href="arrays_byte.html#GBytes">GBytes</a> which is a subsection of another <a href="arrays_byte.html#GBytes">GBytes</a>. The <em>offset</em> +
+<em>length</em> may not be longer than the size of <em>bytes</em>.</p>
+<p>A reference to <em>bytes</em> will be held by the newly created <a href="arrays_byte.html#GBytes">GBytes</a> until
+the byte data is no longer needed.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GBytes">GBytes</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>offset:</code></em></i>
+		</p>
+	</td>
+		<td><p>offset which subsection starts at</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of subsection</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="arrays_byte.html#GBytes">GBytes</a></p>
+
+	</td>
+	<td>
+		<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_unref_to_data">
+		
+<h4 id="g_bytes_unref_to_data1">
+	<span><code>g_bytes_unref_to_data</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint8*
+g_bytes_unref_to_data (<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> * bytes,
+                       gsize* size)</pre>
+
+<p>Unreferences the bytes, and returns a pointer the same byte data
+contents.</p>
+<p>As an optimization, the byte data is returned without copying if this was
+the last reference to bytes and bytes was created with <a href="arrays_byte.html#g_bytes_new">g_bytes_new</a>,
+<a href="arrays_byte.html#g_bytes_new_take">g_bytes_new_take</a> or <a href="arrays_byte.html#g_byte_array_free_to_bytes">g_byte_array_free_to_bytes</a>. In all other cases the
+data is copied.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GBytes">GBytes</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>size:</code></em></i>
+		</p>
+	</td>
+		<td><p>location to place the length of the returned data</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to the same byte data, which should be
+freed with <a href="memory.html#g_free">g_free</a></p>
+
+	</td>
+	<td>
+		guint8*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=size]</span>
+<span class="annotation">[<abbr title="Generic and defining element of containers and arrays"><span class="acronym">element-type</span></abbr> guint8]</span>
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>size:</i>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to the same byte data, which should be
+freed with <a href="memory.html#g_free">g_free</a></p>
+
+	</td>
+	<td>
+		gsize*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=size]</span>
+<span class="annotation">[<abbr title="Generic and defining element of containers and arrays"><span class="acronym">element-type</span></abbr> guint8]</span>
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_hash">
+		
+<h4 id="g_bytes_hash1">
+	<span><code>g_bytes_hash</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint
+g_bytes_hash (gconstpointer bytes)</pre>
+
+<p>Creates an integer hash code for the byte data in the <a href="arrays_byte.html#GBytes">GBytes</a>.</p>
+<p>This function can be passed to <a href="hash_tables.html#g_hash_table_new">g_hash_table_new</a> as the <em>key_hash_func</em>
+parameter, when using non-%NULL <a href="arrays_byte.html#GBytes">GBytes</a> pointers as keys in a <a href="hash_tables.html#GHashTable">GHashTable</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a <a href="arrays_byte.html#GBytes">GBytes</a> key</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> GLib.Bytes]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a hash value corresponding to the key.</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_ref">
+		
+<h4 id="g_bytes_ref1">
+	<span><code>g_bytes_ref</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> *
+g_bytes_ref (<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> * bytes)</pre>
+
+<p>Increase the reference count on <em>bytes</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GBytes">GBytes</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="arrays_byte.html#GBytes">GBytes</a></p>
+
+	</td>
+	<td>
+		<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_get_data">
+		
+<h4 id="g_bytes_get_data1">
+	<span><code>g_bytes_get_data</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint8*
+g_bytes_get_data (<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> * bytes,
+                  gsize* size)</pre>
+
+<p>Get the byte data in the <a href="arrays_byte.html#GBytes">GBytes</a>. This data should not be modified.</p>
+<p>This function will always return the same pointer for a given <a href="arrays_byte.html#GBytes">GBytes</a>.</p>
+<p><a href="macros.html#NULL">NULL</a> may be returned if <em>size</em> is 0. This is not guaranteed, as the <a href="arrays_byte.html#GBytes">GBytes</a>
+may represent an empty string with <em>data</em> non-%NULL and <em>size</em> as 0. <a href="macros.html#NULL">NULL</a> will
+not be returned if <em>size</em> is non-zero.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GBytes">GBytes</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>size:</code></em></i>
+		</p>
+	</td>
+		<td><p>location to return size of byte data</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of1">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>(transfer none) (array length=size) (element-type guint8) (nullable):
+a pointer to the byte data, or <a href="macros.html#NULL">NULL</a></p>
+
+	</td>
+	<td>
+		guint8*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>size:</i>
+				</p>
+	</td>
+	<td>
+		<p>(transfer none) (array length=size) (element-type guint8) (nullable):
+a pointer to the byte data, or <a href="macros.html#NULL">NULL</a></p>
+
+	</td>
+	<td>
+		gsize*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_get_size">
+		
+<h4 id="g_bytes_get_size1">
+	<span><code>g_bytes_get_size</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gsize
+g_bytes_get_size (<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> * bytes)</pre>
+
+<p>Get the size of the byte data in the <a href="arrays_byte.html#GBytes">GBytes</a>.</p>
+<p>This function will always return the same value for a given <a href="arrays_byte.html#GBytes">GBytes</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GBytes">GBytes</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the size</p>
+
+	</td>
+	<td>
+		gsize
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_compare">
+		
+<h4 id="g_bytes_compare1">
+	<span><code>g_bytes_compare</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint
+g_bytes_compare (gconstpointer bytes1,
+                 gconstpointer bytes2)</pre>
+
+<p>Compares the two <a href="arrays_byte.html#GBytes">GBytes</a> values.</p>
+<p>This function can be used to sort GBytes instances in lexographical order.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes1:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a <a href="arrays_byte.html#GBytes">GBytes</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> GLib.Bytes]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes2:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a <a href="arrays_byte.html#GBytes">GBytes</a> to compare with <em>bytes1</em></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> GLib.Bytes]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a negative value if bytes2 is lesser, a positive value if bytes2 is
+greater, and zero if bytes2 is equal to bytes1</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_unref">
+		
+<h4 id="g_bytes_unref1">
+	<span><code>g_bytes_unref</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_bytes_unref (<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> * bytes)</pre>
+
+<p>Releases a reference on <em>bytes</em>.  This may result in the bytes being
+freed.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GBytes">GBytes</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_equal">
+		
+<h4 id="g_bytes_equal1">
+	<span><code>g_bytes_equal</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_bytes_equal (gconstpointer bytes1,
+               gconstpointer bytes2)</pre>
+
+<p>Compares the two <a href="arrays_byte.html#GBytes">GBytes</a> values being pointed to and returns
+<a href="macros.html#TRUE">TRUE</a> if they are equal.</p>
+<p>This function can be passed to <a href="hash_tables.html#g_hash_table_new">g_hash_table_new</a> as the <em>key_equal_func</em>
+parameter, when using non-%NULL <a href="arrays_byte.html#GBytes">GBytes</a> pointers as keys in a <a href="hash_tables.html#GHashTable">GHashTable</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes1:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a <a href="arrays_byte.html#GBytes">GBytes</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> GLib.Bytes]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes2:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a <a href="arrays_byte.html#GBytes">GBytes</a> to compare with <em>bytes1</em></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> GLib.Bytes]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the two keys match.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_byte_array_unref">
+		
+<h3 id="g_byte_array_unref1">
+	<span><code>g_byte_array_unref</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_byte_array_unref (guint8 array)</pre>
+
+<p>Atomically decrements the reference count of <em>array</em> by one. If the
+reference count drops to 0, all memory allocated by the array is
+released. This function is thread-safe and may be called from any
+thread.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>A <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_byte_array_new_take">
+		
+<h3 id="g_byte_array_new_take1">
+	<span><code>g_byte_array_new_take</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+guint8
+g_byte_array_new_take (guint8 data,
+                       gsize len)</pre>
+
+<p>Create byte array containing the data. The data will be owned by the array
+and will be freed with <a href="memory.html#g_free">g_free</a>, i.e. it could be allocated using <a href="string_utils.html#g_strdup">g_strdup</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>byte data for the array</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=len]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>data</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+
+	</td>
+	<td>
+		guint8
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_byte_array_free_to_bytes">
+		
+<h3 id="g_byte_array_free_to_bytes1">
+	<span><code>g_byte_array_free_to_bytes</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> *
+g_byte_array_free_to_bytes (guint8 array)</pre>
+
+<p>Transfers the data from the <a href="arrays_byte.html#GByteArray">GByteArray</a> into a new immutable <a href="arrays_byte.html#GBytes">GBytes</a>.</p>
+<p>The <a href="arrays_byte.html#GByteArray">GByteArray</a> is freed unless the reference count of <em>array</em> is greater
+than one, the <a href="arrays_byte.html#GByteArray">GByteArray</a> wrapper is preserved but the size of <em>array</em>
+will be set to zero.</p>
+<p>This is identical to using <a href="arrays_byte.html#g_bytes_new_take">g_bytes_new_take</a> and <a href="arrays_byte.html#g_byte_array_free">g_byte_array_free</a>
+together.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new immutable <a href="arrays_byte.html#GBytes">GBytes</a> representing same
+byte data that was in the array</p>
+
+	</td>
+	<td>
+		<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_byte_array_new">
+		
+<h3 id="g_byte_array_new1">
+	<span><code>g_byte_array_new</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+guint8
+g_byte_array_new ()</pre>
+
+<p>Creates a new <a href="arrays_byte.html#GByteArray">GByteArray</a> with a reference count of 1.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns21">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+
+	</td>
+	<td>
+		guint8
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_byte_array_free">
+		
+<h3 id="g_byte_array_free1">
+	<span><code>g_byte_array_free</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+guint8*
+g_byte_array_free (guint8 array,
+                   gboolean free_segment)</pre>
+
+<p>Frees the memory allocated by the <a href="arrays_byte.html#GByteArray">GByteArray</a>. If <em>free_segment</em> is
+<a href="macros.html#TRUE">TRUE</a> it frees the actual byte data. If the reference count of
+<em>array</em> is greater than one, the <a href="arrays_byte.html#GByteArray">GByteArray</a> wrapper is preserved but
+the size of <em>array</em> will be set to zero.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>free_segment:</code></em></i>
+		</p>
+	</td>
+		<td><p>if <a href="macros.html#TRUE">TRUE</a> the actual byte data is freed as well</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns22">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the element data if <em>free_segment</em> is <a href="macros.html#FALSE">FALSE</a>, otherwise
+<a href="macros.html#NULL">NULL</a>.  The element data should be freed using <a href="memory.html#g_free">g_free</a>.</p>
+
+	</td>
+	<td>
+		guint8*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GByteArray">
+		
+<h3 id="struct-gbytearray">
+		struct GByteArray
+	</h3>
+
+		<pre class="raw_code">
+struct GByteArray {
+    guint8* data;
+    guint len;
+};
+</pre>
+
+<p>Contains the public fields of a GByteArray.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="fields">Fields</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GByteArray.data">
+		<td>
+		<p>
+		<i><em><code>guint8* <em><code>data</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to the element data. The data may be moved as
+elements are added to the <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+</td>
+</tr>
+
+						<tr id="GByteArray.len">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>len</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of elements in the <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="GBytes">
+		
+<h3 id="struct-gbytes">
+		struct GBytes
+	</h3>
+
+		<pre class="raw_code">
+struct GBytes {
+};
+</pre>
+
+<p>A simple refcounted data type representing an immutable sequence of zero or
+more bytes from an unspecified origin.</p>
+<p>The purpose of a <a href="arrays_byte.html#GBytes">GBytes</a> is to keep the memory region that it holds
+alive for as long as anyone holds a reference to the bytes.  When
+the last reference count is dropped, the memory is released. Multiple
+unrelated callers can use byte data in the <a href="arrays_byte.html#GBytes">GBytes</a> without coordinating
+their activities, resting assured that the byte data will not change or
+move while they hold a reference.</p>
+<p>A <a href="arrays_byte.html#GBytes">GBytes</a> can come from many different origins that may have
+different procedures for freeing the memory region.  Examples are
+memory from <a href="memory.html#g_malloc">g_malloc</a>, from memory slices, from a <a href="fileutils.html#GMappedFile">GMappedFile</a> or
+memory from other allocators.</p>
+<p><a href="arrays_byte.html#GBytes">GBytes</a> work well as keys in <a href="hash_tables.html#GHashTable">GHashTable</a>. Use <a href="arrays_byte.html#g_bytes_equal">g_bytes_equal</a> and
+<a href="arrays_byte.html#g_bytes_hash">g_bytes_hash</a> as parameters to <a href="hash_tables.html#g_hash_table_new">g_hash_table_new</a> or <a href="hash_tables.html#g_hash_table_new_full">g_hash_table_new_full</a>.
+<a href="arrays_byte.html#GBytes">GBytes</a> can also be used as keys in a <a href="trees-binary.html#GTree">GTree</a> by passing the <a href="arrays_byte.html#g_bytes_compare">g_bytes_compare</a>
+function to <a href="trees-binary.html#g_tree_new">g_tree_new</a>.</p>
+<p>The data pointed to by this bytes must not be modified. For a mutable
+array of bytes see <a href="arrays_byte.html#GByteArray">GByteArray</a>. Use <a href="arrays_byte.html#g_bytes_unref_to_array">g_bytes_unref_to_array</a> to create a
+mutable array for a <a href="arrays_byte.html#GBytes">GBytes</a> sequence. To create an immutable <a href="arrays_byte.html#GBytes">GBytes</a> from
+a mutable <a href="arrays_byte.html#GByteArray">GByteArray</a>, use the <a href="arrays_byte.html#g_byte_array_free_to_bytes">g_byte_array_free_to_bytes</a> function.</p>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

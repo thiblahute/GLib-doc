@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>warnings</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="warnings.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="python">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="warnings.markdown">
+    </div>
+        
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_assert_warning">
+		
+<h3 id="glibassert_warning">
+	<span><code>GLib.assert_warning</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.assert_warning (log_domain, file, line, pretty_function, expression):
+    #python wrapper for 'g_assert_warning'</pre>
+
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_domain:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>line:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pretty_function:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>expression:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_on_error_query">
+		
+<h3 id="glibon_error_query">
+	<span><code>GLib.on_error_query</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.on_error_query (prg_name):
+    #python wrapper for 'g_on_error_query'</pre>
+
+<p>Prompts the user with
+<code>[E]xit, [H]alt, show [S]tack trace or [P]roceed</code>.
+This function is intended to be used for debugging use only.
+The following example shows how it can be used together with
+the <a href="../c/messages.html#g_log">g_log (not introspectable)</a> functions.</p>
+<pre><code class="language-[&lt;!--"> #include &lt;glib.h&gt;
+
+ static void
+ log_handler (const gchar   *log_domain,
+              GLogLevelFlags log_level,
+              const gchar   *message,
+              gpointer       user_data)
+ {
+   g_log_default_handler (log_domain, log_level, message, user_data);
+
+   g_on_error_query (MY_PROGRAM_NAME);
+ }
+
+ int
+ main (int argc, char *argv[])
+ {
+   g_log_set_handler (MY_LOG_DOMAIN,
+                      G_LOG_LEVEL_WARNING |
+                      G_LOG_LEVEL_ERROR |
+                      G_LOG_LEVEL_CRITICAL,
+                      log_handler,
+                      NULL);
+   ...
+</code></pre>
+<p>If "[E]xit" is selected, the application terminates with a call
+to _exit(0).</p>
+<p>If "[S]tack" trace is selected, <a href="warnings.html#g_on_error_stack_trace">GLib.on_error_stack_trace</a> is called.
+This invokes gdb, which attaches to the current process and shows
+a stack trace. The prompt is then shown again.</p>
+<p>If "[P]roceed" is selected, the function returns.</p>
+<p>This function may cause different actions on non-UNIX platforms.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>prg_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>the program name, needed by gdb for the "[S]tack trace"
+option. If <em>prg_name</em> is <a href="https://docs.python.org/2/library/constants.html#None">None</a>, <a href="misc_utils.html#g_get_prgname">GLib.get_prgname</a> is called to get
+the program name (which will work correctly if gdk_init or
+gtk_init has been called)</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_on_error_stack_trace">
+		
+<h3 id="glibon_error_stack_trace">
+	<span><code>GLib.on_error_stack_trace</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.on_error_stack_trace (prg_name):
+    #python wrapper for 'g_on_error_stack_trace'</pre>
+
+<p>Invokes gdb, which attaches to the current process and shows a
+stack trace. Called by <a href="warnings.html#g_on_error_query">GLib.on_error_query</a> when the "[S]tack trace"
+option is selected. You can get the current process's program name
+with <a href="misc_utils.html#g_get_prgname">GLib.get_prgname</a>, assuming that you have called gtk_init or
+gdk_init.</p>
+<p>This function may cause different actions on non-UNIX platforms.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>prg_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>the program name, needed by gdb for the "[S]tack trace"
+option</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GPrintFunc">
+		
+<h3 id="glibprintfunc">
+	<span><code>GLib.PrintFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void (not introspectable)
+(*GLib.PrintFunc) (<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>)</pre>
+
+<p>Specifies the type of the print handler functions.
+These are called with the complete formatted string to output.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the message to output</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void (not introspectable)
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date-time.html#g_date_time_is_daylight_savings", "fragment": "GLib.DateTime.prototype.is_daylight_savings \nDetermines if daylight savings time is in effect at the time and in the time zone of datetime. \n"});

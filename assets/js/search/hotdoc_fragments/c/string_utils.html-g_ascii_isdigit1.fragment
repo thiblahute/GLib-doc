@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_utils.html#g_ascii_isdigit1", "fragment": "g_ascii_isdigit \nDetermines whether a character is digit \nUnlike the standard C library isdigit function this takes a char not an int so don t call it on EOF but no need to cast to guchar before passing a possibly non ASCII character in. \n"});

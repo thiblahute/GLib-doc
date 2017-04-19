@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/arrays_byte.html#glibbytescompare", "fragment": "GLib.Bytes.compare \nCompares the two GLib.Bytes values. \nThis function can be used to sort GBytes instances in lexographical order. \n"});

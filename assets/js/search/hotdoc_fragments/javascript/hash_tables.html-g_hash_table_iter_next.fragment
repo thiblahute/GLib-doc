@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hash_tables.html#g_hash_table_iter_next", "fragment": "GLib.HashTableIter.prototype.next \nAdvances iter and retrieves the key and or value that are now pointed to as a result of this advancement. If false is returned key and value are not set and the iterator becomes invalid. \n"});

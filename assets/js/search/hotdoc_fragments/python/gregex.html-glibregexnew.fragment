@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gregex.html#glibregexnew", "fragment": "GLib.Regex.new \nCompiles the regular expression to an internal form and does the initial setup of the GLib.Regex structure. \n"});

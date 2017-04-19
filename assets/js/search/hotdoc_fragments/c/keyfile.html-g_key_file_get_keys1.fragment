@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/keyfile.html#g_key_file_get_keys1", "fragment": "g_key_file_get_keys \nReturns all keys for the group name group_name. The array of returned keys will be NULL terminated so length may optionally be NULL. In the event that the group_name cannot be found NULL is returned and error is set to G_KEY_FILE_ERROR_GROUP_NOT_FOUND. \n"});

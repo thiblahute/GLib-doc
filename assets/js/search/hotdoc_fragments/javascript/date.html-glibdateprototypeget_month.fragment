@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#glibdateprototypeget_month", "fragment": "GLib.Date.prototype.get_month \nReturns the month of the year. The date must be valid. \n"});

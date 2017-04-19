@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/markup.html#glibmarkupparsecontext", "fragment": "GLib.MarkupParseContext \nA parse context is used to parse a stream of bytes that you expect to contain marked up text. \nSee GLib.MarkupParseContext.new GLib.MarkupParser and so on for more details. \n"});

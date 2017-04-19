@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/fileutils.html#glibrmdir", "fragment": "GLib.rmdir \nA wrapper for the POSIX rmdir function. The rmdir function deletes a directory from the filesystem. \nSee your C library manual for more details about how rmdir works on your system. \n"});

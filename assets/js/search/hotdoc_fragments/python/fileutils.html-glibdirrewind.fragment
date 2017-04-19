@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/fileutils.html#glibdirrewind", "fragment": "GLib.Dir.rewind \nResets the given directory. The next call to GLib.Dir.read_name will return the first entry again. \n"});

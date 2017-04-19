@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/option.html#parameters1", "fragment": "context \na GOptionContext \nfunc \nthe GTranslateFunc or NULL \ndata \nuser data to pass to func or NULL \ndestroy_notify \na function which gets called to free data or NULL \nSince \n"});

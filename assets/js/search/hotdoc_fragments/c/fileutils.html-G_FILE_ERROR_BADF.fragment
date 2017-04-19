@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/fileutils.html#G_FILE_ERROR_BADF", "fragment": "Bad file descriptor for example I O on a descriptor that has been closed or reading from a descriptor open only for writing or vice versa \nG_FILE_ERROR_INVAL \n"});

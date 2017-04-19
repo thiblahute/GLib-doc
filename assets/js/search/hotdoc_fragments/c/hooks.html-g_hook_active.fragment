@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hooks.html#g_hook_active", "fragment": "G_HOOK_ACTIVE \nReturns TRUE if the GHook is active which is normally the case until the GHook is destroyed. \n"});

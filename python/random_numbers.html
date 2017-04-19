@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GRand</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="random_numbers.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="python">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="random_numbers.markdown">
+        <h1 id="grand">GRand</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GRand</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GRandMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_rand_free">
+		
+<h4 id="glibrandfree">
+	<span><code>GLib.Rand.free</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Rand.free (self):
+    #python wrapper for 'g_rand_free'</pre>
+
+<p>Frees the memory allocated for the <a href="random_numbers.html#GRand">GLib.Rand</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rand_:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="random_numbers.html#GRand">GLib.Rand</a></p>
+</td>
+<td>
+<a title="GLib.Rand" href="random_numbers.html#GRand">GLib.Rand</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_rand_double">
+		
+<h4 id="glibranddouble">
+	<span><code>GLib.Rand.double</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Rand.double (self):
+    #python wrapper for 'g_rand_double'</pre>
+
+<p>Returns the next random gdouble from <em>rand_</em> equally distributed over
+the range [0..1).</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rand_:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="random_numbers.html#GRand">GLib.Rand</a></p>
+</td>
+<td>
+<a title="GLib.Rand" href="random_numbers.html#GRand">GLib.Rand</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a random number</p>
+
+	</td>
+	<td>
+		<a title="float" href="https://docs.python.org/2/library/functions.html#float">float</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_rand_set_seed">
+		
+<h4 id="glibrandset_seed">
+	<span><code>GLib.Rand.set_seed</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Rand.set_seed (self, seed):
+    #python wrapper for 'g_rand_set_seed'</pre>
+
+<p>Sets the seed for the random number generator <a href="random_numbers.html#GRand">GLib.Rand</a> to <em>seed</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rand_:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="random_numbers.html#GRand">GLib.Rand</a></p>
+</td>
+<td>
+<a title="GLib.Rand" href="random_numbers.html#GRand">GLib.Rand</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seed:</code></em></i>
+		</p>
+	</td>
+		<td><p>a value to reinitialize the random number generator</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_rand_int_range">
+		
+<h4 id="glibrandint_range">
+	<span><code>GLib.Rand.int_range</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Rand.int_range (self, begin, end):
+    #python wrapper for 'g_rand_int_range'</pre>
+
+<p>Returns the next random gint32 from <em>rand_</em> equally distributed over
+the range [@begin..@end-1].</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rand_:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="random_numbers.html#GRand">GLib.Rand</a></p>
+</td>
+<td>
+<a title="GLib.Rand" href="random_numbers.html#GRand">GLib.Rand</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>begin:</code></em></i>
+		</p>
+	</td>
+		<td><p>lower closed bound of the interval</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>end:</code></em></i>
+		</p>
+	</td>
+		<td><p>upper open bound of the interval</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a random number</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_rand_double_range">
+		
+<h4 id="glibranddouble_range">
+	<span><code>GLib.Rand.double_range</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Rand.double_range (self, begin, end):
+    #python wrapper for 'g_rand_double_range'</pre>
+
+<p>Returns the next random gdouble from <em>rand_</em> equally distributed over
+the range [@begin..@end).</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rand_:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="random_numbers.html#GRand">GLib.Rand</a></p>
+</td>
+<td>
+<a title="GLib.Rand" href="random_numbers.html#GRand">GLib.Rand</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>begin:</code></em></i>
+		</p>
+	</td>
+		<td><p>lower closed bound of the interval</p>
+</td>
+<td>
+<a title="float" href="https://docs.python.org/2/library/functions.html#float">float</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>end:</code></em></i>
+		</p>
+	</td>
+		<td><p>upper open bound of the interval</p>
+</td>
+<td>
+<a title="float" href="https://docs.python.org/2/library/functions.html#float">float</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a random number</p>
+
+	</td>
+	<td>
+		<a title="float" href="https://docs.python.org/2/library/functions.html#float">float</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_rand_int">
+		
+<h4 id="glibrandint">
+	<span><code>GLib.Rand.int</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Rand.int (self):
+    #python wrapper for 'g_rand_int'</pre>
+
+<p>Returns the next random guint32 from <em>rand_</em> equally distributed over
+the range [0..2^32-1].</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rand_:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="random_numbers.html#GRand">GLib.Rand</a></p>
+</td>
+<td>
+<a title="GLib.Rand" href="random_numbers.html#GRand">GLib.Rand</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a random number</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_rand_set_seed_array">
+		
+<h4 id="glibrandset_seed_array">
+	<span><code>GLib.Rand.set_seed_array</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Rand.set_seed_array (self, seed, seed_length):
+    #python wrapper for 'g_rand_set_seed_array'</pre>
+
+<p>Initializes the random number generator by an array of longs.
+Array can be of arbitrary size, though only the first 624 values
+are taken.  This function is useful if you have many low entropy
+seeds, or if you require more then 32 bits of actual entropy for
+your application.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rand_:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="random_numbers.html#GRand">GLib.Rand</a></p>
+</td>
+<td>
+<a title="GLib.Rand" href="random_numbers.html#GRand">GLib.Rand</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seed:</code></em></i>
+		</p>
+	</td>
+		<td><p>array to initialize with</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seed_length:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of array</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_random_int">
+		
+<h3 id="glibrandom_int">
+	<span><code>GLib.random_int</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.random_int ():
+    #python wrapper for 'g_random_int'</pre>
+
+<p>Return a random guint32 equally distributed over the range
+[0..2^32-1].</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a random number</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_random_double">
+		
+<h3 id="glibrandom_double">
+	<span><code>GLib.random_double</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.random_double ():
+    #python wrapper for 'g_random_double'</pre>
+
+<p>Returns a random gdouble equally distributed over the range [0..1).</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a random number</p>
+
+	</td>
+	<td>
+		<a title="float" href="https://docs.python.org/2/library/functions.html#float">float</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_random_set_seed">
+		
+<h3 id="glibrandom_set_seed">
+	<span><code>GLib.random_set_seed</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.random_set_seed (seed):
+    #python wrapper for 'g_random_set_seed'</pre>
+
+<p>Sets the seed for the global random number generator, which is used
+by the g_random_* functions, to <em>seed</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seed:</code></em></i>
+		</p>
+	</td>
+		<td><p>a value to reinitialize the global random number generator</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_random_int_range">
+		
+<h3 id="glibrandom_int_range">
+	<span><code>GLib.random_int_range</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.random_int_range (begin, end):
+    #python wrapper for 'g_random_int_range'</pre>
+
+<p>Returns a random gint32 equally distributed over the range
+[@begin..@end-1].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>begin:</code></em></i>
+		</p>
+	</td>
+		<td><p>lower closed bound of the interval</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>end:</code></em></i>
+		</p>
+	</td>
+		<td><p>upper open bound of the interval</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a random number</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_random_double_range">
+		
+<h3 id="glibrandom_double_range">
+	<span><code>GLib.random_double_range</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.random_double_range (begin, end):
+    #python wrapper for 'g_random_double_range'</pre>
+
+<p>Returns a random gdouble equally distributed over the range
+[@begin..@end).</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>begin:</code></em></i>
+		</p>
+	</td>
+		<td><p>lower closed bound of the interval</p>
+</td>
+<td>
+<a title="float" href="https://docs.python.org/2/library/functions.html#float">float</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>end:</code></em></i>
+		</p>
+	</td>
+		<td><p>upper open bound of the interval</p>
+</td>
+<td>
+<a title="float" href="https://docs.python.org/2/library/functions.html#float">float</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a random number</p>
+
+	</td>
+	<td>
+		<a title="float" href="https://docs.python.org/2/library/functions.html#float">float</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GRand">
+		<h3 id="glibrand">
+	GLib.Rand
+</h3>
+
+		<p>The GRand struct is an opaque data structure. It should only be
+accessed through the g_rand_* functions.</p>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

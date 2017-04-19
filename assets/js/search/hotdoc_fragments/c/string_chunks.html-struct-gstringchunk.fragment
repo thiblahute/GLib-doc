@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_chunks.html#struct-gstringchunk", "fragment": "struct GStringChunk \nAn opaque data structure representing String Chunks. It should only be accessed by using the following functions. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/queue.html#glibqueueprototypepeek_tail", "fragment": "GLib.Queue.prototype.peek_tail \nReturns the last element of the queue. \n"});

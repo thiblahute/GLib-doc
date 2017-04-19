@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/iochannels.html#glibiochannelprototypeclose", "fragment": "GLib.IOChannel.prototype.close \nClose an IO channel. Any pending data to be written will be flushed ignoring errors. The channel will not be freed until the last reference is dropped using GLib.IOChannel.prototype.unref. \n"});

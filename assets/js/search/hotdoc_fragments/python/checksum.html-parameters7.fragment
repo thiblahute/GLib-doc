@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/checksum.html#parameters7", "fragment": "checksum_type \na GLib.ChecksumType \nstr \nthe string to compute the checksum of \nlength \nthe length of the string or if the string is null terminated. \n"});

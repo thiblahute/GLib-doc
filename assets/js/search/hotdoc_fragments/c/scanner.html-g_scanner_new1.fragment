@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/scanner.html#g_scanner_new1", "fragment": "g_scanner_new \nCreates a new GScanner. \nThe config_templ structure specifies the initial settings of the scanner which are copied into the GScanner config field. If you pass NULL then the default settings are used. \n"});

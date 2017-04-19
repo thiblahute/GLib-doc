@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gunix.html#glibunix_fd_source_new", "fragment": "GLib.unix_fd_source_new \nCreates a GLib.Source to watch for a particular IO condition on a file descriptor. \nThe source will never close the fd you must do it yourself. \n"});

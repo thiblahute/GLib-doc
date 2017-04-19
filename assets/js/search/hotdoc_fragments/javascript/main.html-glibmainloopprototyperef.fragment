@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#glibmainloopprototyperef", "fragment": "GLib.MainLoop.prototype.ref \nIncreases the reference count on a GLib.MainLoop object by one. \n"});

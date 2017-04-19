@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/linked_lists_double.html#g_list_length1", "fragment": "g_list_length \nGets the number of elements in a GList. \nThis function iterates over the whole list to count its elements. Use a GQueue instead of a GList if you regularly need the number of items. To check whether the list is non empty it is faster to check list against NULL. \n"});

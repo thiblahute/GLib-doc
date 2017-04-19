@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#parameters30", "fragment": "channel \na GIOChannel \noffset \nan offset in bytes which is added to the position specified by type \ntype \nthe position in the file which can be G_SEEK_CUR the current position G_SEEK_SET the start of the file or G_SEEK_END the end of the file \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/memory.html#g_try_malloc01", "fragment": "g_try_malloc0 \nAttempts to allocate n_bytes initialized to s and returns NULL on failure. Contrast with g_malloc0 which aborts the program on failure. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/string_utils.html#glibascii_digit_value", "fragment": "GLib.ascii_digit_value \nDetermines the numeric value of a character as a decimal digit. Differs from GLib.unichar_digit_value because it takes a char so there s no worry about sign extension if characters are signed. \n"});

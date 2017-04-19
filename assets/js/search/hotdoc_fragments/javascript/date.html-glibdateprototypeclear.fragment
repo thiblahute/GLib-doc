@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#glibdateprototypeclear", "fragment": "GLib.Date.prototype.clear \nInitializes one or more GLib.Date structs to a sane but invalid state. The cleared dates will not represent an existing date but will not contain garbage. Useful to init a date declared on the stack. Validity can be tested with GLib.Date.prototype.valid. \n"});

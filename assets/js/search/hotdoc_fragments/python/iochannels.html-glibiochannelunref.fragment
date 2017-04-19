@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#glibiochannelunref", "fragment": "GLib.IOChannel.unref \nDecrements the reference count of a GLib.IOChannel. \n"});

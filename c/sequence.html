@@ -1,0 +1,3710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GSequenceIter</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="sequence.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="sequence.markdown">
+        <h1 id="gsequenceiter">GSequenceIter</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GSequence</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GSequenceMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_get_begin_iter">
+		
+<h4 id="g_sequence_get_begin_iter1">
+	<span><code>g_sequence_get_begin_iter</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+g_sequence_get_begin_iter (<a title="GSequence" href="sequence.html#GSequence">GSequence</a> * seq)</pre>
+
+<p>Returns the begin iterator for <em>seq</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seq:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequence">GSequence</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the begin iterator for <em>seq</em>.</p>
+
+	</td>
+	<td>
+		<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_insert_sorted">
+		
+<h4 id="g_sequence_insert_sorted1">
+	<span><code>g_sequence_insert_sorted</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+g_sequence_insert_sorted (<a title="GSequence" href="sequence.html#GSequence">GSequence</a> * seq,
+                          gpointer data,
+                          <a title="GCompareDataFunc" href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> cmp_func,
+                          gpointer cmp_data)</pre>
+
+<p>Inserts <em>data</em> into <em>sequence</em> using <em>func</em> to determine the new
+position. The sequence must already be sorted according to <em>cmp_func</em>;
+otherwise the new position of <em>data</em> is undefined.</p>
+<p><em>cmp_func</em> is called with two items of the <em>seq</em> and <em>user_data</em>.
+It should return 0 if the items are equal, a negative value
+if the first item comes before the second, and a positive value
+if the second  item comes before the first.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seq:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequence">GSequence</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data to insert</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cmp_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function used to compare items in the sequence</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cmp_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <em>cmp_func</em>.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a> pointing to the new item.</p>
+
+	</td>
+	<td>
+		<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_get_iter_at_pos">
+		
+<h4 id="g_sequence_get_iter_at_pos1">
+	<span><code>g_sequence_get_iter_at_pos</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+g_sequence_get_iter_at_pos (<a title="GSequence" href="sequence.html#GSequence">GSequence</a> * seq,
+                            gint pos)</pre>
+
+<p>Returns the iterator at position <em>pos</em>. If <em>pos</em> is negative or larger
+than the number of items in <em>seq</em>, the end iterator is returned.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seq:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequence">GSequence</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pos:</code></em></i>
+		</p>
+	</td>
+		<td><p>a position in <em>seq</em>, or -1 for the end</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The <a href="sequence.html#GSequenceIter">GSequenceIter</a> at position <em>pos</em></p>
+
+	</td>
+	<td>
+		<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.48;" id="g_sequence_is_empty">
+		
+<h4 id="g_sequence_is_empty1">
+	<span><code>g_sequence_is_empty</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_sequence_is_empty (<a title="GSequence" href="sequence.html#GSequence">GSequence</a> * seq)</pre>
+
+<p>Returns <a href="macros.html#TRUE">TRUE</a> if the sequence contains zero items.</p>
+<p>This function is functionally identical to checking the result of
+<a href="sequence.html#g_sequence_get_length">g_sequence_get_length</a> being equal to zero. However this function is
+implemented in O(1) running time.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seq:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequence">GSequence</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the sequence is empty, otherwise <a href="macros.html#FALSE">FALSE</a>.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.48
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_get_length">
+		
+<h4 id="g_sequence_get_length1">
+	<span><code>g_sequence_get_length</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint
+g_sequence_get_length (<a title="GSequence" href="sequence.html#GSequence">GSequence</a> * seq)</pre>
+
+<p>Returns the length of <em>seq</em>. Note that this method is O(h) where `h' is the
+height of the tree. It is thus more efficient to use <a href="sequence.html#g_sequence_is_empty">g_sequence_is_empty</a>
+when comparing the length to zero.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seq:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequence">GSequence</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the length of <em>seq</em></p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_foreach">
+		
+<h4 id="g_sequence_foreach1">
+	<span><code>g_sequence_foreach</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_sequence_foreach (<a title="GSequence" href="sequence.html#GSequence">GSequence</a> * seq,
+                    <a title="GFunc" href="linked_lists_double.html#GFunc">GFunc</a> func,
+                    gpointer user_data)</pre>
+
+<p>Calls <em>func</em> for each item in the sequence passing <em>user_data</em>
+to the function.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seq:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequence">GSequence</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call for each item in <em>seq</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <em>func</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_free">
+		
+<h4 id="g_sequence_free1">
+	<span><code>g_sequence_free</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_sequence_free (<a title="GSequence" href="sequence.html#GSequence">GSequence</a> * seq)</pre>
+
+<p>Frees the memory allocated for <em>seq</em>. If <em>seq</em> has a data destroy
+function associated with it, that function is called on all items
+in <em>seq</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seq:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequence">GSequence</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_sort_iter">
+		
+<h4 id="g_sequence_sort_iter1">
+	<span><code>g_sequence_sort_iter</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_sequence_sort_iter (<a title="GSequence" href="sequence.html#GSequence">GSequence</a> * seq,
+                      <a title="GSequenceIterCompareFunc" href="sequence.html#GSequenceIterCompareFunc">GSequenceIterCompareFunc</a> cmp_func,
+                      gpointer cmp_data)</pre>
+
+<p>Like <a href="sequence.html#g_sequence_sort">g_sequence_sort</a>, but uses a <a href="sequence.html#GSequenceIterCompareFunc">GSequenceIterCompareFunc</a> instead
+of a GCompareDataFunc as the compare function</p>
+<p><em>cmp_func</em> is called with two iterators pointing into <em>seq</em>. It should
+return 0 if the iterators are equal, a negative value if the first
+iterator comes before the second, and a positive value if the second
+iterator comes before the first.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seq:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequence">GSequence</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cmp_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function used to compare iterators in the sequence</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cmp_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <em>cmp_func</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_search">
+		
+<h4 id="g_sequence_search1">
+	<span><code>g_sequence_search</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+g_sequence_search (<a title="GSequence" href="sequence.html#GSequence">GSequence</a> * seq,
+                   gpointer data,
+                   <a title="GCompareDataFunc" href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> cmp_func,
+                   gpointer cmp_data)</pre>
+
+<p>Returns an iterator pointing to the position where <em>data</em> would
+be inserted according to <em>cmp_func</em> and <em>cmp_data</em>.</p>
+<p><em>cmp_func</em> is called with two items of the <em>seq</em> and <em>user_data</em>.
+It should return 0 if the items are equal, a negative value if
+the first item comes before the second, and a positive value if
+the second item comes before the first.</p>
+<p>If you are simply searching for an existing element of the sequence,
+consider using <a href="sequence.html#g_sequence_lookup">g_sequence_lookup</a>.</p>
+<p>This function will fail if the data contained in the sequence is
+unsorted.  Use <a href="sequence.html#g_sequence_insert_sorted">g_sequence_insert_sorted</a> or
+<a href="sequence.html#g_sequence_insert_sorted_iter">g_sequence_insert_sorted_iter</a> to add data to your sequence or, if
+you want to add a large amount of data, call <a href="sequence.html#g_sequence_sort">g_sequence_sort</a> after
+doing unsorted insertions.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seq:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequence">GSequence</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data for the new item</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cmp_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function used to compare items in the sequence</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cmp_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <em>cmp_func</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>an <a href="sequence.html#GSequenceIter">GSequenceIter</a> pointing to the position where <em>data</em>
+would have been inserted according to <em>cmp_func</em> and <em>cmp_data</em></p>
+
+	</td>
+	<td>
+		<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.28;" id="g_sequence_lookup_iter">
+		
+<h4 id="g_sequence_lookup_iter1">
+	<span><code>g_sequence_lookup_iter</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+g_sequence_lookup_iter (<a title="GSequence" href="sequence.html#GSequence">GSequence</a> * seq,
+                        gpointer data,
+                        <a title="GSequenceIterCompareFunc" href="sequence.html#GSequenceIterCompareFunc">GSequenceIterCompareFunc</a> iter_cmp,
+                        gpointer cmp_data)</pre>
+
+<p>Like <a href="sequence.html#g_sequence_lookup">g_sequence_lookup</a>, but uses a <a href="sequence.html#GSequenceIterCompareFunc">GSequenceIterCompareFunc</a>
+instead of a <a href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> as the compare function.</p>
+<p><em>iter_cmp</em> is called with two iterators pointing into <em>seq</em>.
+It should return 0 if the iterators are equal, a negative value
+if the first iterator comes before the second, and a positive
+value if the second iterator comes before the first.</p>
+<p>This function will fail if the data contained in the sequence is
+unsorted.  Use <a href="sequence.html#g_sequence_insert_sorted">g_sequence_insert_sorted</a> or
+<a href="sequence.html#g_sequence_insert_sorted_iter">g_sequence_insert_sorted_iter</a> to add data to your sequence or, if
+you want to add a large amount of data, call <a href="sequence.html#g_sequence_sort">g_sequence_sort</a> after
+doing unsorted insertions.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seq:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequence">GSequence</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data to lookup</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter_cmp:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function used to compare iterators in the sequence</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cmp_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <em>iter_cmp</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>an <a href="sequence.html#GSequenceIter">GSequenceIter</a> pointing to the position of
+the first item found equal to <em>data</em> according to <em>cmp_func</em>
+and <em>cmp_data</em>, or <a href="macros.html#NULL">NULL</a> if no such item exists</p>
+
+	</td>
+	<td>
+		<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.28
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_prepend">
+		
+<h4 id="g_sequence_prepend1">
+	<span><code>g_sequence_prepend</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+g_sequence_prepend (<a title="GSequence" href="sequence.html#GSequence">GSequence</a> * seq,
+                    gpointer data)</pre>
+
+<p>Adds a new item to the front of <em>seq</em></p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seq:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequence">GSequence</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data for the new item</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>an iterator pointing to the new item</p>
+
+	</td>
+	<td>
+		<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_search_iter">
+		
+<h4 id="g_sequence_search_iter1">
+	<span><code>g_sequence_search_iter</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+g_sequence_search_iter (<a title="GSequence" href="sequence.html#GSequence">GSequence</a> * seq,
+                        gpointer data,
+                        <a title="GSequenceIterCompareFunc" href="sequence.html#GSequenceIterCompareFunc">GSequenceIterCompareFunc</a> iter_cmp,
+                        gpointer cmp_data)</pre>
+
+<p>Like <a href="sequence.html#g_sequence_search">g_sequence_search</a>, but uses a <a href="sequence.html#GSequenceIterCompareFunc">GSequenceIterCompareFunc</a>
+instead of a <a href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> as the compare function.</p>
+<p><em>iter_cmp</em> is called with two iterators pointing into <em>seq</em>.
+It should return 0 if the iterators are equal, a negative value
+if the first iterator comes before the second, and a positive
+value if the second iterator comes before the first.</p>
+<p>If you are simply searching for an existing element of the sequence,
+consider using <a href="sequence.html#g_sequence_lookup_iter">g_sequence_lookup_iter</a>.</p>
+<p>This function will fail if the data contained in the sequence is
+unsorted.  Use <a href="sequence.html#g_sequence_insert_sorted">g_sequence_insert_sorted</a> or
+<a href="sequence.html#g_sequence_insert_sorted_iter">g_sequence_insert_sorted_iter</a> to add data to your sequence or, if
+you want to add a large amount of data, call <a href="sequence.html#g_sequence_sort">g_sequence_sort</a> after
+doing unsorted insertions.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seq:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequence">GSequence</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data for the new item</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter_cmp:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function used to compare iterators in the sequence</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cmp_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <em>iter_cmp</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a> pointing to the position in <em>seq</em>
+where <em>data</em> would have been inserted according to <em>iter_cmp</em>
+and <em>cmp_data</em></p>
+
+	</td>
+	<td>
+		<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.28;" id="g_sequence_lookup">
+		
+<h4 id="g_sequence_lookup1">
+	<span><code>g_sequence_lookup</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+g_sequence_lookup (<a title="GSequence" href="sequence.html#GSequence">GSequence</a> * seq,
+                   gpointer data,
+                   <a title="GCompareDataFunc" href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> cmp_func,
+                   gpointer cmp_data)</pre>
+
+<p>Returns an iterator pointing to the position of the first item found
+equal to <em>data</em> according to <em>cmp_func</em> and <em>cmp_data</em>. If more than one
+item is equal, it is not guaranteed that it is the first which is
+returned. In that case, you can use <a href="sequence.html#g_sequence_iter_next">g_sequence_iter_next</a> and
+<a href="sequence.html#g_sequence_iter_prev">g_sequence_iter_prev</a> to get others.</p>
+<p><em>cmp_func</em> is called with two items of the <em>seq</em> and <em>user_data</em>.
+It should return 0 if the items are equal, a negative value if
+the first item comes before the second, and a positive value if
+the second item comes before the first.</p>
+<p>This function will fail if the data contained in the sequence is
+unsorted.  Use <a href="sequence.html#g_sequence_insert_sorted">g_sequence_insert_sorted</a> or
+<a href="sequence.html#g_sequence_insert_sorted_iter">g_sequence_insert_sorted_iter</a> to add data to your sequence or, if
+you want to add a large amount of data, call <a href="sequence.html#g_sequence_sort">g_sequence_sort</a> after
+doing unsorted insertions.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seq:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequence">GSequence</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data to lookup</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cmp_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function used to compare items in the sequence</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cmp_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <em>cmp_func</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>an <a href="sequence.html#GSequenceIter">GSequenceIter</a> pointing to the position of the
+first item found equal to <em>data</em> according to <em>cmp_func</em> and
+<em>cmp_data</em>, or <a href="macros.html#NULL">NULL</a> if no such item exists</p>
+
+	</td>
+	<td>
+		<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.28
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_insert_sorted_iter">
+		
+<h4 id="g_sequence_insert_sorted_iter1">
+	<span><code>g_sequence_insert_sorted_iter</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+g_sequence_insert_sorted_iter (<a title="GSequence" href="sequence.html#GSequence">GSequence</a> * seq,
+                               gpointer data,
+                               <a title="GSequenceIterCompareFunc" href="sequence.html#GSequenceIterCompareFunc">GSequenceIterCompareFunc</a> iter_cmp,
+                               gpointer cmp_data)</pre>
+
+<p>Like <a href="sequence.html#g_sequence_insert_sorted">g_sequence_insert_sorted</a>, but uses
+a <a href="sequence.html#GSequenceIterCompareFunc">GSequenceIterCompareFunc</a> instead of a <a href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> as
+the compare function.</p>
+<p><em>iter_cmp</em> is called with two iterators pointing into <em>seq</em>.
+It should return 0 if the iterators are equal, a negative
+value if the first iterator comes before the second, and a
+positive value if the second iterator comes before the first.</p>
+<p>It is called with two iterators pointing into <em>seq</em>. It should
+return 0 if the iterators are equal, a negative value if the
+first iterator comes before the second, and a positive value
+if the second iterator comes before the first.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seq:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequence">GSequence</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data for the new item</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter_cmp:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function used to compare iterators in the sequence</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cmp_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <em>cmp_func</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a> pointing to the new item</p>
+
+	</td>
+	<td>
+		<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_append">
+		
+<h4 id="g_sequence_append1">
+	<span><code>g_sequence_append</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+g_sequence_append (<a title="GSequence" href="sequence.html#GSequence">GSequence</a> * seq,
+                   gpointer data)</pre>
+
+<p>Adds a new item to the end of <em>seq</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seq:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequence">GSequence</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data for the new item</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>an iterator pointing to the new item</p>
+
+	</td>
+	<td>
+		<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_get_end_iter">
+		
+<h4 id="g_sequence_get_end_iter1">
+	<span><code>g_sequence_get_end_iter</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+g_sequence_get_end_iter (<a title="GSequence" href="sequence.html#GSequence">GSequence</a> * seq)</pre>
+
+<p>Returns the end iterator for <em>seg</em></p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seq:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequence">GSequence</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the end iterator for <em>seq</em></p>
+
+	</td>
+	<td>
+		<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_sort">
+		
+<h4 id="g_sequence_sort1">
+	<span><code>g_sequence_sort</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_sequence_sort (<a title="GSequence" href="sequence.html#GSequence">GSequence</a> * seq,
+                 <a title="GCompareDataFunc" href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> cmp_func,
+                 gpointer cmp_data)</pre>
+
+<p>Sorts <em>seq</em> using <em>cmp_func</em>.</p>
+<p><em>cmp_func</em> is passed two items of <em>seq</em> and should
+return 0 if they are equal, a negative value if the
+first comes before the second, and a positive value
+if the second comes before the first.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seq:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequence">GSequence</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cmp_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function used to sort the sequence</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cmp_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <em>cmp_func</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GSequenceFunctions">Functions</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_foreach_range">
+		
+<h4 id="g_sequence_foreach_range1">
+	<span><code>g_sequence_foreach_range</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_sequence_foreach_range (<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * begin,
+                          <a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * end,
+                          <a title="GFunc" href="linked_lists_double.html#GFunc">GFunc</a> func,
+                          gpointer user_data)</pre>
+
+<p>Calls <em>func</em> for each item in the range (@begin, <em>end</em>) passing
+<em>user_data</em> to the function.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>begin:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>end:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_double.html#GFunc">GFunc</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <em>func</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_new">
+		
+<h4 id="g_sequence_new1">
+	<span><code>g_sequence_new</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSequence" href="sequence.html#GSequence">GSequence</a> *
+g_sequence_new (<a title="GDestroyNotify" href="datasets.html#GDestroyNotify">GDestroyNotify</a> data_destroy)</pre>
+
+<p>Creates a new GSequence. The <em>data_destroy</em> function, if non-%NULL will
+be called on all items when the sequence is destroyed and on items that
+are removed from the sequence.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data_destroy:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="datasets.html#GDestroyNotify">GDestroyNotify</a> function, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="sequence.html#GSequence">GSequence</a></p>
+
+	</td>
+	<td>
+		<a title="GSequence" href="sequence.html#GSequence">GSequence</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_sort_changed">
+		
+<h4 id="g_sequence_sort_changed1">
+	<span><code>g_sequence_sort_changed</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_sequence_sort_changed (<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * iter,
+                         <a title="GCompareDataFunc" href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> cmp_func,
+                         gpointer cmp_data)</pre>
+
+<p>Moves the data pointed to a new position as indicated by <em>cmp_func</em>. This
+function should be called for items in a sequence already sorted according
+to <em>cmp_func</em> whenever some aspect of an item changes so that <em>cmp_func</em>
+may return different values for that item.</p>
+<p><em>cmp_func</em> is called with two items of the <em>seq</em> and <em>user_data</em>.
+It should return 0 if the items are equal, a negative value if
+the first item comes before the second, and a positive value if
+the second item comes before the first.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>A <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cmp_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function used to compare items in the sequence</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cmp_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <em>cmp_func</em>.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_insert_before">
+		
+<h4 id="g_sequence_insert_before1">
+	<span><code>g_sequence_insert_before</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+g_sequence_insert_before (<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * iter,
+                          gpointer data)</pre>
+
+<p>Inserts a new item just before the item pointed to by <em>iter</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data for the new item</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>an iterator pointing to the new item</p>
+
+	</td>
+	<td>
+		<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_range_get_midpoint">
+		
+<h4 id="g_sequence_range_get_midpoint1">
+	<span><code>g_sequence_range_get_midpoint</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+g_sequence_range_get_midpoint (<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * begin,
+                               <a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * end)</pre>
+
+<p>Finds an iterator somewhere in the range (@begin, <em>end</em>). This
+iterator will be close to the middle of the range, but is not
+guaranteed to be exactly in the middle.</p>
+<p>The <em>begin</em> and <em>end</em> iterators must both point to the same sequence
+and <em>begin</em> must come before or be equal to <em>end</em> in the sequence.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>begin:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>end:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a> pointing somewhere in the
+(@begin, <em>end</em>) range</p>
+
+	</td>
+	<td>
+		<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_sort_changed_iter">
+		
+<h4 id="g_sequence_sort_changed_iter1">
+	<span><code>g_sequence_sort_changed_iter</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_sequence_sort_changed_iter (<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * iter,
+                              <a title="GSequenceIterCompareFunc" href="sequence.html#GSequenceIterCompareFunc">GSequenceIterCompareFunc</a> iter_cmp,
+                              gpointer cmp_data)</pre>
+
+<p>Like <a href="sequence.html#g_sequence_sort_changed">g_sequence_sort_changed</a>, but uses
+a <a href="sequence.html#GSequenceIterCompareFunc">GSequenceIterCompareFunc</a> instead of a <a href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> as
+the compare function.</p>
+<p><em>iter_cmp</em> is called with two iterators pointing into <em>seq</em>. It should
+return 0 if the iterators are equal, a negative value if the first
+iterator comes before the second, and a positive value if the second
+iterator comes before the first.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter_cmp:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function used to compare iterators in the sequence</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cmp_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <em>cmp_func</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+
+
+            <h2 class="symbol_section" id="">GSequenceIter</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GSequenceIterMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_iter_get_sequence">
+		
+<h4 id="g_sequence_iter_get_sequence1">
+	<span><code>g_sequence_iter_get_sequence</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSequence" href="sequence.html#GSequence">GSequence</a> *
+g_sequence_iter_get_sequence (<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * iter)</pre>
+
+<p>Returns the <a href="sequence.html#GSequence">GSequence</a> that <em>iter</em> points into.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="sequence.html#GSequence">GSequence</a> that <em>iter</em> points into</p>
+
+	</td>
+	<td>
+		<a title="GSequence" href="sequence.html#GSequence">GSequence</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_iter_get_position">
+		
+<h4 id="g_sequence_iter_get_position1">
+	<span><code>g_sequence_iter_get_position</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint
+g_sequence_iter_get_position (<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * iter)</pre>
+
+<p>Returns the position of <em>iter</em></p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the position of <em>iter</em></p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_iter_next">
+		
+<h4 id="g_sequence_iter_next1">
+	<span><code>g_sequence_iter_next</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+g_sequence_iter_next (<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * iter)</pre>
+
+<p>Returns an iterator pointing to the next position after <em>iter</em>.
+If <em>iter</em> is the end iterator, the end iterator is returned.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a> pointing to the next position after <em>iter</em></p>
+
+	</td>
+	<td>
+		<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_iter_move">
+		
+<h4 id="g_sequence_iter_move1">
+	<span><code>g_sequence_iter_move</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+g_sequence_iter_move (<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * iter,
+                      gint delta)</pre>
+
+<p>Returns the <a href="sequence.html#GSequenceIter">GSequenceIter</a> which is <em>delta</em> positions away from <em>iter</em>.
+If <em>iter</em> is closer than -@delta positions to the beginning of the sequence,
+the begin iterator is returned. If <em>iter</em> is closer than <em>delta</em> positions
+to the end of the sequence, the end iterator is returned.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>delta:</code></em></i>
+		</p>
+	</td>
+		<td><p>A positive or negative number indicating how many positions away
+from <em>iter</em> the returned <a href="sequence.html#GSequenceIter">GSequenceIter</a> will be</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a> which is <em>delta</em> positions away from <em>iter</em></p>
+
+	</td>
+	<td>
+		<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_iter_is_begin">
+		
+<h4 id="g_sequence_iter_is_begin1">
+	<span><code>g_sequence_iter_is_begin</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_sequence_iter_is_begin (<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * iter)</pre>
+
+<p>Returns whether <em>iter</em> is the begin iterator</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>whether <em>iter</em> is the begin iterator</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_iter_prev">
+		
+<h4 id="g_sequence_iter_prev1">
+	<span><code>g_sequence_iter_prev</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+g_sequence_iter_prev (<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * iter)</pre>
+
+<p>Returns an iterator pointing to the previous position before <em>iter</em>.
+If <em>iter</em> is the begin iterator, the begin iterator is returned.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters28">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns21">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a> pointing to the previous position
+before <em>iter</em></p>
+
+	</td>
+	<td>
+		<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_iter_is_end">
+		
+<h4 id="g_sequence_iter_is_end1">
+	<span><code>g_sequence_iter_is_end</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_sequence_iter_is_end (<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * iter)</pre>
+
+<p>Returns whether <em>iter</em> is the end iterator</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters29">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns22">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>Whether <em>iter</em> is the end iterator</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_iter_compare">
+		
+<h4 id="g_sequence_iter_compare1">
+	<span><code>g_sequence_iter_compare</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint
+g_sequence_iter_compare (<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * a,
+                         <a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * b)</pre>
+
+<p>Returns a negative number if <em>a</em> comes before <em>b</em>, 0 if they are equal,
+and a positive number if <em>a</em> comes after <em>b</em>.</p>
+<p>The <em>a</em> and <em>b</em> iterators must point into the same sequence.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters30">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>a:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>b:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns23">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a negative number if <em>a</em> comes before <em>b</em>, 0 if they are
+equal, and a positive number if <em>a</em> comes after <em>b</em></p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_move">
+		
+<h3 id="g_sequence_move1">
+	<span><code>g_sequence_move</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_sequence_move (<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * src,
+                 <a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * dest)</pre>
+
+<p>Moves the item pointed to by <em>src</em> to the position indicated by <em>dest</em>.
+After calling this function <em>dest</em> will point to the position immediately
+after <em>src</em>. It is allowed for <em>src</em> and <em>dest</em> to point into different
+sequences.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters31">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>src:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a> pointing to the item to move</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dest:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a> pointing to the position to which
+the item is moved</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_set">
+		
+<h3 id="g_sequence_set1">
+	<span><code>g_sequence_set</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_sequence_set (<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * iter,
+                gpointer data)</pre>
+
+<p>Changes the data for the item pointed to by <em>iter</em> to be <em>data</em>. If
+the sequence has a data destroy function associated with it, that
+function is called on the existing data that <em>iter</em> pointed to.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters32">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>new data for the item</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_remove_range">
+		
+<h3 id="g_sequence_remove_range1">
+	<span><code>g_sequence_remove_range</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_sequence_remove_range (<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * begin,
+                         <a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * end)</pre>
+
+<p>Removes all items in the (@begin, <em>end</em>) range.</p>
+<p>If the sequence has a data destroy function associated with it, this
+function is called on the data for the removed items.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters33">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>begin:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>end:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_move_range">
+		
+<h3 id="g_sequence_move_range1">
+	<span><code>g_sequence_move_range</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_sequence_move_range (<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * dest,
+                       <a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * begin,
+                       <a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * end)</pre>
+
+<p>Inserts the (@begin, <em>end</em>) range at the destination pointed to by ptr.
+The <em>begin</em> and <em>end</em> iters must point into the same sequence. It is
+allowed for <em>dest</em> to point to a different sequence than the one pointed
+into by <em>begin</em> and <em>end</em>.</p>
+<p>If <em>dest</em> is NULL, the range indicated by <em>begin</em> and <em>end</em> is
+removed from the sequence. If <em>dest</em> iter points to a place within
+the (@begin, <em>end</em>) range, the range does not move.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters34">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dest:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>begin:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>end:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_swap">
+		
+<h3 id="g_sequence_swap1">
+	<span><code>g_sequence_swap</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_sequence_swap (<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * a,
+                 <a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * b)</pre>
+
+<p>Swaps the items pointed to by <em>a</em> and <em>b</em>. It is allowed for <em>a</em> and <em>b</em>
+to point into difference sequences.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters35">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>a:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>b:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_remove">
+		
+<h3 id="g_sequence_remove1">
+	<span><code>g_sequence_remove</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_sequence_remove (<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * iter)</pre>
+
+<p>Removes the item pointed to by <em>iter</em>. It is an error to pass the
+end iterator to this function.</p>
+<p>If the sequence has a data destroy function associated with it, this
+function is called on the data for the removed item.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters36">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_get">
+		
+<h3 id="g_sequence_get1">
+	<span><code>g_sequence_get</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gpointer
+g_sequence_get (<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * iter)</pre>
+
+<p>Returns the data that <em>iter</em> points to.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters37">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns24">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the data that <em>iter</em> points to</p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GSequenceIter">
+		
+<h3 id="struct-gsequenceiter">
+		struct GSequenceIter
+	</h3>
+
+		<pre class="raw_code">
+struct GSequenceIter {
+};
+</pre>
+
+<p>The <a href="sequence.html#GSequenceIter">GSequenceIter</a> struct is an opaque data type representing an
+iterator pointing into a <a href="sequence.html#GSequence">GSequence</a>.</p>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GSequence">
+		
+<h3 id="struct-gsequence">
+		struct GSequence
+	</h3>
+
+		<pre class="raw_code">
+struct GSequence {
+};
+</pre>
+
+<p>The <a href="sequence.html#GSequence">GSequence</a> struct is an opaque data type representing a
+[sequence][glib-Sequences] data type.</p>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GSequenceIterCompareFunc">
+		
+<h3 id="gsequenceitercomparefunc">
+	<span><code>GSequenceIterCompareFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+(*GSequenceIterCompareFunc) (<a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * a,
+                             <a title="GSequenceIter" href="sequence.html#GSequenceIter">GSequenceIter</a> * b,
+                             gpointer data)</pre>
+
+<p>A <a href="sequence.html#GSequenceIterCompareFunc">GSequenceIterCompareFunc</a> is a function used to compare iterators.
+It must return zero if the iterators compare equal, a negative value
+if <em>a</em> comes before <em>b</em>, and a positive value if <em>b</em> comes before <em>a</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters38">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>a:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>b:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GSequenceIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns25">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>zero if the iterators are equal, a negative value if <em>a</em>
+comes before <em>b</em>, and a positive value if <em>b</em> comes before <em>a</em>.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/scanner.html#GScannerConfig.scan_octal", "fragment": "guint scan_float \nspecifies if floating point numbers are recognized the default is TRUE \n"});

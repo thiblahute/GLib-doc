@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date.html#g_date_valid_dmy1", "fragment": "g_date_valid_dmy \nReturns TRUE if the day month year triplet forms a valid existing day in the range of days GDate understands Year or later no more than a few thousand years in the future \n"});

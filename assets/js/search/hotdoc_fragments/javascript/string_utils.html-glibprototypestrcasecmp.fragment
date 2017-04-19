@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/string_utils.html#glibprototypestrcasecmp", "fragment": "GLib.prototype.strcasecmp \nA case insensitive string comparison corresponding to the standard strcasecmp function on platforms which support it. \n"});

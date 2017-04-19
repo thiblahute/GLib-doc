@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/async_queues.html#struct-gasyncqueue", "fragment": "struct GAsyncQueue \nThe GAsyncQueue struct is an opaque data structure which represents an asynchronous queue. It should only be accessed through the g_async_queue_ functions. \n"});

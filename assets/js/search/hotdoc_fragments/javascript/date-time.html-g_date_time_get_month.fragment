@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date-time.html#g_date_time_get_month", "fragment": "GLib.DateTime.prototype.get_month \nRetrieves the month of the year represented by datetime in the Gregorian calendar. \n"});

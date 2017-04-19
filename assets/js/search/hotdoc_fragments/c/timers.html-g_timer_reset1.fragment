@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/timers.html#g_timer_reset1", "fragment": "g_timer_reset \nThis function is useless it s fine to call g_timer_start on an already started timer to reset the start time so g_timer_reset serves no purpose. \n"});

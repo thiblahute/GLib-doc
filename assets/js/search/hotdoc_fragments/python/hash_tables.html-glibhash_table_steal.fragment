@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hash_tables.html#glibhash_table_steal", "fragment": "GLib.hash_table_steal \nRemoves a key and its associated value from a GLib.HashTable without calling the key and value destroy functions. \n"});

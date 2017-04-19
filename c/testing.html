@@ -1,0 +1,6354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GTestCase</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="testing.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="testing.markdown">
+        <h1 id="gtestcase">GTestCase</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GTestLogMsg</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GTestLogMsgMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_test_log_msg_free">
+		
+<h4 id="g_test_log_msg_free1">
+	<span><code>g_test_log_msg_free</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_test_log_msg_free (<a title="GTestLogMsg" href="testing.html#GTestLogMsg">GTestLogMsg</a> * tmsg)</pre>
+
+<p>Internal function for gtester to free test log messages, no ABI guarantees provided.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tmsg:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+            <h2 class="symbol_section" id="">GTestLogBuffer</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GTestLogBufferMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_test_log_buffer_free">
+		
+<h4 id="g_test_log_buffer_free1">
+	<span><code>g_test_log_buffer_free</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_test_log_buffer_free (<a title="GTestLogBuffer" href="testing.html#GTestLogBuffer">GTestLogBuffer</a> * tbuffer)</pre>
+
+<p>Internal function for gtester to free test log messages, no ABI guarantees provided.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tbuffer:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_test_log_buffer_push">
+		
+<h4 id="g_test_log_buffer_push1">
+	<span><code>g_test_log_buffer_push</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_test_log_buffer_push (<a title="GTestLogBuffer" href="testing.html#GTestLogBuffer">GTestLogBuffer</a> * tbuffer,
+                        guint n_bytes,
+                        const guint8* bytes)</pre>
+
+<p>Internal function for gtester to decode test log messages, no ABI guarantees provided.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tbuffer:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n_bytes:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_test_log_buffer_pop">
+		
+<h4 id="g_test_log_buffer_pop1">
+	<span><code>g_test_log_buffer_pop</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GTestLogMsg" href="testing.html#GTestLogMsg">GTestLogMsg</a> *
+g_test_log_buffer_pop (<a title="GTestLogBuffer" href="testing.html#GTestLogBuffer">GTestLogBuffer</a> * tbuffer)</pre>
+
+<p>Internal function for gtester to retrieve test log messages, no ABI guarantees provided.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tbuffer:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		<a title="GTestLogMsg" href="testing.html#GTestLogMsg">GTestLogMsg</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GTestLogBufferFunctions">Functions</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_test_log_buffer_new">
+		
+<h4 id="g_test_log_buffer_new1">
+	<span><code>g_test_log_buffer_new</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GTestLogBuffer" href="testing.html#GTestLogBuffer">GTestLogBuffer</a> *
+g_test_log_buffer_new ()</pre>
+
+<p>Internal function for gtester to decode test log messages, no ABI guarantees provided.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		<a title="GTestLogBuffer" href="testing.html#GTestLogBuffer">GTestLogBuffer</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+            <h2 class="symbol_section" id="">GTestSuite</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GTestSuiteMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_suite_add_suite">
+		
+<h4 id="g_test_suite_add_suite1">
+	<span><code>g_test_suite_add_suite</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_test_suite_add_suite (<a title="GTestSuite" href="testing.html#GTestSuite">GTestSuite</a> * suite,
+                        <a title="GTestSuite" href="testing.html#GTestSuite">GTestSuite</a> * nestedsuite)</pre>
+
+<p>Adds <em>nestedsuite</em> to <em>suite</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>suite:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="testing.html#GTestSuite">GTestSuite</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>nestedsuite:</code></em></i>
+		</p>
+	</td>
+		<td><p>another <a href="testing.html#GTestSuite">GTestSuite</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_suite_add">
+		
+<h4 id="g_test_suite_add1">
+	<span><code>g_test_suite_add</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_test_suite_add (<a title="GTestSuite" href="testing.html#GTestSuite">GTestSuite</a> * suite,
+                  <a title="GTestCase" href="testing.html#GTestCase">GTestCase</a> * test_case)</pre>
+
+<p>Adds <em>test_case</em> to <em>suite</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>suite:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="testing.html#GTestSuite">GTestSuite</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>test_case:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="testing.html#GTestCase">GTestCase</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_minimized_result">
+		
+<h3 id="g_test_minimized_result1">
+	<span><code>g_test_minimized_result</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_minimized_result (double minimized_quantity,
+                         const char* format,
+                         ... ...)</pre>
+
+<p>Report the result of a performance or measurement test.
+The test should generally strive to minimize the reported
+quantities (smaller values are better than larger ones),
+this and <em>minimized_quantity</em> can determine sorting
+order for test result reports.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>minimized_quantity:</code></em></i>
+		</p>
+	</td>
+		<td><p>the reported value</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>format:</code></em></i>
+		</p>
+	</td>
+		<td><p>the format string of the report message</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>arguments to pass to the printf function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.34;" id="g_test_expect_message">
+		
+<h3 id="g_test_expect_message1">
+	<span><code>g_test_expect_message</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_expect_message (const gchar* log_domain,
+                       <a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a> log_level,
+                       const gchar* pattern)</pre>
+
+<p>Indicates that a message with the given <em>log_domain</em> and <em>log_level</em>,
+with text matching <em>pattern</em>, is expected to be logged. When this
+message is logged, it will not be printed, and the test case will
+not abort.</p>
+<p>This API may only be used with the old logging API (<a href="messages.html#g_log">g_log</a> without
+G_LOG_USE_STRUCTURED defined). It will not work with the structured logging
+API. See [Testing for Messages][testing-for-messages].</p>
+<p>Use <a href="testing.html#g_test_assert_expected_messages">g_test_assert_expected_messages</a> to assert that all
+previously-expected messages have been seen and suppressed.</p>
+<p>You can call this multiple times in a row, if multiple messages are
+expected as a result of a single call. (The messages must appear in
+the same order as the calls to <a href="testing.html#g_test_expect_message">g_test_expect_message</a>.)</p>
+<p>For example:</p>
+<pre><code class="language-[&lt;!--">   // g_main_context_push_thread_default() should fail if the
+   // context is already owned by another thread.
+   g_test_expect_message (G_LOG_DOMAIN,
+                          G_LOG_LEVEL_CRITICAL,
+                          "assertion*acquired_context*failed");
+   g_main_context_push_thread_default (bad_context);
+   g_test_assert_expected_messages ();
+</code></pre>
+<p>Note that you cannot use this to test <a href="messages.html#g_error">g_error</a> messages, since
+<a href="messages.html#g_error">g_error</a> intentionally never returns even if the program doesn't
+abort; use <a href="testing.html#g_test_trap_subprocess">g_test_trap_subprocess</a> in this case.</p>
+<p>If messages at <a href="messages.html#G_LOG_LEVEL_DEBUG">G_LOG_LEVEL_DEBUG</a> are emitted, but not explicitly
+expected via <a href="testing.html#g_test_expect_message">g_test_expect_message</a> then they will be ignored.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log domain of the message</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log level of the message</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pattern:</code></em></i>
+		</p>
+	</td>
+		<td><p>a glob-style [pattern][glib-Glob-style-pattern-matching]</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.34
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_maximized_result">
+		
+<h3 id="g_test_maximized_result1">
+	<span><code>g_test_maximized_result</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_maximized_result (double maximized_quantity,
+                         const char* format,
+                         ... ...)</pre>
+
+<p>Report the result of a performance or measurement test.
+The test should generally strive to maximize the reported
+quantities (larger values are better than smaller ones),
+this and <em>maximized_quantity</em> can determine sorting
+order for test result reports.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>maximized_quantity:</code></em></i>
+		</p>
+	</td>
+		<td><p>the reported value</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>format:</code></em></i>
+		</p>
+	</td>
+		<td><p>the format string of the report message</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>arguments to pass to the printf function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_test_fail">
+		
+<h3 id="g_test_fail1">
+	<span><code>g_test_fail</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_fail ()</pre>
+
+<p>Indicates that a test failed. This function can be called
+multiple times from the same test. You can use this function
+if your test failed in a recoverable way.</p>
+<p>Do not use this function if the failure of a test could cause
+other tests to malfunction.</p>
+<p>Calling this function will not stop the test from running, you
+need to return from the test function yourself. So you can
+produce additional diagnostic messages or even continue running
+the test.</p>
+<p>If not called from inside a test, this function does nothing.</p>
+
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_assertion_message_expr">
+		
+<h3 id="g_assertion_message_expr1">
+	<span><code>g_assertion_message_expr</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_assertion_message_expr (const char* domain,
+                          const char* file,
+                          int line,
+                          const char* func,
+                          const char* expr)</pre>
+
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>(nullable):</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>line:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>expr:</code></em></i>
+		</p>
+	</td>
+		<td><p>(nullable):</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_assertion_message_cmpstr">
+		
+<h3 id="g_assertion_message_cmpstr1">
+	<span><code>g_assertion_message_cmpstr</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_assertion_message_cmpstr (const char* domain,
+                            const char* file,
+                            int line,
+                            const char* func,
+                            const char* expr,
+                            const char* arg1,
+                            const char* cmp,
+                            const char* arg2)</pre>
+
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>line:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>expr:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>arg1:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cmp:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>arg2:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_rand_double_range">
+		
+<h3 id="g_test_rand_double_range1">
+	<span><code>g_test_rand_double_range</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+double
+g_test_rand_double_range (double range_start,
+                          double range_end)</pre>
+
+<p>Get a reproducible random floating pointer number out of a specified range,
+see <a href="testing.html#g_test_rand_int">g_test_rand_int</a> for details on test case random numbers.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>range_start:</code></em></i>
+		</p>
+	</td>
+		<td><p>the minimum value returned by this function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>range_end:</code></em></i>
+		</p>
+	</td>
+		<td><p>the minimum value not returned by this function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a number with <em>range_start</em> &lt;= number &lt; <em>range_end</em>.</p>
+
+	</td>
+	<td>
+		double
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_queue_destroy">
+		
+<h3 id="g_test_queue_destroy1">
+	<span><code>g_test_queue_destroy</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_queue_destroy (<a title="GDestroyNotify" href="datasets.html#GDestroyNotify">GDestroyNotify</a> destroy_func,
+                      gpointer destroy_data)</pre>
+
+<p>This function enqueus a callback <em>destroy_func</em> to be executed
+during the next test case teardown phase. This is most useful
+to auto destruct allocated test resources at the end of a test run.
+Resources are released in reverse queue order, that means enqueueing
+callback A before callback B will cause B to be called before
+A during teardown.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>destroy_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>Destroy callback for teardown phase.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>destroy_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>Destroy callback data.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_trap_has_passed">
+		
+<h3 id="g_test_trap_has_passed1">
+	<span><code>g_test_trap_has_passed</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_test_trap_has_passed ()</pre>
+
+<p>Check the result of the last <a href="testing.html#g_test_trap_subprocess">g_test_trap_subprocess</a> call.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the last test subprocess terminated successfully.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_add_func">
+		
+<h3 id="g_test_add_func1">
+	<span><code>g_test_add_func</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_add_func (const char* testpath,
+                 <a title="GTestFunc" href="testing.html#GTestFunc">GTestFunc</a> test_func)</pre>
+
+<p>Create a new test case, similar to <a href="testing.html#g_test_create_case">g_test_create_case</a>. However
+the test is assumed to use no fixture, and test suites are automatically
+created on the fly and added to the root fixture, based on the
+slash-separated portions of <em>testpath</em>.</p>
+<p>If <em>testpath</em> includes the component "subprocess" anywhere in it,
+the test will be skipped by default, and only run if explicitly
+required via the <code>-p</code> command-line option or <a href="testing.html#g_test_trap_subprocess">g_test_trap_subprocess</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>testpath:</code></em></i>
+		</p>
+	</td>
+		<td><p>/-separated test case path name for the test.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>test_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>The test function to invoke for this test.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="The callback is valid until first called"><span class="acronym">scope async</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_get_root">
+		
+<h3 id="g_test_get_root1">
+	<span><code>g_test_get_root</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="GTestSuite" href="testing.html#GTestSuite">GTestSuite</a> *
+g_test_get_root ()</pre>
+
+<p>Get the toplevel test suite for the test path API.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the toplevel <a href="testing.html#GTestSuite">GTestSuite</a></p>
+
+	</td>
+	<td>
+		<a title="GTestSuite" href="testing.html#GTestSuite">GTestSuite</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_test_assert_expected_messages_internal">
+		
+<h3 id="g_test_assert_expected_messages_internal1">
+	<span><code>g_test_assert_expected_messages_internal</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_assert_expected_messages_internal (const char* domain,
+                                          const char* file,
+                                          int line,
+                                          const char* func)</pre>
+
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>line:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_queue_free">
+		
+<h3 id="g_test_queue_free1">
+	<span><code>g_test_queue_free</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_queue_free (gpointer gfree_pointer)</pre>
+
+<p>Enqueue a pointer to be released with <a href="memory.html#g_free">g_free</a> during the next
+teardown phase. This is equivalent to calling <a href="testing.html#g_test_queue_destroy">g_test_queue_destroy</a>
+with a destroy callback of <a href="memory.html#g_free">g_free</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>gfree_pointer:</code></em></i>
+		</p>
+	</td>
+		<td><p>the pointer to be stored.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_test_trap_assertions">
+		
+<h3 id="g_test_trap_assertions1">
+	<span><code>g_test_trap_assertions</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_trap_assertions (const char* domain,
+                        const char* file,
+                        int line,
+                        const char* func,
+                        guint64 assertion_flags,
+                        const char* pattern)</pre>
+
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>line:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>assertion_flags:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pattern:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;deprecated:;" id="g_test_trap_fork">
+		
+<h3 id="g_test_trap_fork1">
+	<span><code>g_test_trap_fork</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_test_trap_fork (guint64 usec_timeout,
+                  <a title="GTestTrapFlags" href="testing.html#GTestTrapFlags">GTestTrapFlags</a> test_trap_flags)</pre>
+
+<p>Fork the current test program to execute a test case that might
+not return or that might abort.</p>
+<p>If <em>usec_timeout</em> is non-0, the forked test case is aborted and
+considered failing if its run time exceeds it.</p>
+<p>The forking behavior can be configured with the <a href="testing.html#GTestTrapFlags">GTestTrapFlags</a> flags.</p>
+<p>In the following example, the test code forks, the forked child
+process produces some sample output and exits successfully.
+The forking parent process then asserts successful child program
+termination and validates child program outputs.</p>
+<pre><code class="language-[&lt;!--">   static void
+   test_fork_patterns (void)
+   {
+     if (g_test_trap_fork (0, G_TEST_TRAP_SILENCE_STDOUT | G_TEST_TRAP_SILENCE_STDERR))
+       {
+         g_print ("some stdout text: somagic17\n");
+         g_printerr ("some stderr text: semagic43\n");
+         exit (0); // successful test run
+       }
+     g_test_trap_assert_passed ();
+     g_test_trap_assert_stdout ("*somagic17*");
+     g_test_trap_assert_stderr ("*semagic43*");
+   }
+</code></pre>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>usec_timeout:</code></em></i>
+		</p>
+	</td>
+		<td><p>Timeout for the forked test in micro seconds.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>test_trap_flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>Flags to modify forking behaviour.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> for the forked child and <a href="macros.html#FALSE">FALSE</a> for the executing parent process.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+	<p>
+	deprecated			: This function is implemented only on Unix platforms,
+ and is not always reliable due to problems inherent in
+ fork-without-exec. Use g_test_trap_subprocess() instead.
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_init">
+		
+<h3 id="g_test_init1">
+	<span><code>g_test_init</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_init (int* argc,
+             char*** argv,
+             ... ...)</pre>
+
+<p>Initialize the GLib testing framework, e.g. by seeding the
+test random number generator, the name for <a href="misc_utils.html#g_get_prgname">g_get_prgname</a>
+and parsing test related command line args.</p>
+<p>So far, the following arguments are understood:</p>
+<ul>
+<li>
+<p><code>-l</code>: List test cases available in a test executable.</p>
+</li>
+<li>
+<p><code>--seed=SEED</code>: Provide a random seed to reproduce test
+runs using random numbers.</p>
+</li>
+<li>
+<p><code>--verbose</code>: Run tests verbosely.</p>
+</li>
+<li>
+<p><code>-q</code>, <code>--quiet</code>: Run tests quietly.</p>
+</li>
+<li>
+<p><code>-p PATH</code>: Execute all tests matching the given path.</p>
+</li>
+<li>
+<p><code>-s PATH</code>: Skip all tests matching the given path.
+This can also be used to force a test to run that would otherwise
+be skipped (ie, a test whose name contains "/subprocess").</p>
+</li>
+<li>
+<p><code>-m {perf|slow|thorough|quick|undefined|no-undefined}</code>: Execute tests according to these test modes:</p>
+<p><code>perf</code>: Performance tests, may take long and report results.</p>
+<p><code>slow</code>, <code>thorough</code>: Slow and thorough tests, may take quite long and maximize coverage.</p>
+<p><code>quick</code>: Quick tests, should run really quickly and give good coverage.</p>
+<p><code>undefined</code>: Tests for undefined behaviour, may provoke programming errors
+under <a href="testing.html#g_test_trap_subprocess">g_test_trap_subprocess</a> or <a href="testing.html#g_test_expect_message">g_test_expect_message</a> to check
+that appropriate assertions or warnings are given</p>
+<p><code>no-undefined</code>: Avoid tests for undefined behaviour</p>
+</li>
+<li>
+<p><code>--debug-log</code>: Debug test logging output.</p>
+</li>
+</ul>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>argc:</code></em></i>
+		</p>
+	</td>
+		<td><p>Address of the <em>argc</em> parameter of the main function.
+Changed if any arguments were handled.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>argv:</code></em></i>
+		</p>
+	</td>
+		<td><p>Address of the <em>argv</em> parameter of main.
+Any parameters understood by <a href="testing.html#g_test_init">g_test_init</a> stripped before return.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#NULL">NULL</a>-terminated list of special options. Currently the only
+defined option is <code>"no_g_set_prgname"</code>, which
+will cause <a href="testing.html#g_test_init">g_test_init</a> to not call <a href="misc_utils.html#g_set_prgname">g_set_prgname</a>.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.38;" id="g_test_incomplete">
+		
+<h3 id="g_test_incomplete1">
+	<span><code>g_test_incomplete</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_incomplete (const gchar* msg)</pre>
+
+<p>Indicates that a test failed because of some incomplete
+functionality. This function can be called multiple times
+from the same test.</p>
+<p>Calling this function will not stop the test from running, you
+need to return from the test function yourself. So you can
+produce additional diagnostic messages or even continue running
+the test.</p>
+<p>If not called from inside a test, this function does nothing.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>msg:</code></em></i>
+		</p>
+	</td>
+		<td><p>explanation</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.38
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_timer_last">
+		
+<h3 id="g_test_timer_last1">
+	<span><code>g_test_timer_last</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+double
+g_test_timer_last ()</pre>
+
+<p>Report the last result of <a href="testing.html#g_test_timer_elapsed">g_test_timer_elapsed</a>.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the last result of <a href="testing.html#g_test_timer_elapsed">g_test_timer_elapsed</a>, as a double</p>
+
+	</td>
+	<td>
+		double
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_timer_start">
+		
+<h3 id="g_test_timer_start1">
+	<span><code>g_test_timer_start</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_timer_start ()</pre>
+
+<p>Start a timing test. Call <a href="testing.html#g_test_timer_elapsed">g_test_timer_elapsed</a> when the task is supposed
+to be done. Call this function again to restart the timer.</p>
+
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_run">
+		
+<h3 id="g_test_run1">
+	<span><code>g_test_run</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+int
+g_test_run ()</pre>
+
+<p>Runs all tests under the toplevel suite which can be retrieved
+with <a href="testing.html#g_test_get_root">g_test_get_root</a>. Similar to <a href="testing.html#g_test_run_suite">g_test_run_suite</a>, the test
+cases to be run are filtered according to test path arguments
+(<code>-p testpath</code> and <code>-s testpath</code>) as parsed by <a href="testing.html#g_test_init">g_test_init</a>.
+<a href="testing.html#g_test_run_suite">g_test_run_suite</a> or <a href="testing.html#g_test_run">g_test_run</a> may only be called once in a
+program.</p>
+<p>In general, the tests and sub-suites within each suite are run in
+the order in which they are defined. However, note that prior to
+GLib 2.36, there was a bug in the <code>g_test_add_*</code>
+functions which caused them to create multiple suites with the same
+name, meaning that if you created tests "/foo/simple",
+"/bar/simple", and "/foo/using-bar" in that order, they would get
+run in that order (since <a href="testing.html#g_test_run">g_test_run</a> would run the first "/foo"
+suite, then the "/bar" suite, then the second "/foo" suite). As of
+2.36, this bug is fixed, and adding the tests in that order would
+result in a running order of "/foo/simple", "/foo/using-bar",
+"/bar/simple". If this new ordering is sub-optimal (because it puts
+more-complicated tests before simpler ones, making it harder to
+figure out exactly what has failed), you can fix it by changing the
+test paths to group tests by suite in a way that will result in the
+desired running order. Eg, "/simple/foo", "/simple/bar",
+"/complex/foo-using-bar".</p>
+<p>However, you should never make the actual result of a test depend
+on the order that tests are run in. If you need to ensure that some
+particular code runs before or after a given test case, use
+<a href="testing.html#g_test_add">g_test_add</a>, which lets you specify setup and teardown functions.</p>
+<p>If all tests are skipped, this function will return 0 if
+producing TAP output, or 77 (treated as "skip test" by Automake) otherwise.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>0 on success, 1 on failure (assuming it returns at all),
+0 or 77 if all tests were skipped with <a href="testing.html#g_test_skip">g_test_skip</a></p>
+
+	</td>
+	<td>
+		int
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_message">
+		
+<h3 id="g_test_message1">
+	<span><code>g_test_message</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_message (const char* format,
+                ... ...)</pre>
+
+<p>Add a message to the test report.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>format:</code></em></i>
+		</p>
+	</td>
+		<td><p>the format string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>printf-like arguments to <em>format</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.38;" id="g_test_set_nonfatal_assertions">
+		
+<h3 id="g_test_set_nonfatal_assertions1">
+	<span><code>g_test_set_nonfatal_assertions</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_set_nonfatal_assertions ()</pre>
+
+<p>Changes the behaviour of <a href="testing.html#g_assert_cmpstr">g_assert_cmpstr</a>, <a href="testing.html#g_assert_cmpint">g_assert_cmpint</a>,
+<a href="testing.html#g_assert_cmpuint">g_assert_cmpuint</a>, <a href="testing.html#g_assert_cmphex">g_assert_cmphex</a>, <a href="testing.html#g_assert_cmpfloat">g_assert_cmpfloat</a>,
+<a href="testing.html#g_assert_true">g_assert_true</a>, <a href="testing.html#g_assert_false">g_assert_false</a>, <a href="testing.html#g_assert_null">g_assert_null</a>, <a href="testing.html#g_assert_no_error">g_assert_no_error</a>,
+<a href="testing.html#g_assert_error">g_assert_error</a>, <a href="testing.html#g_test_assert_expected_messages">g_test_assert_expected_messages</a> and the various
+g_test_trap_assert_*() macros to not abort to program, but instead
+call <a href="testing.html#g_test_fail">g_test_fail</a> and continue. (This also changes the behavior of
+<a href="testing.html#g_test_fail">g_test_fail</a> so that it will not cause the test program to abort
+after completing the failed test.)</p>
+<p>Note that the <a href="testing.html#g_assert_not_reached">g_assert_not_reached</a> and <a href="testing.html#g_assert">g_assert</a> are not
+affected by this.</p>
+<p>This function can only be called after <a href="testing.html#g_test_init">g_test_init</a>.</p>
+
+
+
+
+	<p>
+	Since			: 2.38
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_run_suite">
+		
+<h3 id="g_test_run_suite1">
+	<span><code>g_test_run_suite</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+int
+g_test_run_suite (<a title="GTestSuite" href="testing.html#GTestSuite">GTestSuite</a> * suite)</pre>
+
+<p>Execute the tests within <em>suite</em> and all nested <a href="testing.html#GTestSuite">GTestSuite</a>.
+The test suites to be executed are filtered according to
+test path arguments (<code>-p testpath</code> and <code>-s testpath</code>) as parsed by
+<a href="testing.html#g_test_init">g_test_init</a>. See the <a href="testing.html#g_test_run">g_test_run</a> documentation for more
+information on the order that tests are run in.</p>
+<p><a href="testing.html#g_test_run_suite">g_test_run_suite</a> or <a href="testing.html#g_test_run">g_test_run</a> may only be called once
+in a program.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>suite:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="testing.html#GTestSuite">GTestSuite</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>0 on success</p>
+
+	</td>
+	<td>
+		int
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_bug_base">
+		
+<h3 id="g_test_bug_base1">
+	<span><code>g_test_bug_base</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_bug_base (const char* uri_pattern)</pre>
+
+<p>Specify the base URI for bug reports.</p>
+<p>The base URI is used to construct bug report messages for
+<a href="testing.html#g_test_message">g_test_message</a> when <a href="testing.html#g_test_bug">g_test_bug</a> is called.
+Calling this function outside of a test case sets the
+default base URI for all test cases. Calling it from within
+a test case changes the base URI for the scope of the test
+case only.
+Bug URIs are constructed by appending a bug specific URI
+portion to <em>uri_pattern</em>, or by replacing the special string
+'%s' within <em>uri_pattern</em> if that is present.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri_pattern:</code></em></i>
+		</p>
+	</td>
+		<td><p>the base pattern for bug URIs</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_create_case">
+		
+<h3 id="g_test_create_case1">
+	<span><code>g_test_create_case</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="GTestCase" href="testing.html#GTestCase">GTestCase</a> *
+g_test_create_case (const char* test_name,
+                    gsize data_size,
+                    gconstpointer test_data,
+                    <a title="GTestFixtureFunc" href="testing.html#GTestFixtureFunc">GTestFixtureFunc</a> data_setup,
+                    <a title="GTestFixtureFunc" href="testing.html#GTestFixtureFunc">GTestFixtureFunc</a> data_test,
+                    <a title="GTestFixtureFunc" href="testing.html#GTestFixtureFunc">GTestFixtureFunc</a> data_teardown)</pre>
+
+<p>Create a new <a href="testing.html#GTestCase">GTestCase</a>, named <em>test_name</em>, this API is fairly
+low level, calling <a href="testing.html#g_test_add">g_test_add</a> or <a href="testing.html#g_test_add_func">g_test_add_func</a> is preferable.
+When this test is executed, a fixture structure of size <em>data_size</em>
+will be automatically allocated and filled with zeros. Then <em>data_setup</em> is
+called to initialize the fixture. After fixture setup, the actual test
+function <em>data_test</em> is called. Once the test run completes, the
+fixture structure is torn down by calling <em>data_teardown</em> and
+after that the memory is automatically released by the test framework.</p>
+<p>Splitting up a test run into fixture setup, test function and
+fixture teardown is most useful if the same fixture is used for
+multiple tests. In this cases, <a href="testing.html#g_test_create_case">g_test_create_case</a> will be
+called with the same fixture, but varying <em>test_name</em> and
+<em>data_test</em> arguments.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>test_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>the name for the test case</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data_size:</code></em></i>
+		</p>
+	</td>
+		<td><p>the size of the fixture data structure</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>test_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>test data argument for the test functions</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data_setup:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to set up the fixture data</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="The callback is valid until first called"><span class="acronym">scope async</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data_test:</code></em></i>
+		</p>
+	</td>
+		<td><p>the actual test function</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="The callback is valid until first called"><span class="acronym">scope async</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data_teardown:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to teardown the fixture data</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="The callback is valid until first called"><span class="acronym">scope async</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated <a href="testing.html#GTestCase">GTestCase</a>.</p>
+
+	</td>
+	<td>
+		<a title="GTestCase" href="testing.html#GTestCase">GTestCase</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_rand_double">
+		
+<h3 id="g_test_rand_double1">
+	<span><code>g_test_rand_double</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+double
+g_test_rand_double ()</pre>
+
+<p>Get a reproducible random floating point number,
+see <a href="testing.html#g_test_rand_int">g_test_rand_int</a> for details on test case random numbers.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a random number from the seeded random number generator.</p>
+
+	</td>
+	<td>
+		double
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_create_suite">
+		
+<h3 id="g_test_create_suite1">
+	<span><code>g_test_create_suite</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="GTestSuite" href="testing.html#GTestSuite">GTestSuite</a> *
+g_test_create_suite (const char* suite_name)</pre>
+
+<p>Create a new test suite with the name <em>suite_name</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>suite_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a name for the suite</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A newly allocated <a href="testing.html#GTestSuite">GTestSuite</a> instance.</p>
+
+	</td>
+	<td>
+		<a title="GTestSuite" href="testing.html#GTestSuite">GTestSuite</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_assertion_message_cmpnum">
+		
+<h3 id="g_assertion_message_cmpnum1">
+	<span><code>g_assertion_message_cmpnum</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_assertion_message_cmpnum (const char* domain,
+                            const char* file,
+                            int line,
+                            const char* func,
+                            const char* expr,
+                            longdouble arg1,
+                            const char* cmp,
+                            longdouble arg2,
+                            char numtype)</pre>
+
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>line:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>expr:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>arg1:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cmp:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>arg2:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>numtype:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.34;" id="g_test_add_data_func_full">
+		
+<h3 id="g_test_add_data_func_full1">
+	<span><code>g_test_add_data_func_full</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_add_data_func_full (const char* testpath,
+                           gpointer test_data,
+                           <a title="GTestDataFunc" href="testing.html#GTestDataFunc">GTestDataFunc</a> test_func,
+                           <a title="GDestroyNotify" href="datasets.html#GDestroyNotify">GDestroyNotify</a> data_free_func)</pre>
+
+<p>Create a new test case, as with <a href="testing.html#g_test_add_data_func">g_test_add_data_func</a>, but freeing
+<em>test_data</em> after the test run is complete.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>testpath:</code></em></i>
+		</p>
+	</td>
+		<td><p>/-separated test case path name for the test.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>test_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>Test data argument for the test function.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>test_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>The test function to invoke for this test.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data_free_func:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="datasets.html#GDestroyNotify">GDestroyNotify</a> for <em>test_data</em>.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.34
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_assertion_message_error">
+		
+<h3 id="g_assertion_message_error1">
+	<span><code>g_assertion_message_error</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_assertion_message_error (const char* domain,
+                           const char* file,
+                           int line,
+                           const char* func,
+                           const char* expr,
+                           const <a title="GError" href="error_reporting.html#GError">GError</a> * error,
+                           <a title="GQuark" href="quarks.html#GQuark">GQuark</a> error_domain,
+                           int error_code)</pre>
+
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>line:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>expr:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>error:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>error_domain:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>error_code:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_trap_reached_timeout">
+		
+<h3 id="g_test_trap_reached_timeout1">
+	<span><code>g_test_trap_reached_timeout</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_test_trap_reached_timeout ()</pre>
+
+<p>Check the result of the last <a href="testing.html#g_test_trap_subprocess">g_test_trap_subprocess</a> call.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the last test subprocess got killed due to a timeout.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.38;" id="g_test_subprocess">
+		
+<h3 id="g_test_subprocess1">
+	<span><code>g_test_subprocess</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_test_subprocess ()</pre>
+
+<p>Returns <a href="macros.html#TRUE">TRUE</a> (after <a href="testing.html#g_test_init">g_test_init</a> has been called) if the test
+program is running under <a href="testing.html#g_test_trap_subprocess">g_test_trap_subprocess</a>.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the test program is running under
+<a href="testing.html#g_test_trap_subprocess">g_test_trap_subprocess</a>.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.38
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.38;" id="g_test_trap_subprocess">
+		
+<h3 id="g_test_trap_subprocess1">
+	<span><code>g_test_trap_subprocess</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_trap_subprocess (const char* test_path,
+                        guint64 usec_timeout,
+                        <a title="GTestSubprocessFlags" href="testing.html#GTestSubprocessFlags">GTestSubprocessFlags</a> test_flags)</pre>
+
+<p>Respawns the test program to run only <em>test_path</em> in a subprocess.
+This can be used for a test case that might not return, or that
+might abort.</p>
+<p>If <em>test_path</em> is <a href="macros.html#NULL">NULL</a> then the same test is re-run in a subprocess.
+You can use <a href="testing.html#g_test_subprocess">g_test_subprocess</a> to determine whether the test is in
+a subprocess or not.</p>
+<p><em>test_path</em> can also be the name of the parent test, followed by
+"<code>/subprocess/</code>" and then a name for the specific subtest (or just
+ending with "<code>/subprocess</code>" if the test only has one child test);
+tests with names of this form will automatically be skipped in the
+parent process.</p>
+<p>If <em>usec_timeout</em> is non-0, the test subprocess is aborted and
+considered failing if its run time exceeds it.</p>
+<p>The subprocess behavior can be configured with the
+<a href="testing.html#GTestSubprocessFlags">GTestSubprocessFlags</a> flags.</p>
+<p>You can use methods such as <a href="testing.html#g_test_trap_assert_passed">g_test_trap_assert_passed</a>,
+<a href="testing.html#g_test_trap_assert_failed">g_test_trap_assert_failed</a>, and <a href="testing.html#g_test_trap_assert_stderr">g_test_trap_assert_stderr</a> to
+check the results of the subprocess. (But note that
+<a href="testing.html#g_test_trap_assert_stdout">g_test_trap_assert_stdout</a> and <a href="testing.html#g_test_trap_assert_stderr">g_test_trap_assert_stderr</a>
+cannot be used if <em>test_flags</em> specifies that the child should
+inherit the parent stdout/stderr.)</p>
+<p>If your <code>main ()</code> needs to behave differently in
+the subprocess, you can call <a href="testing.html#g_test_subprocess">g_test_subprocess</a> (after calling
+<a href="testing.html#g_test_init">g_test_init</a>) to see whether you are in a subprocess.</p>
+<p>The following example tests that calling
+<code>my_object_new(1000000)</code> will abort with an error
+message.</p>
+<pre><code class="language-[&lt;!--">   static void
+   test_create_large_object (void)
+   {
+     if (g_test_subprocess ())
+       {
+         my_object_new (1000000);
+         return;
+       }
+
+     // Reruns this same test in a subprocess
+     g_test_trap_subprocess (NULL, 0, 0);
+     g_test_trap_assert_failed ();
+     g_test_trap_assert_stderr ("*ERROR*too large*");
+   }
+
+   int
+   main (int argc, char **argv)
+   {
+     g_test_init (&amp;argc, &amp;argv, NULL);
+
+     g_test_add_func ("/myobject/create_large_object",
+                      test_create_large_object);
+     return g_test_run ();
+   }
+</code></pre>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters28">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>test_path:</code></em></i>
+		</p>
+	</td>
+		<td><p>Test to run in a subprocess</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>usec_timeout:</code></em></i>
+		</p>
+	</td>
+		<td><p>Timeout for the subprocess test in micro seconds.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>test_flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>Flags to modify subprocess behaviour.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.38
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_rand_int">
+		
+<h3 id="g_test_rand_int1">
+	<span><code>g_test_rand_int</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint32
+g_test_rand_int ()</pre>
+
+<p>Get a reproducible random integer number.</p>
+<p>The random numbers generated by the g_test_rand_*() family of functions
+change with every new test program start, unless the --seed option is
+given when starting test programs.</p>
+<p>For individual test cases however, the random number generator is
+reseeded, to avoid dependencies between tests and to make --seed
+effective for all test cases.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a random number from the seeded random number generator.</p>
+
+	</td>
+	<td>
+		gint32
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_add_data_func">
+		
+<h3 id="g_test_add_data_func1">
+	<span><code>g_test_add_data_func</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_add_data_func (const char* testpath,
+                      gconstpointer test_data,
+                      <a title="GTestDataFunc" href="testing.html#GTestDataFunc">GTestDataFunc</a> test_func)</pre>
+
+<p>Create a new test case, similar to <a href="testing.html#g_test_create_case">g_test_create_case</a>. However
+the test is assumed to use no fixture, and test suites are automatically
+created on the fly and added to the root fixture, based on the
+slash-separated portions of <em>testpath</em>. The <em>test_data</em> argument
+will be passed as first argument to <em>test_func</em>.</p>
+<p>If <em>testpath</em> includes the component "subprocess" anywhere in it,
+the test will be skipped by default, and only run if explicitly
+required via the <code>-p</code> command-line option or <a href="testing.html#g_test_trap_subprocess">g_test_trap_subprocess</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters29">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>testpath:</code></em></i>
+		</p>
+	</td>
+		<td><p>/-separated test case path name for the test.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>test_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>Test data argument for the test function.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>test_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>The test function to invoke for this test.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="The callback is valid until first called"><span class="acronym">scope async</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_rand_int_range">
+		
+<h3 id="g_test_rand_int_range1">
+	<span><code>g_test_rand_int_range</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint32
+g_test_rand_int_range (gint32 begin,
+                       gint32 end)</pre>
+
+<p>Get a reproducible random integer number out of a specified range,
+see <a href="testing.html#g_test_rand_int">g_test_rand_int</a> for details on test case random numbers.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters30">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>begin:</code></em></i>
+		</p>
+	</td>
+		<td><p>the minimum value returned by this function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>end:</code></em></i>
+		</p>
+	</td>
+		<td><p>the smallest value not to be returned by this function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a number with <em>begin</em> &lt;= number &lt; <em>end</em>.</p>
+
+	</td>
+	<td>
+		gint32
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_test_add_vtable">
+		
+<h3 id="g_test_add_vtable1">
+	<span><code>g_test_add_vtable</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_add_vtable (const char* testpath,
+                   gsize data_size,
+                   gconstpointer test_data,
+                   <a title="GTestFixtureFunc" href="testing.html#GTestFixtureFunc">GTestFixtureFunc</a> data_setup,
+                   <a title="GTestFixtureFunc" href="testing.html#GTestFixtureFunc">GTestFixtureFunc</a> data_test,
+                   <a title="GTestFixtureFunc" href="testing.html#GTestFixtureFunc">GTestFixtureFunc</a> data_teardown)</pre>
+
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters31">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>testpath:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data_size:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>test_data:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data_setup:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data_test:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data_teardown:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_bug">
+		
+<h3 id="g_test_bug1">
+	<span><code>g_test_bug</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_bug (const char* bug_uri_snippet)</pre>
+
+<p>This function adds a message to test reports that
+associates a bug URI with a test case.
+Bug URIs are constructed from a base URI set with <a href="testing.html#g_test_bug_base">g_test_bug_base</a>
+and <em>bug_uri_snippet</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters32">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bug_uri_snippet:</code></em></i>
+		</p>
+	</td>
+		<td><p>Bug specific bug tracker URI portion.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_timer_elapsed">
+		
+<h3 id="g_test_timer_elapsed1">
+	<span><code>g_test_timer_elapsed</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+double
+g_test_timer_elapsed ()</pre>
+
+<p>Get the time since the last start of the timer with <a href="testing.html#g_test_timer_start">g_test_timer_start</a>.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the time since the last start of the timer, as a double</p>
+
+	</td>
+	<td>
+		double
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_test_log_type_name">
+		
+<h3 id="g_test_log_type_name1">
+	<span><code>g_test_log_type_name</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+const char*
+g_test_log_type_name (<a title="GTestLogType" href="testing.html#GTestLogType">GTestLogType</a> log_type)</pre>
+
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters33">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_type:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		const char*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.38;" id="g_test_build_filename">
+		
+<h3 id="g_test_build_filename1">
+	<span><code>g_test_build_filename</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_test_build_filename (<a title="GTestFileType" href="testing.html#GTestFileType">GTestFileType</a> file_type,
+                       const gchar* first_path,
+                       ... ...)</pre>
+
+<p>Creates the pathname to a data file that is required for a test.</p>
+<p>This function is conceptually similar to <a href="misc_utils.html#g_build_filename">g_build_filename</a> except
+that the first argument has been replaced with a <a href="testing.html#GTestFileType">GTestFileType</a>
+argument.</p>
+<p>The data file should either have been distributed with the module
+containing the test (%G_TEST_DIST) or built as part of the build
+system of that module (%G_TEST_BUILT).</p>
+<p>In order for this function to work in srcdir != builddir situations,
+the G_TEST_SRCDIR and G_TEST_BUILDDIR environment variables need to
+have been defined.  As of 2.38, this is done by the glib.mk
+included in GLib.  Please ensure that your copy is up to date before
+using this function.</p>
+<p>In case neither variable is set, this function will fall back to
+using the dirname portion of argv[0], possibly removing ".libs".
+This allows for casual running of tests directly from the commandline
+in the srcdir == builddir case and should also support running of
+installed tests, assuming the data files have been installed in the
+same relative path as the test binary.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters34">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file_type:</code></em></i>
+		</p>
+	</td>
+		<td><p>the type of file (built vs. distributed)</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>first_path:</code></em></i>
+		</p>
+	</td>
+		<td><p>the first segment of the pathname</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#NULL">NULL</a>-terminated additional path segments</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the path of the file, to be freed using <a href="memory.html#g_free">g_free</a></p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.38
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.38;" id="g_test_get_filename">
+		
+<h3 id="g_test_get_filename1">
+	<span><code>g_test_get_filename</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+const gchar*
+g_test_get_filename (<a title="GTestFileType" href="testing.html#GTestFileType">GTestFileType</a> file_type,
+                     const gchar* first_path,
+                     ... ...)</pre>
+
+<p>Gets the pathname to a data file that is required for a test.</p>
+<p>This is the same as <a href="testing.html#g_test_build_filename">g_test_build_filename</a> with two differences.
+The first difference is that must only use this function from within
+a testcase function.  The second difference is that you need not free
+the return value -- it will be automatically freed when the testcase
+finishes running.</p>
+<p>It is safe to use this function from a thread inside of a testcase
+but you must ensure that all such uses occur before the main testcase
+function returns (ie: it is best to ensure that all threads have been
+joined).</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters35">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file_type:</code></em></i>
+		</p>
+	</td>
+		<td><p>the type of file (built vs. distributed)</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>first_path:</code></em></i>
+		</p>
+	</td>
+		<td><p>the first segment of the pathname</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#NULL">NULL</a>-terminated additional path segments</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the path, automatically freed at the end of the testcase</p>
+
+	</td>
+	<td>
+		const gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.38
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.38;" id="g_test_skip">
+		
+<h3 id="g_test_skip1">
+	<span><code>g_test_skip</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_skip (const gchar* msg)</pre>
+
+<p>Indicates that a test was skipped.</p>
+<p>Calling this function will not stop the test from running, you
+need to return from the test function yourself. So you can
+produce additional diagnostic messages or even continue running
+the test.</p>
+<p>If not called from inside a test, this function does nothing.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters36">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>msg:</code></em></i>
+		</p>
+	</td>
+		<td><p>explanation</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.38
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_test_log_set_fatal_handler">
+		
+<h3 id="g_test_log_set_fatal_handler1">
+	<span><code>g_test_log_set_fatal_handler</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_test_log_set_fatal_handler (<a title="GTestLogFatalFunc" href="testing.html#GTestLogFatalFunc">GTestLogFatalFunc</a> log_func,
+                              gpointer user_data)</pre>
+
+<p>Installs a non-error fatal log handler which can be
+used to decide whether log messages which are counted
+as fatal abort the program.</p>
+<p>The use case here is that you are running a test case
+that depends on particular libraries or circumstances
+and cannot prevent certain known critical or warning
+messages. So you install a handler that compares the
+domain and message to precisely not abort in such a case.</p>
+<p>Note that the handler is reset at the beginning of
+any test case, so you have to set it inside each test
+function which needs the special behavior.</p>
+<p>This handler has no effect on g_error messages.</p>
+<p>This handler also has no effect on structured log messages (using
+<a href="messages.html#g_log_structured">g_log_structured</a> or <a href="messages.html#g_log_structured_array">g_log_structured_array</a>). To change the fatal
+behaviour for specific log messages, programs must install a custom log
+writer function using <a href="messages.html#g_log_set_writer_func">g_log_set_writer_func</a>.See
+[Using Structured Logging][using-structured-logging].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters37">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log handler function.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data passed to the log handler.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.38;" id="g_test_get_dir">
+		
+<h3 id="g_test_get_dir1">
+	<span><code>g_test_get_dir</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_test_get_dir (<a title="GTestFileType" href="testing.html#GTestFileType">GTestFileType</a> file_type)</pre>
+
+<p>Gets the pathname of the directory containing test files of the type
+specified by <em>file_type</em>.</p>
+<p>This is approximately the same as calling g_test_build_filename("."),
+but you don't need to free the return value.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters38">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file_type:</code></em></i>
+		</p>
+	</td>
+		<td><p>the type of file (built vs. distributed)</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the path of the directory, owned by GLib</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.38
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_assertion_message">
+		
+<h3 id="g_assertion_message1">
+	<span><code>g_assertion_message</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_assertion_message (const char* domain,
+                     const char* file,
+                     int line,
+                     const char* func,
+                     const char* message)</pre>
+
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters39">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>line:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>message:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.38;" id="g_test_failed">
+		
+<h3 id="g_test_failed1">
+	<span><code>g_test_failed</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_test_failed ()</pre>
+
+<p>Returns whether a test has already failed. This will
+be the case when <a href="testing.html#g_test_fail">g_test_fail</a>, <a href="testing.html#g_test_incomplete">g_test_incomplete</a>
+or <a href="testing.html#g_test_skip">g_test_skip</a> have been called, but also if an
+assertion has failed.</p>
+<p>This can be useful to return early from a test if
+continuing after a failed assertion might be harmful.</p>
+<p>The return value of this function is only meaningful
+if it is called from inside a test function.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns21">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the test has failed</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.38
+		</p>
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Function_Macros">Function Macros</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_trap_assert_passed">
+		
+<h3 id="g_test_trap_assert_passed1">
+	<span><code>g_test_trap_assert_passed</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_test_trap_assert_passed()                      g_test_trap_assertions (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, 0, 0)
+</pre>
+
+<p>Assert that the last test subprocess passed.
+See <a href="testing.html#g_test_trap_subprocess">g_test_trap_subprocess</a>.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.20;" id="g_assert_no_error">
+		
+<h3 id="g_assert_no_error1">
+	<span><code>g_assert_no_error</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_assert_no_error(err)          G_STMT_START { \
+                                             if (err) \
+                                               g_assertion_message_error (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \
+                                                 #err, err, 0, 0); \
+                                        } G_STMT_END
+</pre>
+
+<p>Debugging macro to check that a <a href="error_reporting.html#GError">GError</a> is not set.</p>
+<p>The effect of <code>g_assert_no_error (err)</code> is
+the same as <code>g_assert_true (err == NULL)</code>. The advantage
+of this macro is that it can produce a message that includes
+the error message and code.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.38;" id="g_assert_false">
+		
+<h3 id="g_assert_false1">
+	<span><code>g_assert_false</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_assert_false(expr)            G_STMT_START { \
+                                             if G_LIKELY (!(expr)) ; else \
+                                               g_assertion_message (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \
+                                                                    "'" #expr "' should be FALSE"); \
+                                        } G_STMT_END
+</pre>
+
+<p>Debugging macro to check an expression is false.</p>
+<p>If the assertion fails (i.e. the expression is not false),
+an error message is logged and the application is either
+terminated or the testcase marked as failed.</p>
+<p>See <a href="testing.html#g_test_set_nonfatal_assertions">g_test_set_nonfatal_assertions</a>.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_trap_assert_failed">
+		
+<h3 id="g_test_trap_assert_failed1">
+	<span><code>g_test_trap_assert_failed</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_test_trap_assert_failed()                      g_test_trap_assertions (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, 1, 0)
+</pre>
+
+<p>Assert that the last test subprocess failed.
+See <a href="testing.html#g_test_trap_subprocess">g_test_trap_subprocess</a>.</p>
+<p>This is sometimes used to test situations that are formally considered to
+be undefined behaviour, like inputs that fail a <a href="warnings.html#g_return_if_fail">g_return_if_fail</a>
+check. In these situations you should skip the entire test, including the
+call to <a href="testing.html#g_test_trap_subprocess">g_test_trap_subprocess</a>, unless <a href="testing.html#g_test_undefined">g_test_undefined</a> returns <a href="macros.html#TRUE">TRUE</a>
+to indicate that undefined behaviour may be tested.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_rand_bit">
+		
+<h3 id="g_test_rand_bit1">
+	<span><code>g_test_rand_bit</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_test_rand_bit()              (0 != (g_test_rand_int() &amp; (1 &lt;&lt; 15)))
+</pre>
+
+<p>Get a reproducible random bit (0 or 1), see <a href="testing.html#g_test_rand_int">g_test_rand_int</a>
+for details on test case random numbers.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_trap_assert_stderr">
+		
+<h3 id="g_test_trap_assert_stderr1">
+	<span><code>g_test_trap_assert_stderr</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_test_trap_assert_stderr(serrpattern)           g_test_trap_assertions (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, 4, serrpattern)
+</pre>
+
+<p>Assert that the stderr output of the last test subprocess
+matches <em>serrpattern</em>. See  <a href="testing.html#g_test_trap_subprocess">g_test_trap_subprocess</a>.</p>
+<p>This is sometimes used to test situations that are formally
+considered to be undefined behaviour, like code that hits a
+<a href="testing.html#g_assert">g_assert</a> or <a href="messages.html#g_error">g_error</a>. In these situations you should skip the
+entire test, including the call to <a href="testing.html#g_test_trap_subprocess">g_test_trap_subprocess</a>, unless
+<a href="testing.html#g_test_undefined">g_test_undefined</a> returns <a href="macros.html#TRUE">TRUE</a> to indicate that undefined
+behaviour may be tested.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_trap_assert_stdout">
+		
+<h3 id="g_test_trap_assert_stdout1">
+	<span><code>g_test_trap_assert_stdout</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_test_trap_assert_stdout(soutpattern)           g_test_trap_assertions (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, 2, soutpattern)
+</pre>
+
+<p>Assert that the stdout output of the last test subprocess matches
+<em>soutpattern</em>. See <a href="testing.html#g_test_trap_subprocess">g_test_trap_subprocess</a>.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.34;" id="g_test_assert_expected_messages">
+		
+<h3 id="g_test_assert_expected_messages1">
+	<span><code>g_test_assert_expected_messages</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_test_assert_expected_messages() g_test_assert_expected_messages_internal (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC)
+</pre>
+
+<p>Asserts that all messages previously indicated via
+<a href="testing.html#g_test_expect_message">g_test_expect_message</a> have been seen and suppressed.</p>
+<p>This API may only be used with the old logging API (<a href="messages.html#g_log">g_log</a> without
+G_LOG_USE_STRUCTURED defined). It will not work with the structured logging
+API. See [Testing for Messages][testing-for-messages].</p>
+<p>If messages at <a href="messages.html#G_LOG_LEVEL_DEBUG">G_LOG_LEVEL_DEBUG</a> are emitted, but not explicitly
+expected via <a href="testing.html#g_test_expect_message">g_test_expect_message</a> then they will be ignored.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.38;" id="g_assert_null">
+		
+<h3 id="g_assert_null1">
+	<span><code>g_assert_null</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_assert_null(expr)             G_STMT_START { if G_LIKELY ((expr) == NULL) ; else \
+                                               g_assertion_message (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \
+                                                                    "'" #expr "' should be NULL"); \
+                                        } G_STMT_END
+</pre>
+
+<p>Debugging macro to check an expression is <a href="macros.html#NULL">NULL</a>.</p>
+<p>If the assertion fails (i.e. the expression is not <a href="macros.html#NULL">NULL</a>),
+an error message is logged and the application is either
+terminated or the testcase marked as failed.</p>
+<p>See <a href="testing.html#g_test_set_nonfatal_assertions">g_test_set_nonfatal_assertions</a>.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_test_quiet">
+		
+<h3 id="g_test_quiet1">
+	<span><code>g_test_quiet</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_test_quiet()                  (g_test_config_vars-&gt;test_quiet)
+</pre>
+
+<p>Returns <a href="macros.html#TRUE">TRUE</a> if tests are run in quiet mode.
+The default is neither <a href="testing.html#g_test_verbose">g_test_verbose</a> nor <a href="testing.html#g_test_quiet">g_test_quiet</a>.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_test_thorough">
+		
+<h3 id="g_test_thorough1">
+	<span><code>g_test_thorough</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_test_thorough()               (!g_test_config_vars-&gt;test_quick)
+</pre>
+
+<p>Returns <a href="macros.html#TRUE">TRUE</a> if tests are run in thorough mode, equivalent to
+<a href="testing.html#g_test_slow">g_test_slow</a>.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_assert">
+		
+<h3 id="g_assert1">
+	<span><code>g_assert</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_assert(expr)                  G_STMT_START { \
+                                             if G_LIKELY (expr) ; else \
+                                               g_assertion_message_expr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \
+                                                                         #expr); \
+                                        } G_STMT_END
+</pre>
+
+<p>Debugging macro to terminate the application if the assertion
+fails. If the assertion fails (i.e. the expression is not true),
+an error message is logged and the application is terminated.</p>
+<p>The macro can be turned off in final releases of code by defining
+<code>G_DISABLE_ASSERT</code> when compiling the application, so code must
+not depend on any side effects from <em>expr</em>.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_test_undefined">
+		
+<h3 id="g_test_undefined1">
+	<span><code>g_test_undefined</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_test_undefined()              (g_test_config_vars-&gt;test_undefined)
+</pre>
+
+<p>Returns <a href="macros.html#TRUE">TRUE</a> if tests may provoke assertions and other formally-undefined
+behaviour, to verify that appropriate warnings are given. It might, in some
+cases, be useful to turn this off if running tests under valgrind.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_queue_unref">
+		
+<h3 id="g_test_queue_unref1">
+	<span><code>g_test_queue_unref</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_test_queue_unref(gobject)     g_test_queue_destroy (g_object_unref, gobject)
+</pre>
+
+<p>Enqueue an object to be released with g_object_unref during
+the next teardown phase. This is equivalent to calling
+<a href="testing.html#g_test_queue_destroy">g_test_queue_destroy</a> with a destroy callback of g_object_unref.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_test_slow">
+		
+<h3 id="g_test_slow1">
+	<span><code>g_test_slow</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_test_slow()                   (!g_test_config_vars-&gt;test_quick)
+</pre>
+
+<p>Returns <a href="macros.html#TRUE">TRUE</a> if tests are run in slow mode.
+Exactly one of <a href="testing.html#g_test_quick">g_test_quick</a> and <a href="testing.html#g_test_slow">g_test_slow</a> is active in any run;
+there is no "medium speed".</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_add">
+		
+<h3 id="g_test_add1">
+	<span><code>g_test_add</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_test_add(testpath, Fixture, tdata, fsetup, ftest, fteardown) \
+					G_STMT_START {			\
+                                         void (*add_vtable) (const char*,       \
+                                                    gsize,             \
+                                                    gconstpointer,     \
+                                                    void (*) (Fixture*, gconstpointer),   \
+                                                    void (*) (Fixture*, gconstpointer),   \
+                                                    void (*) (Fixture*, gconstpointer)) =  (void (*) (const gchar *, gsize, gconstpointer, void (*) (Fixture*, gconstpointer), void (*) (Fixture*, gconstpointer), void (*) (Fixture*, gconstpointer))) g_test_add_vtable; \
+                                         add_vtable \
+                                          (testpath, sizeof (Fixture), tdata, fsetup, ftest, fteardown); \
+					} G_STMT_END
+</pre>
+
+<p>Hook up a new test case at <em>testpath</em>, similar to <a href="testing.html#g_test_add_func">g_test_add_func</a>.
+A fixture data structure with setup and teardown functions may be provided,
+similar to <a href="testing.html#g_test_create_case">g_test_create_case</a>.</p>
+<p><a href="testing.html#g_test_add">g_test_add</a> is implemented as a macro, so that the fsetup, ftest and
+fteardown callbacks can expect a <em>Fixture</em> pointer as their first argument
+in a type safe manner. They otherwise have type <a href="testing.html#GTestFixtureFunc">GTestFixtureFunc</a>.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_test_verbose">
+		
+<h3 id="g_test_verbose1">
+	<span><code>g_test_verbose</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_test_verbose()                (g_test_config_vars-&gt;test_verbose)
+</pre>
+
+<p>Returns <a href="macros.html#TRUE">TRUE</a> if tests are run in verbose mode.
+The default is neither <a href="testing.html#g_test_verbose">g_test_verbose</a> nor <a href="testing.html#g_test_quiet">g_test_quiet</a>.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_assert_cmpfloat">
+		
+<h3 id="g_assert_cmpfloat1">
+	<span><code>g_assert_cmpfloat</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_assert_cmpfloat(n1,cmp,n2)    G_STMT_START { \
+                                             long double __n1 = (n1), __n2 = (n2); \
+                                             if (__n1 cmp __n2) ; else \
+                                               g_assertion_message_cmpnum (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \
+                                                 #n1 " " #cmp " " #n2, __n1, #cmp, __n2, 'f'); \
+                                        } G_STMT_END
+</pre>
+
+<p>Debugging macro to compare two floating point numbers.</p>
+<p>The effect of <code>g_assert_cmpfloat (n1, op, n2)</code> is
+the same as <code>g_assert_true (n1 op n2)</code>. The advantage
+of this macro is that it can produce a message that includes the
+actual values of <em>n1</em> and <em>n2</em>.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.20;" id="g_assert_error">
+		
+<h3 id="g_assert_error1">
+	<span><code>g_assert_error</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_assert_error(err, dom, c)     G_STMT_START { \
+                                               if (!err || (err)-&gt;domain != dom || (err)-&gt;code != c) \
+                                               g_assertion_message_error (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \
+                                                 #err, err, dom, c); \
+                                        } G_STMT_END
+</pre>
+
+<p>Debugging macro to check that a method has returned
+the correct <a href="error_reporting.html#GError">GError</a>.</p>
+<p>The effect of <code>g_assert_error (err, dom, c)</code> is
+the same as <code>g_assert_true (err != NULL &amp;&amp; err-&gt;domain == dom &amp;&amp; err-&gt;code == c)</code>. The advantage of this
+macro is that it can produce a message that includes the incorrect
+error message and code.</p>
+<p>This can only be used to test for a specific error. If you want to
+test that <em>err</em> is set, but don't care what it's set to, just use
+<code>g_assert (err != NULL)</code></p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_assert_cmpuint">
+		
+<h3 id="g_assert_cmpuint1">
+	<span><code>g_assert_cmpuint</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_assert_cmpuint(n1, cmp, n2)   G_STMT_START { \
+                                             guint64 __n1 = (n1), __n2 = (n2); \
+                                             if (__n1 cmp __n2) ; else \
+                                               g_assertion_message_cmpnum (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \
+                                                 #n1 " " #cmp " " #n2, __n1, #cmp, __n2, 'i'); \
+                                        } G_STMT_END
+</pre>
+
+<p>Debugging macro to compare two unsigned integers.</p>
+<p>The effect of <code>g_assert_cmpuint (n1, op, n2)</code> is
+the same as <code>g_assert_true (n1 op n2)</code>. The advantage
+of this macro is that it can produce a message that includes the
+actual values of <em>n1</em> and <em>n2</em>.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_assert_cmphex">
+		
+<h3 id="g_assert_cmphex1">
+	<span><code>g_assert_cmphex</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_assert_cmphex(n1, cmp, n2)    G_STMT_START {\
+                                             guint64 __n1 = (n1), __n2 = (n2); \
+                                             if (__n1 cmp __n2) ; else \
+                                               g_assertion_message_cmpnum (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \
+                                                 #n1 " " #cmp " " #n2, __n1, #cmp, __n2, 'x'); \
+                                        } G_STMT_END
+</pre>
+
+<p>Debugging macro to compare to unsigned integers.</p>
+<p>This is a variant of <a href="testing.html#g_assert_cmpuint">g_assert_cmpuint</a> that displays the numbers
+in hexadecimal notation in the message.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.36;" id="g_test_initialized">
+		
+<h3 id="g_test_initialized1">
+	<span><code>g_test_initialized</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_test_initialized()            (g_test_config_vars-&gt;test_initialized)
+</pre>
+
+<p>Returns <a href="macros.html#TRUE">TRUE</a> if <a href="testing.html#g_test_init">g_test_init</a> has been called.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_test_quick">
+		
+<h3 id="g_test_quick1">
+	<span><code>g_test_quick</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_test_quick()                  (g_test_config_vars-&gt;test_quick)
+</pre>
+
+<p>Returns <a href="macros.html#TRUE">TRUE</a> if tests are run in quick mode.
+Exactly one of <a href="testing.html#g_test_quick">g_test_quick</a> and <a href="testing.html#g_test_slow">g_test_slow</a> is active in any run;
+there is no "medium speed".</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_trap_assert_stderr_unmatched">
+		
+<h3 id="g_test_trap_assert_stderr_unmatched1">
+	<span><code>g_test_trap_assert_stderr_unmatched</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_test_trap_assert_stderr_unmatched(serrpattern) g_test_trap_assertions (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, 5, serrpattern)
+</pre>
+
+<p>Assert that the stderr output of the last test subprocess
+does not match <em>serrpattern</em>. See <a href="testing.html#g_test_trap_subprocess">g_test_trap_subprocess</a>.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_test_trap_assert_stdout_unmatched">
+		
+<h3 id="g_test_trap_assert_stdout_unmatched1">
+	<span><code>g_test_trap_assert_stdout_unmatched</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_test_trap_assert_stdout_unmatched(soutpattern) g_test_trap_assertions (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, 3, soutpattern)
+</pre>
+
+<p>Assert that the stdout output of the last test subprocess
+does not match <em>soutpattern</em>. See <a href="testing.html#g_test_trap_subprocess">g_test_trap_subprocess</a>.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_assert_not_reached">
+		
+<h3 id="g_assert_not_reached1">
+	<span><code>g_assert_not_reached</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_assert_not_reached()          G_STMT_START { g_assertion_message_expr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, NULL); } G_STMT_END
+</pre>
+
+<p>Debugging macro to terminate the application if it is ever
+reached. If it is reached, an error message is logged and the
+application is terminated.</p>
+<p>The macro can be turned off in final releases of code by defining
+<code>G_DISABLE_ASSERT</code> when compiling the application.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_test_perf">
+		
+<h3 id="g_test_perf1">
+	<span><code>g_test_perf</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_test_perf()                   (g_test_config_vars-&gt;test_perf)
+</pre>
+
+<p>Returns <a href="macros.html#TRUE">TRUE</a> if tests are run in performance mode.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_assert_cmpint">
+		
+<h3 id="g_assert_cmpint1">
+	<span><code>g_assert_cmpint</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_assert_cmpint(n1, cmp, n2)    G_STMT_START { \
+                                             gint64 __n1 = (n1), __n2 = (n2); \
+                                             if (__n1 cmp __n2) ; else \
+                                               g_assertion_message_cmpnum (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \
+                                                 #n1 " " #cmp " " #n2, __n1, #cmp, __n2, 'i'); \
+                                        } G_STMT_END
+</pre>
+
+<p>Debugging macro to compare two integers.</p>
+<p>The effect of <code>g_assert_cmpint (n1, op, n2)</code> is
+the same as <code>g_assert_true (n1 op n2)</code>. The advantage
+of this macro is that it can produce a message that includes the
+actual values of <em>n1</em> and <em>n2</em>.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_assert_cmpstr">
+		
+<h3 id="g_assert_cmpstr1">
+	<span><code>g_assert_cmpstr</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_assert_cmpstr(s1, cmp, s2)    G_STMT_START { \
+                                             const char *__s1 = (s1), *__s2 = (s2); \
+                                             if (g_strcmp0 (__s1, __s2) cmp 0) ; else \
+                                               g_assertion_message_cmpstr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \
+                                                 #s1 " " #cmp " " #s2, __s1, #cmp, __s2); \
+                                        } G_STMT_END
+</pre>
+
+<p>Debugging macro to compare two strings. If the comparison fails,
+an error message is logged and the application is either terminated
+or the testcase marked as failed.
+The strings are compared using <a href="string_utils.html#g_strcmp0">g_strcmp0</a>.</p>
+<p>The effect of <code>g_assert_cmpstr (s1, op, s2)</code> is
+the same as <code>g_assert_true (g_strcmp0 (s1, s2) op 0)</code>.
+The advantage of this macro is that it can produce a message that
+includes the actual values of <em>s1</em> and <em>s2</em>.</p>
+<pre><code class="language-[&lt;!--">   g_assert_cmpstr (mystring, ==, "fubar");
+</code></pre>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.46;" id="g_assert_cmpmem">
+		
+<h3 id="g_assert_cmpmem1">
+	<span><code>g_assert_cmpmem</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_assert_cmpmem(m1, l1, m2, l2) G_STMT_START {\
+                                             gconstpointer __m1 = m1, __m2 = m2; \
+                                             int __l1 = l1, __l2 = l2; \
+                                             if (__l1 != __l2) \
+                                               g_assertion_message_cmpnum (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \
+                                                                           #l1 " (len(" #m1 ")) == " #l2 " (len(" #m2 "))", __l1, "==", __l2, 'i'); \
+                                             else if (__l1 != 0 &amp;&amp; memcmp (__m1, __m2, __l1) != 0) \
+                                               g_assertion_message (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \
+                                                                    "assertion failed (" #m1 " == " #m2 ")"); \
+                                        } G_STMT_END
+</pre>
+
+<p>Debugging macro to compare memory regions. If the comparison fails,
+an error message is logged and the application is either terminated
+or the testcase marked as failed.</p>
+<p>The effect of <code>g_assert_cmpmem (m1, l1, m2, l2)</code> is
+the same as <code>g_assert_true (l1 == l2 &amp;&amp; memcmp (m1, m2, l1) == 0)</code>.
+The advantage of this macro is that it can produce a message that
+includes the actual values of <em>l1</em> and <em>l2</em>.</p>
+<pre><code class="language-[&lt;!--">   g_assert_cmpmem (buf-&gt;data, buf-&gt;len, expected, sizeof (expected));
+</code></pre>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.40;" id="g_assert_nonnull">
+		
+<h3 id="g_assert_nonnull1">
+	<span><code>g_assert_nonnull</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_assert_nonnull(expr)          G_STMT_START { \
+                                             if G_LIKELY ((expr) != NULL) ; else \
+                                               g_assertion_message (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \
+                                                                    "'" #expr "' should not be NULL"); \
+                                        } G_STMT_END
+</pre>
+
+<p>Debugging macro to check an expression is not <a href="macros.html#NULL">NULL</a>.</p>
+<p>If the assertion fails (i.e. the expression is <a href="macros.html#NULL">NULL</a>),
+an error message is logged and the application is either
+terminated or the testcase marked as failed.</p>
+<p>See <a href="testing.html#g_test_set_nonfatal_assertions">g_test_set_nonfatal_assertions</a>.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.38;" id="g_assert_true">
+		
+<h3 id="g_assert_true1">
+	<span><code>g_assert_true</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_assert_true(expr)             G_STMT_START { \
+                                             if G_LIKELY (expr) ; else \
+                                               g_assertion_message (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \
+                                                                    "'" #expr "' should be TRUE"); \
+                                        } G_STMT_END
+</pre>
+
+<p>Debugging macro to check that an expression is true.</p>
+<p>If the assertion fails (i.e. the expression is not true),
+an error message is logged and the application is either
+terminated or the testcase marked as failed.</p>
+<p>See <a href="testing.html#g_test_set_nonfatal_assertions">g_test_set_nonfatal_assertions</a>.</p>
+
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GTestCase">
+		
+<h3 id="struct-gtestcase">
+		struct GTestCase
+	</h3>
+
+		<pre class="raw_code">
+struct GTestCase {
+};
+</pre>
+
+<p>An opaque structure representing a test case.</p>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GTestLogBuffer">
+		
+<h3 id="struct-gtestlogbuffer">
+		struct GTestLogBuffer
+	</h3>
+
+		<pre class="raw_code">
+struct GTestLogBuffer {
+    GString* data; /* &lt; private &gt; */
+    GSList* msgs; /* &lt; private &gt; */
+};
+</pre>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="fields">Fields</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GTestLogBuffer.data">
+		<td>
+		<p>
+		<i><em><code><a title="GString" href="strings.html#GString">GString</a> * <em><code>data</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GTestLogBuffer.msgs">
+		<td>
+		<p>
+		<i><em><code><a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * <em><code>msgs</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GTestConfig">
+		
+<h3 id="struct-gtestconfig">
+		struct GTestConfig
+	</h3>
+
+		<pre class="raw_code">
+struct GTestConfig {
+    gboolean test_initialized;
+    gboolean test_quick;
+    gboolean test_perf;
+    gboolean test_verbose;
+    gboolean test_quiet;
+    gboolean test_undefined;
+};
+</pre>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="fields1">Fields</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GTestConfig.test_initialized">
+		<td>
+		<p>
+		<i><em><code>gboolean <em><code>test_initialized</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GTestConfig.test_quick">
+		<td>
+		<p>
+		<i><em><code>gboolean <em><code>test_quick</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GTestConfig.test_perf">
+		<td>
+		<p>
+		<i><em><code>gboolean <em><code>test_perf</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GTestConfig.test_verbose">
+		<td>
+		<p>
+		<i><em><code>gboolean <em><code>test_verbose</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GTestConfig.test_quiet">
+		<td>
+		<p>
+		<i><em><code>gboolean <em><code>test_quiet</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GTestConfig.test_undefined">
+		<td>
+		<p>
+		<i><em><code>gboolean <em><code>test_undefined</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GTestSuite">
+		
+<h3 id="struct-gtestsuite">
+		struct GTestSuite
+	</h3>
+
+		<pre class="raw_code">
+struct GTestSuite {
+};
+</pre>
+
+<p>An opaque structure representing a test suite.</p>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GTestLogMsg">
+		
+<h3 id="struct-gtestlogmsg">
+		struct GTestLogMsg
+	</h3>
+
+		<pre class="raw_code">
+struct GTestLogMsg {
+    GTestLogType log_type;
+    guint n_strings;
+    gchar** strings;
+    guint n_nums;
+    long* nums;
+};
+</pre>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="fields2">Fields</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GTestLogMsg.log_type">
+		<td>
+		<p>
+		<i><em><code><a title="GTestLogType" href="testing.html#GTestLogType">GTestLogType</a> <em><code>log_type</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GTestLogMsg.n_strings">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>n_strings</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GTestLogMsg.strings">
+		<td>
+		<p>
+		<i><em><code>gchar** <em><code>strings</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GTestLogMsg.n_nums">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>n_nums</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GTestLogMsg.nums">
+		<td>
+		<p>
+		<i><em><code>long* <em><code>nums</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:;" id="GTestTrapFlags">
+		
+<h3 id="enum-gtesttrapflags">
+		enum GTestTrapFlags
+	</h3>
+
+		<p>Test traps are guards around forked tests.
+These flags determine what traps to set.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_TEST_TRAP_SILENCE_STDOUT"></a>
+		G_TEST_TRAP_SILENCE_STDOUT
+		</p>
+	</td>
+	<td><p>Redirect stdout of the test child to
+<code>/dev/null</code> so it cannot be observed on the console during test
+runs. The actual output is still captured though to allow later
+tests with <a href="testing.html#g_test_trap_assert_stdout">g_test_trap_assert_stdout</a>.</p>
+</td>
+	<td>
+		<span class="value">Value: 128</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TEST_TRAP_SILENCE_STDERR"></a>
+		G_TEST_TRAP_SILENCE_STDERR
+		</p>
+	</td>
+	<td><p>Redirect stderr of the test child to
+<code>/dev/null</code> so it cannot be observed on the console during test
+runs. The actual output is still captured though to allow later
+tests with <a href="testing.html#g_test_trap_assert_stderr">g_test_trap_assert_stderr</a>.</p>
+</td>
+	<td>
+		<span class="value">Value: 256</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TEST_TRAP_INHERIT_STDIN"></a>
+		G_TEST_TRAP_INHERIT_STDIN
+		</p>
+	</td>
+	<td><p>If this flag is given, stdin of the
+child process is shared with stdin of its parent process.
+It is redirected to <code>/dev/null</code> otherwise.</p>
+</td>
+	<td>
+		<span class="value">Value: 512</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GTestSubprocessFlags">
+		
+<h3 id="enum-gtestsubprocessflags">
+		enum GTestSubprocessFlags
+	</h3>
+
+		<p>Flags to pass to <a href="testing.html#g_test_trap_subprocess">g_test_trap_subprocess</a> to control input and output.</p>
+<p>Note that in contrast with <a href="testing.html#g_test_trap_fork">g_test_trap_fork</a>, the default is to
+not show stdout and stderr.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members1">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_TEST_SUBPROCESS_INHERIT_STDIN"></a>
+		G_TEST_SUBPROCESS_INHERIT_STDIN
+		</p>
+	</td>
+	<td><p>If this flag is given, the child
+process will inherit the parent's stdin. Otherwise, the child's
+stdin is redirected to <code>/dev/null</code>.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TEST_SUBPROCESS_INHERIT_STDOUT"></a>
+		G_TEST_SUBPROCESS_INHERIT_STDOUT
+		</p>
+	</td>
+	<td><p>If this flag is given, the child
+process will inherit the parent's stdout. Otherwise, the child's
+stdout will not be visible, but it will be captured to allow
+later tests with <a href="testing.html#g_test_trap_assert_stdout">g_test_trap_assert_stdout</a>.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TEST_SUBPROCESS_INHERIT_STDERR"></a>
+		G_TEST_SUBPROCESS_INHERIT_STDERR
+		</p>
+	</td>
+	<td><p>If this flag is given, the child
+process will inherit the parent's stderr. Otherwise, the child's
+stderr will not be visible, but it will be captured to allow
+later tests with <a href="testing.html#g_test_trap_assert_stderr">g_test_trap_assert_stderr</a>.</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.38;" id="GTestFileType">
+		
+<h3 id="enum-gtestfiletype">
+		enum GTestFileType
+	</h3>
+
+		<p>The type of file to return the filename for, when used with
+<a href="testing.html#g_test_build_filename">g_test_build_filename</a>.</p>
+<p>These two options correspond rather directly to the 'dist' and
+'built' terminology that automake uses and are explicitly used to
+distinguish between the 'srcdir' and 'builddir' being separate.  All
+files in your project should either be dist (in the
+<code>EXTRA_DIST</code> or <code>dist_schema_DATA</code>
+sense, in which case they will always be in the srcdir) or built (in
+the <code>BUILT_SOURCES</code> sense, in which case they will
+always be in the builddir).</p>
+<p>Note: as a general rule of automake, files that are generated only as
+part of the build-from-git process (but then are distributed with the
+tarball) always go in srcdir (even if doing a srcdir != builddir
+build from git) and are considered as distributed files.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members2">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_TEST_DIST"></a>
+		G_TEST_DIST
+		</p>
+	</td>
+	<td><p>a file that was included in the distribution tarball</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TEST_BUILT"></a>
+		G_TEST_BUILT
+		</p>
+	</td>
+	<td><p>a file that was built on the compiling machine</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GTestLogType">
+		
+<h3 id="enum-gtestlogtype">
+		enum GTestLogType
+	</h3>
+
+		
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members3">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_TEST_LOG_NONE"></a>
+		G_TEST_LOG_NONE
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TEST_LOG_ERROR"></a>
+		G_TEST_LOG_ERROR
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TEST_LOG_START_BINARY"></a>
+		G_TEST_LOG_START_BINARY
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TEST_LOG_LIST_CASE"></a>
+		G_TEST_LOG_LIST_CASE
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TEST_LOG_SKIP_CASE"></a>
+		G_TEST_LOG_SKIP_CASE
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TEST_LOG_START_CASE"></a>
+		G_TEST_LOG_START_CASE
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 5</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TEST_LOG_STOP_CASE"></a>
+		G_TEST_LOG_STOP_CASE
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 6</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TEST_LOG_MIN_RESULT"></a>
+		G_TEST_LOG_MIN_RESULT
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 7</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TEST_LOG_MAX_RESULT"></a>
+		G_TEST_LOG_MAX_RESULT
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 8</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TEST_LOG_MESSAGE"></a>
+		G_TEST_LOG_MESSAGE
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 9</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TEST_LOG_START_SUITE"></a>
+		G_TEST_LOG_START_SUITE
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 10</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TEST_LOG_STOP_SUITE"></a>
+		G_TEST_LOG_STOP_SUITE
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 11</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.28;" id="GTestDataFunc">
+		
+<h3 id="gtestdatafunc">
+	<span><code>GTestDataFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+(*GTestDataFunc) (gconstpointer user_data)</pre>
+
+<p>The type used for test case functions that take an extra pointer
+argument.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters40">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data provided when registering the test</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns22">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.28
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="GTestLogFatalFunc">
+		
+<h3 id="gtestlogfatalfunc">
+	<span><code>GTestLogFatalFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+(*GTestLogFatalFunc) (const gchar* log_domain,
+                      <a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a> log_level,
+                      const gchar* message,
+                      gpointer user_data)</pre>
+
+<p>Specifies the prototype of fatal log handler functions.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters41">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log domain of the message</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log level of the message (including the fatal and recursion flags)</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>message:</code></em></i>
+		</p>
+	</td>
+		<td><p>the message to process</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data, set in <a href="testing.html#g_test_log_set_fatal_handler">g_test_log_set_fatal_handler</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns23">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the program should abort, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.28;" id="GTestFixtureFunc">
+		
+<h3 id="gtestfixturefunc">
+	<span><code>GTestFixtureFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+(*GTestFixtureFunc) (gpointer fixture,
+                     gconstpointer user_data)</pre>
+
+<p>The type used for functions that operate on test fixtures.  This is
+used for the fixture setup and teardown functions as well as for the
+testcases themselves.</p>
+<p><em>user_data</em> is a pointer to the data that was given when registering
+the test case.</p>
+<p><em>fixture</em> will be a pointer to the area of memory allocated by the
+test framework, of the size requested.  If the requested size was
+zero then <em>fixture</em> will be equal to <em>user_data</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters42">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fixture:</code></em></i>
+		</p>
+	</td>
+		<td><p>the test fixture</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data provided when registering the test</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns24">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.28
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.28;" id="GTestFunc">
+		
+<h3 id="gtestfunc">
+	<span><code>GTestFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+(*GTestFunc) ()</pre>
+
+<p>The type used for test case functions.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns25">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.28
+		</p>
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

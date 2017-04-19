@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvarianttype.html#glibvarianttype", "fragment": "GLib.VariantType \nA type in the GVariant type system. \nTwo types may not be compared by value use GLib.VariantType.equal or GLib.VariantType.is_subtype_of. May be copied using GLib.VariantType.copy and freed using GLib.VariantType.free. \n"});

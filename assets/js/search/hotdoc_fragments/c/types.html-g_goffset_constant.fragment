@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/types.html#g_goffset_constant", "fragment": "G_GOFFSET_CONSTANT \nThis macro is used to insert goffset bit integer literals into the source code. \nSee also G_GINT64_CONSTANT. \n"});

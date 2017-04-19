@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/macros.html#clamp", "fragment": "CLAMP \nEnsures that x is between the limits set by low and high. If low is greater than high the result is undefined. \nFor example \n"});

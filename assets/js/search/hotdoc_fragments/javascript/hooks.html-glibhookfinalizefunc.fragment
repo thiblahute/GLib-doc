@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hooks.html#glibhookfinalizefunc", "fragment": "GLib.HookFinalizeFunc \nDefines the type of function to be called when a hook in a list of hooks gets finalized. \n"});

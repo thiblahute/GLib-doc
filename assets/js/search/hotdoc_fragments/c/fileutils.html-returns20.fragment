@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/fileutils.html#returns20", "fragment": "\nA newly allocated string with the contents of the symbolic link or NULL if an error occurred. \nSince \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hooks.html#glibhook_destroy_link", "fragment": "GLib.hook_destroy_link \nRemoves one GLib.Hook from a GLib.HookList marking it inactive and calling GLib.hook_unref on it. \n"});

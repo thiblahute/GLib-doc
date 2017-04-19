@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/trees-nary.html#enum-glibtraverseflags", "fragment": "enum GLib.TraverseFlags \nSpecifies which nodes are visited during several of the tree functions including g_node_traverse not introspectable and g_node_find not introspectable \n"});

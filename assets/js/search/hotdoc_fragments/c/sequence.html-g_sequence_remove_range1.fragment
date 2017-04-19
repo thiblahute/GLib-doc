@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/sequence.html#g_sequence_remove_range1", "fragment": "g_sequence_remove_range \nRemoves all items in the begin end range. \nIf the sequence has a data destroy function associated with it this function is called on the data for the removed items. \n"});

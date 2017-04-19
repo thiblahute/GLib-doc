@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/memory.html#g_try_realloc1", "fragment": "g_try_realloc \nAttempts to realloc mem to a new size n_bytes and returns NULL on failure. Contrast with g_realloc which aborts the program on failure. \nIf mem is NULL behaves the same as g_try_malloc. \n"});

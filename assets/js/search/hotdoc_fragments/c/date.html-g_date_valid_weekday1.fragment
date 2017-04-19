@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date.html#g_date_valid_weekday1", "fragment": "g_date_valid_weekday \nReturns TRUE if the weekday is valid. The seven GDateWeekday enumeration values are the only valid weekdays. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hooks.html#g_hook_insert_before", "fragment": "GLib.prototype.hook_insert_before \nInserts a GLib.Hook into a GLib.HookList before a given GLib.Hook. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gurifuncs.html#parameters2", "fragment": "filename \nan absolute filename specified in the GLib file name encoding which is the on disk file name bytes on Unix and UTF on Windows \nhostname \nA UTF encoded hostname or None for none. \n"});

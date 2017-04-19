@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/keyfile.html#glibkeyfileprototypenew", "fragment": "GLib.KeyFile.prototype.new \nCreates a new empty GLib.KeyFile object. Use GLib.KeyFile.prototype.load_from_file GLib.KeyFile.prototype.load_from_data GLib.KeyFile.prototype.load_from_dirs or GLib.KeyFile.prototype.load_from_data_dirs to read an existing key file. \n"});

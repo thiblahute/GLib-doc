@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/trees-binary.html#glibtreeprototypesteal", "fragment": "GLib.Tree.prototype.steal \nRemoves a key and its associated value from a GLib.Tree without calling the key and value destroy functions. \nIf the key does not exist in the GLib.Tree the function does nothing. \n"});

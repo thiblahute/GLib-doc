@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/testing.html#glibprototypetest_timer_start", "fragment": "GLib.prototype.test_timer_start \nStart a timing test. Call GLib.prototype.test_timer_elapsed when the task is supposed to be done. Call this function again to restart the timer. \nSince \n"});

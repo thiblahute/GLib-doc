@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/unicode.html#returns20", "fragment": "\na newly allocated string. This string should be freed with GLib.prototype.free when you are done with it. \n"});

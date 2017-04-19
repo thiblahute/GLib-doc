@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#struct-giochannel", "fragment": "struct GIOChannel \nA data structure representing an IO Channel. The fields should be considered private and should only be accessed with the following functions. \n"});

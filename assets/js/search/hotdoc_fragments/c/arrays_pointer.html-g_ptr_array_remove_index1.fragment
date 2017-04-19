@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays_pointer.html#g_ptr_array_remove_index1", "fragment": "g_ptr_array_remove_index \nRemoves the pointer at the given index from the pointer array. The following elements are moved down one place. If array has a non NULL GDestroyNotify function it is called for the removed element. \n"});

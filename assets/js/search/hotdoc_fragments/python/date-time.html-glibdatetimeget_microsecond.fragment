@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date-time.html#glibdatetimeget_microsecond", "fragment": "GLib.DateTime.get_microsecond \nRetrieves the microsecond of the date represented by datetime \n"});

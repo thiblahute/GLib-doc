@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#g_main_context_pop_thread_default", "fragment": "GLib.MainContext.pop_thread_default \nPops context off the thread default context stack verifying that it was on the top of the stack \n"});

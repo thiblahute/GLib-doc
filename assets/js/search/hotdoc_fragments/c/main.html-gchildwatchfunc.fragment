@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/main.html#gchildwatchfunc", "fragment": "GChildWatchFunc \nPrototype of a GChildWatchSource callback called when a child process has exited. To interpret status see the documentation for g_spawn_check_exit_status. \n"});

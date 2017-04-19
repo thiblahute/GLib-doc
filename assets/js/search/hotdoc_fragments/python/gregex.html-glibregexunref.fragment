@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gregex.html#glibregexunref", "fragment": "GLib.Regex.unref \nDecreases reference count of regex by When reference count drops to zero it frees all the memory associated with the regex structure. \n"});

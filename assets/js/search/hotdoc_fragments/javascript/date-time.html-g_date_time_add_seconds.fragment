@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date-time.html#g_date_time_add_seconds", "fragment": "GLib.DateTime.prototype.add_seconds \nCreates a copy of datetime and adds the specified number of seconds. Add negative values to subtract seconds. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date.html#g_date_is_first_of_month1", "fragment": "g_date_is_first_of_month \nReturns TRUE if the date is on the first of a month. The date must be valid. \n"});

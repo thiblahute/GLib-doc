@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/fileutils.html#parameters2", "fragment": "file \na GLib.MappedFile \nSince \ndeprecated Use g_mapped_file_unref instead. \n"});

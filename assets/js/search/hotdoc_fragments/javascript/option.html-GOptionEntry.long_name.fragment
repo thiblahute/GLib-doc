@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/option.html#GOptionEntry.long_name", "fragment": "gchar short_name \nIf an option has a short name it can be specified short_name in a commandline. short_name must be a printable ASCII character different from or zero if the option has no short name. \n"});

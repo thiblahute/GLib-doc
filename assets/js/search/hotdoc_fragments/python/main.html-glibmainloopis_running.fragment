@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibmainloopis_running", "fragment": "GLib.MainLoop.is_running \nChecks to see if the main loop is currently being run via GLib.MainLoop.run. \n"});

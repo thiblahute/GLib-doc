@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/macros_misc.html#g_va_copy", "fragment": "G_VA_COPY \nPortable way to copy va_list variables. \nIn order to use this function you must include string.h yourself because this macro may use memmove and GLib does not include string.h for you. \n"});

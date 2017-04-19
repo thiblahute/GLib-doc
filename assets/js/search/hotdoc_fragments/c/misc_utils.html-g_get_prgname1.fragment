@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/misc_utils.html#g_get_prgname1", "fragment": "g_get_prgname \nGets the name of the program. This name should not be localized in contrast to g_get_application_name. \nIf you are using GDK or GTK the program name is set in gdk_init which is called by gtk_init. The program name is found by taking the last component of argv \n"});

@@ -1,0 +1,3179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GVariantType</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="gvarianttype.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="gvarianttype.markdown">
+        <h1 id="gvarianttype">GVariantType</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GVariantType</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GVariantTypeConstructors">Constructors</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_new_dict_entry">
+		
+<h4 id="g_variant_type_new_dict_entry1">
+	<span><code>g_variant_type_new_dict_entry</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+g_variant_type_new_dict_entry (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * key,
+                               const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * value)</pre>
+
+<p>Constructs the type corresponding to a dictionary entry with a key
+of type <em>key</em> and a value of type <em>value</em>.</p>
+<p>It is appropriate to call <a href="gvarianttype.html#g_variant_type_free">g_variant_type_free</a> on the return value.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a basic <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new dictionary entry <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		<a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_new_maybe">
+		
+<h4 id="g_variant_type_new_maybe1">
+	<span><code>g_variant_type_new_maybe</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+g_variant_type_new_maybe (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * element)</pre>
+
+<p>Constructs the type corresponding to a maybe instance containing
+type <em>type</em> or Nothing.</p>
+<p>It is appropriate to call <a href="gvarianttype.html#g_variant_type_free">g_variant_type_free</a> on the return value.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>element:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new maybe <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		<a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_new_array">
+		
+<h4 id="g_variant_type_new_array1">
+	<span><code>g_variant_type_new_array</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+g_variant_type_new_array (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * element)</pre>
+
+<p>Constructs the type corresponding to an array of elements of the
+type <em>type</em>.</p>
+<p>It is appropriate to call <a href="gvarianttype.html#g_variant_type_free">g_variant_type_free</a> on the return value.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>element:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new array <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		<a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.24;" id="g_variant_type_new">
+		
+<h4 id="g_variant_type_new1">
+	<span><code>g_variant_type_new</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+g_variant_type_new (const gchar* type_string)</pre>
+
+<p>Creates a new <a href="gvarianttype.html#GVariantType">GVariantType</a> corresponding to the type string given
+by <em>type_string</em>.  It is appropriate to call <a href="gvarianttype.html#g_variant_type_free">g_variant_type_free</a> on
+the return value.</p>
+<p>It is a programmer error to call this function with an invalid type
+string.  Use <a href="gvarianttype.html#g_variant_type_string_is_valid">g_variant_type_string_is_valid</a> if you are unsure.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type_string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid GVariant type string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+
+	</td>
+	<td>
+		<a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.24
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_new_tuple">
+		
+<h4 id="g_variant_type_new_tuple1">
+	<span><code>g_variant_type_new_tuple</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+g_variant_type_new_tuple (<a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * items,
+                          gint length)</pre>
+
+<p>Constructs a new tuple type, from <em>items</em>.</p>
+<p><em>length</em> is the number of items in <em>items</em>, or -1 to indicate that
+<em>items</em> is <a href="macros.html#NULL">NULL</a>-terminated.</p>
+<p>It is appropriate to call <a href="gvarianttype.html#g_variant_type_free">g_variant_type_free</a> on the return value.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>items:</code></em></i>
+		</p>
+	</td>
+		<td><p>an array of <a href="gvarianttype.html#GVariantType">GVariantType</a>, one for each item</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=length]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>items</em>, or -1</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new tuple <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		<a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GVariantTypeMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_get_string_length">
+		
+<h4 id="g_variant_type_get_string_length1">
+	<span><code>g_variant_type_get_string_length</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gsize
+g_variant_type_get_string_length (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * type)</pre>
+
+<p>Returns the length of the type string corresponding to the given
+<em>type</em>.  This function must be used to determine the valid extent of
+the memory region returned by <a href="gvarianttype.html#g_variant_type_peek_string">g_variant_type_peek_string</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the length of the corresponding type string</p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		gsize
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_is_subtype_of">
+		
+<h4 id="g_variant_type_is_subtype_of1">
+	<span><code>g_variant_type_is_subtype_of</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_variant_type_is_subtype_of (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * type,
+                              const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * supertype)</pre>
+
+<p>Checks if <em>type</em> is a subtype of <em>supertype</em>.</p>
+<p>This function returns <a href="macros.html#TRUE">TRUE</a> if <em>type</em> is a subtype of <em>supertype</em>.  All
+types are considered to be subtypes of themselves.  Aside from that,
+only indefinite types can have subtypes.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>supertype:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>type</em> is a subtype of <em>supertype</em></p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_is_array">
+		
+<h4 id="g_variant_type_is_array1">
+	<span><code>g_variant_type_is_array</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_variant_type_is_array (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * type)</pre>
+
+<p>Determines if the given <em>type</em> is an array type.  This is true if the
+type string for <em>type</em> starts with an 'a'.</p>
+<p>This function returns <a href="macros.html#TRUE">TRUE</a> for any indefinite type for which every
+definite subtype is an array type -- <a href="gvarianttype.html#G_VARIANT_TYPE_ARRAY">G_VARIANT_TYPE_ARRAY</a>, for
+example.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>type</em> is an array type</p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_key">
+		
+<h4 id="g_variant_type_key1">
+	<span><code>g_variant_type_key</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+g_variant_type_key (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * type)</pre>
+
+<p>Determines the key type of a dictionary entry type.</p>
+<p>This function may only be used with a dictionary entry type.  Other
+than the additional restriction, this call is equivalent to
+<a href="gvarianttype.html#g_variant_type_first">g_variant_type_first</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a dictionary entry <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the key type of the dictionary entry</p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Don't free data after the code is done"><span class="acronym">transfer: none</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_is_dict_entry">
+		
+<h4 id="g_variant_type_is_dict_entry1">
+	<span><code>g_variant_type_is_dict_entry</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_variant_type_is_dict_entry (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * type)</pre>
+
+<p>Determines if the given <em>type</em> is a dictionary entry type.  This is
+true if the type string for <em>type</em> starts with a '{'.</p>
+<p>This function returns <a href="macros.html#TRUE">TRUE</a> for any indefinite type for which every
+definite subtype is a dictionary entry type --
+<a href="gvarianttype.html#G_VARIANT_TYPE_DICT_ENTRY">G_VARIANT_TYPE_DICT_ENTRY</a>, for example.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>type</em> is a dictionary entry type</p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_copy">
+		
+<h4 id="g_variant_type_copy1">
+	<span><code>g_variant_type_copy</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+g_variant_type_copy (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * type)</pre>
+
+<p>Makes a copy of a <a href="gvarianttype.html#GVariantType">GVariantType</a>.  It is appropriate to call
+<a href="gvarianttype.html#g_variant_type_free">g_variant_type_free</a> on the return value.  <em>type</em> may not be <a href="macros.html#NULL">NULL</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		<a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_equal">
+		
+<h4 id="g_variant_type_equal1">
+	<span><code>g_variant_type_equal</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_variant_type_equal (gconstpointer type1,
+                      gconstpointer type2)</pre>
+
+<p>Compares <em>type1</em> and <em>type2</em> for equality.</p>
+<p>Only returns <a href="macros.html#TRUE">TRUE</a> if the types are exactly equal.  Even if one type
+is an indefinite type and the other is a subtype of it, <a href="macros.html#FALSE">FALSE</a> will
+be returned if they are not exactly equal.  If you want to check for
+subtypes, use <a href="gvarianttype.html#g_variant_type_is_subtype_of">g_variant_type_is_subtype_of</a>.</p>
+<p>The argument types of <em>type1</em> and <em>type2</em> are only gconstpointer to
+allow use with <a href="hash_tables.html#GHashTable">GHashTable</a> without function pointer casting.  For
+both arguments, a valid <a href="gvarianttype.html#GVariantType">GVariantType</a> must be provided.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type1:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> GVariantType]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type2:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> GVariantType]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>type1</em> and <em>type2</em> are exactly equal</p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_n_items">
+		
+<h4 id="g_variant_type_n_items1">
+	<span><code>g_variant_type_n_items</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gsize
+g_variant_type_n_items (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * type)</pre>
+
+<p>Determines the number of items contained in a tuple or
+dictionary entry type.</p>
+<p>This function may only be used with tuple or dictionary entry types,
+but must not be used with the generic tuple type
+<a href="gvarianttype.html#G_VARIANT_TYPE_TUPLE">G_VARIANT_TYPE_TUPLE</a>.</p>
+<p>In the case of a dictionary entry type, this function will always
+return 2.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a tuple or dictionary entry <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of items in <em>type</em></p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		gsize
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_is_variant">
+		
+<h4 id="g_variant_type_is_variant1">
+	<span><code>g_variant_type_is_variant</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_variant_type_is_variant (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * type)</pre>
+
+<p>Determines if the given <em>type</em> is the variant type.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>type</em> is the variant type</p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_is_maybe">
+		
+<h4 id="g_variant_type_is_maybe1">
+	<span><code>g_variant_type_is_maybe</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_variant_type_is_maybe (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * type)</pre>
+
+<p>Determines if the given <em>type</em> is a maybe type.  This is true if the
+type string for <em>type</em> starts with an 'm'.</p>
+<p>This function returns <a href="macros.html#TRUE">TRUE</a> for any indefinite type for which every
+definite subtype is a maybe type -- <a href="gvarianttype.html#G_VARIANT_TYPE_MAYBE">G_VARIANT_TYPE_MAYBE</a>, for
+example.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>type</em> is a maybe type</p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_first">
+		
+<h4 id="g_variant_type_first1">
+	<span><code>g_variant_type_first</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+g_variant_type_first (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * type)</pre>
+
+<p>Determines the first item type of a tuple or dictionary entry
+type.</p>
+<p>This function may only be used with tuple or dictionary entry types,
+but must not be used with the generic tuple type
+<a href="gvarianttype.html#G_VARIANT_TYPE_TUPLE">G_VARIANT_TYPE_TUPLE</a>.</p>
+<p>In the case of a dictionary entry type, this returns the type of
+the key.</p>
+<p><a href="macros.html#NULL">NULL</a> is returned in case of <em>type</em> being <a href="gvarianttype.html#G_VARIANT_TYPE_UNIT">G_VARIANT_TYPE_UNIT</a>.</p>
+<p>This call, together with <a href="gvarianttype.html#g_variant_type_next">g_variant_type_next</a> provides an iterator
+interface over tuple and dictionary entry types.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a tuple or dictionary entry <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the first item type of <em>type</em>, or <a href="macros.html#NULL">NULL</a></p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Don't free data after the code is done"><span class="acronym">transfer: none</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_hash">
+		
+<h4 id="g_variant_type_hash1">
+	<span><code>g_variant_type_hash</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint
+g_variant_type_hash (gconstpointer type)</pre>
+
+<p>Hashes <em>type</em>.</p>
+<p>The argument type of <em>type</em> is only gconstpointer to allow use with
+<a href="hash_tables.html#GHashTable">GHashTable</a> without function pointer casting.  A valid
+<a href="gvarianttype.html#GVariantType">GVariantType</a> must be provided.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> GVariantType]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the hash value</p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_element">
+		
+<h4 id="g_variant_type_element1">
+	<span><code>g_variant_type_element</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+g_variant_type_element (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * type)</pre>
+
+<p>Determines the element type of an array or maybe type.</p>
+<p>This function may only be used with array or maybe types.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type:</code></em></i>
+		</p>
+	</td>
+		<td><p>an array or maybe <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the element type of <em>type</em></p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Don't free data after the code is done"><span class="acronym">transfer: none</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_is_definite">
+		
+<h4 id="g_variant_type_is_definite1">
+	<span><code>g_variant_type_is_definite</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_variant_type_is_definite (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * type)</pre>
+
+<p>Determines if the given <em>type</em> is definite (ie: not indefinite).</p>
+<p>A type is definite if its type string does not contain any indefinite
+type characters ('*', '?', or 'r').</p>
+<p>A <a href="gvariant.html#GVariant">GVariant</a> instance may not have an indefinite type, so calling
+this function on the result of <a href="gvariant.html#g_variant_get_type">g_variant_get_type</a> will always
+result in <a href="macros.html#TRUE">TRUE</a> being returned.  Calling this function on an
+indefinite type like <a href="gvarianttype.html#G_VARIANT_TYPE_ARRAY">G_VARIANT_TYPE_ARRAY</a>, however, will result in
+<a href="macros.html#FALSE">FALSE</a> being returned.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>type</em> is definite</p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_is_basic">
+		
+<h4 id="g_variant_type_is_basic1">
+	<span><code>g_variant_type_is_basic</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_variant_type_is_basic (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * type)</pre>
+
+<p>Determines if the given <em>type</em> is a basic type.</p>
+<p>Basic types are booleans, bytes, integers, doubles, strings, object
+paths and signatures.</p>
+<p>Only a basic type may be used as the key of a dictionary entry.</p>
+<p>This function returns <a href="macros.html#FALSE">FALSE</a> for all indefinite types except
+<a href="gvarianttype.html#G_VARIANT_TYPE_BASIC">G_VARIANT_TYPE_BASIC</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>type</em> is a basic type</p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_next">
+		
+<h4 id="g_variant_type_next1">
+	<span><code>g_variant_type_next</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+g_variant_type_next (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * type)</pre>
+
+<p>Determines the next item type of a tuple or dictionary entry
+type.</p>
+<p><em>type</em> must be the result of a previous call to
+<a href="gvarianttype.html#g_variant_type_first">g_variant_type_first</a> or <a href="gvarianttype.html#g_variant_type_next">g_variant_type_next</a>.</p>
+<p>If called on the key type of a dictionary entry then this call
+returns the value type.  If called on the value type of a dictionary
+entry then this call returns <a href="macros.html#NULL">NULL</a>.</p>
+<p>For tuples, <a href="macros.html#NULL">NULL</a> is returned when <em>type</em> is the last item in a tuple.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a> from a previous call</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the next <a href="gvarianttype.html#GVariantType">GVariantType</a> after <em>type</em>, or <a href="macros.html#NULL">NULL</a></p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Don't free data after the code is done"><span class="acronym">transfer: none</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_dup_string">
+		
+<h4 id="g_variant_type_dup_string1">
+	<span><code>g_variant_type_dup_string</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gchar*
+g_variant_type_dup_string (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * type)</pre>
+
+<p>Returns a newly-allocated copy of the type string corresponding to
+<em>type</em>.  The returned string is nul-terminated.  It is appropriate to
+call <a href="memory.html#g_free">g_free</a> on the return value.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns21">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the corresponding type string</p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_peek_string">
+		
+<h4 id="g_variant_type_peek_string1">
+	<span><code>g_variant_type_peek_string</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+const gchar*
+g_variant_type_peek_string (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * type)</pre>
+
+<p>Returns the type string corresponding to the given <em>type</em>.  The
+result is not nul-terminated; in order to determine its length you
+must call <a href="gvarianttype.html#g_variant_type_get_string_length">g_variant_type_get_string_length</a>.</p>
+<p>To get a nul-terminated string, see <a href="gvarianttype.html#g_variant_type_dup_string">g_variant_type_dup_string</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns22">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the corresponding type string (not nul-terminated)</p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		const gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_is_container">
+		
+<h4 id="g_variant_type_is_container1">
+	<span><code>g_variant_type_is_container</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_variant_type_is_container (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * type)</pre>
+
+<p>Determines if the given <em>type</em> is a container type.</p>
+<p>Container types are any array, maybe, tuple, or dictionary
+entry types plus the variant type.</p>
+<p>This function returns <a href="macros.html#TRUE">TRUE</a> for any indefinite type for which every
+definite subtype is a container -- <a href="gvarianttype.html#G_VARIANT_TYPE_ARRAY">G_VARIANT_TYPE_ARRAY</a>, for
+example.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns23">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>type</em> is a container type</p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_free">
+		
+<h4 id="g_variant_type_free1">
+	<span><code>g_variant_type_free</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_variant_type_free (<a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * type)</pre>
+
+<p>Frees a <a href="gvarianttype.html#GVariantType">GVariantType</a> that was allocated with
+<a href="gvarianttype.html#g_variant_type_copy">g_variant_type_copy</a>, <a href="gvarianttype.html#g_variant_type_new">g_variant_type_new</a> or one of the container
+type constructor functions.</p>
+<p>In the case that <em>type</em> is <a href="macros.html#NULL">NULL</a>, this function does nothing.</p>
+<p>Since 2.24</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a>, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_is_tuple">
+		
+<h4 id="g_variant_type_is_tuple1">
+	<span><code>g_variant_type_is_tuple</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_variant_type_is_tuple (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * type)</pre>
+
+<p>Determines if the given <em>type</em> is a tuple type.  This is true if the
+type string for <em>type</em> starts with a '(' or if <em>type</em> is
+<a href="gvarianttype.html#G_VARIANT_TYPE_TUPLE">G_VARIANT_TYPE_TUPLE</a>.</p>
+<p>This function returns <a href="macros.html#TRUE">TRUE</a> for any indefinite type for which every
+definite subtype is a tuple type -- <a href="gvarianttype.html#G_VARIANT_TYPE_TUPLE">G_VARIANT_TYPE_TUPLE</a>, for
+example.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns24">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>type</em> is a tuple type</p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_value">
+		
+<h4 id="g_variant_type_value1">
+	<span><code>g_variant_type_value</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+g_variant_type_value (const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> * type)</pre>
+
+<p>Determines the value type of a dictionary entry type.</p>
+<p>This function may only be used with a dictionary entry type.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a dictionary entry <a href="gvarianttype.html#GVariantType">GVariantType</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns25">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the value type of the dictionary entry</p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		const <a title="GVariantType" href="gvarianttype.html#GVariantType">GVariantType</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Don't free data after the code is done"><span class="acronym">transfer: none</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_variant_type_string_is_valid">
+		
+<h3 id="g_variant_type_string_is_valid1">
+	<span><code>g_variant_type_string_is_valid</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_variant_type_string_is_valid (const gchar* type_string)</pre>
+
+<p>Checks if <em>type_string</em> is a valid GVariant type string.  This call is
+equivalent to calling <a href="gvarianttype.html#g_variant_type_string_scan">g_variant_type_string_scan</a> and confirming
+that the following character is a nul terminator.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type_string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to any string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns26">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>type_string</em> is exactly one valid type string</p>
+<p>Since 2.24</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.24;" id="g_variant_type_string_scan">
+		
+<h3 id="g_variant_type_string_scan1">
+	<span><code>g_variant_type_string_scan</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_variant_type_string_scan (const gchar* string,
+                            const gchar* limit,
+                            const gchar** endptr)</pre>
+
+<p>Scan for a single complete and valid GVariant type string in <em>string</em>.
+The memory pointed to by <em>limit</em> (or bytes beyond it) is never
+accessed.</p>
+<p>If a valid type string is found, <em>endptr</em> is updated to point to the
+first character past the end of the string that was found and <a href="macros.html#TRUE">TRUE</a>
+is returned.</p>
+<p>If there is no valid type string starting at <em>string</em>, or if the type
+string does not end before <em>limit</em> then <a href="macros.html#FALSE">FALSE</a> is returned.</p>
+<p>For the simple case of checking if a string is a valid type string,
+see <a href="gvarianttype.html#g_variant_type_string_is_valid">g_variant_type_string_is_valid</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters28">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to any string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>limit:</code></em></i>
+		</p>
+	</td>
+		<td><p>the end of <em>string</em>, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>endptr:</code></em></i>
+		</p>
+	</td>
+		<td><p>location to store the end pointer, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if a valid type string was found</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>endptr:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if a valid type string was found</p>
+
+	</td>
+	<td>
+		const gchar**
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.24
+		</p>
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Function_Macros">Function Macros</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE">
+		
+<h3 id="g_variant_type">
+	<span><code>G_VARIANT_TYPE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE(type_string)            ((const GVariantType *) (type_string))
+</pre>
+
+<p>Converts a string to a const <a href="gvarianttype.html#GVariantType">GVariantType</a>.  Depending on the
+current debugging level, this function may perform a runtime check
+to ensure that <em>string</em> is a valid GVariant type string.</p>
+<p>It is always a programmer error to use this macro with an invalid
+type string. If in doubt, use <a href="gvarianttype.html#g_variant_type_string_is_valid">g_variant_type_string_is_valid</a> to
+check if the string is valid.</p>
+<p>Since 2.24</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters29">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>type_string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a well-formed <a href="gvarianttype.html#GVariantType">GVariantType</a> type string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GVariantType">
+		
+<h3 id="struct-gvarianttype">
+		struct GVariantType
+	</h3>
+
+		<pre class="raw_code">
+struct GVariantType {
+};
+</pre>
+
+<p>A type in the GVariant type system.</p>
+<p>Two types may not be compared by value; use <a href="gvarianttype.html#g_variant_type_equal">g_variant_type_equal</a> or
+<a href="gvarianttype.html#g_variant_type_is_subtype_of">g_variant_type_is_subtype_of</a>.  May be copied using
+<a href="gvarianttype.html#g_variant_type_copy">g_variant_type_copy</a> and freed using <a href="gvarianttype.html#g_variant_type_free">g_variant_type_free</a>.</p>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_UINT64">
+		
+<h3 class="constant" id="g_variant_type_uint64">
+	G_VARIANT_TYPE_UINT64
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_UINT64               ((const GVariantType *) "t")
+</pre>
+
+<p>The type of an integer value that can range from 0 to
+18446744073709551616.  That's a really big number, but a Rubik's
+cube can have a bit more than twice as many possible positions.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_BYTE">
+		
+<h3 class="constant" id="g_variant_type_byte">
+	G_VARIANT_TYPE_BYTE
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_BYTE                 ((const GVariantType *) "y")
+</pre>
+
+<p>The type of an integer value that can range from 0 to 255.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_OBJECT_PATH_ARRAY">
+		
+<h3 class="constant" id="g_variant_type_object_path_array">
+	G_VARIANT_TYPE_OBJECT_PATH_ARRAY
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_OBJECT_PATH_ARRAY    ((const GVariantType *) "ao")
+</pre>
+
+<p>The type of an array of object paths.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_DICT_ENTRY">
+		
+<h3 class="constant" id="g_variant_type_dict_entry">
+	G_VARIANT_TYPE_DICT_ENTRY
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_DICT_ENTRY           ((const GVariantType *) "{?*}")
+</pre>
+
+<p>An indefinite type that is a supertype of every dictionary entry
+type.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_ANY">
+		
+<h3 class="constant" id="g_variant_type_any">
+	G_VARIANT_TYPE_ANY
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_ANY                  ((const GVariantType *) "*")
+</pre>
+
+<p>An indefinite type that is a supertype of every type (including
+itself).</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_UINT16">
+		
+<h3 class="constant" id="g_variant_type_uint16">
+	G_VARIANT_TYPE_UINT16
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_UINT16               ((const GVariantType *) "q")
+</pre>
+
+<p>The type of an integer value that can range from 0 to 65535.
+There were about this many people living in Toronto in the 1870s.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_MAYBE">
+		
+<h3 class="constant" id="g_variant_type_maybe">
+	G_VARIANT_TYPE_MAYBE
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_MAYBE                ((const GVariantType *) "m*")
+</pre>
+
+<p>An indefinite type that is a supertype of every maybe type.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_OBJECT_PATH">
+		
+<h3 class="constant" id="g_variant_type_object_path">
+	G_VARIANT_TYPE_OBJECT_PATH
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_OBJECT_PATH          ((const GVariantType *) "o")
+</pre>
+
+<p>The type of a D-Bus object reference.  These are strings of a
+specific format used to identify objects at a given destination on
+the bus.</p>
+<p>If you are not interacting with D-Bus, then there is no reason to make
+use of this type.  If you are, then the D-Bus specification contains a
+precise description of valid object paths.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_INT32">
+		
+<h3 class="constant" id="g_variant_type_int32">
+	G_VARIANT_TYPE_INT32
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_INT32                ((const GVariantType *) "i")
+</pre>
+
+<p>The type of an integer value that can range from -2147483648 to
+2147483647.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_BOOLEAN">
+		
+<h3 class="constant" id="g_variant_type_boolean">
+	G_VARIANT_TYPE_BOOLEAN
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_BOOLEAN              ((const GVariantType *) "b")
+</pre>
+
+<p>The type of a value that can be either <a href="macros.html#TRUE">TRUE</a> or <a href="macros.html#FALSE">FALSE</a>.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_STRING">
+		
+<h3 class="constant" id="g_variant_type_string">
+	G_VARIANT_TYPE_STRING
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_STRING               ((const GVariantType *) "s")
+</pre>
+
+<p>The type of a string.  "" is a string.  <a href="macros.html#NULL">NULL</a> is not a string.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_TUPLE">
+		
+<h3 class="constant" id="g_variant_type_tuple">
+	G_VARIANT_TYPE_TUPLE
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_TUPLE                ((const GVariantType *) "r")
+</pre>
+
+<p>An indefinite type that is a supertype of every tuple type,
+regardless of the number of items in the tuple.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="G_VARIANT_TYPE_VARDICT">
+		
+<h3 class="constant" id="g_variant_type_vardict">
+	G_VARIANT_TYPE_VARDICT
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_VARDICT              ((const GVariantType *) "a{sv}")
+</pre>
+
+<p>The type of a dictionary mapping strings to variants (the ubiquitous
+"a{sv}" type).</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_HANDLE">
+		
+<h3 class="constant" id="g_variant_type_handle">
+	G_VARIANT_TYPE_HANDLE
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_HANDLE               ((const GVariantType *) "h")
+</pre>
+
+<p>The type of a 32bit signed integer value, that by convention, is used
+as an index into an array of file descriptors that are sent alongside
+a D-Bus message.</p>
+<p>If you are not interacting with D-Bus, then there is no reason to make
+use of this type.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_BYTESTRING">
+		
+<h3 class="constant" id="g_variant_type_bytestring">
+	G_VARIANT_TYPE_BYTESTRING
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_BYTESTRING           ((const GVariantType *) "ay")
+</pre>
+
+<p>The type of an array of bytes.  This type is commonly used to pass
+around strings that may not be valid utf8.  In that case, the
+convention is that the nul terminator character should be included as
+the last character in the array.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_UINT32">
+		
+<h3 class="constant" id="g_variant_type_uint32">
+	G_VARIANT_TYPE_UINT32
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_UINT32               ((const GVariantType *) "u")
+</pre>
+
+<p>The type of an integer value that can range from 0 to 4294967295.
+That's one number for everyone who was around in the late 1970s.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_DICTIONARY">
+		
+<h3 class="constant" id="g_variant_type_dictionary">
+	G_VARIANT_TYPE_DICTIONARY
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_DICTIONARY           ((const GVariantType *) "a{?*}")
+</pre>
+
+<p>An indefinite type that is a supertype of every dictionary type --
+that is, any array type that has an element type equal to any
+dictionary entry type.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_INT64">
+		
+<h3 class="constant" id="g_variant_type_int64">
+	G_VARIANT_TYPE_INT64
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_INT64                ((const GVariantType *) "x")
+</pre>
+
+<p>The type of an integer value that can range from
+-9223372036854775808 to 9223372036854775807.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_SIGNATURE">
+		
+<h3 class="constant" id="g_variant_type_signature">
+	G_VARIANT_TYPE_SIGNATURE
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_SIGNATURE            ((const GVariantType *) "g")
+</pre>
+
+<p>The type of a D-Bus type signature.  These are strings of a specific
+format used as type signatures for D-Bus methods and messages.</p>
+<p>If you are not interacting with D-Bus, then there is no reason to make
+use of this type.  If you are, then the D-Bus specification contains a
+precise description of valid signature strings.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_INT16">
+		
+<h3 class="constant" id="g_variant_type_int16">
+	G_VARIANT_TYPE_INT16
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_INT16                ((const GVariantType *) "n")
+</pre>
+
+<p>The type of an integer value that can range from -32768 to 32767.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_UNIT">
+		
+<h3 class="constant" id="g_variant_type_unit">
+	G_VARIANT_TYPE_UNIT
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_UNIT                 ((const GVariantType *) "()")
+</pre>
+
+<p>The empty tuple type.  Has only one instance.  Known also as "triv"
+or "void".</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_VARIANT">
+		
+<h3 class="constant" id="g_variant_type_variant">
+	G_VARIANT_TYPE_VARIANT
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_VARIANT              ((const GVariantType *) "v")
+</pre>
+
+<p>The type of a box that contains any other value (including another
+variant).</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_ARRAY">
+		
+<h3 class="constant" id="g_variant_type_array">
+	G_VARIANT_TYPE_ARRAY
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_ARRAY                ((const GVariantType *) "a*")
+</pre>
+
+<p>An indefinite type that is a supertype of every array type.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_STRING_ARRAY">
+		
+<h3 class="constant" id="g_variant_type_string_array">
+	G_VARIANT_TYPE_STRING_ARRAY
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_STRING_ARRAY         ((const GVariantType *) "as")
+</pre>
+
+<p>The type of an array of strings.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_BASIC">
+		
+<h3 class="constant" id="g_variant_type_basic">
+	G_VARIANT_TYPE_BASIC
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_BASIC                ((const GVariantType *) "?")
+</pre>
+
+<p>An indefinite type that is a supertype of every basic (ie:
+non-container) type.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_DOUBLE">
+		
+<h3 class="constant" id="g_variant_type_double">
+	G_VARIANT_TYPE_DOUBLE
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_DOUBLE               ((const GVariantType *) "d")
+</pre>
+
+<p>The type of a double precision IEEE754 floating point number.
+These guys go up to about 1.80e308 (plus and minus) but miss out on
+some numbers in between.  In any case, that's far greater than the
+estimated number of fundamental particles in the observable
+universe.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VARIANT_TYPE_BYTESTRING_ARRAY">
+		
+<h3 class="constant" id="g_variant_type_bytestring_array">
+	G_VARIANT_TYPE_BYTESTRING_ARRAY
+</h3>
+
+		<pre class="raw_code">
+#define G_VARIANT_TYPE_BYTESTRING_ARRAY     ((const GVariantType *) "aay")
+</pre>
+
+<p>The type of an array of byte strings (an array of arrays of bytes).</p>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

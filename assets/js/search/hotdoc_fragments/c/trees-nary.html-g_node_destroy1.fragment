@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/trees-nary.html#g_node_destroy1", "fragment": "g_node_destroy \nRemoves root and its children from the tree freeing any memory allocated. \n"});

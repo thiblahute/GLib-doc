@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_builder_ref1", "fragment": "g_variant_builder_ref \nIncreases the reference count on builder. \nDon t call this on stack allocated GVariantBuilder instances or bad things will happen. \n"});

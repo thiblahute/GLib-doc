@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/strings.html#g_string_overwrite_len", "fragment": "GLib.String.prototype.overwrite_len \nOverwrites part of a string lengthening it if necessary. This function will work with embedded nuls. \n"});

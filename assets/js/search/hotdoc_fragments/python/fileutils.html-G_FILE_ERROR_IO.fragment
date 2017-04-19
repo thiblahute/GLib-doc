@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/fileutils.html#G_FILE_ERROR_IO", "fragment": "Input output error usually used for physical read or write errors. i.e. the disk or other physical device hardware is returning errors. \nGLib.FileError.perm \n"});

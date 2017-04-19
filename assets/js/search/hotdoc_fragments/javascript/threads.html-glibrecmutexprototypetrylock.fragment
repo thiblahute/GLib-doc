@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/threads.html#glibrecmutexprototypetrylock", "fragment": "GLib.RecMutex.prototype.trylock \nTries to lock rec_mutex. If rec_mutex is already locked by another thread it immediately returns false. Otherwise it locks rec_mutex and returns true. \n"});

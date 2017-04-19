@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvarianttype.html#glibvarianttypekey", "fragment": "GLib.VariantType.key \nDetermines the key type of a dictionary entry type. \nThis function may only be used with a dictionary entry type. Other than the additional restriction this call is equivalent to GLib.VariantType.first. \n"});

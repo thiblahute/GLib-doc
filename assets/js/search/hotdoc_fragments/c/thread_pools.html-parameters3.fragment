@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/thread_pools.html#parameters3", "fragment": "pool \na GThreadPool \nimmediate \nshould pool shut down immediately \nwait_ \nshould the function wait for all tasks to be finished \n"});

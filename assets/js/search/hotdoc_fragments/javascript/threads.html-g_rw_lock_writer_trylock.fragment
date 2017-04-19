@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/threads.html#g_rw_lock_writer_trylock", "fragment": "GLib.RWLock.prototype.writer_trylock \nTries to obtain a write lock on rw_lock. If any other thread holds a read or write lock on rw_lock it immediately returns false. Otherwise it locks rw_lock and returns true. \n"});

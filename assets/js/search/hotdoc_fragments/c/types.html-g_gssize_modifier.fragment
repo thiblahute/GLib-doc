@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/types.html#g_gssize_modifier", "fragment": "G_GSSIZE_MODIFIER \nThe platform dependent length modifier for conversion specifiers for scanning and printing values of type gssize. It is a string literal. \n"});

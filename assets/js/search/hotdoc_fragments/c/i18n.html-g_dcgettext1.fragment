@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/i18n.html#g_dcgettext1", "fragment": "g_dcgettext \nThis is a variant of g_dgettext that allows specifying a locale category instead of always using LC_MESSAGES. See g_dgettext for more information about how this functions differs from calling dcgettext directly. \n"});

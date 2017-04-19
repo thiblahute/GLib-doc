@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/bookmarkfile.html#g_bookmark_file_has_application", "fragment": "GLib.BookmarkFile.prototype.has_application \nChecks whether the bookmark for uri inside bookmark has been registered by application name. \nIn the event the URI cannot be found false is returned and error is set to GLib.BookmarkFileError.prototype.uri_not_found. \n"});

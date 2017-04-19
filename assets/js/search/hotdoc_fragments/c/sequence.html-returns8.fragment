@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/sequence.html#returns8", "fragment": "\na GSequenceIter pointing to the position in seq where data would have been inserted according to iter_cmp and cmp_data \nSince \n"});

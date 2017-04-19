@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/strings.html#g_string_prepend_len1", "fragment": "g_string_prepend_len \nPrepends len bytes of val to string. Because len is provided val may contain embedded nuls and need not be nul terminated. \nSince this function does not stop at nul bytes it is the caller s responsibility to ensure that val has at least len addressable bytes. \n"});

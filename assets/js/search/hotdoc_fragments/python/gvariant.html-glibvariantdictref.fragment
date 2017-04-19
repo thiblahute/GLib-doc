@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvariant.html#glibvariantdictref", "fragment": "GLib.VariantDict.ref \nIncreases the reference count on dict. \nDon t call this on stack allocated GLib.VariantDict instances or bad things will happen. \n"});

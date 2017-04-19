@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#parameters58", "fragment": "value \na GVariant \nformat_string \na valid GVariant format string \ncopy_only \nTRUE to ensure the format string makes deep copies \n"});

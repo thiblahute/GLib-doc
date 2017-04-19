@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/memory_slices.html#parameters5", "fragment": "block_size \nthe size of the blocks \nmem_chain \na pointer to the first block of the chain \nnext_offset \nthe offset of the next field in the blocks \nSince \n"});

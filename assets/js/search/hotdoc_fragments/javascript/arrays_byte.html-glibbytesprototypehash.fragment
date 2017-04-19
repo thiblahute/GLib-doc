@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/arrays_byte.html#glibbytesprototypehash", "fragment": "GLib.Bytes.prototype.hash \nCreates an integer hash code for the byte data in the GLib.Bytes. \nThis function can be passed to g_hash_table_new not introspectable as the key_hash_func parameter when using non NULL GLib.Bytes pointers as keys in a GLib.HashTable. \n"});

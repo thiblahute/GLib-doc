@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/quarks.html#glibprototypeintern_string", "fragment": "GLib.prototype.intern_string \nReturns a canonical representation for string. Interned strings can be compared for equality by comparing the pointers instead of using strcmp. \n"});

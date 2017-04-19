@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/memory.html#returns10", "fragment": "\nif True malloc and GLib.malloc can be mixed. \ndeprecated GLib always uses the system malloc so this function always returns TRUE. \n"});

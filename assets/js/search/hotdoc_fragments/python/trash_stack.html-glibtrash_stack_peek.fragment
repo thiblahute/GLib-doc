@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/trash_stack.html#glibtrash_stack_peek", "fragment": "GLib.trash_stack_peek \nReturns the element at the top of a GLib.TrashStack which may be None. \n"});

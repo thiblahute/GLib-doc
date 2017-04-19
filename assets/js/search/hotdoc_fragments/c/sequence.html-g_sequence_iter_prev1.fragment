@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/sequence.html#g_sequence_iter_prev1", "fragment": "g_sequence_iter_prev \nReturns an iterator pointing to the previous position before iter. If iter is the begin iterator the begin iterator is returned. \n"});

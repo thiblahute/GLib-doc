@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/queue.html#g_queue_clear1", "fragment": "g_queue_clear \nRemoves all the elements in queue. If queue elements contain dynamically allocated memory they should be freed first. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/keyfile.html#G_KEY_FILE_KEEP_TRANSLATIONS", "fragment": "Use this flag if you plan to write the possibly modified contents of the key file back to a file otherwise only the translations for the current language will be written back. \n"});

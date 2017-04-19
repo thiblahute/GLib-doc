@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/types.html#glibgintptr_modifier", "fragment": "GLib.GINTPTR_MODIFIER \nThe platform dependent length modifier for conversion specifiers for scanning and printing values of type gintptr or guintptr. It is a string literal. \n"});

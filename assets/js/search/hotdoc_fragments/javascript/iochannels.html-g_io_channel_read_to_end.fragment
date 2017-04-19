@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/iochannels.html#g_io_channel_read_to_end", "fragment": "GLib.IOChannel.prototype.read_to_end \nReads all the remaining data from the file. \n"});

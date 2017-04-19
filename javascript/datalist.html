@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GData</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="datalist.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="javascript">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="datalist.markdown">
+        <h1 id="gdata">GData</h1>
+    </div>
+        
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.34;" id="g_datalist_id_replace_data">
+		
+<h3 id="glibprototypedatalist_id_replace_data">
+	<span><code>GLib.prototype.datalist_id_replace_data</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.datalist_id_replace_data(datalist: <a title="GLib.Data" href="datalist.html#GData">GLib.Data</a>, key_id: <a title="GLib.Quark" href="quarks.html#GQuark">GLib.Quark</a>, oldval: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, newval: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, destroy: <a title="GLib.DestroyNotify" href="datasets.html#GDestroyNotify">GLib.DestroyNotify</a>, old_destroy: <a title="GLib.DestroyNotify" href="datasets.html#GDestroyNotify">GLib.DestroyNotify</a>): {
+    // javascript wrapper for 'g_datalist_id_replace_data'
+}</pre>
+
+<p>Compares the member that is associated with <em>key_id</em> in
+<em>datalist</em> to <em>oldval</em>, and if they are the same, replace
+<em>oldval</em> with <em>newval</em>.</p>
+<p>This is like a typical atomic compare-and-exchange
+operation, for a member of <em>datalist</em>.</p>
+<p>If the previous value was replaced then ownership of the
+old value (@oldval) is passed to the caller, including
+the registred destroy notify for it (passed out in <em>old_destroy</em>).
+Its up to the caller to free this as he wishes, which may
+or may not include using <em>old_destroy</em> as sometimes replacement
+should not destroy the object in the normal way.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>datalist:</code></em></i>
+		</p>
+	</td>
+		<td><p>location of a datalist</p>
+</td>
+<td>
+<a title="GLib.Data" href="datalist.html#GData">GLib.Data</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_id:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="quarks.html#GQuark">GLib.Quark</a> identifying a data element</p>
+</td>
+<td>
+<a title="GLib.Quark" href="quarks.html#GQuark">GLib.Quark</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>oldval:</code></em></i>
+		</p>
+	</td>
+		<td><p>the old value to compare against</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>newval:</code></em></i>
+		</p>
+	</td>
+		<td><p>the new value to replace it with</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>destroy:</code></em></i>
+		</p>
+	</td>
+		<td><p>destroy notify for the new value</p>
+</td>
+<td>
+<a title="GLib.DestroyNotify" href="datasets.html#GDestroyNotify">GLib.DestroyNotify</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>old_destroy:</code></em></i>
+		</p>
+	</td>
+		<td><p>destroy notify for the existing value</p>
+</td>
+<td>
+<a title="GLib.DestroyNotify" href="datasets.html#GDestroyNotify">GLib.DestroyNotify</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the existing value for <em>key_id</em> was replaced
+by <em>newval</em>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.34
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_datalist_set_flags">
+		
+<h3 id="glibprototypedatalist_set_flags">
+	<span><code>GLib.prototype.datalist_set_flags</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.datalist_set_flags(datalist: <a title="GLib.Data" href="datalist.html#GData">GLib.Data</a>, flags: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_datalist_set_flags'
+}</pre>
+
+<p>Turns on flag values for a data list. This function is used
+to keep a small number of boolean flags in an object with
+a data list without using any additional space. It is
+not generally useful except in circumstances where space
+is very tight. (It is used in the base GObject type, for
+example.)</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>datalist:</code></em></i>
+		</p>
+	</td>
+		<td><p>pointer to the location that holds a list</p>
+</td>
+<td>
+<a title="GLib.Data" href="datalist.html#GData">GLib.Data</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>the flags to turn on. The values of the flags are
+restricted by <a href="datalist.html#G_DATALIST_FLAGS_MASK">GLib.DATALIST_FLAGS_MASK</a> (currently
+3; giving two possible boolean flags).
+A value for <em>flags</em> that doesn't fit within the mask is
+an error.</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_datalist_clear">
+		
+<h3 id="glibprototypedatalist_clear">
+	<span><code>GLib.prototype.datalist_clear</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.datalist_clear(datalist: <a title="GLib.Data" href="datalist.html#GData">GLib.Data</a>): {
+    // javascript wrapper for 'g_datalist_clear'
+}</pre>
+
+<p>Frees all the data elements of the datalist.
+The data elements' destroy functions are called
+if they have been set.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>datalist:</code></em></i>
+		</p>
+	</td>
+		<td><p>a datalist.</p>
+</td>
+<td>
+<a title="GLib.Data" href="datalist.html#GData">GLib.Data</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_datalist_id_remove_no_notify">
+		
+<h3 id="glibprototypedatalist_id_remove_no_notify">
+	<span><code>GLib.prototype.datalist_id_remove_no_notify</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.datalist_id_remove_no_notify(datalist: <a title="GLib.Data" href="datalist.html#GData">GLib.Data</a>, key_id: <a title="GLib.Quark" href="quarks.html#GQuark">GLib.Quark</a>): {
+    // javascript wrapper for 'g_datalist_id_remove_no_notify'
+}</pre>
+
+<p>Removes an element, without calling its destroy notification
+function.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>datalist:</code></em></i>
+		</p>
+	</td>
+		<td><p>a datalist.</p>
+</td>
+<td>
+<a title="GLib.Data" href="datalist.html#GData">GLib.Data</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_id:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="quarks.html#GQuark">GLib.Quark</a> identifying a data element.</p>
+</td>
+<td>
+<a title="GLib.Quark" href="quarks.html#GQuark">GLib.Quark</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the data previously stored at <em>key_id</em>, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> if none.</p>
+
+	</td>
+	<td>
+		<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_datalist_id_set_data_full">
+		
+<h3 id="glibprototypedatalist_id_set_data_full">
+	<span><code>GLib.prototype.datalist_id_set_data_full</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.datalist_id_set_data_full(datalist: <a title="GLib.Data" href="datalist.html#GData">GLib.Data</a>, key_id: <a title="GLib.Quark" href="quarks.html#GQuark">GLib.Quark</a>, data: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, destroy_func: <a title="GLib.DestroyNotify" href="datasets.html#GDestroyNotify">GLib.DestroyNotify</a>): {
+    // javascript wrapper for 'g_datalist_id_set_data_full'
+}</pre>
+
+<p>Sets the data corresponding to the given <a href="quarks.html#GQuark">GLib.Quark</a> id, and the
+function to be called when the element is removed from the datalist.
+Any previous data with the same key is removed, and its destroy
+function is called.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>datalist:</code></em></i>
+		</p>
+	</td>
+		<td><p>a datalist.</p>
+</td>
+<td>
+<a title="GLib.Data" href="datalist.html#GData">GLib.Data</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_id:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="quarks.html#GQuark">GLib.Quark</a> to identify the data element.</p>
+</td>
+<td>
+<a title="GLib.Quark" href="quarks.html#GQuark">GLib.Quark</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data element or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> to remove any previous element
+corresponding to <em>key_id</em>.</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>destroy_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call when the data element is
+removed. This function will be called with the data
+element and can be used to free any memory allocated
+for it. If <em>data</em> is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>, then <em>destroy_func</em> must
+also be <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>.</p>
+</td>
+<td>
+<a title="GLib.DestroyNotify" href="datasets.html#GDestroyNotify">GLib.DestroyNotify</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_datalist_unset_flags">
+		
+<h3 id="glibprototypedatalist_unset_flags">
+	<span><code>GLib.prototype.datalist_unset_flags</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.datalist_unset_flags(datalist: <a title="GLib.Data" href="datalist.html#GData">GLib.Data</a>, flags: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_datalist_unset_flags'
+}</pre>
+
+<p>Turns off flag values for a data list. See <a href="datalist.html#g_datalist_unset_flags">GLib.prototype.datalist_unset_flags</a></p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>datalist:</code></em></i>
+		</p>
+	</td>
+		<td><p>pointer to the location that holds a list</p>
+</td>
+<td>
+<a title="GLib.Data" href="datalist.html#GData">GLib.Data</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>the flags to turn off. The values of the flags are
+restricted by <a href="datalist.html#G_DATALIST_FLAGS_MASK">GLib.DATALIST_FLAGS_MASK</a> (currently
+3: giving two possible boolean flags).
+A value for <em>flags</em> that doesn't fit within the mask is
+an error.</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_datalist_get_flags">
+		
+<h3 id="glibprototypedatalist_get_flags">
+	<span><code>GLib.prototype.datalist_get_flags</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.datalist_get_flags(datalist: <a title="GLib.Data" href="datalist.html#GData">GLib.Data</a>): {
+    // javascript wrapper for 'g_datalist_get_flags'
+}</pre>
+
+<p>Gets flags values packed in together with the datalist.
+See <a href="datalist.html#g_datalist_set_flags">GLib.prototype.datalist_set_flags</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>datalist:</code></em></i>
+		</p>
+	</td>
+		<td><p>pointer to the location that holds a list</p>
+</td>
+<td>
+<a title="GLib.Data" href="datalist.html#GData">GLib.Data</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the flags of the datalist</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_datalist_id_get_data">
+		
+<h3 id="glibprototypedatalist_id_get_data">
+	<span><code>GLib.prototype.datalist_id_get_data</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.datalist_id_get_data(datalist: <a title="GLib.Data" href="datalist.html#GData">GLib.Data</a>, key_id: <a title="GLib.Quark" href="quarks.html#GQuark">GLib.Quark</a>): {
+    // javascript wrapper for 'g_datalist_id_get_data'
+}</pre>
+
+<p>Retrieves the data element corresponding to <em>key_id</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>datalist:</code></em></i>
+		</p>
+	</td>
+		<td><p>a datalist.</p>
+</td>
+<td>
+<a title="GLib.Data" href="datalist.html#GData">GLib.Data</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_id:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="quarks.html#GQuark">GLib.Quark</a> identifying a data element.</p>
+</td>
+<td>
+<a title="GLib.Quark" href="quarks.html#GQuark">GLib.Quark</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the data element, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> if it is not found.</p>
+
+	</td>
+	<td>
+		<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_datalist_init">
+		
+<h3 id="glibprototypedatalist_init">
+	<span><code>GLib.prototype.datalist_init</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.datalist_init(datalist: <a title="GLib.Data" href="datalist.html#GData">GLib.Data</a>): {
+    // javascript wrapper for 'g_datalist_init'
+}</pre>
+
+<p>Resets the datalist to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>. It does not free any memory or call
+any destroy functions.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>datalist:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a pointer to a datalist.</p>
+</td>
+<td>
+<a title="GLib.Data" href="datalist.html#GData">GLib.Data</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_datalist_get_data">
+		
+<h3 id="glibprototypedatalist_get_data">
+	<span><code>GLib.prototype.datalist_get_data</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.datalist_get_data(datalist: <a title="GLib.Data" href="datalist.html#GData">GLib.Data</a>, key: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_datalist_get_data'
+}</pre>
+
+<p>Gets a data element, using its string identifier. This is slower than
+<a href="datalist.html#g_datalist_id_get_data">GLib.prototype.datalist_id_get_data</a> because it compares strings.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>datalist:</code></em></i>
+		</p>
+	</td>
+		<td><p>a datalist.</p>
+</td>
+<td>
+<a title="GLib.Data" href="datalist.html#GData">GLib.Data</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string identifying a data element.</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the data element, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> if it is not found.</p>
+
+	</td>
+	<td>
+		<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GData">
+		<h3 id="glibdata">
+	GLib.Data
+</h3>
+
+		<p>The <a href="datalist.html#GData">GLib.Data</a> struct is an opaque data structure to represent a
+[Keyed Data List][glib-Keyed-Data-Lists]. It should only be
+accessed via the following functions.</p>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_DATALIST_FLAGS_MASK">
+		
+<h3 class="constant" id="glibdatalist_flags_mask">
+	GLib.DATALIST_FLAGS_MASK
+</h3>
+
+		<p>A bitmask that restricts the possible flags passed to
+<a href="datalist.html#g_datalist_set_flags">GLib.prototype.datalist_set_flags</a>. Passing a flags value where
+flags &amp; ~G_DATALIST_FLAGS_MASK != 0 is an error.</p>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GDuplicateFunc">
+		
+<h3 id="glibduplicatefunc">
+	<span><code>GLib.DuplicateFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+(*GLib.DuplicateFunc) (<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>,
+                       <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</pre>
+
+<p>The type of functions that are used to 'duplicate' an object.
+What this means depends on the context, it could just be
+incrementing the reference count, if <em>data</em> is a ref-counted
+object.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data to duplicate</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data that was specified in <a href="../c/datalist.html#g_datalist_id_dup_data">g_datalist_id_dup_data (not introspectable)</a></p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a duplicate of data</p>
+
+	</td>
+	<td>
+		<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

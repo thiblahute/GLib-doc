@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date.html#g_date_clear1", "fragment": "g_date_clear \nInitializes one or more GDate structs to a sane but invalid state. The cleared dates will not represent an existing date but will not contain garbage. Useful to init a date declared on the stack. Validity can be tested with g_date_valid. \n"});

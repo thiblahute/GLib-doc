@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/scanner.html#GScannerConfig.scan_binary", "fragment": "guint scan_octal \nspecifies if octal numbers are recognized the default is TRUE \n"});

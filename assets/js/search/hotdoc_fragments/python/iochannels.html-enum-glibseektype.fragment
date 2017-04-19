@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#enum-glibseektype", "fragment": "enum GLib.SeekType \nAn enumeration specifying the base position for a GLib.IOChannel.seek_position operation. \n"});

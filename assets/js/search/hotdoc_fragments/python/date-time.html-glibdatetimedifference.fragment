@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date-time.html#glibdatetimedifference", "fragment": "GLib.DateTime.difference \nCalculates the difference in time between end and begin. The GLib.TimeSpan that is returned is effectively end begin ie positive if the first parameter is larger \n"});

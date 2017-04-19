@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hooks.html#glibhook_insert_before", "fragment": "GLib.hook_insert_before \nInserts a GLib.Hook into a GLib.HookList before a given GLib.Hook. \n"});

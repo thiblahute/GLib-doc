@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/keyfile.html#g_key_file_get_uint641", "fragment": "g_key_file_get_uint64 \nReturns the value associated with key under group_name as an unsigned bit integer. This is similar to g_key_file_get_integer but can return large positive results without truncation. \n"});

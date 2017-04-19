@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hash_tables.html#g_int64_hash1", "fragment": "g_int64_hash \nConverts a pointer to a gint64 to a hash value. \nIt can be passed to g_hash_table_new as the hash_func parameter when using non NULL pointers to bit integer values as keys in a GHashTable. \n"});

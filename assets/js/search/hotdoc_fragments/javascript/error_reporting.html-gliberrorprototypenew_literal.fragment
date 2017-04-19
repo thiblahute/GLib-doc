@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/error_reporting.html#gliberrorprototypenew_literal", "fragment": "GLib.Error.prototype.new_literal \nCreates a new GLib.Error unlike g_error_new not introspectable message is not a printf style format string. Use this function if message contains text you don t have control over that could include printf escape sequences. \n"});

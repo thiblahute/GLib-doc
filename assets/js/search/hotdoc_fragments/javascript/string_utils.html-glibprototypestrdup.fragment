@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/string_utils.html#glibprototypestrdup", "fragment": "GLib.prototype.strdup \nDuplicates a string. If str is null it returns null. The returned string should be freed with GLib.prototype.free when no longer needed. \n"});

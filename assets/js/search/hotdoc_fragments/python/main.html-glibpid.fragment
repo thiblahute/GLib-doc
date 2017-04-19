@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibpid", "fragment": "GLib.Pid \nA type which is used to hold a process identification. \nOn UNIX processes are identified by a process id an integer while Windows uses process handles which are pointers \nGPid is used in GLib only for descendant processes spawned with the g_spawn functions. \n"});

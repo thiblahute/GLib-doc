@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvarianttype.html#g_variant_type_is_array1", "fragment": "g_variant_type_is_array \nDetermines if the given type is an array type. This is true if the type string for type starts with an a \nThis function returns TRUE for any indefinite type for which every definite subtype is an array type G_VARIANT_TYPE_ARRAY for example. \n"});

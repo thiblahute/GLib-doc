@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date-time.html#returns40", "fragment": "\nthe newly created GLib.DateTime that should be freed with GLib.DateTime.prototype.unref. \nSince \n"});

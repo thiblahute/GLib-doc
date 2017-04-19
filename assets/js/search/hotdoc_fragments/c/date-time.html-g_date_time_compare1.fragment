@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date-time.html#g_date_time_compare1", "fragment": "g_date_time_compare \nA comparison function for GDateTime that is suitable as a GCompareFunc. Both GDateTime must be non NULL. \n"});

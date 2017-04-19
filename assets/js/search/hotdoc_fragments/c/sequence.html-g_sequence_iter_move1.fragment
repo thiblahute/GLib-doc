@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/sequence.html#g_sequence_iter_move1", "fragment": "g_sequence_iter_move \nReturns the GSequenceIter which is delta positions away from iter. If iter is closer than delta positions to the beginning of the sequence the begin iterator is returned. If iter is closer than delta positions to the end of the sequence the end iterator is returned. \n"});

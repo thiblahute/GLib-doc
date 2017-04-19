@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date-time.html#glibdatetimeadd_seconds", "fragment": "GLib.DateTime.add_seconds \nCreates a copy of datetime and adds the specified number of seconds. Add negative values to subtract seconds. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/string_utils.html#glibstrreverse", "fragment": "GLib.strreverse \nReverses all of the bytes in a string. For example g_strreverse abcdef will result in fedcba \nNote that GLib.strreverse doesn t work on UTF strings containing multibyte characters. For that purpose use GLib.utf8_strreverse. \n"});

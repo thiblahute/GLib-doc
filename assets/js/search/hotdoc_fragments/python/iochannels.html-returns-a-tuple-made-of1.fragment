@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#returns-a-tuple-made-of1", "fragment": "\nGLib.IOStatus.normal on success. This function never returns GLib.IOStatus.eof. \nstr_return \nGLib.IOStatus.normal on success. This function never returns GLib.IOStatus.eof. \nlength \nGLib.IOStatus.normal on success. This function never returns GLib.IOStatus.eof. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date-time.html#glibdatetimeadd_full", "fragment": "GLib.DateTime.add_full \nCreates a new GLib.DateTime adding the specified values to the current date and time in datetime. Add negative values to subtract. \n"});

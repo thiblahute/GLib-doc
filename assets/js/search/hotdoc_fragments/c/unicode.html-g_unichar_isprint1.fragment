@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/unicode.html#g_unichar_isprint1", "fragment": "g_unichar_isprint \nDetermines whether a character is printable. Unlike g_unichar_isgraph returns TRUE for spaces. Given some UTF text obtain a character value with g_utf8_get_char. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/scanner.html#attributes1", "fragment": "gchar cset_skip_characters \nspecifies which characters should be skipped by the scanner the default is the whitespace characters space tab carriage return and line feed \n"});

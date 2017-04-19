@@ -1,0 +1,3975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GNode</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="trees-nary.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="trees-nary.markdown">
+        <h1 id="gnode">GNode</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GNode</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GNodeMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_child_index">
+		
+<h4 id="g_node_child_index1">
+	<span><code>g_node_child_index</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint
+g_node_child_index (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * node,
+                    gpointer data)</pre>
+
+<p>Gets the position of the first child of a <a href="trees-nary.html#GNode">GNode</a>
+which contains the given data.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data to find</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the index of the child of <em>node</em> which contains
+<em>data</em>, or -1 if the data is not found</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_is_ancestor">
+		
+<h4 id="g_node_is_ancestor1">
+	<span><code>g_node_is_ancestor</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_node_is_ancestor (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * node,
+                    <a title="GNode" href="trees-nary.html#GNode">GNode</a> * descendant)</pre>
+
+<p>Returns <a href="macros.html#TRUE">TRUE</a> if <em>node</em> is an ancestor of <em>descendant</em>.
+This is true if node is the parent of <em>descendant</em>,
+or if node is the grandparent of <em>descendant</em> etc.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>descendant:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>node</em> is an ancestor of <em>descendant</em></p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_first_sibling">
+		
+<h4 id="g_node_first_sibling1">
+	<span><code>g_node_first_sibling</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+g_node_first_sibling (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * node)</pre>
+
+<p>Gets the first sibling of a <a href="trees-nary.html#GNode">GNode</a>.
+This could possibly be the node itself.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the first sibling of <em>node</em></p>
+
+	</td>
+	<td>
+		<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_nth_child">
+		
+<h4 id="g_node_nth_child1">
+	<span><code>g_node_nth_child</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+g_node_nth_child (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * node,
+                  guint n)</pre>
+
+<p>Gets a child of a <a href="trees-nary.html#GNode">GNode</a>, using the given index.
+The first child is at index 0. If the index is
+too big, <a href="macros.html#NULL">NULL</a> is returned.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n:</code></em></i>
+		</p>
+	</td>
+		<td><p>the index of the desired child</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the child of <em>node</em> at index <em>n</em></p>
+
+	</td>
+	<td>
+		<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_unlink">
+		
+<h4 id="g_node_unlink1">
+	<span><code>g_node_unlink</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_node_unlink (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * node)</pre>
+
+<p>Unlinks a <a href="trees-nary.html#GNode">GNode</a> from a tree, resulting in two separate trees.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="trees-nary.html#GNode">GNode</a> to unlink, which becomes the root of a new tree</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_n_children">
+		
+<h4 id="g_node_n_children1">
+	<span><code>g_node_n_children</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint
+g_node_n_children (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * node)</pre>
+
+<p>Gets the number of children of a <a href="trees-nary.html#GNode">GNode</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of children of <em>node</em></p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_children_foreach">
+		
+<h4 id="g_node_children_foreach1">
+	<span><code>g_node_children_foreach</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_node_children_foreach (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * node,
+                         <a title="GTraverseFlags" href="trees-nary.html#GTraverseFlags">GTraverseFlags</a> flags,
+                         <a title="GNodeForeachFunc" href="trees-nary.html#GNodeForeachFunc">GNodeForeachFunc</a> func,
+                         gpointer data)</pre>
+
+<p>Calls a function for each of the children of a <a href="trees-nary.html#GNode">GNode</a>.
+Note that it doesn't descend beneath the child nodes.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>which types of children are to be visited, one of
+<a href="trees-nary.html#G_TRAVERSE_ALL">G_TRAVERSE_ALL</a>, <a href="trees-nary.html#G_TRAVERSE_LEAVES">G_TRAVERSE_LEAVES</a> and <a href="trees-nary.html#G_TRAVERSE_NON_LEAVES">G_TRAVERSE_NON_LEAVES</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call for each visited node</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data to pass to the function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_depth">
+		
+<h4 id="g_node_depth1">
+	<span><code>g_node_depth</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint
+g_node_depth (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * node)</pre>
+
+<p>Gets the depth of a <a href="trees-nary.html#GNode">GNode</a>.</p>
+<p>If <em>node</em> is <a href="macros.html#NULL">NULL</a> the depth is 0. The root node has a depth of 1.
+For the children of the root node the depth is 2. And so on.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the depth of the <a href="trees-nary.html#GNode">GNode</a></p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_get_root">
+		
+<h4 id="g_node_get_root1">
+	<span><code>g_node_get_root</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+g_node_get_root (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * node)</pre>
+
+<p>Gets the root of a tree.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the root of the tree</p>
+
+	</td>
+	<td>
+		<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_reverse_children">
+		
+<h4 id="g_node_reverse_children1">
+	<span><code>g_node_reverse_children</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_node_reverse_children (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * node)</pre>
+
+<p>Reverses the order of the children of a <a href="trees-nary.html#GNode">GNode</a>.
+(It doesn't change the order of the grandchildren.)</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a>.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_find_child">
+		
+<h4 id="g_node_find_child1">
+	<span><code>g_node_find_child</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+g_node_find_child (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * node,
+                   <a title="GTraverseFlags" href="trees-nary.html#GTraverseFlags">GTraverseFlags</a> flags,
+                   gpointer data)</pre>
+
+<p>Finds the first child of a <a href="trees-nary.html#GNode">GNode</a> with the given data.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>which types of children are to be searched, one of
+<a href="trees-nary.html#G_TRAVERSE_ALL">G_TRAVERSE_ALL</a>, <a href="trees-nary.html#G_TRAVERSE_LEAVES">G_TRAVERSE_LEAVES</a> and <a href="trees-nary.html#G_TRAVERSE_NON_LEAVES">G_TRAVERSE_NON_LEAVES</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data to find</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the found child <a href="trees-nary.html#GNode">GNode</a>, or <a href="macros.html#NULL">NULL</a> if the data is not found</p>
+
+	</td>
+	<td>
+		<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_last_child">
+		
+<h4 id="g_node_last_child1">
+	<span><code>g_node_last_child</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+g_node_last_child (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * node)</pre>
+
+<p>Gets the last child of a <a href="trees-nary.html#GNode">GNode</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a> (must not be <a href="macros.html#NULL">NULL</a>)</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the last child of <em>node</em>, or <a href="macros.html#NULL">NULL</a> if <em>node</em> has no children</p>
+
+	</td>
+	<td>
+		<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_n_nodes">
+		
+<h4 id="g_node_n_nodes1">
+	<span><code>g_node_n_nodes</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint
+g_node_n_nodes (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * root,
+                <a title="GTraverseFlags" href="trees-nary.html#GTraverseFlags">GTraverseFlags</a> flags)</pre>
+
+<p>Gets the number of nodes in a tree.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>root:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>which types of children are to be counted, one of
+<a href="trees-nary.html#G_TRAVERSE_ALL">G_TRAVERSE_ALL</a>, <a href="trees-nary.html#G_TRAVERSE_LEAVES">G_TRAVERSE_LEAVES</a> and <a href="trees-nary.html#G_TRAVERSE_NON_LEAVES">G_TRAVERSE_NON_LEAVES</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of nodes in the tree</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_insert_before">
+		
+<h4 id="g_node_insert_before1">
+	<span><code>g_node_insert_before</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+g_node_insert_before (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * parent,
+                      <a title="GNode" href="trees-nary.html#GNode">GNode</a> * sibling,
+                      <a title="GNode" href="trees-nary.html#GNode">GNode</a> * node)</pre>
+
+<p>Inserts a <a href="trees-nary.html#GNode">GNode</a> beneath the parent before the given sibling.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>parent:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="trees-nary.html#GNode">GNode</a> to place <em>node</em> under</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>sibling:</code></em></i>
+		</p>
+	</td>
+		<td><p>the sibling <a href="trees-nary.html#GNode">GNode</a> to place <em>node</em> before.
+If sibling is <a href="macros.html#NULL">NULL</a>, the node is inserted as the last child of <em>parent</em>.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="trees-nary.html#GNode">GNode</a> to insert</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the inserted <a href="trees-nary.html#GNode">GNode</a></p>
+
+	</td>
+	<td>
+		<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_insert_after">
+		
+<h4 id="g_node_insert_after1">
+	<span><code>g_node_insert_after</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+g_node_insert_after (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * parent,
+                     <a title="GNode" href="trees-nary.html#GNode">GNode</a> * sibling,
+                     <a title="GNode" href="trees-nary.html#GNode">GNode</a> * node)</pre>
+
+<p>Inserts a <a href="trees-nary.html#GNode">GNode</a> beneath the parent after the given sibling.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>parent:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="trees-nary.html#GNode">GNode</a> to place <em>node</em> under</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>sibling:</code></em></i>
+		</p>
+	</td>
+		<td><p>the sibling <a href="trees-nary.html#GNode">GNode</a> to place <em>node</em> after.
+If sibling is <a href="macros.html#NULL">NULL</a>, the node is inserted as the first child of <em>parent</em>.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="trees-nary.html#GNode">GNode</a> to insert</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the inserted <a href="trees-nary.html#GNode">GNode</a></p>
+
+	</td>
+	<td>
+		<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_child_position">
+		
+<h4 id="g_node_child_position1">
+	<span><code>g_node_child_position</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint
+g_node_child_position (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * node,
+                       <a title="GNode" href="trees-nary.html#GNode">GNode</a> * child)</pre>
+
+<p>Gets the position of a <a href="trees-nary.html#GNode">GNode</a> with respect to its siblings.
+<em>child</em> must be a child of <em>node</em>. The first child is numbered 0,
+the second 1, and so on.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>child:</code></em></i>
+		</p>
+	</td>
+		<td><p>a child of <em>node</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the position of <em>child</em> with respect to its siblings</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_max_height">
+		
+<h4 id="g_node_max_height1">
+	<span><code>g_node_max_height</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint
+g_node_max_height (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * root)</pre>
+
+<p>Gets the maximum height of all branches beneath a <a href="trees-nary.html#GNode">GNode</a>.
+This is the maximum distance from the <a href="trees-nary.html#GNode">GNode</a> to all leaf nodes.</p>
+<p>If <em>root</em> is <a href="macros.html#NULL">NULL</a>, 0 is returned. If <em>root</em> has no children,
+1 is returned. If <em>root</em> has children, 2 is returned. And so on.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>root:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the maximum height of the tree beneath <em>root</em></p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_traverse">
+		
+<h4 id="g_node_traverse1">
+	<span><code>g_node_traverse</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_node_traverse (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * root,
+                 <a title="GTraverseType" href="trees-nary.html#GTraverseType">GTraverseType</a> order,
+                 <a title="GTraverseFlags" href="trees-nary.html#GTraverseFlags">GTraverseFlags</a> flags,
+                 gint max_depth,
+                 <a title="GNodeTraverseFunc" href="trees-nary.html#GNodeTraverseFunc">GNodeTraverseFunc</a> func,
+                 gpointer data)</pre>
+
+<p>Traverses a tree starting at the given root <a href="trees-nary.html#GNode">GNode</a>.
+It calls the given function for each node visited.
+The traversal can be halted at any point by returning <a href="macros.html#TRUE">TRUE</a> from <em>func</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>root:</code></em></i>
+		</p>
+	</td>
+		<td><p>the root <a href="trees-nary.html#GNode">GNode</a> of the tree to traverse</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>order:</code></em></i>
+		</p>
+	</td>
+		<td><p>the order in which nodes are visited - <a href="trees-nary.html#G_IN_ORDER">G_IN_ORDER</a>,
+<a href="trees-nary.html#G_PRE_ORDER">G_PRE_ORDER</a>, <a href="trees-nary.html#G_POST_ORDER">G_POST_ORDER</a>, or <a href="trees-nary.html#G_LEVEL_ORDER">G_LEVEL_ORDER</a>.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>which types of children are to be visited, one of
+<a href="trees-nary.html#G_TRAVERSE_ALL">G_TRAVERSE_ALL</a>, <a href="trees-nary.html#G_TRAVERSE_LEAVES">G_TRAVERSE_LEAVES</a> and <a href="trees-nary.html#G_TRAVERSE_NON_LEAVES">G_TRAVERSE_NON_LEAVES</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>max_depth:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum depth of the traversal. Nodes below this
+depth will not be visited. If max_depth is -1 all nodes in
+the tree are visited. If depth is 1, only the root is visited.
+If depth is 2, the root and its children are visited. And so on.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call for each visited <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data to pass to the function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_insert">
+		
+<h4 id="g_node_insert1">
+	<span><code>g_node_insert</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+g_node_insert (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * parent,
+               gint position,
+               <a title="GNode" href="trees-nary.html#GNode">GNode</a> * node)</pre>
+
+<p>Inserts a <a href="trees-nary.html#GNode">GNode</a> beneath the parent at the given position.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>parent:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="trees-nary.html#GNode">GNode</a> to place <em>node</em> under</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>position:</code></em></i>
+		</p>
+	</td>
+		<td><p>the position to place <em>node</em> at, with respect to its siblings
+If position is -1, <em>node</em> is inserted as the last child of <em>parent</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="trees-nary.html#GNode">GNode</a> to insert</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the inserted <a href="trees-nary.html#GNode">GNode</a></p>
+
+	</td>
+	<td>
+		<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_find">
+		
+<h4 id="g_node_find1">
+	<span><code>g_node_find</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+g_node_find (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * root,
+             <a title="GTraverseType" href="trees-nary.html#GTraverseType">GTraverseType</a> order,
+             <a title="GTraverseFlags" href="trees-nary.html#GTraverseFlags">GTraverseFlags</a> flags,
+             gpointer data)</pre>
+
+<p>Finds a <a href="trees-nary.html#GNode">GNode</a> in a tree.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>root:</code></em></i>
+		</p>
+	</td>
+		<td><p>the root <a href="trees-nary.html#GNode">GNode</a> of the tree to search</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>order:</code></em></i>
+		</p>
+	</td>
+		<td><p>the order in which nodes are visited - <a href="trees-nary.html#G_IN_ORDER">G_IN_ORDER</a>,
+<a href="trees-nary.html#G_PRE_ORDER">G_PRE_ORDER</a>, <a href="trees-nary.html#G_POST_ORDER">G_POST_ORDER</a>, or <a href="trees-nary.html#G_LEVEL_ORDER">G_LEVEL_ORDER</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>which types of children are to be searched, one of
+<a href="trees-nary.html#G_TRAVERSE_ALL">G_TRAVERSE_ALL</a>, <a href="trees-nary.html#G_TRAVERSE_LEAVES">G_TRAVERSE_LEAVES</a> and <a href="trees-nary.html#G_TRAVERSE_NON_LEAVES">G_TRAVERSE_NON_LEAVES</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data to find</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the found <a href="trees-nary.html#GNode">GNode</a>, or <a href="macros.html#NULL">NULL</a> if the data is not found</p>
+
+	</td>
+	<td>
+		<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_copy">
+		
+<h4 id="g_node_copy1">
+	<span><code>g_node_copy</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+g_node_copy (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * node)</pre>
+
+<p>Recursively copies a <a href="trees-nary.html#GNode">GNode</a> (but does not deep-copy the data inside the
+nodes, see <a href="trees-nary.html#g_node_copy_deep">g_node_copy_deep</a> if you need that).</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="trees-nary.html#GNode">GNode</a> containing the same data pointers</p>
+
+	</td>
+	<td>
+		<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_prepend">
+		
+<h4 id="g_node_prepend1">
+	<span><code>g_node_prepend</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+g_node_prepend (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * parent,
+                <a title="GNode" href="trees-nary.html#GNode">GNode</a> * node)</pre>
+
+<p>Inserts a <a href="trees-nary.html#GNode">GNode</a> as the first child of the given parent.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>parent:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="trees-nary.html#GNode">GNode</a> to place the new <a href="trees-nary.html#GNode">GNode</a> under</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="trees-nary.html#GNode">GNode</a> to insert</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the inserted <a href="trees-nary.html#GNode">GNode</a></p>
+
+	</td>
+	<td>
+		<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_destroy">
+		
+<h4 id="g_node_destroy1">
+	<span><code>g_node_destroy</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_node_destroy (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * root)</pre>
+
+<p>Removes <em>root</em> and its children from the tree, freeing any memory
+allocated.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>root:</code></em></i>
+		</p>
+	</td>
+		<td><p>the root of the tree/subtree to destroy</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_node_copy_deep">
+		
+<h4 id="g_node_copy_deep1">
+	<span><code>g_node_copy_deep</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+g_node_copy_deep (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * node,
+                  <a title="GCopyFunc" href="trees-nary.html#GCopyFunc">GCopyFunc</a> copy_func,
+                  gpointer data)</pre>
+
+<p>Recursively copies a <a href="trees-nary.html#GNode">GNode</a> and its data.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>copy_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function which is called to copy the data inside each node,
+or <a href="macros.html#NULL">NULL</a> to use the original data.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data to pass to <em>copy_func</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="trees-nary.html#GNode">GNode</a> containing copies of the data in <em>node</em>.</p>
+
+	</td>
+	<td>
+		<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_last_sibling">
+		
+<h4 id="g_node_last_sibling1">
+	<span><code>g_node_last_sibling</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+g_node_last_sibling (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * node)</pre>
+
+<p>Gets the last sibling of a <a href="trees-nary.html#GNode">GNode</a>.
+This could possibly be the node itself.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the last sibling of <em>node</em></p>
+
+	</td>
+	<td>
+		<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GNodeFunctions">Functions</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_new">
+		
+<h4 id="g_node_new1">
+	<span><code>g_node_new</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+g_node_new (gpointer data)</pre>
+
+<p>Creates a new <a href="trees-nary.html#GNode">GNode</a> containing the given data.
+Used to create the first node in a tree.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data of the new node</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="trees-nary.html#GNode">GNode</a></p>
+
+	</td>
+	<td>
+		<a title="GNode" href="trees-nary.html#GNode">GNode</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Function_Macros">Function Macros</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_insert_data_before">
+		
+<h3 id="g_node_insert_data_before1">
+	<span><code>g_node_insert_data_before</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_node_insert_data_before(parent, sibling, data)	\
+     g_node_insert_before ((parent), (sibling), g_node_new (data))
+</pre>
+
+<p>Inserts a new <a href="trees-nary.html#GNode">GNode</a> before the given sibling.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>parent:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="trees-nary.html#GNode">GNode</a> to place the new <a href="trees-nary.html#GNode">GNode</a> under</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>sibling:</code></em></i>
+		</p>
+	</td>
+		<td><p>the sibling <a href="trees-nary.html#GNode">GNode</a> to place the new <a href="trees-nary.html#GNode">GNode</a> before</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data for the new <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns21">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new <a href="trees-nary.html#GNode">GNode</a></p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_first_child">
+		
+<h3 id="g_node_first_child1">
+	<span><code>g_node_first_child</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_node_first_child(node)	((node) ? \
+					 ((GNode*) (node))-&gt;children : NULL)
+</pre>
+
+<p>Gets the first child of a <a href="trees-nary.html#GNode">GNode</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns22">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the first child of <em>node</em>, or <a href="macros.html#NULL">NULL</a> if <em>node</em> is <a href="macros.html#NULL">NULL</a>
+or has no children</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_NODE_IS_LEAF">
+		
+<h3 id="g_node_is_leaf">
+	<span><code>G_NODE_IS_LEAF</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_NODE_IS_LEAF(node)	(((GNode*) (node))-&gt;children == NULL)
+</pre>
+
+<p>Returns <a href="macros.html#TRUE">TRUE</a> if a <a href="trees-nary.html#GNode">GNode</a> is a leaf node.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters28">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns23">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the <a href="trees-nary.html#GNode">GNode</a> is a leaf node
+(i.e. it has no children)</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_prev_sibling">
+		
+<h3 id="g_node_prev_sibling1">
+	<span><code>g_node_prev_sibling</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_node_prev_sibling(node)	((node) ? \
+					 ((GNode*) (node))-&gt;prev : NULL)
+</pre>
+
+<p>Gets the previous sibling of a <a href="trees-nary.html#GNode">GNode</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters29">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns24">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the previous sibling of <em>node</em>, or <a href="macros.html#NULL">NULL</a> if <em>node</em> is the first
+node or <a href="macros.html#NULL">NULL</a></p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_prepend_data">
+		
+<h3 id="g_node_prepend_data1">
+	<span><code>g_node_prepend_data</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_node_prepend_data(parent, data)			\
+     g_node_prepend ((parent), g_node_new (data))
+</pre>
+
+<p>Inserts a new <a href="trees-nary.html#GNode">GNode</a> as the first child of the given parent.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters30">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>parent:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="trees-nary.html#GNode">GNode</a> to place the new <a href="trees-nary.html#GNode">GNode</a> under</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data for the new <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns25">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new <a href="trees-nary.html#GNode">GNode</a></p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_insert_data_after">
+		
+<h3 id="g_node_insert_data_after1">
+	<span><code>g_node_insert_data_after</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_node_insert_data_after(parent, sibling, data)	\
+     g_node_insert_after ((parent), (sibling), g_node_new (data))
+</pre>
+
+<p>Inserts a new <a href="trees-nary.html#GNode">GNode</a> after the given sibling.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters31">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>parent:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="trees-nary.html#GNode">GNode</a> to place the new <a href="trees-nary.html#GNode">GNode</a> under</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>sibling:</code></em></i>
+		</p>
+	</td>
+		<td><p>the sibling <a href="trees-nary.html#GNode">GNode</a> to place the new <a href="trees-nary.html#GNode">GNode</a> after</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data for the new <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns26">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new <a href="trees-nary.html#GNode">GNode</a></p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_append">
+		
+<h3 id="g_node_append1">
+	<span><code>g_node_append</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_node_append(parent, node)				\
+     g_node_insert_before ((parent), NULL, (node))
+</pre>
+
+<p>Inserts a <a href="trees-nary.html#GNode">GNode</a> as the last child of the given parent.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters32">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>parent:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="trees-nary.html#GNode">GNode</a> to place the new <a href="trees-nary.html#GNode">GNode</a> under</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="trees-nary.html#GNode">GNode</a> to insert</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns27">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the inserted <a href="trees-nary.html#GNode">GNode</a></p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_append_data">
+		
+<h3 id="g_node_append_data1">
+	<span><code>g_node_append_data</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_node_append_data(parent, data)			\
+     g_node_insert_before ((parent), NULL, g_node_new (data))
+</pre>
+
+<p>Inserts a new <a href="trees-nary.html#GNode">GNode</a> as the last child of the given parent.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters33">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>parent:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="trees-nary.html#GNode">GNode</a> to place the new <a href="trees-nary.html#GNode">GNode</a> under</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data for the new <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns28">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new <a href="trees-nary.html#GNode">GNode</a></p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_insert_data">
+		
+<h3 id="g_node_insert_data1">
+	<span><code>g_node_insert_data</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_node_insert_data(parent, position, data)		\
+     g_node_insert ((parent), (position), g_node_new (data))
+</pre>
+
+<p>Inserts a new <a href="trees-nary.html#GNode">GNode</a> at the given position.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters34">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>parent:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="trees-nary.html#GNode">GNode</a> to place the new <a href="trees-nary.html#GNode">GNode</a> under</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>position:</code></em></i>
+		</p>
+	</td>
+		<td><p>the position to place the new <a href="trees-nary.html#GNode">GNode</a> at. If position is -1,
+the new <a href="trees-nary.html#GNode">GNode</a> is inserted as the last child of <em>parent</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data for the new <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns29">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new <a href="trees-nary.html#GNode">GNode</a></p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_NODE_IS_ROOT">
+		
+<h3 id="g_node_is_root">
+	<span><code>G_NODE_IS_ROOT</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_NODE_IS_ROOT(node)	(((GNode*) (node))-&gt;parent == NULL &amp;&amp; \
+				 ((GNode*) (node))-&gt;prev == NULL &amp;&amp; \
+				 ((GNode*) (node))-&gt;next == NULL)
+</pre>
+
+<p>Returns <a href="macros.html#TRUE">TRUE</a> if a <a href="trees-nary.html#GNode">GNode</a> is the root of a tree.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters35">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns30">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the <a href="trees-nary.html#GNode">GNode</a> is the root of a tree
+(i.e. it has no parent or siblings)</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_next_sibling">
+		
+<h3 id="g_node_next_sibling1">
+	<span><code>g_node_next_sibling</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_node_next_sibling(node)	((node) ? \
+					 ((GNode*) (node))-&gt;next : NULL)
+</pre>
+
+<p>Gets the next sibling of a <a href="trees-nary.html#GNode">GNode</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters36">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns31">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the next sibling of <em>node</em>, or <a href="macros.html#NULL">NULL</a> if <em>node</em> is the last node
+or <a href="macros.html#NULL">NULL</a></p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GNode">
+		
+<h3 id="struct-gnode">
+		struct GNode
+	</h3>
+
+		<pre class="raw_code">
+struct GNode {
+    gpointer data;
+    GNode* next;
+    GNode* prev;
+    GNode* parent;
+    GNode* children;
+};
+</pre>
+
+<p>The <a href="trees-nary.html#GNode">GNode</a> struct represents one node in a [n-ary tree][glib-N-ary-Trees].</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="fields">Fields</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GNode.data">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>data</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>contains the actual data of the node.</p>
+</td>
+</tr>
+
+						<tr id="GNode.next">
+		<td>
+		<p>
+		<i><em><code><a title="GNode" href="trees-nary.html#GNode">GNode</a> * <em><code>next</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>points to the node's next sibling (a sibling is another
+<a href="trees-nary.html#GNode">GNode</a> with the same parent).</p>
+</td>
+</tr>
+
+						<tr id="GNode.prev">
+		<td>
+		<p>
+		<i><em><code><a title="GNode" href="trees-nary.html#GNode">GNode</a> * <em><code>prev</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>points to the node's previous sibling.</p>
+</td>
+</tr>
+
+						<tr id="GNode.parent">
+		<td>
+		<p>
+		<i><em><code><a title="GNode" href="trees-nary.html#GNode">GNode</a> * <em><code>parent</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>points to the parent of the <a href="trees-nary.html#GNode">GNode</a>, or is <a href="macros.html#NULL">NULL</a> if the
+<a href="trees-nary.html#GNode">GNode</a> is the root of the tree.</p>
+</td>
+</tr>
+
+						<tr id="GNode.children">
+		<td>
+		<p>
+		<i><em><code><a title="GNode" href="trees-nary.html#GNode">GNode</a> * <em><code>children</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>points to the first child of the <a href="trees-nary.html#GNode">GNode</a>.  The other
+children are accessed by using the <em>next</em> pointer of each
+child.</p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GTraverseType">
+		
+<h3 id="enum-gtraversetype">
+		enum GTraverseType
+	</h3>
+
+		<p>Specifies the type of traveral performed by <a href="trees-binary.html#g_tree_traverse">g_tree_traverse</a>,
+<a href="trees-nary.html#g_node_traverse">g_node_traverse</a> and <a href="trees-nary.html#g_node_find">g_node_find</a>. The different orders are
+illustrated here:</p>
+<ul>
+<li>In order: A, B, C, D, E, F, G, H, I
+<img src="Sorted_binary_tree_inorder.svg" alt=""></li>
+<li>Pre order: F, B, A, D, C, E, G, I, H
+<img src="Sorted_binary_tree_preorder.svg" alt=""></li>
+<li>Post order: A, C, E, D, B, H, I, G, F
+<img src="Sorted_binary_tree_postorder.svg" alt=""></li>
+<li>Level order: F, B, G, A, D, I, C, E, H
+<img src="Sorted_binary_tree_breadth-first_traversal.svg" alt=""></li>
+</ul>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_IN_ORDER"></a>
+		G_IN_ORDER
+		</p>
+	</td>
+	<td><p>vists a node's left child first, then the node itself,
+then its right child. This is the one to use if you
+want the output sorted according to the compare
+function.</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_PRE_ORDER"></a>
+		G_PRE_ORDER
+		</p>
+	</td>
+	<td><p>visits a node, then its children.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_POST_ORDER"></a>
+		G_POST_ORDER
+		</p>
+	</td>
+	<td><p>visits the node's children, then the node itself.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_LEVEL_ORDER"></a>
+		G_LEVEL_ORDER
+		</p>
+	</td>
+	<td><p>is not implemented for
+[balanced binary trees][glib-Balanced-Binary-Trees].
+For [n-ary trees][glib-N-ary-Trees], it
+vists the root node first, then its children, then
+its grandchildren, and so on. Note that this is less
+efficient than the other orders.</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GTraverseFlags">
+		
+<h3 id="enum-gtraverseflags">
+		enum GTraverseFlags
+	</h3>
+
+		<p>Specifies which nodes are visited during several of the tree
+functions, including <a href="trees-nary.html#g_node_traverse">g_node_traverse</a> and <a href="trees-nary.html#g_node_find">g_node_find</a>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members1">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_TRAVERSE_LEAVES"></a>
+		G_TRAVERSE_LEAVES
+		</p>
+	</td>
+	<td><p>only leaf nodes should be visited. This name has
+been introduced in 2.6, for older version use
+<a href="trees-nary.html#G_TRAVERSE_LEAFS">G_TRAVERSE_LEAFS</a>.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TRAVERSE_NON_LEAVES"></a>
+		G_TRAVERSE_NON_LEAVES
+		</p>
+	</td>
+	<td><p>only non-leaf nodes should be visited. This
+name has been introduced in 2.6, for older
+version use <a href="trees-nary.html#G_TRAVERSE_NON_LEAFS">G_TRAVERSE_NON_LEAFS</a>.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TRAVERSE_ALL"></a>
+		G_TRAVERSE_ALL
+		</p>
+	</td>
+	<td><p>all nodes should be visited.</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TRAVERSE_MASK"></a>
+		G_TRAVERSE_MASK
+		</p>
+	</td>
+	<td><p>a mask of all traverse flags.</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TRAVERSE_LEAFS"></a>
+		G_TRAVERSE_LEAFS
+		</p>
+	</td>
+	<td><p>identical to <a href="trees-nary.html#G_TRAVERSE_LEAVES">G_TRAVERSE_LEAVES</a>.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TRAVERSE_NON_LEAFS"></a>
+		G_TRAVERSE_NON_LEAFS
+		</p>
+	</td>
+	<td><p>identical to <a href="trees-nary.html#G_TRAVERSE_NON_LEAVES">G_TRAVERSE_NON_LEAVES</a>.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GNodeTraverseFunc">
+		
+<h3 id="gnodetraversefunc">
+	<span><code>GNodeTraverseFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+(*GNodeTraverseFunc) (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * node,
+                      gpointer data)</pre>
+
+<p>Specifies the type of function passed to <a href="trees-nary.html#g_node_traverse">g_node_traverse</a>. The
+function is called with each of the nodes visited, together with the
+user data passed to <a href="trees-nary.html#g_node_traverse">g_node_traverse</a>. If the function returns
+<a href="macros.html#TRUE">TRUE</a>, then the traversal is stopped.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters37">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a>.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="trees-nary.html#g_node_traverse">g_node_traverse</a>.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns32">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> to stop the traversal.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="GCopyFunc">
+		
+<h3 id="gcopyfunc">
+	<span><code>GCopyFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gpointer
+(*GCopyFunc) (gconstpointer src,
+              gpointer data)</pre>
+
+<p>A function of this signature is used to copy the node data
+when doing a deep-copy of a tree.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters38">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>src:</code></em></i>
+		</p>
+	</td>
+		<td><p>A pointer to the data which should be copied</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>Additional data</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns33">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A pointer to the copy</p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GNodeForeachFunc">
+		
+<h3 id="gnodeforeachfunc">
+	<span><code>GNodeForeachFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+(*GNodeForeachFunc) (<a title="GNode" href="trees-nary.html#GNode">GNode</a> * node,
+                     gpointer data)</pre>
+
+<p>Specifies the type of function passed to <a href="trees-nary.html#g_node_children_foreach">g_node_children_foreach</a>.
+The function is called with each child node, together with the user
+data passed to <a href="trees-nary.html#g_node_children_foreach">g_node_children_foreach</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters39">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GNode</a>.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="trees-nary.html#g_node_children_foreach">g_node_children_foreach</a>.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns34">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

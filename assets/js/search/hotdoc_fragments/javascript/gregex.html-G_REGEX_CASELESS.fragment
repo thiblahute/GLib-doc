@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gregex.html#G_REGEX_CASELESS", "fragment": "Letters in the pattern match both upper and lowercase letters. This option can be changed within a pattern by a i option setting. \nGLib.RegexCompileFlags.prototype.multiline \n"});

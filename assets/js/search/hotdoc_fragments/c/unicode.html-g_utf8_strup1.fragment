@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/unicode.html#g_utf8_strup1", "fragment": "g_utf8_strup \nConverts all Unicode characters in the string that have a case to uppercase. The exact manner that this is done depends on the current locale and may result in the number of characters in the string increasing. For instance the German ess zet will be changed to SS. \n"});

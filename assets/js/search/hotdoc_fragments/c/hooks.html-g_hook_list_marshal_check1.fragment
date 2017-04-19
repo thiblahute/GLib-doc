@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hooks.html#g_hook_list_marshal_check1", "fragment": "g_hook_list_marshal_check \nCalls a function on each valid GHook and destroys it if the function returns FALSE. \n"});

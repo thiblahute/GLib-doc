@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#g_rw_lock_writer_trylock1", "fragment": "g_rw_lock_writer_trylock \nTries to obtain a write lock on rw_lock. If any other thread holds a read or write lock on rw_lock it immediately returns FALSE. Otherwise it locks rw_lock and returns TRUE. \n"});

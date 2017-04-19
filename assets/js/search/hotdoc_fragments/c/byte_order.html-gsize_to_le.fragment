@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/byte_order.html#gsize_to_le", "fragment": "GSIZE_TO_LE \nConverts a gsize value from host byte order to little endian. \n"});

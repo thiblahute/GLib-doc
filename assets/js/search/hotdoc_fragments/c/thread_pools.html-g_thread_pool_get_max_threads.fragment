@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/thread_pools.html#g_thread_pool_get_max_threads", "fragment": "g_thread_pool_get_max_threads \nReturns the maximal number of threads for pool. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/keyfile.html#glibkeyfileprototypeget_int64", "fragment": "GLib.KeyFile.prototype.get_int64 \nReturns the value associated with key under group_name as a signed bit integer. This is similar to GLib.KeyFile.prototype.get_integer but can return bit results without truncation. \n"});

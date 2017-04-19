@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/arrays_byte.html#g_bytes_new_from_bytes", "fragment": "GLib.Bytes.prototype.new_from_bytes \nCreates a GLib.Bytes which is a subsection of another GLib.Bytes. The offset length may not be longer than the size of bytes. \nA reference to bytes will be held by the newly created GLib.Bytes until the byte data is no longer needed. \n"});

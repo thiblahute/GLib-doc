@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/quarks.html#returns5", "fragment": "\nthe GLib.Quark associated with the string or if string is None or there is no GLib.Quark associated with it \n"});

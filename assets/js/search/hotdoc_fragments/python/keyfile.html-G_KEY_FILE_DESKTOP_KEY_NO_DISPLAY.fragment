@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/keyfile.html#G_KEY_FILE_DESKTOP_KEY_NO_DISPLAY", "fragment": "GLib.KEY_FILE_DESKTOP_KEY_NO_DISPLAY \nA key under GLib.KEY_FILE_DESKTOP_GROUP whose value is a boolean stating whether the desktop entry should be shown in menus. \n"});

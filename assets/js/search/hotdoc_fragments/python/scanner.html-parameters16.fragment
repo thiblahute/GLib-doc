@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/scanner.html#parameters16", "fragment": "scanner \na GLib.Scanner \nmessage \nthe message \nerror \nTrue if the message signals an error False if it signals a warning. \n"});

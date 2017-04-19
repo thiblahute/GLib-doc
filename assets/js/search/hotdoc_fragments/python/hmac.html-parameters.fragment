@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hmac.html#parameters", "fragment": "hmac \na GLib.Hmac \ndata \nbuffer used to compute the checksum \nlength \nsize of the buffer or if it is a nul terminated string \nSince \n"});

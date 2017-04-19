@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_utils.html#g_printf_string_upper_bound1", "fragment": "g_printf_string_upper_bound \nCalculates the maximum space needed to store the output of the sprintf function. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvarianttype.html#glibvarianttypefree", "fragment": "GLib.VariantType.free \nFrees a GLib.VariantType that was allocated with GLib.VariantType.copy GLib.VariantType.new or one of the container type constructor functions. \nIn the case that type is None this function does nothing. \nSince \n"});

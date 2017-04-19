@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/trees-nary.html#g_node_max_height1", "fragment": "g_node_max_height \nGets the maximum height of all branches beneath a GNode. This is the maximum distance from the GNode to all leaf nodes. \nIf root is NULL is returned. If root has no children is returned. If root has children is returned. And so on. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/trees-nary.html#parameters6", "fragment": "node \na GNode \nflags \nwhich types of children are to be visited one of G_TRAVERSE_ALL G_TRAVERSE_LEAVES and G_TRAVERSE_NON_LEAVES \nfunc \nthe function to call for each visited node \ndata \nuser data to pass to the function \n"});

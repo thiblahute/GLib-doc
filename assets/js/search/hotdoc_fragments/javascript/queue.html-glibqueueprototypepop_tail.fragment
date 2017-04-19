@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/queue.html#glibqueueprototypepop_tail", "fragment": "GLib.Queue.prototype.pop_tail \nRemoves the last element of the queue and returns its data. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/markup.html#G_MARKUP_COLLECT_TRISTATE", "fragment": "as with G_MARKUP_COLLECT_BOOLEAN but in the case of a missing attribute a value is set that compares equal to neither FALSE nor TRUE G_MARKUP_COLLECT_OPTIONAL is implied \nG_MARKUP_COLLECT_OPTIONAL \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/scanner.html#GScannerConfig.scan_hex", "fragment": "guint scan_hex_dollar \nspecifies if is recognized as a prefix for hexadecimal numbers the default is FALSE \n"});

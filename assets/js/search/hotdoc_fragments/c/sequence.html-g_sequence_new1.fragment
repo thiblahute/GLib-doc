@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/sequence.html#g_sequence_new1", "fragment": "g_sequence_new \nCreates a new GSequence. The data_destroy function if non NULL will be called on all items when the sequence is destroyed and on items that are removed from the sequence. \n"});

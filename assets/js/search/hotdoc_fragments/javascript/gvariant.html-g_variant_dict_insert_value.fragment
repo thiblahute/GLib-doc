@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvariant.html#g_variant_dict_insert_value", "fragment": "GLib.VariantDict.prototype.insert_value \nInserts or replaces a key in a GLib.VariantDict. \nvalue is consumed if it is floating. \n"});

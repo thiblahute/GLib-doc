@@ -1,0 +1,1898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GIConv</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="conversions.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="python">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="conversions.markdown">
+        <h1 id="giconv">GIConv</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GIConv</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GIConvMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_iconv_close">
+		
+<h4 id="glibiconvclose">
+	<span><code>GLib.IConv.close</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.IConv.close (self):
+    #python wrapper for 'g_iconv_close'</pre>
+
+<p>Same as the standard UNIX routine iconv_close, but
+may be implemented via libiconv on UNIX flavors that lack
+a native implementation. Should be called to clean up
+the conversion descriptor from <a href="../c/conversions.html#g_iconv_open">g_iconv_open (not introspectable)</a> when
+you are done converting things.</p>
+<p>GLib provides <a href="conversions.html#g_convert">GLib.convert</a> and <a href="conversions.html#g_locale_to_utf8">GLib.locale_to_utf8</a> which are likely
+more convenient than the raw iconv wrappers.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>converter:</code></em></i>
+		</p>
+	</td>
+		<td><p>a conversion descriptor from <a href="../c/conversions.html#g_iconv_open">g_iconv_open (not introspectable)</a></p>
+</td>
+<td>
+<a title="GLib.IConv" href="conversions.html#GIConv">GLib.IConv</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>-1 on error, 0 on success</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_filename_from_utf8">
+		
+<h3 id="glibfilename_from_utf8">
+	<span><code>GLib.filename_from_utf8</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.filename_from_utf8 (utf8string, len):
+    #python wrapper for 'g_filename_from_utf8'</pre>
+
+<p>Converts a string from UTF-8 to the encoding GLib uses for
+filenames. Note that on Windows GLib uses UTF-8 for filenames;
+on other platforms, this function indirectly depends on the
+[current locale][setlocale].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>utf8string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UTF-8 encoded string.</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of the string, or -1 if the string is
+nul-terminated.</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>(array length=bytes_written) (element-type guint8) (transfer full):
+The converted string, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> on an error.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>bytes_read:</i>
+				</p>
+	</td>
+	<td>
+		<p>(array length=bytes_written) (element-type guint8) (transfer full):
+The converted string, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> on an error.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>bytes_written:</i>
+				</p>
+	</td>
+	<td>
+		<p>(array length=bytes_written) (element-type guint8) (transfer full):
+The converted string, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> on an error.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_convert_with_iconv">
+		
+<h3 id="glibconvert_with_iconv">
+	<span><code>GLib.convert_with_iconv</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.convert_with_iconv (str, len, converter, bytes_read, bytes_written):
+    #python wrapper for 'g_convert_with_iconv'</pre>
+
+<p>Converts a string from one character set to another.</p>
+<p>Note that you should use <a href="conversions.html#g_iconv">GLib.iconv</a> for streaming conversions.
+Despite the fact that <em>byes_read</em> can return information about partial
+characters, the g_convert_... functions are not generally suitable
+for streaming. If the underlying converter maintains internal state,
+then this won't be preserved across successive calls to <a href="conversions.html#g_convert">GLib.convert</a>,
+<a href="conversions.html#g_convert_with_iconv">GLib.convert_with_iconv</a> or <a href="conversions.html#g_convert_with_fallback">GLib.convert_with_fallback</a>. (An example of
+this is the GNU C converter for CP1255 which does not emit a base
+character until it knows that the next character is not a mark that
+could combine with the base character.)</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to convert</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of the string in bytes, or -1 if the string is
+nul-terminated (Note that some encodings may allow nul
+bytes to occur inside strings. In that case, using -1
+for the <em>len</em> parameter is unsafe)</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>converter:</code></em></i>
+		</p>
+	</td>
+		<td><p>conversion descriptor from <a href="../c/conversions.html#g_iconv_open">g_iconv_open (not introspectable)</a></p>
+</td>
+<td>
+<a title="GLib.IConv" href="conversions.html#GIConv">GLib.IConv</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes_read:</code></em></i>
+		</p>
+	</td>
+		<td><p>location to store the number of bytes in the
+input string that were successfully converted, or <a href="https://docs.python.org/2/library/constants.html#None">None</a>.
+Even if the conversion was successful, this may be
+less than <em>len</em> if there were partial characters
+at the end of the input. If the error
+<a href="conversions.html#G_CONVERT_ERROR_ILLEGAL_SEQUENCE">GLib.ConvertError.illegal_sequence</a> occurs, the value
+stored will the byte offset after the last valid
+input sequence.</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes_written:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of bytes stored in the output buffer (not
+including the terminating nul).</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>If the conversion was successful, a newly allocated
+nul-terminated string, which must be freed with
+<a href="memory.html#g_free">GLib.free</a>. Otherwise <a href="https://docs.python.org/2/library/constants.html#None">None</a> and <em>error</em> will be set.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_locale_to_utf8">
+		
+<h3 id="gliblocale_to_utf8">
+	<span><code>GLib.locale_to_utf8</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.locale_to_utf8 (opsysstring, len):
+    #python wrapper for 'g_locale_to_utf8'</pre>
+
+<p>Converts a string which is in the encoding used for strings by
+the C runtime (usually the same as that used by the operating
+system) in the [current locale][setlocale] into a UTF-8 string.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>opsysstring:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string in the encoding of the current locale. On Windows
+this means the system codepage.</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of the string, or -1 if the string is
+nul-terminated (Note that some encodings may allow nul
+bytes to occur inside strings. In that case, using -1
+for the <em>len</em> parameter is unsafe)</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of1">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A newly-allocated buffer containing the converted string,
+or <a href="https://docs.python.org/2/library/constants.html#None">None</a> on an error, and error will be set.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>bytes_read:</i>
+				</p>
+	</td>
+	<td>
+		<p>A newly-allocated buffer containing the converted string,
+or <a href="https://docs.python.org/2/library/constants.html#None">None</a> on an error, and error will be set.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>bytes_written:</i>
+				</p>
+	</td>
+	<td>
+		<p>A newly-allocated buffer containing the converted string,
+or <a href="https://docs.python.org/2/library/constants.html#None">None</a> on an error, and error will be set.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_get_filename_charsets">
+		
+<h3 id="glibget_filename_charsets">
+	<span><code>GLib.get_filename_charsets</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.get_filename_charsets (charsets):
+    #python wrapper for 'g_get_filename_charsets'</pre>
+
+<p>Determines the preferred character sets used for filenames.
+The first character set from the <em>charsets</em> is the filename encoding, the
+subsequent character sets are used when trying to generate a displayable
+representation of a filename, see <a href="conversions.html#g_filename_display_name">GLib.filename_display_name</a>.</p>
+<p>On Unix, the character sets are determined by consulting the
+environment variables <code>G_FILENAME_ENCODING</code> and <code>G_BROKEN_FILENAMES</code>.
+On Windows, the character set used in the GLib API is always UTF-8
+and said environment variables have no effect.</p>
+<p><code>G_FILENAME_ENCODING</code> may be set to a comma-separated list of
+character set names. The special token "@locale" is taken
+to  mean the character set for the [current locale][setlocale].
+If <code>G_FILENAME_ENCODING</code> is not set, but <code>G_BROKEN_FILENAMES</code> is,
+the character set of the current locale is taken as the filename
+encoding. If neither environment variable  is set, UTF-8 is taken
+as the filename encoding, but the character set of the current locale
+is also put in the list of encodings.</p>
+<p>The returned <em>charsets</em> belong to GLib and must not be freed.</p>
+<p>Note that on Unix, regardless of the locale character set or
+<code>G_FILENAME_ENCODING</code> value, the actual file names present
+on a system might be in any random encoding or just gibberish.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>charsets:</code></em></i>
+		</p>
+	</td>
+		<td><p>return location for the <a href="https://docs.python.org/2/library/constants.html#None">None</a>-terminated list of encoding names</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the filename encoding is UTF-8.</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_convert_error_quark">
+		
+<h3 id="glibconvert_error_quark">
+	<span><code>GLib.convert_error_quark</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.convert_error_quark ():
+    #python wrapper for 'g_convert_error_quark'</pre>
+
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		<a title="GLib.Quark" href="quarks.html#GQuark">GLib.Quark</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_filename_display_basename">
+		
+<h3 id="glibfilename_display_basename">
+	<span><code>GLib.filename_display_basename</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.filename_display_basename (filename):
+    #python wrapper for 'g_filename_display_basename'</pre>
+
+<p>Returns the display basename for the particular filename, guaranteed
+to be valid UTF-8. The display name might not be identical to the filename,
+for instance there might be problems converting it to UTF-8, and some files
+can be translated in the display.</p>
+<p>If GLib cannot make sense of the encoding of <em>filename</em>, as a last resort it
+replaces unknown characters with U+FFFD, the Unicode replacement character.
+You can search the result for the UTF-8 encoding of this character (which is
+"\357\277\275" in octal notation) to find out if <em>filename</em> was in an invalid
+encoding.</p>
+<p>You must pass the whole absolute pathname to this functions so that
+translation of well known locations can be done.</p>
+<p>This function is preferred over <a href="conversions.html#g_filename_display_name">GLib.filename_display_name</a> if you know the
+whole path, as it allows translation.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>an absolute pathname in the
+GLib file name encoding</p>
+</td>
+<td>
+<a title="str" href="https://docs.python.org/2.7/library/functions.html#str">str</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string containing
+a rendition of the basename of the filename in valid UTF-8</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_get_codeset">
+		
+<h3 id="glibget_codeset">
+	<span><code>GLib.get_codeset</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.get_codeset ():
+    #python wrapper for 'g_get_codeset'</pre>
+
+<p>Gets the character set for the current locale.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string containing the name
+of the character set. This string must be freed with <a href="memory.html#g_free">GLib.free</a>.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_convert_with_fallback">
+		
+<h3 id="glibconvert_with_fallback">
+	<span><code>GLib.convert_with_fallback</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.convert_with_fallback (str, len, to_codeset, from_codeset, fallback, bytes_read, bytes_written):
+    #python wrapper for 'g_convert_with_fallback'</pre>
+
+<p>Converts a string from one character set to another, possibly
+including fallback sequences for characters not representable
+in the output. Note that it is not guaranteed that the specification
+for the fallback sequences in <em>fallback</em> will be honored. Some
+systems may do an approximate conversion from <em>from_codeset</em>
+to <em>to_codeset</em> in their iconv functions,
+in which case GLib will simply return that approximate conversion.</p>
+<p>Note that you should use <a href="conversions.html#g_iconv">GLib.iconv</a> for streaming conversions.
+Despite the fact that <em>byes_read</em> can return information about partial
+characters, the g_convert_... functions are not generally suitable
+for streaming. If the underlying converter maintains internal state,
+then this won't be preserved across successive calls to <a href="conversions.html#g_convert">GLib.convert</a>,
+<a href="conversions.html#g_convert_with_iconv">GLib.convert_with_iconv</a> or <a href="conversions.html#g_convert_with_fallback">GLib.convert_with_fallback</a>. (An example of
+this is the GNU C converter for CP1255 which does not emit a base
+character until it knows that the next character is not a mark that
+could combine with the base character.)</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to convert</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of the string in bytes, or -1 if the string is
+nul-terminated (Note that some encodings may allow nul
+bytes to occur inside strings. In that case, using -1
+for the <em>len</em> parameter is unsafe)</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>to_codeset:</code></em></i>
+		</p>
+	</td>
+		<td><p>name of character set into which to convert <em>str</em></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>from_codeset:</code></em></i>
+		</p>
+	</td>
+		<td><p>character set of <em>str</em>.</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fallback:</code></em></i>
+		</p>
+	</td>
+		<td><p>UTF-8 string to use in place of character not
+present in the target encoding. (The string must be
+representable in the target encoding).
+If <a href="https://docs.python.org/2/library/constants.html#None">None</a>, characters not in the target encoding will
+be represented as Unicode escapes \uxxxx or \Uxxxxyyyy.</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes_read:</code></em></i>
+		</p>
+	</td>
+		<td><p>location to store the number of bytes in the
+input string that were successfully converted, or <a href="https://docs.python.org/2/library/constants.html#None">None</a>.
+Even if the conversion was successful, this may be
+less than <em>len</em> if there were partial characters
+at the end of the input.</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes_written:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of bytes stored in the output buffer (not
+including the terminating nul).</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>If the conversion was successful, a newly allocated
+nul-terminated string, which must be freed with
+<a href="memory.html#g_free">GLib.free</a>. Otherwise <a href="https://docs.python.org/2/library/constants.html#None">None</a> and <em>error</em> will be set.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_filename_to_utf8">
+		
+<h3 id="glibfilename_to_utf8">
+	<span><code>GLib.filename_to_utf8</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.filename_to_utf8 (opsysstring, len):
+    #python wrapper for 'g_filename_to_utf8'</pre>
+
+<p>Converts a string which is in the encoding used by GLib for
+filenames into a UTF-8 string. Note that on Windows GLib uses UTF-8
+for filenames; on other platforms, this function indirectly depends on
+the [current locale][setlocale].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>opsysstring:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string in the encoding for filenames</p>
+</td>
+<td>
+<a title="str" href="https://docs.python.org/2.7/library/functions.html#str">str</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of the string, or -1 if the string is
+nul-terminated (Note that some encodings may allow nul
+bytes to occur inside strings. In that case, using -1
+for the <em>len</em> parameter is unsafe)</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of2">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The converted string, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> on an error.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>bytes_read:</i>
+				</p>
+	</td>
+	<td>
+		<p>The converted string, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> on an error.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>bytes_written:</i>
+				</p>
+	</td>
+	<td>
+		<p>The converted string, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> on an error.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_convert">
+		
+<h3 id="glibconvert">
+	<span><code>GLib.convert</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.convert (str, len, to_codeset, from_codeset):
+    #python wrapper for 'g_convert'</pre>
+
+<p>Converts a string from one character set to another.</p>
+<p>Note that you should use <a href="conversions.html#g_iconv">GLib.iconv</a> for streaming conversions.
+Despite the fact that <em>byes_read</em> can return information about partial
+characters, the g_convert_... functions are not generally suitable
+for streaming. If the underlying converter maintains internal state,
+then this won't be preserved across successive calls to <a href="conversions.html#g_convert">GLib.convert</a>,
+<a href="conversions.html#g_convert_with_iconv">GLib.convert_with_iconv</a> or <a href="conversions.html#g_convert_with_fallback">GLib.convert_with_fallback</a>. (An example of
+this is the GNU C converter for CP1255 which does not emit a base
+character until it knows that the next character is not a mark that
+could combine with the base character.)</p>
+<p>Using extensions such as "//TRANSLIT" may not work (or may not work
+well) on many platforms.  Consider using <a href="string_utils.html#g_str_to_ascii">GLib.str_to_ascii</a> instead.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to convert</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of the string in bytes, or -1 if the string is
+nul-terminated (Note that some encodings may allow nul
+bytes to occur inside strings. In that case, using -1
+for the <em>len</em> parameter is unsafe)</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>to_codeset:</code></em></i>
+		</p>
+	</td>
+		<td><p>name of character set into which to convert <em>str</em></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>from_codeset:</code></em></i>
+		</p>
+	</td>
+		<td><p>character set of <em>str</em>.</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of3">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>If the conversion was successful, a newly allocated
+nul-terminated string, which must be freed with
+<a href="memory.html#g_free">GLib.free</a>. Otherwise <a href="https://docs.python.org/2/library/constants.html#None">None</a> and <em>error</em> will be set.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>bytes_read:</i>
+				</p>
+	</td>
+	<td>
+		<p>If the conversion was successful, a newly allocated
+nul-terminated string, which must be freed with
+<a href="memory.html#g_free">GLib.free</a>. Otherwise <a href="https://docs.python.org/2/library/constants.html#None">None</a> and <em>error</em> will be set.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>bytes_written:</i>
+				</p>
+	</td>
+	<td>
+		<p>If the conversion was successful, a newly allocated
+nul-terminated string, which must be freed with
+<a href="memory.html#g_free">GLib.free</a>. Otherwise <a href="https://docs.python.org/2/library/constants.html#None">None</a> and <em>error</em> will be set.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_locale_from_utf8">
+		
+<h3 id="gliblocale_from_utf8">
+	<span><code>GLib.locale_from_utf8</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.locale_from_utf8 (utf8string, len):
+    #python wrapper for 'g_locale_from_utf8'</pre>
+
+<p>Converts a string from UTF-8 to the encoding used for strings by
+the C runtime (usually the same as that used by the operating
+system) in the [current locale][setlocale]. On Windows this means
+the system codepage.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>utf8string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UTF-8 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of the string, or -1 if the string is
+nul-terminated (Note that some encodings may allow nul
+bytes to occur inside strings. In that case, using -1
+for the <em>len</em> parameter is unsafe)</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of4">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A newly-allocated buffer containing the converted string,
+or <a href="https://docs.python.org/2/library/constants.html#None">None</a> on an error, and error will be set.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>bytes_read:</i>
+				</p>
+	</td>
+	<td>
+		<p>A newly-allocated buffer containing the converted string,
+or <a href="https://docs.python.org/2/library/constants.html#None">None</a> on an error, and error will be set.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>bytes_written:</i>
+				</p>
+	</td>
+	<td>
+		<p>A newly-allocated buffer containing the converted string,
+or <a href="https://docs.python.org/2/library/constants.html#None">None</a> on an error, and error will be set.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_iconv">
+		
+<h3 id="glibiconv">
+	<span><code>GLib.iconv</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.iconv (converter, inbuf, inbytes_left, outbuf, outbytes_left):
+    #python wrapper for 'g_iconv'</pre>
+
+<p>Same as the standard UNIX routine iconv, but
+may be implemented via libiconv on UNIX flavors that lack
+a native implementation.</p>
+<p>GLib provides <a href="conversions.html#g_convert">GLib.convert</a> and <a href="conversions.html#g_locale_to_utf8">GLib.locale_to_utf8</a> which are likely
+more convenient than the raw iconv wrappers.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>converter:</code></em></i>
+		</p>
+	</td>
+		<td><p>conversion descriptor from <a href="../c/conversions.html#g_iconv_open">g_iconv_open (not introspectable)</a></p>
+</td>
+<td>
+<a title="GLib.IConv" href="conversions.html#GIConv">GLib.IConv</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>inbuf:</code></em></i>
+		</p>
+	</td>
+		<td><p>bytes to convert</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>inbytes_left:</code></em></i>
+		</p>
+	</td>
+		<td><p>inout parameter, bytes remaining to convert in <em>inbuf</em></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>outbuf:</code></em></i>
+		</p>
+	</td>
+		<td><p>converted output bytes</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>outbytes_left:</code></em></i>
+		</p>
+	</td>
+		<td><p>inout parameter, bytes available to fill in <em>outbuf</em></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>count of non-reversible conversions, or -1 on error</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_get_charset">
+		
+<h3 id="glibget_charset">
+	<span><code>GLib.get_charset</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.get_charset ():
+    #python wrapper for 'g_get_charset'</pre>
+
+<p>Obtains the character set for the [current locale][setlocale]; you
+might use this character set as an argument to <a href="conversions.html#g_convert">GLib.convert</a>, to convert
+from the current locale's encoding to some other encoding. (Frequently
+<a href="conversions.html#g_locale_to_utf8">GLib.locale_to_utf8</a> and <a href="conversions.html#g_locale_from_utf8">GLib.locale_from_utf8</a> are nice shortcuts, though.)</p>
+<p>On Windows the character set returned by this function is the
+so-called system default ANSI code-page. That is the character set
+used by the "narrow" versions of C library and Win32 functions that
+handle file names. It might be different from the character set
+used by the C library's current locale.</p>
+<p>The return value is <a href="https://docs.python.org/2/library/constants.html#True">True</a> if the locale's encoding is UTF-8, in that
+case you can perhaps avoid calling <a href="conversions.html#g_convert">GLib.convert</a>.</p>
+<p>The string returned in <em>charset</em> is not allocated, and should not be
+freed.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of5">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the returned charset is UTF-8</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>charset:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the returned charset is UTF-8</p>
+
+	</td>
+	<td>
+		char (not introspectable)
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_filename_display_name">
+		
+<h3 id="glibfilename_display_name">
+	<span><code>GLib.filename_display_name</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.filename_display_name (filename):
+    #python wrapper for 'g_filename_display_name'</pre>
+
+<p>Converts a filename into a valid UTF-8 string. The conversion is
+not necessarily reversible, so you should keep the original around
+and use the return value of this function only for display purposes.
+Unlike <a href="conversions.html#g_filename_to_utf8">GLib.filename_to_utf8</a>, the result is guaranteed to be non-%NULL
+even if the filename actually isn't in the GLib file name encoding.</p>
+<p>If GLib cannot make sense of the encoding of <em>filename</em>, as a last resort it
+replaces unknown characters with U+FFFD, the Unicode replacement character.
+You can search the result for the UTF-8 encoding of this character (which is
+"\357\277\275" in octal notation) to find out if <em>filename</em> was in an invalid
+encoding.</p>
+<p>If you know the whole pathname of the file you should use
+<a href="conversions.html#g_filename_display_basename">GLib.filename_display_basename</a>, since that allows location-based
+translation of filenames.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pathname hopefully in the
+GLib file name encoding</p>
+</td>
+<td>
+<a title="str" href="https://docs.python.org/2.7/library/functions.html#str">str</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string containing
+a rendition of the filename in valid UTF-8</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GIConv">
+		<h3 id="glibiconv1">
+	GLib.IConv
+</h3>
+
+		<p>The GIConv struct wraps an iconv conversion descriptor. It contains
+private data and should only be accessed using the following functions.</p>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GConvertError">
+		
+<h3 id="enum-glibconverterror">
+		enum GLib.ConvertError
+	</h3>
+
+		<p>Error codes returned by character set conversion routines.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_CONVERT_ERROR_NO_CONVERSION"></a>
+		GLib.ConvertError.no_conversion
+		</p>
+	</td>
+	<td><p>Conversion between the requested character
+sets is not supported.</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_CONVERT_ERROR_ILLEGAL_SEQUENCE"></a>
+		GLib.ConvertError.illegal_sequence
+		</p>
+	</td>
+	<td><p>Invalid byte sequence in conversion input.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_CONVERT_ERROR_FAILED"></a>
+		GLib.ConvertError.failed
+		</p>
+	</td>
+	<td><p>Conversion failed for some reason.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_CONVERT_ERROR_PARTIAL_INPUT"></a>
+		GLib.ConvertError.partial_input
+		</p>
+	</td>
+	<td><p>Partial character sequence at end of input.</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_CONVERT_ERROR_BAD_URI"></a>
+		GLib.ConvertError.bad_uri
+		</p>
+	</td>
+	<td><p>URI is invalid.</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_CONVERT_ERROR_NOT_ABSOLUTE_PATH"></a>
+		GLib.ConvertError.not_absolute_path
+		</p>
+	</td>
+	<td><p>Pathname is not an absolute path.</p>
+</td>
+	<td>
+		<span class="value">Value: 5</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_CONVERT_ERROR_NO_MEMORY"></a>
+		GLib.ConvertError.no_memory
+		</p>
+	</td>
+	<td><p>No memory available. Since: 2.40</p>
+</td>
+	<td>
+		<span class="value">Value: 6</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

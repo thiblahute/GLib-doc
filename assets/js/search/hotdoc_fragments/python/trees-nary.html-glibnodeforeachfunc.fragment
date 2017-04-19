@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/trees-nary.html#glibnodeforeachfunc", "fragment": "GLib.NodeForeachFunc \nSpecifies the type of function passed to g_node_children_foreach not introspectable The function is called with each child node together with the user data passed to g_node_children_foreach not introspectable \n"});

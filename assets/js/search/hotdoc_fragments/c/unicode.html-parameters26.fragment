@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/unicode.html#parameters26", "fragment": "str \na UTF encoded string. \nlen \nlength of str in bytes or if str is nul terminated. \nmode \nthe type of normalization to perform. \n"});

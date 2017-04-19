@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/option.html#g_option_context_free", "fragment": "GLib.OptionContext.prototype.free \nFrees context and all the groups which have been added to it. \nPlease note that parsed arguments need to be freed separately see GLib.OptionEntry \n"});

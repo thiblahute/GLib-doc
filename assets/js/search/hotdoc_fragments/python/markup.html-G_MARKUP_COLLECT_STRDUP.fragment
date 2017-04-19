@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/markup.html#G_MARKUP_COLLECT_STRDUP", "fragment": "as with GLib.MarkupCollectType.string but expects a parameter of type char and GLib.strdups the returned pointer. The pointer must be freed with GLib.free \nGLib.MarkupCollectType.boolean \n"});

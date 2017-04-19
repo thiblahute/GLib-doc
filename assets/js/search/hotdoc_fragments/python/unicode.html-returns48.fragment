@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#returns48", "fragment": "\nIf c is a hex digit according to GLib.unichar_isxdigit its numeric value. Otherwise \n"});

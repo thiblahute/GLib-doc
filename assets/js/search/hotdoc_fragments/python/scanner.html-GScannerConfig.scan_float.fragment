@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/scanner.html#GScannerConfig.scan_float", "fragment": "guint scan_hex \nspecifies if hexadecimal numbers are recognized the default is TRUE \n"});

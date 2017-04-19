@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/timezone.html#glibtimezoneis_dst", "fragment": "GLib.TimeZone.is_dst \nDetermines if daylight savings time is in effect during a particular interval of time in the time zone tz. \n"});

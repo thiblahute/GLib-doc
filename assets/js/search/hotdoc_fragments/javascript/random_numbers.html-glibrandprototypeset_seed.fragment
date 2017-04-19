@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/random_numbers.html#glibrandprototypeset_seed", "fragment": "GLib.Rand.prototype.set_seed \nSets the seed for the random number generator GLib.Rand to seed. \n"});

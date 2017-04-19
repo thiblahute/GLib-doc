@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/strings.html#g_string_append_unichar", "fragment": "GLib.String.prototype.append_unichar \nConverts a Unicode character into UTF and appends it to the string. \n"});

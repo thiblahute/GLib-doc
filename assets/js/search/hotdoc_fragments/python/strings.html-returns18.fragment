@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/strings.html#returns18", "fragment": "\nstring \ndeprecated This function uses the locale specific toupper function which is almost never the right thing. Use g_string_ascii_up or g_utf8_strup instead. \n"});

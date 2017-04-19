@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvariant.html#g_variant_get_boolean", "fragment": "GLib.Variant.prototype.get_boolean \nReturns the boolean value of value. \nIt is an error to call this function with a value of any type other than G_VARIANT_TYPE_BOOLEAN not introspectable \n"});

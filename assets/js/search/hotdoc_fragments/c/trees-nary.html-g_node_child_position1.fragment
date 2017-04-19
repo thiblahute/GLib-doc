@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/trees-nary.html#g_node_child_position1", "fragment": "g_node_child_position \nGets the position of a GNode with respect to its siblings. child must be a child of node. The first child is numbered the second and so on. \n"});

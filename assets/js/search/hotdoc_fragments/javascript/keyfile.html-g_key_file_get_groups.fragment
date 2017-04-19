@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/keyfile.html#g_key_file_get_groups", "fragment": "GLib.KeyFile.prototype.get_groups \nReturns all groups in the key file loaded with key_file. The array of returned groups will be null terminated so length may optionally be null. \n"});

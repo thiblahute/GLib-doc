@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/unicode.html#enum-gunicodebreaktype", "fragment": "enum GUnicodeBreakType \nThese are the possible line break classifications. \nSince new unicode versions may add new types here applications should be ready to handle unknown values. They may be regarded as G_UNICODE_BREAK_UNKNOWN. \nSee Unicode Line Breaking Algorithm. \n"});

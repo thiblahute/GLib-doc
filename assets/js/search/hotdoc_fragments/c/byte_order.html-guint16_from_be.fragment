@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/byte_order.html#guint16_from_be", "fragment": "GUINT16_FROM_BE \nConverts a guint16 value from big endian to host byte order. \n"});

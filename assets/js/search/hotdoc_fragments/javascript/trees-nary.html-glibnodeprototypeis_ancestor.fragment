@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/trees-nary.html#glibnodeprototypeis_ancestor", "fragment": "GLib.Node.prototype.is_ancestor \nReturns true if node is an ancestor of descendant. This is true if node is the parent of descendant or if node is the grandparent of descendant etc. \n"});

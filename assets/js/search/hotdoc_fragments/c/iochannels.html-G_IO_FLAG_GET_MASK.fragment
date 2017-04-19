@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#G_IO_FLAG_GET_MASK", "fragment": "the mask of the flags that are returned from g_io_channel_get_flags \nG_IO_FLAG_SET_MASK \n"});

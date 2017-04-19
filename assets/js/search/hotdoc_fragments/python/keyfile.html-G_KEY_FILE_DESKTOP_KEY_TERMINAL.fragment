@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/keyfile.html#G_KEY_FILE_DESKTOP_KEY_TERMINAL", "fragment": "GLib.KEY_FILE_DESKTOP_KEY_TERMINAL \nA key under GLib.KEY_FILE_DESKTOP_GROUP whose value is a boolean stating whether the program should be run in a terminal window. It is only valid for desktop entries with the Application type. \n"});

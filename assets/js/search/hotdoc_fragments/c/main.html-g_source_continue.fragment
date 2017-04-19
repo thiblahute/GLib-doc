@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/main.html#g_source_continue", "fragment": "G_SOURCE_CONTINUE \nUse this macro as the return value of a GSourceFunc to leave the GSource in the main loop. \n"});

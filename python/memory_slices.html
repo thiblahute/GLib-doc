@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>memory_slices</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="memory_slices.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="python">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="memory_slices.markdown">
+    </div>
+        
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.10;" id="g_slice_free1">
+		
+<h3 id="glibslice_free1">
+	<span><code>GLib.slice_free1</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.slice_free1 (block_size, mem_block):
+    #python wrapper for 'g_slice_free1'</pre>
+
+<p>Frees a block of memory.</p>
+<p>The memory must have been allocated via <a href="memory_slices.html#g_slice_alloc">GLib.slice_alloc</a> or
+<a href="memory_slices.html#g_slice_alloc0">GLib.slice_alloc0</a> and the <em>block_size</em> has to match the size
+specified upon allocation. Note that the exact release behaviour
+can be changed with the [<code>G_DEBUG=gc-friendly</code>][G_DEBUG] environment
+variable, also see [<code>G_SLICE</code>][G_SLICE] for related debugging options.</p>
+<p>If <em>mem_block</em> is <a href="https://docs.python.org/2/library/constants.html#None">None</a>, this function does nothing.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>block_size:</code></em></i>
+		</p>
+	</td>
+		<td><p>the size of the block</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mem_block:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to the block to free</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.10
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slice_set_config">
+		
+<h3 id="glibslice_set_config">
+	<span><code>GLib.slice_set_config</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.slice_set_config (ckey, value):
+    #python wrapper for 'g_slice_set_config'</pre>
+
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>ckey:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+<a title="GLib.SliceConfig" href="memory_slices.html#GSliceConfig">GLib.SliceConfig</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.10;" id="g_slice_alloc">
+		
+<h3 id="glibslice_alloc">
+	<span><code>GLib.slice_alloc</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.slice_alloc (block_size):
+    #python wrapper for 'g_slice_alloc'</pre>
+
+<p>Allocates a block of memory from the slice allocator.
+The block adress handed out can be expected to be aligned
+to at least 1 * sizeof (void*),
+though in general slices are 2 * sizeof (void*) bytes aligned,
+if a malloc fallback implementation is used instead,
+the alignment may be reduced in a libc dependent fashion.
+Note that the underlying slice allocation mechanism can
+be changed with the [<code>G_SLICE=always-malloc</code>][G_SLICE]
+environment variable.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>block_size:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of bytes to allocate</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to the allocated memory block, which will be <a href="https://docs.python.org/2/library/constants.html#None">None</a> if and
+only if <em>mem_size</em> is 0</p>
+
+	</td>
+	<td>
+		<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.10
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_slice_copy">
+		
+<h3 id="glibslice_copy">
+	<span><code>GLib.slice_copy</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.slice_copy (block_size, mem_block):
+    #python wrapper for 'g_slice_copy'</pre>
+
+<p>Allocates a block of memory from the slice allocator
+and copies <em>block_size</em> bytes into it from <em>mem_block</em>.</p>
+<p><em>mem_block</em> must be non-%NULL if <em>block_size</em> is non-zero.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>block_size:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of bytes to allocate</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mem_block:</code></em></i>
+		</p>
+	</td>
+		<td><p>the memory to copy</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to the allocated memory block, which will be <a href="https://docs.python.org/2/library/constants.html#None">None</a> if and
+only if <em>mem_size</em> is 0</p>
+
+	</td>
+	<td>
+		<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slice_get_config">
+		
+<h3 id="glibslice_get_config">
+	<span><code>GLib.slice_get_config</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.slice_get_config (ckey):
+    #python wrapper for 'g_slice_get_config'</pre>
+
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>ckey:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+<a title="GLib.SliceConfig" href="memory_slices.html#GSliceConfig">GLib.SliceConfig</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.10;" id="g_slice_free_chain_with_offset">
+		
+<h3 id="glibslice_free_chain_with_offset">
+	<span><code>GLib.slice_free_chain_with_offset</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.slice_free_chain_with_offset (block_size, mem_chain, next_offset):
+    #python wrapper for 'g_slice_free_chain_with_offset'</pre>
+
+<p>Frees a linked list of memory blocks of structure type <em>type</em>.</p>
+<p>The memory blocks must be equal-sized, allocated via
+<a href="memory_slices.html#g_slice_alloc">GLib.slice_alloc</a> or <a href="memory_slices.html#g_slice_alloc0">GLib.slice_alloc0</a> and linked together by a
+<em>next</em> pointer (similar to <a href="linked_lists_single.html#GSList">GLib.SList</a>). The offset of the <em>next</em>
+field in each block is passed as third argument.
+Note that the exact release behaviour can be changed with the
+[<code>G_DEBUG=gc-friendly</code>][G_DEBUG] environment variable, also see
+[<code>G_SLICE</code>][G_SLICE] for related debugging options.</p>
+<p>If <em>mem_chain</em> is <a href="https://docs.python.org/2/library/constants.html#None">None</a>, this function does nothing.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>block_size:</code></em></i>
+		</p>
+	</td>
+		<td><p>the size of the blocks</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mem_chain:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to the first block of the chain</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>next_offset:</code></em></i>
+		</p>
+	</td>
+		<td><p>the offset of the <em>next</em> field in the blocks</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.10
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slice_get_config_state">
+		
+<h3 id="glibslice_get_config_state">
+	<span><code>GLib.slice_get_config_state</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.slice_get_config_state (ckey, address, n_values):
+    #python wrapper for 'g_slice_get_config_state'</pre>
+
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>ckey:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+<a title="GLib.SliceConfig" href="memory_slices.html#GSliceConfig">GLib.SliceConfig</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>address:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n_values:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.10;" id="g_slice_alloc0">
+		
+<h3 id="glibslice_alloc0">
+	<span><code>GLib.slice_alloc0</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.slice_alloc0 (block_size):
+    #python wrapper for 'g_slice_alloc0'</pre>
+
+<p>Allocates a block of memory via <a href="memory_slices.html#g_slice_alloc">GLib.slice_alloc</a> and initializes
+the returned memory to 0. Note that the underlying slice allocation
+mechanism can be changed with the [<code>G_SLICE=always-malloc</code>][G_SLICE]
+environment variable.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>block_size:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of bytes to allocate</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to the allocated block, which will be <a href="https://docs.python.org/2/library/constants.html#None">None</a> if and only
+if <em>mem_size</em> is 0</p>
+
+	</td>
+	<td>
+		<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.10
+		</p>
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GSliceConfig">
+		
+<h3 id="enum-glibsliceconfig">
+		enum GLib.SliceConfig
+	</h3>
+
+		
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_SLICE_CONFIG_ALWAYS_MALLOC"></a>
+		GLib.SliceConfig.always_malloc
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SLICE_CONFIG_BYPASS_MAGAZINES"></a>
+		GLib.SliceConfig.bypass_magazines
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SLICE_CONFIG_WORKING_SET_MSECS"></a>
+		GLib.SliceConfig.working_set_msecs
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SLICE_CONFIG_COLOR_INCREMENT"></a>
+		GLib.SliceConfig.color_increment
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SLICE_CONFIG_CHUNK_SIZES"></a>
+		GLib.SliceConfig.chunk_sizes
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 5</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SLICE_CONFIG_CONTENTION_COUNTER"></a>
+		GLib.SliceConfig.contention_counter
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 6</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

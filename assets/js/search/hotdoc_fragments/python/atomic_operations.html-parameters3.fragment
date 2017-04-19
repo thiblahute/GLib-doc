@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/atomic_operations.html#parameters3", "fragment": "atomic \na pointer to a gpointer sized value \noldval \nthe value to compare with \nnewval \nthe value to conditionally replace with \n"});

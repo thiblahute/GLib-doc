@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#glibutf8_strdown", "fragment": "GLib.utf8_strdown \nConverts all Unicode characters in the string that have a case to lowercase. The exact manner that this is done depends on the current locale and may result in the number of characters in the string changing. \n"});

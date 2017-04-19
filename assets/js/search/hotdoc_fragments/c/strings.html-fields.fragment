@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/strings.html#fields", "fragment": "gchar str \npoints to the character data. It may move as text is added. The str field is null terminated and so can be used as an ordinary C string. \n"});

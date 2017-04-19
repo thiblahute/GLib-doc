@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gregex.html#g_match_info_next1", "fragment": "g_match_info_next \nScans for the next match using the same parameters of the previous call to g_regex_match_full or g_regex_match that returned match_info. \nThe match is done on the string passed to the match function so you cannot free it before calling this function. \n"});

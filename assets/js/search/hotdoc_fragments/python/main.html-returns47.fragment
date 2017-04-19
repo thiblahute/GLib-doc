@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#returns47", "fragment": "\nFalse if the source should be removed. GLib.SOURCE_CONTINUE and GLib.SOURCE_REMOVE are more memorable names for the return value. \n"});

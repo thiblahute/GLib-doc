@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#glibpriority_default", "fragment": "GLib.PRIORITY_DEFAULT \nUse this for default priority event sources. \nIn GLib this priority is used when adding timeout functions with g_timeout_add not introspectable In GDK this priority is used for events from the X server. \n"});

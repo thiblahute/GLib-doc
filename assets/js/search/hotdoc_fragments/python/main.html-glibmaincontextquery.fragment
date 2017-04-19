@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibmaincontextquery", "fragment": "GLib.MainContext.query \nDetermines information necessary to poll this main loop. \nYou must have successfully acquired the context with GLib.MainContext.acquire before you may call this function. \n"});

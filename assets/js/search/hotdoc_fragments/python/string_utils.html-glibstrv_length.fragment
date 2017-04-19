@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/string_utils.html#glibstrv_length", "fragment": "GLib.strv_length \nReturns the length of the given None terminated string array str_array. \n"});

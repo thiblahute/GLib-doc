@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/markup.html#G_MARKUP_COLLECT_TRISTATE", "fragment": "as with GLib.MarkupCollectType.boolean but in the case of a missing attribute a value is set that compares equal to neither False nor True G_MARKUP_COLLECT_OPTIONAL is implied \nGLib.MarkupCollectType.optional \n"});

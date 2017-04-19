@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/async_queues.html#glibasyncqueuepop", "fragment": "GLib.AsyncQueue.pop \nPops data from the queue. If queue is empty this function blocks until data becomes available. \n"});

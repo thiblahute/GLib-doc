@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/sequence.html#glibprototypesequence_swap", "fragment": "GLib.prototype.sequence_swap \nSwaps the items pointed to by a and b. It is allowed for a and b to point into difference sequences. \n"});

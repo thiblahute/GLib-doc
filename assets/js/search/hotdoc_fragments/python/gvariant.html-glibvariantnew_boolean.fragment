@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvariant.html#glibvariantnew_boolean", "fragment": "GLib.Variant.new_boolean \nCreates a new boolean GLib.Variant instance either True or False. \n"});

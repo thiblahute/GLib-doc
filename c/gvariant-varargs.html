@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GVariant Format Strings</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="gvariant-varargs.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="gvariant-varargs.markdown">
+        <p>GVariant Format Strings</p>
+<h1 id="variable-argument-conversions">Variable Argument Conversions</h1>
+<p>This page attempts to document how to perform variable argument
+conversions with GVariant.</p>
+<p>Conversions occur according to format strings. A format string is a
+two-way mapping between a single <a href="../#GVariant">GVariant</a> value and one or
+more C values.</p>
+<p>A conversion from C values into a <a href="../#GVariant">GVariant</a> value is made
+using the <a href="../#g-variant-new"><code>g_variant_new()</code></a> function. A conversion
+from a <a href="../#GVariant">GVariant</a> into C values is made using the
+<a href="../#g-variant-get"><code>g_variant_get()</code></a> function.</p>
+<h1 id="syntax">Syntax</h1>
+<p>This section exhaustively describes all possibilities for GVariant
+format strings. There are no valid forms of format strings other than
+those described here. Please note that the format string syntax is
+likely to expand in the future.</p>
+<p>Valid format strings have one of the following forms:</p>
+<ul>
+<li>
+<p>any type string</p>
+</li>
+<li>
+<p>a type string prefixed with a '<code>@</code>'</p>
+</li>
+<li>
+<p>'<code>&amp;s</code>' '<code>&amp;o</code>', '<code>&amp;g</code>', '<code>^as</code>', '<code>^a&amp;s</code>', '<code>^ao</code>', '<code>^a&amp;o</code>','<code>^ay</code>',
+'<code>^&amp;ay</code>', '<code>^aay</code>' or '<code>^a&amp;ay</code>'.</p>
+</li>
+<li>
+<p>any format string, prefixed with an '<code>m</code>'</p>
+</li>
+<li>
+<p>a sequence of zero or more format strings, concatenated and enclosed
+in parentheses</p>
+</li>
+<li>
+<p>an opening brace, followed by two format strings, followed by a
+closing brace (subject to the constraint that the first format
+string correspond to a type valid for use as the key type of a
+dictionary)</p>
+</li>
+</ul>
+<h1 id="symbols">Symbols</h1>
+<p>The following table describes the rough meaning of symbols that may
+appear inside a GVariant format string. Each symbol is described in
+detail in its own section, including usage examples.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><p><strong>Symbol</strong></p></td>
+<td><p><strong>Meaning</strong></p></td>
+</tr>
+<tr class="even">
+<td><p><strong><code>b</code>, <code>y</code>, <code>n</code>, <code>q</code>, <code>i</code>, <code>u</code>, <code>x</code>, <code>t</code>, <code>h</code>, <code>d</code></strong></p></td>
+<td><p>Used for building or deconstructing boolean, byte and numeric types. See <a href="gvariant-varargs.markdown#numeric-types">Numeric Types</a> below.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong><code>s</code>, <code>o</code>, <code>g</code></strong></p></td>
+<td><p>Used for building or deconstructing string types. See <a href="gvariant-varargs.markdown#strings">Strings</a> below.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong><code>v</code></strong></p></td>
+<td><p>Used for building or deconstructing variant types. See <a href="gvariant-varargs.markdown#variants">Variants</a> below.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong><code>a</code></strong></p></td>
+<td><p>Used for building or deconstructing arrays. See <a href="gvariant-varargs.markdown#arrays">Arrays</a> below.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong><code>m</code></strong></p></td>
+<td><p>Used for building or deconstructing maybe types. See <a href="gvariant-varargs.markdown#maybe-types">Maybe Types</a> below.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong><code>()</code></strong></p></td>
+<td><p>Used for building or deconstructing tuples. See <a href="gvariant-varargs.markdown#tuples">Tuples</a> below.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong><code>{}</code></strong></p></td>
+<td><p>Used for building or deconstructing dictionary entries. See <a href="gvariant-varargs.markdown#dictionaries">Dictionaries</a> below.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong><code>@</code></strong></p></td>
+<td><p>Used as a prefix for a GVariant type string (not a prefix for a format string, so <code>@as</code> is a valid format string but <code>@^as</code> is not). Denotes that a pointer to a <a href="#GVariant">GVariant</a> should be used in place of the normal C type or types. For <a href="#g-variant-new"><code>g_variant_new()</code></a> this means that you must pass a non-<a href="#NULL:CAPS"><code>NULL</code></a> <code>(GVariant
+        *)</code>; if it is a floating reference, ownership will be taken, as if by using <a href="#g-variant-ref-sink"><code>g_variant_ref_sink()</code></a>. For <a href="#g-variant-get"><code>g_variant_get()</code></a> this means that you must pass a pointer to a <code>(GVariant *)</code> for the value to be returned by reference or <a href="#NULL:CAPS"><code>NULL</code></a> to ignore the value. See <a href="gvariant-varargs.markdown#gvariant-*"><code>GVariant *</code></a> below.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong><code>*</code>, <code>?</code>, <code>r</code></strong></p></td>
+<td><p>Exactly equivalent to <code>@*</code>, <code>@?</code> and <code>@r</code>. Provided only for completeness so that all GVariant type strings can be used also as format strings. See <a href="gvariant-varargs.markdown#gvariant-*"><code>GVariant *</code></a> below.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong><code>&amp;</code></strong></p></td>
+<td><p>Used as a prefix for a GVariant type string (not a prefix for a format string, so <code>&amp;s</code> is a valid format string but <code>&amp;@s</code> is not). Denotes that a C pointer to serialised data should be used in place of the normal C type. See <a href="gvariant-varargs.markdown#pointers">Pointers</a> below.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong><code>^</code></strong></p></td>
+<td><p>Used as a prefix on some specific types of format strings. See <a href="gvariant-varargs.markdown#convenience-conversions">Convenience Conversions</a> below.</p></td>
+</tr>
+</tbody>
+</table>
+<h2 id="numeric-types">Numeric Types</h2>
+<p><strong>Characters: <code>b</code>, <code>y</code>, <code>n</code>, <code>q</code>, <code>i</code>, <code>u</code>, <code>x</code>, <code>t</code>, <code>h</code>, <code>d</code></strong></p>
+<p>Variable argument conversions from numeric types work in the most
+obvious way possible. Upon encountering one of these characters,
+<a href="../#g-variant-new"><code>g_variant_new()</code></a> takes the equivalent C type as an
+argument. <a href="../#g-variant-get"><code>g_variant_get()</code></a> takes a pointer to the
+equivalent C type (or <a href="../#NULL:CAPS"><code>NULL</code></a> to ignore the value).</p>
+<p>The equivalent C types are as follows:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><p><strong>Character</strong></p></td>
+<td><p><strong>Equivalent C type</strong></p></td>
+</tr>
+<tr class="even">
+<td><p><strong><code>b</code></strong></p></td>
+<td><p><a href="#gboolean"><code>gboolean</code></a></p></td>
+</tr>
+<tr class="odd">
+<td><p><strong><code>y</code></strong></p></td>
+<td><p><a href="#guchar"><code>guchar</code></a></p></td>
+</tr>
+<tr class="even">
+<td><p><strong><code>n</code></strong></p></td>
+<td><p><a href="#gint16"><code>gint16</code></a></p></td>
+</tr>
+<tr class="odd">
+<td><p><strong><code>q</code></strong></p></td>
+<td><p><a href="#guint16"><code>guint16</code></a></p></td>
+</tr>
+<tr class="even">
+<td><p><strong><code>i</code></strong></p></td>
+<td><p><a href="#gint32"><code>gint32</code></a></p></td>
+</tr>
+<tr class="odd">
+<td><p><strong><code>u</code></strong></p></td>
+<td><p><a href="#guint32"><code>guint32</code></a></p></td>
+</tr>
+<tr class="even">
+<td><p><strong><code>x</code></strong></p></td>
+<td><p><a href="#gint64"><code>gint64</code></a></p></td>
+</tr>
+<tr class="odd">
+<td><p><strong><code>t</code></strong></p></td>
+<td><p><a href="#guint64"><code>guint64</code></a></p></td>
+</tr>
+<tr class="even">
+<td><p><strong><code>h</code></strong></p></td>
+<td><p><a href="#gint32"><code>gint32</code></a></p></td>
+</tr>
+<tr class="odd">
+<td><p><strong><code>d</code></strong></p></td>
+<td><p><a href="#gdouble"><code>gdouble</code></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Note that in C, small integer types in variable argument lists are
+promoted up to <a href="../#gint"><code>int</code></a> or <a href="../#guint"><code>unsigned int</code></a> as
+appropriate, and read back accordingly. <a href="../#gint"><code>int</code></a> is 32 bits on
+every platform on which GLib is currently supported. This means that you
+can use C expressions of type <a href="../#gint"><code>int</code></a> with
+<a href="../#g-variant-new"><code>g_variant_new()</code></a> and format characters '<code>b</code>', '<code>y</code>',
+'<code>n</code>', '<code>q</code>', '<code>i</code>', '<code>u</code>' and '<code>h</code>'. Specifically, you can use integer
+literals with these characters.</p>
+<p>When using the '<code>x</code>' and '<code>t</code>' characters, you must ensure that the
+value that you provide is 64 bit. This means that you should use a cast
+or make use of the <a href="../#G-GINT64-CONSTANT:CAPS"><code>G_GINT64_CONSTANT</code></a> or
+<a href="../#G-GUINT64-CONSTANT:CAPS"><code>G_GUINT64_CONSTANT</code></a> macros.</p>
+<p>No type promotion occurs when using <a href="../#g-variant-get"><code>g_variant_get()</code></a>
+since it operates with pointers. The pointers must always point to a
+memory region of exactly the correct size.</p>
+<h3 id="examples">Examples</h3>
+<pre><code>GVariant *value1, *value2, *value3, *value4;
+
+value1 = g_variant_new ("y", 200);
+value2 = g_variant_new ("b", TRUE);
+value3 = g_variant_new ("d", 37.5):
+value4 = g_variant_new ("x", G_GINT64_CONSTANT (998877665544332211));
+
+{
+  gdouble floating;
+  gboolean truth;
+  gint64 bignum;
+
+
+  g_variant_get (value1, "y", NULL);      /* ignore the value. */
+  g_variant_get (value2, "b", &amp;truth);
+  g_variant_get (value3, "d", &amp;floating);
+  g_variant_get (value4, "x", &amp;bignum);
+}
+</code></pre>
+<h2 id="strings">Strings</h2>
+<p><strong>Characters: <code>s</code>, <code>o</code>, <code>g</code></strong></p>
+<p>String conversions occur to and from standard nul-terminated C strings.
+Upon encountering an '<code>s</code>', '<code>o</code>' or '<code>g</code>' in a format string,
+<a href="../#g-variant-new"><code>g_variant_new()</code></a> takes a <code>(const gchar *)</code> and makes a copy of it. <a href="../#NULL:CAPS"><code>NULL</code></a> is not a valid
+string; use <a href="gvariant-varargs.html#maybe-types">maybe types</a> to
+encode that. If the '<code>o</code>' or '<code>g</code>' characters are used, care must be
+taken to ensure that the passed string is a valid DBus object path or
+DBus type signature, respectively.</p>
+<p>Upon encounting '<code>s</code>', '<code>o</code>' or '<code>g</code>',
+<a href="../#g-variant-get"><code>g_variant_get()</code></a> takes a pointer to a <code>(gchar *)</code>
+(ie: <code>(gchar **)</code>) and sets it to a newly-allocated copy of the string.
+It is appropriate to free this copy using <a href="../#g-free"><code>g_free()</code></a>.
+<a href="../#NULL:CAPS"><code>NULL</code></a> may also be passed to indicate that the value of
+the string should be ignored (in which case no copy is made).</p>
+<h3 id="examples1">Examples</h3>
+<pre><code>GVariant *value1, *value2, *value3;
+
+value1 = g_variant_new ("s", "hello world!");
+value2 = g_variant_new ("o", "/must/be/a/valid/path");
+value3 = g_variant_new ("g", "iias");
+
+#if 0
+  g_variant_new ("s", NULL);      /* not valid: NULL is not a string. */
+#endif
+
+{
+  gchar *result;
+
+  g_variant_get (value1, "s", &amp;result);
+  g_print ("It was '%s'\n", result);
+  g_free (result);
+}
+</code></pre>
+<h2 id="variants">Variants</h2>
+<p><strong>Characters: <code>v</code></strong></p>
+<p>Upon encountering a '<code>v</code>', <a href="../#g-variant-new"><code>g_variant_new()</code></a> takes a
+<code>(GVariant *)</code>. The value of the <a href="../#GVariant"><code>GVariant</code></a> is used as the
+contents of the variant value.</p>
+<p>Upon encountering a '<code>v</code>', <a href="../#g-variant-get"><code>g_variant_get()</code></a> takes a
+pointer to a <code>(GVariant *)</code> (ie: <code>(GVariant **)</code>). It is set to a new reference to a <a href="../#GVariant"><code>GVariant</code></a> instance
+containing the contents of the variant value. It is appropriate to free
+this reference using <a href="../#g-variant-unref"><code>g_variant_unref()</code></a>.
+<a href="../#NULL:CAPS"><code>NULL</code></a> may also be passed to indicate that the value
+should be ignored (in which case no new reference is created).</p>
+<h3 id="examples2">Examples</h3>
+<pre><code>GVariant *x, *y;
+
+/* the following two lines are equivalent: */
+x = g_variant_new ("v", y);
+x = g_variant_new_variant (y);
+
+/* as are these: */
+g_variant_get (x, "v", &amp;y);
+y = g_variant_get_variant (x);
+</code></pre>
+<h2 id="arrays">Arrays</h2>
+<p><strong>Characters: <code>a</code></strong></p>
+<p>Upon encountering an '<code>a</code>' character followed by a type string,
+<a href="../#g-variant-new"><code>g_variant_new()</code></a> will take a <code>(GVariantBuilder *)</code>
+that has been created as an array builder for an array of the type given
+in the type string. The builder will have
+<a href="../#g-variant-builder-end"><code>g_variant_builder_end()</code></a> called on it and the
+result will be used as the value. As a special exception, if the given
+type string is a definite type, then <a href="../#NULL:CAPS"><code>NULL</code></a> may be given
+to mean an empty array of that type.</p>
+<p>Upon encountering an '<code>a</code>' character followed by a type string,
+<a href="../#g-variant-get"><code>g_variant_get()</code></a> will take a pointer to a
+<code>(GVariantIter *)</code> (ie: <code>(GVariantIter **)</code>). A new heap-allocated
+iterator is created and returned, initialised for iterating over the
+elements of the array. This iterator should be freed when you are done
+with it, using <a href="../#g-variant-iter-free"><code>g_variant_iter_free()</code></a>.
+<a href="../#NULL:CAPS"><code>NULL</code></a> may also be given to indicate that the value of the
+array should be ignored.</p>
+<h3 id="examples3">Examples</h3>
+<pre><code>GVariantBuilder *builder;
+GVariant *value;
+
+builder = g_variant_builder_new (G_VARIANT_TYPE ("as"));
+g_variant_builder_add (builder, "s", "when");
+g_variant_builder_add (builder, "s", "in");
+g_variant_builder_add (builder, "s", "the");
+g_variant_builder_add (builder, "s", "course");
+value = g_variant_new ("as", builder);
+g_variant_builder_unref (builder);
+
+{
+  GVariantIter *iter;
+  gchar *str;
+
+  g_variant_get (value, "as", &amp;iter);
+  while (g_variant_iter_loop (iter, "s", &amp;str))
+    g_print ("%s\n", str);
+  g_variant_iter_free (iter);
+}
+
+g_variant_unref (value);
+</code></pre>
+<h2 id="maybe-types">Maybe Types</h2>
+<p><strong>Characters: <code>m</code></strong></p>
+<p>Maybe types are handled in two separate ways depending on the format
+string that follows the '<code>m</code>'. The method that is used currently depends
+entirely on the character immediately following the '<code>m</code>'.</p>
+<p>The first way is used with format strings starting with '<code>a</code>', '<code>s</code>',
+'<code>o</code>', '<code>g</code>', '<code>v</code>', '<code>@</code>', '<code>*</code>', '<code>?</code>', '<code>r</code>', '<code>&amp;</code>', or '<code>^</code>'. In all
+of these cases, for non-maybe types, <a href="../#g-variant-new"><code>g_variant_new()</code></a>
+takes a pointer to a non-<a href="../#NULL:CAPS"><code>NULL</code></a> value and
+<a href="../#g-variant-get"><code>g_variant_get()</code></a> returns (by reference) a
+non-<a href="../#NULL:CAPS"><code>NULL</code></a> pointer. When any of these format strings are
+prefixed with an '<code>m</code>', the type of arguments that are collected does
+not change in any way, but <a href="../#NULL:CAPS"><code>NULL</code></a> becomes a permissable
+value, to indicate the Nothing case.</p>
+<p>Note that the "special exception" introduced in the array section for
+constructing empty arrays is ignored here. Using a <code>NULL</code> pointer with
+the format string '<code>mas</code>' constructs the Nothing value -- not an empty
+array.</p>
+<p>The second way is used with all other format strings. For
+<a href="../#g-variant-new"><code>g_variant_new()</code></a> an additional
+<a href="../#gboolean"><code>gboolean</code></a> argument is collected and for
+<a href="../#g-variant-get"><code>g_variant_get()</code></a> an additional <code>(gboolean *)</code>.
+Following this argument, the arguments that are normally collected for
+the equivalent non-maybe type will be collected.</p>
+<p>If <a href="../#FALSE:CAPS"><code>FALSE</code></a> is given to
+<a href="../#g-variant-new"><code>g_variant_new()</code></a> then the Nothing value is
+constructed and the collected arguments are ignored. Otherwise (if
+<a href="../#TRUE:CAPS"><code>TRUE</code></a> was given), the arguments are used in the normal
+way to create the Just value.</p>
+<p>If <a href="../#NULL:CAPS"><code>NULL</code></a> is given to <a href="../#g-variant-get"><code>g_variant_get()</code></a>
+then the value is ignored. If a non-<a href="../#NULL:CAPS"><code>NULL</code></a> pointer is
+given then it is used to return by reference whether the value was Just.
+In the case that the value was Just, the <a href="../#gboolean"><code>gboolean</code></a> will be
+set to <a href="../#TRUE:CAPS"><code>TRUE</code></a> and the value will be stored in the
+arguments in the usual way. In the case that the value was Nothing, the
+<a href="../#gboolean"><code>gboolean</code></a> will be set to <a href="../#FALSE:CAPS"><code>FALSE</code></a> and the
+arguments will be collected in the normal way but have their values set
+to binary zero.</p>
+<h3 id="examples4">Examples</h3>
+<pre><code>GVariant *value1, *value2, *value3, *value4, *value5, *value6;
+value1 = g_variant_new ("ms", "Hello world");
+value2 = g_variant_new ("ms", NULL);
+value3 = g_variant_new ("(m(ii)s)", TRUE, 123, 456, "Done");
+value4 = g_variant_new ("(m(ii)s)", FALSE, -1, -1, "Done");          /* both '-1' are ignored. */
+value5 = g_variant_new ("(m@(ii)s)", NULL, "Done");
+
+{
+  GVariant *contents;
+  const gchar *cstr;
+  gboolean just;
+  gint32 x, y;
+  gchar *str;
+
+  g_variant_get (value1, "ms", &amp;str);
+  if (str != NULL)
+    g_print ("str: %s\n", str);
+  else
+    g_print ("it was null\n");
+  g_free (str);
+
+
+  g_variant_get (value2, "m&amp;s", &amp;cstr);
+  if (cstr != NULL)
+    g_print ("str: %s\n", cstr);
+  else
+    g_print ("it was null\n");
+  /* don't free 'cstr' */
+
+
+  /* NULL passed for the gboolean *, but two 'gint32 *' still collected */
+  g_variant_get (value3, "(m(ii)s)", NULL, NULL, NULL, &amp;str);
+  g_print ("string is %s\n", str);
+  g_free (str);
+
+  /* note: &amp;s used, so g_free() not needed */
+  g_variant_get (value4, "(m(ii)&amp;s)", &amp;just, &amp;x, &amp;y, &amp;cstr);
+  if (just)
+    g_print ("it was (%d, %d)\n", x, y);
+  else
+    g_print ("it was null\n");
+  g_print ("string is %s\n", cstr);
+  /* don't free 'cstr' */
+
+
+  g_variant_get (value5, "(m*s)", &amp;contents, NULL); /* ignore the string. */
+  if (contents != NULL)
+    {
+      g_variant_get (contents, "(ii)", &amp;x, &amp;y);
+      g_print ("it was (%d, %d)\n", x, y);
+      g_variant_unref (contents);
+    }
+  else
+    g_print ("it was null\n");
+}
+</code></pre>
+<h2 id="tuples">Tuples</h2>
+<p><strong>Characters: <code>()</code></strong></p>
+<p>Tuples are handled by handling each item in the tuple, in sequence. Each
+item is handled in the usual way.</p>
+<h3 id="examples5">Examples</h3>
+<pre><code>GVariant *value1, *value2;
+
+value1 = g_variant_new ("(s(ii))", "Hello", 55, 77);
+value2 = g_variant_new ("()");
+
+{
+  gchar *string;
+  gint x, y;
+
+  g_variant_get (value1, "(s(ii))", &amp;string, &amp;x, &amp;y);
+  g_print ("%s, %d, %d\n", string, x, y);
+  g_free (string);
+
+  g_variant_get (value2, "()");   /* do nothing... */
+}
+</code></pre>
+<h2 id="dictionaries">Dictionaries</h2>
+<p><strong>Characters: <code>{}</code></strong></p>
+<p>Dictionary entries are handled by handling first the key, then the
+value. Each is handled in the usual way.</p>
+<h3 id="examples6">Examples</h3>
+<pre><code>GVariantBuilder *b;
+GVariant *dict;
+
+b = g_variant_builder_new (G_VARIANT_TYPE ("a{sv}"));
+g_variant_builder_add (b, "{sv}", "name", g_variant_new_string ("foo"));
+g_variant_builder_add (b, "{sv}", "timeout", g_variant_new_int32 (10));
+dict = g_variant_builder_end (b);
+</code></pre>
+<h2 id="gvariant-">GVariant *</h2>
+<p><strong>Characters: <code>@</code>, <code>*</code>, <code>?</code>, <code>r</code></strong></p>
+<p>Upon encountering a '<code>@</code>' in front of a type string,
+<a href="../#g-variant-new"><code>g_variant_new()</code></a> takes a non-<a href="../#NULL:CAPS"><code>NULL</code></a>
+pointer to a <a href="../#GVariant"><code>GVariant</code></a> and uses its value directly instead
+of collecting arguments to create the value. The provided
+<a href="../#GVariant"><code>GVariant</code></a> must have a type that matches the type string
+following the '<code>@</code>'. '<code>*</code>' is the same as '<code>@*</code>' (ie: take a
+<a href="../#GVariant"><code>GVariant</code></a> of any type). '<code>?</code>' is the same as '<code>@?</code>' (ie:
+take a <a href="../#GVariant"><code>GVariant</code></a> of any basic type). '<code>r</code>' is the same as
+'<code>@r</code>' (ie: take a <a href="../#GVariant"><code>GVariant</code></a> of any tuple type).</p>
+<p>Upon encountering a '<code>@</code>' in front of a type string,
+<a href="../#g-variant-get"><code>g_variant_get()</code></a> takes a pointer to a <code>(GVariant *)</code>
+(ie: a <code>(GVariant **)</code>) and sets it to a new reference to a
+<a href="../#GVariant"><code>GVariant</code></a> containing the value (instead of deconstructing
+the value into C types in the usual way). <a href="../#NULL:CAPS"><code>NULL</code></a> can be
+given to ignore the value. '<code>*</code>', '<code>?</code>' and '<code>r</code>' are handled in a way
+analogous to what is stated above.</p>
+<p>You can always use '<code>*</code>' as an alternative to '<code>?</code>', '<code>r</code>' or any use of
+'<code>@</code>'. Using the other characters where possible is recommended,
+however, due to the improvements in type safety and code
+self-documentation.</p>
+<h3 id="examples7">Examples</h3>
+<pre><code>GVariant *value1, *value2;
+
+value1 = g_variant_new ("(i@ii)", 44, g_variant_new_int32 (55), 66);
+
+/* note: consumes floating reference count on 'value1' */
+value2 = g_variant_new ("(@(iii)*)", value1, g_variant_new_string ("foo"));
+
+{
+  const gchar *string;
+  GVariant *tmp;
+  gsize length;
+  gint x, y, z;
+
+  g_variant_get (value2, "((iii)*)", &amp;x, &amp;y, &amp;z, &amp;tmp);
+  string = g_variant_get_string (tmp, &amp;length);
+  g_print ("it is %d %d %d %s (length=%d)\n", x, y, z, string, (int) length);
+  g_variant_unref (tmp);
+
+  /* quick way to skip all the values in a tuple */
+  g_variant_get (value2, "(rs)", NULL, &amp;string); /* or "(@(iii)s)" */
+  g_print ("i only got the string: %s\n", string);
+  g_free (string);
+}
+</code></pre>
+<h2 id="pointers">Pointers</h2>
+<p><strong>Characters: <code>&amp;</code></strong></p>
+<p>The '<code>&amp;</code>' character is used to indicate that serialised data should be
+directly exchanged via a pointer.</p>
+<p>Currently, the only use for this character is when it is applied to a
+string (ie: '<code>&amp;s</code>', '<code>&amp;o</code>' or '<code>&amp;g</code>'). For
+<a href="../#g-variant-new"><code>g_variant_new()</code></a> this has absolutely no effect. The
+string is collected and duplicated normally. For
+<a href="../#g-variant-get"><code>g_variant_get()</code></a> it means that instead of creating a
+newly allocated copy of the string, a pointer to the serialised data is
+returned. This pointer should not be freed. Validity checks are
+performed to ensure that the string data will always be properly
+nul-terminated.</p>
+<h3 id="examples8">Examples</h3>
+<pre><code>{
+  const gchar *str;
+  GVariant *value;
+
+  value = g_variant_new ("&amp;s", "hello world");
+  g_variant_get (value, "&amp;s", &amp;str);
+  g_print ("string is: %s\n", str);
+  /* no need to free str */
+}
+</code></pre>
+<h2 id="convenience-conversions">Convenience Conversions</h2>
+<p><strong>Characters: <code>^</code></strong></p>
+<p>The '<code>^</code>' character currently supports conversion to and from
+bytestrings or to and from arrays of strings or bytestrings. It has a
+number of forms.</p>
+<p>In all forms, when used with <a href="../#g-variant-new"><code>g_variant_new()</code></a> one
+pointer value is collected from the variable arguments and passed to a
+function (as given in the table below). The result of that function is
+used as the value for this position. When used with
+<a href="../#g-variant-get"><code>g_variant_get()</code></a> one pointer value is produced by
+using the function (given in the table) and returned by reference.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><p><strong>Conversion</strong></p></td>
+<td><p><strong>Used with <a href="#g-variant-new"><code>g_variant_new()</code></a></strong></p></td>
+<td><p><strong>Used with <a href="#g-variant-get"><code>g_variant_get()</code></a></strong></p></td>
+</tr>
+<tr class="even">
+<td><p><strong><code>^as</code></strong></p></td>
+<td><p>equivalent to <a href="#g-variant-new-strv"><code>g_variant_new_strv()</code></a></p></td>
+<td><p>equivalent to <a href="#g-variant-dup-strv"><code>g_variant_dup_strv()</code></a></p></td>
+</tr>
+<tr class="odd">
+<td><p><strong><code>^a&amp;s</code></strong></p></td>
+<td><p>equivalent to <a href="#g-variant-get-strv"><code>g_variant_get_strv()</code></a></p></td>
+</tr>
+<tr class="even">
+<td><p><strong><code>^ao</code></strong></p></td>
+<td><p>equivalent to <a href="#g-variant-new-objv"><code>g_variant_new_objv()</code></a></p></td>
+<td><p>equivalent to <a href="#g-variant-dup-objv"><code>g_variant_dup_objv()</code></a></p></td>
+</tr>
+<tr class="odd">
+<td><p><strong><code>^a&amp;o</code></strong></p></td>
+<td><p>equivalent to <a href="#g-variant-get-objv"><code>g_variant_get_objv()</code></a></p></td>
+</tr>
+<tr class="even">
+<td><p><strong><code>^ay</code></strong></p></td>
+<td><p>equivalent to <a href="#g-variant-new-bytestring"><code>g_variant_new_bytestring()</code></a></p></td>
+<td><p>equivalent to <a href="#g-variant-dup-bytestring"><code>g_variant_dup_bytestring()</code></a></p></td>
+</tr>
+<tr class="odd">
+<td><p><strong><code>^&amp;ay</code></strong></p></td>
+<td><p>equivalent to <a href="#g-variant-get-bytestring"><code>g_variant_get_bytestring()</code></a></p></td>
+</tr>
+<tr class="even">
+<td><p><strong><code>^aay</code></strong></p></td>
+<td><p>equivalent to <a href="#g-variant-new-bytestring-array"><code>g_variant_new_bytestring_array()</code></a></p></td>
+<td><p>equivalent to <a href="#g-variant-dup-bytestring-array"><code>g_variant_dup_bytestring_array()</code></a></p></td>
+</tr>
+<tr class="odd">
+<td><p><strong><code>^a&amp;ay</code></strong></p></td>
+<td><p>equivalent to <a href="#g-variant-get-bytestring-array"><code>g_variant_get_bytestring_array()</code></a></p></td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

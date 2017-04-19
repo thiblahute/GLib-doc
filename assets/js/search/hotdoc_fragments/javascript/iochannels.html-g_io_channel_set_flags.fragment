@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/iochannels.html#g_io_channel_set_flags", "fragment": "GLib.IOChannel.prototype.set_flags \nSets the writeable flags in channel to flags GLib.IOFlags.prototype.set_mask \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/keyfile.html#glibkeyfileprototypeto_data", "fragment": "GLib.KeyFile.prototype.to_data \nThis function outputs key_file as a string. \nNote that this function never reports an error so it is safe to pass null as error. \n"});

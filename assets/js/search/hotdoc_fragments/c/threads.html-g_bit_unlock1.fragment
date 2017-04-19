@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#g_bit_unlock1", "fragment": "g_bit_unlock \nClears the indicated lock_bit in address. If another thread is currently blocked in g_bit_lock on this same bit then it will be woken up. \nThis function accesses address atomically. All other accesses to address must be atomic in order for this function to work reliably. \n"});

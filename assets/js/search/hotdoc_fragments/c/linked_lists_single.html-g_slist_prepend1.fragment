@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/linked_lists_single.html#g_slist_prepend1", "fragment": "g_slist_prepend \nAdds a new element on to the start of the list. \nThe return value is the new start of the list which may have changed so make sure you store the new value. \n"});

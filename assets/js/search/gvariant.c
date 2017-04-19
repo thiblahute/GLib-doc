@@ -1,0 +1,1 @@
+urls_downloaded_cb({"token": "gvariant.c", "urls": ["c/gvariant.html#g_variant_new_from_bytes1", "python/gvariant.html#glibvariantnew_from_bytes", "javascript/gvariant.html#g_variant_new_from_bytes"]});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/bookmarkfile.html#glibbookmarkfileset_mime_type", "fragment": "GLib.BookmarkFile.set_mime_type \nSets mime_type as the MIME type of the bookmark for uri. \nIf a bookmark for uri cannot be found then it is created. \n"});

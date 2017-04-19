@@ -1,0 +1,4433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GDebugKey</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="misc_utils.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="misc_utils.markdown">
+        <h1 id="gdebugkey">GDebugKey</h1>
+    </div>
+        
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_path_get_basename">
+		
+<h3 id="g_path_get_basename1">
+	<span><code>g_path_get_basename</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_path_get_basename (gchar* file_name)</pre>
+
+<p>Gets the last component of the filename.</p>
+<p>If <em>file_name</em> ends with a directory separator it gets the component
+before the last slash. If <em>file_name</em> consists only of directory
+separators (and on Windows, possibly a drive letter), a single
+separator is returned. If <em>file_name</em> is empty, it gets ".".</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>the name of the file</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string containing the last
+component of the filename</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_build_path">
+		
+<h3 id="g_build_path1">
+	<span><code>g_build_path</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_build_path (gchar* separator,
+              gchar* first_element,
+              ... ...)</pre>
+
+<p>Creates a path from a series of elements using <em>separator</em> as the
+separator between elements. At the boundary between two elements,
+any trailing occurrences of separator in the first element, or
+leading occurrences of separator in the second element are removed
+and exactly one copy of the separator is inserted.</p>
+<p>Empty elements are ignored.</p>
+<p>The number of leading copies of the separator on the result is
+the same as the number of leading copies of the separator on
+the first non-empty element.</p>
+<p>The number of trailing copies of the separator on the result is
+the same as the number of trailing copies of the separator on
+the last non-empty element. (Determination of the number of
+trailing copies is done without stripping leading copies, so
+if the separator is <code>ABA</code>, then <code>ABABA</code> has 1 trailing copy.)</p>
+<p>However, if there is only a single non-empty element, and there
+are no characters in that element not part of the leading or
+trailing separators, then the result is exactly the original value
+of that element.</p>
+<p>Other than for determination of the number of leading and trailing
+copies of the separator, elements consisting only of copies
+of the separator are ignored.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>separator:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string used to separator the elements of the path.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>first_element:</code></em></i>
+		</p>
+	</td>
+		<td><p>the first element in the path</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>remaining elements in path, terminated by <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated string that must be freed with
+<a href="memory.html#g_free">g_free</a>.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_bit_nth_lsf">
+		
+<h3 id="g_bit_nth_lsf1">
+	<span><code>g_bit_nth_lsf</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_bit_nth_lsf (gulong mask,
+               gint nth_bit)</pre>
+
+<p>Find the position of the first bit set in <em>mask</em>, searching
+from (but not including) <em>nth_bit</em> upwards. Bits are numbered
+from 0 (least significant) to sizeof(#gulong) * 8 - 1 (31 or 63,
+usually). To start searching from the 0th bit, set <em>nth_bit</em> to -1.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mask:</code></em></i>
+		</p>
+	</td>
+		<td><p>a gulong containing flags</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>nth_bit:</code></em></i>
+		</p>
+	</td>
+		<td><p>the index of the bit to start the search from</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the index of the first bit set which is higher than <em>nth_bit</em>, or -1
+if no higher bits are set</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_parse_debug_string">
+		
+<h3 id="g_parse_debug_string1">
+	<span><code>g_parse_debug_string</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+guint
+g_parse_debug_string (const gchar* string,
+                      <a title="GDebugKey" href="misc_utils.html#GDebugKey">GDebugKey</a> keys,
+                      guint nkeys)</pre>
+
+<p>Parses a string containing debugging options
+into a guint containing bit flags. This is used
+within GDK and GTK+ to parse the debug options passed on the
+command line or through environment variables.</p>
+<p>If <em>string</em> is equal to "all", all flags are set. Any flags
+specified along with "all" in <em>string</em> are inverted; thus,
+"all,foo,bar" or "foo,bar,all" sets all flags except those
+corresponding to "foo" and "bar".</p>
+<p>If <em>string</em> is equal to "help", all the available keys in <em>keys</em>
+are printed out to standard error.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a list of debug options separated by colons, spaces, or
+commas, or <a href="macros.html#NULL">NULL</a>.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>keys:</code></em></i>
+		</p>
+	</td>
+		<td><p>pointer to an array of <a href="misc_utils.html#GDebugKey">GDebugKey</a> which associate
+strings with bit flags.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=nkeys]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>nkeys:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of <a href="misc_utils.html#GDebugKey">GDebugKey</a> in the array.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the combined set of bit flags.</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_get_system_config_dirs">
+		
+<h3 id="g_get_system_config_dirs1">
+	<span><code>g_get_system_config_dirs</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+filename*
+g_get_system_config_dirs ()</pre>
+
+<p>Returns an ordered list of base directories in which to access
+system-wide configuration information.</p>
+<p>On UNIX platforms this is determined using the mechanisms described
+in the
+<a href="http://www.freedesktop.org/Standards/basedir-spec">XDG Base Directory Specification</a>.
+In this case the list of directories retrieved will be <code>XDG_CONFIG_DIRS</code>.</p>
+<p>On Windows is the directory that contains application data for all users.
+A typical path is C:\Documents and Settings\All Users\Application Data.
+This folder is used for application data that is not user specific.
+For example, an application can store a spell-check dictionary, a database
+of clip art, or a log file in the CSIDL_COMMON_APPDATA folder.
+This information will not roam and is available to anyone using the computer.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>(array zero-terminated=1) (element-type filename) (transfer none):
+a <a href="macros.html#NULL">NULL</a>-terminated array of strings owned by GLib that must not be
+modified or freed.</p>
+
+	</td>
+	<td>
+		filename*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_get_user_special_dir">
+		
+<h3 id="g_get_user_special_dir1">
+	<span><code>g_get_user_special_dir</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_get_user_special_dir (<a title="GUserDirectory" href="misc_utils.html#GUserDirectory">GUserDirectory</a> directory)</pre>
+
+<p>Returns the full path of a special directory using its logical id.</p>
+<p>On UNIX this is done using the XDG special user directories.
+For compatibility with existing practise, <a href="misc_utils.html#G_USER_DIRECTORY_DESKTOP">G_USER_DIRECTORY_DESKTOP</a>
+falls back to <code>$HOME/Desktop</code> when XDG special user directories have
+not been set up.</p>
+<p>Depending on the platform, the user might be able to change the path
+of the special directory without requiring the session to restart; GLib
+will not reflect any change once the special directories are loaded.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>directory:</code></em></i>
+		</p>
+	</td>
+		<td><p>the logical id of special directory</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the path to the specified special directory, or
+<a href="macros.html#NULL">NULL</a> if the logical id was not found. The returned string is owned by
+GLib and should not be modified or freed.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.2;" id="g_set_application_name">
+		
+<h3 id="g_set_application_name1">
+	<span><code>g_set_application_name</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_set_application_name (const gchar* application_name)</pre>
+
+<p>Sets a human-readable name for the application. This name should be
+localized if possible, and is intended for display to the user.
+Contrast with <a href="misc_utils.html#g_set_prgname">g_set_prgname</a>, which sets a non-localized name.
+<a href="misc_utils.html#g_set_prgname">g_set_prgname</a> will be called automatically by gtk_init,
+but <a href="misc_utils.html#g_set_application_name">g_set_application_name</a> will not.</p>
+<p>Note that for thread safety reasons, this function can only
+be called once.</p>
+<p>The application name will be used in contexts such as error messages,
+or when displaying an application's name in the task list.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>application_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>localized name of the application</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.2
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_get_home_dir">
+		
+<h3 id="g_get_home_dir1">
+	<span><code>g_get_home_dir</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_get_home_dir ()</pre>
+
+<p>Gets the current user's home directory.</p>
+<p>As with most UNIX tools, this function will return the value of the
+<code>HOME</code> environment variable if it is set to an existing absolute path
+name, falling back to the <code>passwd</code> file in the case that it is unset.</p>
+<p>If the path given in <code>HOME</code> is non-absolute, does not exist, or is
+not a directory, the result is undefined.</p>
+<p>Before version 2.36 this function would ignore the <code>HOME</code> environment
+variable, taking the value from the <code>passwd</code> database instead. This was
+changed to increase the compatibility of GLib with other programs (and
+the XDG basedir specification) and to increase testability of programs
+based on GLib (by making it easier to run them from test frameworks).</p>
+<p>If your program has a strong requirement for either the new or the
+old behaviour (and if you don't wish to increase your GLib
+dependency to ensure that the new behaviour is in effect) then you
+should either directly check the <code>HOME</code> environment variable yourself
+or unset it before calling any functions in GLib.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the current user's home directory</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_path_skip_root">
+		
+<h3 id="g_path_skip_root1">
+	<span><code>g_path_skip_root</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_path_skip_root (gchar* file_name)</pre>
+
+<p>Returns a pointer into <em>file_name</em> after the root component,
+i.e. after the "/" in UNIX or "C:" under Windows. If <em>file_name</em>
+is not an absolute path it returns <a href="macros.html#NULL">NULL</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a file name</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer into <em>file_name</em> after the
+root component</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_build_filename">
+		
+<h3 id="g_build_filename1">
+	<span><code>g_build_filename</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_build_filename (gchar* first_element,
+                  ... ...)</pre>
+
+<p>Creates a filename from a series of elements using the correct
+separator for filenames.</p>
+<p>On Unix, this function behaves identically to <code>g_build_path (G_DIR_SEPARATOR_S, first_element, ....)</code>.</p>
+<p>On Windows, it takes into account that either the backslash
+(<code>\</code> or slash (<code>/</code>) can be used as separator in filenames, but
+otherwise behaves as on UNIX. When file pathname separators need
+to be inserted, the one that last previously occurred in the
+parameters (reading from left to right) is used.</p>
+<p>No attempt is made to force the resulting filename to be an absolute
+path. If the first element is a relative path, the result will
+be a relative path.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>first_element:</code></em></i>
+		</p>
+	</td>
+		<td><p>the first element in the path</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>remaining elements in path, terminated by <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated string that must be freed with
+<a href="memory.html#g_free">g_free</a>.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.28;" id="g_get_user_runtime_dir">
+		
+<h3 id="g_get_user_runtime_dir1">
+	<span><code>g_get_user_runtime_dir</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_get_user_runtime_dir ()</pre>
+
+<p>Returns a directory that is unique to the current user on the local
+system.</p>
+<p>On UNIX platforms this is determined using the mechanisms described
+in the
+<a href="http://www.freedesktop.org/Standards/basedir-spec">XDG Base Directory Specification</a>.
+This is the directory
+specified in the <code>XDG_RUNTIME_DIR</code> environment variable.
+In the case that this variable is not set, we return the value of
+<a href="misc_utils.html#g_get_user_cache_dir">g_get_user_cache_dir</a>, after verifying that it exists.</p>
+<p>On Windows this is the folder to use for local (as opposed to
+roaming) application data. See documentation for
+CSIDL_LOCAL_APPDATA.  Note that on Windows it thus is the same as
+what <a href="misc_utils.html#g_get_user_config_dir">g_get_user_config_dir</a> returns.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a string owned by GLib that must not be
+modified or freed.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.28
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_set_prgname">
+		
+<h3 id="g_set_prgname1">
+	<span><code>g_set_prgname</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_set_prgname (const gchar* prgname)</pre>
+
+<p>Sets the name of the program. This name should not be localized,
+in contrast to <a href="misc_utils.html#g_set_application_name">g_set_application_name</a>.</p>
+<p>Note that for thread-safety reasons this function can only be called once.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>prgname:</code></em></i>
+		</p>
+	</td>
+		<td><p>the name of the program.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_get_real_name">
+		
+<h3 id="g_get_real_name1">
+	<span><code>g_get_real_name</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_get_real_name ()</pre>
+
+<p>Gets the real name of the user. This usually comes from the user's
+entry in the <code>passwd</code> file. The encoding of the returned string is
+system-defined. (On Windows, it is, however, always UTF-8.) If the
+real user name cannot be determined, the string "Unknown" is
+returned.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the user's real name.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_bit_storage">
+		
+<h3 id="g_bit_storage1">
+	<span><code>g_bit_storage</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+guint
+g_bit_storage (gulong number)</pre>
+
+<p>Gets the number of bits used to hold <em>number</em>,
+e.g. if <em>number</em> is 4, 3 bits are needed.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>number:</code></em></i>
+		</p>
+	</td>
+		<td><p>a guint</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of bits used to hold <em>number</em></p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_getenv">
+		
+<h3 id="g_getenv1">
+	<span><code>g_getenv</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+const gchar*
+g_getenv (const gchar* variable)</pre>
+
+<p>Returns the value of an environment variable.</p>
+<p>On UNIX, the name and value are byte strings which might or might not
+be in some consistent character set and encoding. On Windows, they are
+in UTF-8.
+On Windows, in case the environment variable's value contains
+references to other environment variables, they are expanded.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>variable:</code></em></i>
+		</p>
+	</td>
+		<td><p>the environment variable to get</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the value of the environment variable, or <a href="macros.html#NULL">NULL</a> if
+the environment variable is not found. The returned string
+may be overwritten by the next call to <a href="misc_utils.html#g_getenv">g_getenv</a>, <a href="misc_utils.html#g_setenv">g_setenv</a>
+or <a href="misc_utils.html#g_unsetenv">g_unsetenv</a>.</p>
+
+	</td>
+	<td>
+		const gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_nullify_pointer">
+		
+<h3 id="g_nullify_pointer1">
+	<span><code>g_nullify_pointer</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_nullify_pointer (gpointer* nullify_location)</pre>
+
+<p>Set the pointer at the specified location to <a href="macros.html#NULL">NULL</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>nullify_location:</code></em></i>
+		</p>
+	</td>
+		<td><p>the memory address of the pointer.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_get_current_dir">
+		
+<h3 id="g_get_current_dir1">
+	<span><code>g_get_current_dir</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_get_current_dir ()</pre>
+
+<p>Gets the current directory.</p>
+<p>The returned string should be freed when no longer needed.
+The encoding of the returned string is system defined.
+On Windows, it is always UTF-8.</p>
+<p>Since GLib 2.40, this function will return the value of the "PWD"
+environment variable if it is set and it happens to be the same as
+the current directory.  This can make a difference in the case that
+the current directory is the target of a symbolic link.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the current directory</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_environ_getenv">
+		
+<h3 id="g_environ_getenv1">
+	<span><code>g_environ_getenv</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+const gchar*
+g_environ_getenv (gchar* envp,
+                  const gchar* variable)</pre>
+
+<p>Returns the value of the environment variable <em>variable</em> in the
+provided list <em>envp</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>envp:</code></em></i>
+		</p>
+	</td>
+		<td><p>an environment
+list (eg, as returned from <a href="misc_utils.html#g_get_environ">g_get_environ</a>), or <a href="macros.html#NULL">NULL</a>
+for an empty environment list</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+<span class="annotation">[<abbr title="Don't free data after the code is done"><span class="acronym">transfer: none</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>variable:</code></em></i>
+		</p>
+	</td>
+		<td><p>the environment variable to get</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the value of the environment variable, or <a href="macros.html#NULL">NULL</a> if
+the environment variable is not set in <em>envp</em>. The returned
+string is owned by <em>envp</em>, and will be freed if <em>variable</em> is
+set or unset again.</p>
+
+	</td>
+	<td>
+		const gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_get_user_config_dir">
+		
+<h3 id="g_get_user_config_dir1">
+	<span><code>g_get_user_config_dir</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_get_user_config_dir ()</pre>
+
+<p>Returns a base directory in which to store user-specific application
+configuration information such as user preferences and settings.</p>
+<p>On UNIX platforms this is determined using the mechanisms described
+in the
+<a href="http://www.freedesktop.org/Standards/basedir-spec">XDG Base Directory Specification</a>.
+In this case the directory retrieved will be <code>XDG_CONFIG_HOME</code>.</p>
+<p>On Windows this is the folder to use for local (as opposed to
+roaming) application data. See documentation for
+CSIDL_LOCAL_APPDATA. Note that on Windows it thus is the same as
+what <a href="misc_utils.html#g_get_user_data_dir">g_get_user_data_dir</a> returns.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a string owned by GLib that must not be modified
+or freed.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;deprecated:2.30;" id="g_format_size_for_display">
+		
+<h3 id="g_format_size_for_display1">
+	<span><code>g_format_size_for_display</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_format_size_for_display (goffset size)</pre>
+
+<p>Formats a size (for example the size of a file) into a human
+readable string. Sizes are rounded to the nearest size prefix
+(KB, MB, GB) and are displayed rounded to the nearest tenth.
+E.g. the file size 3292528 bytes will be converted into the
+string "3.1 MB".</p>
+<p>The prefix units base is 1024 (i.e. 1 KB is 1024 bytes).</p>
+<p>This string should be freed with <a href="memory.html#g_free">g_free</a> when not needed any longer.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>size:</code></em></i>
+		</p>
+	</td>
+		<td><p>a size in bytes</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated formatted string containing a human
+readable file size</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+	<p>
+	deprecated			: 2.30: This function is broken due to its use of SI
+     suffixes to denote IEC units. Use g_format_size() instead.
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_spaced_primes_closest">
+		
+<h3 id="g_spaced_primes_closest1">
+	<span><code>g_spaced_primes_closest</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+guint
+g_spaced_primes_closest (guint num)</pre>
+
+<p>Gets the smallest prime number from a built-in array of primes which
+is larger than <em>num</em>. This is used within GLib to calculate the optimum
+size of a <a href="hash_tables.html#GHashTable">GHashTable</a>.</p>
+<p>The built-in array of primes ranges from 11 to 13845163 such that
+each prime is approximately 1.5-2 times the previous prime.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>num:</code></em></i>
+		</p>
+	</td>
+		<td><p>a guint</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the smallest prime number from a built-in array of primes
+which is larger than <em>num</em></p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_setenv">
+		
+<h3 id="g_setenv1">
+	<span><code>g_setenv</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_setenv (const gchar* variable,
+          const gchar* value,
+          gboolean overwrite)</pre>
+
+<p>Sets an environment variable. On UNIX, both the variable's name and
+value can be arbitrary byte strings, except that the variable's name
+cannot contain '='. On Windows, they should be in UTF-8.</p>
+<p>Note that on some systems, when variables are overwritten, the memory
+used for the previous variables and its value isn't reclaimed.</p>
+<p>You should be mindful of the fact that environment variable handling
+in UNIX is not thread-safe, and your program may crash if one thread
+calls <a href="misc_utils.html#g_setenv">g_setenv</a> while another thread is calling getenv. (And note
+that many functions, such as gettext, call getenv internally.)
+This function is only safe to use at the very start of your program,
+before creating any other threads (or creating objects that create
+worker threads of their own).</p>
+<p>If you need to set up the environment for a child process, you can
+use <a href="misc_utils.html#g_get_environ">g_get_environ</a> to get an environment array, modify that with
+<a href="misc_utils.html#g_environ_setenv">g_environ_setenv</a> and <a href="misc_utils.html#g_environ_unsetenv">g_environ_unsetenv</a>, and then pass that
+array directly to execvpe, <a href="spawn.html#g_spawn_async">g_spawn_async</a>, or the like.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>variable:</code></em></i>
+		</p>
+	</td>
+		<td><p>the environment variable to set, must not contain '='.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>the value for to set the variable to.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>overwrite:</code></em></i>
+		</p>
+	</td>
+		<td><p>whether to change the variable if it already exists.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#FALSE">FALSE</a> if the environment variable couldn't be set.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_get_user_data_dir">
+		
+<h3 id="g_get_user_data_dir1">
+	<span><code>g_get_user_data_dir</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_get_user_data_dir ()</pre>
+
+<p>Returns a base directory in which to access application data such
+as icons that is customized for a particular user.</p>
+<p>On UNIX platforms this is determined using the mechanisms described
+in the
+<a href="http://www.freedesktop.org/Standards/basedir-spec">XDG Base Directory Specification</a>.
+In this case the directory retrieved will be <code>XDG_DATA_HOME</code>.</p>
+<p>On Windows this is the folder to use for local (as opposed to
+roaming) application data. See documentation for
+CSIDL_LOCAL_APPDATA. Note that on Windows it thus is the same as
+what <a href="misc_utils.html#g_get_user_config_dir">g_get_user_config_dir</a> returns.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a string owned by GLib that must not be modified
+or freed.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_environ_unsetenv">
+		
+<h3 id="g_environ_unsetenv1">
+	<span><code>g_environ_unsetenv</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+utf8*
+g_environ_unsetenv (gchar* envp,
+                    const gchar* variable)</pre>
+
+<p>Removes the environment variable <em>variable</em> from the provided
+environment <em>envp</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>envp:</code></em></i>
+		</p>
+	</td>
+		<td><p>an environment
+list that can be freed using <a href="string_utils.html#g_strfreev">g_strfreev</a> (e.g., as returned from <a href="misc_utils.html#g_get_environ">g_get_environ</a>),
+or <a href="macros.html#NULL">NULL</a> for an empty environment list</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>variable:</code></em></i>
+		</p>
+	</td>
+		<td><p>the environment variable to remove, must not contain '='</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the
+updated environment list. Free it using <a href="string_utils.html#g_strfreev">g_strfreev</a>.</p>
+
+	</td>
+	<td>
+		utf8*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_format_size">
+		
+<h3 id="g_format_size1">
+	<span><code>g_format_size</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_format_size (guint64 size)</pre>
+
+<p>Formats a size (for example the size of a file) into a human readable
+string.  Sizes are rounded to the nearest size prefix (kB, MB, GB)
+and are displayed rounded to the nearest tenth. E.g. the file size
+3292528 bytes will be converted into the string "3.2 MB".</p>
+<p>The prefix units base is 1000 (i.e. 1 kB is 1000 bytes).</p>
+<p>This string should be freed with <a href="memory.html#g_free">g_free</a> when not needed any longer.</p>
+<p>See <a href="misc_utils.html#g_format_size_full">g_format_size_full</a> for more options about how the size might be
+formatted.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>size:</code></em></i>
+		</p>
+	</td>
+		<td><p>a size in bytes</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns21">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated formatted string containing a human readable
+file size</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.28;" id="g_get_environ">
+		
+<h3 id="g_get_environ1">
+	<span><code>g_get_environ</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+utf8*
+g_get_environ ()</pre>
+
+<p>Gets the list of environment variables for the current process.</p>
+<p>The list is <a href="macros.html#NULL">NULL</a> terminated and each item in the list is of the
+form 'NAME=VALUE'.</p>
+<p>This is equivalent to direct access to the 'environ' global variable,
+except portable.</p>
+<p>The return value is freshly allocated and it should be freed with
+<a href="string_utils.html#g_strfreev">g_strfreev</a> when it is no longer needed.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns22">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the list of
+environment variables</p>
+
+	</td>
+	<td>
+		utf8*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.28
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_find_program_in_path">
+		
+<h3 id="g_find_program_in_path1">
+	<span><code>g_find_program_in_path</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_find_program_in_path (gchar* program)</pre>
+
+<p>Locates the first executable named <em>program</em> in the user's path, in the
+same way that execvp would locate it. Returns an allocated string
+with the absolute path name, or <a href="macros.html#NULL">NULL</a> if the program is not found in
+the path. If <em>program</em> is already an absolute path, returns a copy of
+<em>program</em> if <em>program</em> exists and is executable, and <a href="macros.html#NULL">NULL</a> otherwise.</p>
+<p>On Windows, if <em>program</em> does not have a file type suffix, tries
+with the suffixes .exe, .cmd, .bat and .com, and the suffixes in
+the <code>PATHEXT</code> environment variable.</p>
+<p>On Windows, it looks for the file in the same way as CreateProcess
+would. This means first in the directory where the executing
+program was loaded from, then in the current directory, then in the
+Windows 32-bit system directory, then in the Windows directory, and
+finally in the directories in the <code>PATH</code> environment variable. If
+the program is found, the return value contains the full name
+including the type suffix.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>program:</code></em></i>
+		</p>
+	</td>
+		<td><p>a program name in the GLib file name encoding</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns23">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated string with the absolute path,
+or <a href="macros.html#NULL">NULL</a></p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_listenv">
+		
+<h3 id="g_listenv1">
+	<span><code>g_listenv</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+utf8*
+g_listenv ()</pre>
+
+<p>Gets the names of all variables set in the environment.</p>
+<p>Programs that want to be portable to Windows should typically use
+this function and <a href="misc_utils.html#g_getenv">g_getenv</a> instead of using the environ array
+from the C library directly. On Windows, the strings in the environ
+array are in system codepage encoding, while in most of the typical
+use cases for environment variables in GLib-using programs you want
+the UTF-8 encoding that this function and <a href="misc_utils.html#g_getenv">g_getenv</a> provide.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns24">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="macros.html#NULL">NULL</a>-terminated
+list of strings which must be freed with <a href="string_utils.html#g_strfreev">g_strfreev</a>.</p>
+
+	</td>
+	<td>
+		utf8*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_environ_setenv">
+		
+<h3 id="g_environ_setenv1">
+	<span><code>g_environ_setenv</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+utf8*
+g_environ_setenv (gchar* envp,
+                  const gchar* variable,
+                  const gchar* value,
+                  gboolean overwrite)</pre>
+
+<p>Sets the environment variable <em>variable</em> in the provided list
+<em>envp</em> to <em>value</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>envp:</code></em></i>
+		</p>
+	</td>
+		<td><p>an
+environment list that can be freed using <a href="string_utils.html#g_strfreev">g_strfreev</a> (e.g., as
+returned from <a href="misc_utils.html#g_get_environ">g_get_environ</a>), or <a href="macros.html#NULL">NULL</a> for an empty
+environment list</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>variable:</code></em></i>
+		</p>
+	</td>
+		<td><p>the environment variable to set, must not contain '='</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>the value for to set the variable to</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>overwrite:</code></em></i>
+		</p>
+	</td>
+		<td><p>whether to change the variable if it already exists</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns25">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the
+updated environment list. Free it using <a href="string_utils.html#g_strfreev">g_strfreev</a>.</p>
+
+	</td>
+	<td>
+		utf8*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_format_size_full">
+		
+<h3 id="g_format_size_full1">
+	<span><code>g_format_size_full</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_format_size_full (guint64 size,
+                    <a title="GFormatSizeFlags" href="misc_utils.html#GFormatSizeFlags">GFormatSizeFlags</a> flags)</pre>
+
+<p>Formats a size.</p>
+<p>This function is similar to <a href="misc_utils.html#g_format_size">g_format_size</a> but allows for flags
+that modify the output. See <a href="misc_utils.html#GFormatSizeFlags">GFormatSizeFlags</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>size:</code></em></i>
+		</p>
+	</td>
+		<td><p>a size in bytes</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="misc_utils.html#GFormatSizeFlags">GFormatSizeFlags</a> to modify the output</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns26">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated formatted string containing a human
+readable file size</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_get_user_name">
+		
+<h3 id="g_get_user_name1">
+	<span><code>g_get_user_name</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_get_user_name ()</pre>
+
+<p>Gets the user name of the current user. The encoding of the returned
+string is system-defined. On UNIX, it might be the preferred file name
+encoding, or something else, and there is no guarantee that it is even
+consistent on a machine. On Windows, it is always UTF-8.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns27">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the user name of the current user.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_path_get_dirname">
+		
+<h3 id="g_path_get_dirname1">
+	<span><code>g_path_get_dirname</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_path_get_dirname (gchar* file_name)</pre>
+
+<p>Gets the directory components of a file name.</p>
+<p>If the file name has no directory components "." is returned.
+The returned string should be freed when no longer needed.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>the name of the file</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns28">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the directory components of the file</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.2;" id="g_get_application_name">
+		
+<h3 id="g_get_application_name1">
+	<span><code>g_get_application_name</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+const gchar*
+g_get_application_name ()</pre>
+
+<p>Gets a human-readable name for the application, as set by
+<a href="misc_utils.html#g_set_application_name">g_set_application_name</a>. This name should be localized if
+possible, and is intended for display to the user.  Contrast with
+<a href="misc_utils.html#g_get_prgname">g_get_prgname</a>, which gets a non-localized name. If
+<a href="misc_utils.html#g_set_application_name">g_set_application_name</a> has not been called, returns the result of
+<a href="misc_utils.html#g_get_prgname">g_get_prgname</a> (which may be <a href="macros.html#NULL">NULL</a> if <a href="misc_utils.html#g_set_prgname">g_set_prgname</a> has also not
+been called).</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns29">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>human-readable application name. may return <a href="macros.html#NULL">NULL</a></p>
+
+	</td>
+	<td>
+		const gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.2
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_path_is_absolute">
+		
+<h3 id="g_path_is_absolute1">
+	<span><code>g_path_is_absolute</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_path_is_absolute (gchar* file_name)</pre>
+
+<p>Returns <a href="macros.html#TRUE">TRUE</a> if the given <em>file_name</em> is an absolute file name.
+Note that this is a somewhat vague concept on Windows.</p>
+<p>On POSIX systems, an absolute file name is well-defined. It always
+starts from the single root directory. For example "/usr/local".</p>
+<p>On Windows, the concepts of current drive and drive-specific
+current directory introduce vagueness. This function interprets as
+an absolute file name one that either begins with a directory
+separator such as "\Users\tml" or begins with the root on a drive,
+for example "C:\Windows". The first case also includes UNC paths
+such as "\myserver\docs\foo". In all cases, either slashes or
+backslashes are accepted.</p>
+<p>Note that a file name relative to the current drive root does not
+truly specify a file uniquely over time and across processes, as
+the current drive is a per-process value and can be changed.</p>
+<p>File names relative the current directory on some specific drive,
+such as "D:foo/bar", are not interpreted as absolute by this
+function, but they obviously are not relative to the normal current
+directory as returned by getcwd or <a href="misc_utils.html#g_get_current_dir">g_get_current_dir</a>
+either. Such paths should be avoided, or need to be handled using
+Windows-specific code.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a file name</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns30">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>file_name</em> is absolute</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_get_prgname">
+		
+<h3 id="g_get_prgname1">
+	<span><code>g_get_prgname</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+const gchar*
+g_get_prgname ()</pre>
+
+<p>Gets the name of the program. This name should not be localized,
+in contrast to <a href="misc_utils.html#g_get_application_name">g_get_application_name</a>.</p>
+<p>If you are using GDK or GTK+ the program name is set in gdk_init,
+which is called by gtk_init. The program name is found by taking
+the last component of <em>argv</em>[0].</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns31">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the name of the program. The returned string belongs
+to GLib and must not be modified or freed.</p>
+
+	</td>
+	<td>
+		const gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_reload_user_special_dirs_cache">
+		
+<h3 id="g_reload_user_special_dirs_cache1">
+	<span><code>g_reload_user_special_dirs_cache</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_reload_user_special_dirs_cache ()</pre>
+
+<p>Resets the cache used for <a href="misc_utils.html#g_get_user_special_dir">g_get_user_special_dir</a>, so
+that the latest on-disk version is used. Call this only
+if you just changed the data on disk yourself.</p>
+<p>Due to threadsafety issues this may cause leaking of strings
+that were previously returned from <a href="misc_utils.html#g_get_user_special_dir">g_get_user_special_dir</a>
+that can't be freed. We ensure to only leak the data for
+the directories that actually changed value though.</p>
+
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.2;" id="g_basename">
+		
+<h3 id="g_basename1">
+	<span><code>g_basename</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_basename (gchar* file_name)</pre>
+
+<p>Gets the name of the file without any leading directory
+components. It returns a pointer into the given file name
+string.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>the name of the file</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns32">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the name of the file without any leading
+directory components</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	deprecated			: 2.2: Use g_path_get_basename() instead, but notice
+     that g_path_get_basename() allocates new memory for the
+     returned string, unlike this function which returns a pointer
+     into the argument.
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_get_system_data_dirs">
+		
+<h3 id="g_get_system_data_dirs1">
+	<span><code>g_get_system_data_dirs</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+filename*
+g_get_system_data_dirs ()</pre>
+
+<p>Returns an ordered list of base directories in which to access
+system-wide application data.</p>
+<p>On UNIX platforms this is determined using the mechanisms described
+in the
+<a href="http://www.freedesktop.org/Standards/basedir-spec">XDG Base Directory Specification</a>
+In this case the list of directories retrieved will be XDG_DATA_DIRS.</p>
+<p>On Windows the first elements in the list are the Application Data
+and Documents folders for All Users. (These can be determined only
+on Windows 2000 or later and are not present in the list on other
+Windows versions.) See documentation for CSIDL_COMMON_APPDATA and
+CSIDL_COMMON_DOCUMENTS.</p>
+<p>Then follows the "share" subfolder in the installation folder for
+the package containing the DLL that calls this function, if it can
+be determined.</p>
+<p>Finally the list contains the "share" subfolder in the installation
+folder for GLib, and in the installation folder for the package the
+application's .exe file belongs to.</p>
+<p>The installation folders above are determined by looking up the
+folder where the module (DLL or EXE) in question is located. If the
+folder's name is "bin", its parent is used, otherwise the folder
+itself.</p>
+<p>Note that on Windows the returned list can vary depending on where
+this function is called.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns33">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>(array zero-terminated=1) (element-type filename) (transfer none):
+a <a href="macros.html#NULL">NULL</a>-terminated array of strings owned by GLib that must not be
+modified or freed.</p>
+
+	</td>
+	<td>
+		filename*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_get_tmp_dir">
+		
+<h3 id="g_get_tmp_dir1">
+	<span><code>g_get_tmp_dir</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_get_tmp_dir ()</pre>
+
+<p>Gets the directory to use for temporary files.</p>
+<p>On UNIX, this is taken from the <code>TMPDIR</code> environment variable.
+If the variable is not set, <code>P_tmpdir</code> is
+used, as defined by the system C library. Failing that, a
+hard-coded default of "/tmp" is returned.</p>
+<p>On Windows, the <code>TEMP</code> environment variable is used, with the
+root directory of the Windows installation (eg: "C:") used
+as a default.</p>
+<p>The encoding of the returned string is system-defined. On Windows,
+it is always UTF-8. The return value is never <a href="macros.html#NULL">NULL</a> or the empty
+string.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns34">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the directory to use for temporary files.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_bit_nth_msf">
+		
+<h3 id="g_bit_nth_msf1">
+	<span><code>g_bit_nth_msf</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_bit_nth_msf (gulong mask,
+               gint nth_bit)</pre>
+
+<p>Find the position of the first bit set in <em>mask</em>, searching
+from (but not including) <em>nth_bit</em> downwards. Bits are numbered
+from 0 (least significant) to sizeof(#gulong) * 8 - 1 (31 or 63,
+usually). To start searching from the last bit, set <em>nth_bit</em> to
+-1 or GLIB_SIZEOF_LONG * 8.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mask:</code></em></i>
+		</p>
+	</td>
+		<td><p>a gulong containing flags</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>nth_bit:</code></em></i>
+		</p>
+	</td>
+		<td><p>the index of the bit to start the search from</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns35">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the index of the first bit set which is lower than <em>nth_bit</em>, or -1
+if no lower bits are set</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.32;" id="g_atexit">
+		
+<h3 id="g_atexit1">
+	<span><code>g_atexit</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_atexit (<a title="GVoidFunc" href="misc_utils.html#GVoidFunc">GVoidFunc</a> func)</pre>
+
+<p>Specifies a function to be called at normal program termination.</p>
+<p>Since GLib 2.8.2, on Windows <a href="misc_utils.html#g_atexit">g_atexit</a> actually is a preprocessor
+macro that maps to a call to the atexit function in the C
+library. This means that in case the code that calls <a href="misc_utils.html#g_atexit">g_atexit</a>,
+i.e. atexit, is in a DLL, the function will be called when the
+DLL is detached from the program. This typically makes more sense
+than that the function is called when the GLib DLL is detached,
+which happened earlier when <a href="misc_utils.html#g_atexit">g_atexit</a> was a function in the GLib
+DLL.</p>
+<p>The behaviour of atexit in the context of dynamically loaded
+modules is not formally specified and varies wildly.</p>
+<p>On POSIX systems, calling <a href="misc_utils.html#g_atexit">g_atexit</a> (or atexit) in a dynamically
+loaded module which is unloaded before the program terminates might
+well cause a crash at program exit.</p>
+<p>Some POSIX systems implement atexit like Windows, and have each
+dynamically loaded module maintain an own atexit chain that is
+called when the module is unloaded.</p>
+<p>On other POSIX systems, before a dynamically loaded module is
+unloaded, the registered atexit functions (if any) residing in that
+module are called, regardless where the code that registered them
+resided. This is presumably the most robust approach.</p>
+<p>As can be seen from the above, for portability it's best to avoid
+calling <a href="misc_utils.html#g_atexit">g_atexit</a> (or atexit) except in the main executable of a
+program.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call on normal program termination.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="The callback is valid until first called"><span class="acronym">scope async</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	deprecated			: 2.32: It is best to avoid g_atexit().
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_unsetenv">
+		
+<h3 id="g_unsetenv1">
+	<span><code>g_unsetenv</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_unsetenv (const gchar* variable)</pre>
+
+<p>Removes an environment variable from the environment.</p>
+<p>Note that on some systems, when variables are overwritten, the
+memory used for the previous variables and its value isn't reclaimed.</p>
+<p>You should be mindful of the fact that environment variable handling
+in UNIX is not thread-safe, and your program may crash if one thread
+calls <a href="misc_utils.html#g_unsetenv">g_unsetenv</a> while another thread is calling getenv. (And note
+that many functions, such as gettext, call getenv internally.) This
+function is only safe to use at the very start of your program, before
+creating any other threads (or creating objects that create worker
+threads of their own).</p>
+<p>If you need to set up the environment for a child process, you can
+use <a href="misc_utils.html#g_get_environ">g_get_environ</a> to get an environment array, modify that with
+<a href="misc_utils.html#g_environ_setenv">g_environ_setenv</a> and <a href="misc_utils.html#g_environ_unsetenv">g_environ_unsetenv</a>, and then pass that
+array directly to execvpe, <a href="spawn.html#g_spawn_async">g_spawn_async</a>, or the like.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>variable:</code></em></i>
+		</p>
+	</td>
+		<td><p>the environment variable to remove, must not contain '='</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_build_filenamev">
+		
+<h3 id="g_build_filenamev1">
+	<span><code>g_build_filenamev</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_build_filenamev (filename* args)</pre>
+
+<p>Behaves exactly like <a href="misc_utils.html#g_build_filename">g_build_filename</a>, but takes the path elements
+as a string array, instead of varargs. This function is mainly
+meant for language bindings.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>args:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#NULL">NULL</a>-terminated
+array of strings containing the path elements.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+<span class="annotation">[<abbr title="Generic and defining element of containers and arrays"><span class="acronym">element-type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns36">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated string that must be freed
+with <a href="memory.html#g_free">g_free</a>.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_get_host_name">
+		
+<h3 id="g_get_host_name1">
+	<span><code>g_get_host_name</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+const gchar*
+g_get_host_name ()</pre>
+
+<p>Return a name for the machine.</p>
+<p>The returned name is not necessarily a fully-qualified domain name,
+or even present in DNS or some other name service at all. It need
+not even be unique on your local network or site, but usually it
+is. Callers should not rely on the return value having any specific
+properties like uniqueness for security purposes. Even if the name
+of the machine is changed while an application is running, the
+return value from this function does not change. The returned
+string is owned by GLib and should not be modified or freed. If no
+name can be determined, a default fixed string "localhost" is
+returned.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns37">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the host name of the machine.</p>
+
+	</td>
+	<td>
+		const gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_qsort_with_data">
+		
+<h3 id="g_qsort_with_data1">
+	<span><code>g_qsort_with_data</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_qsort_with_data (gconstpointer pbase,
+                   gint total_elems,
+                   gsize size,
+                   <a title="GCompareDataFunc" href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> compare_func,
+                   gpointer user_data)</pre>
+
+<p>This is just like the standard C qsort function, but
+the comparison routine accepts a user data argument.</p>
+<p>This is guaranteed to be a stable sort since version 2.32.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters28">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pbase:</code></em></i>
+		</p>
+	</td>
+		<td><p>start of array to sort</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>total_elems:</code></em></i>
+		</p>
+	</td>
+		<td><p>elements in the array</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>size:</code></em></i>
+		</p>
+	</td>
+		<td><p>size of each element</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>compare_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>function to compare elements</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data to pass to <em>compare_func</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_get_user_cache_dir">
+		
+<h3 id="g_get_user_cache_dir1">
+	<span><code>g_get_user_cache_dir</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_get_user_cache_dir ()</pre>
+
+<p>Returns a base directory in which to store non-essential, cached
+data specific to particular user.</p>
+<p>On UNIX platforms this is determined using the mechanisms described
+in the
+<a href="http://www.freedesktop.org/Standards/basedir-spec">XDG Base Directory Specification</a>.
+In this case the directory retrieved will be XDG_CACHE_HOME.</p>
+<p>On Windows is the directory that serves as a common repository for
+temporary Internet files. A typical path is
+C:\Documents and Settings\username\Local Settings\Temporary Internet Files.
+See documentation for CSIDL_INTERNET_CACHE.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns38">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a string owned by GLib that must not be modified
+or freed.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_build_pathv">
+		
+<h3 id="g_build_pathv1">
+	<span><code>g_build_pathv</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_build_pathv (const gchar* separator,
+               filename* args)</pre>
+
+<p>Behaves exactly like <a href="misc_utils.html#g_build_path">g_build_path</a>, but takes the path elements
+as a string array, instead of varargs. This function is mainly
+meant for language bindings.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters29">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>separator:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string used to separator the elements of the path.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>args:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#NULL">NULL</a>-terminated
+array of strings containing the path elements.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+<span class="annotation">[<abbr title="Generic and defining element of containers and arrays"><span class="acronym">element-type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns39">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated string that must be freed
+with <a href="memory.html#g_free">g_free</a>.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Function_Macros">Function Macros</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ATEXIT">
+		
+<h3 id="g_atexit2">
+	<span><code>g_ATEXIT</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_ATEXIT(proc)	(atexit (proc))
+</pre>
+
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="ATEXIT">
+		
+<h3 id="atexit">
+	<span><code>ATEXIT</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define ATEXIT(proc) g_ATEXIT(proc)
+</pre>
+
+
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GDebugKey">
+		
+<h3 id="struct-gdebugkey">
+		struct GDebugKey
+	</h3>
+
+		<pre class="raw_code">
+struct GDebugKey {
+    const gchar* key;
+    guint value;
+};
+</pre>
+
+<p>Associates a string with a bit flag.
+Used in <a href="misc_utils.html#g_parse_debug_string">g_parse_debug_string</a>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="fields">Fields</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GDebugKey.key">
+		<td>
+		<p>
+		<i><em><code>const gchar* <em><code>key</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string</p>
+</td>
+</tr>
+
+						<tr id="GDebugKey.value">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>value</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the flag</p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="GUserDirectory">
+		
+<h3 id="enum-guserdirectory">
+		enum GUserDirectory
+	</h3>
+
+		<p>These are logical ids for special directories which are defined
+depending on the platform used. You should use <a href="misc_utils.html#g_get_user_special_dir">g_get_user_special_dir</a>
+to retrieve the full path associated to the logical id.</p>
+<p>The <a href="misc_utils.html#GUserDirectory">GUserDirectory</a> enumeration can be extended at later date. Not
+every platform has a directory for every logical id in this
+enumeration.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_USER_DIRECTORY_DESKTOP"></a>
+		G_USER_DIRECTORY_DESKTOP
+		</p>
+	</td>
+	<td><p>the user's Desktop directory</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_USER_DIRECTORY_DOCUMENTS"></a>
+		G_USER_DIRECTORY_DOCUMENTS
+		</p>
+	</td>
+	<td><p>the user's Documents directory</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_USER_DIRECTORY_DOWNLOAD"></a>
+		G_USER_DIRECTORY_DOWNLOAD
+		</p>
+	</td>
+	<td><p>the user's Downloads directory</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_USER_DIRECTORY_MUSIC"></a>
+		G_USER_DIRECTORY_MUSIC
+		</p>
+	</td>
+	<td><p>the user's Music directory</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_USER_DIRECTORY_PICTURES"></a>
+		G_USER_DIRECTORY_PICTURES
+		</p>
+	</td>
+	<td><p>the user's Pictures directory</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_USER_DIRECTORY_PUBLIC_SHARE"></a>
+		G_USER_DIRECTORY_PUBLIC_SHARE
+		</p>
+	</td>
+	<td><p>the user's shared directory</p>
+</td>
+	<td>
+		<span class="value">Value: 5</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_USER_DIRECTORY_TEMPLATES"></a>
+		G_USER_DIRECTORY_TEMPLATES
+		</p>
+	</td>
+	<td><p>the user's Templates directory</p>
+</td>
+	<td>
+		<span class="value">Value: 6</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_USER_DIRECTORY_VIDEOS"></a>
+		G_USER_DIRECTORY_VIDEOS
+		</p>
+	</td>
+	<td><p>the user's Movies directory</p>
+</td>
+	<td>
+		<span class="value">Value: 7</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_USER_N_DIRECTORIES"></a>
+		G_USER_N_DIRECTORIES
+		</p>
+	</td>
+	<td><p>the number of enum values</p>
+</td>
+	<td>
+		<span class="value">Value: 8</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GFormatSizeFlags">
+		
+<h3 id="enum-gformatsizeflags">
+		enum GFormatSizeFlags
+	</h3>
+
+		<p>Flags to modify the format of the string returned by <a href="misc_utils.html#g_format_size_full">g_format_size_full</a>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members1">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_FORMAT_SIZE_DEFAULT"></a>
+		G_FORMAT_SIZE_DEFAULT
+		</p>
+	</td>
+	<td><p>behave the same as <a href="misc_utils.html#g_format_size">g_format_size</a></p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FORMAT_SIZE_LONG_FORMAT"></a>
+		G_FORMAT_SIZE_LONG_FORMAT
+		</p>
+	</td>
+	<td><p>include the exact number of bytes as part
+of the returned string.  For example, "45.6 kB (45,612 bytes)".</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FORMAT_SIZE_IEC_UNITS"></a>
+		G_FORMAT_SIZE_IEC_UNITS
+		</p>
+	</td>
+	<td><p>use IEC (base 1024) units with "KiB"-style
+suffixes. IEC units should only be used for reporting things with
+a strong "power of 2" basis, like RAM sizes or RAID stripe sizes.
+Network and storage sizes should be reported in the normal SI units.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:;" id="g_dirname">
+		
+<h3 class="constant" id="g_dirname1">
+	g_dirname
+</h3>
+
+		<pre class="raw_code">
+#define g_dirname g_path_get_dirname
+</pre>
+
+<p>Gets the directory components of a file name.</p>
+<p>If the file name has no directory components "." is returned.
+The returned string should be freed when no longer needed.</p>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GVoidFunc">
+		
+<h3 id="gvoidfunc">
+	<span><code>GVoidFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+(*GVoidFunc) ()</pre>
+
+<p>Declares a type of function which takes no arguments
+and has no return value. It is used to specify the type
+function passed to <a href="misc_utils.html#g_atexit">g_atexit</a>.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns40">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GFreeFunc">
+		
+<h3 id="gfreefunc">
+	<span><code>GFreeFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+(*GFreeFunc) (gpointer data)</pre>
+
+<p>Declares a type of function which takes an arbitrary
+data pointer argument and has no return value. It is
+not currently used in GLib or GTK+.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters30">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>a data pointer</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns41">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

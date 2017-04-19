@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/keyfile.html#glibkeyfileprototypeunref", "fragment": "GLib.KeyFile.prototype.unref \nDecreases the reference count of key_file by If the reference count reaches zero frees the key file and all its allocated memory. \n"});

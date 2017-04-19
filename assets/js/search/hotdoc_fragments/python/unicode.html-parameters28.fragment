@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#parameters28", "fragment": "str \na UTF encoded string \nlen \nthe maximum length of str to use in bytes. If len then the string is nul terminated. \n"});

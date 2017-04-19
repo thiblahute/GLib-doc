@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date.html#enum-gdateweekday", "fragment": "enum GDateWeekday \nEnumeration representing a day of the week G_DATE_MONDAY G_DATE_TUESDAY etc. G_DATE_BAD_WEEKDAY is an invalid weekday. \n"});

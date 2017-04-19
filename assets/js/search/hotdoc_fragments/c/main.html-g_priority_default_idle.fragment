@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/main.html#g_priority_default_idle", "fragment": "G_PRIORITY_DEFAULT_IDLE \nUse this for default priority idle functions. \nIn GLib this priority is used when adding idle functions with g_idle_add. \n"});

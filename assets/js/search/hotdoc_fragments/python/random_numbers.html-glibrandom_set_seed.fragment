@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/random_numbers.html#glibrandom_set_seed", "fragment": "GLib.random_set_seed \nSets the seed for the global random number generator which is used by the g_random_ functions to seed. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/trees-nary.html#g_node_copy1", "fragment": "g_node_copy \nRecursively copies a GNode but does not deep copy the data inside the nodes see g_node_copy_deep if you need that \n"});

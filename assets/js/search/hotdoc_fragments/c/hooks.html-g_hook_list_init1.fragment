@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hooks.html#g_hook_list_init1", "fragment": "g_hook_list_init \nInitializes a GHookList. This must be called before the GHookList is used. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hooks.html#glibhook_unref", "fragment": "GLib.hook_unref \nDecrements the reference count of a GLib.Hook. If the reference count falls to the GLib.Hook is removed from the GLib.HookList and GLib.hook_free is called to free it. \n"});

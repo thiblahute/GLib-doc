@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#g_io_channel_read_line_string", "fragment": "g_io_channel_read_line_string \nReads a line from a GIOChannel using a GString as a buffer. \n"});

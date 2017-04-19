@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/spawn.html#G_SPAWN_DO_NOT_REAP_CHILD", "fragment": "the child will not be automatically reaped you must use g_child_watch_add yourself or call waitpid or handle SIGCHLD yourself or the child will become a zombie. \nG_SPAWN_SEARCH_PATH \n"});

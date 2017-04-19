@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/timers.html#g_timer_continue1", "fragment": "g_timer_continue \nResumes a timer that has previously been stopped with g_timer_stop. g_timer_stop must be called before using this function. \n"});

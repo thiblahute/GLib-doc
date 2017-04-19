@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date.html#g_date_is_leap_year1", "fragment": "g_date_is_leap_year \nReturns TRUE if the year is a leap year. \nFor the purposes of this function leap year is every year divisible by unless that year is divisible by If it is divisible by it would be a leap year only if that year is also divisible by \n"});

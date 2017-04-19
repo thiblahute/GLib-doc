@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/strings.html#g_string_insert_c1", "fragment": "g_string_insert_c \nInserts a byte into a GString expanding it if necessary. \n"});

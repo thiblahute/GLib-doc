@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/scanner.html#GScanner.max_parse_errors", "fragment": "guint parse_errors \ng_scanner_error increments this field \n"});

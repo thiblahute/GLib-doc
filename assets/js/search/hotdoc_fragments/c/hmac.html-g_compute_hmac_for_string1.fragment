@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hmac.html#g_compute_hmac_for_string1", "fragment": "g_compute_hmac_for_string \nComputes the HMAC for a string. \nThe hexadecimal string returned will be in lower case. \n"});

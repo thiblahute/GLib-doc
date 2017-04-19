@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/bookmarkfile.html#g_bookmark_file_get_icon", "fragment": "GLib.BookmarkFile.prototype.get_icon \nGets the icon of the bookmark for uri. \nIn the event the URI cannot be found false is returned and error is set to GLib.BookmarkFileError.prototype.uri_not_found. \n"});

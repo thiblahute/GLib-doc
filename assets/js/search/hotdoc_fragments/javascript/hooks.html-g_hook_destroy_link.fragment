@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hooks.html#g_hook_destroy_link", "fragment": "GLib.prototype.hook_destroy_link \nRemoves one GLib.Hook from a GLib.HookList marking it inactive and calling GLib.prototype.hook_unref on it. \n"});

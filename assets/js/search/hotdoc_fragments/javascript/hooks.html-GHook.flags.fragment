@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hooks.html#GHook.flags", "fragment": "gpointer func \nthe function to call when this hook is invoked. The possible signatures for this function are GHookFunc and GHookCheckFunc \n"});

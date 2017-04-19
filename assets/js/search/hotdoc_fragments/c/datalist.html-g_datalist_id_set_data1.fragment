@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/datalist.html#g_datalist_id_set_data1", "fragment": "g_datalist_id_set_data \nSets the data corresponding to the given GQuark id. Any previous data with the same key is removed and its destroy function is called. \n"});

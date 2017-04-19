@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/sequence.html#parameters11", "fragment": "seq \na GSequence \ndata \ndata for the new item \niter_cmp \nthe function used to compare iterators in the sequence \ncmp_data \nuser data passed to iter_cmp \n"});

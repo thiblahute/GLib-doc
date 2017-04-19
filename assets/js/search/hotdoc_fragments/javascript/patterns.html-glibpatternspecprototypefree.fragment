@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/patterns.html#glibpatternspecprototypefree", "fragment": "GLib.PatternSpec.prototype.free \nFrees the memory allocated for the GLib.PatternSpec. \n"});

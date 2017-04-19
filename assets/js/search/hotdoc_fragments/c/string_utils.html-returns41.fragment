@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_utils.html#returns41", "fragment": "\nIf c is a hex digit according to g_ascii_isxdigit its numeric value. Otherwise \n"});

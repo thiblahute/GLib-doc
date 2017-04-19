@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#glibsourceprototypeget_name", "fragment": "GLib.Source.prototype.get_name \nGets a name for the source used in debugging and profiling. The name may be null if it has never been set with GLib.Source.prototype.set_name. \n"});

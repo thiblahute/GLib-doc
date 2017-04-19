@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/queue.html#g_queue_delete_link1", "fragment": "g_queue_delete_link \nRemoves link_ from queue and frees it. \nlink_ must be part of queue. \n"});

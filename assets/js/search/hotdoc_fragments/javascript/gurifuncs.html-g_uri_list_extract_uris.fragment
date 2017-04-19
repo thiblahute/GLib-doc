@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gurifuncs.html#g_uri_list_extract_uris", "fragment": "GLib.prototype.uri_list_extract_uris \nSplits an URI list conforming to the text uri list mime type defined in RFC into individual URIs discarding any comments. The URIs are not validated. \n"});

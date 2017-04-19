@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/timezone.html#g_time_zone_new_utc1", "fragment": "g_time_zone_new_utc \nCreates a GTimeZone corresponding to UTC. \nThis is equivalent to calling g_time_zone_new with a value like Z UTC etc. \nYou should release the return value by calling g_time_zone_unref when you are done with it. \n"});

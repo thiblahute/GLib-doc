@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/scanner.html#g_scanner_scope_foreach_symbol", "fragment": "g_scanner_scope_foreach_symbol \nCalls the given function for each of the symbol value pairs in the given scope of the GScanner. The function is passed the symbol and value of each pair and the given user_data parameter. \n"});

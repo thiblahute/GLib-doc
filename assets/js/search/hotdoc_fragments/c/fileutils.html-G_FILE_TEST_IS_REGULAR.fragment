@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/fileutils.html#G_FILE_TEST_IS_REGULAR", "fragment": "TRUE if the file is a regular file not a directory Note that this test will also return TRUE if the tested file is a symlink to a regular file. \nG_FILE_TEST_IS_SYMLINK \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/macros.html#g_os_unix", "fragment": "G_OS_UNIX \nThis macro is defined only on UNIX. So you can bracket UNIX specific code in ifdef G_OS_UNIX \n"});

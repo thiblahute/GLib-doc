@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/timers.html#glibtimerprototypereset", "fragment": "GLib.Timer.prototype.reset \nThis function is useless it s fine to call GLib.Timer.prototype.start on an already started timer to reset the start time so GLib.Timer.prototype.reset serves no purpose. \n"});

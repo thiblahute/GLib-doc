@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_get_double1", "fragment": "g_variant_get_double \nReturns the double precision floating point value of value. \nIt is an error to call this function with a value of any type other than G_VARIANT_TYPE_DOUBLE. \n"});

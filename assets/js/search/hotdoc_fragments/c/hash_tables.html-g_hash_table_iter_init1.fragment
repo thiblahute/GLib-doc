@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hash_tables.html#g_hash_table_iter_init1", "fragment": "g_hash_table_iter_init \nInitializes a key value pair iterator and associates it with hash_table. Modifying the hash table after calling this function invalidates the returned iterator. \n"});

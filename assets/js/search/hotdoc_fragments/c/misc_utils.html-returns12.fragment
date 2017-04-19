@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/misc_utils.html#returns12", "fragment": "\nthe value of the environment variable or NULL if the environment variable is not found. The returned string may be overwritten by the next call to g_getenv g_setenv or g_unsetenv. \n"});

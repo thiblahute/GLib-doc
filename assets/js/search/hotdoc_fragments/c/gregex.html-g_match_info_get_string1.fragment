@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gregex.html#g_match_info_get_string1", "fragment": "g_match_info_get_string \nReturns the string searched with match_info. This is the string passed to g_regex_match or g_regex_replace so you may not free it before calling this function. \n"});

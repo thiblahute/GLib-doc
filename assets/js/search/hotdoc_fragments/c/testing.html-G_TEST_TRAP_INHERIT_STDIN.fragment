@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/testing.html#G_TEST_TRAP_INHERIT_STDIN", "fragment": "If this flag is given stdin of the child process is shared with stdin of its parent process. It is redirected to dev null otherwise. \n"});

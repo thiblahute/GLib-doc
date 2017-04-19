@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/linked_lists_double.html#g_list_concat1", "fragment": "g_list_concat \nAdds the second GList onto the end of the first GList. Note that the elements of the second GList are not copied. They are used directly. \nThis function is for example used to move an element in the list. The following example moves an element to the top of the list \n"});

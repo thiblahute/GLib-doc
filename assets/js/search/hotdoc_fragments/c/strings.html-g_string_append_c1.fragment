@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/strings.html#g_string_append_c1", "fragment": "g_string_append_c \nAdds a byte onto the end of a GString expanding it if necessary. \n"});

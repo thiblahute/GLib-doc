@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#g_main_loop_is_running", "fragment": "GLib.MainLoop.prototype.is_running \nChecks to see if the main loop is currently being run via GLib.MainLoop.prototype.run. \n"});

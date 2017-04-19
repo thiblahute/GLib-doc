@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/keyfile.html#G_KEY_FILE_DESKTOP_KEY_CATEGORIES", "fragment": "G_KEY_FILE_DESKTOP_KEY_CATEGORIES \nA key under G_KEY_FILE_DESKTOP_GROUP whose value is a list of strings giving the categories in which the desktop entry should be shown in a menu. \n"});

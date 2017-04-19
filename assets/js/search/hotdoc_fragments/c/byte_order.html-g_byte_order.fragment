@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/byte_order.html#g_byte_order", "fragment": "G_BYTE_ORDER \nThe host byte order. This can be either G_LITTLE_ENDIAN or G_BIG_ENDIAN support for G_PDP_ENDIAN may be added in future. \n"});

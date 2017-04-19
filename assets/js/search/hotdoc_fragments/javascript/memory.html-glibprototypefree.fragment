@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/memory.html#glibprototypefree", "fragment": "GLib.prototype.free \nFrees the memory pointed to by mem. \nIf mem is null it simply returns so there is no need to check mem against null before calling this function. \n"});

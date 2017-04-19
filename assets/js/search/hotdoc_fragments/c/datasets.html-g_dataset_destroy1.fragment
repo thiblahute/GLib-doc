@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/datasets.html#g_dataset_destroy1", "fragment": "g_dataset_destroy \nDestroys the dataset freeing all memory allocated and calling any destroy functions set for data elements. \n"});

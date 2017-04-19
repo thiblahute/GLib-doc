@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gregex.html#G_REGEX_MATCH_ANCHORED", "fragment": "The pattern is forced to be anchored that is it is constrained to match only at the first matching point in the string that is being searched. This effect can also be achieved by appropriate constructs in the pattern itself such as the metacharater. \nGLib.RegexMatchFlags.notbol \n"});

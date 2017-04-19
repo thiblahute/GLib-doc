@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/scanner.html#GScannerConfig.case_sensitive", "fragment": "guint skip_comment_multi \nspecifies if multi line comments are skipped and not returned as tokens the default is TRUE \n"});

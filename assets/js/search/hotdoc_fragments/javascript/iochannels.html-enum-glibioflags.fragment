@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/iochannels.html#enum-glibioflags", "fragment": "enum GLib.IOFlags \nSpecifies properties of a GLib.IOChannel. Some of the flags can only be read with GLib.IOChannel.prototype.get_flags but not changed with GLib.IOChannel.prototype.set_flags. \n"});

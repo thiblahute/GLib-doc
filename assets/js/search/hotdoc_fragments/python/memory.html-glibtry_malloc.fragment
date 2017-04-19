@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/memory.html#glibtry_malloc", "fragment": "GLib.try_malloc \nAttempts to allocate n_bytes and returns None on failure. Contrast with GLib.malloc which aborts the program on failure. \n"});

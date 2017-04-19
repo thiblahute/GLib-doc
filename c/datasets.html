@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>datasets</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="datasets.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="datasets.markdown">
+    </div>
+        
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_dataset_id_set_data_full">
+		
+<h3 id="g_dataset_id_set_data_full1">
+	<span><code>g_dataset_id_set_data_full</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_dataset_id_set_data_full (gconstpointer dataset_location,
+                            <a title="GQuark" href="quarks.html#GQuark">GQuark</a> key_id,
+                            gpointer data,
+                            <a title="GDestroyNotify" href="datasets.html#GDestroyNotify">GDestroyNotify</a> destroy_func)</pre>
+
+<p>Sets the data element associated with the given <a href="quarks.html#GQuark">GQuark</a> id, and also
+the function to call when the data element is destroyed. Any
+previous data with the same key is removed, and its destroy function
+is called.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dataset_location:</code></em></i>
+		</p>
+	</td>
+		<td><p>the location identifying the dataset.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_id:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="quarks.html#GQuark">GQuark</a> id to identify the data element.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data element.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>destroy_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call when the data element is
+removed. This function will be called with the data
+element and can be used to free any memory allocated
+for it.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_dataset_destroy">
+		
+<h3 id="g_dataset_destroy1">
+	<span><code>g_dataset_destroy</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_dataset_destroy (gconstpointer dataset_location)</pre>
+
+<p>Destroys the dataset, freeing all memory allocated, and calling any
+destroy functions set for data elements.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dataset_location:</code></em></i>
+		</p>
+	</td>
+		<td><p>the location identifying the dataset.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_dataset_id_remove_no_notify">
+		
+<h3 id="g_dataset_id_remove_no_notify1">
+	<span><code>g_dataset_id_remove_no_notify</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gpointer
+g_dataset_id_remove_no_notify (gconstpointer dataset_location,
+                               <a title="GQuark" href="quarks.html#GQuark">GQuark</a> key_id)</pre>
+
+<p>Removes an element, without calling its destroy notification
+function.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dataset_location:</code></em></i>
+		</p>
+	</td>
+		<td><p>the location identifying the dataset.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_id:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="quarks.html#GQuark">GQuark</a> ID identifying the data element.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the data previously stored at <em>key_id</em>, or <a href="macros.html#NULL">NULL</a> if none.</p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_dataset_id_get_data">
+		
+<h3 id="g_dataset_id_get_data1">
+	<span><code>g_dataset_id_get_data</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gpointer
+g_dataset_id_get_data (gconstpointer dataset_location,
+                       <a title="GQuark" href="quarks.html#GQuark">GQuark</a> key_id)</pre>
+
+<p>Gets the data element corresponding to a <a href="quarks.html#GQuark">GQuark</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dataset_location:</code></em></i>
+		</p>
+	</td>
+		<td><p>the location identifying the dataset.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_id:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="quarks.html#GQuark">GQuark</a> id to identify the data element.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the data element corresponding to the <a href="quarks.html#GQuark">GQuark</a>, or <a href="macros.html#NULL">NULL</a> if
+it is not found.</p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_dataset_foreach">
+		
+<h3 id="g_dataset_foreach1">
+	<span><code>g_dataset_foreach</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_dataset_foreach (gconstpointer dataset_location,
+                   <a title="GDataForeachFunc" href="datasets.html#GDataForeachFunc">GDataForeachFunc</a> func,
+                   gpointer user_data)</pre>
+
+<p>Calls the given function for each data element which is associated
+with the given location. Note that this function is NOT thread-safe.
+So unless <em>datalist</em> can be protected from any modifications during
+invocation of this function, it should not be called.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dataset_location:</code></em></i>
+		</p>
+	</td>
+		<td><p>the location identifying the dataset.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call for each data element.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data to pass to the function.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Function_Macros">Function Macros</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_dataset_set_data">
+		
+<h3 id="g_dataset_set_data1">
+	<span><code>g_dataset_set_data</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_dataset_set_data(l, k, d)           \
+     g_dataset_set_data_full ((l), (k), (d), NULL)
+</pre>
+
+<p>Sets the data corresponding to the given string identifier.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_dataset_get_data">
+		
+<h3 id="g_dataset_get_data1">
+	<span><code>g_dataset_get_data</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_dataset_get_data(l, k)              \
+     (g_dataset_id_get_data ((l), g_quark_try_string (k)))
+</pre>
+
+<p>Gets the data element corresponding to a string.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_dataset_remove_data">
+		
+<h3 id="g_dataset_remove_data1">
+	<span><code>g_dataset_remove_data</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_dataset_remove_data(l, k)           \
+     g_dataset_id_set_data ((l), g_quark_try_string (k), NULL)
+</pre>
+
+<p>Removes a data element corresponding to a string. Its destroy
+function is called if it has been set.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_dataset_remove_no_notify">
+		
+<h3 id="g_dataset_remove_no_notify1">
+	<span><code>g_dataset_remove_no_notify</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_dataset_remove_no_notify(l, k)      \
+     g_dataset_id_remove_no_notify ((l), g_quark_try_string (k))
+</pre>
+
+<p>Removes an element, without calling its destroy notifier.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_dataset_set_data_full">
+		
+<h3 id="g_dataset_set_data_full1">
+	<span><code>g_dataset_set_data_full</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_dataset_set_data_full(l, k, d, f)   \
+     g_dataset_id_set_data_full ((l), g_quark_from_string (k), (d), (f))
+</pre>
+
+<p>Sets the data corresponding to the given string identifier, and the
+function to call when the data element is destroyed.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_dataset_id_remove_data">
+		
+<h3 id="g_dataset_id_remove_data1">
+	<span><code>g_dataset_id_remove_data</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_dataset_id_remove_data(l, k)        \
+     g_dataset_id_set_data ((l), (k), NULL)
+</pre>
+
+<p>Removes a data element from a dataset. The data element's destroy
+function is called if it has been set.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_dataset_id_set_data">
+		
+<h3 id="g_dataset_id_set_data1">
+	<span><code>g_dataset_id_set_data</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_dataset_id_set_data(l, k, d)        \
+     g_dataset_id_set_data_full ((l), (k), (d), NULL)
+</pre>
+
+<p>Sets the data element associated with the given <a href="quarks.html#GQuark">GQuark</a> id. Any
+previous data with the same key is removed, and its destroy function
+is called.</p>
+
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GDestroyNotify">
+		
+<h3 id="gdestroynotify">
+	<span><code>GDestroyNotify</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+(*GDestroyNotify) (gpointer data)</pre>
+
+<p>Specifies the type of function which is called when a data element
+is destroyed. It is passed the pointer to the data element and
+should free any memory and resources allocated for it.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data element.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GDataForeachFunc">
+		
+<h3 id="gdataforeachfunc">
+	<span><code>GDataForeachFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+(*GDataForeachFunc) (<a title="GQuark" href="quarks.html#GQuark">GQuark</a> key_id,
+                     gpointer data,
+                     gpointer user_data)</pre>
+
+<p>Specifies the type of function passed to <a href="datasets.html#g_dataset_foreach">g_dataset_foreach</a>. It is
+called with each <a href="quarks.html#GQuark">GQuark</a> id and associated data element, together
+with the <em>user_data</em> parameter supplied to <a href="datasets.html#g_dataset_foreach">g_dataset_foreach</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_id:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="quarks.html#GQuark">GQuark</a> id to identifying the data element.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data element.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="datasets.html#g_dataset_foreach">g_dataset_foreach</a>.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

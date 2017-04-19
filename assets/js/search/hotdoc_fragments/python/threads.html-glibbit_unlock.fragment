@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/threads.html#glibbit_unlock", "fragment": "GLib.bit_unlock \nClears the indicated lock_bit in address. If another thread is currently blocked in GLib.bit_lock on this same bit then it will be woken up. \nThis function accesses address atomically. All other accesses to address must be atomic in order for this function to work reliably. \n"});

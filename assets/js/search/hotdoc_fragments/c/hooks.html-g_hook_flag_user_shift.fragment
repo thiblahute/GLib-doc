@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hooks.html#g_hook_flag_user_shift", "fragment": "G_HOOK_FLAG_USER_SHIFT \nThe position of the first bit which is not reserved for internal use be the GHook implementation i.e. G_HOOK_FLAG_USER_SHIFT is the first bit which can be used for application defined flags. \n"});

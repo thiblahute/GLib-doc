@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/threads.html#parameters12", "fragment": "cond \na GLib.Cond \nmutex \na GMutex that is currently locked \nend_time \nthe monotonic time to wait until \n"});

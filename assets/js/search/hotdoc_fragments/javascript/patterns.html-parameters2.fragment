@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/patterns.html#parameters2", "fragment": "pspec \na GLib.PatternSpec \nstring_length \nthe length of string in bytes i.e. strlen not GLib.prototype.utf8_strlen \nstring \nthe UTF encoded string to match \nstring_reversed \nthe reverse of string or null \n"});

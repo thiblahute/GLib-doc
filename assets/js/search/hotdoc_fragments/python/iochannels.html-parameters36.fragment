@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#parameters36", "fragment": "source \nthe GLib.IOChannel event source \ncondition \nthe condition which has been satisfied \ndata \nuser data set in g_io_add_watch not introspectable or GLib.io_add_watch_full \n"});

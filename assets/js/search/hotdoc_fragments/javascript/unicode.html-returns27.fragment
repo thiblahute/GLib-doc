@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/unicode.html#returns27", "fragment": "\nthe result of converting c to lower case. If c is not an upperlower or titlecase character or has no lowercase equivalent c is returned unchanged. \n"});

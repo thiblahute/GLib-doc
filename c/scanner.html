@@ -1,0 +1,3300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GScanner</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="scanner.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="scanner.markdown">
+        <h1 id="gscanner">GScanner</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GScanner</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GScannerMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_scanner_scope_add_symbol">
+		
+<h4 id="g_scanner_scope_add_symbol1">
+	<span><code>g_scanner_scope_add_symbol</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_scanner_scope_add_symbol (<a title="GScanner" href="scanner.html#GScanner">GScanner</a> * scanner,
+                            guint scope_id,
+                            const gchar* symbol,
+                            gpointer value)</pre>
+
+<p>Adds a symbol to the given scope.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scanner:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="scanner.html#GScanner">GScanner</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scope_id:</code></em></i>
+		</p>
+	</td>
+		<td><p>the scope id</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>symbol:</code></em></i>
+		</p>
+	</td>
+		<td><p>the symbol to add</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>the value of the symbol</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_scanner_input_text">
+		
+<h4 id="g_scanner_input_text1">
+	<span><code>g_scanner_input_text</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_scanner_input_text (<a title="GScanner" href="scanner.html#GScanner">GScanner</a> * scanner,
+                      const gchar* text,
+                      guint text_len)</pre>
+
+<p>Prepares to scan a text buffer.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scanner:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="scanner.html#GScanner">GScanner</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>text:</code></em></i>
+		</p>
+	</td>
+		<td><p>the text buffer to scan</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>text_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of the text buffer</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_scanner_lookup_symbol">
+		
+<h4 id="g_scanner_lookup_symbol1">
+	<span><code>g_scanner_lookup_symbol</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_scanner_lookup_symbol (<a title="GScanner" href="scanner.html#GScanner">GScanner</a> * scanner,
+                         const gchar* symbol)</pre>
+
+<p>Looks up a symbol in the current scope and return its value.
+If the symbol is not bound in the current scope, <a href="macros.html#NULL">NULL</a> is
+returned.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scanner:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="scanner.html#GScanner">GScanner</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>symbol:</code></em></i>
+		</p>
+	</td>
+		<td><p>the symbol to look up</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the value of <em>symbol</em> in the current scope, or <a href="macros.html#NULL">NULL</a>
+if <em>symbol</em> is not bound in the current scope</p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_scanner_unexp_token">
+		
+<h4 id="g_scanner_unexp_token1">
+	<span><code>g_scanner_unexp_token</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_scanner_unexp_token (<a title="GScanner" href="scanner.html#GScanner">GScanner</a> * scanner,
+                       <a title="GTokenType" href="scanner.html#GTokenType">GTokenType</a> expected_token,
+                       const gchar* identifier_spec,
+                       const gchar* symbol_spec,
+                       const gchar* symbol_name,
+                       const gchar* message,
+                       gint is_error)</pre>
+
+<p>Outputs a message through the scanner's msg_handler,
+resulting from an unexpected token in the input stream.
+Note that you should not call <a href="scanner.html#g_scanner_peek_next_token">g_scanner_peek_next_token</a>
+followed by <a href="scanner.html#g_scanner_unexp_token">g_scanner_unexp_token</a> without an intermediate
+call to <a href="scanner.html#g_scanner_get_next_token">g_scanner_get_next_token</a>, as <a href="scanner.html#g_scanner_unexp_token">g_scanner_unexp_token</a>
+evaluates the scanner's current token (not the peeked token)
+to construct part of the message.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scanner:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="scanner.html#GScanner">GScanner</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>expected_token:</code></em></i>
+		</p>
+	</td>
+		<td><p>the expected token</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>identifier_spec:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string describing how the scanner's user
+refers to identifiers (%NULL defaults to "identifier").
+This is used if <em>expected_token</em> is <a href="scanner.html#G_TOKEN_IDENTIFIER">G_TOKEN_IDENTIFIER</a> or
+<a href="scanner.html#G_TOKEN_IDENTIFIER_NULL">G_TOKEN_IDENTIFIER_NULL</a>.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>symbol_spec:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string describing how the scanner's user refers
+to symbols (%NULL defaults to "symbol"). This is used if
+<em>expected_token</em> is <a href="scanner.html#G_TOKEN_SYMBOL">G_TOKEN_SYMBOL</a> or any token value greater
+than G_TOKEN_LAST.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>symbol_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>the name of the symbol, if the scanner's current
+token is a symbol.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>message:</code></em></i>
+		</p>
+	</td>
+		<td><p>a message string to output at the end of the
+warning/error, or <a href="macros.html#NULL">NULL</a>.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>is_error:</code></em></i>
+		</p>
+	</td>
+		<td><p>if <a href="macros.html#TRUE">TRUE</a> it is output as an error. If <a href="macros.html#FALSE">FALSE</a> it is
+output as a warning.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_scanner_scope_foreach_symbol">
+		
+<h4 id="g_scanner_scope_foreach_symbol1">
+	<span><code>g_scanner_scope_foreach_symbol</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_scanner_scope_foreach_symbol (<a title="GScanner" href="scanner.html#GScanner">GScanner</a> * scanner,
+                                guint scope_id,
+                                <a title="GHFunc" href="hash_tables.html#GHFunc">GHFunc</a> func,
+                                gpointer user_data)</pre>
+
+<p>Calls the given function for each of the symbol/value pairs
+in the given scope of the <a href="scanner.html#GScanner">GScanner</a>. The function is passed
+the symbol and value of each pair, and the given <em>user_data</em>
+parameter.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scanner:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="scanner.html#GScanner">GScanner</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scope_id:</code></em></i>
+		</p>
+	</td>
+		<td><p>the scope id</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call for each symbol/value pair</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data to pass to the function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_scanner_scope_lookup_symbol">
+		
+<h4 id="g_scanner_scope_lookup_symbol1">
+	<span><code>g_scanner_scope_lookup_symbol</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_scanner_scope_lookup_symbol (<a title="GScanner" href="scanner.html#GScanner">GScanner</a> * scanner,
+                               guint scope_id,
+                               const gchar* symbol)</pre>
+
+<p>Looks up a symbol in a scope and return its value. If the
+symbol is not bound in the scope, <a href="macros.html#NULL">NULL</a> is returned.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scanner:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="scanner.html#GScanner">GScanner</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scope_id:</code></em></i>
+		</p>
+	</td>
+		<td><p>the scope id</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>symbol:</code></em></i>
+		</p>
+	</td>
+		<td><p>the symbol to look up</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the value of <em>symbol</em> in the given scope, or <a href="macros.html#NULL">NULL</a>
+if <em>symbol</em> is not bound in the given scope.</p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_scanner_eof">
+		
+<h4 id="g_scanner_eof1">
+	<span><code>g_scanner_eof</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_scanner_eof (<a title="GScanner" href="scanner.html#GScanner">GScanner</a> * scanner)</pre>
+
+<p>Returns <a href="macros.html#TRUE">TRUE</a> if the scanner has reached the end of
+the file or text buffer.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scanner:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="scanner.html#GScanner">GScanner</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the scanner has reached the end of
+the file or text buffer</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_scanner_cur_line">
+		
+<h4 id="g_scanner_cur_line1">
+	<span><code>g_scanner_cur_line</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint
+g_scanner_cur_line (<a title="GScanner" href="scanner.html#GScanner">GScanner</a> * scanner)</pre>
+
+<p>Returns the current line in the input stream (counting
+from 1). This is the line of the last token parsed via
+<a href="scanner.html#g_scanner_get_next_token">g_scanner_get_next_token</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scanner:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="scanner.html#GScanner">GScanner</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the current line</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_scanner_warn">
+		
+<h4 id="g_scanner_warn1">
+	<span><code>g_scanner_warn</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_scanner_warn (<a title="GScanner" href="scanner.html#GScanner">GScanner</a> * scanner,
+                const gchar* format,
+                ... ...)</pre>
+
+<p>Outputs a warning message, via the <a href="scanner.html#GScanner">GScanner</a> message handler.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scanner:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="scanner.html#GScanner">GScanner</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>format:</code></em></i>
+		</p>
+	</td>
+		<td><p>the message format. See the printf documentation</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>the parameters to insert into the format string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_scanner_cur_value">
+		
+<h4 id="g_scanner_cur_value1">
+	<span><code>g_scanner_cur_value</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+GTokenValue
+g_scanner_cur_value (<a title="GScanner" href="scanner.html#GScanner">GScanner</a> * scanner)</pre>
+
+<p>Gets the current token value. This is simply the <em>value</em>
+field in the <a href="scanner.html#GScanner">GScanner</a> structure.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scanner:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="scanner.html#GScanner">GScanner</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the current token value</p>
+
+	</td>
+	<td>
+		GTokenValue
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_scanner_get_next_token">
+		
+<h4 id="g_scanner_get_next_token1">
+	<span><code>g_scanner_get_next_token</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GTokenType" href="scanner.html#GTokenType">GTokenType</a>
+g_scanner_get_next_token (<a title="GScanner" href="scanner.html#GScanner">GScanner</a> * scanner)</pre>
+
+<p>Parses the next token just like <a href="scanner.html#g_scanner_peek_next_token">g_scanner_peek_next_token</a>
+and also removes it from the input stream. The token data is
+placed in the <em>token</em>, <em>value</em>, <em>line</em>, and <em>position</em> fields of
+the <a href="scanner.html#GScanner">GScanner</a> structure.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scanner:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="scanner.html#GScanner">GScanner</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the type of the token</p>
+
+	</td>
+	<td>
+		<a title="GTokenType" href="scanner.html#GTokenType">GTokenType</a>
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_scanner_cur_token">
+		
+<h4 id="g_scanner_cur_token1">
+	<span><code>g_scanner_cur_token</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GTokenType" href="scanner.html#GTokenType">GTokenType</a>
+g_scanner_cur_token (<a title="GScanner" href="scanner.html#GScanner">GScanner</a> * scanner)</pre>
+
+<p>Gets the current token type. This is simply the <em>token</em>
+field in the <a href="scanner.html#GScanner">GScanner</a> structure.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scanner:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="scanner.html#GScanner">GScanner</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the current token type</p>
+
+	</td>
+	<td>
+		<a title="GTokenType" href="scanner.html#GTokenType">GTokenType</a>
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_scanner_destroy">
+		
+<h4 id="g_scanner_destroy1">
+	<span><code>g_scanner_destroy</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_scanner_destroy (<a title="GScanner" href="scanner.html#GScanner">GScanner</a> * scanner)</pre>
+
+<p>Frees all memory used by the <a href="scanner.html#GScanner">GScanner</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scanner:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="scanner.html#GScanner">GScanner</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_scanner_input_file">
+		
+<h4 id="g_scanner_input_file1">
+	<span><code>g_scanner_input_file</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_scanner_input_file (<a title="GScanner" href="scanner.html#GScanner">GScanner</a> * scanner,
+                      gint input_fd)</pre>
+
+<p>Prepares to scan a file.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scanner:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="scanner.html#GScanner">GScanner</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>input_fd:</code></em></i>
+		</p>
+	</td>
+		<td><p>a file descriptor</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_scanner_peek_next_token">
+		
+<h4 id="g_scanner_peek_next_token1">
+	<span><code>g_scanner_peek_next_token</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GTokenType" href="scanner.html#GTokenType">GTokenType</a>
+g_scanner_peek_next_token (<a title="GScanner" href="scanner.html#GScanner">GScanner</a> * scanner)</pre>
+
+<p>Parses the next token, without removing it from the input stream.
+The token data is placed in the <em>next_token</em>, <em>next_value</em>, <em>next_line</em>,
+and <em>next_position</em> fields of the <a href="scanner.html#GScanner">GScanner</a> structure.</p>
+<p>Note that, while the token is not removed from the input stream
+(i.e. the next call to <a href="scanner.html#g_scanner_get_next_token">g_scanner_get_next_token</a> will return the
+same token), it will not be reevaluated. This can lead to surprising
+results when changing scope or the scanner configuration after peeking
+the next token. Getting the next token after switching the scope or
+configuration will return whatever was peeked before, regardless of
+any symbols that may have been added or removed in the new scope.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scanner:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="scanner.html#GScanner">GScanner</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the type of the token</p>
+
+	</td>
+	<td>
+		<a title="GTokenType" href="scanner.html#GTokenType">GTokenType</a>
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_scanner_sync_file_offset">
+		
+<h4 id="g_scanner_sync_file_offset1">
+	<span><code>g_scanner_sync_file_offset</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_scanner_sync_file_offset (<a title="GScanner" href="scanner.html#GScanner">GScanner</a> * scanner)</pre>
+
+<p>Rewinds the filedescriptor to the current buffer position
+and blows the file read ahead buffer. This is useful for
+third party uses of the scanners filedescriptor, which hooks
+onto the current scanning position.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scanner:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="scanner.html#GScanner">GScanner</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_scanner_cur_position">
+		
+<h4 id="g_scanner_cur_position1">
+	<span><code>g_scanner_cur_position</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint
+g_scanner_cur_position (<a title="GScanner" href="scanner.html#GScanner">GScanner</a> * scanner)</pre>
+
+<p>Returns the current position in the current line (counting
+from 0). This is the position of the last token parsed via
+<a href="scanner.html#g_scanner_get_next_token">g_scanner_get_next_token</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scanner:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="scanner.html#GScanner">GScanner</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the current position on the line</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_scanner_error">
+		
+<h4 id="g_scanner_error1">
+	<span><code>g_scanner_error</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_scanner_error (<a title="GScanner" href="scanner.html#GScanner">GScanner</a> * scanner,
+                 const gchar* format,
+                 ... ...)</pre>
+
+<p>Outputs an error message, via the <a href="scanner.html#GScanner">GScanner</a> message handler.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scanner:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="scanner.html#GScanner">GScanner</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>format:</code></em></i>
+		</p>
+	</td>
+		<td><p>the message format. See the printf documentation</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>the parameters to insert into the format string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_scanner_scope_remove_symbol">
+		
+<h4 id="g_scanner_scope_remove_symbol1">
+	<span><code>g_scanner_scope_remove_symbol</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_scanner_scope_remove_symbol (<a title="GScanner" href="scanner.html#GScanner">GScanner</a> * scanner,
+                               guint scope_id,
+                               const gchar* symbol)</pre>
+
+<p>Removes a symbol from a scope.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scanner:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="scanner.html#GScanner">GScanner</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scope_id:</code></em></i>
+		</p>
+	</td>
+		<td><p>the scope id</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>symbol:</code></em></i>
+		</p>
+	</td>
+		<td><p>the symbol to remove</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_scanner_set_scope">
+		
+<h4 id="g_scanner_set_scope1">
+	<span><code>g_scanner_set_scope</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint
+g_scanner_set_scope (<a title="GScanner" href="scanner.html#GScanner">GScanner</a> * scanner,
+                     guint scope_id)</pre>
+
+<p>Sets the current scope.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scanner:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="scanner.html#GScanner">GScanner</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scope_id:</code></em></i>
+		</p>
+	</td>
+		<td><p>the new scope id</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the old scope id</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GScannerFunctions">Functions</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_scanner_new">
+		
+<h4 id="g_scanner_new1">
+	<span><code>g_scanner_new</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GScanner" href="scanner.html#GScanner">GScanner</a> *
+g_scanner_new (const <a title="GScannerConfig" href="scanner.html#GScannerConfig">GScannerConfig</a> * config_templ)</pre>
+
+<p>Creates a new <a href="scanner.html#GScanner">GScanner</a>.</p>
+<p>The <em>config_templ</em> structure specifies the initial settings
+of the scanner, which are copied into the <a href="scanner.html#GScanner">GScanner</a>
+<em>config</em> field. If you pass <a href="macros.html#NULL">NULL</a> then the default settings
+are used.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>config_templ:</code></em></i>
+		</p>
+	</td>
+		<td><p>the initial scanner settings</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new <a href="scanner.html#GScanner">GScanner</a></p>
+
+	</td>
+	<td>
+		<a title="GScanner" href="scanner.html#GScanner">GScanner</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Function_Macros">Function Macros</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.2;" id="g_scanner_thaw_symbol_table">
+		
+<h3 id="g_scanner_thaw_symbol_table1">
+	<span><code>g_scanner_thaw_symbol_table</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_scanner_thaw_symbol_table(scanner) ((void)0)
+</pre>
+
+<p>There is no reason to use this macro, since it does nothing.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.2;" id="g_scanner_add_symbol">
+		
+<h3 id="g_scanner_add_symbol1">
+	<span><code>g_scanner_add_symbol</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_scanner_add_symbol( scanner, symbol, value )	G_STMT_START { \
+  g_scanner_scope_add_symbol ((scanner), 0, (symbol), (value)); \
+} G_STMT_END
+</pre>
+
+<p>Adds a symbol to the default scope.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.2;" id="g_scanner_foreach_symbol">
+		
+<h3 id="g_scanner_foreach_symbol1">
+	<span><code>g_scanner_foreach_symbol</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_scanner_foreach_symbol( scanner, func, data )	G_STMT_START { \
+  g_scanner_scope_foreach_symbol ((scanner), 0, (func), (data)); \
+} G_STMT_END
+</pre>
+
+<p>Calls a function for each symbol in the default scope.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.2;" id="g_scanner_remove_symbol">
+		
+<h3 id="g_scanner_remove_symbol1">
+	<span><code>g_scanner_remove_symbol</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_scanner_remove_symbol( scanner, symbol )	G_STMT_START { \
+  g_scanner_scope_remove_symbol ((scanner), 0, (symbol)); \
+} G_STMT_END
+</pre>
+
+<p>Removes a symbol from the default scope.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.2;" id="g_scanner_freeze_symbol_table">
+		
+<h3 id="g_scanner_freeze_symbol_table1">
+	<span><code>g_scanner_freeze_symbol_table</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_scanner_freeze_symbol_table(scanner) ((void)0)
+</pre>
+
+<p>There is no reason to use this macro, since it does nothing.</p>
+
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GScanner">
+		
+<h3 id="struct-gscanner">
+		struct GScanner
+	</h3>
+
+		<pre class="raw_code">
+struct GScanner {
+    gpointer user_data;
+    guint max_parse_errors;
+    guint parse_errors;
+    const gchar* input_name;
+    GData* qdata;
+    GScannerConfig* config;
+    GTokenType token;
+    GTokenValue value;
+    guint line;
+    guint position;
+    GTokenType next_token;
+    GTokenValue next_value;
+    guint next_line;
+    guint next_position;
+    GHashTable* symbol_table; /* &lt; private &gt; */
+    gint input_fd; /* &lt; private &gt; */
+    const gchar* text; /* &lt; private &gt; */
+    const gchar* text_end; /* &lt; private &gt; */
+    gchar* buffer; /* &lt; private &gt; */
+    guint scope_id; /* &lt; private &gt; */
+    GScannerMsgFunc msg_handler;
+};
+</pre>
+
+<p>The data structure representing a lexical scanner.</p>
+<p>You should set <em>input_name</em> after creating the scanner, since
+it is used by the default message handler when displaying
+warnings and errors. If you are scanning a file, the filename
+would be a good choice.</p>
+<p>The <em>user_data</em> and <em>max_parse_errors</em> fields are not used.
+If you need to associate extra data with the scanner you
+can place them here.</p>
+<p>If you want to use your own message handler you can set the
+<em>msg_handler</em> field. The type of the message handler function
+is declared by <a href="scanner.html#GScannerMsgFunc">GScannerMsgFunc</a>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="fields">Fields</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GScanner.user_data">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>user_data</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>unused</p>
+</td>
+</tr>
+
+						<tr id="GScanner.max_parse_errors">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>max_parse_errors</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>unused</p>
+</td>
+</tr>
+
+						<tr id="GScanner.parse_errors">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>parse_errors</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="scanner.html#g_scanner_error">g_scanner_error</a> increments this field</p>
+</td>
+</tr>
+
+						<tr id="GScanner.input_name">
+		<td>
+		<p>
+		<i><em><code>const gchar* <em><code>input_name</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>name of input stream, featured by the default message handler</p>
+</td>
+</tr>
+
+						<tr id="GScanner.qdata">
+		<td>
+		<p>
+		<i><em><code><a title="GData" href="datalist.html#GData">GData</a> * <em><code>qdata</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>quarked data</p>
+</td>
+</tr>
+
+						<tr id="GScanner.config">
+		<td>
+		<p>
+		<i><em><code><a title="GScannerConfig" href="scanner.html#GScannerConfig">GScannerConfig</a> * <em><code>config</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>link into the scanner configuration</p>
+</td>
+</tr>
+
+						<tr id="GScanner.token">
+		<td>
+		<p>
+		<i><em><code><a title="GTokenType" href="scanner.html#GTokenType">GTokenType</a> <em><code>token</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>token parsed by the last <a href="scanner.html#g_scanner_get_next_token">g_scanner_get_next_token</a></p>
+</td>
+</tr>
+
+						<tr id="GScanner.value">
+		<td>
+		<p>
+		<i><em><code>GTokenValue <em><code>value</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>value of the last token from <a href="scanner.html#g_scanner_get_next_token">g_scanner_get_next_token</a></p>
+</td>
+</tr>
+
+						<tr id="GScanner.line">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>line</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>line number of the last token from <a href="scanner.html#g_scanner_get_next_token">g_scanner_get_next_token</a></p>
+</td>
+</tr>
+
+						<tr id="GScanner.position">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>position</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>char number of the last token from <a href="scanner.html#g_scanner_get_next_token">g_scanner_get_next_token</a></p>
+</td>
+</tr>
+
+						<tr id="GScanner.next_token">
+		<td>
+		<p>
+		<i><em><code><a title="GTokenType" href="scanner.html#GTokenType">GTokenType</a> <em><code>next_token</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>token parsed by the last <a href="scanner.html#g_scanner_peek_next_token">g_scanner_peek_next_token</a></p>
+</td>
+</tr>
+
+						<tr id="GScanner.next_value">
+		<td>
+		<p>
+		<i><em><code>GTokenValue <em><code>next_value</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>value of the last token from <a href="scanner.html#g_scanner_peek_next_token">g_scanner_peek_next_token</a></p>
+</td>
+</tr>
+
+						<tr id="GScanner.next_line">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>next_line</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>line number of the last token from <a href="scanner.html#g_scanner_peek_next_token">g_scanner_peek_next_token</a></p>
+</td>
+</tr>
+
+						<tr id="GScanner.next_position">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>next_position</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>char number of the last token from <a href="scanner.html#g_scanner_peek_next_token">g_scanner_peek_next_token</a></p>
+</td>
+</tr>
+
+						<tr id="GScanner.symbol_table">
+		<td>
+		<p>
+		<i><em><code><a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * <em><code>symbol_table</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GScanner.input_fd">
+		<td>
+		<p>
+		<i><em><code>gint <em><code>input_fd</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GScanner.text">
+		<td>
+		<p>
+		<i><em><code>const gchar* <em><code>text</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GScanner.text_end">
+		<td>
+		<p>
+		<i><em><code>const gchar* <em><code>text_end</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GScanner.buffer">
+		<td>
+		<p>
+		<i><em><code>gchar* <em><code>buffer</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GScanner.scope_id">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>scope_id</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GScanner.msg_handler">
+		<td>
+		<p>
+		<i><em><code><a title="GScannerMsgFunc" href="scanner.html#GScannerMsgFunc">GScannerMsgFunc</a> <em><code>msg_handler</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>handler function for _warn and _error</p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GScannerConfig">
+		
+<h3 id="struct-gscannerconfig">
+		struct GScannerConfig
+	</h3>
+
+		<pre class="raw_code">
+struct GScannerConfig {
+    gchar* cset_skip_characters;
+    gchar* cset_identifier_first;
+    gchar* cset_identifier_nth;
+    gchar* cpair_comment_single;
+    guint case_sensitive;
+    guint skip_comment_multi;
+    guint skip_comment_single;
+    guint scan_comment_multi;
+    guint scan_identifier;
+    guint scan_identifier_1char;
+    guint scan_identifier_NULL;
+    guint scan_symbols;
+    guint scan_binary;
+    guint scan_octal;
+    guint scan_float;
+    guint scan_hex;
+    guint scan_hex_dollar;
+    guint scan_string_sq;
+    guint scan_string_dq;
+    guint numbers_2_int;
+    guint int_2_float;
+    guint identifier_2_string;
+    guint char_2_token;
+    guint symbol_2_token;
+    guint scope_0_fallback;
+    guint store_int64;
+    guint padding_dummy; /* &lt; private &gt; */
+};
+</pre>
+
+<p>Specifies the <a href="scanner.html#GScanner">GScanner</a> parser configuration. Most settings can
+be changed during the parsing phase and will affect the lexical
+parsing of the next unpeeked token.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="fields1">Fields</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GScannerConfig.cset_skip_characters">
+		<td>
+		<p>
+		<i><em><code>gchar* <em><code>cset_skip_characters</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies which characters should be skipped
+by the scanner (the default is the whitespace characters: space,
+tab, carriage-return and line-feed).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.cset_identifier_first">
+		<td>
+		<p>
+		<i><em><code>gchar* <em><code>cset_identifier_first</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies the characters which can start
+identifiers (the default is <a href="scanner.html#G_CSET_a_2_z">G_CSET_a_2_z</a>, "_", and <a href="scanner.html#G_CSET_A_2_Z">G_CSET_A_2_Z</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.cset_identifier_nth">
+		<td>
+		<p>
+		<i><em><code>gchar* <em><code>cset_identifier_nth</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies the characters which can be used
+in identifiers, after the first character (the default is
+<a href="scanner.html#G_CSET_a_2_z">G_CSET_a_2_z</a>, "_0123456789", <a href="scanner.html#G_CSET_A_2_Z">G_CSET_A_2_Z</a>, <a href="scanner.html#G_CSET_LATINS">G_CSET_LATINS</a>,
+<a href="scanner.html#G_CSET_LATINC">G_CSET_LATINC</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.cpair_comment_single">
+		<td>
+		<p>
+		<i><em><code>gchar* <em><code>cpair_comment_single</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies the characters at the start and
+end of single-line comments. The default is "#\n" which means
+that single-line comments start with a '#' and continue until
+a '\n' (end of line).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.case_sensitive">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>case_sensitive</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies if symbols are case sensitive (the
+default is <a href="macros.html#FALSE">FALSE</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.skip_comment_multi">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>skip_comment_multi</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies if multi-line comments are skipped
+and not returned as tokens (the default is <a href="macros.html#TRUE">TRUE</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.skip_comment_single">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>skip_comment_single</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies if single-line comments are skipped
+and not returned as tokens (the default is <a href="macros.html#TRUE">TRUE</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.scan_comment_multi">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>scan_comment_multi</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies if multi-line comments are recognized
+(the default is <a href="macros.html#TRUE">TRUE</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.scan_identifier">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>scan_identifier</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies if identifiers are recognized (the
+default is <a href="macros.html#TRUE">TRUE</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.scan_identifier_1char">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>scan_identifier_1char</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies if single-character
+identifiers are recognized (the default is <a href="macros.html#FALSE">FALSE</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.scan_identifier_NULL">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>scan_identifier_NULL</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies if <a href="macros.html#NULL">NULL</a> is reported as
+<a href="scanner.html#G_TOKEN_IDENTIFIER_NULL">G_TOKEN_IDENTIFIER_NULL</a> (the default is <a href="macros.html#FALSE">FALSE</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.scan_symbols">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>scan_symbols</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies if symbols are recognized (the default
+is <a href="macros.html#TRUE">TRUE</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.scan_binary">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>scan_binary</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies if binary numbers are recognized (the
+default is <a href="macros.html#FALSE">FALSE</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.scan_octal">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>scan_octal</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies if octal numbers are recognized (the
+default is <a href="macros.html#TRUE">TRUE</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.scan_float">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>scan_float</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies if floating point numbers are recognized
+(the default is <a href="macros.html#TRUE">TRUE</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.scan_hex">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>scan_hex</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies if hexadecimal numbers are recognized (the
+default is <a href="macros.html#TRUE">TRUE</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.scan_hex_dollar">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>scan_hex_dollar</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies if '$' is recognized as a prefix for
+hexadecimal numbers (the default is <a href="macros.html#FALSE">FALSE</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.scan_string_sq">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>scan_string_sq</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies if strings can be enclosed in single
+quotes (the default is <a href="macros.html#TRUE">TRUE</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.scan_string_dq">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>scan_string_dq</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies if strings can be enclosed in double
+quotes (the default is <a href="macros.html#TRUE">TRUE</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.numbers_2_int">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>numbers_2_int</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies if binary, octal and hexadecimal numbers
+are reported as <a href="scanner.html#G_TOKEN_INT">G_TOKEN_INT</a> (the default is <a href="macros.html#TRUE">TRUE</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.int_2_float">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>int_2_float</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies if all numbers are reported as <a href="scanner.html#G_TOKEN_FLOAT">G_TOKEN_FLOAT</a>
+(the default is <a href="macros.html#FALSE">FALSE</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.identifier_2_string">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>identifier_2_string</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies if identifiers are reported as strings
+(the default is <a href="macros.html#FALSE">FALSE</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.char_2_token">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>char_2_token</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies if characters are reported by setting
+<code>token = ch</code> or as <a href="scanner.html#G_TOKEN_CHAR">G_TOKEN_CHAR</a> (the default is <a href="macros.html#TRUE">TRUE</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.symbol_2_token">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>symbol_2_token</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies if symbols are reported by setting
+<code>token = v_symbol</code> or as <a href="scanner.html#G_TOKEN_SYMBOL">G_TOKEN_SYMBOL</a> (the default is <a href="macros.html#FALSE">FALSE</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.scope_0_fallback">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>scope_0_fallback</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>specifies if a symbol is searched for in the
+default scope in addition to the current scope (the default is <a href="macros.html#FALSE">FALSE</a>).</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.store_int64">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>store_int64</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>use value.v_int64 rather than v_int</p>
+</td>
+</tr>
+
+						<tr id="GScannerConfig.padding_dummy">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>padding_dummy</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GErrorType">
+		
+<h3 id="enum-gerrortype">
+		enum GErrorType
+	</h3>
+
+		<p>The possible errors, used in the <em>v_error</em> field
+of GTokenValue, when the token is a <a href="scanner.html#G_TOKEN_ERROR">G_TOKEN_ERROR</a>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_ERR_UNKNOWN"></a>
+		G_ERR_UNKNOWN
+		</p>
+	</td>
+	<td><p>unknown error</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_ERR_UNEXP_EOF"></a>
+		G_ERR_UNEXP_EOF
+		</p>
+	</td>
+	<td><p>unexpected end of file</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_ERR_UNEXP_EOF_IN_STRING"></a>
+		G_ERR_UNEXP_EOF_IN_STRING
+		</p>
+	</td>
+	<td><p>unterminated string constant</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_ERR_UNEXP_EOF_IN_COMMENT"></a>
+		G_ERR_UNEXP_EOF_IN_COMMENT
+		</p>
+	</td>
+	<td><p>unterminated comment</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_ERR_NON_DIGIT_IN_CONST"></a>
+		G_ERR_NON_DIGIT_IN_CONST
+		</p>
+	</td>
+	<td><p>non-digit character in a number</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_ERR_DIGIT_RADIX"></a>
+		G_ERR_DIGIT_RADIX
+		</p>
+	</td>
+	<td><p>digit beyond radix in a number</p>
+</td>
+	<td>
+		<span class="value">Value: 5</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_ERR_FLOAT_RADIX"></a>
+		G_ERR_FLOAT_RADIX
+		</p>
+	</td>
+	<td><p>non-decimal floating point number</p>
+</td>
+	<td>
+		<span class="value">Value: 6</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_ERR_FLOAT_MALFORMED"></a>
+		G_ERR_FLOAT_MALFORMED
+		</p>
+	</td>
+	<td><p>malformed floating point number</p>
+</td>
+	<td>
+		<span class="value">Value: 7</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GTokenType">
+		
+<h3 id="enum-gtokentype">
+		enum GTokenType
+	</h3>
+
+		<p>The possible types of token returned from each
+<a href="scanner.html#g_scanner_get_next_token">g_scanner_get_next_token</a> call.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members1">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_EOF"></a>
+		G_TOKEN_EOF
+		</p>
+	</td>
+	<td><p>the end of the file</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_LEFT_PAREN"></a>
+		G_TOKEN_LEFT_PAREN
+		</p>
+	</td>
+	<td><p>a '(' character</p>
+</td>
+	<td>
+		<span class="value">Value: 40</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_RIGHT_PAREN"></a>
+		G_TOKEN_RIGHT_PAREN
+		</p>
+	</td>
+	<td><p>a ')' character</p>
+</td>
+	<td>
+		<span class="value">Value: 41</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_LEFT_CURLY"></a>
+		G_TOKEN_LEFT_CURLY
+		</p>
+	</td>
+	<td><p>a '{' character</p>
+</td>
+	<td>
+		<span class="value">Value: 123</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_RIGHT_CURLY"></a>
+		G_TOKEN_RIGHT_CURLY
+		</p>
+	</td>
+	<td><p>a '}' character</p>
+</td>
+	<td>
+		<span class="value">Value: 125</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_LEFT_BRACE"></a>
+		G_TOKEN_LEFT_BRACE
+		</p>
+	</td>
+	<td><p>a '[' character</p>
+</td>
+	<td>
+		<span class="value">Value: 91</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_RIGHT_BRACE"></a>
+		G_TOKEN_RIGHT_BRACE
+		</p>
+	</td>
+	<td><p>a ']' character</p>
+</td>
+	<td>
+		<span class="value">Value: 93</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_EQUAL_SIGN"></a>
+		G_TOKEN_EQUAL_SIGN
+		</p>
+	</td>
+	<td><p>a '=' character</p>
+</td>
+	<td>
+		<span class="value">Value: 61</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_COMMA"></a>
+		G_TOKEN_COMMA
+		</p>
+	</td>
+	<td><p>a ',' character</p>
+</td>
+	<td>
+		<span class="value">Value: 44</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_NONE"></a>
+		G_TOKEN_NONE
+		</p>
+	</td>
+	<td><p>not a token</p>
+</td>
+	<td>
+		<span class="value">Value: 256</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_ERROR"></a>
+		G_TOKEN_ERROR
+		</p>
+	</td>
+	<td><p>an error occurred</p>
+</td>
+	<td>
+		<span class="value">Value: 257</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_CHAR"></a>
+		G_TOKEN_CHAR
+		</p>
+	</td>
+	<td><p>a character</p>
+</td>
+	<td>
+		<span class="value">Value: 258</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_BINARY"></a>
+		G_TOKEN_BINARY
+		</p>
+	</td>
+	<td><p>a binary integer</p>
+</td>
+	<td>
+		<span class="value">Value: 259</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_OCTAL"></a>
+		G_TOKEN_OCTAL
+		</p>
+	</td>
+	<td><p>an octal integer</p>
+</td>
+	<td>
+		<span class="value">Value: 260</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_INT"></a>
+		G_TOKEN_INT
+		</p>
+	</td>
+	<td><p>an integer</p>
+</td>
+	<td>
+		<span class="value">Value: 261</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_HEX"></a>
+		G_TOKEN_HEX
+		</p>
+	</td>
+	<td><p>a hex integer</p>
+</td>
+	<td>
+		<span class="value">Value: 262</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_FLOAT"></a>
+		G_TOKEN_FLOAT
+		</p>
+	</td>
+	<td><p>a floating point number</p>
+</td>
+	<td>
+		<span class="value">Value: 263</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_STRING"></a>
+		G_TOKEN_STRING
+		</p>
+	</td>
+	<td><p>a string</p>
+</td>
+	<td>
+		<span class="value">Value: 264</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_SYMBOL"></a>
+		G_TOKEN_SYMBOL
+		</p>
+	</td>
+	<td><p>a symbol</p>
+</td>
+	<td>
+		<span class="value">Value: 265</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_IDENTIFIER"></a>
+		G_TOKEN_IDENTIFIER
+		</p>
+	</td>
+	<td><p>an identifier</p>
+</td>
+	<td>
+		<span class="value">Value: 266</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_IDENTIFIER_NULL"></a>
+		G_TOKEN_IDENTIFIER_NULL
+		</p>
+	</td>
+	<td><p>a null identifier</p>
+</td>
+	<td>
+		<span class="value">Value: 267</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_COMMENT_SINGLE"></a>
+		G_TOKEN_COMMENT_SINGLE
+		</p>
+	</td>
+	<td><p>one line comment</p>
+</td>
+	<td>
+		<span class="value">Value: 268</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TOKEN_COMMENT_MULTI"></a>
+		G_TOKEN_COMMENT_MULTI
+		</p>
+	</td>
+	<td><p>multi line comment</p>
+</td>
+	<td>
+		<span class="value">Value: 269</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_CSET_A_2_Z">
+		
+<h3 class="constant" id="g_cset_a_2_z">
+	G_CSET_A_2_Z
+</h3>
+
+		<pre class="raw_code">
+#define G_CSET_A_2_Z	"ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+</pre>
+
+<p>The set of uppercase ASCII alphabet characters.
+Used for specifying valid identifier characters
+in <a href="scanner.html#GScannerConfig">GScannerConfig</a>.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_CSET_LATINS">
+		
+<h3 class="constant" id="g_cset_latins">
+	G_CSET_LATINS
+</h3>
+
+		<pre class="raw_code">
+#define G_CSET_LATINS	"\337\340\341\342\343\344\345\346"\
+			"\347\350\351\352\353\354\355\356\357\360"\
+			"\361\362\363\364\365\366"\
+			"\370\371\372\373\374\375\376\377"
+</pre>
+
+<p>The set of lowercase ISO 8859-1 alphabet characters
+which are not ASCII characters.
+Used for specifying valid identifier characters
+in <a href="scanner.html#GScannerConfig">GScannerConfig</a>.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_CSET_LATINC">
+		
+<h3 class="constant" id="g_cset_latinc">
+	G_CSET_LATINC
+</h3>
+
+		<pre class="raw_code">
+#define G_CSET_LATINC	"\300\301\302\303\304\305\306"\
+			"\307\310\311\312\313\314\315\316\317\320"\
+			"\321\322\323\324\325\326"\
+			"\330\331\332\333\334\335\336"
+</pre>
+
+<p>The set of uppercase ISO 8859-1 alphabet characters
+which are not ASCII characters.
+Used for specifying valid identifier characters
+in <a href="scanner.html#GScannerConfig">GScannerConfig</a>.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_CSET_DIGITS">
+		
+<h3 class="constant" id="g_cset_digits">
+	G_CSET_DIGITS
+</h3>
+
+		<pre class="raw_code">
+#define G_CSET_DIGITS	"0123456789"
+</pre>
+
+<p>The set of ASCII digits.
+Used for specifying valid identifier characters
+in <a href="scanner.html#GScannerConfig">GScannerConfig</a>.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_CSET_a_2_z">
+		
+<h3 class="constant" id="g_cset_a_2_z1">
+	G_CSET_a_2_z
+</h3>
+
+		<pre class="raw_code">
+#define G_CSET_a_2_z	"abcdefghijklmnopqrstuvwxyz"
+</pre>
+
+<p>The set of lowercase ASCII alphabet characters.
+Used for specifying valid identifier characters
+in <a href="scanner.html#GScannerConfig">GScannerConfig</a>.</p>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GScannerMsgFunc">
+		
+<h3 id="gscannermsgfunc">
+	<span><code>GScannerMsgFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+(*GScannerMsgFunc) (<a title="GScanner" href="scanner.html#GScanner">GScanner</a> * scanner,
+                    gchar* message,
+                    gboolean error)</pre>
+
+<p>Specifies the type of the message handler function.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>scanner:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="scanner.html#GScanner">GScanner</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>message:</code></em></i>
+		</p>
+	</td>
+		<td><p>the message</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>error:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#TRUE">TRUE</a> if the message signals an error,
+<a href="macros.html#FALSE">FALSE</a> if it signals a warning.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

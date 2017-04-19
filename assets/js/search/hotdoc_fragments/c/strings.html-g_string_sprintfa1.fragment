@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/strings.html#g_string_sprintfa1", "fragment": "g_string_sprintfa \nAppends a formatted string onto the end of a GString. This function is similar to g_string_sprintf except that the text is appended to the GString. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_iter_new1", "fragment": "g_variant_iter_new \nCreates a heap allocated GVariantIter for iterating over the items in value. \nUse g_variant_iter_free to free the return value when you no longer need it. \nA reference is taken to value and will be released only when g_variant_iter_free is called. \n"});

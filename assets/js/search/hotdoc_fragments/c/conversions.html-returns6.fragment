@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/conversions.html#returns6", "fragment": "\na newly allocated string containing the name of the character set. This string must be freed with g_free. \n"});

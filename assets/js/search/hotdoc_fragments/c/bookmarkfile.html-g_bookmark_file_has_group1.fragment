@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/bookmarkfile.html#g_bookmark_file_has_group1", "fragment": "g_bookmark_file_has_group \nChecks whether group appears in the list of groups to which the bookmark for uri belongs to. \nIn the event the URI cannot be found FALSE is returned and error is set to G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND. \n"});

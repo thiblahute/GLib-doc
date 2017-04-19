@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/checkedmath.html#g_size_checked_mul1", "fragment": "g_size_checked_mul \nPerforms a checked multiplication of a and b storing the result in dest. \nIf the operation is successful TRUE is returned. If the operation overflows then the state of dest is undefined and FALSE is returned. \n"});

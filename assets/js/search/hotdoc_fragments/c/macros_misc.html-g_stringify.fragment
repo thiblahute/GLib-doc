@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/macros_misc.html#g_stringify", "fragment": "G_STRINGIFY \nAccepts a macro or a string and converts it into a string after preprocessor argument expansion. For example the following code \nis transformed by the preprocessor into code equivalent to \n"});

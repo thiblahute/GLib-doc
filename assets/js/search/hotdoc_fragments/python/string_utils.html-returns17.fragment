@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/string_utils.html#returns17", "fragment": "\na newly allocated string with all the lower case characters in str converted to upper case with semantics that exactly match GLib.ascii_toupper. Note that this is unlike the old GLib.strup which modified the string in place. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_utils.html#g_sprintf1", "fragment": "g_sprintf \nAn implementation of the standard sprintf function which supports positional parameters as specified in the Single Unix Specification. \nNote that it is usually better to use g_snprintf to avoid the risk of buffer overflow. \nSee also g_strdup_printf. \n"});

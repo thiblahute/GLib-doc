@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/bookmarkfile.html#glibbookmarkfileset_groups", "fragment": "GLib.BookmarkFile.set_groups \nSets a list of group names for the item with URI uri. Each previously set group name list is removed. \nIf uri cannot be found then an item for it is created. \n"});

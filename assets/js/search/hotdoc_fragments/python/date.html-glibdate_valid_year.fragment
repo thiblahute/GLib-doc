@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdate_valid_year", "fragment": "GLib.date_valid_year \nReturns True if the year is valid. Any year greater than is valid though there is a bit limit to what GLib.Date will understand. \n"});

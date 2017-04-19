@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/macros.html#glibdir_separator_s", "fragment": "GLib.DIR_SEPARATOR_S \nThe directory separator as a string. This is on UNIX machines and under Windows. \n"});

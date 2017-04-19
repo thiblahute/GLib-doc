@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/byte_order.html#gssize_from_be", "fragment": "GSSIZE_FROM_BE \nConverts a gssize value from big endian to host byte order. \n"});

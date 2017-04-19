@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/trees-nary.html#g_node_traverse1", "fragment": "g_node_traverse \nTraverses a tree starting at the given root GNode. It calls the given function for each node visited. The traversal can be halted at any point by returning TRUE from func. \n"});

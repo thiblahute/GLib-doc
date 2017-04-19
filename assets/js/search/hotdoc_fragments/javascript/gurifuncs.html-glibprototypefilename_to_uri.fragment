@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gurifuncs.html#glibprototypefilename_to_uri", "fragment": "GLib.prototype.filename_to_uri \nConverts an absolute filename to an escaped ASCII encoded URI with the path component following Section of RFC \n"});

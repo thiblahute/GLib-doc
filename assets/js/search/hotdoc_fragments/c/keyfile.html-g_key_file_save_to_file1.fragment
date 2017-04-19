@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/keyfile.html#g_key_file_save_to_file1", "fragment": "g_key_file_save_to_file \nWrites the contents of key_file to filename using g_file_set_contents. \nThis function can fail for any of the reasons that g_file_set_contents may fail. \n"});

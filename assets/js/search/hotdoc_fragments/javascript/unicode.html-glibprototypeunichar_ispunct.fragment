@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/unicode.html#glibprototypeunichar_ispunct", "fragment": "GLib.prototype.unichar_ispunct \nDetermines whether a character is punctuation or a symbol. Given some UTF text obtain a character value with GLib.prototype.utf8_get_char. \n"});

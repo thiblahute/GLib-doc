@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#g_rec_mutex_trylock1", "fragment": "g_rec_mutex_trylock \nTries to lock rec_mutex. If rec_mutex is already locked by another thread it immediately returns FALSE. Otherwise it locks rec_mutex and returns TRUE. \n"});

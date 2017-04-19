@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/unicode.html#parameters38", "fragment": "ch \na Unicode character. \ncompat \nwhether perform canonical or compatibility decomposition \nresult \nlocation to store decomposed result or NULL \nresult_len \nlength of result \n"});

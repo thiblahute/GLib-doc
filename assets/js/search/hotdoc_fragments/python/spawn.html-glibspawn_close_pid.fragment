@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/spawn.html#glibspawn_close_pid", "fragment": "GLib.spawn_close_pid \nOn some platforms notably Windows the GLib.Pid type represents a resource which must be closed to prevent resource leaking. GLib.spawn_close_pid is provided for this purpose. It should be used on all platforms even though it doesn t do anything under UNIX. \n"});

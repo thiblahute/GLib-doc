@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gregex.html#g_match_info_unref1", "fragment": "g_match_info_unref \nDecreases reference count of match_info by When reference count drops to zero it frees all the memory associated with the match_info structure. \n"});

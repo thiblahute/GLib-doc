@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/keyfile.html#glibkey_file_desktop_key_exec", "fragment": "GLib.KEY_FILE_DESKTOP_KEY_EXEC \nA key under GLib.KEY_FILE_DESKTOP_GROUP whose value is a string giving the command line to execute. It is only valid for desktop entries with the Application type. \n"});

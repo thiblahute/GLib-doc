@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gurifuncs.html#g_filename_from_uri", "fragment": "GLib.prototype.filename_from_uri \nConverts an escaped ASCII encoded URI to a local filename in the encoding used for filenames. \n"});

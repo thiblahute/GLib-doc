@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/threads.html#glibonce", "fragment": "GLib.Once \nA GLib.Once struct controls a one time initialization function. Any one time initialization function must have its own unique GLib.Once struct. \n"});

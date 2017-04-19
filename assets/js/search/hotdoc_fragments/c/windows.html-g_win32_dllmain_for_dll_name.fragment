@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/windows.html#g_win32_dllmain_for_dll_name", "fragment": "G_WIN32_DLLMAIN_FOR_DLL_NAME \nOn Windows this macro defines a DllMain function that stores the actual DLL name that the code being compiled will be included in. \nOn non Windows platforms expands to nothing. \n"});

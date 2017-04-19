@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvarianttype.html#g_variant_type_dictionary", "fragment": "G_VARIANT_TYPE_DICTIONARY \nAn indefinite type that is a supertype of every dictionary type that is any array type that has an element type equal to any dictionary entry type. \n"});

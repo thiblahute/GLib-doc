@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvariant.html#glibvariantdictinsert_value", "fragment": "GLib.VariantDict.insert_value \nInserts or replaces a key in a GLib.VariantDict. \nvalue is consumed if it is floating. \n"});

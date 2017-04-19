@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#enum-glibdateweekday", "fragment": "enum GLib.DateWeekday \nEnumeration representing a day of the week GLib.DateWeekday.prototype.monday GLib.DateWeekday.prototype.tuesday etc. GLib.DateWeekday.prototype.bad_weekday is an invalid weekday. \n"});

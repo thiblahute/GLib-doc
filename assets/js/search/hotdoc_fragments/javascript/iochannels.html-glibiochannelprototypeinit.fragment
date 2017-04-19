@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/iochannels.html#glibiochannelprototypeinit", "fragment": "GLib.IOChannel.prototype.init \nInitializes a GLib.IOChannel struct. \nThis is called by each of the above functions when creating a GLib.IOChannel and so is not often needed by the application programmer unless you are creating a new type of GLib.IOChannel \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hash_tables.html#glibhashtableiterinit", "fragment": "GLib.HashTableIter.init \nInitializes a key value pair iterator and associates it with hash_table. Modifying the hash table after calling this function invalidates the returned iterator. \n"});

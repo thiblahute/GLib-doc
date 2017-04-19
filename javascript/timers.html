@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GTimer</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="timers.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="javascript">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="timers.markdown">
+        <h1 id="gtimer">GTimer</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GTimer</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GTimerMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_timer_start">
+		
+<h4 id="glibtimerprototypestart">
+	<span><code>GLib.Timer.prototype.start</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Timer.prototype.start(): {
+    // javascript wrapper for 'g_timer_start'
+}</pre>
+
+<p>Marks a start time, so that future calls to <a href="timers.html#g_timer_elapsed">GLib.Timer.prototype.elapsed</a> will
+report the time since <a href="timers.html#g_timer_start">GLib.Timer.prototype.start</a> was called. <a href="../c/timers.html#g_timer_new">g_timer_new (not introspectable)</a>
+automatically marks the start time, so no need to call
+<a href="timers.html#g_timer_start">GLib.Timer.prototype.start</a> immediately after creating the timer.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>timer:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="timers.html#GTimer">GLib.Timer</a>.</p>
+</td>
+<td>
+<a title="GLib.Timer" href="timers.html#GTimer">GLib.Timer</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_timer_stop">
+		
+<h4 id="glibtimerprototypestop">
+	<span><code>GLib.Timer.prototype.stop</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Timer.prototype.stop(): {
+    // javascript wrapper for 'g_timer_stop'
+}</pre>
+
+<p>Marks an end time, so calls to <a href="timers.html#g_timer_elapsed">GLib.Timer.prototype.elapsed</a> will return the
+difference between this end time and the start time.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>timer:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="timers.html#GTimer">GLib.Timer</a>.</p>
+</td>
+<td>
+<a title="GLib.Timer" href="timers.html#GTimer">GLib.Timer</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_timer_elapsed">
+		
+<h4 id="glibtimerprototypeelapsed">
+	<span><code>GLib.Timer.prototype.elapsed</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Timer.prototype.elapsed(microseconds: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_timer_elapsed'
+}</pre>
+
+<p>If <em>timer</em> has been started but not stopped, obtains the time since
+the timer was started. If <em>timer</em> has been stopped, obtains the
+elapsed time between the time it was started and the time it was
+stopped. The return value is the number of seconds elapsed,
+including any fractional part. The <em>microseconds</em> out parameter is
+essentially useless.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>timer:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="timers.html#GTimer">GLib.Timer</a>.</p>
+</td>
+<td>
+<a title="GLib.Timer" href="timers.html#GTimer">GLib.Timer</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>microseconds:</code></em></i>
+		</p>
+	</td>
+		<td><p>return location for the fractional part of seconds
+elapsed, in microseconds (that is, the total number
+of microseconds elapsed, modulo 1000000), or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>seconds elapsed as a floating point value, including any
+fractional part.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_timer_reset">
+		
+<h4 id="glibtimerprototypereset">
+	<span><code>GLib.Timer.prototype.reset</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Timer.prototype.reset(): {
+    // javascript wrapper for 'g_timer_reset'
+}</pre>
+
+<p>This function is useless; it's fine to call <a href="timers.html#g_timer_start">GLib.Timer.prototype.start</a> on an
+already-started timer to reset the start time, so <a href="timers.html#g_timer_reset">GLib.Timer.prototype.reset</a>
+serves no purpose.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>timer:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="timers.html#GTimer">GLib.Timer</a>.</p>
+</td>
+<td>
+<a title="GLib.Timer" href="timers.html#GTimer">GLib.Timer</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_timer_continue">
+		
+<h4 id="glibtimerprototypecontinue">
+	<span><code>GLib.Timer.prototype.continue</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Timer.prototype.continue(): {
+    // javascript wrapper for 'g_timer_continue'
+}</pre>
+
+<p>Resumes a timer that has previously been stopped with
+<a href="timers.html#g_timer_stop">GLib.Timer.prototype.stop</a>. <a href="timers.html#g_timer_stop">GLib.Timer.prototype.stop</a> must be called before using this
+function.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>timer:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="timers.html#GTimer">GLib.Timer</a>.</p>
+</td>
+<td>
+<a title="GLib.Timer" href="timers.html#GTimer">GLib.Timer</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_timer_destroy">
+		
+<h4 id="glibtimerprototypedestroy">
+	<span><code>GLib.Timer.prototype.destroy</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Timer.prototype.destroy(): {
+    // javascript wrapper for 'g_timer_destroy'
+}</pre>
+
+<p>Destroys a timer, freeing associated resources.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>timer:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="timers.html#GTimer">GLib.Timer</a> to destroy.</p>
+</td>
+<td>
+<a title="GLib.Timer" href="timers.html#GTimer">GLib.Timer</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GTimer">
+		<h3 id="glibtimer">
+	GLib.Timer
+</h3>
+
+		<p>Opaque datatype that records a start time.</p>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

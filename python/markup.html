@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GMarkupParser</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="markup.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="python">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="markup.markdown">
+        <h1 id="gmarkupparser">GMarkupParser</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GMarkupParseContext</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GMarkupParseContextConstructors">Constructors</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_markup_parse_context_new">
+		
+<h4 id="glibmarkupparsecontextnew">
+	<span><code>GLib.MarkupParseContext.new</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.MarkupParseContext.new (parser, flags, user_data, user_data_dnotify):
+    #python wrapper for 'g_markup_parse_context_new'</pre>
+
+<p>Creates a new parse context. A parse context is used to parse
+marked-up documents. You can feed any number of documents into
+a context, as long as no errors occur; once an error occurs,
+the parse context can't continue to parse text (you have to
+free it and create a new parse context).</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>parser:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="markup.html#GMarkupParser">GLib.MarkupParser</a></p>
+</td>
+<td>
+<a title="GLib.MarkupParser" href="markup.html#GMarkupParser">GLib.MarkupParser</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>one or more <a href="markup.html#GMarkupParseFlags">GLib.MarkupParseFlags</a></p>
+</td>
+<td>
+<a title="GLib.MarkupParseFlags" href="markup.html#GMarkupParseFlags">GLib.MarkupParseFlags</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data to pass to <a href="markup.html#GMarkupParser">GLib.MarkupParser</a> functions</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data_dnotify:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data destroy notifier called when
+the parse context is freed</p>
+</td>
+<td>
+<a title="GLib.DestroyNotify" href="datasets.html#GDestroyNotify">GLib.DestroyNotify</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a></p>
+
+	</td>
+	<td>
+		<a title="GLib.MarkupParseContext" href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GMarkupParseContextMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.18;" id="g_markup_parse_context_pop">
+		
+<h4 id="glibmarkupparsecontextpop">
+	<span><code>GLib.MarkupParseContext.pop</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.MarkupParseContext.pop (self):
+    #python wrapper for 'g_markup_parse_context_pop'</pre>
+
+<p>Completes the process of a temporary sub-parser redirection.</p>
+<p>This function exists to collect the user_data allocated by a
+matching call to <a href="markup.html#g_markup_parse_context_push">GLib.MarkupParseContext.push</a>. It must be called
+in the end_element handler corresponding to the start_element
+handler during which <a href="markup.html#g_markup_parse_context_push">GLib.MarkupParseContext.push</a> was called.
+You must not call this function from the error callback -- the
+<em>user_data</em> is provided directly to the callback in that case.</p>
+<p>This function is not intended to be directly called by users
+interested in invoking subparsers. Instead, it is intended to
+be used by the subparsers themselves to implement a higher-level
+interface.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a></p>
+</td>
+<td>
+<a title="GLib.MarkupParseContext" href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the user data passed to <a href="markup.html#g_markup_parse_context_push">GLib.MarkupParseContext.push</a></p>
+
+	</td>
+	<td>
+		<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.18
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_markup_parse_context_end_parse">
+		
+<h4 id="glibmarkupparsecontextend_parse">
+	<span><code>GLib.MarkupParseContext.end_parse</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.MarkupParseContext.end_parse (self):
+    #python wrapper for 'g_markup_parse_context_end_parse'</pre>
+
+<p>Signals to the <a href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a> that all data has been
+fed into the parse context with <a href="markup.html#g_markup_parse_context_parse">GLib.MarkupParseContext.parse</a>.</p>
+<p>This function reports an error if the document isn't complete,
+for example if elements are still open.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a></p>
+</td>
+<td>
+<a title="GLib.MarkupParseContext" href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> on success, <a href="https://docs.python.org/2/library/constants.html#False">False</a> if an error was set</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_markup_parse_context_free">
+		
+<h4 id="glibmarkupparsecontextfree">
+	<span><code>GLib.MarkupParseContext.free</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.MarkupParseContext.free (self):
+    #python wrapper for 'g_markup_parse_context_free'</pre>
+
+<p>Frees a <a href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a>.</p>
+<p>This function can't be called from inside one of the
+<a href="markup.html#GMarkupParser">GLib.MarkupParser</a> functions or while a subparser is pushed.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a></p>
+</td>
+<td>
+<a title="GLib.MarkupParseContext" href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.36;" id="g_markup_parse_context_ref">
+		
+<h4 id="glibmarkupparsecontextref">
+	<span><code>GLib.MarkupParseContext.ref</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.MarkupParseContext.ref (self):
+    #python wrapper for 'g_markup_parse_context_ref'</pre>
+
+<p>Increases the reference count of <em>context</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a></p>
+</td>
+<td>
+<a title="GLib.MarkupParseContext" href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the same <em>context</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.MarkupParseContext" href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.36
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_markup_parse_context_get_position">
+		
+<h4 id="glibmarkupparsecontextget_position">
+	<span><code>GLib.MarkupParseContext.get_position</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.MarkupParseContext.get_position (self, line_number, char_number):
+    #python wrapper for 'g_markup_parse_context_get_position'</pre>
+
+<p>Retrieves the current line number and the number of the character on
+that line. Intended for use in error messages; there are no strict
+semantics for what constitutes the "current" line number other than
+"the best number we could come up with for error messages."</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a></p>
+</td>
+<td>
+<a title="GLib.MarkupParseContext" href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>line_number:</code></em></i>
+		</p>
+	</td>
+		<td><p>return location for a line number, or <a href="https://docs.python.org/2/library/constants.html#None">None</a></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>char_number:</code></em></i>
+		</p>
+	</td>
+		<td><p>return location for a char-on-line number, or <a href="https://docs.python.org/2/library/constants.html#None">None</a></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.2;" id="g_markup_parse_context_get_element">
+		
+<h4 id="glibmarkupparsecontextget_element">
+	<span><code>GLib.MarkupParseContext.get_element</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.MarkupParseContext.get_element (self):
+    #python wrapper for 'g_markup_parse_context_get_element'</pre>
+
+<p>Retrieves the name of the currently open element.</p>
+<p>If called from the start_element or end_element handlers this will
+give the element_name as passed to those functions. For the parent
+elements, see <a href="../c/markup.html#g_markup_parse_context_get_element_stack">g_markup_parse_context_get_element_stack (not introspectable)</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a></p>
+</td>
+<td>
+<a title="GLib.MarkupParseContext" href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the name of the currently open element, or <a href="https://docs.python.org/2/library/constants.html#None">None</a></p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.2
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.36;" id="g_markup_parse_context_unref">
+		
+<h4 id="glibmarkupparsecontextunref">
+	<span><code>GLib.MarkupParseContext.unref</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.MarkupParseContext.unref (self):
+    #python wrapper for 'g_markup_parse_context_unref'</pre>
+
+<p>Decreases the reference count of <em>context</em>.  When its reference count
+drops to 0, it is freed.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a></p>
+</td>
+<td>
+<a title="GLib.MarkupParseContext" href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.36
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_markup_parse_context_parse">
+		
+<h4 id="glibmarkupparsecontextparse">
+	<span><code>GLib.MarkupParseContext.parse</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.MarkupParseContext.parse (self, text, text_len):
+    #python wrapper for 'g_markup_parse_context_parse'</pre>
+
+<p>Feed some data to the <a href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a>.</p>
+<p>The data need not be valid UTF-8; an error will be signaled if
+it's invalid. The data need not be an entire document; you can
+feed a document into the parser incrementally, via multiple calls
+to this function. Typically, as you receive data from a network
+connection or file, you feed each received chunk of data into this
+function, aborting the process if an error occurs. Once an error
+is reported, no further data may be fed to the <a href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a>;
+all errors are fatal.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a></p>
+</td>
+<td>
+<a title="GLib.MarkupParseContext" href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>text:</code></em></i>
+		</p>
+	</td>
+		<td><p>chunk of text to parse</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>text_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>text</em> in bytes</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#False">False</a> if an error occurred, <a href="https://docs.python.org/2/library/constants.html#True">True</a> on success</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.18;" id="g_markup_parse_context_get_user_data">
+		
+<h4 id="glibmarkupparsecontextget_user_data">
+	<span><code>GLib.MarkupParseContext.get_user_data</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.MarkupParseContext.get_user_data (self):
+    #python wrapper for 'g_markup_parse_context_get_user_data'</pre>
+
+<p>Returns the user_data associated with <em>context</em>.</p>
+<p>This will either be the user_data that was provided to
+<a href="markup.html#g_markup_parse_context_new">GLib.MarkupParseContext.new</a> or to the most recent call
+of <a href="markup.html#g_markup_parse_context_push">GLib.MarkupParseContext.push</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a></p>
+</td>
+<td>
+<a title="GLib.MarkupParseContext" href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the provided user_data. The returned data belongs to
+the markup context and will be freed when
+<a href="markup.html#g_markup_parse_context_free">GLib.MarkupParseContext.free</a> is called.</p>
+
+	</td>
+	<td>
+		<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.18
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.18;" id="g_markup_parse_context_push">
+		
+<h4 id="glibmarkupparsecontextpush">
+	<span><code>GLib.MarkupParseContext.push</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.MarkupParseContext.push (self, parser, user_data):
+    #python wrapper for 'g_markup_parse_context_push'</pre>
+
+<p>Temporarily redirects markup data to a sub-parser.</p>
+<p>This function may only be called from the start_element handler of
+a <a href="markup.html#GMarkupParser">GLib.MarkupParser</a>. It must be matched with a corresponding call to
+<a href="markup.html#g_markup_parse_context_pop">GLib.MarkupParseContext.pop</a> in the matching end_element handler
+(except in the case that the parser aborts due to an error).</p>
+<p>All tags, text and other data between the matching tags is
+redirected to the subparser given by <em>parser</em>. <em>user_data</em> is used
+as the user_data for that parser. <em>user_data</em> is also passed to the
+error callback in the event that an error occurs. This includes
+errors that occur in subparsers of the subparser.</p>
+<p>The end tag matching the start tag for which this call was made is
+handled by the previous parser (which is given its own user_data)
+which is why <a href="markup.html#g_markup_parse_context_pop">GLib.MarkupParseContext.pop</a> is provided to allow "one
+last access" to the <em>user_data</em> provided to this function. In the
+case of error, the <em>user_data</em> provided here is passed directly to
+the error callback of the subparser and <a href="markup.html#g_markup_parse_context_pop">GLib.MarkupParseContext.pop</a>
+should not be called. In either case, if <em>user_data</em> was allocated
+then it ought to be freed from both of these locations.</p>
+<p>This function is not intended to be directly called by users
+interested in invoking subparsers. Instead, it is intended to be
+used by the subparsers themselves to implement a higher-level
+interface.</p>
+<p>As an example, see the following implementation of a simple
+parser that counts the number of tags encountered.</p>
+<pre><code class="language-[&lt;!--"> typedef struct
+ {
+   gint tag_count;
+ } CounterData;
+
+ static void
+ counter_start_element (GMarkupParseContext  *context,
+                        const gchar          *element_name,
+                        const gchar         **attribute_names,
+                        const gchar         **attribute_values,
+                        gpointer              user_data,
+                        GError              **error)
+ {
+   CounterData *data = user_data;
+
+   data-&gt;tag_count++;
+ }
+
+ static void
+ counter_error (GMarkupParseContext *context,
+                GError              *error,
+                gpointer             user_data)
+ {
+   CounterData *data = user_data;
+
+   g_slice_free (CounterData, data);
+ }
+
+ static GMarkupParser counter_subparser =
+ {
+   counter_start_element,
+   NULL,
+   NULL,
+   NULL,
+   counter_error
+ };
+</code></pre>
+<p>In order to allow this parser to be easily used as a subparser, the
+following interface is provided:</p>
+<pre><code class="language-[&lt;!--"> void
+ start_counting (GMarkupParseContext *context)
+ {
+   CounterData *data = g_slice_new (CounterData);
+
+   data-&gt;tag_count = 0;
+   g_markup_parse_context_push (context, &amp;counter_subparser, data);
+ }
+
+ gint
+ end_counting (GMarkupParseContext *context)
+ {
+   CounterData *data = g_markup_parse_context_pop (context);
+   int result;
+
+   result = data-&gt;tag_count;
+   g_slice_free (CounterData, data);
+
+   return result;
+ }
+</code></pre>
+<p>The subparser would then be used as follows:</p>
+<pre><code class="language-[&lt;!--"> static void start_element (context, element_name, ...)
+ {
+   if (strcmp (element_name, "count-these") == 0)
+     start_counting (context);
+
+   // else, handle other tags...
+ }
+
+ static void end_element (context, element_name, ...)
+ {
+   if (strcmp (element_name, "count-these") == 0)
+     g_print ("Counted %d tags\n", end_counting (context));
+
+   // else, handle other tags...
+ }
+</code></pre>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a></p>
+</td>
+<td>
+<a title="GLib.MarkupParseContext" href="markup.html#GMarkupParseContext">GLib.MarkupParseContext</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>parser:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="markup.html#GMarkupParser">GLib.MarkupParser</a></p>
+</td>
+<td>
+<a title="GLib.MarkupParser" href="markup.html#GMarkupParser">GLib.MarkupParser</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data to pass to <a href="markup.html#GMarkupParser">GLib.MarkupParser</a> functions</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.18
+		</p>
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_markup_error_quark">
+		
+<h3 id="glibmarkup_error_quark">
+	<span><code>GLib.markup_error_quark</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.markup_error_quark ():
+    #python wrapper for 'g_markup_error_quark'</pre>
+
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		<a title="GLib.Quark" href="quarks.html#GQuark">GLib.Quark</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_markup_escape_text">
+		
+<h3 id="glibmarkup_escape_text">
+	<span><code>GLib.markup_escape_text</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.markup_escape_text (text, length):
+    #python wrapper for 'g_markup_escape_text'</pre>
+
+<p>Escapes text so that the markup parser will parse it verbatim.
+Less than, greater than, ampersand, etc. are replaced with the
+corresponding entities. This function would typically be used
+when writing out a file to be parsed with the markup parser.</p>
+<p>Note that this function doesn't protect whitespace and line endings
+from being processed according to the XML rules for normalization
+of line endings and attribute values.</p>
+<p>Note also that this function will produce character references in
+the range of  ...  for all control sequences
+except for tabstop, newline and carriage return.  The character
+references in this range are not valid XML 1.0, but they are
+valid XML 1.1 and will be accepted by the GMarkup parser.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>text:</code></em></i>
+		</p>
+	</td>
+		<td><p>some valid UTF-8 text</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>text</em> in bytes, or -1 if the text is nul-terminated</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string with the escaped text</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GMarkupParser">
+		<h3 id="glibmarkupparser">
+	GLib.MarkupParser
+</h3>
+
+		<p>Any of the fields in <a href="markup.html#GMarkupParser">GLib.MarkupParser</a> can be <a href="https://docs.python.org/2/library/constants.html#None">None</a>, in which case they
+will be ignored. Except for the <em>error</em> function, any of these callbacks
+can set an error; in particular the <a href="markup.html#G_MARKUP_ERROR_UNKNOWN_ELEMENT">GLib.MarkupError.unknown_element</a>,
+<a href="markup.html#G_MARKUP_ERROR_UNKNOWN_ATTRIBUTE">GLib.MarkupError.unknown_attribute</a>, and <a href="markup.html#G_MARKUP_ERROR_INVALID_CONTENT">GLib.MarkupError.invalid_content</a>
+errors are intended to be set from these callbacks. If you set an error
+from a callback, <a href="markup.html#g_markup_parse_context_parse">GLib.MarkupParseContext.parse</a> will report that error
+back to its caller.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="attributes">Attributes</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GMarkupParser.start_element()">
+		<td>
+		<p>
+		<i><em><code>void <em><code>start_element()</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GMarkupParser.end_element()">
+		<td>
+		<p>
+		<i><em><code>void <em><code>end_element()</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GMarkupParser.text()">
+		<td>
+		<p>
+		<i><em><code>void <em><code>text()</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GMarkupParser.passthrough()">
+		<td>
+		<p>
+		<i><em><code>void <em><code>passthrough()</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GMarkupParser.error()">
+		<td>
+		<p>
+		<i><em><code>void <em><code>error()</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GMarkupParseContext">
+		<h3 id="glibmarkupparsecontext">
+	GLib.MarkupParseContext
+</h3>
+
+		<p>A parse context is used to parse a stream of bytes that
+you expect to contain marked-up text.</p>
+<p>See <a href="markup.html#g_markup_parse_context_new">GLib.MarkupParseContext.new</a>, <a href="markup.html#GMarkupParser">GLib.MarkupParser</a>, and so
+on for more details.</p>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GMarkupCollectType">
+		
+<h3 id="enum-glibmarkupcollecttype">
+		enum GLib.MarkupCollectType
+	</h3>
+
+		<p>A mixed enumerated type and flags field. You must specify one type
+(string, strdup, boolean, tristate).  Additionally, you may  optionally
+bitwise OR the type with the flag <a href="markup.html#G_MARKUP_COLLECT_OPTIONAL">GLib.MarkupCollectType.optional</a>.</p>
+<p>It is likely that this enum will be extended in the future to
+support other types.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_MARKUP_COLLECT_INVALID"></a>
+		GLib.MarkupCollectType.invalid
+		</p>
+	</td>
+	<td><p>used to terminate the list of attributes
+to collect</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_MARKUP_COLLECT_STRING"></a>
+		GLib.MarkupCollectType.string
+		</p>
+	</td>
+	<td><p>collect the string pointer directly from
+the attribute_values[] array. Expects a parameter of type (const
+char **). If <a href="markup.html#G_MARKUP_COLLECT_OPTIONAL">GLib.MarkupCollectType.optional</a> is specified and the
+attribute isn't present then the pointer will be set to <a href="https://docs.python.org/2/library/constants.html#None">None</a></p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_MARKUP_COLLECT_STRDUP"></a>
+		GLib.MarkupCollectType.strdup
+		</p>
+	</td>
+	<td><p>as with <a href="markup.html#G_MARKUP_COLLECT_STRING">GLib.MarkupCollectType.string</a>, but
+expects a parameter of type (char **) and <a href="string_utils.html#g_strdup">GLib.strdup</a>s the
+returned pointer. The pointer must be freed with <a href="memory.html#g_free">GLib.free</a></p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_MARKUP_COLLECT_BOOLEAN"></a>
+		GLib.MarkupCollectType.boolean
+		</p>
+	</td>
+	<td><p>expects a parameter of type (gboolean *)
+and parses the attribute value as a boolean. Sets <a href="https://docs.python.org/2/library/constants.html#False">False</a> if the
+attribute isn't present. Valid boolean values consist of
+(case-insensitive) "false", "f", "no", "n", "0" and "true", "t",
+"yes", "y", "1"</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_MARKUP_COLLECT_TRISTATE"></a>
+		GLib.MarkupCollectType.tristate
+		</p>
+	</td>
+	<td><p>as with <a href="markup.html#G_MARKUP_COLLECT_BOOLEAN">GLib.MarkupCollectType.boolean</a>, but
+in the case of a missing attribute a value is set that compares
+equal to neither <a href="https://docs.python.org/2/library/constants.html#False">False</a> nor <a href="https://docs.python.org/2/library/constants.html#True">True</a> G_MARKUP_COLLECT_OPTIONAL is
+implied</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_MARKUP_COLLECT_OPTIONAL"></a>
+		GLib.MarkupCollectType.optional
+		</p>
+	</td>
+	<td><p>can be bitwise ORed with the other fields.
+If present, allows the attribute not to appear. A default value
+is set depending on what value type is used</p>
+</td>
+	<td>
+		<span class="value">Value: 65536</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GMarkupError">
+		
+<h3 id="enum-glibmarkuperror">
+		enum GLib.MarkupError
+	</h3>
+
+		<p>Error codes returned by markup parsing.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members1">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_MARKUP_ERROR_BAD_UTF8"></a>
+		GLib.MarkupError.bad_utf8
+		</p>
+	</td>
+	<td><p>text being parsed was not valid UTF-8</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_MARKUP_ERROR_EMPTY"></a>
+		GLib.MarkupError.empty
+		</p>
+	</td>
+	<td><p>document contained nothing, or only whitespace</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_MARKUP_ERROR_PARSE"></a>
+		GLib.MarkupError.parse
+		</p>
+	</td>
+	<td><p>document was ill-formed</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_MARKUP_ERROR_UNKNOWN_ELEMENT"></a>
+		GLib.MarkupError.unknown_element
+		</p>
+	</td>
+	<td><p>error should be set by <a href="markup.html#GMarkupParser">GLib.MarkupParser</a>
+functions; element wasn't known</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_MARKUP_ERROR_UNKNOWN_ATTRIBUTE"></a>
+		GLib.MarkupError.unknown_attribute
+		</p>
+	</td>
+	<td><p>error should be set by <a href="markup.html#GMarkupParser">GLib.MarkupParser</a>
+functions; attribute wasn't known</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_MARKUP_ERROR_INVALID_CONTENT"></a>
+		GLib.MarkupError.invalid_content
+		</p>
+	</td>
+	<td><p>error should be set by <a href="markup.html#GMarkupParser">GLib.MarkupParser</a>
+functions; content was invalid</p>
+</td>
+	<td>
+		<span class="value">Value: 5</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_MARKUP_ERROR_MISSING_ATTRIBUTE"></a>
+		GLib.MarkupError.missing_attribute
+		</p>
+	</td>
+	<td><p>error should be set by <a href="markup.html#GMarkupParser">GLib.MarkupParser</a>
+functions; a required attribute was missing</p>
+</td>
+	<td>
+		<span class="value">Value: 6</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GMarkupParseFlags">
+		
+<h3 id="enum-glibmarkupparseflags">
+		enum GLib.MarkupParseFlags
+	</h3>
+
+		<p>Flags that affect the behaviour of the parser.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members2">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_MARKUP_DO_NOT_USE_THIS_UNSUPPORTED_FLAG"></a>
+		GLib.MarkupParseFlags.do_not_use_this_unsupported_flag
+		</p>
+	</td>
+	<td><p>flag you should not use</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_MARKUP_TREAT_CDATA_AS_TEXT"></a>
+		GLib.MarkupParseFlags.treat_cdata_as_text
+		</p>
+	</td>
+	<td><p>When this flag is set, CDATA marked
+sections are not passed literally to the <em>passthrough</em> function of
+the parser. Instead, the content of the section (without the
+<code>&lt;![CDATA[</code> and <code>]]&gt;</code>) is
+passed to the <em>text</em> function. This flag was added in GLib 2.12</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_MARKUP_PREFIX_ERROR_POSITION"></a>
+		GLib.MarkupParseFlags.prefix_error_position
+		</p>
+	</td>
+	<td><p>Normally errors caught by GMarkup
+itself have line/column information prefixed to them to let the
+caller know the location of the error. When this flag is set the
+location information is also prefixed to errors generated by the
+<a href="markup.html#GMarkupParser">GLib.MarkupParser</a> implementation functions</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_MARKUP_IGNORE_QUALIFIED"></a>
+		GLib.MarkupParseFlags.ignore_qualified
+		</p>
+	</td>
+	<td><p>Ignore (don't report) qualified
+attributes and tags, along with their contents.  A qualified
+attribute or tag is one that contains ':' in its name (ie: is in
+another namespace).  Since: 2.40.</p>
+</td>
+	<td>
+		<span class="value">Value: 8</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

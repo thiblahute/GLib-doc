@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gregex.html#G_REGEX_UNGREEDY", "fragment": "Inverts the greediness of the quantifiers so that they are not greedy by default but become greedy if followed by It can also be set by a U option setting within the pattern. \nGLib.RegexCompileFlags.raw \n"});

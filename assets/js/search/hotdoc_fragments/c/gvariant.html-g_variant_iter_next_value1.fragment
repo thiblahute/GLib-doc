@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_iter_next_value1", "fragment": "g_variant_iter_next_value \nGets the next item in the container. If no more items remain then NULL is returned. \nUse g_variant_unref to drop your reference on the return value when you no longer need it. \nHere is an example for iterating with g_variant_iter_next_value \n"});

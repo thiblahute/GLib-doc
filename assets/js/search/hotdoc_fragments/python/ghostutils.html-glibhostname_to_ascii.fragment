@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/ghostutils.html#glibhostname_to_ascii", "fragment": "GLib.hostname_to_ascii \nConverts hostname to its canonical ASCII form an ASCII only string containing no uppercase letters and not ending with a trailing dot. \n"});

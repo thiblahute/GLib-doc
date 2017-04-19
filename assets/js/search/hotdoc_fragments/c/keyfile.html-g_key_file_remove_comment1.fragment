@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/keyfile.html#g_key_file_remove_comment1", "fragment": "g_key_file_remove_comment \nRemoves a comment above key from group_name. If key is NULL then comment will be removed above group_name. If both key and group_name are NULL then comment will be removed above the first group in the file. \n"});

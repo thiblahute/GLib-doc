@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>version</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="version.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="python">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="version.markdown">
+    </div>
+        
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="glib_check_version">
+		
+<h3 id="glibcheck_version">
+	<span><code>GLib.check_version</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.check_version (required_major, required_minor, required_micro):
+    #python wrapper for 'glib_check_version'</pre>
+
+<p>Checks that the GLib library in use is compatible with the
+given version. Generally you would pass in the constants
+<a href="version.html#GLIB_MAJOR_VERSION">GLib.MAJOR_VERSION</a>, <a href="version.html#GLIB_MINOR_VERSION">GLib.MINOR_VERSION</a>, <a href="version.html#GLIB_MICRO_VERSION">GLib.MICRO_VERSION</a>
+as the three arguments to this function; that produces
+a check that the library in use is compatible with
+the version of GLib the application or module was compiled
+against.</p>
+<p>Compatibility is defined by two things: first the version
+of the running library is newer than the version
+<em>required_major</em>.required_minor.@required_micro. Second
+the running library must be binary compatible with the
+version <em>required_major</em>.required_minor.@required_micro
+(same major version.)</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>required_major:</code></em></i>
+		</p>
+	</td>
+		<td><p>the required major version</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>required_minor:</code></em></i>
+		</p>
+	</td>
+		<td><p>the required minor version</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>required_micro:</code></em></i>
+		</p>
+	</td>
+		<td><p>the required micro version</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#None">None</a> if the GLib library is compatible with the
+given version, or a string describing the version mismatch.
+The returned string is owned by GLib and must not be modified
+or freed.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GLIB_MINOR_VERSION">
+		
+<h3 class="constant" id="glibminor_version">
+	GLib.MINOR_VERSION
+</h3>
+
+		<p>The minor version number of the GLib library.</p>
+<p>Like gtk_minor_version, but from the headers used at
+application compile time, rather than from the library
+linked against at application run time.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GLIB_MAJOR_VERSION">
+		
+<h3 class="constant" id="glibmajor_version">
+	GLib.MAJOR_VERSION
+</h3>
+
+		<p>The major version number of the GLib library.</p>
+<p>Like glib_major_version, but from the headers used at
+application compile time, rather than from the library
+linked against at application run time.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="GLIB_VERSION_MIN_REQUIRED">
+		
+<h3 class="constant" id="glibversion_min_required">
+	GLib.VERSION_MIN_REQUIRED
+</h3>
+
+		<p>A macro that should be defined by the user prior to including
+the glib.h header.
+The definition should be one of the predefined GLib version
+macros: <a href="../c/version.html#GLIB_VERSION_2_26">GLIB_VERSION_2_26 (not introspectable)</a>, <a href="../c/version.html#GLIB_VERSION_2_28">GLIB_VERSION_2_28 (not introspectable)</a>,...</p>
+<p>This macro defines the earliest version of GLib that the package is
+required to be able to compile against.</p>
+<p>If the compiler is configured to warn about the use of deprecated
+functions, then using functions that were deprecated in version
+<a href="version.html#GLIB_VERSION_MIN_REQUIRED">GLib.VERSION_MIN_REQUIRED</a> or earlier will cause warnings (but
+using functions deprecated in later releases will not).</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GLIB_MICRO_VERSION">
+		
+<h3 class="constant" id="glibmicro_version">
+	GLib.MICRO_VERSION
+</h3>
+
+		<p>The micro version number of the GLib library.</p>
+<p>Like gtk_micro_version, but from the headers used at
+application compile time, rather than from the library
+linked against at application run time.</p>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

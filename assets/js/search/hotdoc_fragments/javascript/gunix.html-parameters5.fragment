@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gunix.html#parameters5", "fragment": "priority \nthe priority of the signal source. Typically this will be in the range between GLib.PRIORITY_DEFAULT and GLib.PRIORITY_HIGH. \nsignum \nSignal number \nhandler \nCallback \nuser_data \nData for handler \nnotify \nGLib.DestroyNotify for handler \n"});

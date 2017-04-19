@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date-time.html#glibdatetimeprototyperef", "fragment": "GLib.DateTime.prototype.ref \nAtomically increments the reference count of datetime by one. \n"});

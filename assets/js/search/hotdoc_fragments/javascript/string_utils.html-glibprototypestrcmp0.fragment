@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/string_utils.html#glibprototypestrcmp0", "fragment": "GLib.prototype.strcmp0 \nCompares str1 and str2 like strcmp. Handles null gracefully by sorting it before non NULL strings. Comparing two null pointers returns \n"});

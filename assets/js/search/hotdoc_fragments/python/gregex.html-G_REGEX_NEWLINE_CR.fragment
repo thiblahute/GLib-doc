@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gregex.html#G_REGEX_NEWLINE_CR", "fragment": "Usually any newline character or character sequence is recognized. If this option is set the only recognized newline character is r \nGLib.RegexCompileFlags.newline_lf \n"});

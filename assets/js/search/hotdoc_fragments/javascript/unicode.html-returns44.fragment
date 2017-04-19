@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/unicode.html#returns44", "fragment": "\nnull if the string does not contain the character otherwise a pointer to the start of the leftmost occurrence of the character in the string. \n"});

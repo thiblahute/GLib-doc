@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/testing.html#glibtest_add_data_func_full", "fragment": "GLib.test_add_data_func_full \nCreate a new test case as with GLib.test_add_data_func but freeing test_data after the test run is complete. \n"});

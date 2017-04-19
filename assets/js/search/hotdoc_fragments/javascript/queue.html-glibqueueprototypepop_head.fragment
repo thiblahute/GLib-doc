@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/queue.html#glibqueueprototypepop_head", "fragment": "GLib.Queue.prototype.pop_head \nRemoves the first element of the queue and returns its data. \n"});

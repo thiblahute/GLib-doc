@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/scanner.html#glibscannerconfig", "fragment": "GLib.ScannerConfig \nSpecifies the GLib.Scanner parser configuration. Most settings can be changed during the parsing phase and will affect the lexical parsing of the next unpeeked token. \n"});

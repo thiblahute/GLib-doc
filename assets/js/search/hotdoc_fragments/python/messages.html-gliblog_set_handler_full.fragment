@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/messages.html#gliblog_set_handler_full", "fragment": "GLib.log_set_handler_full \nLike g_log_sets_handler but takes a destroy notify for the user_data. \nThis has no effect if structured logging is enabled see Using Structured Logging using structured logging \n"});

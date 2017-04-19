@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/option.html#g_option_context_get_help_enabled", "fragment": "g_option_context_get_help_enabled \nReturns whether automatic help generation is turned on for context. See g_option_context_set_help_enabled. \n"});

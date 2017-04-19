@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/misc_utils.html#enum-gformatsizeflags", "fragment": "enum GFormatSizeFlags \nFlags to modify the format of the string returned by g_format_size_full. \n"});

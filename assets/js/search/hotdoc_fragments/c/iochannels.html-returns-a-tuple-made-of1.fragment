@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#returns-a-tuple-made-of1", "fragment": "\nG_IO_STATUS_NORMAL on success. This function never returns G_IO_STATUS_EOF. \nstr_return \nG_IO_STATUS_NORMAL on success. This function never returns G_IO_STATUS_EOF. \nlength \nG_IO_STATUS_NORMAL on success. This function never returns G_IO_STATUS_EOF. \n"});

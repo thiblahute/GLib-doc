@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#glibpollfunc", "fragment": "GLib.PollFunc \nSpecifies the type of function passed to g_main_context_set_poll_func not introspectable The semantics of the function should match those of the poll system call. \n"});

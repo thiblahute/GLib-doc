@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gregex.html#GRegexMatchFlags", "fragment": "Like G_REGEX_MATCH_NOTEMPTY but only applied to the start of the matched string. For anchored patterns this can only happen for pattern containing K Since \n"});

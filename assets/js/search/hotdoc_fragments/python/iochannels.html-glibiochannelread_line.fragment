@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#glibiochannelread_line", "fragment": "GLib.IOChannel.read_line \nReads a line including the terminating character s from a GLib.IOChannel into a newly allocated string. str_return will contain allocated memory if the return is GLib.IOStatus.normal. \n"});

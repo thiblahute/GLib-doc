@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/random_numbers.html#glibrandprototypedouble_range", "fragment": "GLib.Rand.prototype.double_range \nReturns the next random gdouble from rand_ equally distributed over the range begin.. end \n"});

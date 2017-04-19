@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/fileutils.html#returns23", "fragment": "\nA pointer to tmpl which has been modified to hold the directory name. In case of errors NULL is returned and errno will be set. \nSince \n"});

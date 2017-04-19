@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/fileutils.html#returns1", "fragment": "\na newly allocated GMappedFile which must be unref d with g_mapped_file_unref or NULL if the mapping failed. \nSince \n"});

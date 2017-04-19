@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#parameters50", "fragment": "context \na GLib.MainContext if None the default context will be used \nis_running \nset to True to indicate that the loop is running. This is not very important since calling GLib.MainLoop.run will set this to True anyway. \n"});

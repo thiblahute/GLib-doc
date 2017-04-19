@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/testing.html#returns2", "fragment": "\nTrue for the forked child and False for the executing parent process. \nSince \ndeprecated This function is implemented only on Unix platforms and is not always reliable due to problems inherent in fork without exec. Use g_test_trap_subprocess instead. \n"});

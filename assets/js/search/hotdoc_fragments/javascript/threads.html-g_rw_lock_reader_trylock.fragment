@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/threads.html#g_rw_lock_reader_trylock", "fragment": "GLib.RWLock.prototype.reader_trylock \nTries to obtain a read lock on rw_lock and returns true if the read lock was successfully obtained. Otherwise it returns false. \n"});

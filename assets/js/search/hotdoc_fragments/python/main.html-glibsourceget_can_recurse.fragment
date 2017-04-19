@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibsourceget_can_recurse", "fragment": "GLib.Source.get_can_recurse \nChecks whether a source is allowed to be called recursively. see GLib.Source.set_can_recurse. \n"});

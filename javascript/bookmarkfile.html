@@ -1,0 +1,3779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GBookmarkFile</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="bookmarkfile.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="javascript">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="bookmarkfile.markdown">
+        <h1 id="gbookmarkfile">GBookmarkFile</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GBookmarkFile</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GBookmarkFileMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_get_size">
+		
+<h4 id="glibbookmarkfileprototypeget_size">
+	<span><code>GLib.BookmarkFile.prototype.get_size</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.get_size(): {
+    // javascript wrapper for 'g_bookmark_file_get_size'
+}</pre>
+
+<p>Gets the number of bookmarks inside <em>bookmark</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of bookmarks</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_get_modified">
+		
+<h4 id="glibbookmarkfileprototypeget_modified">
+	<span><code>GLib.BookmarkFile.prototype.get_modified</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.get_modified(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_get_modified'
+}</pre>
+
+<p>Gets the time when the bookmark for <em>uri</em> was last modified.</p>
+<p>In the event the URI cannot be found, -1 is returned and
+<em>error</em> is set to <a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND">GLib.BookmarkFileError.prototype.uri_not_found</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a timestamp</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_load_from_file">
+		
+<h4 id="glibbookmarkfileprototypeload_from_file">
+	<span><code>GLib.BookmarkFile.prototype.load_from_file</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.load_from_file(filename: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_bookmark_file_load_from_file'
+}</pre>
+
+<p>Loads a desktop bookmark file into an empty <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a> structure.
+If the file could not be loaded then <em>error</em> is set to either a <a href="fileutils.html#GFileError">GLib.FileError</a>
+or <a href="bookmarkfile.html#GBookmarkFileError">GLib.BookmarkFileError</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>an empty <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a> struct</p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>the path of a filename to load, in the
+GLib file name encoding</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if a desktop bookmark file could be loaded</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_free">
+		
+<h4 id="glibbookmarkfileprototypefree">
+	<span><code>GLib.BookmarkFile.prototype.free</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.free(): {
+    // javascript wrapper for 'g_bookmark_file_free'
+}</pre>
+
+<p>Frees a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_get_mime_type">
+		
+<h4 id="glibbookmarkfileprototypeget_mime_type">
+	<span><code>GLib.BookmarkFile.prototype.get_mime_type</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.get_mime_type(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_get_mime_type'
+}</pre>
+
+<p>Retrieves the MIME type of the resource pointed by <em>uri</em>.</p>
+<p>In the event the URI cannot be found, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> is returned and
+<em>error</em> is set to <a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND">GLib.BookmarkFileError.prototype.uri_not_found</a>.  In the
+event that the MIME type cannot be found, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> is returned and
+<em>error</em> is set to <a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_INVALID_VALUE">GLib.BookmarkFileError.prototype.invalid_value</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> if the specified
+URI cannot be found.</p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_has_group">
+		
+<h4 id="glibbookmarkfileprototypehas_group">
+	<span><code>GLib.BookmarkFile.prototype.has_group</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.has_group(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, group: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_has_group'
+}</pre>
+
+<p>Checks whether <em>group</em> appears in the list of groups to which
+the bookmark for <em>uri</em> belongs to.</p>
+<p>In the event the URI cannot be found, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> is returned and
+<em>error</em> is set to <a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND">GLib.BookmarkFileError.prototype.uri_not_found</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group:</code></em></i>
+		</p>
+	</td>
+		<td><p>the group name to be searched</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if <em>group</em> was found.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_get_title">
+		
+<h4 id="glibbookmarkfileprototypeget_title">
+	<span><code>GLib.BookmarkFile.prototype.get_title</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.get_title(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_get_title'
+}</pre>
+
+<p>Returns the title of the bookmark for <em>uri</em>.</p>
+<p>If <em>uri</em> is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>, the title of <em>bookmark</em> is returned.</p>
+<p>In the event the URI cannot be found, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> is returned and
+<em>error</em> is set to <a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND">GLib.BookmarkFileError.prototype.uri_not_found</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> if the specified
+URI cannot be found.</p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_set_is_private">
+		
+<h4 id="glibbookmarkfileprototypeset_is_private">
+	<span><code>GLib.BookmarkFile.prototype.set_is_private</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.set_is_private(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, is_private: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_bookmark_file_set_is_private'
+}</pre>
+
+<p>Sets the private flag of the bookmark for <em>uri</em>.</p>
+<p>If a bookmark for <em>uri</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>is_private:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the bookmark should be marked as private</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_set_groups">
+		
+<h4 id="glibbookmarkfileprototypeset_groups">
+	<span><code>GLib.BookmarkFile.prototype.set_groups</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.set_groups(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, groups: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, length: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_bookmark_file_set_groups'
+}</pre>
+
+<p>Sets a list of group names for the item with URI <em>uri</em>.  Each previously
+set group name list is removed.</p>
+<p>If <em>uri</em> cannot be found then an item for it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>an item's URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>groups:</code></em></i>
+		</p>
+	</td>
+		<td><p>an array of group names, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> to remove all groups</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of group name values in <em>groups</em></p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_set_app_info">
+		
+<h4 id="glibbookmarkfileprototypeset_app_info">
+	<span><code>GLib.BookmarkFile.prototype.set_app_info</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.set_app_info(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, name: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, exec: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, count: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, stamp: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_bookmark_file_set_app_info'
+}</pre>
+
+<p>Sets the meta-data of application <em>name</em> inside the list of
+applications that have registered a bookmark for <em>uri</em> inside
+<em>bookmark</em>.</p>
+<p>You should rarely use this function; use <a href="bookmarkfile.html#g_bookmark_file_add_application">GLib.BookmarkFile.prototype.add_application</a>
+and <a href="bookmarkfile.html#g_bookmark_file_remove_application">GLib.BookmarkFile.prototype.remove_application</a> instead.</p>
+<p><em>name</em> can be any UTF-8 encoded string used to identify an
+application.
+<em>exec</em> can have one of these two modifiers: "%f", which will
+be expanded as the local file name retrieved from the bookmark's
+URI; "%u", which will be expanded as the bookmark's URI.
+The expansion is done automatically when retrieving the stored
+command line using the <a href="bookmarkfile.html#g_bookmark_file_get_app_info">GLib.BookmarkFile.prototype.get_app_info</a> function.
+<em>count</em> is the number of times the application has registered the
+bookmark; if is &lt; 0, the current registration count will be increased
+by one, if is 0, the application with <em>name</em> will be removed from
+the list of registered applications.
+<em>stamp</em> is the Unix time of the last registration; if it is -1, the
+current time will be used.</p>
+<p>If you try to remove an application by setting its registration count to
+zero, and no bookmark for <em>uri</em> is found, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> is returned and
+<em>error</em> is set to <a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND">GLib.BookmarkFileError.prototype.uri_not_found</a>; similarly,
+in the event that no application <em>name</em> has registered a bookmark
+for <em>uri</em>,  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> is returned and error is set to
+<a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_APP_NOT_REGISTERED">GLib.BookmarkFileError.prototype.app_not_registered</a>.  Otherwise, if no bookmark
+for <em>uri</em> is found, one is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>name:</code></em></i>
+		</p>
+	</td>
+		<td><p>an application's name</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>exec:</code></em></i>
+		</p>
+	</td>
+		<td><p>an application's command line</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>count:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of registrations done for this application</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>stamp:</code></em></i>
+		</p>
+	</td>
+		<td><p>the time of the last registration for this application</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the application's meta-data was successfully
+changed.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_get_app_info">
+		
+<h4 id="glibbookmarkfileprototypeget_app_info">
+	<span><code>GLib.BookmarkFile.prototype.get_app_info</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.get_app_info(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, name: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_get_app_info'
+}</pre>
+
+<p>Gets the registration informations of <em>app_name</em> for the bookmark for
+<em>uri</em>.  See <a href="bookmarkfile.html#g_bookmark_file_set_app_info">GLib.BookmarkFile.prototype.set_app_info</a> for more informations about
+the returned data.</p>
+<p>The string returned in <em>app_exec</em> must be freed.</p>
+<p>In the event the URI cannot be found, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> is returned and
+<em>error</em> is set to <a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND">GLib.BookmarkFileError.prototype.uri_not_found</a>.  In the
+event that no application with name <em>app_name</em> has registered a bookmark
+for <em>uri</em>,  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> is returned and error is set to
+<a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_APP_NOT_REGISTERED">GLib.BookmarkFileError.prototype.app_not_registered</a>. In the event that unquoting
+the command line fails, an error of the <a href="../c/shell.html#G_SHELL_ERROR">G_SHELL_ERROR (not introspectable)</a> domain is
+set and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> is returned.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>name:</code></em></i>
+		</p>
+	</td>
+		<td><p>an application's name</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> on success.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>exec:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> on success.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>count:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> on success.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>stamp:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> on success.</p>
+
+	</td>
+	<td>
+		time_t (not introspectable)
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_remove_group">
+		
+<h4 id="glibbookmarkfileprototyperemove_group">
+	<span><code>GLib.BookmarkFile.prototype.remove_group</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.remove_group(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, group: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_remove_group'
+}</pre>
+
+<p>Removes <em>group</em> from the list of groups to which the bookmark
+for <em>uri</em> belongs to.</p>
+<p>In the event the URI cannot be found, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> is returned and
+<em>error</em> is set to <a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND">GLib.BookmarkFileError.prototype.uri_not_found</a>.
+In the event no group was defined, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> is returned and
+<em>error</em> is set to <a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_INVALID_VALUE">GLib.BookmarkFileError.prototype.invalid_value</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group:</code></em></i>
+		</p>
+	</td>
+		<td><p>the group name to be removed</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if <em>group</em> was successfully removed.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_set_title">
+		
+<h4 id="glibbookmarkfileprototypeset_title">
+	<span><code>GLib.BookmarkFile.prototype.set_title</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.set_title(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, title: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_set_title'
+}</pre>
+
+<p>Sets <em>title</em> as the title of the bookmark for <em>uri</em> inside the
+bookmark file <em>bookmark</em>.</p>
+<p>If <em>uri</em> is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>, the title of <em>bookmark</em> is set.</p>
+<p>If a bookmark for <em>uri</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>title:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_has_item">
+		
+<h4 id="glibbookmarkfileprototypehas_item">
+	<span><code>GLib.BookmarkFile.prototype.has_item</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.has_item(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_has_item'
+}</pre>
+
+<p>Looks whether the desktop bookmark has an item with its URI set to <em>uri</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if <em>uri</em> is inside <em>bookmark</em>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_to_file">
+		
+<h4 id="glibbookmarkfileprototypeto_file">
+	<span><code>GLib.BookmarkFile.prototype.to_file</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.to_file(filename: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_bookmark_file_to_file'
+}</pre>
+
+<p>This function outputs <em>bookmark</em> into a file.  The write process is
+guaranteed to be atomic by using <a href="fileutils.html#g_file_set_contents">GLib.prototype.file_set_contents</a> internally.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>path of the output file</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the file was successfully written.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_get_applications">
+		
+<h4 id="glibbookmarkfileprototypeget_applications">
+	<span><code>GLib.BookmarkFile.prototype.get_applications</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.get_applications(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_get_applications'
+}</pre>
+
+<p>Retrieves the names of the applications that have registered the
+bookmark for <em>uri</em>.</p>
+<p>In the event the URI cannot be found, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> is returned and
+<em>error</em> is set to <a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND">GLib.BookmarkFileError.prototype.uri_not_found</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of1">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>-terminated array of strings.
+Use <a href="string_utils.html#g_strfreev">GLib.prototype.strfreev</a> to free it.</p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>-terminated array of strings.
+Use <a href="string_utils.html#g_strfreev">GLib.prototype.strfreev</a> to free it.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_load_from_data">
+		
+<h4 id="glibbookmarkfileprototypeload_from_data">
+	<span><code>GLib.BookmarkFile.prototype.load_from_data</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.load_from_data(data: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, length: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_bookmark_file_load_from_data'
+}</pre>
+
+<p>Loads a bookmark file from memory into an empty <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+structure.  If the object cannot be created then <em>error</em> is set to a
+<a href="bookmarkfile.html#GBookmarkFileError">GLib.BookmarkFileError</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>an empty <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a> struct</p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>desktop bookmarks loaded in memory</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>data</em> in bytes</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if a desktop bookmark could be loaded.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_add_application">
+		
+<h4 id="glibbookmarkfileprototypeadd_application">
+	<span><code>GLib.BookmarkFile.prototype.add_application</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.add_application(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, name: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, exec: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_add_application'
+}</pre>
+
+<p>Adds the application with <em>name</em> and <em>exec</em> to the list of
+applications that have registered a bookmark for <em>uri</em> into
+<em>bookmark</em>.</p>
+<p>Every bookmark inside a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a> must have at least an
+application registered.  Each application must provide a name, a
+command line useful for launching the bookmark, the number of times
+the bookmark has been registered by the application and the last
+time the application registered this bookmark.</p>
+<p>If <em>name</em> is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>, the name of the application will be the
+same returned by <a href="misc_utils.html#g_get_application_name">GLib.prototype.get_application_name</a>; if <em>exec</em> is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>, the
+command line will be a composition of the program name as
+returned by <a href="misc_utils.html#g_get_prgname">GLib.prototype.get_prgname</a> and the "%u" modifier, which will be
+expanded to the bookmark's URI.</p>
+<p>This function will automatically take care of updating the
+registrations count and timestamping in case an application
+with the same <em>name</em> had already registered a bookmark for
+<em>uri</em> inside <em>bookmark</em>.</p>
+<p>If no bookmark for <em>uri</em> is found, one is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>name:</code></em></i>
+		</p>
+	</td>
+		<td><p>the name of the application registering the bookmark
+or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>exec:</code></em></i>
+		</p>
+	</td>
+		<td><p>command line to be used to launch the bookmark or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_get_added">
+		
+<h4 id="glibbookmarkfileprototypeget_added">
+	<span><code>GLib.BookmarkFile.prototype.get_added</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.get_added(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_get_added'
+}</pre>
+
+<p>Gets the time the bookmark for <em>uri</em> was added to <em>bookmark</em></p>
+<p>In the event the URI cannot be found, -1 is returned and
+<em>error</em> is set to <a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND">GLib.BookmarkFileError.prototype.uri_not_found</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a timestamp</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_get_visited">
+		
+<h4 id="glibbookmarkfileprototypeget_visited">
+	<span><code>GLib.BookmarkFile.prototype.get_visited</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.get_visited(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_get_visited'
+}</pre>
+
+<p>Gets the time the bookmark for <em>uri</em> was last visited.</p>
+<p>In the event the URI cannot be found, -1 is returned and
+<em>error</em> is set to <a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND">GLib.BookmarkFileError.prototype.uri_not_found</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a timestamp.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_set_description">
+		
+<h4 id="glibbookmarkfileprototypeset_description">
+	<span><code>GLib.BookmarkFile.prototype.set_description</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.set_description(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, description: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_set_description'
+}</pre>
+
+<p>Sets <em>description</em> as the description of the bookmark for <em>uri</em>.</p>
+<p>If <em>uri</em> is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>, the description of <em>bookmark</em> is set.</p>
+<p>If a bookmark for <em>uri</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>description:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_remove_item">
+		
+<h4 id="glibbookmarkfileprototyperemove_item">
+	<span><code>GLib.BookmarkFile.prototype.remove_item</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.remove_item(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_remove_item'
+}</pre>
+
+<p>Removes the bookmark for <em>uri</em> from the bookmark file <em>bookmark</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the bookmark was removed successfully.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_move_item">
+		
+<h4 id="glibbookmarkfileprototypemove_item">
+	<span><code>GLib.BookmarkFile.prototype.move_item</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.move_item(old_uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, new_uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_move_item'
+}</pre>
+
+<p>Changes the URI of a bookmark item from <em>old_uri</em> to <em>new_uri</em>.  Any
+existing bookmark for <em>new_uri</em> will be overwritten.  If <em>new_uri</em> is
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>, then the bookmark is removed.</p>
+<p>In the event the URI cannot be found, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> is returned and
+<em>error</em> is set to <a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND">GLib.BookmarkFileError.prototype.uri_not_found</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>old_uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>new_uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the URI was successfully changed</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_set_mime_type">
+		
+<h4 id="glibbookmarkfileprototypeset_mime_type">
+	<span><code>GLib.BookmarkFile.prototype.set_mime_type</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.set_mime_type(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, mime_type: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_set_mime_type'
+}</pre>
+
+<p>Sets <em>mime_type</em> as the MIME type of the bookmark for <em>uri</em>.</p>
+<p>If a bookmark for <em>uri</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mime_type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a MIME type</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_get_icon">
+		
+<h4 id="glibbookmarkfileprototypeget_icon">
+	<span><code>GLib.BookmarkFile.prototype.get_icon</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.get_icon(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_get_icon'
+}</pre>
+
+<p>Gets the icon of the bookmark for <em>uri</em>.</p>
+<p>In the event the URI cannot be found, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> is returned and
+<em>error</em> is set to <a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND">GLib.BookmarkFileError.prototype.uri_not_found</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of2">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the icon for the bookmark for the URI was found.
+You should free the returned strings.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>href:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the icon for the bookmark for the URI was found.
+You should free the returned strings.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>mime_type:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the icon for the bookmark for the URI was found.
+You should free the returned strings.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_set_visited">
+		
+<h4 id="glibbookmarkfileprototypeset_visited">
+	<span><code>GLib.BookmarkFile.prototype.set_visited</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.set_visited(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, visited: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_bookmark_file_set_visited'
+}</pre>
+
+<p>Sets the time the bookmark for <em>uri</em> was last visited.</p>
+<p>If no bookmark for <em>uri</em> is found then it is created.</p>
+<p>The "visited" time should only be set if the bookmark was launched,
+either using the command line retrieved by <a href="bookmarkfile.html#g_bookmark_file_get_app_info">GLib.BookmarkFile.prototype.get_app_info</a>
+or by the default application for the bookmark's MIME type, retrieved
+using <a href="bookmarkfile.html#g_bookmark_file_get_mime_type">GLib.BookmarkFile.prototype.get_mime_type</a>.  Changing the "visited" time
+does not affect the "modified" time.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>visited:</code></em></i>
+		</p>
+	</td>
+		<td><p>a timestamp or -1 to use the current time</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_set_icon">
+		
+<h4 id="glibbookmarkfileprototypeset_icon">
+	<span><code>GLib.BookmarkFile.prototype.set_icon</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.set_icon(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, href: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, mime_type: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_set_icon'
+}</pre>
+
+<p>Sets the icon for the bookmark for <em>uri</em>. If <em>href</em> is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>, unsets
+the currently set icon. <em>href</em> can either be a full URL for the icon
+file or the icon name following the Icon Naming specification.</p>
+<p>If no bookmark for <em>uri</em> is found one is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>href:</code></em></i>
+		</p>
+	</td>
+		<td><p>the URI of the icon for the bookmark, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mime_type:</code></em></i>
+		</p>
+	</td>
+		<td><p>the MIME type of the icon for the bookmark</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_get_groups">
+		
+<h4 id="glibbookmarkfileprototypeget_groups">
+	<span><code>GLib.BookmarkFile.prototype.get_groups</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.get_groups(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_get_groups'
+}</pre>
+
+<p>Retrieves the list of group names of the bookmark for <em>uri</em>.</p>
+<p>In the event the URI cannot be found, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> is returned and
+<em>error</em> is set to <a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND">GLib.BookmarkFileError.prototype.uri_not_found</a>.</p>
+<p>The returned array is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> terminated, so <em>length</em> may optionally
+be <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of3">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>-terminated array of group names.
+Use <a href="string_utils.html#g_strfreev">GLib.prototype.strfreev</a> to free it.</p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>-terminated array of group names.
+Use <a href="string_utils.html#g_strfreev">GLib.prototype.strfreev</a> to free it.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_get_is_private">
+		
+<h4 id="glibbookmarkfileprototypeget_is_private">
+	<span><code>GLib.BookmarkFile.prototype.get_is_private</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.get_is_private(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_get_is_private'
+}</pre>
+
+<p>Gets whether the private flag of the bookmark for <em>uri</em> is set.</p>
+<p>In the event the URI cannot be found, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> is returned and
+<em>error</em> is set to <a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND">GLib.BookmarkFileError.prototype.uri_not_found</a>.  In the
+event that the private flag cannot be found, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> is returned and
+<em>error</em> is set to <a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_INVALID_VALUE">GLib.BookmarkFileError.prototype.invalid_value</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters28">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the private flag is set, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_load_from_data_dirs">
+		
+<h4 id="glibbookmarkfileprototypeload_from_data_dirs">
+	<span><code>GLib.BookmarkFile.prototype.load_from_data_dirs</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.load_from_data_dirs(file: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, full_path: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_bookmark_file_load_from_data_dirs'
+}</pre>
+
+<p>This function looks for a desktop bookmark file named <em>file</em> in the
+paths returned from <a href="misc_utils.html#g_get_user_data_dir">GLib.prototype.get_user_data_dir</a> and <a href="misc_utils.html#g_get_system_data_dirs">GLib.prototype.get_system_data_dirs</a>,
+loads the file into <em>bookmark</em> and returns the file's full path in
+<em>full_path</em>.  If the file could not be loaded then an error is
+set to either a <a href="fileutils.html#GFileError">GLib.FileError</a> or <a href="bookmarkfile.html#GBookmarkFileError">GLib.BookmarkFileError</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters29">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a relative path to a filename to open and parse</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>full_path:</code></em></i>
+		</p>
+	</td>
+		<td><p>return location for a string
+containing the full path of the file, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if a key file could be loaded, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_set_modified">
+		
+<h4 id="glibbookmarkfileprototypeset_modified">
+	<span><code>GLib.BookmarkFile.prototype.set_modified</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.set_modified(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, modified: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_bookmark_file_set_modified'
+}</pre>
+
+<p>Sets the last time the bookmark for <em>uri</em> was last modified.</p>
+<p>If no bookmark for <em>uri</em> is found then it is created.</p>
+<p>The "modified" time should only be set when the bookmark's meta-data
+was actually changed.  Every function of <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a> that
+modifies a bookmark also changes the modification time, except for
+<a href="bookmarkfile.html#g_bookmark_file_set_visited">GLib.BookmarkFile.prototype.set_visited</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters30">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>modified:</code></em></i>
+		</p>
+	</td>
+		<td><p>a timestamp or -1 to use the current time</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_add_group">
+		
+<h4 id="glibbookmarkfileprototypeadd_group">
+	<span><code>GLib.BookmarkFile.prototype.add_group</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.add_group(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, group: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_add_group'
+}</pre>
+
+<p>Adds <em>group</em> to the list of groups to which the bookmark for <em>uri</em>
+belongs to.</p>
+<p>If no bookmark for <em>uri</em> is found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters31">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group:</code></em></i>
+		</p>
+	</td>
+		<td><p>the group name to be added</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_to_data">
+		
+<h4 id="glibbookmarkfileprototypeto_data">
+	<span><code>GLib.BookmarkFile.prototype.to_data</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.to_data(): {
+    // javascript wrapper for 'g_bookmark_file_to_data'
+}</pre>
+
+<p>This function outputs <em>bookmark</em> as a string.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters32">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of4">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string holding
+the contents of the <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string holding
+the contents of the <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_get_description">
+		
+<h4 id="glibbookmarkfileprototypeget_description">
+	<span><code>GLib.BookmarkFile.prototype.get_description</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.get_description(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_get_description'
+}</pre>
+
+<p>Retrieves the description of the bookmark for <em>uri</em>.</p>
+<p>In the event the URI cannot be found, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> is returned and
+<em>error</em> is set to <a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND">GLib.BookmarkFileError.prototype.uri_not_found</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters33">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> if the specified
+URI cannot be found.</p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_remove_application">
+		
+<h4 id="glibbookmarkfileprototyperemove_application">
+	<span><code>GLib.BookmarkFile.prototype.remove_application</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.remove_application(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, name: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_remove_application'
+}</pre>
+
+<p>Removes application registered with <em>name</em> from the list of applications
+that have registered a bookmark for <em>uri</em> inside <em>bookmark</em>.</p>
+<p>In the event the URI cannot be found, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> is returned and
+<em>error</em> is set to <a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND">GLib.BookmarkFileError.prototype.uri_not_found</a>.
+In the event that no application with name <em>app_name</em> has registered
+a bookmark for <em>uri</em>,  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> is returned and error is set to
+<a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_APP_NOT_REGISTERED">GLib.BookmarkFileError.prototype.app_not_registered</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters34">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>name:</code></em></i>
+		</p>
+	</td>
+		<td><p>the name of the application</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the application was successfully removed.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_set_added">
+		
+<h4 id="glibbookmarkfileprototypeset_added">
+	<span><code>GLib.BookmarkFile.prototype.set_added</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.set_added(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, added: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_bookmark_file_set_added'
+}</pre>
+
+<p>Sets the time the bookmark for <em>uri</em> was added into <em>bookmark</em>.</p>
+<p>If no bookmark for <em>uri</em> is found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters35">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>added:</code></em></i>
+		</p>
+	</td>
+		<td><p>a timestamp or -1 to use the current time</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_bookmark_file_has_application">
+		
+<h4 id="glibbookmarkfileprototypehas_application">
+	<span><code>GLib.BookmarkFile.prototype.has_application</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.BookmarkFile.prototype.has_application(uri: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, name: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_bookmark_file_has_application'
+}</pre>
+
+<p>Checks whether the bookmark for <em>uri</em> inside <em>bookmark</em> has been
+registered by application <em>name</em>.</p>
+<p>In the event the URI cannot be found, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> is returned and
+<em>error</em> is set to <a href="bookmarkfile.html#G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND">GLib.BookmarkFileError.prototype.uri_not_found</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters36">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bookmark:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a></p>
+</td>
+<td>
+<a title="GLib.BookmarkFile" href="bookmarkfile.html#GBookmarkFile">GLib.BookmarkFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>name:</code></em></i>
+		</p>
+	</td>
+		<td><p>the name of the application</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the application <em>name</em> was found</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_bookmark_file_error_quark">
+		
+<h3 id="glibprototypebookmark_file_error_quark">
+	<span><code>GLib.prototype.bookmark_file_error_quark</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.bookmark_file_error_quark(): {
+    // javascript wrapper for 'g_bookmark_file_error_quark'
+}</pre>
+
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		<a title="GLib.Quark" href="quarks.html#GQuark">GLib.Quark</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GBookmarkFile">
+		<h3 id="glibbookmarkfile">
+	GLib.BookmarkFile
+</h3>
+
+		<p>The <code>GBookmarkFile</code> structure contains only
+private data and should not be directly accessed.</p>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GBookmarkFileError">
+		
+<h3 id="enum-glibbookmarkfileerror">
+		enum GLib.BookmarkFileError
+	</h3>
+
+		<p>Error codes returned by bookmark file parsing.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_BOOKMARK_FILE_ERROR_INVALID_URI"></a>
+		GLib.BookmarkFileError.prototype.invalid_uri
+		</p>
+	</td>
+	<td><p>URI was ill-formed</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_BOOKMARK_FILE_ERROR_INVALID_VALUE"></a>
+		GLib.BookmarkFileError.prototype.invalid_value
+		</p>
+	</td>
+	<td><p>a requested field was not found</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_BOOKMARK_FILE_ERROR_APP_NOT_REGISTERED"></a>
+		GLib.BookmarkFileError.prototype.app_not_registered
+		</p>
+	</td>
+	<td><p>a requested application did
+not register a bookmark</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND"></a>
+		GLib.BookmarkFileError.prototype.uri_not_found
+		</p>
+	</td>
+	<td><p>a requested URI was not found</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_BOOKMARK_FILE_ERROR_READ"></a>
+		GLib.BookmarkFileError.prototype.read
+		</p>
+	</td>
+	<td><p>document was ill formed</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_BOOKMARK_FILE_ERROR_UNKNOWN_ENCODING"></a>
+		GLib.BookmarkFileError.prototype.unknown_encoding
+		</p>
+	</td>
+	<td><p>the text being parsed was
+in an unknown encoding</p>
+</td>
+	<td>
+		<span class="value">Value: 5</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_BOOKMARK_FILE_ERROR_WRITE"></a>
+		GLib.BookmarkFileError.prototype.write
+		</p>
+	</td>
+	<td><p>an error occurred while writing</p>
+</td>
+	<td>
+		<span class="value">Value: 6</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_BOOKMARK_FILE_ERROR_FILE_NOT_FOUND"></a>
+		GLib.BookmarkFileError.prototype.file_not_found
+		</p>
+	</td>
+	<td><p>requested file was not found</p>
+</td>
+	<td>
+		<span class="value">Value: 7</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hooks.html#glibhook_destroy", "fragment": "GLib.hook_destroy \nDestroys a GLib.Hook given its ID. \n"});

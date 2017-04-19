@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/async_queues.html#returns8", "fragment": "\ndata from the queue or None when no data is received before end_time. \ndeprecated use g_async_queue_timeout_pop_unlocked \n"});

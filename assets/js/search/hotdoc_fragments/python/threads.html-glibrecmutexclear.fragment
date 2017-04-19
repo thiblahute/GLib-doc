@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/threads.html#glibrecmutexclear", "fragment": "GLib.RecMutex.clear \nFrees the resources allocated to a recursive mutex with GLib.RecMutex.init. \nThis function should not be used with a GLib.RecMutex that has been statically allocated. \nCalling GLib.RecMutex.clear on a locked recursive mutex leads to undefined behaviour. \nSine \n"});

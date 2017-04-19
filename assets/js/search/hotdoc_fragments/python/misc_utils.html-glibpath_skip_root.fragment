@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/misc_utils.html#glibpath_skip_root", "fragment": "GLib.path_skip_root \nReturns a pointer into file_name after the root component i.e. after the in UNIX or C under Windows. If file_name is not an absolute path it returns None. \n"});

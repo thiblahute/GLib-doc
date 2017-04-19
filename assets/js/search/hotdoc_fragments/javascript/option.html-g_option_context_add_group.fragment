@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/option.html#g_option_context_add_group", "fragment": "GLib.OptionContext.prototype.add_group \nAdds a GLib.OptionGroup to the context so that parsing with context will recognize the options in the group. Note that this will take ownership of the group and thus the group should not be freed. \n"});

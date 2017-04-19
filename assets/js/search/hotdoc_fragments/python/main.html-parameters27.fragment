@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#parameters27", "fragment": "source \na GLib.Source \nfd \na GLib.PollFD structure previously passed to GLib.Source.add_poll. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibsource_remove1", "fragment": "GLib.SOURCE_REMOVE \nUse this macro as the return value of a GLib.SourceFunc to remove the GLib.Source from the main loop. \n"});

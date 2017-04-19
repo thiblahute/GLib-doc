@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/strings.html#glibstringassign", "fragment": "GLib.String.assign \nCopies the bytes from a string into a GLib.String destroying any previous contents. It is rather like the standard strcpy function except that you do not have to worry about having enough space to copy the string. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_dict_remove1", "fragment": "g_variant_dict_remove \nRemoves a key and its associated value from a GVariantDict. \n"});

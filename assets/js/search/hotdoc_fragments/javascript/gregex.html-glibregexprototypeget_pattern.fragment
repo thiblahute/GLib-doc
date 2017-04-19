@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gregex.html#glibregexprototypeget_pattern", "fragment": "GLib.Regex.prototype.get_pattern \nGets the pattern string associated with regex i.e. a copy of the string passed to GLib.Regex.prototype.new. \n"});

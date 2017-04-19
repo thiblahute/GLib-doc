@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/strings.html#parameters8", "fragment": "string \nthe destination GString. Its current contents are destroyed. \nrval \nthe string to copy into string \n"});

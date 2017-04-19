@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/misc_utils.html#G_FORMAT_SIZE_IEC_UNITS", "fragment": "use IEC base units with KiB style suffixes. IEC units should only be used for reporting things with a strong power of basis like RAM sizes or RAID stripe sizes. Network and storage sizes should be reported in the normal SI units. \n"});

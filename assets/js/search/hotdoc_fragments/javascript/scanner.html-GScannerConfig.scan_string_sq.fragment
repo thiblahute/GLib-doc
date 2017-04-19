@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/scanner.html#GScannerConfig.scan_string_sq", "fragment": "guint scan_string_dq \nspecifies if strings can be enclosed in double quotes the default is TRUE \n"});

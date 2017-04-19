@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/sequence.html#glibsequenceitercompare", "fragment": "GLib.SequenceIter.compare \nReturns a negative number if a comes before b if they are equal and a positive number if a comes after b. \nThe a and b iterators must point into the same sequence. \n"});

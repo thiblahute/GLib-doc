@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/macros_misc.html#g_unlikely", "fragment": "G_UNLIKELY \nHints the compiler that the expression is unlikely to evaluate to a true value. The compiler may use this information for optimizations. \n"});

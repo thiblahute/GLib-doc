@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/trees-nary.html#g_node_depth1", "fragment": "g_node_depth \nGets the depth of a GNode. \nIf node is NULL the depth is The root node has a depth of For the children of the root node the depth is And so on. \n"});

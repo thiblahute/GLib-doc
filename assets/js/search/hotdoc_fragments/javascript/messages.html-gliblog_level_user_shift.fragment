@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/messages.html#gliblog_level_user_shift", "fragment": "GLib.LOG_LEVEL_USER_SHIFT \nLog levels below G_LOG_LEVEL_USER_SHIFT are used by GLib. Higher bits can be used for user defined log levels. \n"});

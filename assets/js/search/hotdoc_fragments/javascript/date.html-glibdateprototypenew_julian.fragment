@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#glibdateprototypenew_julian", "fragment": "GLib.Date.prototype.new_julian \nLike GLib.Date.prototype.new but also sets the value of the date. Assuming the Julian day number you pass in is valid greater than less than an unreasonably large number the returned date will be valid. \n"});

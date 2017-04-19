@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/thread_pools.html#glibthreadpool", "fragment": "GLib.ThreadPool \nThe GLib.ThreadPool struct represents a thread pool. It has three public read only members but the underlying struct is bigger so you must not copy this struct. \n"});

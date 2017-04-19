@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hmac.html#struct-ghmac", "fragment": "struct GHmac \nAn opaque structure representing a HMAC operation. To create a new GHmac use g_hmac_new. To free a GHmac use g_hmac_unref. \n"});

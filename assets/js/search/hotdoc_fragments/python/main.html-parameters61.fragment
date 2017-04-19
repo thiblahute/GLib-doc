@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#parameters61", "fragment": "priority \nthe priority of the idle source. Typically this will be in the range between GLib.PRIORITY_DEFAULT_IDLE and GLib.PRIORITY_HIGH_IDLE. \nfunction \nfunction to call \ndata \ndata to pass to function \nnotify \nfunction to call when the idle is removed or None \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#struct-gonce", "fragment": "struct GOnce \nA GOnce struct controls a one time initialization function. Any one time initialization function must have its own unique GOnce struct. \n"});

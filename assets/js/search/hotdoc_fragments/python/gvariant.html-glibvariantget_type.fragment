@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvariant.html#glibvariantget_type", "fragment": "GLib.Variant.get_type \nDetermines the type of value. \nThe return value is valid for the lifetime of value and must not be freed. \n"});

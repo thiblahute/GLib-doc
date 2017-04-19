@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gunix.html#g_unix_signal_add_full1", "fragment": "g_unix_signal_add_full \nA convenience function for g_unix_signal_source_new which attaches to the default GMainContext. You can remove the watch using g_source_remove. \n"});

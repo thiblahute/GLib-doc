@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/linked_lists_double.html#g_list_copy1", "fragment": "g_list_copy \nCopies a GList. \nNote that this is a shallow copy. If the list elements consist of pointers to data the pointers are copied but the actual data is not. See g_list_copy_deep if you need to copy the data as well. \n"});

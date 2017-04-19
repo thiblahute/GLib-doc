@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/fileutils.html#parameters22", "fragment": "filename \nname of a file to read contents from in the GLib file name encoding \ncontents \nlocation to store an allocated string use g_free to free the returned string \nlength \nlocation to store length in bytes of the contents or NULL \n"});

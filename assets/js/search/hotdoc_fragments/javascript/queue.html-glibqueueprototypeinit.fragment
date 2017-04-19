@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/queue.html#glibqueueprototypeinit", "fragment": "GLib.Queue.prototype.init \nA statically allocated GLib.Queue must be initialized with this function before it can be used. Alternatively you can initialize it with G_QUEUE_INIT not introspectable It is not necessary to initialize queues created with g_queue_new not introspectable \n"});

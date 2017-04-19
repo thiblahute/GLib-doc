@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/queue.html#g_queue_copy1", "fragment": "g_queue_copy \nCopies a queue. Note that is a shallow copy. If the elements in the queue consist of pointers to data the pointers are copied but the actual data is not. \n"});

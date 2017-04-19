@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/strings.html#g_string_prepend_unichar", "fragment": "GLib.String.prototype.prepend_unichar \nConverts a Unicode character into UTF and prepends it to the string. \n"});

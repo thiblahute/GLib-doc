@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/linked_lists_single.html#parameters7", "fragment": "list \na GSList \ndata \nuser data passed to the function \nfunc \nthe function to call for each element. It should return when the desired element is found \n"});

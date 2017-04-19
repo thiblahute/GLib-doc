@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date-time.html#glibdatetimeto_unix", "fragment": "GLib.DateTime.to_unix \nGives the Unix time corresponding to datetime rounding down to the nearest second. \nUnix time is the number of seconds that have elapsed since UTC regardless of the time zone associated with datetime. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvariant.html#glibvariantnew_objv", "fragment": "GLib.Variant.new_objv \nConstructs an array of object paths GLib.Variant from the given array of strings. \nEach string must be a valid GLib.Variant object path see GLib.variant_is_object_path. \nIf length is then strv is None terminated. \n"});

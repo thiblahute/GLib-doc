@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/checkedmath.html#g_uint_checked_add1", "fragment": "g_uint_checked_add \nPerforms a checked addition of a and b storing the result in dest. \nIf the operation is successful TRUE is returned. If the operation overflows then the state of dest is undefined and FALSE is returned. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/iochannels.html#glibiochannelprototypeseek", "fragment": "GLib.IOChannel.prototype.seek \nSets the current position in the GLib.IOChannel similar to the standard library function fseek. \n"});

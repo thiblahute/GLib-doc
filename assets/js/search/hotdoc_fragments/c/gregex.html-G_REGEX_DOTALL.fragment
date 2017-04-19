@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gregex.html#G_REGEX_DOTALL", "fragment": "A dot metacharater in the pattern matches all characters including newlines. Without it newlines are excluded. This option can be changed within a pattern by a s option setting. \nG_REGEX_EXTENDED \n"});

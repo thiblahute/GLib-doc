@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gurifuncs.html#returns3", "fragment": "\nThe Scheme component of the URI or null on error. The returned string should be freed when no longer needed. \nSince \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_utils.html#g_ascii_dtostr_buf_size", "fragment": "G_ASCII_DTOSTR_BUF_SIZE \nA good size for a buffer to be passed into g_ascii_dtostr. It is guaranteed to be enough for all output of that function on systems with bit IEEE compatible doubles. \nThe typical usage would be something like \n"});

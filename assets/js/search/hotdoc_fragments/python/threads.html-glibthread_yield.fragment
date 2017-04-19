@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/threads.html#glibthread_yield", "fragment": "GLib.thread_yield \nCauses the calling thread to voluntarily relinquish the CPU so that other threads can run. \nThis function is often used as a method to make busy wait less evil. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/bookmarkfile.html#g_bookmark_file_set_is_private", "fragment": "GLib.BookmarkFile.prototype.set_is_private \nSets the private flag of the bookmark for uri. \nIf a bookmark for uri cannot be found then it is created. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#g_rw_lock_reader_trylock1", "fragment": "g_rw_lock_reader_trylock \nTries to obtain a read lock on rw_lock and returns TRUE if the read lock was successfully obtained. Otherwise it returns FALSE. \n"});

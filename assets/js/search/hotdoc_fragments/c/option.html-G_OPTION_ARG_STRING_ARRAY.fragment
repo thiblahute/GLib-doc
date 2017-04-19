@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/option.html#G_OPTION_ARG_STRING_ARRAY", "fragment": "The option takes a string argument multiple uses of the option are collected into an array of strings. \nG_OPTION_ARG_FILENAME_ARRAY \n"});

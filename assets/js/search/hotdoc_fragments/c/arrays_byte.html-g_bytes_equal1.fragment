@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays_byte.html#g_bytes_equal1", "fragment": "g_bytes_equal \nCompares the two GBytes values being pointed to and returns TRUE if they are equal. \nThis function can be passed to g_hash_table_new as the key_equal_func parameter when using non NULL GBytes pointers as keys in a GHashTable. \n"});

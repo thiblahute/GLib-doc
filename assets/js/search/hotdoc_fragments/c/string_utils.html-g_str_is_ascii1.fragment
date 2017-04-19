@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_utils.html#g_str_is_ascii1", "fragment": "g_str_is_ascii \nDetermines if a string is pure ASCII. A string is pure ASCII if it contains no bytes with the high bit set. \n"});

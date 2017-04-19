@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#G_NORMALIZE_DEFAULT_COMPOSE", "fragment": "like GLib.NormalizeMode.default but with composed forms rather than a maximally decomposed form \nGLib.NormalizeMode.nfc \n"});

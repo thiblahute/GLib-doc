@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/trees-nary.html#glibnodedepth", "fragment": "GLib.Node.depth \nGets the depth of a GLib.Node. \nIf node is None the depth is The root node has a depth of For the children of the root node the depth is And so on. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/bookmarkfile.html#g_bookmark_file_set_icon1", "fragment": "g_bookmark_file_set_icon \nSets the icon for the bookmark for uri. If href is NULL unsets the currently set icon. href can either be a full URL for the icon file or the icon name following the Icon Naming specification. \nIf no bookmark for uri is found one is created. \n"});

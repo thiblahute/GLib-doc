@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/arrays_byte.html#returns-a-tuple-made-of", "fragment": "\na pointer to the same byte data which should be freed with GLib.prototype.free \nsize \na pointer to the same byte data which should be freed with GLib.prototype.free \nSince \n"});

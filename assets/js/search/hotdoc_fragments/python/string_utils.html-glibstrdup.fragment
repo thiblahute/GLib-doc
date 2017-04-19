@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/string_utils.html#glibstrdup", "fragment": "GLib.strdup \nDuplicates a string. If str is None it returns None. The returned string should be freed with GLib.free when no longer needed. \n"});

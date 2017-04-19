@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/datalist.html#g_datalist_init1", "fragment": "g_datalist_init \nResets the datalist to NULL. It does not free any memory or call any destroy functions. \n"});

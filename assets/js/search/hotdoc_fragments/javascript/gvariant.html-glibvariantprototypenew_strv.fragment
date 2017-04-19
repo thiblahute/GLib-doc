@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvariant.html#glibvariantprototypenew_strv", "fragment": "GLib.Variant.prototype.new_strv \nConstructs an array of strings GLib.Variant from the given array of strings. \nIf length is then strv is null terminated. \n"});

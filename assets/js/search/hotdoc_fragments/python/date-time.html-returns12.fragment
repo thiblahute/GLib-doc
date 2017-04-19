@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date-time.html#returns12", "fragment": "\na newly allocated string formatted to the requested format or None in the case that there was an error. The string should be freed with GLib.free. \nSince \n"});

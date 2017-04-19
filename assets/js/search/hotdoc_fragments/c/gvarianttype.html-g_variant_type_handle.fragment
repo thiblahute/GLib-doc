@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvarianttype.html#g_variant_type_handle", "fragment": "G_VARIANT_TYPE_HANDLE \nThe type of a bit signed integer value that by convention is used as an index into an array of file descriptors that are sent alongside a D Bus message. \nIf you are not interacting with D Bus then there is no reason to make use of this type. \n"});

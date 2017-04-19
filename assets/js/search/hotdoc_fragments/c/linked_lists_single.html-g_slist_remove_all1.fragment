@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/linked_lists_single.html#g_slist_remove_all1", "fragment": "g_slist_remove_all \nRemoves all list nodes with data equal to data. Returns the new head of the list. Contrast with g_slist_remove which removes only the first node matching the given data. \n"});

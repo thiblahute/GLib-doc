@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/checksum.html#glibchecksumprototypefree", "fragment": "GLib.Checksum.prototype.free \nFrees the memory allocated for checksum. \n"});

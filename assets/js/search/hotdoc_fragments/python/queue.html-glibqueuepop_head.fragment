@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/queue.html#glibqueuepop_head", "fragment": "GLib.Queue.pop_head \nRemoves the first element of the queue and returns its data. \n"});

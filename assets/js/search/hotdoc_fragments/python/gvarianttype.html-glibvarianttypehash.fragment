@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvarianttype.html#glibvarianttypehash", "fragment": "GLib.VariantType.hash \nHashes type. \nThe argument type of type is only gconstpointer to allow use with GLib.HashTable without function pointer casting. A valid GLib.VariantType must be provided. \n"});

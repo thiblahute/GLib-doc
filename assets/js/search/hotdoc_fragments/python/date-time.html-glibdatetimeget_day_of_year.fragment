@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date-time.html#glibdatetimeget_day_of_year", "fragment": "GLib.DateTime.get_day_of_year \nRetrieves the day of the year represented by datetime in the Gregorian calendar. \n"});

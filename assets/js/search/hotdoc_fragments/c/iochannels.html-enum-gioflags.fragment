@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#enum-gioflags", "fragment": "enum GIOFlags \nSpecifies properties of a GIOChannel. Some of the flags can only be read with g_io_channel_get_flags but not changed with g_io_channel_set_flags. \n"});

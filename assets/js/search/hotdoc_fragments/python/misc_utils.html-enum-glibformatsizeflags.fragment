@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/misc_utils.html#enum-glibformatsizeflags", "fragment": "enum GLib.FormatSizeFlags \nFlags to modify the format of the string returned by GLib.format_size_full. \n"});

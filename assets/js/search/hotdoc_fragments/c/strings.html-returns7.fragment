@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/strings.html#returns7", "fragment": "\nthe GString \ndeprecated This function uses the locale specific tolower function which is almost never the right thing. Use g_string_ascii_down or g_utf8_strdown instead. \n"});

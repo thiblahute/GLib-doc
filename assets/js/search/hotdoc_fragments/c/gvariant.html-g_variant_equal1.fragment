@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_equal1", "fragment": "g_variant_equal \nChecks if one and two have the same type and value. \nThe types of one and two are gconstpointer only to allow use of this function with GHashTable. They must each be a GVariant. \n"});

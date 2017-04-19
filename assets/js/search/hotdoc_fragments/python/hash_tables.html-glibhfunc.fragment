@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hash_tables.html#glibhfunc", "fragment": "GLib.HFunc \nSpecifies the type of the function passed to g_hash_table_foreach not introspectable It is called with each key value pair together with the user_data parameter which is passed to g_hash_table_foreach not introspectable \n"});

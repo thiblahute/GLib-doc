@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#parameters30", "fragment": "source \na GLib.Source \ntimeval \nGLib.TimeVal structure in which to store current time. \ndeprecated use g_source_get_time instead \n"});

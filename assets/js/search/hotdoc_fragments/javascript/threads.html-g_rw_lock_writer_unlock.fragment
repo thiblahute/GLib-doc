@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/threads.html#g_rw_lock_writer_unlock", "fragment": "GLib.RWLock.prototype.writer_unlock \nRelease a write lock on rw_lock. \nCalling GLib.RWLock.prototype.writer_unlock on a lock that is not held by the current thread leads to undefined behaviour. \n"});

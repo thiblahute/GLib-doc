@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/linked_lists_double.html#g_list_reverse1", "fragment": "g_list_reverse \nReverses a GList. It simply switches the next and prev pointers of each element. \n"});

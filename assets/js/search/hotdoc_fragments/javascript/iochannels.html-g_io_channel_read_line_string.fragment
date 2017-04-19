@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/iochannels.html#g_io_channel_read_line_string", "fragment": "GLib.IOChannel.prototype.read_line_string \nReads a line from a GLib.IOChannel using a GLib.String as a buffer. \n"});

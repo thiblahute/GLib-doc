@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdateget_julian", "fragment": "GLib.Date.get_julian \nReturns the Julian day or serial number of the GLib.Date. The Julian day is simply the number of days since January Year i.e. January Year is Julian day January Year is Julian day etc. The date must be valid. \n"});

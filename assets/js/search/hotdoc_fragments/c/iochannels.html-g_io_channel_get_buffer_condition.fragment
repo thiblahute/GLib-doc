@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#g_io_channel_get_buffer_condition", "fragment": "g_io_channel_get_buffer_condition \nThis function returns a GIOCondition depending on whether there is data to be read space to write data in the internal buffers in the GIOChannel. Only the flags G_IO_IN and G_IO_OUT may be set. \n"});

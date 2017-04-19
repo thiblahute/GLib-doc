@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays_byte.html#g_bytes_new_static1", "fragment": "g_bytes_new_static \nCreates a new GBytes from static data. \ndata must be static ie never modified or freed It may be NULL if size is \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gregex.html#glibmatchinfoprototypeunref", "fragment": "GLib.MatchInfo.prototype.unref \nDecreases reference count of match_info by When reference count drops to zero it frees all the memory associated with the match_info structure. \n"});

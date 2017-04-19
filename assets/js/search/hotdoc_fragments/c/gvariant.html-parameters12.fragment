@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#parameters12", "fragment": "type \na definite GVariantType \ndata \nthe serialised data \nsize \nthe size of data \ntrusted \nTRUE if data is definitely in normal form \nnotify \nfunction to call when data is no longer needed \nuser_data \ndata for notify \n"});

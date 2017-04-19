@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays.html#g_array_remove_index1", "fragment": "g_array_remove_index \nRemoves the element at the given index from a GArray. The following elements are moved down one place. \n"});

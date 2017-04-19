@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/datasets.html#glibdataset_destroy", "fragment": "GLib.dataset_destroy \nDestroys the dataset freeing all memory allocated and calling any destroy functions set for data elements. \n"});

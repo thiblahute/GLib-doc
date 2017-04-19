@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibmaincontextadd_poll", "fragment": "GLib.MainContext.add_poll \nAdds a file descriptor to the set of file descriptors polled for this context. This will very seldom be used directly. Instead a typical event source will use GLib.Source.add_unix_fd instead. \n"});

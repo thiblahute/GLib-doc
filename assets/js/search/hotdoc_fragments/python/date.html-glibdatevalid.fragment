@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdatevalid", "fragment": "GLib.Date.valid \nReturns True if the GLib.Date represents an existing day. The date must not contain garbage it should have been initialized with GLib.Date.clear if it wasn t allocated by one of the GLib.Date.new variants. \n"});

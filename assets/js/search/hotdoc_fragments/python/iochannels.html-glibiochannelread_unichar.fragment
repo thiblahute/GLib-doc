@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#glibiochannelread_unichar", "fragment": "GLib.IOChannel.read_unichar \nReads a Unicode character from channel. This function cannot be called on a channel with None encoding. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/sequence.html#g_sequence_swap1", "fragment": "g_sequence_swap \nSwaps the items pointed to by a and b. It is allowed for a and b to point into difference sequences. \n"});

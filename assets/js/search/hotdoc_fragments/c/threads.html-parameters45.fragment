@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#parameters45", "fragment": "once \na GOnce structure \nfunc \nthe GThreadFunc function associated to once. This function is called only once regardless of the number of times it and its associated GOnce struct are passed to g_once. \narg \ndata to be passed to func \n"});

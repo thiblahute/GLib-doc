@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/unicode.html#G_NORMALIZE_ALL", "fragment": "beyond G_NORMALIZE_DEFAULT also standardize the compatibility characters in Unicode such as SUPERSCRIPT THREE to the standard forms in this case DIGIT THREE Formatting information may be lost but for most text operations such characters should be considered the same \nG_NORMALIZE_NFKD \n"});

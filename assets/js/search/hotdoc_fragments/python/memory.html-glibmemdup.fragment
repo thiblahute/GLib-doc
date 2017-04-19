@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/memory.html#glibmemdup", "fragment": "GLib.memdup \nAllocates byte_size bytes of memory and copies byte_size bytes into it from mem. If mem is None it returns None. \n"});

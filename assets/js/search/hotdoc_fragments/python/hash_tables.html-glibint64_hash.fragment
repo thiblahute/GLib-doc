@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hash_tables.html#glibint64_hash", "fragment": "GLib.int64_hash \nConverts a pointer to a gint64 to a hash value. \nIt can be passed to g_hash_table_new not introspectable as the hash_func parameter when using non NULL pointers to bit integer values as keys in a GLib.HashTable. \n"});

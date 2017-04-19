@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hooks.html#glibhookcomparefunc", "fragment": "GLib.HookCompareFunc \nDefines the type of function used to compare GLib.Hook elements in g_hook_insert_sorted not introspectable \n"});

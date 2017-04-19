@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/unicode.html#glibprototypeunichar_iscntrl", "fragment": "GLib.prototype.unichar_iscntrl \nDetermines whether a character is a control character. Given some UTF text obtain a character value with GLib.prototype.utf8_get_char. \n"});

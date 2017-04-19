@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/string_utils.html#g_ascii_xdigit_value", "fragment": "GLib.prototype.ascii_xdigit_value \nDetermines the numeric value of a character as a hexidecimal digit. Differs from GLib.prototype.unichar_xdigit_value because it takes a char so there s no worry about sign extension if characters are signed. \n"});

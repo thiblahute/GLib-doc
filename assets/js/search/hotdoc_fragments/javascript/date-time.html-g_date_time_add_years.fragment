@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date-time.html#g_date_time_add_years", "fragment": "GLib.DateTime.prototype.add_years \nCreates a copy of datetime and adds the specified number of years to the copy. Add negative values to subtract years. \n"});

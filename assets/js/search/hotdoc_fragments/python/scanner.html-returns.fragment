@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/scanner.html#returns", "fragment": "\nthe value of symbol in the current scope or None if symbol is not bound in the current scope \n"});

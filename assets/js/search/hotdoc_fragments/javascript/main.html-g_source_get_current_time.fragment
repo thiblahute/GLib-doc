@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#g_source_get_current_time", "fragment": "GLib.Source.prototype.get_current_time \nThis function ignores source and is otherwise the same as GLib.prototype.get_current_time. \n"});

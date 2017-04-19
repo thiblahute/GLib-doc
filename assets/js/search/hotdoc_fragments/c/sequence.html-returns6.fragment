@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/sequence.html#returns6", "fragment": "\nan GSequenceIter pointing to the position of the first item found equal to data according to cmp_func and cmp_data or NULL if no such item exists \nSince \n"});

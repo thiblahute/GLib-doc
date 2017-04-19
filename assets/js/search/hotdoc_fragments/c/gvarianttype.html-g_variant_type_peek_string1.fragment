@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvarianttype.html#g_variant_type_peek_string1", "fragment": "g_variant_type_peek_string \nReturns the type string corresponding to the given type. The result is not nul terminated in order to determine its length you must call g_variant_type_get_string_length. \nTo get a nul terminated string see g_variant_type_dup_string. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/datasets.html#g_dataset_id_remove_data1", "fragment": "g_dataset_id_remove_data \nRemoves a data element from a dataset. The data element s destroy function is called if it has been set. \n"});

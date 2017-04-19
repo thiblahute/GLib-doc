@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/markup.html#struct-gmarkupparsecontext", "fragment": "struct GMarkupParseContext \nA parse context is used to parse a stream of bytes that you expect to contain marked up text. \nSee g_markup_parse_context_new GMarkupParser and so on for more details. \n"});

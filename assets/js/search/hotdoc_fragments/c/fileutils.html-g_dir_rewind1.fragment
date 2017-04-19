@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/fileutils.html#g_dir_rewind1", "fragment": "g_dir_rewind \nResets the given directory. The next call to g_dir_read_name will return the first entry again. \n"});

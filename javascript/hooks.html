@@ -1,0 +1,1706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GHook</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="hooks.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="javascript">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="hooks.markdown">
+        <h1 id="ghook">GHook</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GHook</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GHookMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_compare_ids">
+		
+<h4 id="glibhookprototypecompare_ids">
+	<span><code>GLib.Hook.prototype.compare_ids</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Hook.prototype.compare_ids(sibling: <a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>): {
+    // javascript wrapper for 'g_hook_compare_ids'
+}</pre>
+
+<p>Compares the ids of two <a href="hooks.html#GHook">GLib.Hook</a> elements, returning a negative value
+if the second id is greater than the first.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>new_hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHook">GLib.Hook</a></p>
+</td>
+<td>
+<a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>sibling:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHook">GLib.Hook</a> to compare with <em>new_hook</em></p>
+</td>
+<td>
+<a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a value &lt;= 0 if the id of <em>sibling</em> is &gt;= the id of <em>new_hook</em></p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+            <h2 class="symbol_section" id="">GHookList</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GHookListMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_list_init">
+		
+<h4 id="glibhooklistprototypeinit">
+	<span><code>GLib.HookList.prototype.init</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.HookList.prototype.init(hook_size: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_hook_list_init'
+}</pre>
+
+<p>Initializes a <a href="hooks.html#GHookList">GLib.HookList</a>.
+This must be called before the <a href="hooks.html#GHookList">GLib.HookList</a> is used.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GLib.HookList</a></p>
+</td>
+<td>
+<a title="GLib.HookList" href="hooks.html#GHookList">GLib.HookList</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_size:</code></em></i>
+		</p>
+	</td>
+		<td><p>the size of each element in the <a href="hooks.html#GHookList">GLib.HookList</a>,
+typically <code>sizeof (GHook)</code>.</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_list_clear">
+		
+<h4 id="glibhooklistprototypeclear">
+	<span><code>GLib.HookList.prototype.clear</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.HookList.prototype.clear(): {
+    // javascript wrapper for 'g_hook_list_clear'
+}</pre>
+
+<p>Removes all the <a href="hooks.html#GHook">GLib.Hook</a> elements from a <a href="hooks.html#GHookList">GLib.HookList</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GLib.HookList</a></p>
+</td>
+<td>
+<a title="GLib.HookList" href="hooks.html#GHookList">GLib.HookList</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_list_invoke">
+		
+<h4 id="glibhooklistprototypeinvoke">
+	<span><code>GLib.HookList.prototype.invoke</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.HookList.prototype.invoke(may_recurse: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_hook_list_invoke'
+}</pre>
+
+<p>Calls all of the <a href="hooks.html#GHook">GLib.Hook</a> functions in a <a href="hooks.html#GHookList">GLib.HookList</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GLib.HookList</a></p>
+</td>
+<td>
+<a title="GLib.HookList" href="hooks.html#GHookList">GLib.HookList</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>may_recurse:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if functions which are already running
+(e.g. in another thread) can be called. If set to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a>,
+these are skipped</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_list_invoke_check">
+		
+<h4 id="glibhooklistprototypeinvoke_check">
+	<span><code>GLib.HookList.prototype.invoke_check</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.HookList.prototype.invoke_check(may_recurse: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_hook_list_invoke_check'
+}</pre>
+
+<p>Calls all of the <a href="hooks.html#GHook">GLib.Hook</a> functions in a <a href="hooks.html#GHookList">GLib.HookList</a>.
+Any function which returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> is removed from the <a href="hooks.html#GHookList">GLib.HookList</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GLib.HookList</a></p>
+</td>
+<td>
+<a title="GLib.HookList" href="hooks.html#GHookList">GLib.HookList</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>may_recurse:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if functions which are already running
+(e.g. in another thread) can be called. If set to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a>,
+these are skipped</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_destroy">
+		
+<h3 id="glibprototypehook_destroy">
+	<span><code>GLib.prototype.hook_destroy</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.hook_destroy(hook_list: <a title="GLib.HookList" href="hooks.html#GHookList">GLib.HookList</a>, hook_id: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_hook_destroy'
+}</pre>
+
+<p>Destroys a <a href="hooks.html#GHook">GLib.Hook</a>, given its ID.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GLib.HookList</a></p>
+</td>
+<td>
+<a title="GLib.HookList" href="hooks.html#GHookList">GLib.HookList</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_id:</code></em></i>
+		</p>
+	</td>
+		<td><p>a hook ID</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the <a href="hooks.html#GHook">GLib.Hook</a> was found in the <a href="hooks.html#GHookList">GLib.HookList</a> and destroyed</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_unref">
+		
+<h3 id="glibprototypehook_unref">
+	<span><code>GLib.prototype.hook_unref</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.hook_unref(hook_list: <a title="GLib.HookList" href="hooks.html#GHookList">GLib.HookList</a>, hook: <a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>): {
+    // javascript wrapper for 'g_hook_unref'
+}</pre>
+
+<p>Decrements the reference count of a <a href="hooks.html#GHook">GLib.Hook</a>.
+If the reference count falls to 0, the <a href="hooks.html#GHook">GLib.Hook</a> is removed
+from the <a href="hooks.html#GHookList">GLib.HookList</a> and <a href="hooks.html#g_hook_free">GLib.prototype.hook_free</a> is called to free it.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GLib.HookList</a></p>
+</td>
+<td>
+<a title="GLib.HookList" href="hooks.html#GHookList">GLib.HookList</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="hooks.html#GHook">GLib.Hook</a> to unref</p>
+</td>
+<td>
+<a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_prepend">
+		
+<h3 id="glibprototypehook_prepend">
+	<span><code>GLib.prototype.hook_prepend</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.hook_prepend(hook_list: <a title="GLib.HookList" href="hooks.html#GHookList">GLib.HookList</a>, hook: <a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>): {
+    // javascript wrapper for 'g_hook_prepend'
+}</pre>
+
+<p>Prepends a <a href="hooks.html#GHook">GLib.Hook</a> on the start of a <a href="hooks.html#GHookList">GLib.HookList</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GLib.HookList</a></p>
+</td>
+<td>
+<a title="GLib.HookList" href="hooks.html#GHookList">GLib.HookList</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="hooks.html#GHook">GLib.Hook</a> to add to the start of <em>hook_list</em></p>
+</td>
+<td>
+<a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_destroy_link">
+		
+<h3 id="glibprototypehook_destroy_link">
+	<span><code>GLib.prototype.hook_destroy_link</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.hook_destroy_link(hook_list: <a title="GLib.HookList" href="hooks.html#GHookList">GLib.HookList</a>, hook: <a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>): {
+    // javascript wrapper for 'g_hook_destroy_link'
+}</pre>
+
+<p>Removes one <a href="hooks.html#GHook">GLib.Hook</a> from a <a href="hooks.html#GHookList">GLib.HookList</a>, marking it
+inactive and calling <a href="hooks.html#g_hook_unref">GLib.prototype.hook_unref</a> on it.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GLib.HookList</a></p>
+</td>
+<td>
+<a title="GLib.HookList" href="hooks.html#GHookList">GLib.HookList</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="hooks.html#GHook">GLib.Hook</a> to remove</p>
+</td>
+<td>
+<a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_free">
+		
+<h3 id="glibprototypehook_free">
+	<span><code>GLib.prototype.hook_free</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.hook_free(hook_list: <a title="GLib.HookList" href="hooks.html#GHookList">GLib.HookList</a>, hook: <a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>): {
+    // javascript wrapper for 'g_hook_free'
+}</pre>
+
+<p>Calls the <a href="hooks.html#GHookList">GLib.HookList</a> <em>finalize_hook</em> function if it exists,
+and frees the memory allocated for the <a href="hooks.html#GHook">GLib.Hook</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GLib.HookList</a></p>
+</td>
+<td>
+<a title="GLib.HookList" href="hooks.html#GHookList">GLib.HookList</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="hooks.html#GHook">GLib.Hook</a> to free</p>
+</td>
+<td>
+<a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_insert_before">
+		
+<h3 id="glibprototypehook_insert_before">
+	<span><code>GLib.prototype.hook_insert_before</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.hook_insert_before(hook_list: <a title="GLib.HookList" href="hooks.html#GHookList">GLib.HookList</a>, sibling: <a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>, hook: <a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>): {
+    // javascript wrapper for 'g_hook_insert_before'
+}</pre>
+
+<p>Inserts a <a href="hooks.html#GHook">GLib.Hook</a> into a <a href="hooks.html#GHookList">GLib.HookList</a>, before a given <a href="hooks.html#GHook">GLib.Hook</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GLib.HookList</a></p>
+</td>
+<td>
+<a title="GLib.HookList" href="hooks.html#GHookList">GLib.HookList</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>sibling:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="hooks.html#GHook">GLib.Hook</a> to insert the new <a href="hooks.html#GHook">GLib.Hook</a> before</p>
+</td>
+<td>
+<a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="hooks.html#GHook">GLib.Hook</a> to insert</p>
+</td>
+<td>
+<a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHook">
+		<h3 id="glibhook">
+	GLib.Hook
+</h3>
+
+		<p>The <a href="hooks.html#GHook">GLib.Hook</a> struct represents a single hook function in a <a href="hooks.html#GHookList">GLib.HookList</a>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="attributes">Attributes</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GHook.data">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>data</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>data which is passed to func when this hook is invoked</p>
+</td>
+</tr>
+
+						<tr id="GHook.next">
+		<td>
+		<p>
+		<i><em><code><a title="GHook" href="hooks.html#GHook">GHook</a> * <em><code>next</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>pointer to the next hook in the list</p>
+</td>
+</tr>
+
+						<tr id="GHook.prev">
+		<td>
+		<p>
+		<i><em><code><a title="GHook" href="hooks.html#GHook">GHook</a> * <em><code>prev</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>pointer to the previous hook in the list</p>
+</td>
+</tr>
+
+						<tr id="GHook.ref_count">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>ref_count</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the reference count of this hook</p>
+</td>
+</tr>
+
+						<tr id="GHook.hook_id">
+		<td>
+		<p>
+		<i><em><code>gulong <em><code>hook_id</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the id of this hook, which is unique within its list</p>
+</td>
+</tr>
+
+						<tr id="GHook.flags">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>flags</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>flags which are set for this hook. See <a href="hooks.html#GHookFlagMask">GHookFlagMask</a> for
+predefined flags</p>
+</td>
+</tr>
+
+						<tr id="GHook.func">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>func</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call when this hook is invoked. The possible
+signatures for this function are <a href="hooks.html#GHookFunc">GHookFunc</a> and <a href="hooks.html#GHookCheckFunc">GHookCheckFunc</a></p>
+</td>
+</tr>
+
+						<tr id="GHook.destroy">
+		<td>
+		<p>
+		<i><em><code><a title="GDestroyNotify" href="datasets.html#GDestroyNotify">GDestroyNotify</a> <em><code>destroy</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the default <em>finalize_hook</em> function of a <a href="hooks.html#GHookList">GHookList</a> calls
+this member of the hook that is being finalized</p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHookList">
+		<h3 id="glibhooklist">
+	GLib.HookList
+</h3>
+
+		<p>The <a href="hooks.html#GHookList">GLib.HookList</a> struct represents a list of hook functions.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="attributes1">Attributes</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GHookList.seq_id">
+		<td>
+		<p>
+		<i><em><code>gulong <em><code>seq_id</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the next free <a href="hooks.html#GHook">GHook</a> id</p>
+</td>
+</tr>
+
+						<tr id="GHookList.hook_size">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>hook_size</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the size of the <a href="hooks.html#GHookList">GHookList</a> elements, in bytes</p>
+</td>
+</tr>
+
+						<tr id="GHookList.is_setup">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>is_setup</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>1 if the <a href="hooks.html#GHookList">GHookList</a> has been initialized</p>
+</td>
+</tr>
+
+						<tr id="GHookList.hooks">
+		<td>
+		<p>
+		<i><em><code><a title="GHook" href="hooks.html#GHook">GHook</a> * <em><code>hooks</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the first <a href="hooks.html#GHook">GHook</a> element in the list</p>
+</td>
+</tr>
+
+						<tr id="GHookList.dummy3">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>dummy3</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>unused</p>
+</td>
+</tr>
+
+						<tr id="GHookList.finalize_hook">
+		<td>
+		<p>
+		<i><em><code><a title="GHookFinalizeFunc" href="hooks.html#GHookFinalizeFunc">GHookFinalizeFunc</a> <em><code>finalize_hook</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call to finalize a <a href="hooks.html#GHook">GHook</a> element.
+The default behaviour is to call the hooks <em>destroy</em> function</p>
+</td>
+</tr>
+
+						<tr id="GHookList.dummy">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>dummy</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>unused</p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHookFlagMask">
+		
+<h3 id="enum-glibhookflagmask">
+		enum GLib.HookFlagMask
+	</h3>
+
+		<p>Flags used internally in the <a href="hooks.html#GHook">GLib.Hook</a> implementation.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_HOOK_FLAG_ACTIVE"></a>
+		GLib.HookFlagMask.prototype.active
+		</p>
+	</td>
+	<td><p>set if the hook has not been destroyed</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_HOOK_FLAG_IN_CALL"></a>
+		GLib.HookFlagMask.prototype.in_call
+		</p>
+	</td>
+	<td><p>set if the hook is currently being run</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_HOOK_FLAG_MASK"></a>
+		GLib.HookFlagMask.prototype.mask
+		</p>
+	</td>
+	<td><p>A mask covering all bits reserved for
+hook flags; see <a href="hooks.html#G_HOOK_FLAG_USER_SHIFT">GLib.HOOK_FLAG_USER_SHIFT</a></p>
+</td>
+	<td>
+		<span class="value">Value: 15</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_HOOK_FLAG_USER_SHIFT">
+		
+<h3 class="constant" id="glibhook_flag_user_shift">
+	GLib.HOOK_FLAG_USER_SHIFT
+</h3>
+
+		<p>The position of the first bit which is not reserved for internal
+use be the <a href="hooks.html#GHook">GLib.Hook</a> implementation, i.e.
+<code>1 &lt;&lt; G_HOOK_FLAG_USER_SHIFT</code> is the first
+bit which can be used for application-defined flags.</p>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHookCheckFunc">
+		
+<h3 id="glibhookcheckfunc">
+	<span><code>GLib.HookCheckFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+(*GLib.HookCheckFunc) (<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</pre>
+
+<p>Defines the type of a hook function that can be invoked
+by <a href="hooks.html#g_hook_list_invoke_check">GLib.HookList.prototype.invoke_check</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data field of the <a href="hooks.html#GHook">GLib.Hook</a> is passed to the hook function here</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> if the <a href="hooks.html#GHook">GLib.Hook</a> should be destroyed</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHookFindFunc">
+		
+<h3 id="glibhookfindfunc">
+	<span><code>GLib.HookFindFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+(*GLib.HookFindFunc) (<a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>,
+                      <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</pre>
+
+<p>Defines the type of the function passed to <a href="../c/hooks.html#g_hook_find">g_hook_find (not introspectable)</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHook">GLib.Hook</a></p>
+</td>
+<td>
+<a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="../c/hooks.html#g_hook_find_func">g_hook_find_func (not introspectable)</a></p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the required <a href="hooks.html#GHook">GLib.Hook</a> has been found</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHookCompareFunc">
+		
+<h3 id="glibhookcomparefunc">
+	<span><code>GLib.HookCompareFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+(*GLib.HookCompareFunc) (<a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>,
+                         <a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>)</pre>
+
+<p>Defines the type of function used to compare <a href="hooks.html#GHook">GLib.Hook</a> elements in
+<a href="../c/hooks.html#g_hook_insert_sorted">g_hook_insert_sorted (not introspectable)</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>new_hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="hooks.html#GHook">GLib.Hook</a> being inserted</p>
+</td>
+<td>
+<a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>sibling:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="hooks.html#GHook">GLib.Hook</a> to compare with <em>new_hook</em></p>
+</td>
+<td>
+<a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a value &lt;= 0 if <em>new_hook</em> should be before <em>sibling</em></p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHookMarshaller">
+		
+<h3 id="glibhookmarshaller">
+	<span><code>GLib.HookMarshaller</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void (not introspectable)
+(*GLib.HookMarshaller) (<a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>,
+                        <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</pre>
+
+<p>Defines the type of function used by <a href="../c/hooks.html#g_hook_list_marshal">g_hook_list_marshal (not introspectable)</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHook">GLib.Hook</a></p>
+</td>
+<td>
+<a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>marshal_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void (not introspectable)
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHookCheckMarshaller">
+		
+<h3 id="glibhookcheckmarshaller">
+	<span><code>GLib.HookCheckMarshaller</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+(*GLib.HookCheckMarshaller) (<a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>,
+                             <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</pre>
+
+<p>Defines the type of function used by <a href="../c/hooks.html#g_hook_list_marshal_check">g_hook_list_marshal_check (not introspectable)</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHook">GLib.Hook</a></p>
+</td>
+<td>
+<a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>marshal_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> if <em>hook</em> should be destroyed</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHookFunc">
+		
+<h3 id="glibhookfunc">
+	<span><code>GLib.HookFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void (not introspectable)
+(*GLib.HookFunc) (<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</pre>
+
+<p>Defines the type of a hook function that can be invoked
+by <a href="hooks.html#g_hook_list_invoke">GLib.HookList.prototype.invoke</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data field of the <a href="hooks.html#GHook">GLib.Hook</a> is passed to the hook function here</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void (not introspectable)
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHookFinalizeFunc">
+		
+<h3 id="glibhookfinalizefunc">
+	<span><code>GLib.HookFinalizeFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void (not introspectable)
+(*GLib.HookFinalizeFunc) (<a title="GLib.HookList" href="hooks.html#GHookList">GLib.HookList</a>,
+                          <a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>)</pre>
+
+<p>Defines the type of function to be called when a hook in a
+list of hooks gets finalized.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GLib.HookList</a></p>
+</td>
+<td>
+<a title="GLib.HookList" href="hooks.html#GHookList">GLib.HookList</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>the hook in <em>hook_list</em> that gets finalized</p>
+</td>
+<td>
+<a title="GLib.Hook" href="hooks.html#GHook">GLib.Hook</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void (not introspectable)
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

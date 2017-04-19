@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/fileutils.html#parameters14", "fragment": "tmpl \ntemplate filename \nflags \nflags to pass to an open call in addition to O_EXCL and O_CREAT which are passed automatically \nmode \npermissions to create the temporary file with \n"});

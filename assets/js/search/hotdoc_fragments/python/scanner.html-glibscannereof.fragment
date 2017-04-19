@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/scanner.html#glibscannereof", "fragment": "GLib.Scanner.eof \nReturns True if the scanner has reached the end of the file or text buffer. \n"});

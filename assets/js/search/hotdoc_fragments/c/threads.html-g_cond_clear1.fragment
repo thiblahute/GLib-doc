@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#g_cond_clear1", "fragment": "g_cond_clear \nFrees the resources allocated to a GCond with g_cond_init. \nThis function should not be used with a GCond that has been statically allocated. \nCalling g_cond_clear for a GCond on which threads are blocking leads to undefined behaviour. \n"});

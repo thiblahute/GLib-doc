@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvarianttype.html#g_variant_type_copy1", "fragment": "g_variant_type_copy \nMakes a copy of a GVariantType. It is appropriate to call g_variant_type_free on the return value. type may not be NULL. \n"});

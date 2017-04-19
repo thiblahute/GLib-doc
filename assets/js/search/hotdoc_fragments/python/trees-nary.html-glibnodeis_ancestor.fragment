@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/trees-nary.html#glibnodeis_ancestor", "fragment": "GLib.Node.is_ancestor \nReturns True if node is an ancestor of descendant. This is true if node is the parent of descendant or if node is the grandparent of descendant etc. \n"});

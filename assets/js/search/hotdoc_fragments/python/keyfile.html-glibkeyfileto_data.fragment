@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/keyfile.html#glibkeyfileto_data", "fragment": "GLib.KeyFile.to_data \nThis function outputs key_file as a string. \nNote that this function never reports an error so it is safe to pass None as error. \n"});

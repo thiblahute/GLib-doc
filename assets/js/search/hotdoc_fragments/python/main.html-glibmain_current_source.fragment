@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibmain_current_source", "fragment": "GLib.main_current_source \nReturns the currently firing source for this thread. \n"});

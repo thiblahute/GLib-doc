@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays.html#g_array_sort1", "fragment": "g_array_sort \nSorts a GArray using compare_func which should be a qsort style comparison function returns less than zero for first arg is less than second arg zero for equal greater zero if first arg is greater than second arg \nThis is guaranteed to be a stable sort since version \n"});

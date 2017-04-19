@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_print_string1", "fragment": "g_variant_print_string \nBehaves as g_variant_print but operates on a GString. \nIf string is non NULL then it is appended to and returned. Else a new empty GString is allocated and it is returned. \n"});

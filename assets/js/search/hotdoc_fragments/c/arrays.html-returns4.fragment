@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays.html#returns4", "fragment": "\nthe element data if free_segment is FALSE otherwise NULL. The element data should be freed using g_free. \n"});

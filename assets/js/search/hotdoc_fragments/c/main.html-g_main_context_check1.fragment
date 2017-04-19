@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/main.html#g_main_context_check1", "fragment": "g_main_context_check \nPasses the results of polling back to the main loop. \nYou must have successfully acquired the context with g_main_context_acquire before you may call this function. \n"});

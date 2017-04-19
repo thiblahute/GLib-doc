@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hmac.html#g_hmac_get_digest1", "fragment": "g_hmac_get_digest \nGets the digest from checksum as a raw binary array and places it into buffer. The size of the digest depends on the type of checksum. \nOnce this function has been called the GHmac is closed and can no longer be updated with g_checksum_update. \n"});

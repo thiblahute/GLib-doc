@@ -1,0 +1,1 @@
+urls_downloaded_cb({"token": "g_log_level_error", "urls": ["c/messages.html#g_log_set_fatal_mask1", "c/messages.html#g_log_set_handler1", "c/messages.html#g_log_set_always_fatal1", "c/messages.html#g_log_structured1", "c/messages.html#g_log_structured_array1", "c/messages.html#g_log_default_handler1", "c/messages.html#G_LOG_FLAG_FATAL"]});

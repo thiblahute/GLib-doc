@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date-time.html#g_date_time_difference1", "fragment": "g_date_time_difference \nCalculates the difference in time between end and begin. The GTimeSpan that is returned is effectively end begin ie positive if the first parameter is larger \n"});

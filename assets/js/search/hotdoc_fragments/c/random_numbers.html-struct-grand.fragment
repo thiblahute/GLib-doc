@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/random_numbers.html#struct-grand", "fragment": "struct GRand \nThe GRand struct is an opaque data structure. It should only be accessed through the g_rand_ functions. \n"});

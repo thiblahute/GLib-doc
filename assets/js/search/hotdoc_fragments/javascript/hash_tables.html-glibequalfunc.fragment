@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hash_tables.html#glibequalfunc", "fragment": "GLib.EqualFunc \nSpecifies the type of a function used to test two values for equality. The function should return true if both values are equal and false otherwise. \n"});

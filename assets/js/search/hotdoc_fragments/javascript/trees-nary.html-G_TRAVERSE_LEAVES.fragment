@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/trees-nary.html#G_TRAVERSE_LEAVES", "fragment": "only leaf nodes should be visited. This name has been introduced in for older version use GLib.TraverseFlags.prototype.leafs. \nGLib.TraverseFlags.prototype.non_leaves \n"});

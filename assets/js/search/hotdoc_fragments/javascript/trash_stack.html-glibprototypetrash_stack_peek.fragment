@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/trash_stack.html#glibprototypetrash_stack_peek", "fragment": "GLib.prototype.trash_stack_peek \nReturns the element at the top of a GLib.TrashStack which may be null. \n"});

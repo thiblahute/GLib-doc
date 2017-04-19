@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hooks.html#g_hook_next_valid1", "fragment": "g_hook_next_valid \nReturns the next GHook in a GHookList which has not been destroyed. The reference count for the GHook is incremented so you must call g_hook_unref to restore it when no longer needed. Or continue to call g_hook_next_valid until NULL is returned. \n"});

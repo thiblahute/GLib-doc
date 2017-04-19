@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/linked_lists_single.html#g_slist_length1", "fragment": "g_slist_length \nGets the number of elements in a GSList. \nThis function iterates over the whole list to count its elements. To check whether the list is non empty it is faster to check list against NULL. \n"});

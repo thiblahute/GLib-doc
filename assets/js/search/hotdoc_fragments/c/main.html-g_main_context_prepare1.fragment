@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/main.html#g_main_context_prepare1", "fragment": "g_main_context_prepare \nPrepares to poll sources within a main loop. The resulting information for polling is determined by calling g_main_context_query \nYou must have successfully acquired the context with g_main_context_acquire before you may call this function. \n"});

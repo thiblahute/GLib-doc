@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/thread_pools.html#g_thread_pool_get_max_threads", "fragment": "GLib.ThreadPool.prototype.get_max_threads \nReturns the maximal number of threads for pool. \n"});

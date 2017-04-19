@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/unicode.html#parameters10", "fragment": "p \npointer to the start of a UTF encoded string \nmax \nthe maximum number of bytes to examine. If max is less than then the string is assumed to be nul terminated. If max is p will not be examined and may be NULL. If max is greater than up to max bytes are examined \n"});

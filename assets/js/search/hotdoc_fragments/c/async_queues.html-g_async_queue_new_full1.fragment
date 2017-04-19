@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/async_queues.html#g_async_queue_new_full1", "fragment": "g_async_queue_new_full \nCreates a new asynchronous queue and sets up a destroy notify function that is used to free any remaining queue items when the queue is destroyed after the final unref. \n"});

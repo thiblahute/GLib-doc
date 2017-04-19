@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hmac.html#parameters2", "fragment": "hmac \na GLib.Hmac \nbuffer \noutput buffer \ndigest_len \nan inout parameter. The caller initializes it to the size of buffer. After the call it contains the length of the digest \nSince \n"});

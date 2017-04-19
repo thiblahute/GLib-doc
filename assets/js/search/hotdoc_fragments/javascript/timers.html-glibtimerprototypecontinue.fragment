@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/timers.html#glibtimerprototypecontinue", "fragment": "GLib.Timer.prototype.continue \nResumes a timer that has previously been stopped with GLib.Timer.prototype.stop. GLib.Timer.prototype.stop must be called before using this function. \n"});

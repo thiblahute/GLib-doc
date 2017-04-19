@@ -1,0 +1,2079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GLogField</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="messages.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="javascript">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="messages.markdown">
+        <h1 id="glogfield">GLogField</h1>
+    </div>
+        
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_log_set_fatal_mask">
+		
+<h3 id="glibprototypelog_set_fatal_mask">
+	<span><code>GLib.prototype.log_set_fatal_mask</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.log_set_fatal_mask(log_domain: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, fatal_mask: <a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>): {
+    // javascript wrapper for 'g_log_set_fatal_mask'
+}</pre>
+
+<p>Sets the log levels which are fatal in the given domain.
+<a href="messages.html#G_LOG_LEVEL_ERROR">GLib.LogLevelFlags.prototype.level_error</a> is always fatal.</p>
+<p>This has no effect on structured log messages (using <a href="../c/messages.html#g_log_structured">g_log_structured (not introspectable)</a> or
+<a href="messages.html#g_log_structured_array">GLib.prototype.log_structured_array</a>). To change the fatal behaviour for specific log
+messages, programs must install a custom log writer function using
+<a href="messages.html#g_log_set_writer_func">GLib.prototype.log_set_writer_func</a>. See
+[Using Structured Logging][using-structured-logging].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log domain</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fatal_mask:</code></em></i>
+		</p>
+	</td>
+		<td><p>the new fatal mask</p>
+</td>
+<td>
+<a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the old fatal mask for the log domain</p>
+
+	</td>
+	<td>
+		<a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_log_remove_handler">
+		
+<h3 id="glibprototypelog_remove_handler">
+	<span><code>GLib.prototype.log_remove_handler</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.log_remove_handler(log_domain: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, handler_id: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_log_remove_handler'
+}</pre>
+
+<p>Removes the log handler.</p>
+<p>This has no effect if structured logging is enabled; see
+[Using Structured Logging][using-structured-logging].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log domain</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>handler_id:</code></em></i>
+		</p>
+	</td>
+		<td><p>the id of the handler, which was returned
+in <a href="../c/messages.html#g_log_set_handler">g_log_set_handler (not introspectable)</a></p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_log_set_always_fatal">
+		
+<h3 id="glibprototypelog_set_always_fatal">
+	<span><code>GLib.prototype.log_set_always_fatal</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.log_set_always_fatal(fatal_mask: <a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>): {
+    // javascript wrapper for 'g_log_set_always_fatal'
+}</pre>
+
+<p>Sets the message levels which are always fatal, in any log domain.
+When a message with any of these levels is logged the program terminates.
+You can only set the levels defined by GLib to be fatal.
+<a href="messages.html#G_LOG_LEVEL_ERROR">GLib.LogLevelFlags.prototype.level_error</a> is always fatal.</p>
+<p>You can also make some message levels fatal at runtime by setting
+the <code>G_DEBUG</code> environment variable (see
+<a href="glib-running.html">Running GLib Applications</a>).</p>
+<p>Libraries should not call this function, as it affects all messages logged
+by a process, including those from other libraries.</p>
+<p>Structured log messages (using <a href="../c/messages.html#g_log_structured">g_log_structured (not introspectable)</a> and
+<a href="messages.html#g_log_structured_array">GLib.prototype.log_structured_array</a>) are fatal only if the default log writer is used;
+otherwise it is up to the writer function to determine which log messages
+are fatal. See [Using Structured Logging][using-structured-logging].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fatal_mask:</code></em></i>
+		</p>
+	</td>
+		<td><p>the mask containing bits set for each level
+of error which is to be fatal</p>
+</td>
+<td>
+<a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the old fatal mask</p>
+
+	</td>
+	<td>
+		<a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_log_variant">
+		
+<h3 id="glibprototypelog_variant">
+	<span><code>GLib.prototype.log_variant</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.log_variant(log_domain: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, log_level: <a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>, fields: <a title="GLib.Variant" href="gvariant.html#GVariant">GLib.Variant</a>): {
+    // javascript wrapper for 'g_log_variant'
+}</pre>
+
+<p>Log a message with structured data, accepting the data within a <a href="gvariant.html#GVariant">GLib.Variant</a>. This
+version is especially useful for use in other languages, via introspection.</p>
+<p>The only mandatory item in the <em>fields</em> dictionary is the "MESSAGE" which must
+contain the text shown to the user.</p>
+<p>The values in the <em>fields</em> dictionary are likely to be of type String
+(#G_VARIANT_TYPE_STRING). Array of bytes (#G_VARIANT_TYPE_BYTESTRING) is also
+supported. In this case the message is handled as binary and will be forwarded
+to the log writer as such. The size of the array should not be higher than
+<a href="../c/types.html#G_MAXSSIZE">G_MAXSSIZE (not introspectable)</a>. Otherwise it will be truncated to this size. For other types
+<a href="gvariant.html#g_variant_print">GLib.Variant.prototype.print</a> will be used to convert the value into a string.</p>
+<p>For more details on its usage and about the parameters, see <a href="../c/messages.html#g_log_structured">g_log_structured (not introspectable)</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>log domain, usually <a href="messages.html#G_LOG_DOMAIN">GLib.LOG_DOMAIN</a></p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>log level, either from <a href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>, or a user-defined
+level</p>
+</td>
+<td>
+<a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>a dictionary (#GVariant of the type <a href="../c/gvarianttype.html#G_VARIANT_TYPE_VARDICT">G_VARIANT_TYPE_VARDICT (not introspectable)</a>)
+containing the key-value pairs of message data.</p>
+</td>
+<td>
+<a title="GLib.Variant" href="gvariant.html#GVariant">GLib.Variant</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_log_writer_supports_color">
+		
+<h3 id="glibprototypelog_writer_supports_color">
+	<span><code>GLib.prototype.log_writer_supports_color</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.log_writer_supports_color(output_fd: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_log_writer_supports_color'
+}</pre>
+
+<p>Check whether the given <em>output_fd</em> file descriptor supports ANSI color
+escape sequences. If so, they can safely be used when formatting log
+messages.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>output_fd:</code></em></i>
+		</p>
+	</td>
+		<td><p>output file descriptor to check</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if ANSI color escapes are supported, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_log_set_writer_func">
+		
+<h3 id="glibprototypelog_set_writer_func">
+	<span><code>GLib.prototype.log_set_writer_func</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.log_set_writer_func(func: <a title="GLib.LogWriterFunc" href="messages.html#GLogWriterFunc">GLib.LogWriterFunc</a>, user_data: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, user_data_free: <a title="GLib.DestroyNotify" href="datasets.html#GDestroyNotify">GLib.DestroyNotify</a>): {
+    // javascript wrapper for 'g_log_set_writer_func'
+}</pre>
+
+<p>Set a writer function which will be called to format and write out each log
+message. Each program should set a writer function, or the default writer
+(<a href="messages.html#g_log_writer_default">GLib.prototype.log_writer_default</a>) will be used.</p>
+<p>Libraries <strong>must not</strong> call this function â€” only programs are allowed to
+install a writer function, as there must be a single, central point where
+log messages are formatted and outputted.</p>
+<p>There can only be one writer function. It is an error to set more than one.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>log writer function, which must not be <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></p>
+</td>
+<td>
+<a title="GLib.LogWriterFunc" href="messages.html#GLogWriterFunc">GLib.LogWriterFunc</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data to pass to <em>func</em></p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data_free:</code></em></i>
+		</p>
+	</td>
+		<td><p>function to free <em>user_data</em> once itÃ¢â‚¬â„¢s
+finished with, if non-%NULL</p>
+</td>
+<td>
+<a title="GLib.DestroyNotify" href="datasets.html#GDestroyNotify">GLib.DestroyNotify</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_log_structured_array">
+		
+<h3 id="glibprototypelog_structured_array">
+	<span><code>GLib.prototype.log_structured_array</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.log_structured_array(log_level: <a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>, fields: <a title="GLib.LogField" href="messages.html#GLogField">GLib.LogField</a>, n_fields: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_log_structured_array'
+}</pre>
+
+<p>Log a message with structured data. The message will be passed through to the
+log writer set by the application using <a href="messages.html#g_log_set_writer_func">GLib.prototype.log_set_writer_func</a>. If the
+message is fatal (i.e. its log level is <a href="messages.html#G_LOG_LEVEL_ERROR">GLib.LogLevelFlags.prototype.level_error</a>), the program will
+be aborted at the end of this function.</p>
+<p>See <a href="../c/messages.html#g_log_structured">g_log_structured (not introspectable)</a> for more documentation.</p>
+<p>This assumes that <em>log_level</em> is already present in <em>fields</em> (typically as the
+<code>PRIORITY</code> field).</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>log level, either from <a href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>, or a user-defined
+level</p>
+</td>
+<td>
+<a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>keyâ€“value pairs of structured data to add
+to the log message</p>
+</td>
+<td>
+<a title="GLib.LogField" href="messages.html#GLogField">GLib.LogField</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n_fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of elements in the <em>fields</em> array</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_log_writer_journald">
+		
+<h3 id="glibprototypelog_writer_journald">
+	<span><code>GLib.prototype.log_writer_journald</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.log_writer_journald(log_level: <a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>, fields: <a title="GLib.LogField" href="messages.html#GLogField">GLib.LogField</a>, n_fields: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, user_data: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_log_writer_journald'
+}</pre>
+
+<p>Format a structured log message and send it to the systemd journal as a set
+of keyâ€“value pairs. All fields are sent to the journal, but if a field has
+length zero (indicating program-specific data) then only its key will be
+sent.</p>
+<p>This is suitable for use as a <a href="messages.html#GLogWriterFunc">GLib.LogWriterFunc</a>.</p>
+<p>If GLib has been compiled without systemd support, this function is still
+defined, but will always return <a href="messages.html#G_LOG_WRITER_UNHANDLED">GLib.LogWriterOutput.prototype.unhandled</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>log level, either from <a href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>, or a user-defined
+level</p>
+</td>
+<td>
+<a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>keyâ€“value pairs of structured data forming
+the log message</p>
+</td>
+<td>
+<a title="GLib.LogField" href="messages.html#GLogField">GLib.LogField</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n_fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of elements in the <em>fields</em> array</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="messages.html#g_log_set_writer_func">GLib.prototype.log_set_writer_func</a></p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="messages.html#G_LOG_WRITER_HANDLED">GLib.LogWriterOutput.prototype.handled</a> on success, <a href="messages.html#G_LOG_WRITER_UNHANDLED">GLib.LogWriterOutput.prototype.unhandled</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="GLib.LogWriterOutput" href="messages.html#GLogWriterOutput">GLib.LogWriterOutput</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_log_default_handler">
+		
+<h3 id="glibprototypelog_default_handler">
+	<span><code>GLib.prototype.log_default_handler</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.log_default_handler(log_domain: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, log_level: <a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>, message: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, unused_data: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_log_default_handler'
+}</pre>
+
+<p>The default log handler set up by GLib; <a href="../c/messages.html#g_log_set_default_handler">g_log_set_default_handler (not introspectable)</a>
+allows to install an alternate default log handler.
+This is used if no log handler has been set for the particular log
+domain and log level combination. It outputs the message to stderr
+or stdout and if the log level is fatal it calls abort. It automatically
+prints a new-line character after the message, so one does not need to be
+manually included in <em>message</em>.</p>
+<p>The behavior of this log handler can be influenced by a number of
+environment variables:</p>
+<ul>
+<li>
+<p><code>G_MESSAGES_PREFIXED</code>: A :-separated list of log levels for which
+messages should be prefixed by the program name and PID of the
+aplication.</p>
+</li>
+<li>
+<p><code>G_MESSAGES_DEBUG</code>: A space-separated list of log domains for
+which debug and informational messages are printed. By default
+these messages are not printed.</p>
+</li>
+</ul>
+<p>stderr is used for levels <a href="messages.html#G_LOG_LEVEL_ERROR">GLib.LogLevelFlags.prototype.level_error</a>, <a href="messages.html#G_LOG_LEVEL_CRITICAL">GLib.LogLevelFlags.prototype.level_critical</a>,
+<a href="messages.html#G_LOG_LEVEL_WARNING">GLib.LogLevelFlags.prototype.level_warning</a> and <a href="messages.html#G_LOG_LEVEL_MESSAGE">GLib.LogLevelFlags.prototype.level_message</a>. stdout is used for
+the rest.</p>
+<p>This has no effect if structured logging is enabled; see
+[Using Structured Logging][using-structured-logging].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log domain of the message, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> for the
+default "" application domain</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>the level of the message</p>
+</td>
+<td>
+<a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>message:</code></em></i>
+		</p>
+	</td>
+		<td><p>the message</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>unused_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data passed from <a href="../c/messages.html#g_log">g_log (not introspectable)</a> which is unused</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_log_writer_format_fields">
+		
+<h3 id="glibprototypelog_writer_format_fields">
+	<span><code>GLib.prototype.log_writer_format_fields</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.log_writer_format_fields(log_level: <a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>, fields: <a title="GLib.LogField" href="messages.html#GLogField">GLib.LogField</a>, n_fields: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, use_color: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_log_writer_format_fields'
+}</pre>
+
+<p>Format a structured log message as a string suitable for outputting to the
+terminal (or elsewhere). This will include the values of all fields it knows
+how to interpret, which includes <code>MESSAGE</code> and <code>GLIB_DOMAIN</code> (see the
+documentation for <a href="../c/messages.html#g_log_structured">g_log_structured (not introspectable)</a>). It does not include values from
+unknown fields.</p>
+<p>The returned string does <strong>not</strong> have a trailing new-line character. It is
+encoded in the character set of the current locale, which is not necessarily
+UTF-8.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>log level, either from <a href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>, or a user-defined
+level</p>
+</td>
+<td>
+<a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>keyâ€“value pairs of structured data forming
+the log message</p>
+</td>
+<td>
+<a title="GLib.LogField" href="messages.html#GLogField">GLib.LogField</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n_fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of elements in the <em>fields</em> array</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>use_color:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> to use ANSI color escape sequences when formatting the
+message, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> to not</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>string containing the formatted log message, in
+the character set of the current locale</p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_log_writer_default">
+		
+<h3 id="glibprototypelog_writer_default">
+	<span><code>GLib.prototype.log_writer_default</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.log_writer_default(log_level: <a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>, fields: <a title="GLib.LogField" href="messages.html#GLogField">GLib.LogField</a>, n_fields: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, user_data: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_log_writer_default'
+}</pre>
+
+<p>Format a structured log message and output it to the default log destination
+for the platform. On Linux, this is typically the systemd journal, falling
+back to <code>stdout</code> or <code>stderr</code> if running from the terminal or if output is
+being redirected to a file.</p>
+<p>Support for other platform-specific logging mechanisms may be added in
+future. Distributors of GLib may modify this function to impose their own
+(documented) platform-specific log writing policies.</p>
+<p>This is suitable for use as a <a href="messages.html#GLogWriterFunc">GLib.LogWriterFunc</a>, and is the default writer used
+if no other is set using <a href="messages.html#g_log_set_writer_func">GLib.prototype.log_set_writer_func</a>.</p>
+<p>As with <a href="messages.html#g_log_default_handler">GLib.prototype.log_default_handler</a>, this function drops debug and informational
+messages unless their log domain (or <code>all</code>) is listed in the space-separated
+<code>G_MESSAGES_DEBUG</code> environment variable.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>log level, either from <a href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>, or a user-defined
+level</p>
+</td>
+<td>
+<a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>keyâ€“value pairs of structured data forming
+the log message</p>
+</td>
+<td>
+<a title="GLib.LogField" href="messages.html#GLogField">GLib.LogField</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n_fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of elements in the <em>fields</em> array</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="messages.html#g_log_set_writer_func">GLib.prototype.log_set_writer_func</a></p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="messages.html#G_LOG_WRITER_HANDLED">GLib.LogWriterOutput.prototype.handled</a> on success, <a href="messages.html#G_LOG_WRITER_UNHANDLED">GLib.LogWriterOutput.prototype.unhandled</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="GLib.LogWriterOutput" href="messages.html#GLogWriterOutput">GLib.LogWriterOutput</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.46;" id="g_log_set_handler_full">
+		
+<h3 id="glibprototypelog_set_handler_full">
+	<span><code>GLib.prototype.log_set_handler_full</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.log_set_handler_full(log_domain: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, log_levels: <a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>, log_func: <a title="GLib.LogFunc" href="messages.html#GLogFunc">GLib.LogFunc</a>, user_data: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, destroy: <a title="GLib.DestroyNotify" href="datasets.html#GDestroyNotify">GLib.DestroyNotify</a>): {
+    // javascript wrapper for 'g_log_set_handler_full'
+}</pre>
+
+<p>Like g_log_sets_handler, but takes a destroy notify for the <em>user_data</em>.</p>
+<p>This has no effect if structured logging is enabled; see
+[Using Structured Logging][using-structured-logging].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log domain, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> for the default ""
+application domain</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_levels:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log levels to apply the log handler for.
+To handle fatal and recursive messages as well, combine
+the log levels with the <a href="messages.html#G_LOG_FLAG_FATAL">GLib.LogLevelFlags.prototype.flag_fatal</a> and
+<a href="messages.html#G_LOG_FLAG_RECURSION">GLib.LogLevelFlags.prototype.flag_recursion</a> bit flags.</p>
+</td>
+<td>
+<a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log handler function</p>
+</td>
+<td>
+<a title="GLib.LogFunc" href="messages.html#GLogFunc">GLib.LogFunc</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data passed to the log handler</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>destroy:</code></em></i>
+		</p>
+	</td>
+		<td><p>destroy notify for <em>user_data</em>, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></p>
+</td>
+<td>
+<a title="GLib.DestroyNotify" href="datasets.html#GDestroyNotify">GLib.DestroyNotify</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the id of the new handler</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.46
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_log_writer_standard_streams">
+		
+<h3 id="glibprototypelog_writer_standard_streams">
+	<span><code>GLib.prototype.log_writer_standard_streams</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.log_writer_standard_streams(log_level: <a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>, fields: <a title="GLib.LogField" href="messages.html#GLogField">GLib.LogField</a>, n_fields: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, user_data: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_log_writer_standard_streams'
+}</pre>
+
+<p>Format a structured log message and print it to either <code>stdout</code> or <code>stderr</code>,
+depending on its log level. <a href="messages.html#G_LOG_LEVEL_INFO">GLib.LogLevelFlags.prototype.level_info</a> and <a href="messages.html#G_LOG_LEVEL_DEBUG">GLib.LogLevelFlags.prototype.level_debug</a> messages
+are sent to <code>stdout</code>; all other log levels are sent to <code>stderr</code>. Only fields
+which are understood by this function are included in the formatted string
+which is printed.</p>
+<p>If the output stream supports ANSI color escape sequences, they will be used
+in the output.</p>
+<p>A trailing new-line character is added to the log message when it is printed.</p>
+<p>This is suitable for use as a <a href="messages.html#GLogWriterFunc">GLib.LogWriterFunc</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>log level, either from <a href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>, or a user-defined
+level</p>
+</td>
+<td>
+<a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>keyâ€“value pairs of structured data forming
+the log message</p>
+</td>
+<td>
+<a title="GLib.LogField" href="messages.html#GLogField">GLib.LogField</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n_fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of elements in the <em>fields</em> array</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="messages.html#g_log_set_writer_func">GLib.prototype.log_set_writer_func</a></p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="messages.html#G_LOG_WRITER_HANDLED">GLib.LogWriterOutput.prototype.handled</a> on success, <a href="messages.html#G_LOG_WRITER_UNHANDLED">GLib.LogWriterOutput.prototype.unhandled</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="GLib.LogWriterOutput" href="messages.html#GLogWriterOutput">GLib.LogWriterOutput</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_log_writer_is_journald">
+		
+<h3 id="glibprototypelog_writer_is_journald">
+	<span><code>GLib.prototype.log_writer_is_journald</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.log_writer_is_journald(output_fd: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_log_writer_is_journald'
+}</pre>
+
+<p>Check whether the given <em>output_fd</em> file descriptor is a connection to the
+systemd journal, or something else (like a log file or <code>stdout</code> or
+<code>stderr</code>).</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>output_fd:</code></em></i>
+		</p>
+	</td>
+		<td><p>output file descriptor to check</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if <em>output_fd</em> points to the journal, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="GLogField">
+		<h3 id="gliblogfield">
+	GLib.LogField
+</h3>
+
+		<p>Structure representing a single field in a structured log entry. See
+<a href="../c/messages.html#g_log_structured">g_log_structured (not introspectable)</a> for details.</p>
+<p>Log fields may contain arbitrary values, including binary with embedded nul
+bytes. If the field contains a string, the string must be UTF-8 encoded and
+have a trailing nul byte. Otherwise, <em>length</em> must be set to a non-negative
+value.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="attributes">Attributes</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GLogField.key">
+		<td>
+		<p>
+		<i><em><code>const gchar* <em><code>key</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>field name (UTF-8 string)</p>
+</td>
+</tr>
+
+						<tr id="GLogField.value">
+		<td>
+		<p>
+		<i><em><code>gconstpointer <em><code>value</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>field value (arbitrary bytes)</p>
+</td>
+</tr>
+
+						<tr id="GLogField.length">
+		<td>
+		<p>
+		<i><em><code>gssize <em><code>length</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>value</em>, in bytes, or -1 if it is nul-terminated</p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GLogLevelFlags">
+		
+<h3 id="enum-glibloglevelflags">
+		enum GLib.LogLevelFlags
+	</h3>
+
+		<p>Flags specifying the level of log messages.</p>
+<p>It is possible to change how GLib treats messages of the various
+levels using <a href="../c/messages.html#g_log_set_handler">g_log_set_handler (not introspectable)</a> and <a href="messages.html#g_log_set_fatal_mask">GLib.prototype.log_set_fatal_mask</a>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_FLAG_RECURSION"></a>
+		GLib.LogLevelFlags.prototype.flag_recursion
+		</p>
+	</td>
+	<td><p>internal flag</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_FLAG_FATAL"></a>
+		GLib.LogLevelFlags.prototype.flag_fatal
+		</p>
+	</td>
+	<td><p>internal flag</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_LEVEL_ERROR"></a>
+		GLib.LogLevelFlags.prototype.level_error
+		</p>
+	</td>
+	<td><p>log level for errors, see <a href="../c/messages.html#g_error">g_error (not introspectable)</a>.
+This level is also used for messages produced by <a href="../c/testing.html#g_assert">g_assert (not introspectable)</a>.</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_LEVEL_CRITICAL"></a>
+		GLib.LogLevelFlags.prototype.level_critical
+		</p>
+	</td>
+	<td><p>log level for critical warning messages, see
+<a href="../c/messages.html#g_critical">g_critical (not introspectable)</a>.
+This level is also used for messages produced by <a href="../c/warnings.html#g_return_if_fail">g_return_if_fail (not introspectable)</a>
+and <a href="../c/warnings.html#g_return_val_if_fail">g_return_val_if_fail (not introspectable)</a>.</p>
+</td>
+	<td>
+		<span class="value">Value: 8</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_LEVEL_WARNING"></a>
+		GLib.LogLevelFlags.prototype.level_warning
+		</p>
+	</td>
+	<td><p>log level for warnings, see <a href="../c/messages.html#g_warning">g_warning (not introspectable)</a></p>
+</td>
+	<td>
+		<span class="value">Value: 16</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_LEVEL_MESSAGE"></a>
+		GLib.LogLevelFlags.prototype.level_message
+		</p>
+	</td>
+	<td><p>log level for messages, see <a href="../c/messages.html#g_message">g_message (not introspectable)</a></p>
+</td>
+	<td>
+		<span class="value">Value: 32</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_LEVEL_INFO"></a>
+		GLib.LogLevelFlags.prototype.level_info
+		</p>
+	</td>
+	<td><p>log level for informational messages, see <a href="../c/messages.html#g_info">g_info (not introspectable)</a></p>
+</td>
+	<td>
+		<span class="value">Value: 64</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_LEVEL_DEBUG"></a>
+		GLib.LogLevelFlags.prototype.level_debug
+		</p>
+	</td>
+	<td><p>log level for debug messages, see <a href="../c/messages.html#g_debug">g_debug (not introspectable)</a></p>
+</td>
+	<td>
+		<span class="value">Value: 128</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_LEVEL_MASK"></a>
+		GLib.LogLevelFlags.prototype.level_mask
+		</p>
+	</td>
+	<td><p>a mask including all log levels</p>
+</td>
+	<td>
+		<span class="value">Value: -4</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="GLogWriterOutput">
+		
+<h3 id="enum-gliblogwriteroutput">
+		enum GLib.LogWriterOutput
+	</h3>
+
+		<p>Return values from <a href="messages.html#GLogWriterFunc">GLib.LogWriterFunc</a> to indicate whether the given log entry
+was successfully handled by the writer, or whether there was an error in
+handling it (and hence a fallback writer should be used).</p>
+<p>If a <a href="messages.html#GLogWriterFunc">GLib.LogWriterFunc</a> ignores a log entry, it should return
+<a href="messages.html#G_LOG_WRITER_HANDLED">GLib.LogWriterOutput.prototype.handled</a>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members1">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_WRITER_HANDLED"></a>
+		GLib.LogWriterOutput.prototype.handled
+		</p>
+	</td>
+	<td><p>Log writer has handled the log entry.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_WRITER_UNHANDLED"></a>
+		GLib.LogWriterOutput.prototype.unhandled
+		</p>
+	</td>
+	<td><p>Log writer could not handle the log entry.</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_LOG_DOMAIN">
+		
+<h3 class="constant" id="gliblog_domain">
+	GLib.LOG_DOMAIN
+</h3>
+
+		<p>Defines the log domain.</p>
+<p>For applications, this is typically left as the default <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>
+(or "") domain. Libraries should define this so that any messages
+which they log can be differentiated from messages from other
+libraries and application code. But be careful not to define
+it in any public header files.</p>
+<p>For example, GTK+ uses this in its Makefile.am:</p>
+<pre><code class="language-["> AM_CPPFLAGS = -DG_LOG_DOMAIN=\"Gtk\"
+</code></pre>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_LOG_FATAL_MASK">
+		
+<h3 class="constant" id="gliblog_fatal_mask">
+	GLib.LOG_FATAL_MASK
+</h3>
+
+		<p>GLib log levels that are considered fatal by default.</p>
+<p>This is not used if structured logging is enabled; see
+[Using Structured Logging][using-structured-logging].</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_LOG_LEVEL_USER_SHIFT">
+		
+<h3 class="constant" id="gliblog_level_user_shift">
+	GLib.LOG_LEVEL_USER_SHIFT
+</h3>
+
+		<p>Log levels below 1&lt;&lt;G_LOG_LEVEL_USER_SHIFT are used by GLib.
+Higher bits can be used for user-defined log levels.</p>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="GLogWriterFunc">
+		
+<h3 id="gliblogwriterfunc">
+	<span><code>GLib.LogWriterFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="GLib.LogWriterOutput" href="messages.html#GLogWriterOutput">GLib.LogWriterOutput</a>
+(*GLib.LogWriterFunc) (<a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>,
+                       <a title="GLib.LogField" href="messages.html#GLogField">GLib.LogField</a>,
+                       <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>,
+                       <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</pre>
+
+<p>Writer function for log entries. A log entry is a collection of one or more
+<a href="messages.html#GLogField">GLib.LogField</a>, using the standard <a href="https://www.freedesktop.org/software/systemd/man/systemd.journal-fields.html">field names from journal
+specification</a>.
+See <a href="../c/messages.html#g_log_structured">g_log_structured (not introspectable)</a> for more information.</p>
+<p>Writer functions must ignore fields which they do not recognise, unless they
+can write arbitrary binary output, as field values may be arbitrary binary.</p>
+<p><em>log_level</em> is guaranteed to be included in <em>fields</em> as the <code>PRIORITY</code> field,
+but is provided separately for convenience of deciding whether or where to
+output the log entry.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>log level of the message</p>
+</td>
+<td>
+<a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>fields forming the message</p>
+</td>
+<td>
+<a title="GLib.LogField" href="messages.html#GLogField">GLib.LogField</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n_fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of <em>fields</em></p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="messages.html#g_log_set_writer_func">GLib.prototype.log_set_writer_func</a></p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="messages.html#G_LOG_WRITER_HANDLED">GLib.LogWriterOutput.prototype.handled</a> if the log entry was handled successfully;
+<a href="messages.html#G_LOG_WRITER_UNHANDLED">GLib.LogWriterOutput.prototype.unhandled</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="GLib.LogWriterOutput" href="messages.html#GLogWriterOutput">GLib.LogWriterOutput</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GLogFunc">
+		
+<h3 id="gliblogfunc">
+	<span><code>GLib.LogFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void (not introspectable)
+(*GLib.LogFunc) (<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>,
+                 <a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>,
+                 <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>,
+                 <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</pre>
+
+<p>Specifies the prototype of log handler functions.</p>
+<p>The default log handler, <a href="messages.html#g_log_default_handler">GLib.prototype.log_default_handler</a>, automatically appends a
+new-line character to <em>message</em> when printing it. It is advised that any
+custom log handler functions behave similarly, so that logging calls in user
+code do not need modifying to add a new-line character to the message if the
+log handler is changed.</p>
+<p>This is not used if structured logging is enabled; see
+[Using Structured Logging][using-structured-logging].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log domain of the message</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log level of the message (including the
+fatal and recursion flags)</p>
+</td>
+<td>
+<a title="GLib.LogLevelFlags" href="messages.html#GLogLevelFlags">GLib.LogLevelFlags</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>message:</code></em></i>
+		</p>
+	</td>
+		<td><p>the message to process</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data, set in <a href="../c/messages.html#g_log_set_handler">g_log_set_handler (not introspectable)</a></p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void (not introspectable)
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

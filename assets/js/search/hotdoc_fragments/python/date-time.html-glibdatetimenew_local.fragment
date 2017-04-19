@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date-time.html#glibdatetimenew_local", "fragment": "GLib.DateTime.new_local \nCreates a new GLib.DateTime corresponding to the given date and time in the local time zone. \nThis call is equivalent to calling GLib.DateTime.new with the time zone returned by GLib.TimeZone.new_local. \n"});

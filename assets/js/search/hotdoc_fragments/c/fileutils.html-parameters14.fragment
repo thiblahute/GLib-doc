@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/fileutils.html#parameters14", "fragment": "tmpl \nTemplate for file name as in g_mkstemp basename only or NULL for a default template \nname_used \nlocation to store actual name used or NULL \n"});

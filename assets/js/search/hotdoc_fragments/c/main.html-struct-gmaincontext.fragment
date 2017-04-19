@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/main.html#struct-gmaincontext", "fragment": "struct GMainContext \nThe GMainContext struct is an opaque data type representing a set of sources to be handled in a main loop. \n"});

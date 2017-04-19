@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/testing.html#enum-gtesttrapflags", "fragment": "enum GTestTrapFlags \nTest traps are guards around forked tests. These flags determine what traps to set. \n"});

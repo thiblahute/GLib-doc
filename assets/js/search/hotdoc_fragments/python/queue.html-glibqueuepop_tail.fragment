@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/queue.html#glibqueuepop_tail", "fragment": "GLib.Queue.pop_tail \nRemoves the last element of the queue and returns its data. \n"});

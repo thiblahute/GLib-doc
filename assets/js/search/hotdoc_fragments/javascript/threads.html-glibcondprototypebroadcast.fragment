@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/threads.html#glibcondprototypebroadcast", "fragment": "GLib.Cond.prototype.broadcast \nIf threads are waiting for cond all of them are unblocked. If no threads are waiting for cond this function has no effect. It is good practice to lock the same mutex as the waiting threads while calling this function though not required. \n"});

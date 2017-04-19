@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/scanner.html#enum-gtokentype", "fragment": "enum GTokenType \nThe possible types of token returned from each g_scanner_get_next_token call. \n"});

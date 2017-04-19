@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#enum-giocondition", "fragment": "enum GIOCondition \nA bitwise combination representing a condition to watch for on an event source. \n"});

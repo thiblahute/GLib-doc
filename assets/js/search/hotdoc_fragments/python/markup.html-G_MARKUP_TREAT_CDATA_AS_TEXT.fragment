@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/markup.html#G_MARKUP_TREAT_CDATA_AS_TEXT", "fragment": "When this flag is set CDATA marked sections are not passed literally to the passthrough function of the parser. Instead the content of the section without the CDATA and is passed to the text function. This flag was added in GLib \nGLib.MarkupParseFlags.prefix_error_position \n"});

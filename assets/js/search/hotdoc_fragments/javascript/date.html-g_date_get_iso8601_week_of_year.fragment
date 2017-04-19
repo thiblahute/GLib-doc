@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#g_date_get_iso8601_week_of_year", "fragment": "GLib.Date.prototype.get_iso8601_week_of_year \nReturns the week of the year where weeks are interpreted according to ISO \n"});

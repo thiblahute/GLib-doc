@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#parameters31", "fragment": "channel \nA GLib.IOChannel \ndeprecated Use g_io_channel_shutdown instead. \n"});

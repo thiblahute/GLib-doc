@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvariant.html#glibvariantprototypeunref", "fragment": "GLib.Variant.prototype.unref \nDecreases the reference count of value. When its reference count drops to the memory used by the variant is freed. \n"});

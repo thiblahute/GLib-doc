@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/async_queues.html#g_async_queue_push_front1", "fragment": "g_async_queue_push_front \nPushes the item into the queue. item must not be NULL. In contrast to g_async_queue_push this function pushes the new item ahead of the items already in the queue so that it will be the next one to be popped off the queue. \n"});

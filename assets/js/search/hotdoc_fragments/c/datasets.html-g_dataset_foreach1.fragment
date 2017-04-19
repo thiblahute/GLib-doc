@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/datasets.html#g_dataset_foreach1", "fragment": "g_dataset_foreach \nCalls the given function for each data element which is associated with the given location. Note that this function is NOT thread safe. So unless datalist can be protected from any modifications during invocation of this function it should not be called. \n"});

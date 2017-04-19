@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#g_mutex_clear1", "fragment": "g_mutex_clear \nFrees the resources allocated to a mutex with g_mutex_init. \nThis function should not be used with a GMutex that has been statically allocated. \nCalling g_mutex_clear on a locked mutex leads to undefined behaviour. \nSine \n"});

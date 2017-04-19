@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/bookmarkfile.html#glibbookmarkfileget_modified", "fragment": "GLib.BookmarkFile.get_modified \nGets the time when the bookmark for uri was last modified. \nIn the event the URI cannot be found is returned and error is set to GLib.BookmarkFileError.uri_not_found. \n"});

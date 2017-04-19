@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/memory.html#glibtry_realloc_n", "fragment": "GLib.try_realloc_n \nThis function is similar to GLib.try_realloc allocating n_blocks n_block_bytes bytes but care is taken to detect possible overflow during multiplication. \n"});

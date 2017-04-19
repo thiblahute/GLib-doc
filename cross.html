@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Cross-compiling the GLib Package</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="core" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="cross.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="javascript">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="cross.markdown">
+        <p>Cross-compiling the GLib package</p>
+<p>3</p>
+<p>GLib Library</p>
+<h1 id="building-the-library-for-a-different-architecture">Building the Library for a different architecture</h1>
+<p>Cross-compilation is the process of compiling a program or library on a
+different architecture or operating system then it will be run upon.
+GLib is slightly more difficult to cross-compile than many packages
+because much of GLib is about hiding differences between different
+systems.</p>
+<p>These notes cover things specific to cross-compiling GLib; for general
+information about cross-compilation, see the autoconf info pages.</p>
+<p>GLib tries to detect as much information as possible about the target
+system by compiling and linking programs without actually running
+anything; however, some information GLib needs is not available this
+way. This information needs to be provided to the configure script via a
+"cache file" or by setting the cache variables in your environment.</p>
+<p>As an example of using a cache file, to cross compile for the "MingW32"
+Win32 runtime environment on a Linux system, create a file 'win32.cache'
+with the following contents:</p>
+<pre><code> 
+glib_cv_long_long_format=I64
+glib_cv_stack_grows=no
+      
+</code></pre>
+<p>Then execute the following commands:</p>
+<pre><code>PATH=/path/to/mingw32-compiler/bin:$PATH
+chmod a-w win32.cache   # prevent configure from changing it
+./configure --cache-file=win32.cache --host=mingw32
+      
+</code></pre>
+<p>The complete list of cache file variables follows. Most of these won't
+need to be set in most cases.</p>
+<h1 id="cache-file-variables">Cache file variables</h1>
+<p><strong>glib_cv_long_long_format=[ll/q/I64].</strong></p>
+<p>Format used by <code>printf()</code> and <code>scanf()</code> for 64 bit integers. "ll" is the
+C99 standard, and what is used by the 'trio' library that GLib builds if
+your <code>printf()</code> is insufficiently capable. Doesn't need to be set if you
+are compiling using trio.</p>
+<p><strong>glib_cv_stack_grows=[yes/no].</strong></p>
+<p>Whether the stack grows up or down. Most places will want "no", A few
+architectures, such as PA-RISC need "yes".</p>
+<p><strong>glib_cv_working_bcopy=[yes/no].</strong></p>
+<p>Whether your <code>bcopy()</code> can handle overlapping copies. Only needs to be
+set if you don't have <code>memmove()</code>. (Very unlikely)</p>
+<p><strong>glib_cv_sane_realloc=[yes/no].</strong></p>
+<p>Whether your <code>realloc()</code> conforms to ANSI C and can handle <code>NULL</code> as the
+first argument. Defaults to "yes" and probably doesn't need to be set.</p>
+<p><strong>glib_cv_have_strlcpy=[yes/no].</strong></p>
+<p>Whether you have <code>strlcpy()</code> that matches OpenBSD. Defaults to "no",
+which is safe, since GLib uses a built-in version in that case.</p>
+<p><strong>glib_cv_have_qsort_r=[yes/no].</strong></p>
+<p>Whether you have <code>qsort_r()</code> that matches BSD. Defaults to "no", which
+is safe, since GLib uses a built-in version in that case.</p>
+<p><strong>glib_cv_va_val_copy=[yes/no].</strong></p>
+<p>Whether <code>va_list</code> can be copied as a pointer. If set to "no", then
+<code>memcopy()</code> will be used. Only matters if you don't have <code>va_copy()</code> or
+<code>__va_copy()</code>. (So, doesn't matter for GCC.) Defaults to "yes" which is
+slightly more common than "no".</p>
+<p><strong>glib_cv_rtldglobal_broken=[yes/no].</strong></p>
+<p>Whether you have a bug found in OSF/1 v5.0. Defaults to "no".</p>
+<p><strong>glib_cv_uscore=[yes/no].</strong></p>
+<p>Whether an underscore needs to be prepended to symbols when looking them
+up via <code>dlsym()</code>. Only needs to be set if your system uses
+<code>dlopen()</code>/<code>dlsym()</code>.</p>
+<p><strong>ac_cv_func_posix_getpwuid_r=[yes/no].</strong></p>
+<p>Whether you have a getpwuid_r function (in your C library, not your
+thread library) that conforms to the POSIX spec. (Takes a 'struct passwd
+**' as the final argument)</p>
+<p><strong>ac_cv_func_nonposix_getpwuid_r=[yes/no].</strong></p>
+<p>Whether you have some variant of <code>getpwuid_r()</code> that doesn't conform to
+to the POSIX spec, but GLib might be able to use (or might segfault.)
+Only needs to be set if <code>ac_cv_func_posix_getpwuid_r</code> is not set. It's
+safest to set this to "no".</p>
+<p><strong>ac_cv_func_posix_getgrgid_r=[yes/no].</strong></p>
+<p>Whether you have a getgrgid_r function that conforms to the POSIX spec.</p>
+<p><strong>glib_cv_use_pid_surrogate=[yes/no].</strong></p>
+<p>Whether to use a <code>setpriority()</code> on the PID of the thread as a method
+for setting the priority of threads. This only needs to be set when
+using POSIX threads.</p>
+<p><strong>ac_cv_func_printf_unix98=[yes/no].</strong></p>
+<p>Whether your <code>printf()</code> family supports Unix98 style <code>%N$</code> positional
+parameters. Defaults to "no".</p>
+<p><strong>ac_cv_func_vsnprintf_c99=[yes/no].</strong></p>
+<p>Whether you have a <code>vsnprintf()</code> with C99 semantics. (C99 semantics
+means returning the number of bytes that would have been written had the
+output buffer had enough space.) Defaults to "no".</p>
+
+    </div>
+        
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

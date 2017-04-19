@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date-time.html#g_date_time_new_local", "fragment": "GLib.DateTime.prototype.new_local \nCreates a new GLib.DateTime corresponding to the given date and time in the local time zone. \nThis call is equivalent to calling GLib.DateTime.prototype.new with the time zone returned by GLib.TimeZone.prototype.new_local. \n"});

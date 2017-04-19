@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gregex.html#G_REGEX_OPTIMIZE", "fragment": "Optimize the regular expression. If the pattern will be used many times then it may be worth the effort to optimize it to improve the speed of matches. \nGLib.RegexCompileFlags.prototype.firstline \n"});

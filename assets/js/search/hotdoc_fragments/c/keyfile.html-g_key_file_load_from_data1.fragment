@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/keyfile.html#g_key_file_load_from_data1", "fragment": "g_key_file_load_from_data \nLoads a key file from memory into an empty GKeyFile structure. If the object cannot be created then error is set to a GKeyFileError. \n"});

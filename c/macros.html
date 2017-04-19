@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>macros</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="macros.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="macros.markdown">
+    </div>
+        
+
+        
+
+
+
+            <h2 class="symbol_section" id="Function_Macros">Function Macros</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="G_IS_DIR_SEPARATOR">
+		
+<h3 id="g_is_dir_separator">
+	<span><code>G_IS_DIR_SEPARATOR</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_IS_DIR_SEPARATOR(c) ((c) == G_DIR_SEPARATOR)
+</pre>
+
+<p>Checks whether a character is a directory
+separator. It returns <a href="macros.html#TRUE">TRUE</a> for '/' on UNIX
+machines and for '' or '/' under Windows.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="MIN">
+		
+<h3 id="min">
+	<span><code>MIN</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define MIN(a, b)  (((a) &lt; (b)) ? (a) : (b))
+</pre>
+
+<p>Calculates the minimum of <em>a</em> and <em>b</em>.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="CLAMP">
+		
+<h3 id="clamp">
+	<span><code>CLAMP</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define CLAMP(x, low, high)  (((x) &gt; (high)) ? (high) : (((x) &lt; (low)) ? (low) : (x)))
+</pre>
+
+<p>Ensures that <em>x</em> is between the limits set by <em>low</em> and <em>high</em>. If <em>low</em> is
+greater than <em>high</em> the result is undefined.</p>
+<p>For example,</p>
+<ul>
+<li>CLAMP(5, 10, 15) is 10.</li>
+<li>CLAMP(15, 5, 10) is 10.</li>
+<li>CLAMP(20, 15, 25) is 20.</li>
+</ul>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_N_ELEMENTS">
+		
+<h3 id="g_n_elements">
+	<span><code>G_N_ELEMENTS</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_N_ELEMENTS(arr)		(sizeof (arr) / sizeof ((arr)[0]))
+</pre>
+
+<p>Determines the number of elements in an array. The array must be
+declared so the compiler knows its size at compile-time; this
+macro will not work on an array allocated on the heap, only static
+arrays or arrays on the stack.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="MAX">
+		
+<h3 id="max">
+	<span><code>MAX</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define MAX(a, b)  (((a) &gt; (b)) ? (a) : (b))
+</pre>
+
+<p>Calculates the maximum of <em>a</em> and <em>b</em>.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="ABS">
+		
+<h3 id="abs">
+	<span><code>ABS</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define ABS(a)	   (((a) &lt; 0) ? -(a) : (a))
+</pre>
+
+<p>Calculates the absolute value of <em>a</em>.
+The absolute value is simply the number with any negative sign taken away.</p>
+<p>For example,</p>
+<ul>
+<li>ABS(-10) is 10.</li>
+<li>ABS(10) is also 10.</li>
+</ul>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_STRUCT_MEMBER">
+		
+<h3 id="g_struct_member">
+	<span><code>G_STRUCT_MEMBER</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_STRUCT_MEMBER(member_type, struct_p, struct_offset)   \
+    (*(member_type*) G_STRUCT_MEMBER_P ((struct_p), (struct_offset)))
+</pre>
+
+<p>Returns a member of a structure at a given offset, using the given type.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_STRUCT_MEMBER_P">
+		
+<h3 id="g_struct_member_p">
+	<span><code>G_STRUCT_MEMBER_P</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_STRUCT_MEMBER_P(struct_p, struct_offset)   \
+    ((gpointer) ((guint8*) (struct_p) + (glong) (struct_offset)))
+</pre>
+
+<p>Returns an untyped pointer to a given offset of a struct.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_STRUCT_OFFSET">
+		
+<h3 id="g_struct_offset">
+	<span><code>G_STRUCT_OFFSET</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_STRUCT_OFFSET(struct_type, member)	\
+      ((glong) ((guint8*) &amp;((struct_type*) 0)-&gt;member))
+</pre>
+
+<p>Returns the offset, in bytes, of a member of a struct.</p>
+
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_DIR_SEPARATOR_S">
+		
+<h3 class="constant" id="g_dir_separator_s">
+	G_DIR_SEPARATOR_S
+</h3>
+
+		<pre class="raw_code">
+#define G_DIR_SEPARATOR_S "/"
+</pre>
+
+<p>The directory separator as a string.
+This is "/" on UNIX machines and "" under Windows.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="NULL">
+		
+<h3 class="constant" id="null">
+	NULL
+</h3>
+
+		<pre class="raw_code">
+#define NULL        ((void*) 0)
+</pre>
+
+<p>Defines the standard <a href="macros.html#NULL">NULL</a> pointer.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="TRUE">
+		
+<h3 class="constant" id="true">
+	TRUE
+</h3>
+
+		<pre class="raw_code">
+#define TRUE	(!FALSE)
+</pre>
+
+<p>Defines the <a href="macros.html#TRUE">TRUE</a> value for the gboolean type.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.30;" id="G_CONST_RETURN">
+		
+<h3 class="constant" id="g_const_return">
+	G_CONST_RETURN
+</h3>
+
+		<pre class="raw_code">
+#define G_CONST_RETURN const
+</pre>
+
+<p>If G_DISABLE_CONST_RETURNS is defined, this macro expands
+to nothing. By default, the macro expands to const. The macro
+can be used in place of const for functions that return a value
+that should not be modified. The purpose of this macro is to allow
+us to turn on const for returned constant strings by default, while
+allowing programmers who find that annoying to turn it off. This macro
+should only be used for return values and for "out" parameters, it
+doesn't make sense for "in" parameters.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_DIR_SEPARATOR">
+		
+<h3 class="constant" id="g_dir_separator">
+	G_DIR_SEPARATOR
+</h3>
+
+		<pre class="raw_code">
+#define G_DIR_SEPARATOR '/'
+</pre>
+
+<p>The directory separator character.
+This is '/' on UNIX machines and '' under Windows.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_MEM_ALIGN">
+		
+<h3 class="constant" id="g_mem_align">
+	G_MEM_ALIGN
+</h3>
+
+		<pre class="raw_code">
+#define G_MEM_ALIGN	GLIB_SIZEOF_LONG
+</pre>
+
+<p>Indicates the number of bytes to which memory will be aligned on the
+current platform.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="FALSE">
+		
+<h3 class="constant" id="false">
+	FALSE
+</h3>
+
+		<pre class="raw_code">
+#define FALSE	(0)
+</pre>
+
+<p>Defines the <a href="macros.html#FALSE">FALSE</a> value for the gboolean type.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_SEARCHPATH_SEPARATOR">
+		
+<h3 class="constant" id="g_searchpath_separator">
+	G_SEARCHPATH_SEPARATOR
+</h3>
+
+		<pre class="raw_code">
+#define G_SEARCHPATH_SEPARATOR ':'
+</pre>
+
+<p>The search path separator character.
+This is ':' on UNIX machines and ';' under Windows.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_OS_UNIX">
+		
+<h3 class="constant" id="g_os_unix">
+	G_OS_UNIX
+</h3>
+
+		<pre class="raw_code">
+#define G_OS_UNIX
+</pre>
+
+<p>This macro is defined only on UNIX. So you can bracket
+UNIX-specific code in "#ifdef G_OS_UNIX".</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_SEARCHPATH_SEPARATOR_S">
+		
+<h3 class="constant" id="g_searchpath_separator_s">
+	G_SEARCHPATH_SEPARATOR_S
+</h3>
+
+		<pre class="raw_code">
+#define G_SEARCHPATH_SEPARATOR_S ":"
+</pre>
+
+<p>The search path separator as a string.
+This is ":" on UNIX machines and ";" under Windows.</p>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

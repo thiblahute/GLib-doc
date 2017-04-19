@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hmac.html#glibcompute_hmac_for_string", "fragment": "GLib.compute_hmac_for_string \nComputes the HMAC for a string. \nThe hexadecimal string returned will be in lower case. \n"});

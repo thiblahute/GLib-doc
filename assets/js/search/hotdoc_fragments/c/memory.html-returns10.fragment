@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/memory.html#returns10", "fragment": "\nif TRUE malloc and g_malloc can be mixed. \ndeprecated GLib always uses the system malloc so this function always returns TRUE. \n"});

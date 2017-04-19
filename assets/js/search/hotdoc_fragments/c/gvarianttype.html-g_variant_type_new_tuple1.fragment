@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvarianttype.html#g_variant_type_new_tuple1", "fragment": "g_variant_type_new_tuple \nConstructs a new tuple type from items. \nlength is the number of items in items or to indicate that items is NULL terminated. \nIt is appropriate to call g_variant_type_free on the return value. \n"});

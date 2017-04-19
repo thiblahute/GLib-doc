@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/string_utils.html#returns3", "fragment": "\na newly allocated string with all the upper case characters in str converted to lower case with semantics that exactly match GLib.prototype.ascii_tolower. Note that this is unlike the old GLib.prototype.strdown which modified the string in place. \n"});

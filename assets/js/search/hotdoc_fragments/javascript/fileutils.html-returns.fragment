@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/fileutils.html#returns", "fragment": "\na newly allocated GLib.MappedFile which must be unref d with GLib.MappedFile.prototype.unref or null if the mapping failed. \nSince \n"});

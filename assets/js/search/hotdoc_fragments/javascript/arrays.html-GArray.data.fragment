@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/arrays.html#GArray.data", "fragment": "guint len \nthe number of elements in the GArray not including the possible terminating zero element. \n"});

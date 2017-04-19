@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/arrays_byte.html#glibbytesget_size", "fragment": "GLib.Bytes.get_size \nGet the size of the byte data in the GLib.Bytes. \nThis function will always return the same value for a given GLib.Bytes. \n"});

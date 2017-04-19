@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/fileutils.html#struct-gmappedfile", "fragment": "struct GMappedFile \nThe GMappedFile represents a file mapping created with g_mapped_file_new. It has only private members and should not be accessed directly. \n"});

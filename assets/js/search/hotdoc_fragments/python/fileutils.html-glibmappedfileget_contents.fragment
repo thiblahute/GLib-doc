@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/fileutils.html#glibmappedfileget_contents", "fragment": "GLib.MappedFile.get_contents \nReturns the contents of a GLib.MappedFile. \nNote that the contents may not be zero terminated even if the GLib.MappedFile is backed by a text file. \nIf the file is empty then None is returned. \n"});

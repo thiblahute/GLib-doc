@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#glibdateprototypeadd_days", "fragment": "GLib.Date.prototype.add_days \nIncrements a date some number of days. To move forward by weeks add weeks days. The date must be valid. \n"});

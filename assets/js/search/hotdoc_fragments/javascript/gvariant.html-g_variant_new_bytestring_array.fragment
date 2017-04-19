@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvariant.html#g_variant_new_bytestring_array", "fragment": "GLib.Variant.prototype.new_bytestring_array \nConstructs an array of bytestring GLib.Variant from the given array of strings. \nIf length is then strv is null terminated. \n"});

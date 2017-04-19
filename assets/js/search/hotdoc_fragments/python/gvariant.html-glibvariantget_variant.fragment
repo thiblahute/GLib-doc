@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvariant.html#glibvariantget_variant", "fragment": "GLib.Variant.get_variant \nUnboxes value. The result is the GLib.Variant instance that was contained in value. \n"});

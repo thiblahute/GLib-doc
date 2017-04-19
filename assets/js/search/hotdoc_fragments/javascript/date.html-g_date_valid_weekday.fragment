@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#g_date_valid_weekday", "fragment": "GLib.prototype.date_valid_weekday \nReturns true if the weekday is valid. The seven GLib.DateWeekday enumeration values are the only valid weekdays. \n"});

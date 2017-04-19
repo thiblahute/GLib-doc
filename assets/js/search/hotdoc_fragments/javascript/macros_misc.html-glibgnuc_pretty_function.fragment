@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/macros_misc.html#glibgnuc_pretty_function", "fragment": "GLib.GNUC_PRETTY_FUNCTION \nExpands to on all modern compilers and to PRETTY_FUNCTION on gcc version x. Don t use it. \n"});

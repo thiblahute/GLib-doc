@@ -1,0 +1,3019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>byte_order</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="byte_order.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="byte_order.markdown">
+    </div>
+        
+
+        
+
+
+
+            <h2 class="symbol_section" id="Function_Macros">Function Macros</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GLONG_TO_BE">
+		
+<h3 id="glong_to_be">
+	<span><code>GLONG_TO_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GLONG_TO_BE(val)	((glong) GINT64_TO_BE (val))
+</pre>
+
+<p>Converts a glong value from host byte order to big-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a glong value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to big-endian byte order</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ntohl">
+		
+<h3 id="g_ntohl1">
+	<span><code>g_ntohl</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_ntohl(val) (GUINT32_FROM_BE (val))
+</pre>
+
+<p>Converts a 32-bit integer value from network to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GINT_FROM_BE">
+		
+<h3 id="gint_from_be">
+	<span><code>GINT_FROM_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GINT_FROM_BE(val)	(GINT_TO_BE (val))
+</pre>
+
+<p>Converts a gint value from big-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT16_FROM_BE">
+		
+<h3 id="guint16_from_be">
+	<span><code>GUINT16_FROM_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT16_FROM_BE(val)	(GUINT16_TO_BE (val))
+</pre>
+
+<p>Converts a guint16 value from big-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GINT32_TO_LE">
+		
+<h3 id="gint32_to_le">
+	<span><code>GINT32_TO_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GINT32_TO_LE(val)	((gint32) (val))
+</pre>
+
+<p>Converts a gint32 value from host byte order to little-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a gint32 value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to little-endian</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_htonl">
+		
+<h3 id="g_htonl1">
+	<span><code>g_htonl</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_htonl(val) (GUINT32_TO_BE (val))
+</pre>
+
+<p>Converts a 32-bit integer value from host to network byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GINT32_FROM_BE">
+		
+<h3 id="gint32_from_be">
+	<span><code>GINT32_FROM_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GINT32_FROM_BE(val)	(GINT32_TO_BE (val))
+</pre>
+
+<p>Converts a gint32 value from big-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT16_SWAP_LE_BE_IA32">
+		
+<h3 id="guint16_swap_le_be_ia32">
+	<span><code>GUINT16_SWAP_LE_BE_IA32</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT16_SWAP_LE_BE_IA32(val) \
+       (G_GNUC_EXTENSION					\
+	({ guint16 __v, __x = ((guint16) (val));		\
+	   if (__builtin_constant_p (__x))			\
+	     __v = GUINT16_SWAP_LE_BE_CONSTANT (__x);		\
+	   else							\
+	     __asm__ ("rorw $8, %w0"				\
+		      : "=r" (__v)				\
+		      : "0" (__x)				\
+		      : "cc");					\
+	    __v; }))
+</pre>
+
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT32_FROM_LE">
+		
+<h3 id="guint32_from_le">
+	<span><code>GUINT32_FROM_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT32_FROM_LE(val)	(GUINT32_TO_LE (val))
+</pre>
+
+<p>Converts a guint32 value from little-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT64_FROM_LE">
+		
+<h3 id="guint64_from_le">
+	<span><code>GUINT64_FROM_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT64_FROM_LE(val)	(GUINT64_TO_LE (val))
+</pre>
+
+<p>Converts a guint64 value from little-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT16_SWAP_LE_BE_IA64">
+		
+<h3 id="guint16_swap_le_be_ia64">
+	<span><code>GUINT16_SWAP_LE_BE_IA64</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT16_SWAP_LE_BE_IA64(val) \
+       (G_GNUC_EXTENSION					\
+	({ guint16 __v, __x = ((guint16) (val));		\
+	   if (__builtin_constant_p (__x))			\
+	     __v = GUINT16_SWAP_LE_BE_CONSTANT (__x);		\
+	   else							\
+	     __asm__ __volatile__ ("shl %0 = %1, 48 ;;"		\
+				   "mux1 %0 = %0, @rev ;;"	\
+				    : "=r" (__v)		\
+				    : "r" (__x));		\
+	    __v; }))
+</pre>
+
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GULONG_TO_LE">
+		
+<h3 id="gulong_to_le">
+	<span><code>GULONG_TO_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GULONG_TO_LE(val)	((gulong) GUINT64_TO_LE (val))
+</pre>
+
+<p>Converts a gulong value from host byte order to little-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a gulong value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to little-endian</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GSIZE_TO_BE">
+		
+<h3 id="gsize_to_be">
+	<span><code>GSIZE_TO_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GSIZE_TO_BE(val)	((gsize) GUINT64_TO_BE (val))
+</pre>
+
+<p>Converts a gsize value from host byte order to big-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a gsize value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to big-endian byte order</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GINT64_FROM_BE">
+		
+<h3 id="gint64_from_be">
+	<span><code>GINT64_FROM_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GINT64_FROM_BE(val)	(GINT64_TO_BE (val))
+</pre>
+
+<p>Converts a gint64 value from big-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GSSIZE_TO_BE">
+		
+<h3 id="gssize_to_be">
+	<span><code>GSSIZE_TO_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GSSIZE_TO_BE(val)	((gssize) GINT64_TO_BE (val))
+</pre>
+
+<p>Converts a gssize value from host byte order to big-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a gssize value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to big-endian</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT16_SWAP_LE_BE">
+		
+<h3 id="guint16_swap_le_be">
+	<span><code>GUINT16_SWAP_LE_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT16_SWAP_LE_BE(val) (GUINT16_SWAP_LE_BE_CONSTANT (val))
+</pre>
+
+<p>Converts a guint16 value between little-endian and big-endian byte order.
+The conversion is symmetric so it can be used both ways.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT32_TO_BE">
+		
+<h3 id="guint32_to_be">
+	<span><code>GUINT32_TO_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT32_TO_BE(val)	(GUINT32_SWAP_LE_BE (val))
+</pre>
+
+<p>Converts a guint32 value from host byte order to big-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a guint32 value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to big-endian</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GLONG_FROM_LE">
+		
+<h3 id="glong_from_le">
+	<span><code>GLONG_FROM_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GLONG_FROM_LE(val)	(GLONG_TO_LE (val))
+</pre>
+
+<p>Converts a glong value from little-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT16_TO_BE">
+		
+<h3 id="guint16_to_be">
+	<span><code>GUINT16_TO_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT16_TO_BE(val)	(GUINT16_SWAP_LE_BE (val))
+</pre>
+
+<p>Converts a guint16 value from host byte order to big-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a guint16 value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to big-endian</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT32_SWAP_LE_BE_IA32">
+		
+<h3 id="guint32_swap_le_be_ia32">
+	<span><code>GUINT32_SWAP_LE_BE_IA32</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT32_SWAP_LE_BE_IA32(val) \
+	  (G_GNUC_EXTENSION					\
+	   ({ guint32 __v, __x = ((guint32) (val));		\
+	      if (__builtin_constant_p (__x))			\
+		__v = GUINT32_SWAP_LE_BE_CONSTANT (__x);	\
+	      else						\
+		__asm__ ("bswap %0"				\
+			 : "=r" (__v)				\
+			 : "0" (__x));				\
+	      __v; }))
+</pre>
+
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GINT_TO_LE">
+		
+<h3 id="gint_to_le">
+	<span><code>GINT_TO_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GINT_TO_LE(val)		((gint) GINT32_TO_LE (val))
+</pre>
+
+<p>Converts a gint value from host byte order to little-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a gint value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to little-endian byte order</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT32_SWAP_LE_BE_X86_64">
+		
+<h3 id="guint32_swap_le_be_x86_64">
+	<span><code>GUINT32_SWAP_LE_BE_X86_64</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT32_SWAP_LE_BE_X86_64(val) \
+       (G_GNUC_EXTENSION					\
+	 ({ guint32 __v, __x = ((guint32) (val));		\
+	    if (__builtin_constant_p (__x))			\
+	      __v = GUINT32_SWAP_LE_BE_CONSTANT (__x);		\
+	    else						\
+	     __asm__ ("bswapl %0"				\
+		      : "=r" (__v)				\
+		      : "0" (__x));				\
+	    __v; }))
+</pre>
+
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GINT16_TO_BE">
+		
+<h3 id="gint16_to_be">
+	<span><code>GINT16_TO_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GINT16_TO_BE(val)	((gint16) GUINT16_SWAP_LE_BE (val))
+</pre>
+
+<p>Converts a gint16 value from host byte order to big-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a gint16 value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to big-endian</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT32_SWAP_LE_BE_IA64">
+		
+<h3 id="guint32_swap_le_be_ia64">
+	<span><code>GUINT32_SWAP_LE_BE_IA64</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT32_SWAP_LE_BE_IA64(val) \
+       (G_GNUC_EXTENSION					\
+	 ({ guint32 __v, __x = ((guint32) (val));		\
+	    if (__builtin_constant_p (__x))			\
+	      __v = GUINT32_SWAP_LE_BE_CONSTANT (__x);		\
+	    else						\
+	     __asm__ __volatile__ ("shl %0 = %1, 32 ;;"		\
+				   "mux1 %0 = %0, @rev ;;"	\
+				    : "=r" (__v)		\
+				    : "r" (__x));		\
+	    __v; }))
+</pre>
+
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GINT_FROM_LE">
+		
+<h3 id="gint_from_le">
+	<span><code>GINT_FROM_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GINT_FROM_LE(val)	(GINT_TO_LE (val))
+</pre>
+
+<p>Converts a gint value from little-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT_TO_BE">
+		
+<h3 id="guint_to_be">
+	<span><code>GUINT_TO_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT_TO_BE(val)	((guint) GUINT32_TO_BE (val))
+</pre>
+
+<p>Converts a guint value from host byte order to big-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a guint value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to big-endian byte order</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GSIZE_FROM_BE">
+		
+<h3 id="gsize_from_be">
+	<span><code>GSIZE_FROM_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GSIZE_FROM_BE(val)	(GSIZE_TO_BE (val))
+</pre>
+
+<p>Converts a gsize value from big-endian to the host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT16_SWAP_LE_PDP">
+		
+<h3 id="guint16_swap_le_pdp">
+	<span><code>GUINT16_SWAP_LE_PDP</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT16_SWAP_LE_PDP(val)	((guint16) (val))
+</pre>
+
+<p>Converts a guint16 value between little-endian and pdp-endian byte order.
+The conversion is symmetric so it can be used both ways.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT32_TO_LE">
+		
+<h3 id="guint32_to_le">
+	<span><code>GUINT32_TO_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT32_TO_LE(val)	((guint32) (val))
+</pre>
+
+<p>Converts a guint32 value from host byte order to little-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a guint32 value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to little-endian</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GINT32_TO_BE">
+		
+<h3 id="gint32_to_be">
+	<span><code>GINT32_TO_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GINT32_TO_BE(val)	((gint32) GUINT32_SWAP_LE_BE (val))
+</pre>
+
+<p>Converts a gint32 value from host byte order to big-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a gint32 value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to big-endian</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ntohs">
+		
+<h3 id="g_ntohs1">
+	<span><code>g_ntohs</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_ntohs(val) (GUINT16_FROM_BE (val))
+</pre>
+
+<p>Converts a 16-bit integer value from network to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GLONG_FROM_BE">
+		
+<h3 id="glong_from_be">
+	<span><code>GLONG_FROM_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GLONG_FROM_BE(val)	(GLONG_TO_BE (val))
+</pre>
+
+<p>Converts a glong value from big-endian to the host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GULONG_FROM_LE">
+		
+<h3 id="gulong_from_le">
+	<span><code>GULONG_FROM_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GULONG_FROM_LE(val)	(GULONG_TO_LE (val))
+</pre>
+
+<p>Converts a gulong value from little-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT16_SWAP_BE_PDP">
+		
+<h3 id="guint16_swap_be_pdp">
+	<span><code>GUINT16_SWAP_BE_PDP</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT16_SWAP_BE_PDP(val)	(GUINT16_SWAP_LE_BE (val))
+</pre>
+
+<p>Converts a guint16 value between big-endian and pdp-endian byte order.
+The conversion is symmetric so it can be used both ways.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GINT16_TO_LE">
+		
+<h3 id="gint16_to_le">
+	<span><code>GINT16_TO_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GINT16_TO_LE(val)	((gint16) (val))
+</pre>
+
+<p>Converts a gint16 value from host byte order to little-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a gint16 value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to little-endian</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GINT32_FROM_LE">
+		
+<h3 id="gint32_from_le">
+	<span><code>GINT32_FROM_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GINT32_FROM_LE(val)	(GINT32_TO_LE (val))
+</pre>
+
+<p>Converts a gint32 value from little-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT32_SWAP_LE_BE_CONSTANT">
+		
+<h3 id="guint32_swap_le_be_constant">
+	<span><code>GUINT32_SWAP_LE_BE_CONSTANT</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT32_SWAP_LE_BE_CONSTANT(val)	((guint32) ( \
+    (((guint32) (val) &amp; (guint32) 0x000000ffU) &lt;&lt; 24) | \
+    (((guint32) (val) &amp; (guint32) 0x0000ff00U) &lt;&lt;  8) | \
+    (((guint32) (val) &amp; (guint32) 0x00ff0000U) &gt;&gt;  8) | \
+    (((guint32) (val) &amp; (guint32) 0xff000000U) &gt;&gt; 24)))
+</pre>
+
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT64_SWAP_LE_BE_IA64">
+		
+<h3 id="guint64_swap_le_be_ia64">
+	<span><code>GUINT64_SWAP_LE_BE_IA64</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT64_SWAP_LE_BE_IA64(val) \
+       (G_GNUC_EXTENSION					\
+	({ guint64 __v, __x = ((guint64) (val));		\
+	   if (__builtin_constant_p (__x))			\
+	     __v = GUINT64_SWAP_LE_BE_CONSTANT (__x);		\
+	   else							\
+	     __asm__ __volatile__ ("mux1 %0 = %1, @rev ;;"	\
+				   : "=r" (__v)			\
+				   : "r" (__x));		\
+	   __v; }))
+</pre>
+
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GSSIZE_TO_LE">
+		
+<h3 id="gssize_to_le">
+	<span><code>GSSIZE_TO_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GSSIZE_TO_LE(val)	((gssize) GINT64_TO_LE (val))
+</pre>
+
+<p>Converts a gssize value from host byte order to little-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a gssize value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to little-endian</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT16_SWAP_LE_BE_CONSTANT">
+		
+<h3 id="guint16_swap_le_be_constant">
+	<span><code>GUINT16_SWAP_LE_BE_CONSTANT</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT16_SWAP_LE_BE_CONSTANT(val)	((guint16) ( \
+    (guint16) ((guint16) (val) &gt;&gt; 8) |	\
+    (guint16) ((guint16) (val) &lt;&lt; 8)))
+</pre>
+
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GINT16_FROM_LE">
+		
+<h3 id="gint16_from_le">
+	<span><code>GINT16_FROM_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GINT16_FROM_LE(val)	(GINT16_TO_LE (val))
+</pre>
+
+<p>Converts a gint16 value from little-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GINT64_FROM_LE">
+		
+<h3 id="gint64_from_le">
+	<span><code>GINT64_FROM_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GINT64_FROM_LE(val)	(GINT64_TO_LE (val))
+</pre>
+
+<p>Converts a gint64 value from little-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT_FROM_LE">
+		
+<h3 id="guint_from_le">
+	<span><code>GUINT_FROM_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT_FROM_LE(val)	(GUINT_TO_LE (val))
+</pre>
+
+<p>Converts a guint value from little-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GINT16_FROM_BE">
+		
+<h3 id="gint16_from_be">
+	<span><code>GINT16_FROM_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GINT16_FROM_BE(val)	(GINT16_TO_BE (val))
+</pre>
+
+<p>Converts a gint16 value from big-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GULONG_FROM_BE">
+		
+<h3 id="gulong_from_be">
+	<span><code>GULONG_FROM_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GULONG_FROM_BE(val)	(GULONG_TO_BE (val))
+</pre>
+
+<p>Converts a gulong value from big-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT_TO_LE">
+		
+<h3 id="guint_to_le">
+	<span><code>GUINT_TO_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT_TO_LE(val)	((guint) GUINT32_TO_LE (val))
+</pre>
+
+<p>Converts a guint value from host byte order to little-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a guint value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to little-endian byte order.</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT16_FROM_LE">
+		
+<h3 id="guint16_from_le">
+	<span><code>GUINT16_FROM_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT16_FROM_LE(val)	(GUINT16_TO_LE (val))
+</pre>
+
+<p>Converts a guint16 value from little-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT64_TO_LE">
+		
+<h3 id="guint64_to_le">
+	<span><code>GUINT64_TO_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT64_TO_LE(val)	((guint64) (val))
+</pre>
+
+<p>Converts a guint64 value from host byte order to little-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a guint64 value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to little-endian</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT_FROM_BE">
+		
+<h3 id="guint_from_be">
+	<span><code>GUINT_FROM_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT_FROM_BE(val)	(GUINT_TO_BE (val))
+</pre>
+
+<p>Converts a guint value from big-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_htons">
+		
+<h3 id="g_htons1">
+	<span><code>g_htons</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_htons(val) (GUINT16_TO_BE (val))
+</pre>
+
+<p>Converts a 16-bit integer value from host to network byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GULONG_TO_BE">
+		
+<h3 id="gulong_to_be">
+	<span><code>GULONG_TO_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GULONG_TO_BE(val)	((gulong) GUINT64_TO_BE (val))
+</pre>
+
+<p>Converts a gulong value from host byte order to big-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a gulong value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to big-endian</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GSIZE_FROM_LE">
+		
+<h3 id="gsize_from_le">
+	<span><code>GSIZE_FROM_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GSIZE_FROM_LE(val)	(GSIZE_TO_LE (val))
+</pre>
+
+<p>Converts a gsize value from little-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GSSIZE_FROM_LE">
+		
+<h3 id="gssize_from_le">
+	<span><code>GSSIZE_FROM_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GSSIZE_FROM_LE(val)	(GSSIZE_TO_LE (val))
+</pre>
+
+<p>Converts a gssize value from little-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GINT64_TO_LE">
+		
+<h3 id="gint64_to_le">
+	<span><code>GINT64_TO_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GINT64_TO_LE(val)	((gint64) (val))
+</pre>
+
+<p>Converts a gint64 value from host byte order to little-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a gint64 value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to little-endian</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT32_SWAP_BE_PDP">
+		
+<h3 id="guint32_swap_be_pdp">
+	<span><code>GUINT32_SWAP_BE_PDP</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT32_SWAP_BE_PDP(val)	((guint32) ( \
+    (((guint32) (val) &amp; (guint32) 0x00ff00ffU) &lt;&lt; 8) | \
+    (((guint32) (val) &amp; (guint32) 0xff00ff00U) &gt;&gt; 8)))
+</pre>
+
+<p>Converts a guint32 value between big-endian and pdp-endian byte order.
+The conversion is symmetric so it can be used both ways.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GSIZE_TO_LE">
+		
+<h3 id="gsize_to_le">
+	<span><code>GSIZE_TO_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GSIZE_TO_LE(val)	((gsize) GUINT64_TO_LE (val))
+</pre>
+
+<p>Converts a gsize value from host byte order to little-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a gsize value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to little-endian</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT64_TO_BE">
+		
+<h3 id="guint64_to_be">
+	<span><code>GUINT64_TO_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT64_TO_BE(val)	(GUINT64_SWAP_LE_BE (val))
+</pre>
+
+<p>Converts a guint64 value from host byte order to big-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a guint64 value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to big-endian</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GLONG_TO_LE">
+		
+<h3 id="glong_to_le">
+	<span><code>GLONG_TO_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GLONG_TO_LE(val)	((glong) GINT64_TO_LE (val))
+</pre>
+
+<p>Converts a glong value from host byte order to little-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a glong value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to little-endian</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GSSIZE_FROM_BE">
+		
+<h3 id="gssize_from_be">
+	<span><code>GSSIZE_FROM_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GSSIZE_FROM_BE(val)	(GSSIZE_TO_BE (val))
+</pre>
+
+<p>Converts a gssize value from big-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GINT_TO_BE">
+		
+<h3 id="gint_to_be">
+	<span><code>GINT_TO_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GINT_TO_BE(val)		((gint) GINT32_TO_BE (val))
+</pre>
+
+<p>Converts a gint value from host byte order to big-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a gint value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns21">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to big-endian byte order</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GINT64_TO_BE">
+		
+<h3 id="gint64_to_be">
+	<span><code>GINT64_TO_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GINT64_TO_BE(val)	((gint64) GUINT64_SWAP_LE_BE (val))
+</pre>
+
+<p>Converts a gint64 value from host byte order to big-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a gint64 value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns22">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to big-endian</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT32_FROM_BE">
+		
+<h3 id="guint32_from_be">
+	<span><code>GUINT32_FROM_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT32_FROM_BE(val)	(GUINT32_TO_BE (val))
+</pre>
+
+<p>Converts a guint32 value from big-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT64_FROM_BE">
+		
+<h3 id="guint64_from_be">
+	<span><code>GUINT64_FROM_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT64_FROM_BE(val)	(GUINT64_TO_BE (val))
+</pre>
+
+<p>Converts a guint64 value from big-endian to host byte order.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT64_SWAP_LE_BE_X86_64">
+		
+<h3 id="guint64_swap_le_be_x86_64">
+	<span><code>GUINT64_SWAP_LE_BE_X86_64</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT64_SWAP_LE_BE_X86_64(val) \
+       (G_GNUC_EXTENSION					\
+	({ guint64 __v, __x = ((guint64) (val));		\
+	   if (__builtin_constant_p (__x))			\
+	     __v = GUINT64_SWAP_LE_BE_CONSTANT (__x);		\
+	   else							\
+	     __asm__ ("bswapq %0"				\
+		      : "=r" (__v)				\
+		      : "0" (__x));				\
+	   __v; }))
+</pre>
+
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT32_SWAP_LE_PDP">
+		
+<h3 id="guint32_swap_le_pdp">
+	<span><code>GUINT32_SWAP_LE_PDP</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT32_SWAP_LE_PDP(val)	((guint32) ( \
+    (((guint32) (val) &amp; (guint32) 0x0000ffffU) &lt;&lt; 16) | \
+    (((guint32) (val) &amp; (guint32) 0xffff0000U) &gt;&gt; 16)))
+</pre>
+
+<p>Converts a guint32 value between little-endian and pdp-endian byte order.
+The conversion is symmetric so it can be used both ways.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT32_SWAP_LE_BE">
+		
+<h3 id="guint32_swap_le_be">
+	<span><code>GUINT32_SWAP_LE_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT32_SWAP_LE_BE(val) (GUINT32_SWAP_LE_BE_CONSTANT (val))
+</pre>
+
+<p>Converts a guint32 value between little-endian and big-endian byte order.
+The conversion is symmetric so it can be used both ways.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT64_SWAP_LE_BE_CONSTANT">
+		
+<h3 id="guint64_swap_le_be_constant">
+	<span><code>GUINT64_SWAP_LE_BE_CONSTANT</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT64_SWAP_LE_BE_CONSTANT(val)	((guint64) ( \
+      (((guint64) (val) &amp;						\
+	(guint64) G_GINT64_CONSTANT (0x00000000000000ffU)) &lt;&lt; 56) |	\
+      (((guint64) (val) &amp;						\
+	(guint64) G_GINT64_CONSTANT (0x000000000000ff00U)) &lt;&lt; 40) |	\
+      (((guint64) (val) &amp;						\
+	(guint64) G_GINT64_CONSTANT (0x0000000000ff0000U)) &lt;&lt; 24) |	\
+      (((guint64) (val) &amp;						\
+	(guint64) G_GINT64_CONSTANT (0x00000000ff000000U)) &lt;&lt;  8) |	\
+      (((guint64) (val) &amp;						\
+	(guint64) G_GINT64_CONSTANT (0x000000ff00000000U)) &gt;&gt;  8) |	\
+      (((guint64) (val) &amp;						\
+	(guint64) G_GINT64_CONSTANT (0x0000ff0000000000U)) &gt;&gt; 24) |	\
+      (((guint64) (val) &amp;						\
+	(guint64) G_GINT64_CONSTANT (0x00ff000000000000U)) &gt;&gt; 40) |	\
+      (((guint64) (val) &amp;						\
+	(guint64) G_GINT64_CONSTANT (0xff00000000000000U)) &gt;&gt; 56)))
+</pre>
+
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT64_SWAP_LE_BE_IA32">
+		
+<h3 id="guint64_swap_le_be_ia32">
+	<span><code>GUINT64_SWAP_LE_BE_IA32</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT64_SWAP_LE_BE_IA32(val) \
+       (G_GNUC_EXTENSION						\
+	({ union { guint64 __ll;					\
+		   guint32 __l[2]; } __w, __r;				\
+	   __w.__ll = ((guint64) (val));				\
+	   if (__builtin_constant_p (__w.__ll))				\
+	     __r.__ll = GUINT64_SWAP_LE_BE_CONSTANT (__w.__ll);		\
+	   else								\
+	     {								\
+	       __r.__l[0] = GUINT32_SWAP_LE_BE (__w.__l[1]);		\
+	       __r.__l[1] = GUINT32_SWAP_LE_BE (__w.__l[0]);		\
+	     }								\
+	   __r.__ll; }))
+</pre>
+
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT16_TO_LE">
+		
+<h3 id="guint16_to_le">
+	<span><code>GUINT16_TO_LE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT16_TO_LE(val)	((guint16) (val))
+</pre>
+
+<p>Converts a guint16 value from host byte order to little-endian.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a guint16 value in host byte order</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns23">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>val</em> converted to little-endian</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUINT64_SWAP_LE_BE">
+		
+<h3 id="guint64_swap_le_be">
+	<span><code>GUINT64_SWAP_LE_BE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GUINT64_SWAP_LE_BE(val) (GUINT64_SWAP_LE_BE_CONSTANT (val))
+</pre>
+
+<p>Converts a guint64 value between little-endian and big-endian byte order.
+The conversion is symmetric so it can be used both ways.</p>
+
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_BIG_ENDIAN">
+		
+<h3 class="constant" id="g_big_endian">
+	G_BIG_ENDIAN
+</h3>
+
+		<pre class="raw_code">
+#define G_BIG_ENDIAN    4321
+</pre>
+
+<p>Specifies one of the possible types of byte order.
+See <a href="byte_order.html#G_BYTE_ORDER">G_BYTE_ORDER</a>.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_LITTLE_ENDIAN">
+		
+<h3 class="constant" id="g_little_endian">
+	G_LITTLE_ENDIAN
+</h3>
+
+		<pre class="raw_code">
+#define G_LITTLE_ENDIAN 1234
+</pre>
+
+<p>Specifies one of the possible types of byte order.
+See <a href="byte_order.html#G_BYTE_ORDER">G_BYTE_ORDER</a>.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_BYTE_ORDER">
+		
+<h3 class="constant" id="g_byte_order">
+	G_BYTE_ORDER
+</h3>
+
+		<pre class="raw_code">
+#define G_BYTE_ORDER G_LITTLE_ENDIAN
+</pre>
+
+<p>The host byte order.
+This can be either <a href="byte_order.html#G_LITTLE_ENDIAN">G_LITTLE_ENDIAN</a> or <a href="byte_order.html#G_BIG_ENDIAN">G_BIG_ENDIAN</a> (support for
+<a href="byte_order.html#G_PDP_ENDIAN">G_PDP_ENDIAN</a> may be added in future.)</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_PDP_ENDIAN">
+		
+<h3 class="constant" id="g_pdp_endian">
+	G_PDP_ENDIAN
+</h3>
+
+		<pre class="raw_code">
+#define G_PDP_ENDIAN    3412		/* unused, need specific PDP check */	
+</pre>
+
+<p>Specifies one of the possible types of byte order
+(currently unused). See <a href="byte_order.html#G_BYTE_ORDER">G_BYTE_ORDER</a>.</p>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/spawn.html#G_SPAWN_STDERR_TO_DEV_NULL", "fragment": "the child s standard error will be discarded. \nGLib.SpawnFlags.prototype.child_inherits_stdin \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/random_numbers.html#g_random_set_seed1", "fragment": "g_random_set_seed \nSets the seed for the global random number generator which is used by the g_random_ functions to seed. \n"});

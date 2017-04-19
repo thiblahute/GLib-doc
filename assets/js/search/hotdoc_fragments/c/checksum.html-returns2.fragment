@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/checksum.html#returns2", "fragment": "\nthe copy of the passed GChecksum. Use g_checksum_free when finished using it. \nSince \n"});

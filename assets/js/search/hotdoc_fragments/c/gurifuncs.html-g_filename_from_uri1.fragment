@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gurifuncs.html#g_filename_from_uri1", "fragment": "g_filename_from_uri \nConverts an escaped ASCII encoded URI to a local filename in the encoding used for filenames. \n"});

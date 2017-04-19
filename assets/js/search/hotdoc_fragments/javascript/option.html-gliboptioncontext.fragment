@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/option.html#gliboptioncontext", "fragment": "GLib.OptionContext \nA GOptionContext struct defines which options are accepted by the commandline option parser. The struct has only private fields and should not be directly accessed. \n"});

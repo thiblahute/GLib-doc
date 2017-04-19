@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/scanner.html#g_scanner_scope_lookup_symbol", "fragment": "GLib.Scanner.prototype.scope_lookup_symbol \nLooks up a symbol in a scope and return its value. If the symbol is not bound in the scope null is returned. \n"});

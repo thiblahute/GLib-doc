@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/macros_misc.html#g_gnuc_extension", "fragment": "G_GNUC_EXTENSION \nExpands to extension when gcc is used as the compiler. This simply tells gcc not to warn about the following non standard code when compiling with the pedantic option. \n"});

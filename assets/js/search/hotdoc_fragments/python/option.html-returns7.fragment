@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/option.html#returns7", "fragment": "\na newly created option group. It should be added to a GLib.OptionContext or freed with GLib.OptionGroup.unref. \nSince \n"});

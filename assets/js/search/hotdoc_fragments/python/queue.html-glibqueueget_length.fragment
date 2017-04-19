@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/queue.html#glibqueueget_length", "fragment": "GLib.Queue.get_length \nReturns the number of items in queue. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_utils.html#g_strfreev1", "fragment": "g_strfreev \nFrees a NULL terminated array of strings as well as each string it contains. \nIf str_array is NULL this function simply returns. \n"});

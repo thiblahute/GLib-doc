@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GSequenceIter</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="sequence.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="javascript">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="sequence.markdown">
+        <h1 id="gsequenceiter">GSequenceIter</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GSequence</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GSequenceMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.48;" id="g_sequence_is_empty">
+		
+<h4 id="glibsequenceprototypeis_empty">
+	<span><code>GLib.Sequence.prototype.is_empty</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Sequence.prototype.is_empty(): {
+    // javascript wrapper for 'g_sequence_is_empty'
+}</pre>
+
+<p>Returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the sequence contains zero items.</p>
+<p>This function is functionally identical to checking the result of
+<a href="sequence.html#g_sequence_get_length">GLib.Sequence.prototype.get_length</a> being equal to zero. However this function is
+implemented in O(1) running time.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seq:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequence">GLib.Sequence</a></p>
+</td>
+<td>
+<a title="GLib.Sequence" href="sequence.html#GSequence">GLib.Sequence</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the sequence is empty, otherwise <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a>.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.48
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_get_length">
+		
+<h4 id="glibsequenceprototypeget_length">
+	<span><code>GLib.Sequence.prototype.get_length</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Sequence.prototype.get_length(): {
+    // javascript wrapper for 'g_sequence_get_length'
+}</pre>
+
+<p>Returns the length of <em>seq</em>. Note that this method is O(h) where `h' is the
+height of the tree. It is thus more efficient to use <a href="sequence.html#g_sequence_is_empty">GLib.Sequence.prototype.is_empty</a>
+when comparing the length to zero.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seq:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequence">GLib.Sequence</a></p>
+</td>
+<td>
+<a title="GLib.Sequence" href="sequence.html#GSequence">GLib.Sequence</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the length of <em>seq</em></p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_free">
+		
+<h4 id="glibsequenceprototypefree">
+	<span><code>GLib.Sequence.prototype.free</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Sequence.prototype.free(): {
+    // javascript wrapper for 'g_sequence_free'
+}</pre>
+
+<p>Frees the memory allocated for <em>seq</em>. If <em>seq</em> has a data destroy
+function associated with it, that function is called on all items
+in <em>seq</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>seq:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequence">GLib.Sequence</a></p>
+</td>
+<td>
+<a title="GLib.Sequence" href="sequence.html#GSequence">GLib.Sequence</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+
+
+            <h2 class="symbol_section" id="">GSequenceIter</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GSequenceIterMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_iter_get_position">
+		
+<h4 id="glibsequenceiterprototypeget_position">
+	<span><code>GLib.SequenceIter.prototype.get_position</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.SequenceIter.prototype.get_position(): {
+    // javascript wrapper for 'g_sequence_iter_get_position'
+}</pre>
+
+<p>Returns the position of <em>iter</em></p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GLib.SequenceIter</a></p>
+</td>
+<td>
+<a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the position of <em>iter</em></p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_iter_is_begin">
+		
+<h4 id="glibsequenceiterprototypeis_begin">
+	<span><code>GLib.SequenceIter.prototype.is_begin</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.SequenceIter.prototype.is_begin(): {
+    // javascript wrapper for 'g_sequence_iter_is_begin'
+}</pre>
+
+<p>Returns whether <em>iter</em> is the begin iterator</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GLib.SequenceIter</a></p>
+</td>
+<td>
+<a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>whether <em>iter</em> is the begin iterator</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_iter_is_end">
+		
+<h4 id="glibsequenceiterprototypeis_end">
+	<span><code>GLib.SequenceIter.prototype.is_end</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.SequenceIter.prototype.is_end(): {
+    // javascript wrapper for 'g_sequence_iter_is_end'
+}</pre>
+
+<p>Returns whether <em>iter</em> is the end iterator</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GLib.SequenceIter</a></p>
+</td>
+<td>
+<a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>Whether <em>iter</em> is the end iterator</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_iter_compare">
+		
+<h4 id="glibsequenceiterprototypecompare">
+	<span><code>GLib.SequenceIter.prototype.compare</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.SequenceIter.prototype.compare(b: <a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>): {
+    // javascript wrapper for 'g_sequence_iter_compare'
+}</pre>
+
+<p>Returns a negative number if <em>a</em> comes before <em>b</em>, 0 if they are equal,
+and a positive number if <em>a</em> comes after <em>b</em>.</p>
+<p>The <em>a</em> and <em>b</em> iterators must point into the same sequence.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>a:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GLib.SequenceIter</a></p>
+</td>
+<td>
+<a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>b:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GLib.SequenceIter</a></p>
+</td>
+<td>
+<a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a negative number if <em>a</em> comes before <em>b</em>, 0 if they are
+equal, and a positive number if <em>a</em> comes after <em>b</em></p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_move">
+		
+<h3 id="glibprototypesequence_move">
+	<span><code>GLib.prototype.sequence_move</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.sequence_move(src: <a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>, dest: <a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>): {
+    // javascript wrapper for 'g_sequence_move'
+}</pre>
+
+<p>Moves the item pointed to by <em>src</em> to the position indicated by <em>dest</em>.
+After calling this function <em>dest</em> will point to the position immediately
+after <em>src</em>. It is allowed for <em>src</em> and <em>dest</em> to point into different
+sequences.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>src:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GLib.SequenceIter</a> pointing to the item to move</p>
+</td>
+<td>
+<a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dest:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GLib.SequenceIter</a> pointing to the position to which
+the item is moved</p>
+</td>
+<td>
+<a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_set">
+		
+<h3 id="glibprototypesequence_set">
+	<span><code>GLib.prototype.sequence_set</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.sequence_set(iter: <a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>, data: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_sequence_set'
+}</pre>
+
+<p>Changes the data for the item pointed to by <em>iter</em> to be <em>data</em>. If
+the sequence has a data destroy function associated with it, that
+function is called on the existing data that <em>iter</em> pointed to.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GLib.SequenceIter</a></p>
+</td>
+<td>
+<a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>new data for the item</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_remove_range">
+		
+<h3 id="glibprototypesequence_remove_range">
+	<span><code>GLib.prototype.sequence_remove_range</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.sequence_remove_range(begin: <a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>, end: <a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>): {
+    // javascript wrapper for 'g_sequence_remove_range'
+}</pre>
+
+<p>Removes all items in the (@begin, <em>end</em>) range.</p>
+<p>If the sequence has a data destroy function associated with it, this
+function is called on the data for the removed items.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>begin:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GLib.SequenceIter</a></p>
+</td>
+<td>
+<a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>end:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GLib.SequenceIter</a></p>
+</td>
+<td>
+<a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_move_range">
+		
+<h3 id="glibprototypesequence_move_range">
+	<span><code>GLib.prototype.sequence_move_range</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.sequence_move_range(dest: <a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>, begin: <a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>, end: <a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>): {
+    // javascript wrapper for 'g_sequence_move_range'
+}</pre>
+
+<p>Inserts the (@begin, <em>end</em>) range at the destination pointed to by ptr.
+The <em>begin</em> and <em>end</em> iters must point into the same sequence. It is
+allowed for <em>dest</em> to point to a different sequence than the one pointed
+into by <em>begin</em> and <em>end</em>.</p>
+<p>If <em>dest</em> is NULL, the range indicated by <em>begin</em> and <em>end</em> is
+removed from the sequence. If <em>dest</em> iter points to a place within
+the (@begin, <em>end</em>) range, the range does not move.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dest:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GLib.SequenceIter</a></p>
+</td>
+<td>
+<a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>begin:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GLib.SequenceIter</a></p>
+</td>
+<td>
+<a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>end:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GLib.SequenceIter</a></p>
+</td>
+<td>
+<a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_swap">
+		
+<h3 id="glibprototypesequence_swap">
+	<span><code>GLib.prototype.sequence_swap</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.sequence_swap(a: <a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>, b: <a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>): {
+    // javascript wrapper for 'g_sequence_swap'
+}</pre>
+
+<p>Swaps the items pointed to by <em>a</em> and <em>b</em>. It is allowed for <em>a</em> and <em>b</em>
+to point into difference sequences.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>a:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GLib.SequenceIter</a></p>
+</td>
+<td>
+<a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>b:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GLib.SequenceIter</a></p>
+</td>
+<td>
+<a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_remove">
+		
+<h3 id="glibprototypesequence_remove">
+	<span><code>GLib.prototype.sequence_remove</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.sequence_remove(iter: <a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>): {
+    // javascript wrapper for 'g_sequence_remove'
+}</pre>
+
+<p>Removes the item pointed to by <em>iter</em>. It is an error to pass the
+end iterator to this function.</p>
+<p>If the sequence has a data destroy function associated with it, this
+function is called on the data for the removed item.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GLib.SequenceIter</a></p>
+</td>
+<td>
+<a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_sequence_get">
+		
+<h3 id="glibprototypesequence_get">
+	<span><code>GLib.prototype.sequence_get</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.sequence_get(iter: <a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>): {
+    // javascript wrapper for 'g_sequence_get'
+}</pre>
+
+<p>Returns the data that <em>iter</em> points to.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GLib.SequenceIter</a></p>
+</td>
+<td>
+<a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the data that <em>iter</em> points to</p>
+
+	</td>
+	<td>
+		<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GSequenceIter">
+		<h3 id="glibsequenceiter">
+	GLib.SequenceIter
+</h3>
+
+		<p>The <a href="sequence.html#GSequenceIter">GLib.SequenceIter</a> struct is an opaque data type representing an
+iterator pointing into a <a href="sequence.html#GSequence">GLib.Sequence</a>.</p>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GSequence">
+		<h3 id="glibsequence">
+	GLib.Sequence
+</h3>
+
+		<p>The <a href="sequence.html#GSequence">GLib.Sequence</a> struct is an opaque data type representing a
+[sequence][glib-Sequences] data type.</p>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GSequenceIterCompareFunc">
+		
+<h3 id="glibsequenceitercomparefunc">
+	<span><code>GLib.SequenceIterCompareFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+(*GLib.SequenceIterCompareFunc) (<a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>,
+                                 <a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>,
+                                 <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</pre>
+
+<p>A <a href="sequence.html#GSequenceIterCompareFunc">GLib.SequenceIterCompareFunc</a> is a function used to compare iterators.
+It must return zero if the iterators compare equal, a negative value
+if <em>a</em> comes before <em>b</em>, and a positive value if <em>b</em> comes before <em>a</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>a:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GLib.SequenceIter</a></p>
+</td>
+<td>
+<a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>b:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="sequence.html#GSequenceIter">GLib.SequenceIter</a></p>
+</td>
+<td>
+<a title="GLib.SequenceIter" href="sequence.html#GSequenceIter">GLib.SequenceIter</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>zero if the iterators are equal, a negative value if <em>a</em>
+comes before <em>b</em>, and a positive value if <em>b</em> comes before <em>a</em>.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

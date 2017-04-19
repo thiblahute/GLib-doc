@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hooks.html#glibprototypehook_unref", "fragment": "GLib.prototype.hook_unref \nDecrements the reference count of a GLib.Hook. If the reference count falls to the GLib.Hook is removed from the GLib.HookList and GLib.prototype.hook_free is called to free it. \n"});

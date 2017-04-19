@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hash_tables.html#glibhashtableiter", "fragment": "GLib.HashTableIter \nA GHashTableIter structure represents an iterator that can be used to iterate over the elements of a GLib.HashTable. GHashTableIter structures are typically allocated on the stack and then initialized with GLib.HashTableIter.init. \n"});

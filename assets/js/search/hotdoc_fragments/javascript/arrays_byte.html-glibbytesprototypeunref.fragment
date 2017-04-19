@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/arrays_byte.html#glibbytesprototypeunref", "fragment": "GLib.Bytes.prototype.unref \nReleases a reference on bytes. This may result in the bytes being freed. \n"});

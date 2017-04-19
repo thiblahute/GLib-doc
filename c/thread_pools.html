@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GThreadPool</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="thread_pools.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="thread_pools.markdown">
+        <h1 id="gthreadpool">GThreadPool</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GThreadPool</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GThreadPoolMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_thread_pool_get_max_threads">
+		
+<h4 id="g_thread_pool_get_max_threads1">
+	<span><code>g_thread_pool_get_max_threads</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint
+g_thread_pool_get_max_threads (<a title="GThreadPool" href="thread_pools.html#GThreadPool">GThreadPool</a> * pool)</pre>
+
+<p>Returns the maximal number of threads for <em>pool</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pool:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="thread_pools.html#GThreadPool">GThreadPool</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the maximal number of threads</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_thread_pool_push">
+		
+<h4 id="g_thread_pool_push1">
+	<span><code>g_thread_pool_push</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_thread_pool_push (<a title="GThreadPool" href="thread_pools.html#GThreadPool">GThreadPool</a> * pool,
+                    gpointer data)</pre>
+
+<p>Inserts <em>data</em> into the list of tasks to be executed by <em>pool</em>.</p>
+<p>When the number of currently running threads is lower than the
+maximal allowed number of threads, a new thread is started (or
+reused) with the properties given to <a href="thread_pools.html#g_thread_pool_new">g_thread_pool_new</a>.
+Otherwise, <em>data</em> stays in the queue until a thread in this pool
+finishes its previous task and processes <em>data</em>.</p>
+<p><em>error</em> can be <a href="macros.html#NULL">NULL</a> to ignore errors, or non-%NULL to report
+errors. An error can only occur when a new thread couldn't be
+created. In that case <em>data</em> is simply appended to the queue of
+work to do.</p>
+<p>Before version 2.32, this function did not return a success status.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pool:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="thread_pools.html#GThreadPool">GThreadPool</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>a new task for <em>pool</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> on success, <a href="macros.html#FALSE">FALSE</a> if an error occurred</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_thread_pool_unprocessed">
+		
+<h4 id="g_thread_pool_unprocessed1">
+	<span><code>g_thread_pool_unprocessed</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint
+g_thread_pool_unprocessed (<a title="GThreadPool" href="thread_pools.html#GThreadPool">GThreadPool</a> * pool)</pre>
+
+<p>Returns the number of tasks still unprocessed in <em>pool</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pool:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="thread_pools.html#GThreadPool">GThreadPool</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of unprocessed tasks</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_thread_pool_free">
+		
+<h4 id="g_thread_pool_free1">
+	<span><code>g_thread_pool_free</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_thread_pool_free (<a title="GThreadPool" href="thread_pools.html#GThreadPool">GThreadPool</a> * pool,
+                    gboolean immediate,
+                    gboolean wait_)</pre>
+
+<p>Frees all resources allocated for <em>pool</em>.</p>
+<p>If <em>immediate</em> is <a href="macros.html#TRUE">TRUE</a>, no new task is processed for <em>pool</em>.
+Otherwise <em>pool</em> is not freed before the last task is processed.
+Note however, that no thread of this pool is interrupted while
+processing a task. Instead at least all still running threads
+can finish their tasks before the <em>pool</em> is freed.</p>
+<p>If <em>wait_</em> is <a href="macros.html#TRUE">TRUE</a>, the functions does not return before all
+tasks to be processed (dependent on <em>immediate</em>, whether all
+or only the currently running) are ready.
+Otherwise the function returns immediately.</p>
+<p>After calling this function <em>pool</em> must not be used anymore.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pool:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="thread_pools.html#GThreadPool">GThreadPool</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>immediate:</code></em></i>
+		</p>
+	</td>
+		<td><p>should <em>pool</em> shut down immediately?</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>wait_:</code></em></i>
+		</p>
+	</td>
+		<td><p>should the function wait for all tasks to be finished?</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_thread_pool_set_max_threads">
+		
+<h4 id="g_thread_pool_set_max_threads1">
+	<span><code>g_thread_pool_set_max_threads</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_thread_pool_set_max_threads (<a title="GThreadPool" href="thread_pools.html#GThreadPool">GThreadPool</a> * pool,
+                               gint max_threads)</pre>
+
+<p>Sets the maximal allowed number of threads for <em>pool</em>.
+A value of -1 means that the maximal number of threads
+is unlimited. If <em>pool</em> is an exclusive thread pool, setting
+the maximal number of threads to -1 is not allowed.</p>
+<p>Setting <em>max_threads</em> to 0 means stopping all work for <em>pool</em>.
+It is effectively frozen until <em>max_threads</em> is set to a non-zero
+value again.</p>
+<p>A thread is never terminated while calling <em>func</em>, as supplied by
+<a href="thread_pools.html#g_thread_pool_new">g_thread_pool_new</a>. Instead the maximal number of threads only
+has effect for the allocation of new threads in <a href="thread_pools.html#g_thread_pool_push">g_thread_pool_push</a>.
+A new thread is allocated, whenever the number of currently
+running threads in <em>pool</em> is smaller than the maximal number.</p>
+<p><em>error</em> can be <a href="macros.html#NULL">NULL</a> to ignore errors, or non-%NULL to report
+errors. An error can only occur when a new thread couldn't be
+created.</p>
+<p>Before version 2.32, this function did not return a success status.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pool:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="thread_pools.html#GThreadPool">GThreadPool</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>max_threads:</code></em></i>
+		</p>
+	</td>
+		<td><p>a new maximal number of threads for <em>pool</em>,
+or -1 for unlimited</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> on success, <a href="macros.html#FALSE">FALSE</a> if an error occurred</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_thread_pool_get_num_threads">
+		
+<h4 id="g_thread_pool_get_num_threads1">
+	<span><code>g_thread_pool_get_num_threads</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint
+g_thread_pool_get_num_threads (<a title="GThreadPool" href="thread_pools.html#GThreadPool">GThreadPool</a> * pool)</pre>
+
+<p>Returns the number of threads currently running in <em>pool</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pool:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="thread_pools.html#GThreadPool">GThreadPool</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of threads currently running</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.46;" id="g_thread_pool_move_to_front">
+		
+<h4 id="g_thread_pool_move_to_front1">
+	<span><code>g_thread_pool_move_to_front</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_thread_pool_move_to_front (<a title="GThreadPool" href="thread_pools.html#GThreadPool">GThreadPool</a> * pool,
+                             gpointer data)</pre>
+
+<p>Moves the item to the front of the queue of unprocessed
+items, so that it will be processed next.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pool:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="thread_pools.html#GThreadPool">GThreadPool</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>an unprocessed item in the pool</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the item was found and moved</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.46
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.10;" id="g_thread_pool_set_sort_function">
+		
+<h4 id="g_thread_pool_set_sort_function1">
+	<span><code>g_thread_pool_set_sort_function</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_thread_pool_set_sort_function (<a title="GThreadPool" href="thread_pools.html#GThreadPool">GThreadPool</a> * pool,
+                                 <a title="GCompareDataFunc" href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> func,
+                                 gpointer user_data)</pre>
+
+<p>Sets the function used to sort the list of tasks. This allows the
+tasks to be processed by a priority determined by <em>func</em>, and not
+just in the order in which they were added to the pool.</p>
+<p>Note, if the maximum number of threads is more than 1, the order
+that threads are executed cannot be guaranteed 100%. Threads are
+scheduled by the operating system and are executed at random. It
+cannot be assumed that threads are executed in the order they are
+created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pool:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="thread_pools.html#GThreadPool">GThreadPool</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> used to sort the list of tasks.
+This function is passed two tasks. It should return
+0 if the order in which they are handled does not matter,
+a negative value if the first task should be processed before
+the second or a positive value if the second task should be
+processed first.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <em>func</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.10
+		</p>
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GThreadPoolFunctions">Functions</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_thread_pool_new">
+		
+<h4 id="g_thread_pool_new1">
+	<span><code>g_thread_pool_new</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GThreadPool" href="thread_pools.html#GThreadPool">GThreadPool</a> *
+g_thread_pool_new (<a title="GFunc" href="linked_lists_double.html#GFunc">GFunc</a> func,
+                   gpointer user_data,
+                   gint max_threads,
+                   gboolean exclusive)</pre>
+
+<p>This function creates a new thread pool.</p>
+<p>Whenever you call <a href="thread_pools.html#g_thread_pool_push">g_thread_pool_push</a>, either a new thread is
+created or an unused one is reused. At most <em>max_threads</em> threads
+are running concurrently for this thread pool. <em>max_threads</em> = -1
+allows unlimited threads to be created for this thread pool. The
+newly created or reused thread now executes the function <em>func</em>
+with the two arguments. The first one is the parameter to
+<a href="thread_pools.html#g_thread_pool_push">g_thread_pool_push</a> and the second one is <em>user_data</em>.</p>
+<p>The parameter <em>exclusive</em> determines whether the thread pool owns
+all threads exclusive or shares them with other thread pools.
+If <em>exclusive</em> is <a href="macros.html#TRUE">TRUE</a>, <em>max_threads</em> threads are started
+immediately and they will run exclusively for this thread pool
+until it is destroyed by <a href="thread_pools.html#g_thread_pool_free">g_thread_pool_free</a>. If <em>exclusive</em> is
+<a href="macros.html#FALSE">FALSE</a>, threads are created when needed and shared between all
+non-exclusive thread pools. This implies that <em>max_threads</em> may
+not be -1 for exclusive thread pools. Besides, exclusive thread
+pools are not affected by <a href="thread_pools.html#g_thread_pool_set_max_idle_time">g_thread_pool_set_max_idle_time</a>
+since their threads are never considered idle and returned to the
+global pool.</p>
+<p><em>error</em> can be <a href="macros.html#NULL">NULL</a> to ignore errors, or non-%NULL to report
+errors. An error can only occur when <em>exclusive</em> is set to <a href="macros.html#TRUE">TRUE</a>
+and not all <em>max_threads</em> threads could be created.
+See <a href="threads.html#GThreadError">GThreadError</a> for possible errors that may occur.
+Note, even in case of error a valid <a href="thread_pools.html#GThreadPool">GThreadPool</a> is returned.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>a function to execute in the threads of the new thread pool</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data that is handed over to <em>func</em> every time it
+is called</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>max_threads:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximal number of threads to execute concurrently
+in  the new thread pool, -1 means no limit</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>exclusive:</code></em></i>
+		</p>
+	</td>
+		<td><p>should this thread pool be exclusive?</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new <a href="thread_pools.html#GThreadPool">GThreadPool</a></p>
+
+	</td>
+	<td>
+		<a title="GThreadPool" href="thread_pools.html#GThreadPool">GThreadPool</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.10;" id="g_thread_pool_set_max_idle_time">
+		
+<h3 id="g_thread_pool_set_max_idle_time1">
+	<span><code>g_thread_pool_set_max_idle_time</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_thread_pool_set_max_idle_time (guint interval)</pre>
+
+<p>This function will set the maximum <em>interval</em> that a thread
+waiting in the pool for new tasks can be idle for before
+being stopped. This function is similar to calling
+<a href="thread_pools.html#g_thread_pool_stop_unused_threads">g_thread_pool_stop_unused_threads</a> on a regular timeout,
+except this is done on a per thread basis.</p>
+<p>By setting <em>interval</em> to 0, idle threads will not be stopped.</p>
+<p>The default value is 15000 (15 seconds).</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>interval:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum <em>interval</em> (in milliseconds)
+a thread can be idle</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.10
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.10;" id="g_thread_pool_get_max_idle_time">
+		
+<h3 id="g_thread_pool_get_max_idle_time1">
+	<span><code>g_thread_pool_get_max_idle_time</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+guint
+g_thread_pool_get_max_idle_time ()</pre>
+
+<p>This function will return the maximum <em>interval</em> that a
+thread will wait in the thread pool for new tasks before
+being stopped.</p>
+<p>If this function returns 0, threads waiting in the thread
+pool for new work are not stopped.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the maximum <em>interval</em> (milliseconds) to wait
+for new tasks in the thread pool before stopping the
+thread</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.10
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_thread_pool_stop_unused_threads">
+		
+<h3 id="g_thread_pool_stop_unused_threads1">
+	<span><code>g_thread_pool_stop_unused_threads</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_thread_pool_stop_unused_threads ()</pre>
+
+<p>Stops all currently unused threads. This does not change the
+maximal number of unused threads. This function can be used to
+regularly stop all unused threads e.g. from <a href="main.html#g_timeout_add">g_timeout_add</a>.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_thread_pool_set_max_unused_threads">
+		
+<h3 id="g_thread_pool_set_max_unused_threads1">
+	<span><code>g_thread_pool_set_max_unused_threads</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_thread_pool_set_max_unused_threads (gint max_threads)</pre>
+
+<p>Sets the maximal number of unused threads to <em>max_threads</em>.
+If <em>max_threads</em> is -1, no limit is imposed on the number
+of unused threads.</p>
+<p>The default value is 2.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>max_threads:</code></em></i>
+		</p>
+	</td>
+		<td><p>maximal number of unused threads</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_thread_pool_get_max_unused_threads">
+		
+<h3 id="g_thread_pool_get_max_unused_threads1">
+	<span><code>g_thread_pool_get_max_unused_threads</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_thread_pool_get_max_unused_threads ()</pre>
+
+<p>Returns the maximal allowed number of unused threads.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the maximal number of unused threads</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_thread_pool_get_num_unused_threads">
+		
+<h3 id="g_thread_pool_get_num_unused_threads1">
+	<span><code>g_thread_pool_get_num_unused_threads</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+guint
+g_thread_pool_get_num_unused_threads ()</pre>
+
+<p>Returns the number of currently unused threads.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of currently unused threads</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GThreadPool">
+		
+<h3 id="struct-gthreadpool">
+		struct GThreadPool
+	</h3>
+
+		<pre class="raw_code">
+struct GThreadPool {
+    GFunc func;
+    gpointer user_data;
+    gboolean exclusive;
+};
+</pre>
+
+<p>The <a href="thread_pools.html#GThreadPool">GThreadPool</a> struct represents a thread pool. It has three
+public read-only members, but the underlying struct is bigger,
+so you must not copy this struct.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="fields">Fields</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GThreadPool.func">
+		<td>
+		<p>
+		<i><em><code><a title="GFunc" href="linked_lists_double.html#GFunc">GFunc</a> <em><code>func</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to execute in the threads of this pool</p>
+</td>
+</tr>
+
+						<tr id="GThreadPool.user_data">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>user_data</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the user data for the threads of this pool</p>
+</td>
+</tr>
+
+						<tr id="GThreadPool.exclusive">
+		<td>
+		<p>
+		<i><em><code>gboolean <em><code>exclusive</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>are all threads exclusive to this pool</p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

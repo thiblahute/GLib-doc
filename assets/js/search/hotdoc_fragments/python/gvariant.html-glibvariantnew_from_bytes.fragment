@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvariant.html#glibvariantnew_from_bytes", "fragment": "GLib.Variant.new_from_bytes \nConstructs a new serialised mode GLib.Variant instance. This is the inner interface for creation of new serialised values that gets called from various functions in gvariant.c. \nA reference is taken on bytes. \n"});

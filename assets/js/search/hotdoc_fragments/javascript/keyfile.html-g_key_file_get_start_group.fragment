@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/keyfile.html#g_key_file_get_start_group", "fragment": "GLib.KeyFile.prototype.get_start_group \nReturns the name of the start group of the file. \n"});

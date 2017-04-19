@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/async_queues.html#returns12", "fragment": "\ndata from the queue or NULL when no data is received before end_time. \ndeprecated use g_async_queue_timeout_pop \n"});

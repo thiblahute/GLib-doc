@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/fileutils.html#glibmappedfileref", "fragment": "GLib.MappedFile.ref \nIncrements the reference count of file by one. It is safe to call this function from any thread. \n"});

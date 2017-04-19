@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/strings.html#g_string_append_uri_escaped1", "fragment": "g_string_append_uri_escaped \nAppends unescaped to string escaped any characters that are reserved in URIs using URI style escape sequences. \n"});

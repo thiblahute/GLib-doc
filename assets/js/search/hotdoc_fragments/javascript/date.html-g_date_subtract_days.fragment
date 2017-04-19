@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#g_date_subtract_days", "fragment": "GLib.Date.prototype.subtract_days \nMoves a date some number of days into the past. To move by weeks just move by weeks days. The date must be valid. \n"});

@@ -1,0 +1,3120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GStatBuf</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="fileutils.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="javascript">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="fileutils.markdown">
+        <h1 id="gstatbuf">GStatBuf</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GMappedFile</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GMappedFileConstructors">Constructors</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_mapped_file_new_from_fd">
+		
+<h4 id="glibmappedfileprototypenew_from_fd">
+	<span><code>GLib.MappedFile.prototype.new_from_fd</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MappedFile.prototype.new_from_fd(fd: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, writable: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_mapped_file_new_from_fd'
+}</pre>
+
+<p>Maps a file into memory. On UNIX, this is using the mmap function.</p>
+<p>If <em>writable</em> is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a>, the mapped buffer may be modified, otherwise
+it is an error to modify the mapped buffer. Modifications to the buffer
+are not visible to other processes mapping the same file, and are not
+written back to the file.</p>
+<p>Note that modifications of the underlying file might affect the contents
+of the <a href="fileutils.html#GMappedFile">GLib.MappedFile</a>. Therefore, mapping should only be used if the file
+will not be modified, or if all modifications of the file are done
+atomically (e.g. using <a href="fileutils.html#g_file_set_contents">GLib.prototype.file_set_contents</a>).</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fd:</code></em></i>
+		</p>
+	</td>
+		<td><p>The file descriptor of the file to load</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>writable:</code></em></i>
+		</p>
+	</td>
+		<td><p>whether the mapping should be writable</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated <a href="fileutils.html#GMappedFile">GLib.MappedFile</a> which must be unref'd
+with <a href="fileutils.html#g_mapped_file_unref">GLib.MappedFile.prototype.unref</a>, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> if the mapping failed.</p>
+
+	</td>
+	<td>
+		<a title="GLib.MappedFile" href="fileutils.html#GMappedFile">GLib.MappedFile</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_mapped_file_new">
+		
+<h4 id="glibmappedfileprototypenew">
+	<span><code>GLib.MappedFile.prototype.new</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MappedFile.prototype.new(filename: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, writable: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_mapped_file_new'
+}</pre>
+
+<p>Maps a file into memory. On UNIX, this is using the mmap function.</p>
+<p>If <em>writable</em> is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a>, the mapped buffer may be modified, otherwise
+it is an error to modify the mapped buffer. Modifications to the buffer
+are not visible to other processes mapping the same file, and are not
+written back to the file.</p>
+<p>Note that modifications of the underlying file might affect the contents
+of the <a href="fileutils.html#GMappedFile">GLib.MappedFile</a>. Therefore, mapping should only be used if the file
+will not be modified, or if all modifications of the file are done
+atomically (e.g. using <a href="fileutils.html#g_file_set_contents">GLib.prototype.file_set_contents</a>).</p>
+<p>If <em>filename</em> is the name of an empty, regular file, the function
+will successfully return an empty <a href="fileutils.html#GMappedFile">GLib.MappedFile</a>. In other cases of
+size 0 (e.g. device files such as /dev/null), <em>error</em> will be set
+to the <a href="fileutils.html#GFileError">GLib.FileError</a> value <a href="fileutils.html#G_FILE_ERROR_INVAL">GLib.FileError.prototype.inval</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>The path of the file to load, in the GLib
+filename encoding</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>writable:</code></em></i>
+		</p>
+	</td>
+		<td><p>whether the mapping should be writable</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated <a href="fileutils.html#GMappedFile">GLib.MappedFile</a> which must be unref'd
+with <a href="fileutils.html#g_mapped_file_unref">GLib.MappedFile.prototype.unref</a>, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> if the mapping failed.</p>
+
+	</td>
+	<td>
+		<a title="GLib.MappedFile" href="fileutils.html#GMappedFile">GLib.MappedFile</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GMappedFileMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;deprecated:2.22;" id="g_mapped_file_free">
+		
+<h4 id="glibmappedfileprototypefree">
+	<span><code>GLib.MappedFile.prototype.free</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MappedFile.prototype.free(): {
+    // javascript wrapper for 'g_mapped_file_free'
+}</pre>
+
+<p>This call existed before <a href="fileutils.html#GMappedFile">GLib.MappedFile</a> had refcounting and is currently
+exactly the same as <a href="fileutils.html#g_mapped_file_unref">GLib.MappedFile.prototype.unref</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="fileutils.html#GMappedFile">GLib.MappedFile</a></p>
+</td>
+<td>
+<a title="GLib.MappedFile" href="fileutils.html#GMappedFile">GLib.MappedFile</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+	<p>
+	deprecated			: 2.22: Use g_mapped_file_unref() instead.
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_mapped_file_get_contents">
+		
+<h4 id="glibmappedfileprototypeget_contents">
+	<span><code>GLib.MappedFile.prototype.get_contents</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MappedFile.prototype.get_contents(): {
+    // javascript wrapper for 'g_mapped_file_get_contents'
+}</pre>
+
+<p>Returns the contents of a <a href="fileutils.html#GMappedFile">GLib.MappedFile</a>.</p>
+<p>Note that the contents may not be zero-terminated,
+even if the <a href="fileutils.html#GMappedFile">GLib.MappedFile</a> is backed by a text file.</p>
+<p>If the file is empty then <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> is returned.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="fileutils.html#GMappedFile">GLib.MappedFile</a></p>
+</td>
+<td>
+<a title="GLib.MappedFile" href="fileutils.html#GMappedFile">GLib.MappedFile</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the contents of <em>file</em>, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>.</p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.34;" id="g_mapped_file_get_bytes">
+		
+<h4 id="glibmappedfileprototypeget_bytes">
+	<span><code>GLib.MappedFile.prototype.get_bytes</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MappedFile.prototype.get_bytes(): {
+    // javascript wrapper for 'g_mapped_file_get_bytes'
+}</pre>
+
+<p>Creates a new <a href="arrays_byte.html#GBytes">GLib.Bytes</a> which references the data mapped from <em>file</em>.
+The mapped contents of the file must not be modified after creating this
+bytes object, because a <a href="arrays_byte.html#GBytes">GLib.Bytes</a> should be immutable.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="fileutils.html#GMappedFile">GLib.MappedFile</a></p>
+</td>
+<td>
+<a title="GLib.MappedFile" href="fileutils.html#GMappedFile">GLib.MappedFile</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A newly allocated <a href="arrays_byte.html#GBytes">GLib.Bytes</a> referencing data
+from <em>file</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.Bytes" href="arrays_byte.html#GBytes">GLib.Bytes</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.34
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_mapped_file_unref">
+		
+<h4 id="glibmappedfileprototypeunref">
+	<span><code>GLib.MappedFile.prototype.unref</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MappedFile.prototype.unref(): {
+    // javascript wrapper for 'g_mapped_file_unref'
+}</pre>
+
+<p>Decrements the reference count of <em>file</em> by one.  If the reference count
+drops to 0, unmaps the buffer of <em>file</em> and frees it.</p>
+<p>It is safe to call this function from any thread.</p>
+<p>Since 2.22</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="fileutils.html#GMappedFile">GLib.MappedFile</a></p>
+</td>
+<td>
+<a title="GLib.MappedFile" href="fileutils.html#GMappedFile">GLib.MappedFile</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_mapped_file_get_length">
+		
+<h4 id="glibmappedfileprototypeget_length">
+	<span><code>GLib.MappedFile.prototype.get_length</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MappedFile.prototype.get_length(): {
+    // javascript wrapper for 'g_mapped_file_get_length'
+}</pre>
+
+<p>Returns the length of the contents of a <a href="fileutils.html#GMappedFile">GLib.MappedFile</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="fileutils.html#GMappedFile">GLib.MappedFile</a></p>
+</td>
+<td>
+<a title="GLib.MappedFile" href="fileutils.html#GMappedFile">GLib.MappedFile</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the length of the contents of <em>file</em>.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_mapped_file_ref">
+		
+<h4 id="glibmappedfileprototyperef">
+	<span><code>GLib.MappedFile.prototype.ref</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MappedFile.prototype.ref(): {
+    // javascript wrapper for 'g_mapped_file_ref'
+}</pre>
+
+<p>Increments the reference count of <em>file</em> by one.  It is safe to call
+this function from any thread.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="fileutils.html#GMappedFile">GLib.MappedFile</a></p>
+</td>
+<td>
+<a title="GLib.MappedFile" href="fileutils.html#GMappedFile">GLib.MappedFile</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the passed in <a href="fileutils.html#GMappedFile">GLib.MappedFile</a>.</p>
+
+	</td>
+	<td>
+		<a title="GLib.MappedFile" href="fileutils.html#GMappedFile">GLib.MappedFile</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+
+
+            <h2 class="symbol_section" id="">GDir</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GDirMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_dir_read_name">
+		
+<h4 id="glibdirprototyperead_name">
+	<span><code>GLib.Dir.prototype.read_name</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Dir.prototype.read_name(): {
+    // javascript wrapper for 'g_dir_read_name'
+}</pre>
+
+<p>Retrieves the name of another entry in the directory, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>.
+The order of entries returned from this function is not defined,
+and may vary by file system or other operating-system dependent
+factors.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> may also be returned in case of errors. On Unix, you can
+check <code>errno</code> to find out if <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> was returned because of an error.</p>
+<p>On Unix, the '.' and '..' entries are omitted, and the returned
+name is in the on-disk encoding.</p>
+<p>On Windows, as is true of all GLib functions which operate on
+filenames, the returned name is in UTF-8.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dir:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="fileutils.html#GDir">GLib.Dir</a>* created by <a href="../c/fileutils.html#g_dir_open">g_dir_open (not introspectable)</a></p>
+</td>
+<td>
+<a title="GLib.Dir" href="fileutils.html#GDir">GLib.Dir</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The entry's name or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> if there are no
+more entries. The return value is owned by GLib and
+must not be modified or freed.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_dir_rewind">
+		
+<h4 id="glibdirprototyperewind">
+	<span><code>GLib.Dir.prototype.rewind</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Dir.prototype.rewind(): {
+    // javascript wrapper for 'g_dir_rewind'
+}</pre>
+
+<p>Resets the given directory. The next call to <a href="fileutils.html#g_dir_read_name">GLib.Dir.prototype.read_name</a>
+will return the first entry again.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dir:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="fileutils.html#GDir">GLib.Dir</a>* created by <a href="../c/fileutils.html#g_dir_open">g_dir_open (not introspectable)</a></p>
+</td>
+<td>
+<a title="GLib.Dir" href="fileutils.html#GDir">GLib.Dir</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_dir_close">
+		
+<h4 id="glibdirprototypeclose">
+	<span><code>GLib.Dir.prototype.close</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Dir.prototype.close(): {
+    // javascript wrapper for 'g_dir_close'
+}</pre>
+
+<p>Closes the directory and deallocates all related resources.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dir:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="fileutils.html#GDir">GLib.Dir</a>* created by <a href="../c/fileutils.html#g_dir_open">g_dir_open (not introspectable)</a></p>
+</td>
+<td>
+<a title="GLib.Dir" href="fileutils.html#GDir">GLib.Dir</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_unlink">
+		
+<h3 id="glibprototypeunlink">
+	<span><code>GLib.prototype.unlink</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.unlink(filename: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_unlink'
+}</pre>
+
+<p>A wrapper for the POSIX unlink function. The unlink function
+deletes a name from the filesystem. If this was the last link to the
+file and no processes have it opened, the diskspace occupied by the
+file is freed.</p>
+<p>See your C library manual for more details about unlink. Note
+that on Windows, it is in general not possible to delete files that
+are open to some process, or mapped into memory.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pathname in the GLib file name encoding
+(UTF-8 on Windows)</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>0 if the name was successfully deleted, -1 if an error
+occurred</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_access">
+		
+<h3 id="glibprototypeaccess">
+	<span><code>GLib.prototype.access</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.access(filename: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, mode: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_access'
+}</pre>
+
+<p>A wrapper for the POSIX access function. This function is used to
+test a pathname for one or several of read, write or execute
+permissions, or just existence.</p>
+<p>On Windows, the file protection mechanism is not at all POSIX-like,
+and the underlying function in the C library only checks the
+FAT-style READONLY attribute, and does not look at the ACL of a
+file at all. This function is this in practise almost useless on
+Windows. Software that needs to handle file permissions on Windows
+more exactly should use the Win32 API.</p>
+<p>See your C library manual for more details about access.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pathname in the GLib file name encoding
+(UTF-8 on Windows)</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mode:</code></em></i>
+		</p>
+	</td>
+		<td><p>as in access</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>zero if the pathname refers to an existing file system
+object that has all the tested permissions, or -1 otherwise
+or on error.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_file_open_tmp">
+		
+<h3 id="glibprototypefile_open_tmp">
+	<span><code>GLib.prototype.file_open_tmp</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.file_open_tmp(tmpl: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_file_open_tmp'
+}</pre>
+
+<p>Opens a file for writing in the preferred directory for temporary
+files (as returned by <a href="misc_utils.html#g_get_tmp_dir">GLib.prototype.get_tmp_dir</a>).</p>
+<p><em>tmpl</em> should be a string in the GLib file name encoding containing
+a sequence of six 'X' characters, as the parameter to <a href="fileutils.html#g_mkstemp">GLib.prototype.mkstemp</a>.
+However, unlike these functions, the template should only be a
+basename, no directory components are allowed. If template is
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>, a default template is used.</p>
+<p>Note that in contrast to <a href="fileutils.html#g_mkstemp">GLib.prototype.mkstemp</a> (and mkstemp) <em>tmpl</em> is not
+modified, and might thus be a read-only literal string.</p>
+<p>Upon success, and if <em>name_used</em> is non-%NULL, the actual name used
+is returned in <em>name_used</em>. This string should be freed with <a href="memory.html#g_free">GLib.prototype.free</a>
+when not needed any longer. The returned name is in the GLib file
+name encoding.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tmpl:</code></em></i>
+		</p>
+	</td>
+		<td><p>Template for file name, as in
+<a href="fileutils.html#g_mkstemp">GLib.prototype.mkstemp</a>, basename only, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> for a default template</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A file handle (as from open) to the file opened for
+reading and writing. The file is opened in binary mode on platforms
+where there is a difference. The file handle should be closed with
+close. In case of errors, -1 is returned and <em>error</em> will be set.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>name_used:</i>
+				</p>
+	</td>
+	<td>
+		<p>A file handle (as from open) to the file opened for
+reading and writing. The file is opened in binary mode on platforms
+where there is a difference. The file handle should be closed with
+close. In case of errors, -1 is returned and <em>error</em> will be set.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_mkstemp_full">
+		
+<h3 id="glibprototypemkstemp_full">
+	<span><code>GLib.prototype.mkstemp_full</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.mkstemp_full(tmpl: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, flags: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, mode: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_mkstemp_full'
+}</pre>
+
+<p>Opens a temporary file. See the mkstemp documentation
+on most UNIX-like systems.</p>
+<p>The parameter is a string that should follow the rules for
+mkstemp templates, i.e. contain the string "XXXXXX".
+<a href="fileutils.html#g_mkstemp_full">GLib.prototype.mkstemp_full</a> is slightly more flexible than mkstemp
+in that the sequence does not have to occur at the very end of the
+template and you can pass a <em>mode</em> and additional <em>flags</em>. The X
+string will be modified to form the name of a file that didn't exist.
+The string should be in the GLib file name encoding. Most importantly,
+on Windows it should be in UTF-8.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tmpl:</code></em></i>
+		</p>
+	</td>
+		<td><p>template filename</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>flags to pass to an open call in addition to O_EXCL
+and O_CREAT, which are passed automatically</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mode:</code></em></i>
+		</p>
+	</td>
+		<td><p>permissions to create the temporary file with</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A file handle (as from open) to the file
+opened for reading and writing. The file handle should be
+closed with close. In case of errors, -1 is returned
+and errno will be set.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_rmdir">
+		
+<h3 id="glibprototypermdir">
+	<span><code>GLib.prototype.rmdir</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.rmdir(filename: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_rmdir'
+}</pre>
+
+<p>A wrapper for the POSIX rmdir function. The rmdir function
+deletes a directory from the filesystem.</p>
+<p>See your C library manual for more details about how rmdir works
+on your system.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pathname in the GLib file name encoding
+(UTF-8 on Windows)</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>0 if the directory was successfully removed, -1 if an error
+occurred</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_dir_make_tmp">
+		
+<h3 id="glibprototypedir_make_tmp">
+	<span><code>GLib.prototype.dir_make_tmp</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.dir_make_tmp(tmpl: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_dir_make_tmp'
+}</pre>
+
+<p>Creates a subdirectory in the preferred directory for temporary
+files (as returned by <a href="misc_utils.html#g_get_tmp_dir">GLib.prototype.get_tmp_dir</a>).</p>
+<p><em>tmpl</em> should be a string in the GLib file name encoding containing
+a sequence of six 'X' characters, as the parameter to <a href="fileutils.html#g_mkstemp">GLib.prototype.mkstemp</a>.
+However, unlike these functions, the template should only be a
+basename, no directory components are allowed. If template is
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>, a default template is used.</p>
+<p>Note that in contrast to <a href="fileutils.html#g_mkdtemp">GLib.prototype.mkdtemp</a> (and mkdtemp) <em>tmpl</em> is not
+modified, and might thus be a read-only literal string.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tmpl:</code></em></i>
+		</p>
+	</td>
+		<td><p>Template for directory name,
+as in <a href="fileutils.html#g_mkdtemp">GLib.prototype.mkdtemp</a>, basename only, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> for a default template</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The actual name used. This string
+should be freed with <a href="memory.html#g_free">GLib.prototype.free</a> when not needed any longer and is
+is in the GLib file name encoding. In case of errors, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> is
+returned and <em>error</em> will be set.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.36;" id="g_close">
+		
+<h3 id="glibprototypeclose">
+	<span><code>GLib.prototype.close</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.close(fd: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_close'
+}</pre>
+
+<p>This wraps the close call; in case of error, errno will be
+preserved, but the error will also be stored as a <a href="error_reporting.html#GError">GLib.Error</a> in <em>error</em>.</p>
+<p>Besides using <a href="error_reporting.html#GError">GLib.Error</a>, there is another major reason to prefer this
+function over the call provided by the system; on Unix, it will
+attempt to correctly handle EINTR, which has platform-specific
+semantics.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fd:</code></em></i>
+		</p>
+	</td>
+		<td><p>A file descriptor</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> on success, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> if there was an error.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.36
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_file_error_quark">
+		
+<h3 id="glibprototypefile_error_quark">
+	<span><code>GLib.prototype.file_error_quark</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.file_error_quark(): {
+    // javascript wrapper for 'g_file_error_quark'
+}</pre>
+
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		<a title="GLib.Quark" href="quarks.html#GQuark">GLib.Quark</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_mkdtemp">
+		
+<h3 id="glibprototypemkdtemp">
+	<span><code>GLib.prototype.mkdtemp</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.mkdtemp(tmpl: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_mkdtemp'
+}</pre>
+
+<p>Creates a temporary directory. See the mkdtemp documentation
+on most UNIX-like systems.</p>
+<p>The parameter is a string that should follow the rules for
+mkdtemp templates, i.e. contain the string "XXXXXX".
+<a href="fileutils.html#g_mkdtemp">GLib.prototype.mkdtemp</a> is slightly more flexible than mkdtemp in that the
+sequence does not have to occur at the very end of the template.
+The X string will be modified to form the name of a directory that
+didn't exist.
+The string should be in the GLib file name encoding. Most importantly,
+on Windows it should be in UTF-8.</p>
+<p>If you are going to be creating a temporary directory inside the
+directory returned by <a href="misc_utils.html#g_get_tmp_dir">GLib.prototype.get_tmp_dir</a>, you might want to use
+<a href="fileutils.html#g_dir_make_tmp">GLib.prototype.dir_make_tmp</a> instead.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tmpl:</code></em></i>
+		</p>
+	</td>
+		<td><p>template directory name</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A pointer to <em>tmpl</em>, which has been
+modified to hold the directory name.  In case of errors, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> is
+returned and errno will be set.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_mkdir_with_parents">
+		
+<h3 id="glibprototypemkdir_with_parents">
+	<span><code>GLib.prototype.mkdir_with_parents</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.mkdir_with_parents(pathname: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, mode: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_mkdir_with_parents'
+}</pre>
+
+<p>Create a directory if it doesn't already exist. Create intermediate
+parent directories as needed, too.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pathname:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pathname in the GLib file name encoding</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mode:</code></em></i>
+		</p>
+	</td>
+		<td><p>permissions to use for newly created directories</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>0 if the directory already exists, or was successfully
+created. Returns -1 if an error occurred, with errno set.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_mkstemp">
+		
+<h3 id="glibprototypemkstemp">
+	<span><code>GLib.prototype.mkstemp</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.mkstemp(tmpl: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_mkstemp'
+}</pre>
+
+<p>Opens a temporary file. See the mkstemp documentation
+on most UNIX-like systems.</p>
+<p>The parameter is a string that should follow the rules for
+mkstemp templates, i.e. contain the string "XXXXXX".
+<a href="fileutils.html#g_mkstemp">GLib.prototype.mkstemp</a> is slightly more flexible than mkstemp in that the
+sequence does not have to occur at the very end of the template.
+The X string will be modified to form the name of a file that
+didn't exist. The string should be in the GLib file name encoding.
+Most importantly, on Windows it should be in UTF-8.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tmpl:</code></em></i>
+		</p>
+	</td>
+		<td><p>template filename</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A file handle (as from open) to the file
+opened for reading and writing. The file is opened in binary
+mode on platforms where there is a difference. The file handle
+should be closed with close. In case of errors, -1 is
+returned and errno will be set.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_file_get_contents">
+		
+<h3 id="glibprototypefile_get_contents">
+	<span><code>GLib.prototype.file_get_contents</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.file_get_contents(filename: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_file_get_contents'
+}</pre>
+
+<p>Reads an entire file into allocated memory, with good error
+checking.</p>
+<p>If the call was successful, it returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> and sets <em>contents</em> to the file
+contents and <em>length</em> to the length of the file contents in bytes. The string
+stored in <em>contents</em> will be nul-terminated, so for text files you can pass
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> for the <em>length</em> argument. If the call was not successful, it returns
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> and sets <em>error</em>. The error domain is <a href="../c/fileutils.html#G_FILE_ERROR">G_FILE_ERROR (not introspectable)</a>. Possible error
+codes are those in the <a href="fileutils.html#GFileError">GLib.FileError</a> enumeration. In the error case,
+<em>contents</em> is set to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> and <em>length</em> is set to zero.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>name of a file to read contents from, in the GLib file name encoding</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of1">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> on success, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> if an error occurred</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>contents:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> on success, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> if an error occurred</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> on success, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> if an error occurred</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_file_test">
+		
+<h3 id="glibprototypefile_test">
+	<span><code>GLib.prototype.file_test</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.file_test(filename: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, test: <a title="GLib.FileTest" href="fileutils.html#GFileTest">GLib.FileTest</a>): {
+    // javascript wrapper for 'g_file_test'
+}</pre>
+
+<p>Returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if any of the tests in the bitfield <em>test</em> are
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a>. For example, <code>(G_FILE_TEST_EXISTS | G_FILE_TEST_IS_DIR)</code>
+will return <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the file exists; the check whether it's a
+directory doesn't matter since the existence test is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a>. With
+the current set of available tests, there's no point passing in
+more than one test at a time.</p>
+<p>Apart from <a href="fileutils.html#G_FILE_TEST_IS_SYMLINK">GLib.FileTest.prototype.is_symlink</a> all tests follow symbolic links,
+so for a symbolic link to a regular file <a href="fileutils.html#g_file_test">GLib.prototype.file_test</a> will return
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> for both <a href="fileutils.html#G_FILE_TEST_IS_SYMLINK">GLib.FileTest.prototype.is_symlink</a> and <a href="fileutils.html#G_FILE_TEST_IS_REGULAR">GLib.FileTest.prototype.is_regular</a>.</p>
+<p>Note, that for a dangling symbolic link <a href="fileutils.html#g_file_test">GLib.prototype.file_test</a> will return
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> for <a href="fileutils.html#G_FILE_TEST_IS_SYMLINK">GLib.FileTest.prototype.is_symlink</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> for all other flags.</p>
+<p>You should never use <a href="fileutils.html#g_file_test">GLib.prototype.file_test</a> to test whether it is safe
+to perform an operation, because there is always the possibility
+of the condition changing before you actually perform the operation.
+For example, you might think you could use <a href="fileutils.html#G_FILE_TEST_IS_SYMLINK">GLib.FileTest.prototype.is_symlink</a>
+to know whether it is safe to write to a file without being
+tricked into writing into a different location. It doesn't work!</p>
+<pre><code class="language-[&lt;!--">  // DON'T DO THIS
+  if (!g_file_test (filename, G_FILE_TEST_IS_SYMLINK))
+    {
+      fd = g_open (filename, O_WRONLY);
+      // write to fd
+    }
+</code></pre>
+<p>Another thing to note is that <a href="fileutils.html#G_FILE_TEST_EXISTS">GLib.FileTest.prototype.exists</a> and
+<a href="fileutils.html#G_FILE_TEST_IS_EXECUTABLE">GLib.FileTest.prototype.is_executable</a> are implemented using the access
+system call. This usually doesn't matter, but if your program
+is setuid or setgid it means that these tests will give you
+the answer for the real user ID and group ID, rather than the
+effective user ID and group ID.</p>
+<p>On Windows, there are no symlinks, so testing for
+<a href="fileutils.html#G_FILE_TEST_IS_SYMLINK">GLib.FileTest.prototype.is_symlink</a> will always return <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a>. Testing for
+<a href="fileutils.html#G_FILE_TEST_IS_EXECUTABLE">GLib.FileTest.prototype.is_executable</a> will just check that the file exists and
+its name indicates that it is executable, checking for well-known
+extensions and those listed in the <code>PATHEXT</code> environment variable.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>a filename to test in the
+GLib file name encoding</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>test:</code></em></i>
+		</p>
+	</td>
+		<td><p>bitfield of <a href="fileutils.html#GFileTest">GLib.FileTest</a> flags</p>
+</td>
+<td>
+<a title="GLib.FileTest" href="fileutils.html#GFileTest">GLib.FileTest</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>whether a test was <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a></p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_file_set_contents">
+		
+<h3 id="glibprototypefile_set_contents">
+	<span><code>GLib.prototype.file_set_contents</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.file_set_contents(filename: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, contents: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, length: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_file_set_contents'
+}</pre>
+
+<p>Writes all of <em>contents</em> to a file named <em>filename</em>, with good error checking.
+If a file called <em>filename</em> already exists it will be overwritten.</p>
+<p>This write is atomic in the sense that it is first written to a temporary
+file which is then renamed to the final name. Notes:</p>
+<ul>
+<li>
+<p>On UNIX, if <em>filename</em> already exists hard links to <em>filename</em> will break.
+Also since the file is recreated, existing permissions, access control
+lists, metadata etc. may be lost. If <em>filename</em> is a symbolic link,
+the link itself will be replaced, not the linked file.</p>
+</li>
+<li>
+<p>On Windows renaming a file will not remove an existing file with the
+new name, so on Windows there is a race condition between the existing
+file being removed and the temporary file being renamed.</p>
+</li>
+<li>
+<p>On Windows there is no way to remove a file that is open to some
+process, or mapped into memory. Thus, this function will fail if
+<em>filename</em> already exists and is open.</p>
+</li>
+</ul>
+<p>If the call was successful, it returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a>. If the call was not successful,
+it returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> and sets <em>error</em>. The error domain is <a href="../c/fileutils.html#G_FILE_ERROR">G_FILE_ERROR (not introspectable)</a>.
+Possible error codes are those in the <a href="fileutils.html#GFileError">GLib.FileError</a> enumeration.</p>
+<p>Note that the name for the temporary file is constructed by appending up
+to 7 characters to <em>filename</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>name of a file to write <em>contents</em> to, in the GLib file name
+encoding</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>contents:</code></em></i>
+		</p>
+	</td>
+		<td><p>string to write to the file</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>contents</em>, or -1 if <em>contents</em> is a nul-terminated string</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> on success, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> if an error occurred</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_file_read_link">
+		
+<h3 id="glibprototypefile_read_link">
+	<span><code>GLib.prototype.file_read_link</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.file_read_link(filename: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_file_read_link'
+}</pre>
+
+<p>Reads the contents of the symbolic link <em>filename</em> like the POSIX
+readlink function.  The returned string is in the encoding used
+for filenames. Use <a href="conversions.html#g_filename_to_utf8">GLib.prototype.filename_to_utf8</a> to convert it to UTF-8.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>the symbolic link</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A newly-allocated string with the contents of
+the symbolic link, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> if an error occurred.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_chdir">
+		
+<h3 id="glibprototypechdir">
+	<span><code>GLib.prototype.chdir</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.chdir(path: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_chdir'
+}</pre>
+
+<p>A wrapper for the POSIX chdir function. The function changes the
+current directory of the process to <em>path</em>.</p>
+<p>See your C library manual for more details about chdir.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>path:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pathname in the GLib file name encoding
+(UTF-8 on Windows)</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>0 on success, -1 if an error occurred.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_file_error_from_errno">
+		
+<h3 id="glibprototypefile_error_from_errno">
+	<span><code>GLib.prototype.file_error_from_errno</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.file_error_from_errno(err_no: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_file_error_from_errno'
+}</pre>
+
+<p>Gets a <a href="fileutils.html#GFileError">GLib.FileError</a> constant based on the passed-in <em>err_no</em>.
+For example, if you pass in <code>EEXIST</code> this function returns
+<a href="fileutils.html#G_FILE_ERROR_EXIST">GLib.FileError.prototype.exist</a>. Unlike <code>errno</code> values, you can portably
+assume that all <a href="fileutils.html#GFileError">GLib.FileError</a> values will exist.</p>
+<p>Normally a <a href="fileutils.html#GFileError">GLib.FileError</a> value goes into a <a href="error_reporting.html#GError">GLib.Error</a> returned
+from a function that manipulates files. So you would use
+<a href="fileutils.html#g_file_error_from_errno">GLib.prototype.file_error_from_errno</a> when constructing a <a href="error_reporting.html#GError">GLib.Error</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>err_no:</code></em></i>
+		</p>
+	</td>
+		<td><p>an "errno" value</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns21">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="fileutils.html#GFileError">GLib.FileError</a> corresponding to the given <em>errno</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.FileError" href="fileutils.html#GFileError">GLib.FileError</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_mkdtemp_full">
+		
+<h3 id="glibprototypemkdtemp_full">
+	<span><code>GLib.prototype.mkdtemp_full</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.mkdtemp_full(tmpl: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, mode: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_mkdtemp_full'
+}</pre>
+
+<p>Creates a temporary directory. See the mkdtemp documentation
+on most UNIX-like systems.</p>
+<p>The parameter is a string that should follow the rules for
+mkdtemp templates, i.e. contain the string "XXXXXX".
+<a href="fileutils.html#g_mkdtemp_full">GLib.prototype.mkdtemp_full</a> is slightly more flexible than mkdtemp in that the
+sequence does not have to occur at the very end of the template
+and you can pass a <em>mode</em>. The X string will be modified to form
+the name of a directory that didn't exist. The string should be
+in the GLib file name encoding. Most importantly, on Windows it
+should be in UTF-8.</p>
+<p>If you are going to be creating a temporary directory inside the
+directory returned by <a href="misc_utils.html#g_get_tmp_dir">GLib.prototype.get_tmp_dir</a>, you might want to use
+<a href="fileutils.html#g_dir_make_tmp">GLib.prototype.dir_make_tmp</a> instead.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tmpl:</code></em></i>
+		</p>
+	</td>
+		<td><p>template directory name</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mode:</code></em></i>
+		</p>
+	</td>
+		<td><p>permissions to create the temporary directory with</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns22">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A pointer to <em>tmpl</em>, which has been
+modified to hold the directory name. In case of errors, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> is
+returned, and errno will be set.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GStatBuf">
+		<h3 id="glibstatbuf">
+	GLib.StatBuf
+</h3>
+
+		<p>A type corresponding to the appropriate struct type for the stat
+system call, depending on the platform and/or compiler being used.</p>
+<p>See <a href="../c/fileutils.html#g_stat">g_stat (not introspectable)</a> for more information.</p>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GMappedFile">
+		<h3 id="glibmappedfile">
+	GLib.MappedFile
+</h3>
+
+		<p>The <a href="fileutils.html#GMappedFile">GLib.MappedFile</a> represents a file mapping created with
+<a href="fileutils.html#g_mapped_file_new">GLib.MappedFile.prototype.new</a>. It has only private members and should
+not be accessed directly.</p>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GDir">
+		<h3 id="glibdir">
+	GLib.Dir
+</h3>
+
+		<p>An opaque structure representing an opened directory.</p>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GFileTest">
+		
+<h3 id="enum-glibfiletest">
+		enum GLib.FileTest
+	</h3>
+
+		<p>A test to perform on a file using <a href="fileutils.html#g_file_test">GLib.prototype.file_test</a>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_TEST_IS_REGULAR"></a>
+		GLib.FileTest.prototype.is_regular
+		</p>
+	</td>
+	<td><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the file is a regular file
+(not a directory). Note that this test will also return <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a>
+if the tested file is a symlink to a regular file.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_TEST_IS_SYMLINK"></a>
+		GLib.FileTest.prototype.is_symlink
+		</p>
+	</td>
+	<td><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the file is a symlink.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_TEST_IS_DIR"></a>
+		GLib.FileTest.prototype.is_dir
+		</p>
+	</td>
+	<td><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the file is a directory.</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_TEST_IS_EXECUTABLE"></a>
+		GLib.FileTest.prototype.is_executable
+		</p>
+	</td>
+	<td><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the file is executable.</p>
+</td>
+	<td>
+		<span class="value">Value: 8</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_TEST_EXISTS"></a>
+		GLib.FileTest.prototype.exists
+		</p>
+	</td>
+	<td><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the file exists. It may or may not
+be a regular file.</p>
+</td>
+	<td>
+		<span class="value">Value: 16</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GFileError">
+		
+<h3 id="enum-glibfileerror">
+		enum GLib.FileError
+	</h3>
+
+		<p>Values corresponding to <em>errno</em> codes returned from file operations
+on UNIX. Unlike <em>errno</em> codes, GFileError values are available on
+all systems, even Windows. The exact meaning of each code depends
+on what sort of file operation you were performing; the UNIX
+documentation gives more details. The following error code descriptions
+come from the GNU C Library manual, and are under the copyright
+of that manual.</p>
+<p>It's not very portable to make detailed assumptions about exactly
+which errors will be returned from a given operation. Some errors
+don't occur on some systems, etc., sometimes there are subtle
+differences in when a system will report a given error, etc.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members1">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_EXIST"></a>
+		GLib.FileError.prototype.exist
+		</p>
+	</td>
+	<td><p>Operation not permitted; only the owner of
+the file (or other resource) or processes with special privileges
+can perform the operation.</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_ISDIR"></a>
+		GLib.FileError.prototype.isdir
+		</p>
+	</td>
+	<td><p>File is a directory; you cannot open a directory
+for writing, or create or remove hard links to it.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_ACCES"></a>
+		GLib.FileError.prototype.acces
+		</p>
+	</td>
+	<td><p>Permission denied; the file permissions do not
+allow the attempted operation.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_NAMETOOLONG"></a>
+		GLib.FileError.prototype.nametoolong
+		</p>
+	</td>
+	<td><p>Filename too long.</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_NOENT"></a>
+		GLib.FileError.prototype.noent
+		</p>
+	</td>
+	<td><p>No such file or directory. This is a "file
+doesn't exist" error for ordinary files that are referenced in
+contexts where they are expected to already exist.</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_NOTDIR"></a>
+		GLib.FileError.prototype.notdir
+		</p>
+	</td>
+	<td><p>A file that isn't a directory was specified when
+a directory is required.</p>
+</td>
+	<td>
+		<span class="value">Value: 5</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_NXIO"></a>
+		GLib.FileError.prototype.nxio
+		</p>
+	</td>
+	<td><p>No such device or address. The system tried to
+use the device represented by a file you specified, and it
+couldn't find the device. This can mean that the device file was
+installed incorrectly, or that the physical device is missing or
+not correctly attached to the computer.</p>
+</td>
+	<td>
+		<span class="value">Value: 6</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_NODEV"></a>
+		GLib.FileError.prototype.nodev
+		</p>
+	</td>
+	<td><p>The underlying file system of the specified file
+does not support memory mapping.</p>
+</td>
+	<td>
+		<span class="value">Value: 7</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_ROFS"></a>
+		GLib.FileError.prototype.rofs
+		</p>
+	</td>
+	<td><p>The directory containing the new link can't be
+modified because it's on a read-only file system.</p>
+</td>
+	<td>
+		<span class="value">Value: 8</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_TXTBSY"></a>
+		GLib.FileError.prototype.txtbsy
+		</p>
+	</td>
+	<td><p>Text file busy.</p>
+</td>
+	<td>
+		<span class="value">Value: 9</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_FAULT"></a>
+		GLib.FileError.prototype.fault
+		</p>
+	</td>
+	<td><p>You passed in a pointer to bad memory.
+(GLib won't reliably return this, don't pass in pointers to bad
+memory.)</p>
+</td>
+	<td>
+		<span class="value">Value: 10</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_LOOP"></a>
+		GLib.FileError.prototype.loop
+		</p>
+	</td>
+	<td><p>Too many levels of symbolic links were encountered
+in looking up a file name. This often indicates a cycle of symbolic
+links.</p>
+</td>
+	<td>
+		<span class="value">Value: 11</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_NOSPC"></a>
+		GLib.FileError.prototype.nospc
+		</p>
+	</td>
+	<td><p>No space left on device; write operation on a
+file failed because the disk is full.</p>
+</td>
+	<td>
+		<span class="value">Value: 12</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_NOMEM"></a>
+		GLib.FileError.prototype.nomem
+		</p>
+	</td>
+	<td><p>No memory available. The system cannot allocate
+more virtual memory because its capacity is full.</p>
+</td>
+	<td>
+		<span class="value">Value: 13</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_MFILE"></a>
+		GLib.FileError.prototype.mfile
+		</p>
+	</td>
+	<td><p>The current process has too many files open and
+can't open any more. Duplicate descriptors do count toward this
+limit.</p>
+</td>
+	<td>
+		<span class="value">Value: 14</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_NFILE"></a>
+		GLib.FileError.prototype.nfile
+		</p>
+	</td>
+	<td><p>There are too many distinct file openings in the
+entire system.</p>
+</td>
+	<td>
+		<span class="value">Value: 15</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_BADF"></a>
+		GLib.FileError.prototype.badf
+		</p>
+	</td>
+	<td><p>Bad file descriptor; for example, I/O on a
+descriptor that has been closed or reading from a descriptor open
+only for writing (or vice versa).</p>
+</td>
+	<td>
+		<span class="value">Value: 16</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_INVAL"></a>
+		GLib.FileError.prototype.inval
+		</p>
+	</td>
+	<td><p>Invalid argument. This is used to indicate
+various kinds of problems with passing the wrong argument to a
+library function.</p>
+</td>
+	<td>
+		<span class="value">Value: 17</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_PIPE"></a>
+		GLib.FileError.prototype.pipe
+		</p>
+	</td>
+	<td><p>Broken pipe; there is no process reading from the
+other end of a pipe. Every library function that returns this
+error code also generates a 'SIGPIPE' signal; this signal
+terminates the program if not handled or blocked. Thus, your
+program will never actually see this code unless it has handled
+or blocked 'SIGPIPE'.</p>
+</td>
+	<td>
+		<span class="value">Value: 18</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_AGAIN"></a>
+		GLib.FileError.prototype.again
+		</p>
+	</td>
+	<td><p>Resource temporarily unavailable; the call might
+work if you try again later.</p>
+</td>
+	<td>
+		<span class="value">Value: 19</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_INTR"></a>
+		GLib.FileError.prototype.intr
+		</p>
+	</td>
+	<td><p>Interrupted function call; an asynchronous signal
+occurred and prevented completion of the call. When this
+happens, you should try the call again.</p>
+</td>
+	<td>
+		<span class="value">Value: 20</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_IO"></a>
+		GLib.FileError.prototype.io
+		</p>
+	</td>
+	<td><p>Input/output error; usually used for physical read
+or write errors. i.e. the disk or other physical device hardware
+is returning errors.</p>
+</td>
+	<td>
+		<span class="value">Value: 21</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_PERM"></a>
+		GLib.FileError.prototype.perm
+		</p>
+	</td>
+	<td><p>Operation not permitted; only the owner of the
+file (or other resource) or processes with special privileges can
+perform the operation.</p>
+</td>
+	<td>
+		<span class="value">Value: 22</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_NOSYS"></a>
+		GLib.FileError.prototype.nosys
+		</p>
+	</td>
+	<td><p>Function not implemented; this indicates that
+the system is missing some functionality.</p>
+</td>
+	<td>
+		<span class="value">Value: 23</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_FAILED"></a>
+		GLib.FileError.prototype.failed
+		</p>
+	</td>
+	<td><p>Does not correspond to a UNIX error code; this
+is the standard "failed for unspecified reason" error code present
+in all <a href="error_reporting.html#GError">GLib.Error</a> error code enumerations. Returned if no specific
+code applies.</p>
+</td>
+	<td>
+		<span class="value">Value: 24</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_utils.html#g_vfprintf1", "fragment": "g_vfprintf \nAn implementation of the standard fprintf function which supports positional parameters as specified in the Single Unix Specification. \n"});

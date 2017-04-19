@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#glibsourceprototypeset_funcs", "fragment": "GLib.Source.prototype.set_funcs \nSets the source functions can be used to override default implementations of an unattached source. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/scanner.html#g_scanner_cur_token1", "fragment": "g_scanner_cur_token \nGets the current token type. This is simply the token field in the GScanner structure. \n"});

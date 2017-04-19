@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/bookmarkfile.html#parameters29", "fragment": "bookmark \na GLib.BookmarkFile \nfile \na relative path to a filename to open and parse \nfull_path \nreturn location for a string containing the full path of the file or None \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/scanner.html#glibcset_a_2_z", "fragment": "GLib.CSET_A_2_Z \nThe set of uppercase ASCII alphabet characters. Used for specifying valid identifier characters in GLib.ScannerConfig. \n"});

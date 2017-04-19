@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#glibutf8_pointer_to_offset", "fragment": "GLib.utf8_pointer_to_offset \nConverts from a pointer to position within a string to a integer character offset. \nSince this function allows pos to be before str and returns a negative offset in this case. \n"});

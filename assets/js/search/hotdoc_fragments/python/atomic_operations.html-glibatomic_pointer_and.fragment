@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/atomic_operations.html#glibatomic_pointer_and", "fragment": "GLib.atomic_pointer_and \nPerforms an atomic bitwise and of the value of atomic and val storing the result back in atomic. \nThink of this operation as an atomic version of tmp atomic atomic val return tmp \nThis call acts as a full compiler and hardware memory barrier. \n"});

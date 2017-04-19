@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/atomic_operations.html#g_atomic_int_exchange_and_add", "fragment": "GLib.atomic_int_exchange_and_add \nThis function existed before GLib.atomic_int_add returned the prior value of the integer which it now does It is retained only for compatibility reasons. Don t use this function in new code. \n"});

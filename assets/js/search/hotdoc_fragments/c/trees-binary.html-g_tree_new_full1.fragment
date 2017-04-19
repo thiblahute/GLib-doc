@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/trees-binary.html#g_tree_new_full1", "fragment": "g_tree_new_full \nCreates a new GTree like g_tree_new and allows to specify functions to free the memory allocated for the key and value that get called when removing the entry from the GTree. \n"});

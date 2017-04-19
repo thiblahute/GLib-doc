@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/unicode.html#parameters30", "fragment": "c \na Unicode character code \noutbuf \noutput buffer must have at least bytes of space. If NULL the length will be computed and returned and nothing will be written to outbuf. \n"});

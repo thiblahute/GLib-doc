@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/main.html#g_main_loop_run1", "fragment": "g_main_loop_run \nRuns a main loop until g_main_loop_quit is called on the loop. If this is called for the thread of the loop s GMainContext it will process events from the loop otherwise it will simply wait. \n"});

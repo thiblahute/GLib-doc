@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvariant.html#parameters76", "fragment": "dictionary \na dictionary GLib.Variant \nkey \nthe key to lookup in the dictionary \nexpected_type \na GLib.VariantType or null \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/memory.html#glibtry_realloc", "fragment": "GLib.try_realloc \nAttempts to realloc mem to a new size n_bytes and returns None on failure. Contrast with GLib.realloc which aborts the program on failure. \nIf mem is None behaves the same as GLib.try_malloc. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date-time.html#g_date_time_get_day_of_month", "fragment": "GLib.DateTime.prototype.get_day_of_month \nRetrieves the day of the month represented by datetime in the gregorian calendar. \n"});

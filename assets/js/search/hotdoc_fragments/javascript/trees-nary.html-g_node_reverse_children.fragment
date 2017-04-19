@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/trees-nary.html#g_node_reverse_children", "fragment": "GLib.Node.prototype.reverse_children \nReverses the order of the children of a GLib.Node. It doesn t change the order of the grandchildren. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/bookmarkfile.html#g_bookmark_file_get_title1", "fragment": "g_bookmark_file_get_title \nReturns the title of the bookmark for uri. \nIf uri is NULL the title of bookmark is returned. \nIn the event the URI cannot be found NULL is returned and error is set to G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND. \n"});

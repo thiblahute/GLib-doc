@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hmac.html#g_hmac_copy1", "fragment": "g_hmac_copy \nCopies a GHmac. If hmac has been closed by calling g_hmac_get_string or g_hmac_get_digest the copied HMAC will be closed as well. \n"});

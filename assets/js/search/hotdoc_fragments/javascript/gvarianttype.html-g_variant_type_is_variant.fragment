@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvarianttype.html#g_variant_type_is_variant", "fragment": "GLib.VariantType.prototype.is_variant \nDetermines if the given type is the variant type. \n"});

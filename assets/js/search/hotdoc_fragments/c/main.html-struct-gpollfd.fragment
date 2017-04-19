@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/main.html#struct-gpollfd", "fragment": "struct GPollFD \nRepresents a file descriptor which events to poll for and which events occurred. \n"});

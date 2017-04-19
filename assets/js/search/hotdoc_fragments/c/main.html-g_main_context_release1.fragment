@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/main.html#g_main_context_release1", "fragment": "g_main_context_release \nReleases ownership of a context previously acquired by this thread with g_main_context_acquire. If the context was acquired multiple times the ownership will be released only when g_main_context_release is called as many times as it was acquired. \n"});

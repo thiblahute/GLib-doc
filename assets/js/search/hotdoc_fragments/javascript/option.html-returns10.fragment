@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/option.html#returns10", "fragment": "\ntrue if the function completed successfully false if an error occurred in which case error should be set with g_set_error not introspectable \n"});

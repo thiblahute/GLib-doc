@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_utils.html#g_strv_length1", "fragment": "g_strv_length \nReturns the length of the given NULL terminated string array str_array. \n"});

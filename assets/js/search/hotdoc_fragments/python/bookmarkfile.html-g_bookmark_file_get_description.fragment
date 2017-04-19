@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/bookmarkfile.html#g_bookmark_file_get_description", "fragment": "GLib.BookmarkFile.get_description \nRetrieves the description of the bookmark for uri. \nIn the event the URI cannot be found None is returned and error is set to GLib.BookmarkFileError.uri_not_found. \n"});

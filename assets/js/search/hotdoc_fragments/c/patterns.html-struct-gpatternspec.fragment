@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/patterns.html#struct-gpatternspec", "fragment": "struct GPatternSpec \nA GPatternSpec struct is the compiled form of a pattern. This structure is opaque and its fields cannot be accessed directly. \n"});

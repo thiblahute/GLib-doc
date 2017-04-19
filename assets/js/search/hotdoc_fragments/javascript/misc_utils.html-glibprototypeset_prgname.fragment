@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/misc_utils.html#glibprototypeset_prgname", "fragment": "GLib.prototype.set_prgname \nSets the name of the program. This name should not be localized in contrast to GLib.prototype.set_application_name. \nNote that for thread safety reasons this function can only be called once. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdateadd_days", "fragment": "GLib.Date.add_days \nIncrements a date some number of days. To move forward by weeks add weeks days. The date must be valid. \n"});

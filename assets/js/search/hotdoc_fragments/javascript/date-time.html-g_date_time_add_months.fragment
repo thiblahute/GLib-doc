@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date-time.html#g_date_time_add_months", "fragment": "GLib.DateTime.prototype.add_months \nCreates a copy of datetime and adds the specified number of months to the copy. Add negative values to subtract months. \n"});

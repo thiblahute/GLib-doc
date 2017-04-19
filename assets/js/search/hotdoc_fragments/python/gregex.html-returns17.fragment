@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gregex.html#returns17", "fragment": "\na None terminated array of gchar pointers. It must be freed using GLib.strfreev. If the previous match failed None is returned \nSince \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/testing.html#g_assert_cmphex1", "fragment": "g_assert_cmphex \nDebugging macro to compare to unsigned integers. \nThis is a variant of g_assert_cmpuint that displays the numbers in hexadecimal notation in the message. \n"});

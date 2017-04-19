@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#enum-goncestatus", "fragment": "enum GOnceStatus \nThe possible statuses of a one time initialization function controlled by a GOnce struct. \n"});

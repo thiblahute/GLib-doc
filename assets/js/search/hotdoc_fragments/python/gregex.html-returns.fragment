@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gregex.html#returns", "fragment": "\na GLib.Regex structure or None if an error occured. Call GLib.Regex.unref when you are done with it \nSince \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hooks.html#glibhook_free", "fragment": "GLib.hook_free \nCalls the GLib.HookList finalize_hook function if it exists and frees the memory allocated for the GLib.Hook. \n"});

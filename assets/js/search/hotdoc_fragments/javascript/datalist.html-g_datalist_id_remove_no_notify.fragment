@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/datalist.html#g_datalist_id_remove_no_notify", "fragment": "GLib.prototype.datalist_id_remove_no_notify \nRemoves an element without calling its destroy notification function. \n"});

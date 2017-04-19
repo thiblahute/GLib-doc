@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdate_is_leap_year", "fragment": "GLib.date_is_leap_year \nReturns True if the year is a leap year. \nFor the purposes of this function leap year is every year divisible by unless that year is divisible by If it is divisible by it would be a leap year only if that year is also divisible by \n"});

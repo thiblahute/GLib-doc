@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/timers.html#glibtimercontinue", "fragment": "GLib.Timer.continue \nResumes a timer that has previously been stopped with GLib.Timer.stop. GLib.Timer.stop must be called before using this function. \n"});

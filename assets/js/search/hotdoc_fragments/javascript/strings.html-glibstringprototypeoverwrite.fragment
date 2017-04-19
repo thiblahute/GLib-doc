@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/strings.html#glibstringprototypeoverwrite", "fragment": "GLib.String.prototype.overwrite \nOverwrites part of a string lengthening it if necessary. \n"});

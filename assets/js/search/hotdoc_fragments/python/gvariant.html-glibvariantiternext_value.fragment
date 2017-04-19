@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvariant.html#glibvariantiternext_value", "fragment": "GLib.VariantIter.next_value \nGets the next item in the container. If no more items remain then None is returned. \nUse GLib.Variant.unref to drop your reference on the return value when you no longer need it. \nHere is an example for iterating with GLib.VariantIter.next_value \n"});

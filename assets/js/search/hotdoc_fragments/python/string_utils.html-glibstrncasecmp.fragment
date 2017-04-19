@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/string_utils.html#glibstrncasecmp", "fragment": "GLib.strncasecmp \nA case insensitive string comparison corresponding to the standard strncasecmp function on platforms which support it. It is similar to GLib.strcasecmp except it only compares the first n characters of the strings. \n"});

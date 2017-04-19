@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/unicode.html#g_unichar_validate1", "fragment": "g_unichar_validate \nChecks whether ch is a valid Unicode character. Some possible integer values of ch will not be valid. is considered a valid character though it s normally a string terminator. \n"});

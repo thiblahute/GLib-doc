@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/atomic_operations.html#glibatomic_pointer_get", "fragment": "GLib.atomic_pointer_get \nGets the current value of atomic. \nThis call acts as a full compiler and hardware memory barrier before the get \n"});

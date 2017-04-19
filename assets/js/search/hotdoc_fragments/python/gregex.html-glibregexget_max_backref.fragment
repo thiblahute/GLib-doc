@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gregex.html#glibregexget_max_backref", "fragment": "GLib.Regex.get_max_backref \nReturns the number of the highest back reference in the pattern or if the pattern does not contain back references. \n"});

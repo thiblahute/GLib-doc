@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvariant.html#glibvariantnew_strv", "fragment": "GLib.Variant.new_strv \nConstructs an array of strings GLib.Variant from the given array of strings. \nIf length is then strv is None terminated. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibsource_continue", "fragment": "GLib.SOURCE_CONTINUE \nUse this macro as the return value of a GLib.SourceFunc to leave the GLib.Source in the main loop. \n"});

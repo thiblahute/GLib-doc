@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/unicode.html#parameters42", "fragment": "str \na pointer to character data \nmax_len \nmax bytes to validate or to go until NUL \nend \nreturn location for end of valid data \n"});

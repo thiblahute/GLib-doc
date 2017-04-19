@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvarianttype.html#glibvarianttypeis_subtype_of", "fragment": "GLib.VariantType.is_subtype_of \nChecks if type is a subtype of supertype. \nThis function returns True if type is a subtype of supertype. All types are considered to be subtypes of themselves. Aside from that only indefinite types can have subtypes. \n"});

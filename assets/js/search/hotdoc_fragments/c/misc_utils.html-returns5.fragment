@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/misc_utils.html#returns5", "fragment": "\nthe path to the specified special directory or NULL if the logical id was not found. The returned string is owned by GLib and should not be modified or freed. \nSince \n"});

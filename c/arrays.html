@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GArray</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="arrays.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="arrays.markdown">
+        <h1 id="garray">GArray</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GArray</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GArrayFunctions">Functions</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_array_sized_new">
+		
+<h4 id="g_array_sized_new1">
+	<span><code>g_array_sized_new</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_array_sized_new (gboolean zero_terminated,
+                   gboolean clear_,
+                   guint element_size,
+                   guint reserved_size)</pre>
+
+<p>Creates a new <a href="arrays.html#GArray">GArray</a> with <em>reserved_size</em> elements preallocated and
+a reference count of 1. This avoids frequent reallocation, if you
+are going to add many elements to the array. Note however that the
+size of the array is still 0.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>zero_terminated:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#TRUE">TRUE</a> if the array should have an extra element at
+the end with all bits cleared</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>clear_:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#TRUE">TRUE</a> if all bits in the array should be cleared to 0 on
+allocation</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>element_size:</code></em></i>
+		</p>
+	</td>
+		<td><p>size of each element in the array</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>reserved_size:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of elements preallocated</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new <a href="arrays.html#GArray">GArray</a></p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_array_set_clear_func">
+		
+<h4 id="g_array_set_clear_func1">
+	<span><code>g_array_set_clear_func</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_array_set_clear_func (gpointer array,
+                        <a title="GDestroyNotify" href="datasets.html#GDestroyNotify">GDestroyNotify</a> clear_func)</pre>
+
+<p>Sets a function to clear an element of <em>array</em>.</p>
+<p>The <em>clear_func</em> will be called when an element in the array
+data segment is removed and when the array is freed and data
+segment is deallocated as well.</p>
+<p>Note that in contrast with other uses of <a href="datasets.html#GDestroyNotify">GDestroyNotify</a>
+functions, <em>clear_func</em> is expected to clear the contents of
+the array element it is given, but not free the element itself.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>A <a href="arrays.html#GArray">GArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>clear_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>a function to clear an element of <em>array</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_array_unref">
+		
+<h4 id="g_array_unref1">
+	<span><code>g_array_unref</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_array_unref (gpointer array)</pre>
+
+<p>Atomically decrements the reference count of <em>array</em> by one. If the
+reference count drops to 0, all memory allocated by the array is
+released. This function is MT-safe and may be called from any
+thread.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>A <a href="arrays.html#GArray">GArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_array_set_size">
+		
+<h4 id="g_array_set_size1">
+	<span><code>g_array_set_size</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_array_set_size (gpointer array,
+                  guint length)</pre>
+
+<p>Sets the size of the array, expanding it if necessary. If the array
+was created with <em>clear_</em> set to <a href="macros.html#TRUE">TRUE</a>, the new elements are set to 0.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays.html#GArray">GArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>the new size of the <a href="arrays.html#GArray">GArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="arrays.html#GArray">GArray</a></p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_array_insert_vals">
+		
+<h4 id="g_array_insert_vals1">
+	<span><code>g_array_insert_vals</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_array_insert_vals (gpointer array,
+                     guint index_,
+                     gconstpointer data,
+                     guint len)</pre>
+
+<p>Inserts <em>len</em> elements into a <a href="arrays.html#GArray">GArray</a> at the given index.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays.html#GArray">GArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>index_:</code></em></i>
+		</p>
+	</td>
+		<td><p>the index to place the elements at</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to the elements to insert</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of elements to insert</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="arrays.html#GArray">GArray</a></p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_array_remove_range">
+		
+<h4 id="g_array_remove_range1">
+	<span><code>g_array_remove_range</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_array_remove_range (gpointer array,
+                      guint index_,
+                      guint length)</pre>
+
+<p>Removes the given number of elements starting at the given index
+from a <a href="arrays.html#GArray">GArray</a>.  The following elements are moved to close the gap.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <em>GArray</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>index_:</code></em></i>
+		</p>
+	</td>
+		<td><p>the index of the first element to remove</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of elements to remove</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="arrays.html#GArray">GArray</a></p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_array_free">
+		
+<h4 id="g_array_free1">
+	<span><code>g_array_free</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gchar*
+g_array_free (gpointer array,
+              gboolean free_segment)</pre>
+
+<p>Frees the memory allocated for the <a href="arrays.html#GArray">GArray</a>. If <em>free_segment</em> is
+<a href="macros.html#TRUE">TRUE</a> it frees the memory block holding the elements as well and
+also each element if <em>array</em> has a <em>element_free_func</em> set. Pass
+<a href="macros.html#FALSE">FALSE</a> if you want to free the <a href="arrays.html#GArray">GArray</a> wrapper but preserve the
+underlying array for use elsewhere. If the reference count of <em>array</em>
+is greater than one, the <a href="arrays.html#GArray">GArray</a> wrapper is preserved but the size
+of <em>array</em> will be set to zero.</p>
+<p>If array elements contain dynamically-allocated memory, they should
+be freed separately.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays.html#GArray">GArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>free_segment:</code></em></i>
+		</p>
+	</td>
+		<td><p>if <a href="macros.html#TRUE">TRUE</a> the actual element data is freed as well</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the element data if <em>free_segment</em> is <a href="macros.html#FALSE">FALSE</a>, otherwise
+<a href="macros.html#NULL">NULL</a>. The element data should be freed using <a href="memory.html#g_free">g_free</a>.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_array_sort">
+		
+<h4 id="g_array_sort1">
+	<span><code>g_array_sort</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_array_sort (gpointer array,
+              <a title="GCompareFunc" href="linked_lists_double.html#GCompareFunc">GCompareFunc</a> compare_func)</pre>
+
+<p>Sorts a <a href="arrays.html#GArray">GArray</a> using <em>compare_func</em> which should be a qsort-style
+comparison function (returns less than zero for first arg is less
+than second arg, zero for equal, greater zero if first arg is
+greater than second arg).</p>
+<p>This is guaranteed to be a stable sort since version 2.32.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays.html#GArray">GArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>compare_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>comparison function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_array_append_vals">
+		
+<h4 id="g_array_append_vals1">
+	<span><code>g_array_append_vals</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_array_append_vals (gpointer array,
+                     gconstpointer data,
+                     guint len)</pre>
+
+<p>Adds <em>len</em> elements onto the end of the array.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays.html#GArray">GArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to the elements to append to the end of the array</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of elements to append</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="arrays.html#GArray">GArray</a></p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_array_prepend_vals">
+		
+<h4 id="g_array_prepend_vals1">
+	<span><code>g_array_prepend_vals</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_array_prepend_vals (gpointer array,
+                      gconstpointer data,
+                      guint len)</pre>
+
+<p>Adds <em>len</em> elements onto the start of the array.</p>
+<p>This operation is slower than <a href="arrays.html#g_array_append_vals">g_array_append_vals</a> since the
+existing elements in the array have to be moved to make space for
+the new elements.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays.html#GArray">GArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to the elements to prepend to the start of the array</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of elements to prepend</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="arrays.html#GArray">GArray</a></p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_array_remove_index">
+		
+<h4 id="g_array_remove_index1">
+	<span><code>g_array_remove_index</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_array_remove_index (gpointer array,
+                      guint index_)</pre>
+
+<p>Removes the element at the given index from a <a href="arrays.html#GArray">GArray</a>. The following
+elements are moved down one place.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays.html#GArray">GArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>index_:</code></em></i>
+		</p>
+	</td>
+		<td><p>the index of the element to remove</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="arrays.html#GArray">GArray</a></p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_array_get_element_size">
+		
+<h4 id="g_array_get_element_size1">
+	<span><code>g_array_get_element_size</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint
+g_array_get_element_size (gpointer array)</pre>
+
+<p>Gets the size of the elements in <em>array</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>A <a href="arrays.html#GArray">GArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>Size of each element, in bytes</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_array_new">
+		
+<h4 id="g_array_new1">
+	<span><code>g_array_new</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_array_new (gboolean zero_terminated,
+             gboolean clear_,
+             guint element_size)</pre>
+
+<p>Creates a new <a href="arrays.html#GArray">GArray</a> with a reference count of 1.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>zero_terminated:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#TRUE">TRUE</a> if the array should have an extra element at
+the end which is set to 0</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>clear_:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#TRUE">TRUE</a> if <a href="arrays.html#GArray">GArray</a> elements should be automatically cleared
+to 0 when they are allocated</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>element_size:</code></em></i>
+		</p>
+	</td>
+		<td><p>the size of each element in bytes</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new <a href="arrays.html#GArray">GArray</a></p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_array_sort_with_data">
+		
+<h4 id="g_array_sort_with_data1">
+	<span><code>g_array_sort_with_data</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_array_sort_with_data (gpointer array,
+                        <a title="GCompareDataFunc" href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> compare_func,
+                        gpointer user_data)</pre>
+
+<p>Like <a href="arrays.html#g_array_sort">g_array_sort</a>, but the comparison function receives an extra
+user data argument.</p>
+<p>This is guaranteed to be a stable sort since version 2.32.</p>
+<p>There used to be a comment here about making the sort stable by
+using the addresses of the elements in the comparison function.
+This did not actually work, so any such code should be removed.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays.html#GArray">GArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>compare_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>comparison function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data to pass to <em>compare_func</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_array_remove_index_fast">
+		
+<h4 id="g_array_remove_index_fast1">
+	<span><code>g_array_remove_index_fast</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_array_remove_index_fast (gpointer array,
+                           guint index_)</pre>
+
+<p>Removes the element at the given index from a <a href="arrays.html#GArray">GArray</a>. The last
+element in the array is used to fill in the space, so this function
+does not preserve the order of the <a href="arrays.html#GArray">GArray</a>. But it is faster than
+<a href="arrays.html#g_array_remove_index">g_array_remove_index</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <em>GArray</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>index_:</code></em></i>
+		</p>
+	</td>
+		<td><p>the index of the element to remove</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="arrays.html#GArray">GArray</a></p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_array_ref">
+		
+<h4 id="g_array_ref1">
+	<span><code>g_array_ref</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_array_ref (gpointer array)</pre>
+
+<p>Atomically increments the reference count of <em>array</em> by one.
+This function is MT-safe and may be called from any thread.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>A <a href="arrays.html#GArray">GArray</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The passed in <a href="arrays.html#GArray">GArray</a></p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Function_Macros">Function Macros</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_array_index">
+		
+<h3 id="g_array_index1">
+	<span><code>g_array_index</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_array_index(a,t,i)      (((t*) (void *) (a)-&gt;data) [(i)])
+</pre>
+
+<p>Returns the element of a <a href="arrays.html#GArray">GArray</a> at the given index. The return
+value is cast to the given type.</p>
+<p>This example gets a pointer to an element in a <a href="arrays.html#GArray">GArray</a>:</p>
+<pre><code class="language-[&lt;!--">   EDayViewEvent *event;
+   // This gets a pointer to the 4th element in the array of
+   // EDayViewEvent structs.
+   event = &amp;g_array_index (events, EDayViewEvent, 3);
+</code></pre>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_array_append_val">
+		
+<h3 id="g_array_append_val1">
+	<span><code>g_array_append_val</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_array_append_val(a,v)	  g_array_append_vals (a, &amp;(v), 1)
+</pre>
+
+<p>Adds the value on to the end of the array. The array will grow in
+size automatically if necessary.</p>
+<p><a href="arrays.html#g_array_append_val">g_array_append_val</a> is a macro which uses a reference to the value
+parameter <em>v</em>. This means that you cannot use it with literal values
+such as "27". You must use variables.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_array_insert_val">
+		
+<h3 id="g_array_insert_val1">
+	<span><code>g_array_insert_val</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_array_insert_val(a,i,v) g_array_insert_vals (a, i, &amp;(v), 1)
+</pre>
+
+<p>Inserts an element into an array at the given index.</p>
+<p><a href="arrays.html#g_array_insert_val">g_array_insert_val</a> is a macro which uses a reference to the value
+parameter <em>v</em>. This means that you cannot use it with literal values
+such as "27". You must use variables.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_array_prepend_val">
+		
+<h3 id="g_array_prepend_val1">
+	<span><code>g_array_prepend_val</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_array_prepend_val(a,v)  g_array_prepend_vals (a, &amp;(v), 1)
+</pre>
+
+<p>Adds the value on to the start of the array. The array will grow in
+size automatically if necessary.</p>
+<p>This operation is slower than <a href="arrays.html#g_array_append_val">g_array_append_val</a> since the
+existing elements in the array have to be moved to make space for
+the new element.</p>
+<p><a href="arrays.html#g_array_prepend_val">g_array_prepend_val</a> is a macro which uses a reference to the value
+parameter <em>v</em>. This means that you cannot use it with literal values
+such as "27". You must use variables.</p>
+
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GArray">
+		
+<h3 id="struct-garray">
+		struct GArray
+	</h3>
+
+		<pre class="raw_code">
+struct GArray {
+    gchar* data;
+    guint len;
+};
+</pre>
+
+<p>Contains the public fields of a GArray.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="fields">Fields</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GArray.data">
+		<td>
+		<p>
+		<i><em><code>gchar* <em><code>data</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to the element data. The data may be moved as
+elements are added to the <a href="arrays.html#GArray">GArray</a>.</p>
+</td>
+</tr>
+
+						<tr id="GArray.len">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>len</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of elements in the <a href="arrays.html#GArray">GArray</a> not including the
+possible terminating zero element.</p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#glibmainloopprototypeunref", "fragment": "GLib.MainLoop.prototype.unref \nDecreases the reference count on a GLib.MainLoop object by one. If the result is zero free the loop and free all associated memory. \n"});

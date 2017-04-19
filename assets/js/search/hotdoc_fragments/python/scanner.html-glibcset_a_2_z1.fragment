@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/scanner.html#glibcset_a_2_z1", "fragment": "GLib.CSET_a_2_z \nThe set of lowercase ASCII alphabet characters. Used for specifying valid identifier characters in GLib.ScannerConfig. \n"});

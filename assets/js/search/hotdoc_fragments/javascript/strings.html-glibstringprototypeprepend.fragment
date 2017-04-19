@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/strings.html#glibstringprototypeprepend", "fragment": "GLib.String.prototype.prepend \nAdds a string on to the start of a GLib.String expanding it if necessary. \n"});

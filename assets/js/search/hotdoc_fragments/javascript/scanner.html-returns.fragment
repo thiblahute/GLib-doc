@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/scanner.html#returns", "fragment": "\nthe value of symbol in the current scope or null if symbol is not bound in the current scope \n"});

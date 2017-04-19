@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hmac.html#glibhmacprototypeget_string", "fragment": "GLib.Hmac.prototype.get_string \nGets the HMAC as an hexadecimal string. \nOnce this function has been called the GLib.Hmac can no longer be updated with GLib.Hmac.prototype.update. \nThe hexadecimal characters will be lower case. \n"});

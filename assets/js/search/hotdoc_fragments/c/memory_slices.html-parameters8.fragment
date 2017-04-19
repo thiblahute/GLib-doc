@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/memory_slices.html#parameters8", "fragment": "type \nthe type of the mem_chain blocks \nmem_chain \na pointer to the first block of the chain \nnext \nthe field name of the next pointer in type \n"});

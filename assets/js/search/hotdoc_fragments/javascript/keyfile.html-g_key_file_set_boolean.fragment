@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/keyfile.html#g_key_file_set_boolean", "fragment": "GLib.KeyFile.prototype.set_boolean \nAssociates a new boolean value with key under group_name. If key cannot be found then it is created. \n"});

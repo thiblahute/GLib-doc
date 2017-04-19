@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvariant.html#glibvariantdictprototypeunref", "fragment": "GLib.VariantDict.prototype.unref \nDecreases the reference count on dict. \nIn the event that there are no more references releases all memory associated with the GLib.VariantDict. \nDon t call this on stack allocated GLib.VariantDict instances or bad things will happen. \n"});

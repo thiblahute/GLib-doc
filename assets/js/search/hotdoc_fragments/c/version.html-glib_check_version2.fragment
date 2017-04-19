@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/version.html#glib_check_version2", "fragment": "GLIB_CHECK_VERSION \nChecks the version of the GLib library that is being compiled against. See glib_check_version for a runtime check. \n"});

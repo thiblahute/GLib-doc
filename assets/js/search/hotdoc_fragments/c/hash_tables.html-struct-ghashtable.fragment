@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hash_tables.html#struct-ghashtable", "fragment": "struct GHashTable \nThe GHashTable struct is an opaque data structure to represent a Hash Table glib Hash Tables It should only be accessed via the following functions. \n"});

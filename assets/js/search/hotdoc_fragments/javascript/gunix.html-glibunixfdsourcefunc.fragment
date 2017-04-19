@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gunix.html#glibunixfdsourcefunc", "fragment": "GLib.UnixFDSourceFunc \nThe type of functions to be called when a UNIX fd watch source triggers. \n"});

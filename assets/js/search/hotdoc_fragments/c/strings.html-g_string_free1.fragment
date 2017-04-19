@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/strings.html#g_string_free1", "fragment": "g_string_free \nFrees the memory allocated for the GString. If free_segment is TRUE it also frees the character data. If it s FALSE the caller gains ownership of the buffer and must free it after use with g_free. \n"});

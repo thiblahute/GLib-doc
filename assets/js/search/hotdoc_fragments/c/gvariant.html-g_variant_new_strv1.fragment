@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_new_strv1", "fragment": "g_variant_new_strv \nConstructs an array of strings GVariant from the given array of strings. \nIf length is then strv is NULL terminated. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/bookmarkfile.html#parameters10", "fragment": "bookmark \na GBookmarkFile \nuri \na valid URI \nname \nan application s name \nexec \nreturn location for the command line of the application or NULL \ncount \nreturn location for the registration count or NULL \nstamp \nreturn location for the last registration time or NULL \n"});

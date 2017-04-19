@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/strings.html#g_string_truncate1", "fragment": "g_string_truncate \nCuts off the end of the GString leaving the first len bytes. \n"});

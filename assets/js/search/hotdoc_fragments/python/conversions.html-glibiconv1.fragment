@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/conversions.html#glibiconv1", "fragment": "GLib.IConv \nThe GIConv struct wraps an iconv conversion descriptor. It contains private data and should only be accessed using the following functions. \n"});

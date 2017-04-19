@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hash_tables.html#glibint64_equal", "fragment": "GLib.int64_equal \nCompares the two gint64 values being pointed to and returns True if they are equal. It can be passed to g_hash_table_new not introspectable as the key_equal_func parameter when using non NULL pointers to bit integers as keys in a GLib.HashTable. \n"});

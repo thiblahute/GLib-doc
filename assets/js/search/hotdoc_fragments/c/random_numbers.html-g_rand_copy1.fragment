@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/random_numbers.html#g_rand_copy1", "fragment": "g_rand_copy \nCopies a GRand into a new one with the same exact state as before. This way you can take a snapshot of the random number generator for replaying later. \n"});

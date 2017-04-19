@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/fileutils.html#glibmappedfileunref", "fragment": "GLib.MappedFile.unref \nDecrements the reference count of file by one. If the reference count drops to unmaps the buffer of file and frees it. \nIt is safe to call this function from any thread. \nSince \n"});

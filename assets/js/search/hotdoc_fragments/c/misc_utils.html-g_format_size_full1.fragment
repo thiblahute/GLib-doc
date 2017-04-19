@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/misc_utils.html#g_format_size_full1", "fragment": "g_format_size_full \nFormats a size. \nThis function is similar to g_format_size but allows for flags that modify the output. See GFormatSizeFlags. \n"});

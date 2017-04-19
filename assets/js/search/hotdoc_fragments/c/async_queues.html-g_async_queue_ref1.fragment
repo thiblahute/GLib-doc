@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/async_queues.html#g_async_queue_ref1", "fragment": "g_async_queue_ref \nIncreases the reference count of the asynchronous queue by You do not need to hold the lock to call this function. \n"});

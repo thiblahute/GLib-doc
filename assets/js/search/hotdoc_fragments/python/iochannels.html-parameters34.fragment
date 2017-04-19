@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#parameters34", "fragment": "channel \na GLib.IOChannel \npriority \nthe priority of the GLib.IOChannel source \ncondition \nthe condition to watch for \nfunc \nthe function to call when the condition is satisfied \nuser_data \nuser data to pass to func \nnotify \nthe function to call when the source is removed \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/conversions.html#glibiconv", "fragment": "GLib.iconv \nSame as the standard UNIX routine iconv but may be implemented via libiconv on UNIX flavors that lack a native implementation. \nGLib provides GLib.convert and GLib.locale_to_utf8 which are likely more convenient than the raw iconv wrappers. \n"});

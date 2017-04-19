@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/linked_lists_double.html#gcomparefunc", "fragment": "GCompareFunc \nSpecifies the type of a comparison function used to compare two values. The function should return a negative integer if the first value comes before the second if they are equal or a positive integer if the first value comes after the second. \n"});

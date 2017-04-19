@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/quarks.html#glibintern_static_string", "fragment": "GLib.intern_static_string \nReturns a canonical representation for string. Interned strings can be compared for equality by comparing the pointers instead of using strcmp. GLib.intern_static_string does not copy the string therefore string must not be freed or modified. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/misc_utils.html#glibprototypepath_skip_root", "fragment": "GLib.prototype.path_skip_root \nReturns a pointer into file_name after the root component i.e. after the in UNIX or C under Windows. If file_name is not an absolute path it returns null. \n"});

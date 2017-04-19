@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvarianttype.html#g_variant_type_free1", "fragment": "g_variant_type_free \nFrees a GVariantType that was allocated with g_variant_type_copy g_variant_type_new or one of the container type constructor functions. \nIn the case that type is NULL this function does nothing. \nSince \n"});

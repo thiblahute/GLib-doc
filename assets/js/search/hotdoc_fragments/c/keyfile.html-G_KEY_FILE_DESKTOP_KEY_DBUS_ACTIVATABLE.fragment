@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/keyfile.html#G_KEY_FILE_DESKTOP_KEY_DBUS_ACTIVATABLE", "fragment": "G_KEY_FILE_DESKTOP_KEY_DBUS_ACTIVATABLE \nA key under G_KEY_FILE_DESKTOP_GROUP whose value is a boolean set to true if the application is D Bus activatable. \n"});

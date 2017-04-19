@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#parameters44", "fragment": "str \na UTF encoded string \nlen \nthe maximum length number of gunichar2 of str to use. If len then the string is nul terminated. \n"});

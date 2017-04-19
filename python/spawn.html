@@ -1,0 +1,1874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>spawn</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="spawn.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="python">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="spawn.markdown">
+    </div>
+        
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.34;" id="g_spawn_check_exit_status">
+		
+<h3 id="glibspawn_check_exit_status">
+	<span><code>GLib.spawn_check_exit_status</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.spawn_check_exit_status (exit_status):
+    #python wrapper for 'g_spawn_check_exit_status'</pre>
+
+<p>Set <em>error</em> if <em>exit_status</em> indicates the child exited abnormally
+(e.g. with a nonzero exit code, or via a fatal signal).</p>
+<p>The <a href="spawn.html#g_spawn_sync">GLib.spawn_sync</a> and <a href="../c/main.html#g_child_watch_add">g_child_watch_add (not introspectable)</a> family of APIs return an
+exit status for subprocesses encoded in a platform-specific way.
+On Unix, this is guaranteed to be in the same format waitpid returns,
+and on Windows it is guaranteed to be the result of GetExitCodeProcess.</p>
+<p>Prior to the introduction of this function in GLib 2.34, interpreting
+<em>exit_status</em> required use of platform-specific APIs, which is problematic
+for software using GLib as a cross-platform layer.</p>
+<p>Additionally, many programs simply want to determine whether or not
+the child exited successfully, and either propagate a <a href="error_reporting.html#GError">GLib.Error</a> or
+print a message to standard error. In that common case, this function
+can be used. Note that the error message in <em>error</em> will contain
+human-readable information about the exit status.</p>
+<p>The <em>domain</em> and <em>code</em> of <em>error</em> have special semantics in the case
+where the process has an "exit code", as opposed to being killed by
+a signal. On Unix, this happens if WIFEXITED would be true of
+<em>exit_status</em>. On Windows, it is always the case.</p>
+<p>The special semantics are that the actual exit code will be the
+code set in <em>error</em>, and the domain will be <a href="../c/spawn.html#G_SPAWN_EXIT_ERROR">G_SPAWN_EXIT_ERROR (not introspectable)</a>.
+This allows you to differentiate between different exit codes.</p>
+<p>If the process was terminated by some means other than an exit
+status, the domain will be <a href="../c/spawn.html#G_SPAWN_ERROR">G_SPAWN_ERROR (not introspectable)</a>, and the code will be
+<a href="spawn.html#G_SPAWN_ERROR_FAILED">GLib.SpawnError.failed</a>.</p>
+<p>This function just offers convenience; you can of course also check
+the available platform via a macro such as <a href="../c/macros.html#G_OS_UNIX">G_OS_UNIX (not introspectable)</a>, and use
+WIFEXITED and WEXITSTATUS on <em>exit_status</em> directly. Do not attempt
+to scan or parse the error message string; it may be translated and/or
+change in future versions of GLib.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>exit_status:</code></em></i>
+		</p>
+	</td>
+		<td><p>An exit code as returned from <a href="spawn.html#g_spawn_sync">GLib.spawn_sync</a></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if child exited successfully, <a href="https://docs.python.org/2/library/constants.html#False">False</a> otherwise (and
+<em>error</em> will be set)</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.34
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_spawn_command_line_sync">
+		
+<h3 id="glibspawn_command_line_sync">
+	<span><code>GLib.spawn_command_line_sync</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.spawn_command_line_sync (command_line):
+    #python wrapper for 'g_spawn_command_line_sync'</pre>
+
+<p>A simple version of <a href="spawn.html#g_spawn_sync">GLib.spawn_sync</a> with little-used parameters
+removed, taking a command line instead of an argument vector.  See
+<a href="spawn.html#g_spawn_sync">GLib.spawn_sync</a> for full details. <em>command_line</em> will be parsed by
+<a href="shell.html#g_shell_parse_argv">GLib.shell_parse_argv</a>. Unlike <a href="spawn.html#g_spawn_sync">GLib.spawn_sync</a>, the <a href="spawn.html#G_SPAWN_SEARCH_PATH">GLib.SpawnFlags.search_path</a> flag
+is enabled. Note that <a href="spawn.html#G_SPAWN_SEARCH_PATH">GLib.SpawnFlags.search_path</a> can have security
+implications, so consider using <a href="spawn.html#g_spawn_sync">GLib.spawn_sync</a> directly if
+appropriate. Possible errors are those from <a href="spawn.html#g_spawn_sync">GLib.spawn_sync</a> and those
+from <a href="shell.html#g_shell_parse_argv">GLib.shell_parse_argv</a>.</p>
+<p>If <em>exit_status</em> is non-%NULL, the platform-specific exit status of
+the child is stored there; see the documentation of
+<a href="spawn.html#g_spawn_check_exit_status">GLib.spawn_check_exit_status</a> for how to use and interpret this.</p>
+<p>On Windows, please note the implications of <a href="shell.html#g_shell_parse_argv">GLib.shell_parse_argv</a>
+parsing <em>command_line</em>. Parsing is done according to Unix shell rules, not
+Windows command interpreter rules.
+Space is a separator, and backslashes are
+special. Thus you cannot simply pass a <em>command_line</em> containing
+canonical Windows paths, like "c:\program files\app\app.exe", as
+the backslashes will be eaten, and the space will act as a
+separator. You need to enclose such paths with single quotes, like
+"'c:\program files\app\app.exe' 'e:\folder\argument.txt'".</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>command_line:</code></em></i>
+		</p>
+	</td>
+		<td><p>a command line</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> on success, <a href="https://docs.python.org/2/library/constants.html#False">False</a> if an error was set</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>standard_output:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> on success, <a href="https://docs.python.org/2/library/constants.html#False">False</a> if an error was set</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>standard_error:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> on success, <a href="https://docs.python.org/2/library/constants.html#False">False</a> if an error was set</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>exit_status:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> on success, <a href="https://docs.python.org/2/library/constants.html#False">False</a> if an error was set</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_spawn_command_line_async">
+		
+<h3 id="glibspawn_command_line_async">
+	<span><code>GLib.spawn_command_line_async</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.spawn_command_line_async (command_line):
+    #python wrapper for 'g_spawn_command_line_async'</pre>
+
+<p>A simple version of <a href="spawn.html#g_spawn_async">GLib.spawn_async</a> that parses a command line with
+<a href="shell.html#g_shell_parse_argv">GLib.shell_parse_argv</a> and passes it to <a href="spawn.html#g_spawn_async">GLib.spawn_async</a>. Runs a
+command line in the background. Unlike <a href="spawn.html#g_spawn_async">GLib.spawn_async</a>, the
+<a href="spawn.html#G_SPAWN_SEARCH_PATH">GLib.SpawnFlags.search_path</a> flag is enabled, other flags are not. Note
+that <a href="spawn.html#G_SPAWN_SEARCH_PATH">GLib.SpawnFlags.search_path</a> can have security implications, so
+consider using <a href="spawn.html#g_spawn_async">GLib.spawn_async</a> directly if appropriate. Possible
+errors are those from <a href="shell.html#g_shell_parse_argv">GLib.shell_parse_argv</a> and <a href="spawn.html#g_spawn_async">GLib.spawn_async</a>.</p>
+<p>The same concerns on Windows apply as for <a href="spawn.html#g_spawn_command_line_sync">GLib.spawn_command_line_sync</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>command_line:</code></em></i>
+		</p>
+	</td>
+		<td><p>a command line</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> on success, <a href="https://docs.python.org/2/library/constants.html#False">False</a> if error is set</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_spawn_error_quark">
+		
+<h3 id="glibspawn_error_quark">
+	<span><code>GLib.spawn_error_quark</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.spawn_error_quark ():
+    #python wrapper for 'g_spawn_error_quark'</pre>
+
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		<a title="GLib.Quark" href="quarks.html#GQuark">GLib.Quark</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_spawn_async">
+		
+<h3 id="glibspawn_async">
+	<span><code>GLib.spawn_async</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.spawn_async (working_directory, argv, envp, flags, child_setup, user_data):
+    #python wrapper for 'g_spawn_async'</pre>
+
+<p>See <a href="spawn.html#g_spawn_async_with_pipes">GLib.spawn_async_with_pipes</a> for a full description; this function
+simply calls the <a href="spawn.html#g_spawn_async_with_pipes">GLib.spawn_async_with_pipes</a> without any pipes.</p>
+<p>You should call <a href="spawn.html#g_spawn_close_pid">GLib.spawn_close_pid</a> on the returned child process
+reference when you don't need it any more.</p>
+<p>If you are writing a GTK+ application, and the program you are
+spawning is a graphical application, too, then you may want to
+use gdk_spawn_on_screen instead to ensure that the spawned program
+opens its windows on the right screen.</p>
+<p>Note that the returned <em>child_pid</em> on Windows is a handle to the child
+process and not its identifier. Process handles and process identifiers
+are different concepts on Windows.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>working_directory:</code></em></i>
+		</p>
+	</td>
+		<td><p>child's current working directory, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> to inherit parent's</p>
+</td>
+<td>
+<a title="str" href="https://docs.python.org/2.7/library/functions.html#str">str</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>argv:</code></em></i>
+		</p>
+	</td>
+		<td><p>child's argument vector</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>envp:</code></em></i>
+		</p>
+	</td>
+		<td><p>child's environment, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> to inherit parent's</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>flags from <a href="spawn.html#GSpawnFlags">GLib.SpawnFlags</a></p>
+</td>
+<td>
+<a title="GLib.SpawnFlags" href="spawn.html#GSpawnFlags">GLib.SpawnFlags</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>child_setup:</code></em></i>
+		</p>
+	</td>
+		<td><p>function to run in the child just before exec</p>
+</td>
+<td>
+<a title="GLib.SpawnChildSetupFunc" href="spawn.html#GSpawnChildSetupFunc">GLib.SpawnChildSetupFunc</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data for <em>child_setup</em></p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of1">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> on success, <a href="https://docs.python.org/2/library/constants.html#False">False</a> if error is set</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>child_pid:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> on success, <a href="https://docs.python.org/2/library/constants.html#False">False</a> if error is set</p>
+
+	</td>
+	<td>
+		<a title="GLib.Pid" href="main.html#GPid">GLib.Pid</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_spawn_close_pid">
+		
+<h3 id="glibspawn_close_pid">
+	<span><code>GLib.spawn_close_pid</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.spawn_close_pid (pid):
+    #python wrapper for 'g_spawn_close_pid'</pre>
+
+<p>On some platforms, notably Windows, the <a href="main.html#GPid">GLib.Pid</a> type represents a resource
+which must be closed to prevent resource leaking. <a href="spawn.html#g_spawn_close_pid">GLib.spawn_close_pid</a>
+is provided for this purpose. It should be used on all platforms, even
+though it doesn't do anything under UNIX.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pid:</code></em></i>
+		</p>
+	</td>
+		<td><p>The process reference to close</p>
+</td>
+<td>
+<a title="GLib.Pid" href="main.html#GPid">GLib.Pid</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_spawn_async_with_pipes">
+		
+<h3 id="glibspawn_async_with_pipes">
+	<span><code>GLib.spawn_async_with_pipes</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.spawn_async_with_pipes (working_directory, argv, envp, flags, child_setup, user_data):
+    #python wrapper for 'g_spawn_async_with_pipes'</pre>
+
+<p>Executes a child program asynchronously (your program will not
+block waiting for the child to exit). The child program is
+specified by the only argument that must be provided, <em>argv</em>.
+<em>argv</em> should be a <a href="https://docs.python.org/2/library/constants.html#None">None</a>-terminated array of strings, to be passed
+as the argument vector for the child. The first string in <em>argv</em>
+is of course the name of the program to execute. By default, the
+name of the program must be a full path. If <em>flags</em> contains the
+<a href="spawn.html#G_SPAWN_SEARCH_PATH">GLib.SpawnFlags.search_path</a> flag, the <code>PATH</code> environment variable is
+used to search for the executable. If <em>flags</em> contains the
+<a href="spawn.html#G_SPAWN_SEARCH_PATH_FROM_ENVP">GLib.SpawnFlags.search_path_from_envp</a> flag, the <code>PATH</code> variable from
+<em>envp</em> is used to search for the executable. If both the
+<a href="spawn.html#G_SPAWN_SEARCH_PATH">GLib.SpawnFlags.search_path</a> and <a href="spawn.html#G_SPAWN_SEARCH_PATH_FROM_ENVP">GLib.SpawnFlags.search_path_from_envp</a> flags
+are set, the <code>PATH</code> variable from <em>envp</em> takes precedence over
+the environment variable.</p>
+<p>If the program name is not a full path and <a href="spawn.html#G_SPAWN_SEARCH_PATH">GLib.SpawnFlags.search_path</a> flag is not
+used, then the program will be run from the current directory (or
+<em>working_directory</em>, if specified); this might be unexpected or even
+dangerous in some cases when the current directory is world-writable.</p>
+<p>On Windows, note that all the string or string vector arguments to
+this function and the other g_spawn*() functions are in UTF-8, the
+GLib file name encoding. Unicode characters that are not part of
+the system codepage passed in these arguments will be correctly
+available in the spawned program only if it uses wide character API
+to retrieve its command line. For C programs built with Microsoft's
+tools it is enough to make the program have a wmain instead of
+main. wmain has a wide character argument vector as parameter.</p>
+<p>At least currently, mingw doesn't support wmain, so if you use
+mingw to develop the spawned program, it should call
+g_win32_get_command_line to get arguments in UTF-8.</p>
+<p>On Windows the low-level child process creation API CreateProcess
+doesn't use argument vectors, but a command line. The C runtime
+library's spawn*() family of functions (which <a href="spawn.html#g_spawn_async_with_pipes">GLib.spawn_async_with_pipes</a>
+eventually calls) paste the argument vector elements together into
+a command line, and the C runtime startup code does a corresponding
+reconstruction of an argument vector from the command line, to be
+passed to main. Complications arise when you have argument vector
+elements that contain spaces of double quotes. The spawn*() functions
+don't do any quoting or escaping, but on the other hand the startup
+code does do unquoting and unescaping in order to enable receiving
+arguments with embedded spaces or double quotes. To work around this
+asymmetry, <a href="spawn.html#g_spawn_async_with_pipes">GLib.spawn_async_with_pipes</a> will do quoting and escaping on
+argument vector elements that need it before calling the C runtime
+spawn function.</p>
+<p>The returned <em>child_pid</em> on Windows is a handle to the child
+process, not its identifier. Process handles and process
+identifiers are different concepts on Windows.</p>
+<p><em>envp</em> is a <a href="https://docs.python.org/2/library/constants.html#None">None</a>-terminated array of strings, where each string
+has the form <code>KEY=VALUE</code>. This will become the child's environment.
+If <em>envp</em> is <a href="https://docs.python.org/2/library/constants.html#None">None</a>, the child inherits its parent's environment.</p>
+<p><em>flags</em> should be the bitwise OR of any flags you want to affect the
+function's behaviour. The <a href="spawn.html#G_SPAWN_DO_NOT_REAP_CHILD">GLib.SpawnFlags.do_not_reap_child</a> means that the
+child will not automatically be reaped; you must use a child watch to
+be notified about the death of the child process. Eventually you must
+call <a href="spawn.html#g_spawn_close_pid">GLib.spawn_close_pid</a> on the <em>child_pid</em>, in order to free
+resources which may be associated with the child process. (On Unix,
+using a child watch is equivalent to calling waitpid or handling
+the SIGCHLD signal manually. On Windows, calling <a href="spawn.html#g_spawn_close_pid">GLib.spawn_close_pid</a>
+is equivalent to calling CloseHandle on the process handle returned
+in <em>child_pid</em>). See <a href="../c/main.html#g_child_watch_add">g_child_watch_add (not introspectable)</a>.</p>
+<p><a href="spawn.html#G_SPAWN_LEAVE_DESCRIPTORS_OPEN">GLib.SpawnFlags.leave_descriptors_open</a> means that the parent's open file
+descriptors will be inherited by the child; otherwise all descriptors
+except stdin/stdout/stderr will be closed before calling exec in
+the child. <a href="spawn.html#G_SPAWN_SEARCH_PATH">GLib.SpawnFlags.search_path</a> means that <em>argv</em>[0] need not be an
+absolute path, it will be looked for in the <code>PATH</code> environment
+variable. <a href="spawn.html#G_SPAWN_SEARCH_PATH_FROM_ENVP">GLib.SpawnFlags.search_path_from_envp</a> means need not be an
+absolute path, it will be looked for in the <code>PATH</code> variable from
+<em>envp</em>. If both <a href="spawn.html#G_SPAWN_SEARCH_PATH">GLib.SpawnFlags.search_path</a> and <a href="spawn.html#G_SPAWN_SEARCH_PATH_FROM_ENVP">GLib.SpawnFlags.search_path_from_envp</a>
+are used, the value from <em>envp</em> takes precedence over the environment.
+<a href="spawn.html#G_SPAWN_STDOUT_TO_DEV_NULL">GLib.SpawnFlags.stdout_to_dev_null</a> means that the child's standard output
+will be discarded, instead of going to the same location as the parent's
+standard output. If you use this flag, <em>standard_output</em> must be <a href="https://docs.python.org/2/library/constants.html#None">None</a>.
+<a href="spawn.html#G_SPAWN_STDERR_TO_DEV_NULL">GLib.SpawnFlags.stderr_to_dev_null</a> means that the child's standard error
+will be discarded, instead of going to the same location as the parent's
+standard error. If you use this flag, <em>standard_error</em> must be <a href="https://docs.python.org/2/library/constants.html#None">None</a>.
+<a href="spawn.html#G_SPAWN_CHILD_INHERITS_STDIN">GLib.SpawnFlags.child_inherits_stdin</a> means that the child will inherit the parent's
+standard input (by default, the child's standard input is attached to
+/dev/null). If you use this flag, <em>standard_input</em> must be <a href="https://docs.python.org/2/library/constants.html#None">None</a>.
+<a href="spawn.html#G_SPAWN_FILE_AND_ARGV_ZERO">GLib.SpawnFlags.file_and_argv_zero</a> means that the first element of <em>argv</em> is
+the file to execute, while the remaining elements are the actual
+argument vector to pass to the file. Normally <a href="spawn.html#g_spawn_async_with_pipes">GLib.spawn_async_with_pipes</a>
+uses <em>argv</em>[0] as the file to execute, and passes all of <em>argv</em> to the child.</p>
+<p><em>child_setup</em> and <em>user_data</em> are a function and user data. On POSIX
+platforms, the function is called in the child after GLib has
+performed all the setup it plans to perform (including creating
+pipes, closing file descriptors, etc.) but before calling exec.
+That is, <em>child_setup</em> is called just before calling exec in the
+child. Obviously actions taken in this function will only affect
+the child, not the parent.</p>
+<p>On Windows, there is no separate fork and exec functionality.
+Child processes are created and run with a single API call,
+CreateProcess. There is no sensible thing <em>child_setup</em>
+could be used for on Windows so it is ignored and not called.</p>
+<p>If non-%NULL, <em>child_pid</em> will on Unix be filled with the child's
+process ID. You can use the process ID to send signals to the child,
+or to use <a href="../c/main.html#g_child_watch_add">g_child_watch_add (not introspectable)</a> (or waitpid) if you specified the
+<a href="spawn.html#G_SPAWN_DO_NOT_REAP_CHILD">GLib.SpawnFlags.do_not_reap_child</a> flag. On Windows, <em>child_pid</em> will be
+filled with a handle to the child process only if you specified the
+<a href="spawn.html#G_SPAWN_DO_NOT_REAP_CHILD">GLib.SpawnFlags.do_not_reap_child</a> flag. You can then access the child
+process using the Win32 API, for example wait for its termination
+with the WaitFor*() functions, or examine its exit code with
+GetExitCodeProcess. You should close the handle with CloseHandle
+or <a href="spawn.html#g_spawn_close_pid">GLib.spawn_close_pid</a> when you no longer need it.</p>
+<p>If non-%NULL, the <em>standard_input</em>, <em>standard_output</em>, <em>standard_error</em>
+locations will be filled with file descriptors for writing to the child's
+standard input or reading from its standard output or standard error.
+The caller of <a href="spawn.html#g_spawn_async_with_pipes">GLib.spawn_async_with_pipes</a> must close these file descriptors
+when they are no longer in use. If these parameters are <a href="https://docs.python.org/2/library/constants.html#None">None</a>, the
+corresponding pipe won't be created.</p>
+<p>If <em>standard_input</em> is NULL, the child's standard input is attached to
+/dev/null unless <a href="spawn.html#G_SPAWN_CHILD_INHERITS_STDIN">GLib.SpawnFlags.child_inherits_stdin</a> is set.</p>
+<p>If <em>standard_error</em> is NULL, the child's standard error goes to the same
+location as the parent's standard error unless <a href="spawn.html#G_SPAWN_STDERR_TO_DEV_NULL">GLib.SpawnFlags.stderr_to_dev_null</a>
+is set.</p>
+<p>If <em>standard_output</em> is NULL, the child's standard output goes to the same
+location as the parent's standard output unless <a href="spawn.html#G_SPAWN_STDOUT_TO_DEV_NULL">GLib.SpawnFlags.stdout_to_dev_null</a>
+is set.</p>
+<p><em>error</em> can be <a href="https://docs.python.org/2/library/constants.html#None">None</a> to ignore errors, or non-%NULL to report errors.
+If an error is set, the function returns <a href="https://docs.python.org/2/library/constants.html#False">False</a>. Errors are reported
+even if they occur in the child (for example if the executable in
+<em>argv</em>[0] is not found). Typically the <code>message</code> field of returned
+errors should be displayed to users. Possible errors are those from
+the <a href="../c/spawn.html#G_SPAWN_ERROR">G_SPAWN_ERROR (not introspectable)</a> domain.</p>
+<p>If an error occurs, <em>child_pid</em>, <em>standard_input</em>, <em>standard_output</em>,
+and <em>standard_error</em> will not be filled with valid values.</p>
+<p>If <em>child_pid</em> is not <a href="https://docs.python.org/2/library/constants.html#None">None</a> and an error does not occur then the returned
+process reference must be closed using <a href="spawn.html#g_spawn_close_pid">GLib.spawn_close_pid</a>.</p>
+<p>If you are writing a GTK+ application, and the program you
+are spawning is a graphical application, too, then you may
+want to use gdk_spawn_on_screen_with_pipes instead to ensure that
+the spawned program opens its windows on the right screen.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>working_directory:</code></em></i>
+		</p>
+	</td>
+		<td><p>child's current working directory, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> to inherit parent's, in the GLib file name encoding</p>
+</td>
+<td>
+<a title="str" href="https://docs.python.org/2.7/library/functions.html#str">str</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>argv:</code></em></i>
+		</p>
+	</td>
+		<td><p>child's argument vector, in the GLib file name encoding</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>envp:</code></em></i>
+		</p>
+	</td>
+		<td><p>child's environment, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> to inherit parent's, in the GLib file name encoding</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>flags from <a href="spawn.html#GSpawnFlags">GLib.SpawnFlags</a></p>
+</td>
+<td>
+<a title="GLib.SpawnFlags" href="spawn.html#GSpawnFlags">GLib.SpawnFlags</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>child_setup:</code></em></i>
+		</p>
+	</td>
+		<td><p>function to run in the child just before exec</p>
+</td>
+<td>
+<a title="GLib.SpawnChildSetupFunc" href="spawn.html#GSpawnChildSetupFunc">GLib.SpawnChildSetupFunc</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data for <em>child_setup</em></p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of2">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> on success, <a href="https://docs.python.org/2/library/constants.html#False">False</a> if an error was set</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>child_pid:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> on success, <a href="https://docs.python.org/2/library/constants.html#False">False</a> if an error was set</p>
+
+	</td>
+	<td>
+		<a title="GLib.Pid" href="main.html#GPid">GLib.Pid</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>standard_input:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> on success, <a href="https://docs.python.org/2/library/constants.html#False">False</a> if an error was set</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>standard_output:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> on success, <a href="https://docs.python.org/2/library/constants.html#False">False</a> if an error was set</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>standard_error:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> on success, <a href="https://docs.python.org/2/library/constants.html#False">False</a> if an error was set</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_spawn_sync">
+		
+<h3 id="glibspawn_sync">
+	<span><code>GLib.spawn_sync</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.spawn_sync (working_directory, argv, envp, flags, child_setup, user_data):
+    #python wrapper for 'g_spawn_sync'</pre>
+
+<p>Executes a child synchronously (waits for the child to exit before returning).
+All output from the child is stored in <em>standard_output</em> and <em>standard_error</em>,
+if those parameters are non-%NULL. Note that you must set the
+<a href="spawn.html#G_SPAWN_STDOUT_TO_DEV_NULL">GLib.SpawnFlags.stdout_to_dev_null</a> and <a href="spawn.html#G_SPAWN_STDERR_TO_DEV_NULL">GLib.SpawnFlags.stderr_to_dev_null</a> flags when
+passing <a href="https://docs.python.org/2/library/constants.html#None">None</a> for <em>standard_output</em> and <em>standard_error</em>.</p>
+<p>If <em>exit_status</em> is non-%NULL, the platform-specific exit status of
+the child is stored there; see the documentation of
+<a href="spawn.html#g_spawn_check_exit_status">GLib.spawn_check_exit_status</a> for how to use and interpret this.
+Note that it is invalid to pass <a href="spawn.html#G_SPAWN_DO_NOT_REAP_CHILD">GLib.SpawnFlags.do_not_reap_child</a> in
+<em>flags</em>.</p>
+<p>If an error occurs, no data is returned in <em>standard_output</em>,
+<em>standard_error</em>, or <em>exit_status</em>.</p>
+<p>This function calls <a href="spawn.html#g_spawn_async_with_pipes">GLib.spawn_async_with_pipes</a> internally; see that
+function for full details on the other parameters and details on
+how these functions work on Windows.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>working_directory:</code></em></i>
+		</p>
+	</td>
+		<td><p>child's current working directory, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> to inherit parent's</p>
+</td>
+<td>
+<a title="str" href="https://docs.python.org/2.7/library/functions.html#str">str</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>argv:</code></em></i>
+		</p>
+	</td>
+		<td><p>child's argument vector</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>envp:</code></em></i>
+		</p>
+	</td>
+		<td><p>child's environment, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> to inherit parent's</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>flags from <a href="spawn.html#GSpawnFlags">GLib.SpawnFlags</a></p>
+</td>
+<td>
+<a title="GLib.SpawnFlags" href="spawn.html#GSpawnFlags">GLib.SpawnFlags</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>child_setup:</code></em></i>
+		</p>
+	</td>
+		<td><p>function to run in the child just before exec</p>
+</td>
+<td>
+<a title="GLib.SpawnChildSetupFunc" href="spawn.html#GSpawnChildSetupFunc">GLib.SpawnChildSetupFunc</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data for <em>child_setup</em></p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of3">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> on success, <a href="https://docs.python.org/2/library/constants.html#False">False</a> if an error was set</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>standard_output:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> on success, <a href="https://docs.python.org/2/library/constants.html#False">False</a> if an error was set</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>standard_error:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> on success, <a href="https://docs.python.org/2/library/constants.html#False">False</a> if an error was set</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>exit_status:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> on success, <a href="https://docs.python.org/2/library/constants.html#False">False</a> if an error was set</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_spawn_exit_error_quark">
+		
+<h3 id="glibspawn_exit_error_quark">
+	<span><code>GLib.spawn_exit_error_quark</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.spawn_exit_error_quark ():
+    #python wrapper for 'g_spawn_exit_error_quark'</pre>
+
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		<a title="GLib.Quark" href="quarks.html#GQuark">GLib.Quark</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GSpawnFlags">
+		
+<h3 id="enum-glibspawnflags">
+		enum GLib.SpawnFlags
+	</h3>
+
+		<p>Flags passed to <a href="spawn.html#g_spawn_sync">GLib.spawn_sync</a>, <a href="spawn.html#g_spawn_async">GLib.spawn_async</a> and <a href="spawn.html#g_spawn_async_with_pipes">GLib.spawn_async_with_pipes</a>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_DEFAULT"></a>
+		GLib.SpawnFlags.default
+		</p>
+	</td>
+	<td><p>no flags, default behaviour</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_LEAVE_DESCRIPTORS_OPEN"></a>
+		GLib.SpawnFlags.leave_descriptors_open
+		</p>
+	</td>
+	<td><p>the parent's open file descriptors will
+be inherited by the child; otherwise all descriptors except stdin,
+stdout and stderr will be closed before calling exec in the child.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_DO_NOT_REAP_CHILD"></a>
+		GLib.SpawnFlags.do_not_reap_child
+		</p>
+	</td>
+	<td><p>the child will not be automatically reaped;
+you must use <a href="../c/main.html#g_child_watch_add">g_child_watch_add (not introspectable)</a> yourself (or call waitpid or handle
+<code>SIGCHLD</code> yourself), or the child will become a zombie.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_SEARCH_PATH"></a>
+		GLib.SpawnFlags.search_path
+		</p>
+	</td>
+	<td><p><code>argv[0]</code> need not be an absolute path, it will be
+looked for in the user's <code>PATH</code>.</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_STDOUT_TO_DEV_NULL"></a>
+		GLib.SpawnFlags.stdout_to_dev_null
+		</p>
+	</td>
+	<td><p>the child's standard output will be discarded,
+instead of going to the same location as the parent's standard output.</p>
+</td>
+	<td>
+		<span class="value">Value: 8</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_STDERR_TO_DEV_NULL"></a>
+		GLib.SpawnFlags.stderr_to_dev_null
+		</p>
+	</td>
+	<td><p>the child's standard error will be discarded.</p>
+</td>
+	<td>
+		<span class="value">Value: 16</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_CHILD_INHERITS_STDIN"></a>
+		GLib.SpawnFlags.child_inherits_stdin
+		</p>
+	</td>
+	<td><p>the child will inherit the parent's standard
+input (by default, the child's standard input is attached to <code>/dev/null</code>).</p>
+</td>
+	<td>
+		<span class="value">Value: 32</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_FILE_AND_ARGV_ZERO"></a>
+		GLib.SpawnFlags.file_and_argv_zero
+		</p>
+	</td>
+	<td><p>the first element of <code>argv</code> is the file to
+execute, while the remaining elements are the actual argument vector
+to pass to the file. Normally <a href="spawn.html#g_spawn_async_with_pipes">GLib.spawn_async_with_pipes</a> uses <code>argv[0]</code>
+as the file to execute, and passes all of <code>argv</code> to the child.</p>
+</td>
+	<td>
+		<span class="value">Value: 64</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_SEARCH_PATH_FROM_ENVP"></a>
+		GLib.SpawnFlags.search_path_from_envp
+		</p>
+	</td>
+	<td><p>if <code>argv[0]</code> is not an abolute path,
+it will be looked for in the <code>PATH</code> from the passed child environment.
+Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 128</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_CLOEXEC_PIPES"></a>
+		GLib.SpawnFlags.cloexec_pipes
+		</p>
+	</td>
+	<td><p>create all pipes with the <code>O_CLOEXEC</code> flag set.
+Since: 2.40</p>
+</td>
+	<td>
+		<span class="value">Value: 256</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GSpawnError">
+		
+<h3 id="enum-glibspawnerror">
+		enum GLib.SpawnError
+	</h3>
+
+		<p>Error codes returned by spawning processes.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members1">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_ERROR_FORK"></a>
+		GLib.SpawnError.fork
+		</p>
+	</td>
+	<td><p>Fork failed due to lack of memory.</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_ERROR_READ"></a>
+		GLib.SpawnError.read
+		</p>
+	</td>
+	<td><p>Read or select on pipes failed.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_ERROR_CHDIR"></a>
+		GLib.SpawnError.chdir
+		</p>
+	</td>
+	<td><p>Changing to working directory failed.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_ERROR_ACCES"></a>
+		GLib.SpawnError.acces
+		</p>
+	</td>
+	<td><p>execv returned <code>EACCES</code></p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_ERROR_PERM"></a>
+		GLib.SpawnError.perm
+		</p>
+	</td>
+	<td><p>execv returned <code>EPERM</code></p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_ERROR_TOO_BIG"></a>
+		GLib.SpawnError.too_big
+		</p>
+	</td>
+	<td><p>execv returned <code>E2BIG</code></p>
+</td>
+	<td>
+		<span class="value">Value: 5</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_ERROR_2BIG"></a>
+		GLib.SpawnError.2big
+		</p>
+	</td>
+	<td><p>deprecated alias for <a href="spawn.html#G_SPAWN_ERROR_TOO_BIG">GLib.SpawnError.too_big</a></p>
+</td>
+	<td>
+		<span class="value">Value: 5</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_ERROR_NOEXEC"></a>
+		GLib.SpawnError.noexec
+		</p>
+	</td>
+	<td><p>execv returned <code>ENOEXEC</code></p>
+</td>
+	<td>
+		<span class="value">Value: 6</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_ERROR_NAMETOOLONG"></a>
+		GLib.SpawnError.nametoolong
+		</p>
+	</td>
+	<td><p>execv returned <code>ENAMETOOLONG</code></p>
+</td>
+	<td>
+		<span class="value">Value: 7</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_ERROR_NOENT"></a>
+		GLib.SpawnError.noent
+		</p>
+	</td>
+	<td><p>execv returned <code>ENOENT</code></p>
+</td>
+	<td>
+		<span class="value">Value: 8</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_ERROR_NOMEM"></a>
+		GLib.SpawnError.nomem
+		</p>
+	</td>
+	<td><p>execv returned <code>ENOMEM</code></p>
+</td>
+	<td>
+		<span class="value">Value: 9</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_ERROR_NOTDIR"></a>
+		GLib.SpawnError.notdir
+		</p>
+	</td>
+	<td><p>execv returned <code>ENOTDIR</code></p>
+</td>
+	<td>
+		<span class="value">Value: 10</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_ERROR_LOOP"></a>
+		GLib.SpawnError.loop
+		</p>
+	</td>
+	<td><p>execv returned <code>ELOOP</code></p>
+</td>
+	<td>
+		<span class="value">Value: 11</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_ERROR_TXTBUSY"></a>
+		GLib.SpawnError.txtbusy
+		</p>
+	</td>
+	<td><p>execv returned <code>ETXTBUSY</code></p>
+</td>
+	<td>
+		<span class="value">Value: 12</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_ERROR_IO"></a>
+		GLib.SpawnError.io
+		</p>
+	</td>
+	<td><p>execv returned <code>EIO</code></p>
+</td>
+	<td>
+		<span class="value">Value: 13</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_ERROR_NFILE"></a>
+		GLib.SpawnError.nfile
+		</p>
+	</td>
+	<td><p>execv returned <code>ENFILE</code></p>
+</td>
+	<td>
+		<span class="value">Value: 14</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_ERROR_MFILE"></a>
+		GLib.SpawnError.mfile
+		</p>
+	</td>
+	<td><p>execv returned <code>EMFILE</code></p>
+</td>
+	<td>
+		<span class="value">Value: 15</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_ERROR_INVAL"></a>
+		GLib.SpawnError.inval
+		</p>
+	</td>
+	<td><p>execv returned <code>EINVAL</code></p>
+</td>
+	<td>
+		<span class="value">Value: 16</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_ERROR_ISDIR"></a>
+		GLib.SpawnError.isdir
+		</p>
+	</td>
+	<td><p>execv returned <code>EISDIR</code></p>
+</td>
+	<td>
+		<span class="value">Value: 17</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_ERROR_LIBBAD"></a>
+		GLib.SpawnError.libbad
+		</p>
+	</td>
+	<td><p>execv returned <code>ELIBBAD</code></p>
+</td>
+	<td>
+		<span class="value">Value: 18</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_SPAWN_ERROR_FAILED"></a>
+		GLib.SpawnError.failed
+		</p>
+	</td>
+	<td><p>Some other fatal failure,
+<code>error-&gt;message</code> should explain.</p>
+</td>
+	<td>
+		<span class="value">Value: 19</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GSpawnChildSetupFunc">
+		
+<h3 id="glibspawnchildsetupfunc">
+	<span><code>GLib.SpawnChildSetupFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void (not introspectable)
+(*GLib.SpawnChildSetupFunc) (<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>)</pre>
+
+<p>Specifies the type of the setup function passed to <a href="spawn.html#g_spawn_async">GLib.spawn_async</a>,
+<a href="spawn.html#g_spawn_sync">GLib.spawn_sync</a> and <a href="spawn.html#g_spawn_async_with_pipes">GLib.spawn_async_with_pipes</a>, which can, in very
+limited ways, be used to affect the child's execution.</p>
+<p>On POSIX platforms, the function is called in the child after GLib
+has performed all the setup it plans to perform, but before calling
+exec. Actions taken in this function will only affect the child,
+not the parent.</p>
+<p>On Windows, the function is called in the parent. Its usefulness on
+Windows is thus questionable. In many cases executing the child setup
+function in the parent can have ill effects, and you should be very
+careful when porting software to Windows that uses child setup
+functions.</p>
+<p>However, even on POSIX, you are extremely limited in what you can
+safely do from a <a href="spawn.html#GSpawnChildSetupFunc">GLib.SpawnChildSetupFunc</a>, because any mutexes that were
+held by other threads in the parent process at the time of the fork
+will still be locked in the child process, and they will never be
+unlocked (since the threads that held them don't exist in the child).
+POSIX allows only async-signal-safe functions (see signal(7)) to be
+called in the child between fork and exec, which drastically limits
+the usefulness of child setup functions.</p>
+<p>In particular, it is not safe to call any function which may
+call malloc, which includes POSIX functions such as setenv.
+If you need to set up the child environment differently from
+the parent, you should use <a href="misc_utils.html#g_get_environ">GLib.get_environ</a>, <a href="misc_utils.html#g_environ_setenv">GLib.environ_setenv</a>,
+and <a href="misc_utils.html#g_environ_unsetenv">GLib.environ_unsetenv</a>, and then pass the complete environment
+list to the <code>g_spawn...</code> function.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data to pass to the function.</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void (not introspectable)
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

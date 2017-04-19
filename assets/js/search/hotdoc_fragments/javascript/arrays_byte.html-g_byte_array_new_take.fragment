@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/arrays_byte.html#g_byte_array_new_take", "fragment": "GLib.prototype.byte_array_new_take \nCreate byte array containing the data. The data will be owned by the array and will be freed with GLib.prototype.free i.e. it could be allocated using GLib.prototype.strdup. \n"});

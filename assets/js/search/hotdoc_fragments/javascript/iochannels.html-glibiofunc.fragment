@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/iochannels.html#glibiofunc", "fragment": "GLib.IOFunc \nSpecifies the type of function passed to g_io_add_watch not introspectable or GLib.prototype.io_add_watch_full which is called when the requested condition on a GLib.IOChannel is satisfied. \n"});

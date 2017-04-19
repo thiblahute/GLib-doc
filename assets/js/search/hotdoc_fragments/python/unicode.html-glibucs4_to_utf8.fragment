@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#glibucs4_to_utf8", "fragment": "GLib.ucs4_to_utf8 \nConvert a string from a bit fixed width representation as UCS to UTF The result will be terminated with a byte. \n"});

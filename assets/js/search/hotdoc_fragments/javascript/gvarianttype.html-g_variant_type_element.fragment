@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvarianttype.html#g_variant_type_element", "fragment": "GLib.VariantType.prototype.element \nDetermines the element type of an array or maybe type. \nThis function may only be used with array or maybe types. \n"});

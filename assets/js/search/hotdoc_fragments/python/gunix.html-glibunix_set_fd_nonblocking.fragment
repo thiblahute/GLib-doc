@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gunix.html#glibunix_set_fd_nonblocking", "fragment": "GLib.unix_set_fd_nonblocking \nControl the non blocking state of the given file descriptor according to nonblock. On most systems this uses O_NONBLOCK but on some older ones may use O_NDELAY. \n"});

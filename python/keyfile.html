@@ -1,0 +1,5236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GKeyFile</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="keyfile.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="python">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="keyfile.markdown">
+        <h1 id="gkeyfile">GKeyFile</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GKeyFile</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GKeyFileConstructors">Constructors</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_new">
+		
+<h4 id="glibkeyfilenew">
+	<span><code>GLib.KeyFile.new</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.KeyFile.new ():
+    #python wrapper for 'g_key_file_new'</pre>
+
+<p>Creates a new empty <a href="keyfile.html#GKeyFile">GLib.KeyFile</a> object. Use
+<a href="keyfile.html#g_key_file_load_from_file">GLib.KeyFile.load_from_file</a>, <a href="keyfile.html#g_key_file_load_from_data">GLib.KeyFile.load_from_data</a>,
+<a href="keyfile.html#g_key_file_load_from_dirs">GLib.KeyFile.load_from_dirs</a> or <a href="keyfile.html#g_key_file_load_from_data_dirs">GLib.KeyFile.load_from_data_dirs</a> to
+read an existing key file.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>an empty <a href="keyfile.html#GKeyFile">GLib.KeyFile</a>.</p>
+
+	</td>
+	<td>
+		<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GKeyFileMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_boolean">
+		
+<h4 id="glibkeyfileget_boolean">
+	<span><code>GLib.KeyFile.get_boolean</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.get_boolean (self, group_name, key):
+    #python wrapper for 'g_key_file_get_boolean'</pre>
+
+<p>Returns the value associated with <em>key</em> under <em>group_name</em> as a
+boolean.</p>
+<p>If <em>key</em> cannot be found then <a href="https://docs.python.org/2/library/constants.html#False">False</a> is returned and <em>error</em> is set
+to <a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">GLib.KeyFileError.key_not_found</a>. Likewise, if the value
+associated with <em>key</em> cannot be interpreted as a boolean then <a href="https://docs.python.org/2/library/constants.html#False">False</a>
+is returned and <em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_INVALID_VALUE">GLib.KeyFileError.invalid_value</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the value associated with the key as a boolean,
+or <a href="https://docs.python.org/2/library/constants.html#False">False</a> if the key was not found or could not be parsed.</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_load_from_data_dirs">
+		
+<h4 id="glibkeyfileload_from_data_dirs">
+	<span><code>GLib.KeyFile.load_from_data_dirs</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.load_from_data_dirs (self, file, flags):
+    #python wrapper for 'g_key_file_load_from_data_dirs'</pre>
+
+<p>This function looks for a key file named <em>file</em> in the paths
+returned from <a href="misc_utils.html#g_get_user_data_dir">GLib.get_user_data_dir</a> and <a href="misc_utils.html#g_get_system_data_dirs">GLib.get_system_data_dirs</a>,
+loads the file into <em>key_file</em> and returns the file's full path in
+<em>full_path</em>.  If the file could not be loaded then an error is
+set to either a <a href="fileutils.html#GFileError">GLib.FileError</a> or <a href="keyfile.html#GKeyFileError">GLib.KeyFileError</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>an empty <a href="keyfile.html#GKeyFile">GLib.KeyFile</a> struct</p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a relative path to a filename to open and parse</p>
+</td>
+<td>
+<a title="str" href="https://docs.python.org/2.7/library/functions.html#str">str</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>flags from <a href="keyfile.html#GKeyFileFlags">GLib.KeyFileFlags</a></p>
+</td>
+<td>
+<a title="GLib.KeyFileFlags" href="keyfile.html#GKeyFileFlags">GLib.KeyFileFlags</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if a key file could be loaded, <a href="https://docs.python.org/2/library/constants.html#False">False</a> othewise</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>full_path:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if a key file could be loaded, <a href="https://docs.python.org/2/library/constants.html#False">False</a> othewise</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_locale_string">
+		
+<h4 id="glibkeyfileset_locale_string">
+	<span><code>GLib.KeyFile.set_locale_string</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.KeyFile.set_locale_string (self, group_name, key, locale, string):
+    #python wrapper for 'g_key_file_set_locale_string'</pre>
+
+<p>Associates a string value for <em>key</em> and <em>locale</em> under <em>group_name</em>.
+If the translation for <em>key</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>locale:</code></em></i>
+		</p>
+	</td>
+		<td><p>a locale identifier</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_key_file_set_double_list">
+		
+<h4 id="glibkeyfileset_double_list">
+	<span><code>GLib.KeyFile.set_double_list</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.KeyFile.set_double_list (self, group_name, key, list, length):
+    #python wrapper for 'g_key_file_set_double_list'</pre>
+
+<p>Associates a list of double values with <em>key</em> under
+<em>group_name</em>.  If <em>key</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>an array of double values</p>
+</td>
+<td>
+<a title="float" href="https://docs.python.org/2/library/functions.html#float">float</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of double values in <em>list</em></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_boolean_list">
+		
+<h4 id="glibkeyfileget_boolean_list">
+	<span><code>GLib.KeyFile.get_boolean_list</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.get_boolean_list (self, group_name, key):
+    #python wrapper for 'g_key_file_get_boolean_list'</pre>
+
+<p>Returns the values associated with <em>key</em> under <em>group_name</em> as
+booleans.</p>
+<p>If <em>key</em> cannot be found then <a href="https://docs.python.org/2/library/constants.html#None">None</a> is returned and <em>error</em> is set to
+<a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">GLib.KeyFileError.key_not_found</a>. Likewise, if the values associated
+with <em>key</em> cannot be interpreted as booleans then <a href="https://docs.python.org/2/library/constants.html#None">None</a> is returned
+and <em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_INVALID_VALUE">GLib.KeyFileError.invalid_value</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of1">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>(array length=length) (element-type gboolean) (transfer container):
+the values associated with the key as a list of booleans, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> if the
+key was not found or could not be parsed. The returned list of booleans
+should be freed with <a href="memory.html#g_free">GLib.free</a> when no longer needed.</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p>(array length=length) (element-type gboolean) (transfer container):
+the values associated with the key as a list of booleans, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> if the
+key was not found or could not be parsed. The returned list of booleans
+should be freed with <a href="memory.html#g_free">GLib.free</a> when no longer needed.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_integer_list">
+		
+<h4 id="glibkeyfileget_integer_list">
+	<span><code>GLib.KeyFile.get_integer_list</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.get_integer_list (self, group_name, key):
+    #python wrapper for 'g_key_file_get_integer_list'</pre>
+
+<p>Returns the values associated with <em>key</em> under <em>group_name</em> as
+integers.</p>
+<p>If <em>key</em> cannot be found then <a href="https://docs.python.org/2/library/constants.html#None">None</a> is returned and <em>error</em> is set to
+<a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">GLib.KeyFileError.key_not_found</a>. Likewise, if the values associated
+with <em>key</em> cannot be interpreted as integers, or are out of range for
+gint, then <a href="https://docs.python.org/2/library/constants.html#None">None</a> is returned
+and <em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_INVALID_VALUE">GLib.KeyFileError.invalid_value</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of2">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>(array length=length) (element-type gint) (transfer container):
+the values associated with the key as a list of integers, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> if
+the key was not found or could not be parsed. The returned list of
+integers should be freed with <a href="memory.html#g_free">GLib.free</a> when no longer needed.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p>(array length=length) (element-type gint) (transfer container):
+the values associated with the key as a list of integers, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> if
+the key was not found or could not be parsed. The returned list of
+integers should be freed with <a href="memory.html#g_free">GLib.free</a> when no longer needed.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_boolean">
+		
+<h4 id="glibkeyfileset_boolean">
+	<span><code>GLib.KeyFile.set_boolean</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.KeyFile.set_boolean (self, group_name, key, value):
+    #python wrapper for 'g_key_file_set_boolean'</pre>
+
+<p>Associates a new boolean value with <em>key</em> under <em>group_name</em>.
+If <em>key</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="https://docs.python.org/2/library/constants.html#True">True</a> or <a href="https://docs.python.org/2/library/constants.html#False">False</a></p>
+</td>
+<td>
+<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_string_list">
+		
+<h4 id="glibkeyfileset_string_list">
+	<span><code>GLib.KeyFile.set_string_list</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.KeyFile.set_string_list (self, group_name, key, list, length):
+    #python wrapper for 'g_key_file_set_string_list'</pre>
+
+<p>Associates a list of string values for <em>key</em> under <em>group_name</em>.
+If <em>key</em> cannot be found then it is created.
+If <em>group_name</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>an array of string values</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of string values in <em>list</em></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_load_from_file">
+		
+<h4 id="glibkeyfileload_from_file">
+	<span><code>GLib.KeyFile.load_from_file</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.load_from_file (self, file, flags):
+    #python wrapper for 'g_key_file_load_from_file'</pre>
+
+<p>Loads a key file into an empty <a href="keyfile.html#GKeyFile">GLib.KeyFile</a> structure.</p>
+<p>If the OS returns an error when opening or reading the file, a
+<a href="../c/fileutils.html#G_FILE_ERROR">G_FILE_ERROR (not introspectable)</a> is returned. If there is a problem parsing the file, a
+<a href="../c/keyfile.html#G_KEY_FILE_ERROR">G_KEY_FILE_ERROR (not introspectable)</a> is returned.</p>
+<p>This function will never return a <a href="keyfile.html#G_KEY_FILE_ERROR_NOT_FOUND">GLib.KeyFileError.not_found</a> error. If the
+<em>file</em> is not found, <a href="fileutils.html#G_FILE_ERROR_NOENT">GLib.FileError.noent</a> is returned.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>an empty <a href="keyfile.html#GKeyFile">GLib.KeyFile</a> struct</p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td><p>the path of a filename to load, in the GLib filename encoding</p>
+</td>
+<td>
+<a title="str" href="https://docs.python.org/2.7/library/functions.html#str">str</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>flags from <a href="keyfile.html#GKeyFileFlags">GLib.KeyFileFlags</a></p>
+</td>
+<td>
+<a title="GLib.KeyFileFlags" href="keyfile.html#GKeyFileFlags">GLib.KeyFileFlags</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if a key file could be loaded, <a href="https://docs.python.org/2/library/constants.html#False">False</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_string">
+		
+<h4 id="glibkeyfileget_string">
+	<span><code>GLib.KeyFile.get_string</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.get_string (self, group_name, key):
+    #python wrapper for 'g_key_file_get_string'</pre>
+
+<p>Returns the string value associated with <em>key</em> under <em>group_name</em>.
+Unlike <a href="keyfile.html#g_key_file_get_value">GLib.KeyFile.get_value</a>, this function handles escape sequences
+like \s.</p>
+<p>In the event the key cannot be found, <a href="https://docs.python.org/2/library/constants.html#None">None</a> is returned and
+<em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">GLib.KeyFileError.key_not_found</a>.  In the
+event that the <em>group_name</em> cannot be found, <a href="https://docs.python.org/2/library/constants.html#None">None</a> is returned
+and <em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_GROUP_NOT_FOUND">GLib.KeyFileError.group_not_found</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string or <a href="https://docs.python.org/2/library/constants.html#None">None</a> if the specified
+key cannot be found.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_locale_string_list">
+		
+<h4 id="glibkeyfileget_locale_string_list">
+	<span><code>GLib.KeyFile.get_locale_string_list</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.get_locale_string_list (self, group_name, key, locale):
+    #python wrapper for 'g_key_file_get_locale_string_list'</pre>
+
+<p>Returns the values associated with <em>key</em> under <em>group_name</em>
+translated in the given <em>locale</em> if available.  If <em>locale</em> is
+<a href="https://docs.python.org/2/library/constants.html#None">None</a> then the current locale is assumed.</p>
+<p>If <em>key</em> cannot be found then <a href="https://docs.python.org/2/library/constants.html#None">None</a> is returned and <em>error</em> is set
+to <a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">GLib.KeyFileError.key_not_found</a>. If the values associated
+with <em>key</em> cannot be interpreted or no suitable translations
+can be found then the untranslated values are returned. The
+returned array is <a href="https://docs.python.org/2/library/constants.html#None">None</a>-terminated, so <em>length</em> may optionally
+be <a href="https://docs.python.org/2/library/constants.html#None">None</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>locale:</code></em></i>
+		</p>
+	</td>
+		<td><p>a locale identifier or <a href="https://docs.python.org/2/library/constants.html#None">None</a></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of3">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated <a href="https://docs.python.org/2/library/constants.html#None">None</a>-terminated string array
+or <a href="https://docs.python.org/2/library/constants.html#None">None</a> if the key isn't found. The string array should be freed
+with <a href="string_utils.html#g_strfreev">GLib.strfreev</a>.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated <a href="https://docs.python.org/2/library/constants.html#None">None</a>-terminated string array
+or <a href="https://docs.python.org/2/library/constants.html#None">None</a> if the key isn't found. The string array should be freed
+with <a href="string_utils.html#g_strfreev">GLib.strfreev</a>.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.26;" id="g_key_file_get_int64">
+		
+<h4 id="glibkeyfileget_int64">
+	<span><code>GLib.KeyFile.get_int64</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.get_int64 (self, group_name, key):
+    #python wrapper for 'g_key_file_get_int64'</pre>
+
+<p>Returns the value associated with <em>key</em> under <em>group_name</em> as a signed
+64-bit integer. This is similar to <a href="keyfile.html#g_key_file_get_integer">GLib.KeyFile.get_integer</a> but can return
+64-bit results without truncation.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a non-%NULL <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a non-%NULL group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a non-%NULL key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the value associated with the key as a signed 64-bit integer, or
+0 if the key was not found or could not be parsed.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.26
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_value">
+		
+<h4 id="glibkeyfileset_value">
+	<span><code>GLib.KeyFile.set_value</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.KeyFile.set_value (self, group_name, key, value):
+    #python wrapper for 'g_key_file_set_value'</pre>
+
+<p>Associates a new value with <em>key</em> under <em>group_name</em>.</p>
+<p>If <em>key</em> cannot be found then it is created. If <em>group_name</em> cannot
+be found then it is created. To set an UTF-8 string which may contain
+characters that need escaping (such as newlines or spaces), use
+<a href="keyfile.html#g_key_file_set_string">GLib.KeyFile.set_string</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.26;" id="g_key_file_set_int64">
+		
+<h4 id="glibkeyfileset_int64">
+	<span><code>GLib.KeyFile.set_int64</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.KeyFile.set_int64 (self, group_name, key, value):
+    #python wrapper for 'g_key_file_set_int64'</pre>
+
+<p>Associates a new integer value with <em>key</em> under <em>group_name</em>.
+If <em>key</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>an integer value</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.26
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_remove_key">
+		
+<h4 id="glibkeyfileremove_key">
+	<span><code>GLib.KeyFile.remove_key</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.remove_key (self, group_name, key):
+    #python wrapper for 'g_key_file_remove_key'</pre>
+
+<p>Removes <em>key</em> in <em>group_name</em> from the key file.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key name to remove</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the key was removed, <a href="https://docs.python.org/2/library/constants.html#False">False</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_key_file_load_from_dirs">
+		
+<h4 id="glibkeyfileload_from_dirs">
+	<span><code>GLib.KeyFile.load_from_dirs</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.load_from_dirs (self, file, search_dirs, flags):
+    #python wrapper for 'g_key_file_load_from_dirs'</pre>
+
+<p>This function looks for a key file named <em>file</em> in the paths
+specified in <em>search_dirs</em>, loads the file into <em>key_file</em> and
+returns the file's full path in <em>full_path</em>.</p>
+<p>If the file could not be found in any of the <em>search_dirs</em>,
+<a href="keyfile.html#G_KEY_FILE_ERROR_NOT_FOUND">GLib.KeyFileError.not_found</a> is returned. If
+the file is found but the OS returns an error when opening or reading the
+file, a <a href="../c/fileutils.html#G_FILE_ERROR">G_FILE_ERROR (not introspectable)</a> is returned. If there is a problem parsing the file, a
+<a href="../c/keyfile.html#G_KEY_FILE_ERROR">G_KEY_FILE_ERROR (not introspectable)</a> is returned.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>an empty <a href="keyfile.html#GKeyFile">GLib.KeyFile</a> struct</p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a relative path to a filename to open and parse</p>
+</td>
+<td>
+<a title="str" href="https://docs.python.org/2.7/library/functions.html#str">str</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>search_dirs:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="https://docs.python.org/2/library/constants.html#None">None</a>-terminated array of directories to search</p>
+</td>
+<td>
+<a title="str" href="https://docs.python.org/2.7/library/functions.html#str">str</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>flags from <a href="keyfile.html#GKeyFileFlags">GLib.KeyFileFlags</a></p>
+</td>
+<td>
+<a title="GLib.KeyFileFlags" href="keyfile.html#GKeyFileFlags">GLib.KeyFileFlags</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of4">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if a key file could be loaded, <a href="https://docs.python.org/2/library/constants.html#False">False</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>full_path:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if a key file could be loaded, <a href="https://docs.python.org/2/library/constants.html#False">False</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_integer_list">
+		
+<h4 id="glibkeyfileset_integer_list">
+	<span><code>GLib.KeyFile.set_integer_list</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.KeyFile.set_integer_list (self, group_name, key, list, length):
+    #python wrapper for 'g_key_file_set_integer_list'</pre>
+
+<p>Associates a list of integer values with <em>key</em> under <em>group_name</em>.
+If <em>key</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>an array of integer values</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of integer values in <em>list</em></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_keys">
+		
+<h4 id="glibkeyfileget_keys">
+	<span><code>GLib.KeyFile.get_keys</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.get_keys (self, group_name):
+    #python wrapper for 'g_key_file_get_keys'</pre>
+
+<p>Returns all keys for the group name <em>group_name</em>.  The array of
+returned keys will be <a href="https://docs.python.org/2/library/constants.html#None">None</a>-terminated, so <em>length</em> may
+optionally be <a href="https://docs.python.org/2/library/constants.html#None">None</a>. In the event that the <em>group_name</em> cannot
+be found, <a href="https://docs.python.org/2/library/constants.html#None">None</a> is returned and <em>error</em> is set to
+<a href="keyfile.html#G_KEY_FILE_ERROR_GROUP_NOT_FOUND">GLib.KeyFileError.group_not_found</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of5">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated <a href="https://docs.python.org/2/library/constants.html#None">None</a>-terminated array of strings.
+Use <a href="string_utils.html#g_strfreev">GLib.strfreev</a> to free it.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated <a href="https://docs.python.org/2/library/constants.html#None">None</a>-terminated array of strings.
+Use <a href="string_utils.html#g_strfreev">GLib.strfreev</a> to free it.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_boolean_list">
+		
+<h4 id="glibkeyfileset_boolean_list">
+	<span><code>GLib.KeyFile.set_boolean_list</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.KeyFile.set_boolean_list (self, group_name, key, list, length):
+    #python wrapper for 'g_key_file_set_boolean_list'</pre>
+
+<p>Associates a list of boolean values with <em>key</em> under <em>group_name</em>.
+If <em>key</em> cannot be found then it is created.
+If <em>group_name</em> is <a href="https://docs.python.org/2/library/constants.html#None">None</a>, the start_group is used.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>an array of boolean values</p>
+</td>
+<td>
+<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>list</em></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_groups">
+		
+<h4 id="glibkeyfileget_groups">
+	<span><code>GLib.KeyFile.get_groups</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.KeyFile.get_groups (self):
+    #python wrapper for 'g_key_file_get_groups'</pre>
+
+<p>Returns all groups in the key file loaded with <em>key_file</em>.
+The array of returned groups will be <a href="https://docs.python.org/2/library/constants.html#None">None</a>-terminated, so
+<em>length</em> may optionally be <a href="https://docs.python.org/2/library/constants.html#None">None</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of6">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated <a href="https://docs.python.org/2/library/constants.html#None">None</a>-terminated array of strings.
+Use <a href="string_utils.html#g_strfreev">GLib.strfreev</a> to free it.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated <a href="https://docs.python.org/2/library/constants.html#None">None</a>-terminated array of strings.
+Use <a href="string_utils.html#g_strfreev">GLib.strfreev</a> to free it.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_integer">
+		
+<h4 id="glibkeyfileset_integer">
+	<span><code>GLib.KeyFile.set_integer</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.KeyFile.set_integer (self, group_name, key, value):
+    #python wrapper for 'g_key_file_set_integer'</pre>
+
+<p>Associates a new integer value with <em>key</em> under <em>group_name</em>.
+If <em>key</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>an integer value</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_locale_string_list">
+		
+<h4 id="glibkeyfileset_locale_string_list">
+	<span><code>GLib.KeyFile.set_locale_string_list</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.KeyFile.set_locale_string_list (self, group_name, key, locale, list, length):
+    #python wrapper for 'g_key_file_set_locale_string_list'</pre>
+
+<p>Associates a list of string values for <em>key</em> and <em>locale</em> under
+<em>group_name</em>.  If the translation for <em>key</em> cannot be found then
+it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>locale:</code></em></i>
+		</p>
+	</td>
+		<td><p>a locale identifier</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="https://docs.python.org/2/library/constants.html#None">None</a>-terminated array of locale string values</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>list</em></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_comment">
+		
+<h4 id="glibkeyfileset_comment">
+	<span><code>GLib.KeyFile.set_comment</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.set_comment (self, group_name, key, comment):
+    #python wrapper for 'g_key_file_set_comment'</pre>
+
+<p>Places a comment above <em>key</em> from <em>group_name</em>.</p>
+<p>If <em>key</em> is <a href="https://docs.python.org/2/library/constants.html#None">None</a> then <em>comment</em> will be written above <em>group_name</em>.
+If both <em>key</em> and <em>group_name</em>  are <a href="https://docs.python.org/2/library/constants.html#None">None</a>, then <em>comment</em> will be
+written above the first group in the file.</p>
+<p>Note that this function prepends a '#' comment marker to
+each line of <em>comment</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name, or <a href="https://docs.python.org/2/library/constants.html#None">None</a></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>comment:</code></em></i>
+		</p>
+	</td>
+		<td><p>a comment</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the comment was written, <a href="https://docs.python.org/2/library/constants.html#False">False</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_has_group">
+		
+<h4 id="glibkeyfilehas_group">
+	<span><code>GLib.KeyFile.has_group</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.KeyFile.has_group (self, group_name):
+    #python wrapper for 'g_key_file_has_group'</pre>
+
+<p>Looks whether the key file has the group <em>group_name</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if <em>group_name</em> is a part of <em>key_file</em>, <a href="https://docs.python.org/2/library/constants.html#False">False</a>
+otherwise.</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_remove_group">
+		
+<h4 id="glibkeyfileremove_group">
+	<span><code>GLib.KeyFile.remove_group</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.remove_group (self, group_name):
+    #python wrapper for 'g_key_file_remove_group'</pre>
+
+<p>Removes the specified group, <em>group_name</em>,
+from the key file.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the group was removed, <a href="https://docs.python.org/2/library/constants.html#False">False</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_start_group">
+		
+<h4 id="glibkeyfileget_start_group">
+	<span><code>GLib.KeyFile.get_start_group</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.KeyFile.get_start_group (self):
+    #python wrapper for 'g_key_file_get_start_group'</pre>
+
+<p>Returns the name of the start group of the file.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The start group of the key file.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_to_data">
+		
+<h4 id="glibkeyfileto_data">
+	<span><code>GLib.KeyFile.to_data</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.to_data (self):
+    #python wrapper for 'g_key_file_to_data'</pre>
+
+<p>This function outputs <em>key_file</em> as a string.</p>
+<p>Note that this function never reports an error,
+so it is safe to pass <a href="https://docs.python.org/2/library/constants.html#None">None</a> as <em>error</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of7">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string holding
+the contents of the <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string holding
+the contents of the <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_key_file_load_from_bytes">
+		
+<h4 id="glibkeyfileload_from_bytes">
+	<span><code>GLib.KeyFile.load_from_bytes</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.load_from_bytes (self, bytes, flags):
+    #python wrapper for 'g_key_file_load_from_bytes'</pre>
+
+<p>Loads a key file from the data in <em>bytes</em> into an empty <a href="keyfile.html#GKeyFile">GLib.KeyFile</a> structure.
+If the object cannot be created then error is set to a <a href="keyfile.html#GKeyFileError">GLib.KeyFileError</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>an empty <a href="keyfile.html#GKeyFile">GLib.KeyFile</a> struct</p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GBytes">GLib.Bytes</a></p>
+</td>
+<td>
+<a title="GLib.Bytes" href="arrays_byte.html#GBytes">GLib.Bytes</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>flags from <a href="keyfile.html#GKeyFileFlags">GLib.KeyFileFlags</a></p>
+</td>
+<td>
+<a title="GLib.KeyFileFlags" href="keyfile.html#GKeyFileFlags">GLib.KeyFileFlags</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if a key file could be loaded, <a href="https://docs.python.org/2/library/constants.html#False">False</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.26;" id="g_key_file_set_uint64">
+		
+<h4 id="glibkeyfileset_uint64">
+	<span><code>GLib.KeyFile.set_uint64</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.KeyFile.set_uint64 (self, group_name, key, value):
+    #python wrapper for 'g_key_file_set_uint64'</pre>
+
+<p>Associates a new integer value with <em>key</em> under <em>group_name</em>.
+If <em>key</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters28">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>an integer value</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.26
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_load_from_data">
+		
+<h4 id="glibkeyfileload_from_data">
+	<span><code>GLib.KeyFile.load_from_data</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.load_from_data (self, data, length, flags):
+    #python wrapper for 'g_key_file_load_from_data'</pre>
+
+<p>Loads a key file from memory into an empty <a href="keyfile.html#GKeyFile">GLib.KeyFile</a> structure.
+If the object cannot be created then error is set to a <a href="keyfile.html#GKeyFileError">GLib.KeyFileError</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters29">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>an empty <a href="keyfile.html#GKeyFile">GLib.KeyFile</a> struct</p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>key file loaded in memory</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>data</em> in bytes (or (gsize)-1 if data is nul-terminated)</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>flags from <a href="keyfile.html#GKeyFileFlags">GLib.KeyFileFlags</a></p>
+</td>
+<td>
+<a title="GLib.KeyFileFlags" href="keyfile.html#GKeyFileFlags">GLib.KeyFileFlags</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if a key file could be loaded, <a href="https://docs.python.org/2/library/constants.html#False">False</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_key_file_unref">
+		
+<h4 id="glibkeyfileunref">
+	<span><code>GLib.KeyFile.unref</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.KeyFile.unref (self):
+    #python wrapper for 'g_key_file_unref'</pre>
+
+<p>Decreases the reference count of <em>key_file</em> by 1. If the reference count
+reaches zero, frees the key file and all its allocated memory.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters30">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_comment">
+		
+<h4 id="glibkeyfileget_comment">
+	<span><code>GLib.KeyFile.get_comment</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.get_comment (self, group_name, key):
+    #python wrapper for 'g_key_file_get_comment'</pre>
+
+<p>Retrieves a comment above <em>key</em> from <em>group_name</em>.
+If <em>key</em> is <a href="https://docs.python.org/2/library/constants.html#None">None</a> then <em>comment</em> will be read from above
+<em>group_name</em>. If both <em>key</em> and <em>group_name</em> are <a href="https://docs.python.org/2/library/constants.html#None">None</a>, then
+<em>comment</em> will be read from above the first group in the file.</p>
+<p>Note that the returned string includes the '#' comment markers.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters31">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name, or <a href="https://docs.python.org/2/library/constants.html#None">None</a></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a comment that should be freed with <a href="memory.html#g_free">GLib.free</a></p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_remove_comment">
+		
+<h4 id="glibkeyfileremove_comment">
+	<span><code>GLib.KeyFile.remove_comment</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.remove_comment (self, group_name, key):
+    #python wrapper for 'g_key_file_remove_comment'</pre>
+
+<p>Removes a comment above <em>key</em> from <em>group_name</em>.
+If <em>key</em> is <a href="https://docs.python.org/2/library/constants.html#None">None</a> then <em>comment</em> will be removed above <em>group_name</em>.
+If both <em>key</em> and <em>group_name</em> are <a href="https://docs.python.org/2/library/constants.html#None">None</a>, then <em>comment</em> will
+be removed above the first group in the file.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters32">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name, or <a href="https://docs.python.org/2/library/constants.html#None">None</a></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the comment was removed, <a href="https://docs.python.org/2/library/constants.html#False">False</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_key_file_get_double_list">
+		
+<h4 id="glibkeyfileget_double_list">
+	<span><code>GLib.KeyFile.get_double_list</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.get_double_list (self, group_name, key):
+    #python wrapper for 'g_key_file_get_double_list'</pre>
+
+<p>Returns the values associated with <em>key</em> under <em>group_name</em> as
+doubles.</p>
+<p>If <em>key</em> cannot be found then <a href="https://docs.python.org/2/library/constants.html#None">None</a> is returned and <em>error</em> is set to
+<a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">GLib.KeyFileError.key_not_found</a>. Likewise, if the values associated
+with <em>key</em> cannot be interpreted as doubles then <a href="https://docs.python.org/2/library/constants.html#None">None</a> is returned
+and <em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_INVALID_VALUE">GLib.KeyFileError.invalid_value</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters33">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of8">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>(array length=length) (element-type gdouble) (transfer container):
+the values associated with the key as a list of doubles, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> if the
+key was not found or could not be parsed. The returned list of doubles
+should be freed with <a href="memory.html#g_free">GLib.free</a> when no longer needed.</p>
+
+	</td>
+	<td>
+		<a title="float" href="https://docs.python.org/2/library/functions.html#float">float</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p>(array length=length) (element-type gdouble) (transfer container):
+the values associated with the key as a list of doubles, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> if the
+key was not found or could not be parsed. The returned list of doubles
+should be freed with <a href="memory.html#g_free">GLib.free</a> when no longer needed.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_string">
+		
+<h4 id="glibkeyfileset_string">
+	<span><code>GLib.KeyFile.set_string</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.KeyFile.set_string (self, group_name, key, string):
+    #python wrapper for 'g_key_file_set_string'</pre>
+
+<p>Associates a new string value with <em>key</em> under <em>group_name</em>.
+If <em>key</em> cannot be found then it is created.
+If <em>group_name</em> cannot be found then it is created.
+Unlike <a href="keyfile.html#g_key_file_set_value">GLib.KeyFile.set_value</a>, this function handles characters
+that need escaping, such as newlines.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters34">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.40;" id="g_key_file_save_to_file">
+		
+<h4 id="glibkeyfilesave_to_file">
+	<span><code>GLib.KeyFile.save_to_file</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.save_to_file (self, filename):
+    #python wrapper for 'g_key_file_save_to_file'</pre>
+
+<p>Writes the contents of <em>key_file</em> to <em>filename</em> using
+<a href="fileutils.html#g_file_set_contents">GLib.file_set_contents</a>.</p>
+<p>This function can fail for any of the reasons that
+<a href="fileutils.html#g_file_set_contents">GLib.file_set_contents</a> may fail.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters35">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>the name of the file to write to</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if successful, else <a href="https://docs.python.org/2/library/constants.html#False">False</a> with <em>error</em> set</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.40
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_value">
+		
+<h4 id="glibkeyfileget_value">
+	<span><code>GLib.KeyFile.get_value</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.get_value (self, group_name, key):
+    #python wrapper for 'g_key_file_get_value'</pre>
+
+<p>Returns the raw value associated with <em>key</em> under <em>group_name</em>.
+Use <a href="keyfile.html#g_key_file_get_string">GLib.KeyFile.get_string</a> to retrieve an unescaped UTF-8 string.</p>
+<p>In the event the key cannot be found, <a href="https://docs.python.org/2/library/constants.html#None">None</a> is returned and
+<em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">GLib.KeyFileError.key_not_found</a>.  In the
+event that the <em>group_name</em> cannot be found, <a href="https://docs.python.org/2/library/constants.html#None">None</a> is returned
+and <em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_GROUP_NOT_FOUND">GLib.KeyFileError.group_not_found</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters36">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string or <a href="https://docs.python.org/2/library/constants.html#None">None</a> if the specified
+key cannot be found.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_key_file_get_double">
+		
+<h4 id="glibkeyfileget_double">
+	<span><code>GLib.KeyFile.get_double</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.get_double (self, group_name, key):
+    #python wrapper for 'g_key_file_get_double'</pre>
+
+<p>Returns the value associated with <em>key</em> under <em>group_name</em> as a
+double. If <em>group_name</em> is <a href="https://docs.python.org/2/library/constants.html#None">None</a>, the start_group is used.</p>
+<p>If <em>key</em> cannot be found then 0.0 is returned and <em>error</em> is set to
+<a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">GLib.KeyFileError.key_not_found</a>. Likewise, if the value associated
+with <em>key</em> cannot be interpreted as a double then 0.0 is returned
+and <em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_INVALID_VALUE">GLib.KeyFileError.invalid_value</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters37">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the value associated with the key as a double, or
+0.0 if the key was not found or could not be parsed.</p>
+
+	</td>
+	<td>
+		<a title="float" href="https://docs.python.org/2/library/functions.html#float">float</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_key_file_set_double">
+		
+<h4 id="glibkeyfileset_double">
+	<span><code>GLib.KeyFile.set_double</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.KeyFile.set_double (self, group_name, key, value):
+    #python wrapper for 'g_key_file_set_double'</pre>
+
+<p>Associates a new double value with <em>key</em> under <em>group_name</em>.
+If <em>key</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters38">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>an double value</p>
+</td>
+<td>
+<a title="float" href="https://docs.python.org/2/library/functions.html#float">float</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.26;" id="g_key_file_get_uint64">
+		
+<h4 id="glibkeyfileget_uint64">
+	<span><code>GLib.KeyFile.get_uint64</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.get_uint64 (self, group_name, key):
+    #python wrapper for 'g_key_file_get_uint64'</pre>
+
+<p>Returns the value associated with <em>key</em> under <em>group_name</em> as an unsigned
+64-bit integer. This is similar to <a href="keyfile.html#g_key_file_get_integer">GLib.KeyFile.get_integer</a> but can return
+large positive results without truncation.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters39">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a non-%NULL <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a non-%NULL group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a non-%NULL key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the value associated with the key as an unsigned 64-bit integer,
+or 0 if the key was not found or could not be parsed.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.26
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_integer">
+		
+<h4 id="glibkeyfileget_integer">
+	<span><code>GLib.KeyFile.get_integer</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.get_integer (self, group_name, key):
+    #python wrapper for 'g_key_file_get_integer'</pre>
+
+<p>Returns the value associated with <em>key</em> under <em>group_name</em> as an
+integer.</p>
+<p>If <em>key</em> cannot be found then 0 is returned and <em>error</em> is set to
+<a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">GLib.KeyFileError.key_not_found</a>. Likewise, if the value associated
+with <em>key</em> cannot be interpreted as an integer, or is out of range
+for a gint, then 0 is returned
+and <em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_INVALID_VALUE">GLib.KeyFileError.invalid_value</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters40">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the value associated with the key as an integer, or
+0 if the key was not found or could not be parsed.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_string_list">
+		
+<h4 id="glibkeyfileget_string_list">
+	<span><code>GLib.KeyFile.get_string_list</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.get_string_list (self, group_name, key):
+    #python wrapper for 'g_key_file_get_string_list'</pre>
+
+<p>Returns the values associated with <em>key</em> under <em>group_name</em>.</p>
+<p>In the event the key cannot be found, <a href="https://docs.python.org/2/library/constants.html#None">None</a> is returned and
+<em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">GLib.KeyFileError.key_not_found</a>.  In the
+event that the <em>group_name</em> cannot be found, <a href="https://docs.python.org/2/library/constants.html#None">None</a> is returned
+and <em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_GROUP_NOT_FOUND">GLib.KeyFileError.group_not_found</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters41">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of9">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>(array zero-terminated=1 length=length) (element-type utf8) (transfer full):
+a <a href="https://docs.python.org/2/library/constants.html#None">None</a>-terminated string array or <a href="https://docs.python.org/2/library/constants.html#None">None</a> if the specified
+key cannot be found. The array should be freed with <a href="string_utils.html#g_strfreev">GLib.strfreev</a>.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p>(array zero-terminated=1 length=length) (element-type utf8) (transfer full):
+a <a href="https://docs.python.org/2/library/constants.html#None">None</a>-terminated string array or <a href="https://docs.python.org/2/library/constants.html#None">None</a> if the specified
+key cannot be found. The array should be freed with <a href="string_utils.html#g_strfreev">GLib.strfreev</a>.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_locale_string">
+		
+<h4 id="glibkeyfileget_locale_string">
+	<span><code>GLib.KeyFile.get_locale_string</code></span>
+</h4>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.KeyFile.get_locale_string (self, group_name, key, locale):
+    #python wrapper for 'g_key_file_get_locale_string'</pre>
+
+<p>Returns the value associated with <em>key</em> under <em>group_name</em>
+translated in the given <em>locale</em> if available.  If <em>locale</em> is
+<a href="https://docs.python.org/2/library/constants.html#None">None</a> then the current locale is assumed.</p>
+<p>If <em>key</em> cannot be found then <a href="https://docs.python.org/2/library/constants.html#None">None</a> is returned and <em>error</em> is set
+to <a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">GLib.KeyFileError.key_not_found</a>. If the value associated
+with <em>key</em> cannot be interpreted or no suitable translation can
+be found then the untranslated value is returned.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters42">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>locale:</code></em></i>
+		</p>
+	</td>
+		<td><p>a locale identifier or <a href="https://docs.python.org/2/library/constants.html#None">None</a></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string or <a href="https://docs.python.org/2/library/constants.html#None">None</a> if the specified
+key cannot be found.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_list_separator">
+		
+<h4 id="glibkeyfileset_list_separator">
+	<span><code>GLib.KeyFile.set_list_separator</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.KeyFile.set_list_separator (self, separator):
+    #python wrapper for 'g_key_file_set_list_separator'</pre>
+
+<p>Sets the character which is used to separate
+values in lists. Typically ';' or ',' are used
+as separators. The default list separator is ';'.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters43">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GLib.KeyFile</a></p>
+</td>
+<td>
+<a title="GLib.KeyFile" href="keyfile.html#GKeyFile">GLib.KeyFile</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>separator:</code></em></i>
+		</p>
+	</td>
+		<td><p>the separator</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_key_file_error_quark">
+		
+<h3 id="glibkey_file_error_quark">
+	<span><code>GLib.key_file_error_quark</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.key_file_error_quark ():
+    #python wrapper for 'g_key_file_error_quark'</pre>
+
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		<a title="GLib.Quark" href="quarks.html#GQuark">GLib.Quark</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GKeyFile">
+		<h3 id="glibkeyfile">
+	GLib.KeyFile
+</h3>
+
+		<p>The GKeyFile struct contains only private data
+and should not be accessed directly.</p>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GKeyFileError">
+		
+<h3 id="enum-glibkeyfileerror">
+		enum GLib.KeyFileError
+	</h3>
+
+		<p>Error codes returned by key file parsing.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_KEY_FILE_ERROR_UNKNOWN_ENCODING"></a>
+		GLib.KeyFileError.unknown_encoding
+		</p>
+	</td>
+	<td><p>the text being parsed was in
+an unknown encoding</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_KEY_FILE_ERROR_PARSE"></a>
+		GLib.KeyFileError.parse
+		</p>
+	</td>
+	<td><p>document was ill-formed</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_KEY_FILE_ERROR_NOT_FOUND"></a>
+		GLib.KeyFileError.not_found
+		</p>
+	</td>
+	<td><p>the file was not found</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_KEY_FILE_ERROR_KEY_NOT_FOUND"></a>
+		GLib.KeyFileError.key_not_found
+		</p>
+	</td>
+	<td><p>a requested key was not found</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_KEY_FILE_ERROR_GROUP_NOT_FOUND"></a>
+		GLib.KeyFileError.group_not_found
+		</p>
+	</td>
+	<td><p>a requested group was not found</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_KEY_FILE_ERROR_INVALID_VALUE"></a>
+		GLib.KeyFileError.invalid_value
+		</p>
+	</td>
+	<td><p>a value could not be parsed</p>
+</td>
+	<td>
+		<span class="value">Value: 5</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GKeyFileFlags">
+		
+<h3 id="enum-glibkeyfileflags">
+		enum GLib.KeyFileFlags
+	</h3>
+
+		<p>Flags which influence the parsing.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members1">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_KEY_FILE_NONE"></a>
+		GLib.KeyFileFlags.none
+		</p>
+	</td>
+	<td><p>No flags, default behaviour</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_KEY_FILE_KEEP_COMMENTS"></a>
+		GLib.KeyFileFlags.keep_comments
+		</p>
+	</td>
+	<td><p>Use this flag if you plan to write the
+(possibly modified) contents of the key file back to a file;
+otherwise all comments will be lost when the key file is
+written back.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_KEY_FILE_KEEP_TRANSLATIONS"></a>
+		GLib.KeyFileFlags.keep_translations
+		</p>
+	</td>
+	<td><p>Use this flag if you plan to write the
+(possibly modified) contents of the key file back to a file;
+otherwise only the translations for the current language will be
+written back.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_TRY_EXEC">
+		
+<h3 class="constant" id="glibkey_file_desktop_key_try_exec">
+	GLib.KEY_FILE_DESKTOP_KEY_TRY_EXEC
+</h3>
+
+		<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">GLib.KEY_FILE_DESKTOP_GROUP</a>, whose value is a string
+giving the file name of a binary on disk used to determine if the
+program is actually installed. It is only valid for desktop entries
+with the <code>Application</code> type.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_STARTUP_WM_CLASS">
+		
+<h3 class="constant" id="glibkey_file_desktop_key_startup_wm_class">
+	GLib.KEY_FILE_DESKTOP_KEY_STARTUP_WM_CLASS
+</h3>
+
+		<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">GLib.KEY_FILE_DESKTOP_GROUP</a>, whose value is string
+identifying the WM class or name hint of a window that the application
+will create, which can be used to emulate Startup Notification with
+older applications.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_URL">
+		
+<h3 class="constant" id="glibkey_file_desktop_key_url">
+	GLib.KEY_FILE_DESKTOP_KEY_URL
+</h3>
+
+		<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">GLib.KEY_FILE_DESKTOP_GROUP</a>, whose value is a string
+giving the URL to access. It is only valid for desktop entries
+with the <code>Link</code> type.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.38;" id="G_KEY_FILE_DESKTOP_KEY_ACTIONS">
+		
+<h3 class="constant" id="glibkey_file_desktop_key_actions">
+	GLib.KEY_FILE_DESKTOP_KEY_ACTIONS
+</h3>
+
+		<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">GLib.KEY_FILE_DESKTOP_GROUP</a>, whose value is a string list
+giving the available application actions.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_NO_DISPLAY">
+		
+<h3 class="constant" id="glibkey_file_desktop_key_no_display">
+	GLib.KEY_FILE_DESKTOP_KEY_NO_DISPLAY
+</h3>
+
+		<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">GLib.KEY_FILE_DESKTOP_GROUP</a>, whose value is a boolean
+stating whether the desktop entry should be shown in menus.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_TYPE_LINK">
+		
+<h3 class="constant" id="glibkey_file_desktop_type_link">
+	GLib.KEY_FILE_DESKTOP_TYPE_LINK
+</h3>
+
+		<p>The value of the <a href="keyfile.html#G_KEY_FILE_DESKTOP_KEY_TYPE">GLib.KEY_FILE_DESKTOP_KEY_TYPE</a>, key for desktop
+entries representing links to documents.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_ONLY_SHOW_IN">
+		
+<h3 class="constant" id="glibkey_file_desktop_key_only_show_in">
+	GLib.KEY_FILE_DESKTOP_KEY_ONLY_SHOW_IN
+</h3>
+
+		<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">GLib.KEY_FILE_DESKTOP_GROUP</a>, whose value is a list of
+strings identifying the environments that should display the
+desktop entry.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_ICON">
+		
+<h3 class="constant" id="glibkey_file_desktop_key_icon">
+	GLib.KEY_FILE_DESKTOP_KEY_ICON
+</h3>
+
+		<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">GLib.KEY_FILE_DESKTOP_GROUP</a>, whose value is a localized
+string giving the name of the icon to be displayed for the desktop
+entry.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_COMMENT">
+		
+<h3 class="constant" id="glibkey_file_desktop_key_comment">
+	GLib.KEY_FILE_DESKTOP_KEY_COMMENT
+</h3>
+
+		<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">GLib.KEY_FILE_DESKTOP_GROUP</a>, whose value is a localized
+string giving the tooltip for the desktop entry.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_EXEC">
+		
+<h3 class="constant" id="glibkey_file_desktop_key_exec">
+	GLib.KEY_FILE_DESKTOP_KEY_EXEC
+</h3>
+
+		<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">GLib.KEY_FILE_DESKTOP_GROUP</a>, whose value is a string
+giving the command line to execute. It is only valid for desktop
+entries with the <code>Application</code> type.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_STARTUP_NOTIFY">
+		
+<h3 class="constant" id="glibkey_file_desktop_key_startup_notify">
+	GLib.KEY_FILE_DESKTOP_KEY_STARTUP_NOTIFY
+</h3>
+
+		<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">GLib.KEY_FILE_DESKTOP_GROUP</a>, whose value is a boolean
+stating whether the application supports the
+<a href="http://www.freedesktop.org/Standards/startup-notification-spec">Startup Notification Protocol Specification</a>.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_GENERIC_NAME">
+		
+<h3 class="constant" id="glibkey_file_desktop_key_generic_name">
+	GLib.KEY_FILE_DESKTOP_KEY_GENERIC_NAME
+</h3>
+
+		<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">GLib.KEY_FILE_DESKTOP_GROUP</a>, whose value is a localized
+string giving the generic name of the desktop entry.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_TYPE_APPLICATION">
+		
+<h3 class="constant" id="glibkey_file_desktop_type_application">
+	GLib.KEY_FILE_DESKTOP_TYPE_APPLICATION
+</h3>
+
+		<p>The value of the <a href="keyfile.html#G_KEY_FILE_DESKTOP_KEY_TYPE">GLib.KEY_FILE_DESKTOP_KEY_TYPE</a>, key for desktop
+entries representing applications.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_NOT_SHOW_IN">
+		
+<h3 class="constant" id="glibkey_file_desktop_key_not_show_in">
+	GLib.KEY_FILE_DESKTOP_KEY_NOT_SHOW_IN
+</h3>
+
+		<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">GLib.KEY_FILE_DESKTOP_GROUP</a>, whose value is a list of
+strings identifying the environments that should not display the
+desktop entry.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_PATH">
+		
+<h3 class="constant" id="glibkey_file_desktop_key_path">
+	GLib.KEY_FILE_DESKTOP_KEY_PATH
+</h3>
+
+		<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">GLib.KEY_FILE_DESKTOP_GROUP</a>, whose value is a string
+containing the working directory to run the program in. It is only
+valid for desktop entries with the <code>Application</code> type.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_MIME_TYPE">
+		
+<h3 class="constant" id="glibkey_file_desktop_key_mime_type">
+	GLib.KEY_FILE_DESKTOP_KEY_MIME_TYPE
+</h3>
+
+		<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">GLib.KEY_FILE_DESKTOP_GROUP</a>, whose value is a list
+of strings giving the MIME types supported by this desktop entry.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_GROUP">
+		
+<h3 class="constant" id="glibkey_file_desktop_group">
+	GLib.KEY_FILE_DESKTOP_GROUP
+</h3>
+
+		<p>The name of the main group of a desktop entry file, as defined in the
+<a href="http://freedesktop.org/Standards/desktop-entry-spec">Desktop Entry Specification</a>.
+Consult the specification for more
+details about the meanings of the keys below.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_HIDDEN">
+		
+<h3 class="constant" id="glibkey_file_desktop_key_hidden">
+	GLib.KEY_FILE_DESKTOP_KEY_HIDDEN
+</h3>
+
+		<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">GLib.KEY_FILE_DESKTOP_GROUP</a>, whose value is a boolean
+stating whether the desktop entry has been deleted by the user.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_CATEGORIES">
+		
+<h3 class="constant" id="glibkey_file_desktop_key_categories">
+	GLib.KEY_FILE_DESKTOP_KEY_CATEGORIES
+</h3>
+
+		<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">GLib.KEY_FILE_DESKTOP_GROUP</a>, whose value is a list
+of strings giving the categories in which the desktop entry
+should be shown in a menu.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_VERSION">
+		
+<h3 class="constant" id="glibkey_file_desktop_key_version">
+	GLib.KEY_FILE_DESKTOP_KEY_VERSION
+</h3>
+
+		<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">GLib.KEY_FILE_DESKTOP_GROUP</a>, whose value is a string
+giving the version of the Desktop Entry Specification used for
+the desktop entry file.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.38;" id="G_KEY_FILE_DESKTOP_KEY_DBUS_ACTIVATABLE">
+		
+<h3 class="constant" id="glibkey_file_desktop_key_dbus_activatable">
+	GLib.KEY_FILE_DESKTOP_KEY_DBUS_ACTIVATABLE
+</h3>
+
+		<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">GLib.KEY_FILE_DESKTOP_GROUP</a>, whose value is a boolean set to true
+if the application is D-Bus activatable.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_TERMINAL">
+		
+<h3 class="constant" id="glibkey_file_desktop_key_terminal">
+	GLib.KEY_FILE_DESKTOP_KEY_TERMINAL
+</h3>
+
+		<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">GLib.KEY_FILE_DESKTOP_GROUP</a>, whose value is a boolean
+stating whether the program should be run in a terminal window.
+It is only valid for desktop entries with the
+<code>Application</code> type.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_TYPE">
+		
+<h3 class="constant" id="glibkey_file_desktop_key_type">
+	GLib.KEY_FILE_DESKTOP_KEY_TYPE
+</h3>
+
+		<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">GLib.KEY_FILE_DESKTOP_GROUP</a>, whose value is a string
+giving the type of the desktop entry. Usually
+<a href="keyfile.html#G_KEY_FILE_DESKTOP_TYPE_APPLICATION">GLib.KEY_FILE_DESKTOP_TYPE_APPLICATION</a>,
+<a href="keyfile.html#G_KEY_FILE_DESKTOP_TYPE_LINK">GLib.KEY_FILE_DESKTOP_TYPE_LINK</a>, or
+<a href="keyfile.html#G_KEY_FILE_DESKTOP_TYPE_DIRECTORY">GLib.KEY_FILE_DESKTOP_TYPE_DIRECTORY</a>.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_TYPE_DIRECTORY">
+		
+<h3 class="constant" id="glibkey_file_desktop_type_directory">
+	GLib.KEY_FILE_DESKTOP_TYPE_DIRECTORY
+</h3>
+
+		<p>The value of the <a href="keyfile.html#G_KEY_FILE_DESKTOP_KEY_TYPE">GLib.KEY_FILE_DESKTOP_KEY_TYPE</a>, key for desktop
+entries representing directories.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_NAME">
+		
+<h3 class="constant" id="glibkey_file_desktop_key_name">
+	GLib.KEY_FILE_DESKTOP_KEY_NAME
+</h3>
+
+		<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">GLib.KEY_FILE_DESKTOP_GROUP</a>, whose value is a localized
+string giving the specific name of the desktop entry.</p>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

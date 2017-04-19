@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/markup.html#g_markup_parse_context_ref", "fragment": "GLib.MarkupParseContext.prototype.ref \nIncreases the reference count of context. \n"});

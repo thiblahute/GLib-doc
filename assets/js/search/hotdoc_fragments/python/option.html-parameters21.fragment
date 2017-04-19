@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/option.html#parameters21", "fragment": "group \na GLib.OptionGroup \nfunc \nthe GLib.TranslateFunc or None \ndata \nuser data to pass to func or None \ndestroy_notify \na function which gets called to free data or None \nSince \n"});

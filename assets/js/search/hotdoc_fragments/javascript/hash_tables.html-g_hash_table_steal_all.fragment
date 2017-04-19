@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hash_tables.html#g_hash_table_steal_all", "fragment": "GLib.prototype.hash_table_steal_all \nRemoves all keys and their associated values from a GLib.HashTable without calling the key and value destroy functions. \n"});

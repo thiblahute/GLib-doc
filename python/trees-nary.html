@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GNode</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="trees-nary.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="python">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="trees-nary.markdown">
+        <h1 id="gnode">GNode</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GNode</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GNodeMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_child_index">
+		
+<h4 id="glibnodechild_index">
+	<span><code>GLib.Node.child_index</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Node.child_index (self, data):
+    #python wrapper for 'g_node_child_index'</pre>
+
+<p>Gets the position of the first child of a <a href="trees-nary.html#GNode">GLib.Node</a>
+which contains the given data.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GLib.Node</a></p>
+</td>
+<td>
+<a title="GLib.Node" href="trees-nary.html#GNode">GLib.Node</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data to find</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the index of the child of <em>node</em> which contains
+<em>data</em>, or -1 if the data is not found</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_is_ancestor">
+		
+<h4 id="glibnodeis_ancestor">
+	<span><code>GLib.Node.is_ancestor</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Node.is_ancestor (self, descendant):
+    #python wrapper for 'g_node_is_ancestor'</pre>
+
+<p>Returns <a href="https://docs.python.org/2/library/constants.html#True">True</a> if <em>node</em> is an ancestor of <em>descendant</em>.
+This is true if node is the parent of <em>descendant</em>,
+or if node is the grandparent of <em>descendant</em> etc.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GLib.Node</a></p>
+</td>
+<td>
+<a title="GLib.Node" href="trees-nary.html#GNode">GLib.Node</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>descendant:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GLib.Node</a></p>
+</td>
+<td>
+<a title="GLib.Node" href="trees-nary.html#GNode">GLib.Node</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if <em>node</em> is an ancestor of <em>descendant</em></p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_unlink">
+		
+<h4 id="glibnodeunlink">
+	<span><code>GLib.Node.unlink</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Node.unlink (self):
+    #python wrapper for 'g_node_unlink'</pre>
+
+<p>Unlinks a <a href="trees-nary.html#GNode">GLib.Node</a> from a tree, resulting in two separate trees.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="trees-nary.html#GNode">GLib.Node</a> to unlink, which becomes the root of a new tree</p>
+</td>
+<td>
+<a title="GLib.Node" href="trees-nary.html#GNode">GLib.Node</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_n_children">
+		
+<h4 id="glibnoden_children">
+	<span><code>GLib.Node.n_children</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Node.n_children (self):
+    #python wrapper for 'g_node_n_children'</pre>
+
+<p>Gets the number of children of a <a href="trees-nary.html#GNode">GLib.Node</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GLib.Node</a></p>
+</td>
+<td>
+<a title="GLib.Node" href="trees-nary.html#GNode">GLib.Node</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of children of <em>node</em></p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_depth">
+		
+<h4 id="glibnodedepth">
+	<span><code>GLib.Node.depth</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Node.depth (self):
+    #python wrapper for 'g_node_depth'</pre>
+
+<p>Gets the depth of a <a href="trees-nary.html#GNode">GLib.Node</a>.</p>
+<p>If <em>node</em> is <a href="https://docs.python.org/2/library/constants.html#None">None</a> the depth is 0. The root node has a depth of 1.
+For the children of the root node the depth is 2. And so on.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GLib.Node</a></p>
+</td>
+<td>
+<a title="GLib.Node" href="trees-nary.html#GNode">GLib.Node</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the depth of the <a href="trees-nary.html#GNode">GLib.Node</a></p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_reverse_children">
+		
+<h4 id="glibnodereverse_children">
+	<span><code>GLib.Node.reverse_children</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Node.reverse_children (self):
+    #python wrapper for 'g_node_reverse_children'</pre>
+
+<p>Reverses the order of the children of a <a href="trees-nary.html#GNode">GLib.Node</a>.
+(It doesn't change the order of the grandchildren.)</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GLib.Node</a>.</p>
+</td>
+<td>
+<a title="GLib.Node" href="trees-nary.html#GNode">GLib.Node</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_n_nodes">
+		
+<h4 id="glibnoden_nodes">
+	<span><code>GLib.Node.n_nodes</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Node.n_nodes (self, flags):
+    #python wrapper for 'g_node_n_nodes'</pre>
+
+<p>Gets the number of nodes in a tree.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>root:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GLib.Node</a></p>
+</td>
+<td>
+<a title="GLib.Node" href="trees-nary.html#GNode">GLib.Node</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>which types of children are to be counted, one of
+<a href="trees-nary.html#G_TRAVERSE_ALL">GLib.TraverseFlags.all</a>, <a href="trees-nary.html#G_TRAVERSE_LEAVES">GLib.TraverseFlags.leaves</a> and <a href="trees-nary.html#G_TRAVERSE_NON_LEAVES">GLib.TraverseFlags.non_leaves</a></p>
+</td>
+<td>
+<a title="GLib.TraverseFlags" href="trees-nary.html#GTraverseFlags">GLib.TraverseFlags</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of nodes in the tree</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_child_position">
+		
+<h4 id="glibnodechild_position">
+	<span><code>GLib.Node.child_position</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Node.child_position (self, child):
+    #python wrapper for 'g_node_child_position'</pre>
+
+<p>Gets the position of a <a href="trees-nary.html#GNode">GLib.Node</a> with respect to its siblings.
+<em>child</em> must be a child of <em>node</em>. The first child is numbered 0,
+the second 1, and so on.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GLib.Node</a></p>
+</td>
+<td>
+<a title="GLib.Node" href="trees-nary.html#GNode">GLib.Node</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>child:</code></em></i>
+		</p>
+	</td>
+		<td><p>a child of <em>node</em></p>
+</td>
+<td>
+<a title="GLib.Node" href="trees-nary.html#GNode">GLib.Node</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the position of <em>child</em> with respect to its siblings</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_max_height">
+		
+<h4 id="glibnodemax_height">
+	<span><code>GLib.Node.max_height</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Node.max_height (self):
+    #python wrapper for 'g_node_max_height'</pre>
+
+<p>Gets the maximum height of all branches beneath a <a href="trees-nary.html#GNode">GLib.Node</a>.
+This is the maximum distance from the <a href="trees-nary.html#GNode">GLib.Node</a> to all leaf nodes.</p>
+<p>If <em>root</em> is <a href="https://docs.python.org/2/library/constants.html#None">None</a>, 0 is returned. If <em>root</em> has no children,
+1 is returned. If <em>root</em> has children, 2 is returned. And so on.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>root:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GLib.Node</a></p>
+</td>
+<td>
+<a title="GLib.Node" href="trees-nary.html#GNode">GLib.Node</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the maximum height of the tree beneath <em>root</em></p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_node_destroy">
+		
+<h4 id="glibnodedestroy">
+	<span><code>GLib.Node.destroy</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Node.destroy (self):
+    #python wrapper for 'g_node_destroy'</pre>
+
+<p>Removes <em>root</em> and its children from the tree, freeing any memory
+allocated.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>root:</code></em></i>
+		</p>
+	</td>
+		<td><p>the root of the tree/subtree to destroy</p>
+</td>
+<td>
+<a title="GLib.Node" href="trees-nary.html#GNode">GLib.Node</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GNode">
+		<h3 id="glibnode">
+	GLib.Node
+</h3>
+
+		<p>The <a href="trees-nary.html#GNode">GLib.Node</a> struct represents one node in a [n-ary tree][glib-N-ary-Trees].</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="attributes">Attributes</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GNode.data">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>data</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>contains the actual data of the node.</p>
+</td>
+</tr>
+
+						<tr id="GNode.next">
+		<td>
+		<p>
+		<i><em><code><a title="GNode" href="trees-nary.html#GNode">GNode</a> * <em><code>next</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>points to the node's next sibling (a sibling is another
+<a href="trees-nary.html#GNode">GNode</a> with the same parent).</p>
+</td>
+</tr>
+
+						<tr id="GNode.prev">
+		<td>
+		<p>
+		<i><em><code><a title="GNode" href="trees-nary.html#GNode">GNode</a> * <em><code>prev</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>points to the node's previous sibling.</p>
+</td>
+</tr>
+
+						<tr id="GNode.parent">
+		<td>
+		<p>
+		<i><em><code><a title="GNode" href="trees-nary.html#GNode">GNode</a> * <em><code>parent</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>points to the parent of the <a href="trees-nary.html#GNode">GNode</a>, or is <a href="macros.html#NULL">NULL</a> if the
+<a href="trees-nary.html#GNode">GNode</a> is the root of the tree.</p>
+</td>
+</tr>
+
+						<tr id="GNode.children">
+		<td>
+		<p>
+		<i><em><code><a title="GNode" href="trees-nary.html#GNode">GNode</a> * <em><code>children</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>points to the first child of the <a href="trees-nary.html#GNode">GNode</a>.  The other
+children are accessed by using the <em>next</em> pointer of each
+child.</p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GTraverseType">
+		
+<h3 id="enum-glibtraversetype">
+		enum GLib.TraverseType
+	</h3>
+
+		<p>Specifies the type of traveral performed by <a href="../c/trees-binary.html#g_tree_traverse">g_tree_traverse (not introspectable)</a>,
+<a href="../c/trees-nary.html#g_node_traverse">g_node_traverse (not introspectable)</a> and <a href="../c/trees-nary.html#g_node_find">g_node_find (not introspectable)</a>. The different orders are
+illustrated here:</p>
+<ul>
+<li>In order: A, B, C, D, E, F, G, H, I
+<img src="Sorted_binary_tree_inorder.svg" alt=""></li>
+<li>Pre order: F, B, A, D, C, E, G, I, H
+<img src="Sorted_binary_tree_preorder.svg" alt=""></li>
+<li>Post order: A, C, E, D, B, H, I, G, F
+<img src="Sorted_binary_tree_postorder.svg" alt=""></li>
+<li>Level order: F, B, G, A, D, I, C, E, H
+<img src="Sorted_binary_tree_breadth-first_traversal.svg" alt=""></li>
+</ul>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_IN_ORDER"></a>
+		GLib.TraverseType.in_order
+		</p>
+	</td>
+	<td><p>vists a node's left child first, then the node itself,
+then its right child. This is the one to use if you
+want the output sorted according to the compare
+function.</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_PRE_ORDER"></a>
+		GLib.TraverseType.pre_order
+		</p>
+	</td>
+	<td><p>visits a node, then its children.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_POST_ORDER"></a>
+		GLib.TraverseType.post_order
+		</p>
+	</td>
+	<td><p>visits the node's children, then the node itself.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_LEVEL_ORDER"></a>
+		GLib.TraverseType.level_order
+		</p>
+	</td>
+	<td><p>is not implemented for
+[balanced binary trees][glib-Balanced-Binary-Trees].
+For [n-ary trees][glib-N-ary-Trees], it
+vists the root node first, then its children, then
+its grandchildren, and so on. Note that this is less
+efficient than the other orders.</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GTraverseFlags">
+		
+<h3 id="enum-glibtraverseflags">
+		enum GLib.TraverseFlags
+	</h3>
+
+		<p>Specifies which nodes are visited during several of the tree
+functions, including <a href="../c/trees-nary.html#g_node_traverse">g_node_traverse (not introspectable)</a> and <a href="../c/trees-nary.html#g_node_find">g_node_find (not introspectable)</a>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members1">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_TRAVERSE_LEAVES"></a>
+		GLib.TraverseFlags.leaves
+		</p>
+	</td>
+	<td><p>only leaf nodes should be visited. This name has
+been introduced in 2.6, for older version use
+<a href="trees-nary.html#G_TRAVERSE_LEAFS">GLib.TraverseFlags.leafs</a>.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TRAVERSE_NON_LEAVES"></a>
+		GLib.TraverseFlags.non_leaves
+		</p>
+	</td>
+	<td><p>only non-leaf nodes should be visited. This
+name has been introduced in 2.6, for older
+version use <a href="trees-nary.html#G_TRAVERSE_NON_LEAFS">GLib.TraverseFlags.non_leafs</a>.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TRAVERSE_ALL"></a>
+		GLib.TraverseFlags.all
+		</p>
+	</td>
+	<td><p>all nodes should be visited.</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TRAVERSE_MASK"></a>
+		GLib.TraverseFlags.mask
+		</p>
+	</td>
+	<td><p>a mask of all traverse flags.</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TRAVERSE_LEAFS"></a>
+		GLib.TraverseFlags.leafs
+		</p>
+	</td>
+	<td><p>identical to <a href="trees-nary.html#G_TRAVERSE_LEAVES">GLib.TraverseFlags.leaves</a>.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_TRAVERSE_NON_LEAFS"></a>
+		GLib.TraverseFlags.non_leafs
+		</p>
+	</td>
+	<td><p>identical to <a href="trees-nary.html#G_TRAVERSE_NON_LEAVES">GLib.TraverseFlags.non_leaves</a>.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GNodeTraverseFunc">
+		
+<h3 id="glibnodetraversefunc">
+	<span><code>GLib.NodeTraverseFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+(*GLib.NodeTraverseFunc) (<a title="GLib.Node" href="trees-nary.html#GNode">GLib.Node</a>,
+                          <a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>)</pre>
+
+<p>Specifies the type of function passed to <a href="../c/trees-nary.html#g_node_traverse">g_node_traverse (not introspectable)</a>. The
+function is called with each of the nodes visited, together with the
+user data passed to <a href="../c/trees-nary.html#g_node_traverse">g_node_traverse (not introspectable)</a>. If the function returns
+<a href="https://docs.python.org/2/library/constants.html#True">True</a>, then the traversal is stopped.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GLib.Node</a>.</p>
+</td>
+<td>
+<a title="GLib.Node" href="trees-nary.html#GNode">GLib.Node</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="../c/trees-nary.html#g_node_traverse">g_node_traverse (not introspectable)</a>.</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> to stop the traversal.</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="GCopyFunc">
+		
+<h3 id="glibcopyfunc">
+	<span><code>GLib.CopyFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+(*GLib.CopyFunc) (<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>,
+                  <a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>)</pre>
+
+<p>A function of this signature is used to copy the node data
+when doing a deep-copy of a tree.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>src:</code></em></i>
+		</p>
+	</td>
+		<td><p>A pointer to the data which should be copied</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>Additional data</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A pointer to the copy</p>
+
+	</td>
+	<td>
+		<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GNodeForeachFunc">
+		
+<h3 id="glibnodeforeachfunc">
+	<span><code>GLib.NodeForeachFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void (not introspectable)
+(*GLib.NodeForeachFunc) (<a title="GLib.Node" href="trees-nary.html#GNode">GLib.Node</a>,
+                         <a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>)</pre>
+
+<p>Specifies the type of function passed to <a href="../c/trees-nary.html#g_node_children_foreach">g_node_children_foreach (not introspectable)</a>.
+The function is called with each child node, together with the user
+data passed to <a href="../c/trees-nary.html#g_node_children_foreach">g_node_children_foreach (not introspectable)</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>node:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-nary.html#GNode">GLib.Node</a>.</p>
+</td>
+<td>
+<a title="GLib.Node" href="trees-nary.html#GNode">GLib.Node</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="../c/trees-nary.html#g_node_children_foreach">g_node_children_foreach (not introspectable)</a>.</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void (not introspectable)
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

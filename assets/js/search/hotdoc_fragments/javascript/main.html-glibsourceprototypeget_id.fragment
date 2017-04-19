@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#glibsourceprototypeget_id", "fragment": "GLib.Source.prototype.get_id \nReturns the numeric ID for a particular source. The ID of a source is a positive integer which is unique within a particular main loop context. The reverse mapping from ID to source is done by GLib.MainContext.prototype.find_source_by_id. \n"});

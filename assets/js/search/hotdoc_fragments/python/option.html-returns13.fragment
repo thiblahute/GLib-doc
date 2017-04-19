@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/option.html#returns13", "fragment": "\nTrue if the option was successfully parsed False if an error occurred in which case error should be set with g_set_error not introspectable \n"});

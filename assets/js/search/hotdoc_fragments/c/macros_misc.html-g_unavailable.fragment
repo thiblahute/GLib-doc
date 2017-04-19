@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/macros_misc.html#g_unavailable", "fragment": "G_UNAVAILABLE \nThis macro can be used to mark a function declaration as unavailable. It must be placed before the function declaration. Use of a function that has been annotated with this macros will produce a compiler warning. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/main.html#g_main_context_pending1", "fragment": "g_main_context_pending \nChecks if any sources have pending events for the given context. \n"});

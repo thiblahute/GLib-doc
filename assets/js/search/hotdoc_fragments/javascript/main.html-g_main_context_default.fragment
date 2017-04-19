@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#g_main_context_default", "fragment": "GLib.prototype.main_context_default \nReturns the global default main context. This is the main context used for main loop functions when a main loop is not explicitly specified and corresponds to the main main loop. See also GLib.prototype.main_context_get_thread_default. \n"});

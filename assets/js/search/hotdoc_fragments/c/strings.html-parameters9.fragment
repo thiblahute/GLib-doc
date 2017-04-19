@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/strings.html#parameters9", "fragment": "string \na GString \npos \nthe position of the content to remove \nlen \nthe number of bytes to remove or to remove all following bytes \n"});

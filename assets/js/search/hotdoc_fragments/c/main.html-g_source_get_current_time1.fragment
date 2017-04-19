@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/main.html#g_source_get_current_time1", "fragment": "g_source_get_current_time \nThis function ignores source and is otherwise the same as g_get_current_time. \n"});

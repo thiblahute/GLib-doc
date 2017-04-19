@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#g_io_channel_init1", "fragment": "g_io_channel_init \nInitializes a GIOChannel struct. \nThis is called by each of the above functions when creating a GIOChannel and so is not often needed by the application programmer unless you are creating a new type of GIOChannel \n"});

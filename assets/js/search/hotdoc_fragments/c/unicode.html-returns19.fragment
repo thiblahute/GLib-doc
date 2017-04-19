@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/unicode.html#returns19", "fragment": "\nthe ISO code for script encoded as an integer of zero if script is G_UNICODE_SCRIPT_INVALID_CODE or ISO code Zzzz script code for UNKNOWN if script is not understood. \nSince \n"});

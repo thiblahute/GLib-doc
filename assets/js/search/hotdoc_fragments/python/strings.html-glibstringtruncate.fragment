@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/strings.html#glibstringtruncate", "fragment": "GLib.String.truncate \nCuts off the end of the GString leaving the first len bytes. \n"});

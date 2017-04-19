@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/option.html#G_OPTION_FLAG_REVERSE", "fragment": "For options of the GLib.OptionArg.none kind this flag indicates that the sense of the option is reversed. \nGLib.OptionFlags.no_arg \n"});

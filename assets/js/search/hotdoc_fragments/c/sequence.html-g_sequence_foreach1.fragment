@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/sequence.html#g_sequence_foreach1", "fragment": "g_sequence_foreach \nCalls func for each item in the sequence passing user_data to the function. \n"});

@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GAsyncQueue</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="async_queues.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="javascript">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="async_queues.markdown">
+        <h1 id="gasyncqueue">GAsyncQueue</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GAsyncQueue</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GAsyncQueueMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_async_queue_push_unlocked">
+		
+<h4 id="glibasyncqueueprototypepush_unlocked">
+	<span><code>GLib.AsyncQueue.prototype.push_unlocked</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.AsyncQueue.prototype.push_unlocked(data: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_async_queue_push_unlocked'
+}</pre>
+
+<p>Pushes the <em>data</em> into the <em>queue</em>. <em>data</em> must not be <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>.</p>
+<p>This function must be called while holding the <em>queue</em>'s lock.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a></p>
+</td>
+<td>
+<a title="GLib.AsyncQueue" href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p><em>data</em> to push into the <em>queue</em></p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_async_queue_push">
+		
+<h4 id="glibasyncqueueprototypepush">
+	<span><code>GLib.AsyncQueue.prototype.push</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.AsyncQueue.prototype.push(data: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_async_queue_push'
+}</pre>
+
+<p>Pushes the <em>data</em> into the <em>queue</em>. <em>data</em> must not be <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a></p>
+</td>
+<td>
+<a title="GLib.AsyncQueue" href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p><em>data</em> to push into the <em>queue</em></p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_async_queue_timeout_pop">
+		
+<h4 id="glibasyncqueueprototypetimeout_pop">
+	<span><code>GLib.AsyncQueue.prototype.timeout_pop</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.AsyncQueue.prototype.timeout_pop(timeout: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_async_queue_timeout_pop'
+}</pre>
+
+<p>Pops data from the <em>queue</em>. If the queue is empty, blocks for
+<em>timeout</em> microseconds, or until data becomes available.</p>
+<p>If no data is received before the timeout, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> is returned.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a></p>
+</td>
+<td>
+<a title="GLib.AsyncQueue" href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>timeout:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of microseconds to wait</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>data from the queue or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>, when no data is
+received before the timeout.</p>
+
+	</td>
+	<td>
+		<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.8;" id="g_async_queue_ref_unlocked">
+		
+<h4 id="glibasyncqueueprototyperef_unlocked">
+	<span><code>GLib.AsyncQueue.prototype.ref_unlocked</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.AsyncQueue.prototype.ref_unlocked(): {
+    // javascript wrapper for 'g_async_queue_ref_unlocked'
+}</pre>
+
+<p>Increases the reference count of the asynchronous <em>queue</em> by 1.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a></p>
+</td>
+<td>
+<a title="GLib.AsyncQueue" href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	deprecated			: 2.8: Reference counting is done atomically.
+ so g_async_queue_ref() can be used regardless of the @queue's
+ lock.
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_async_queue_try_pop_unlocked">
+		
+<h4 id="glibasyncqueueprototypetry_pop_unlocked">
+	<span><code>GLib.AsyncQueue.prototype.try_pop_unlocked</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.AsyncQueue.prototype.try_pop_unlocked(): {
+    // javascript wrapper for 'g_async_queue_try_pop_unlocked'
+}</pre>
+
+<p>Tries to pop data from the <em>queue</em>. If no data is available,
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> is returned.</p>
+<p>This function must be called while holding the <em>queue</em>'s lock.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a></p>
+</td>
+<td>
+<a title="GLib.AsyncQueue" href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>data from the queue or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>, when no data is
+available immediately.</p>
+
+	</td>
+	<td>
+		<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.46;" id="g_async_queue_push_front_unlocked">
+		
+<h4 id="glibasyncqueueprototypepush_front_unlocked">
+	<span><code>GLib.AsyncQueue.prototype.push_front_unlocked</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.AsyncQueue.prototype.push_front_unlocked(item: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_async_queue_push_front_unlocked'
+}</pre>
+
+<p>Pushes the <em>item</em> into the <em>queue</em>. <em>item</em> must not be <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>.
+In contrast to <a href="async_queues.html#g_async_queue_push_unlocked">GLib.AsyncQueue.prototype.push_unlocked</a>, this function
+pushes the new item ahead of the items already in the queue,
+so that it will be the next one to be popped off the queue.</p>
+<p>This function must be called while holding the <em>queue</em>'s lock.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a></p>
+</td>
+<td>
+<a title="GLib.AsyncQueue" href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>item:</code></em></i>
+		</p>
+	</td>
+		<td><p>data to push into the <em>queue</em></p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.46
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_async_queue_lock">
+		
+<h4 id="glibasyncqueueprototypelock">
+	<span><code>GLib.AsyncQueue.prototype.lock</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.AsyncQueue.prototype.lock(): {
+    // javascript wrapper for 'g_async_queue_lock'
+}</pre>
+
+<p>Acquires the <em>queue</em>'s lock. If another thread is already
+holding the lock, this call will block until the lock
+becomes available.</p>
+<p>Call <a href="async_queues.html#g_async_queue_unlock">GLib.AsyncQueue.prototype.unlock</a> to drop the lock again.</p>
+<p>While holding the lock, you can only call the
+g_async_queue_*_unlocked functions on <em>queue</em>. Otherwise,
+deadlock may occur.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a></p>
+</td>
+<td>
+<a title="GLib.AsyncQueue" href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.8;" id="g_async_queue_unref_and_unlock">
+		
+<h4 id="glibasyncqueueprototypeunref_and_unlock">
+	<span><code>GLib.AsyncQueue.prototype.unref_and_unlock</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.AsyncQueue.prototype.unref_and_unlock(): {
+    // javascript wrapper for 'g_async_queue_unref_and_unlock'
+}</pre>
+
+<p>Decreases the reference count of the asynchronous <em>queue</em> by 1
+and releases the lock. This function must be called while holding
+the <em>queue</em>'s lock. If the reference count went to 0, the <em>queue</em>
+will be destroyed and the memory allocated will be freed.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a></p>
+</td>
+<td>
+<a title="GLib.AsyncQueue" href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	deprecated			: 2.8: Reference counting is done atomically.
+ so g_async_queue_unref() can be used regardless of the @queue's
+ lock.
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_async_queue_length_unlocked">
+		
+<h4 id="glibasyncqueueprototypelength_unlocked">
+	<span><code>GLib.AsyncQueue.prototype.length_unlocked</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.AsyncQueue.prototype.length_unlocked(): {
+    // javascript wrapper for 'g_async_queue_length_unlocked'
+}</pre>
+
+<p>Returns the length of the queue.</p>
+<p>Actually this function returns the number of data items in
+the queue minus the number of waiting threads, so a negative
+value means waiting threads, and a positive value means available
+entries in the <em>queue</em>. A return value of 0 could mean n entries
+in the queue and n threads waiting. This can happen due to locking
+of the queue or due to scheduling.</p>
+<p>This function must be called while holding the <em>queue</em>'s lock.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a></p>
+</td>
+<td>
+<a title="GLib.AsyncQueue" href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the length of the <em>queue</em>.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_async_queue_unref">
+		
+<h4 id="glibasyncqueueprototypeunref">
+	<span><code>GLib.AsyncQueue.prototype.unref</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.AsyncQueue.prototype.unref(): {
+    // javascript wrapper for 'g_async_queue_unref'
+}</pre>
+
+<p>Decreases the reference count of the asynchronous <em>queue</em> by 1.</p>
+<p>If the reference count went to 0, the <em>queue</em> will be destroyed
+and the memory allocated will be freed. So you are not allowed
+to use the <em>queue</em> afterwards, as it might have disappeared.
+You do not need to hold the lock to call this function.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>.</p>
+</td>
+<td>
+<a title="GLib.AsyncQueue" href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_async_queue_try_pop">
+		
+<h4 id="glibasyncqueueprototypetry_pop">
+	<span><code>GLib.AsyncQueue.prototype.try_pop</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.AsyncQueue.prototype.try_pop(): {
+    // javascript wrapper for 'g_async_queue_try_pop'
+}</pre>
+
+<p>Tries to pop data from the <em>queue</em>. If no data is available,
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> is returned.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a></p>
+</td>
+<td>
+<a title="GLib.AsyncQueue" href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>data from the queue or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>, when no data is
+available immediately.</p>
+
+	</td>
+	<td>
+		<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_async_queue_pop_unlocked">
+		
+<h4 id="glibasyncqueueprototypepop_unlocked">
+	<span><code>GLib.AsyncQueue.prototype.pop_unlocked</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.AsyncQueue.prototype.pop_unlocked(): {
+    // javascript wrapper for 'g_async_queue_pop_unlocked'
+}</pre>
+
+<p>Pops data from the <em>queue</em>. If <em>queue</em> is empty, this function
+blocks until data becomes available.</p>
+<p>This function must be called while holding the <em>queue</em>'s lock.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a></p>
+</td>
+<td>
+<a title="GLib.AsyncQueue" href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>data from the queue.</p>
+
+	</td>
+	<td>
+		<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_async_queue_timeout_pop_unlocked">
+		
+<h4 id="glibasyncqueueprototypetimeout_pop_unlocked">
+	<span><code>GLib.AsyncQueue.prototype.timeout_pop_unlocked</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.AsyncQueue.prototype.timeout_pop_unlocked(timeout: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_async_queue_timeout_pop_unlocked'
+}</pre>
+
+<p>Pops data from the <em>queue</em>. If the queue is empty, blocks for
+<em>timeout</em> microseconds, or until data becomes available.</p>
+<p>If no data is received before the timeout, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> is returned.</p>
+<p>This function must be called while holding the <em>queue</em>'s lock.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a></p>
+</td>
+<td>
+<a title="GLib.AsyncQueue" href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>timeout:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of microseconds to wait</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>data from the queue or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>, when no data is
+received before the timeout.</p>
+
+	</td>
+	<td>
+		<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.46;" id="g_async_queue_remove">
+		
+<h4 id="glibasyncqueueprototyperemove">
+	<span><code>GLib.AsyncQueue.prototype.remove</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.AsyncQueue.prototype.remove(item: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_async_queue_remove'
+}</pre>
+
+<p>Remove an item from the queue.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a></p>
+</td>
+<td>
+<a title="GLib.AsyncQueue" href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>item:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data to remove from the <em>queue</em></p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the item was removed</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.46
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.46;" id="g_async_queue_push_front">
+		
+<h4 id="glibasyncqueueprototypepush_front">
+	<span><code>GLib.AsyncQueue.prototype.push_front</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.AsyncQueue.prototype.push_front(item: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_async_queue_push_front'
+}</pre>
+
+<p>Pushes the <em>item</em> into the <em>queue</em>. <em>item</em> must not be <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>.
+In contrast to <a href="async_queues.html#g_async_queue_push">GLib.AsyncQueue.prototype.push</a>, this function
+pushes the new item ahead of the items already in the queue,
+so that it will be the next one to be popped off the queue.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a></p>
+</td>
+<td>
+<a title="GLib.AsyncQueue" href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>item:</code></em></i>
+		</p>
+	</td>
+		<td><p>data to push into the <em>queue</em></p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.46
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_async_queue_length">
+		
+<h4 id="glibasyncqueueprototypelength">
+	<span><code>GLib.AsyncQueue.prototype.length</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.AsyncQueue.prototype.length(): {
+    // javascript wrapper for 'g_async_queue_length'
+}</pre>
+
+<p>Returns the length of the queue.</p>
+<p>Actually this function returns the number of data items in
+the queue minus the number of waiting threads, so a negative
+value means waiting threads, and a positive value means available
+entries in the <em>queue</em>. A return value of 0 could mean n entries
+in the queue and n threads waiting. This can happen due to locking
+of the queue or due to scheduling.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>.</p>
+</td>
+<td>
+<a title="GLib.AsyncQueue" href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the length of the <em>queue</em></p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:;" id="g_async_queue_timed_pop_unlocked">
+		
+<h4 id="glibasyncqueueprototypetimed_pop_unlocked">
+	<span><code>GLib.AsyncQueue.prototype.timed_pop_unlocked</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.AsyncQueue.prototype.timed_pop_unlocked(end_time: <a title="GLib.TimeVal" href="date.html#GTimeVal">GLib.TimeVal</a>): {
+    // javascript wrapper for 'g_async_queue_timed_pop_unlocked'
+}</pre>
+
+<p>Pops data from the <em>queue</em>. If the queue is empty, blocks until
+<em>end_time</em> or until data becomes available.</p>
+<p>If no data is received before <em>end_time</em>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> is returned.</p>
+<p>To easily calculate <em>end_time</em>, a combination of <a href="date.html#g_get_current_time">GLib.prototype.get_current_time</a>
+and <a href="date.html#g_time_val_add">GLib.TimeVal.prototype.add</a> can be used.</p>
+<p>This function must be called while holding the <em>queue</em>'s lock.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a></p>
+</td>
+<td>
+<a title="GLib.AsyncQueue" href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>end_time:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GTimeVal">GLib.TimeVal</a>, determining the final time</p>
+</td>
+<td>
+<a title="GLib.TimeVal" href="date.html#GTimeVal">GLib.TimeVal</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>data from the queue or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>, when no data is
+received before <em>end_time</em>.</p>
+
+	</td>
+	<td>
+		<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	deprecated			: use g_async_queue_timeout_pop_unlocked().
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_async_queue_unlock">
+		
+<h4 id="glibasyncqueueprototypeunlock">
+	<span><code>GLib.AsyncQueue.prototype.unlock</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.AsyncQueue.prototype.unlock(): {
+    // javascript wrapper for 'g_async_queue_unlock'
+}</pre>
+
+<p>Releases the queue's lock.</p>
+<p>Calling this function when you have not acquired
+the with <a href="async_queues.html#g_async_queue_lock">GLib.AsyncQueue.prototype.lock</a> leads to undefined
+behaviour.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a></p>
+</td>
+<td>
+<a title="GLib.AsyncQueue" href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.46;" id="g_async_queue_remove_unlocked">
+		
+<h4 id="glibasyncqueueprototyperemove_unlocked">
+	<span><code>GLib.AsyncQueue.prototype.remove_unlocked</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.AsyncQueue.prototype.remove_unlocked(item: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_async_queue_remove_unlocked'
+}</pre>
+
+<p>Remove an item from the queue.</p>
+<p>This function must be called while holding the <em>queue</em>'s lock.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a></p>
+</td>
+<td>
+<a title="GLib.AsyncQueue" href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>item:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data to remove from the <em>queue</em></p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the item was removed</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.46
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_async_queue_pop">
+		
+<h4 id="glibasyncqueueprototypepop">
+	<span><code>GLib.AsyncQueue.prototype.pop</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.AsyncQueue.prototype.pop(): {
+    // javascript wrapper for 'g_async_queue_pop'
+}</pre>
+
+<p>Pops data from the <em>queue</em>. If <em>queue</em> is empty, this function
+blocks until data becomes available.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a></p>
+</td>
+<td>
+<a title="GLib.AsyncQueue" href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>data from the queue</p>
+
+	</td>
+	<td>
+		<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:;" id="g_async_queue_timed_pop">
+		
+<h4 id="glibasyncqueueprototypetimed_pop">
+	<span><code>GLib.AsyncQueue.prototype.timed_pop</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.AsyncQueue.prototype.timed_pop(end_time: <a title="GLib.TimeVal" href="date.html#GTimeVal">GLib.TimeVal</a>): {
+    // javascript wrapper for 'g_async_queue_timed_pop'
+}</pre>
+
+<p>Pops data from the <em>queue</em>. If the queue is empty, blocks until
+<em>end_time</em> or until data becomes available.</p>
+<p>If no data is received before <em>end_time</em>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> is returned.</p>
+<p>To easily calculate <em>end_time</em>, a combination of <a href="date.html#g_get_current_time">GLib.prototype.get_current_time</a>
+and <a href="date.html#g_time_val_add">GLib.TimeVal.prototype.add</a> can be used.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a></p>
+</td>
+<td>
+<a title="GLib.AsyncQueue" href="async_queues.html#GAsyncQueue">GLib.AsyncQueue</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>end_time:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GTimeVal">GLib.TimeVal</a>, determining the final time</p>
+</td>
+<td>
+<a title="GLib.TimeVal" href="date.html#GTimeVal">GLib.TimeVal</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>data from the queue or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>, when no data is
+received before <em>end_time</em>.</p>
+
+	</td>
+	<td>
+		<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	deprecated			: use g_async_queue_timeout_pop().
+		</p>
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GAsyncQueue">
+		<h3 id="glibasyncqueue">
+	GLib.AsyncQueue
+</h3>
+
+		<p>The GAsyncQueue struct is an opaque data structure which represents
+an asynchronous queue. It should only be accessed through the
+g_async_queue_* functions.</p>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

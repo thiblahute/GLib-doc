@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/scanner.html#glibscannerget_next_token", "fragment": "GLib.Scanner.get_next_token \nParses the next token just like GLib.Scanner.peek_next_token and also removes it from the input stream. The token data is placed in the token value line and position fields of the GLib.Scanner structure. \n"});

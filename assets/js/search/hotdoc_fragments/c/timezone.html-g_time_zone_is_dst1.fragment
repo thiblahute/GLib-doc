@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/timezone.html#g_time_zone_is_dst1", "fragment": "g_time_zone_is_dst \nDetermines if daylight savings time is in effect during a particular interval of time in the time zone tz. \n"});

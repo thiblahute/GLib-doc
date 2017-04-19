@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#g_lock_define_static", "fragment": "G_LOCK_DEFINE_STATIC \nThis works like G_LOCK_DEFINE but it creates a static object. \n"});

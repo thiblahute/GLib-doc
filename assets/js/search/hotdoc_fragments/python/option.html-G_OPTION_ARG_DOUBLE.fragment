@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/option.html#G_OPTION_ARG_DOUBLE", "fragment": "The option takes a double argument. The argument can be formatted either for the user s locale or for the C locale. Since \nGLib.OptionArg.int64 \n"});

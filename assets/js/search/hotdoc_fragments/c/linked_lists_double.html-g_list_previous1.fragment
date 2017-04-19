@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/linked_lists_double.html#g_list_previous1", "fragment": "g_list_previous \nA convenience macro to get the previous element in a GList. Note that it is considered perfectly acceptable to access list previous directly. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvariant.html#glibvariantnew_handle", "fragment": "GLib.Variant.new_handle \nCreates a new handle GLib.Variant instance. \nBy convention handles are indexes into an array of file descriptors that are sent alongside a D Bus message. If you re not interacting with D Bus you probably don t need them. \n"});

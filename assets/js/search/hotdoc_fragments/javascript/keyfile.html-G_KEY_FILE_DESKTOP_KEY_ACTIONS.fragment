@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/keyfile.html#G_KEY_FILE_DESKTOP_KEY_ACTIONS", "fragment": "GLib.KEY_FILE_DESKTOP_KEY_ACTIONS \nA key under GLib.KEY_FILE_DESKTOP_GROUP whose value is a string list giving the available application actions. \n"});

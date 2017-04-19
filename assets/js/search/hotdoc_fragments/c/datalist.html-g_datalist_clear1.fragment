@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/datalist.html#g_datalist_clear1", "fragment": "g_datalist_clear \nFrees all the data elements of the datalist. The data elements destroy functions are called if they have been set. \n"});

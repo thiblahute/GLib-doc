@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/quarks.html#g_define_quark", "fragment": "G_DEFINE_QUARK \nA convenience macro which defines a function returning the GQuark for the name QN. The function will be named q_n_quark \nNote that the quark name will be stringified automatically in the macro so you shouldn t use double quotes. \n"});

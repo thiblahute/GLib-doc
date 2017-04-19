@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/types.html#glibgint16_format", "fragment": "GLib.GINT16_FORMAT \nThis is the platform dependent conversion specifier for scanning and printing values of type gint16. It is a string literal but doesn t include the percent sign such that you can add precision and length modifiers between percent sign and conversion specifier. \n"});

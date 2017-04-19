@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/misc_utils.html#glibenviron_getenv", "fragment": "GLib.environ_getenv \nReturns the value of the environment variable variable in the provided list envp. \n"});

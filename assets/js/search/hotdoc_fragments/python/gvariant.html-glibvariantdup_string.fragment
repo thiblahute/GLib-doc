@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvariant.html#glibvariantdup_string", "fragment": "GLib.Variant.dup_string \nSimilar to GLib.Variant.get_string except that instead of returning a constant string the string is duplicated. \nThe string will always be UTF encoded. \nThe return value must be freed using GLib.free. \n"});

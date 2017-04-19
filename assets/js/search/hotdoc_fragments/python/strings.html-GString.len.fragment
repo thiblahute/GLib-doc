@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/strings.html#GString.len", "fragment": "gsize allocated_len \nthe number of bytes that can be stored in the string before it needs to be reallocated. May be larger than len. \n"});

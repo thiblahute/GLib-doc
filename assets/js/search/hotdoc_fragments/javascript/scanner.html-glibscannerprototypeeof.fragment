@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/scanner.html#glibscannerprototypeeof", "fragment": "GLib.Scanner.prototype.eof \nReturns true if the scanner has reached the end of the file or text buffer. \n"});

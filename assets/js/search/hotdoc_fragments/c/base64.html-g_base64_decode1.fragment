@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/base64.html#g_base64_decode1", "fragment": "g_base64_decode \nDecode a sequence of Base encoded text into binary data. Note that the returned binary data is not necessarily zero terminated so it should not be used as a character string. \n"});

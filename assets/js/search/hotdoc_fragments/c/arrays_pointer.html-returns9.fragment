@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays_pointer.html#returns9", "fragment": "\nthe pointer array if free_seg is FALSE otherwise NULL. The pointer array should be freed using g_free. \n"});

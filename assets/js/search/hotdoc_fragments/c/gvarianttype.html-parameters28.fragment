@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvarianttype.html#parameters28", "fragment": "string \na pointer to any string \nlimit \nthe end of string or NULL \nendptr \nlocation to store the end pointer or NULL \n"});

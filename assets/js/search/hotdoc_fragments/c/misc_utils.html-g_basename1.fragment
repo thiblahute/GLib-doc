@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/misc_utils.html#g_basename1", "fragment": "g_basename \nGets the name of the file without any leading directory components. It returns a pointer into the given file name string. \n"});

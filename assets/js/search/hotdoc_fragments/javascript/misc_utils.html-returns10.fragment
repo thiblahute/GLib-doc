@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/misc_utils.html#returns10", "fragment": "\nthe value of the environment variable or null if the environment variable is not found. The returned string may be overwritten by the next call to GLib.prototype.getenv GLib.prototype.setenv or GLib.prototype.unsetenv. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvarianttype.html#g_variant_type_is_maybe1", "fragment": "g_variant_type_is_maybe \nDetermines if the given type is a maybe type. This is true if the type string for type starts with an m \nThis function returns TRUE for any indefinite type for which every definite subtype is a maybe type G_VARIANT_TYPE_MAYBE for example. \n"});

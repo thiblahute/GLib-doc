@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays_byte.html#g_byte_array_prepend1", "fragment": "g_byte_array_prepend \nAdds the given data to the start of the GByteArray. The array will grow in size automatically if necessary. \n"});

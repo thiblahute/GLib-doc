@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays.html#g_array_prepend_vals1", "fragment": "g_array_prepend_vals \nAdds len elements onto the start of the array. \nThis operation is slower than g_array_append_vals since the existing elements in the array have to be moved to make space for the new elements. \n"});

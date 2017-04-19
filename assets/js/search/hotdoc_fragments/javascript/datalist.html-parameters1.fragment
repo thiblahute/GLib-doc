@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/datalist.html#parameters1", "fragment": "datalist \npointer to the location that holds a list \nflags \nthe flags to turn on. The values of the flags are restricted by GLib.DATALIST_FLAGS_MASK currently giving two possible boolean flags A value for flags that doesn t fit within the mask is an error. \nSince \n"});

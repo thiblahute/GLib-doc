@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/sequence.html#glibsequenceiter", "fragment": "GLib.SequenceIter \nThe GLib.SequenceIter struct is an opaque data type representing an iterator pointing into a GLib.Sequence. \n"});

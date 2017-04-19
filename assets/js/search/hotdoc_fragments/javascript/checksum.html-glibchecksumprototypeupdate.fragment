@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/checksum.html#glibchecksumprototypeupdate", "fragment": "GLib.Checksum.prototype.update \nFeeds data into an existing GLib.Checksum. The checksum must still be open that is GLib.Checksum.prototype.get_string or g_checksum_get_digest not introspectable must not have been called on checksum. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/testing.html#g_test_queue_free1", "fragment": "g_test_queue_free \nEnqueue a pointer to be released with g_free during the next teardown phase. This is equivalent to calling g_test_queue_destroy with a destroy callback of g_free. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hmac.html#returns", "fragment": "\nthe hexadecimal representation of the HMAC. The returned string is owned by the HMAC and should not be modified or freed. \nSince \n"});

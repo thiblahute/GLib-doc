@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#glibunichar_isalpha", "fragment": "GLib.unichar_isalpha \nDetermines whether a character is alphabetic i.e. a letter Given some UTF text obtain a character value with GLib.utf8_get_char. \n"});

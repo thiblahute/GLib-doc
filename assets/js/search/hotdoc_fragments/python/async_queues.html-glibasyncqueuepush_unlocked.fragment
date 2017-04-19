@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/async_queues.html#glibasyncqueuepush_unlocked", "fragment": "GLib.AsyncQueue.push_unlocked \nPushes the data into the queue. data must not be None. \nThis function must be called while holding the queue s lock. \n"});

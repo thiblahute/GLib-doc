@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/checksum.html#g_checksum_get_string", "fragment": "GLib.Checksum.prototype.get_string \nGets the digest as an hexadecimal string. \nOnce this function has been called the GLib.Checksum can no longer be updated with GLib.Checksum.prototype.update. \nThe hexadecimal characters will be lower case. \n"});

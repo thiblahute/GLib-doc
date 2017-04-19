@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/option.html#returns13", "fragment": "\na translation of the string for the current locale. The returned string is owned by GLib and must not be freed. \n"});

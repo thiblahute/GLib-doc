@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/ghostutils.html#g_hostname_to_ascii", "fragment": "GLib.prototype.hostname_to_ascii \nConverts hostname to its canonical ASCII form an ASCII only string containing no uppercase letters and not ending with a trailing dot. \n"});

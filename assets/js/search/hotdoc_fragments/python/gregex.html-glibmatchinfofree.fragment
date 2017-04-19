@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gregex.html#glibmatchinfofree", "fragment": "GLib.MatchInfo.free \nIf match_info is not None calls GLib.MatchInfo.unref otherwise does nothing. \n"});

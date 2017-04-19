@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/error_reporting.html#glibprototypeclear_error", "fragment": "GLib.prototype.clear_error \nIf err or err is null does nothing. Otherwise calls GLib.Error.prototype.free on err and sets err to null. \n"});

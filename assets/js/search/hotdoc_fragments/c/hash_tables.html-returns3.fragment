@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hash_tables.html#returns3", "fragment": "\nThe value of the first key value pair is returned for which predicate evaluates to TRUE. If no pair with the requested property is found NULL is returned. \nSince \n"});

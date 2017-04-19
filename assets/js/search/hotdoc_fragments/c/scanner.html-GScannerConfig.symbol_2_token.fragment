@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/scanner.html#GScannerConfig.symbol_2_token", "fragment": "guint scope_0_fallback \nspecifies if a symbol is searched for in the default scope in addition to the current scope the default is FALSE \n"});

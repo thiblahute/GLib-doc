@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/timers.html#glibtimerstop", "fragment": "GLib.Timer.stop \nMarks an end time so calls to GLib.Timer.elapsed will return the difference between this end time and the start time. \n"});

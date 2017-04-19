@@ -1,0 +1,3414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GMutexLocker</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="threads.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="javascript">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="threads.markdown">
+        <h1 id="gmutexlocker">GMutexLocker</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GRWLock</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GRWLockMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_rw_lock_writer_trylock">
+		
+<h4 id="glibrwlockprototypewriter_trylock">
+	<span><code>GLib.RWLock.prototype.writer_trylock</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.RWLock.prototype.writer_trylock(): {
+    // javascript wrapper for 'g_rw_lock_writer_trylock'
+}</pre>
+
+<p>Tries to obtain a write lock on <em>rw_lock</em>. If any other thread holds
+a read or write lock on <em>rw_lock</em>, it immediately returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a>.
+Otherwise it locks <em>rw_lock</em> and returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rw_lock:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="threads.html#GRWLock">GLib.RWLock</a></p>
+</td>
+<td>
+<a title="GLib.RWLock" href="threads.html#GRWLock">GLib.RWLock</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if <em>rw_lock</em> could be locked</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_rw_lock_reader_lock">
+		
+<h4 id="glibrwlockprototypereader_lock">
+	<span><code>GLib.RWLock.prototype.reader_lock</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.RWLock.prototype.reader_lock(): {
+    // javascript wrapper for 'g_rw_lock_reader_lock'
+}</pre>
+
+<p>Obtain a read lock on <em>rw_lock</em>. If another thread currently holds
+the write lock on <em>rw_lock</em> or blocks waiting for it, the current
+thread will block. Read locks can be taken recursively.</p>
+<p>It is implementation-defined how many threads are allowed to
+hold read locks on the same lock simultaneously.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rw_lock:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="threads.html#GRWLock">GLib.RWLock</a></p>
+</td>
+<td>
+<a title="GLib.RWLock" href="threads.html#GRWLock">GLib.RWLock</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_rw_lock_writer_unlock">
+		
+<h4 id="glibrwlockprototypewriter_unlock">
+	<span><code>GLib.RWLock.prototype.writer_unlock</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.RWLock.prototype.writer_unlock(): {
+    // javascript wrapper for 'g_rw_lock_writer_unlock'
+}</pre>
+
+<p>Release a write lock on <em>rw_lock</em>.</p>
+<p>Calling <a href="threads.html#g_rw_lock_writer_unlock">GLib.RWLock.prototype.writer_unlock</a> on a lock that is not held
+by the current thread leads to undefined behaviour.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rw_lock:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="threads.html#GRWLock">GLib.RWLock</a></p>
+</td>
+<td>
+<a title="GLib.RWLock" href="threads.html#GRWLock">GLib.RWLock</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_rw_lock_init">
+		
+<h4 id="glibrwlockprototypeinit">
+	<span><code>GLib.RWLock.prototype.init</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.RWLock.prototype.init(): {
+    // javascript wrapper for 'g_rw_lock_init'
+}</pre>
+
+<p>Initializes a <a href="threads.html#GRWLock">GLib.RWLock</a> so that it can be used.</p>
+<p>This function is useful to initialize a lock that has been
+allocated on the stack, or as part of a larger structure.  It is not
+necessary to initialise a reader-writer lock that has been statically
+allocated.</p>
+<pre><code class="language-[&lt;!--">   typedef struct {
+     GRWLock l;
+     ...
+   } Blob;
+
+ Blob *b;
+
+ b = g_new (Blob, 1);
+ g_rw_lock_init (&amp;b-&gt;l);
+</code></pre>
+<p>To undo the effect of <a href="threads.html#g_rw_lock_init">GLib.RWLock.prototype.init</a> when a lock is no longer
+needed, use <a href="threads.html#g_rw_lock_clear">GLib.RWLock.prototype.clear</a>.</p>
+<p>Calling <a href="threads.html#g_rw_lock_init">GLib.RWLock.prototype.init</a> on an already initialized <a href="threads.html#GRWLock">GLib.RWLock</a> leads
+to undefined behaviour.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rw_lock:</code></em></i>
+		</p>
+	</td>
+		<td><p>an uninitialized <a href="threads.html#GRWLock">GLib.RWLock</a></p>
+</td>
+<td>
+<a title="GLib.RWLock" href="threads.html#GRWLock">GLib.RWLock</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_rw_lock_clear">
+		
+<h4 id="glibrwlockprototypeclear">
+	<span><code>GLib.RWLock.prototype.clear</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.RWLock.prototype.clear(): {
+    // javascript wrapper for 'g_rw_lock_clear'
+}</pre>
+
+<p>Frees the resources allocated to a lock with <a href="threads.html#g_rw_lock_init">GLib.RWLock.prototype.init</a>.</p>
+<p>This function should not be used with a <a href="threads.html#GRWLock">GLib.RWLock</a> that has been
+statically allocated.</p>
+<p>Calling <a href="threads.html#g_rw_lock_clear">GLib.RWLock.prototype.clear</a> when any thread holds the lock
+leads to undefined behaviour.</p>
+<p>Sine: 2.32</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rw_lock:</code></em></i>
+		</p>
+	</td>
+		<td><p>an initialized <a href="threads.html#GRWLock">GLib.RWLock</a></p>
+</td>
+<td>
+<a title="GLib.RWLock" href="threads.html#GRWLock">GLib.RWLock</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_rw_lock_writer_lock">
+		
+<h4 id="glibrwlockprototypewriter_lock">
+	<span><code>GLib.RWLock.prototype.writer_lock</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.RWLock.prototype.writer_lock(): {
+    // javascript wrapper for 'g_rw_lock_writer_lock'
+}</pre>
+
+<p>Obtain a write lock on <em>rw_lock</em>. If any thread already holds
+a read or write lock on <em>rw_lock</em>, the current thread will block
+until all other threads have dropped their locks on <em>rw_lock</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rw_lock:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="threads.html#GRWLock">GLib.RWLock</a></p>
+</td>
+<td>
+<a title="GLib.RWLock" href="threads.html#GRWLock">GLib.RWLock</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_rw_lock_reader_trylock">
+		
+<h4 id="glibrwlockprototypereader_trylock">
+	<span><code>GLib.RWLock.prototype.reader_trylock</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.RWLock.prototype.reader_trylock(): {
+    // javascript wrapper for 'g_rw_lock_reader_trylock'
+}</pre>
+
+<p>Tries to obtain a read lock on <em>rw_lock</em> and returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if
+the read lock was successfully obtained. Otherwise it
+returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rw_lock:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="threads.html#GRWLock">GLib.RWLock</a></p>
+</td>
+<td>
+<a title="GLib.RWLock" href="threads.html#GRWLock">GLib.RWLock</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if <em>rw_lock</em> could be locked</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_rw_lock_reader_unlock">
+		
+<h4 id="glibrwlockprototypereader_unlock">
+	<span><code>GLib.RWLock.prototype.reader_unlock</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.RWLock.prototype.reader_unlock(): {
+    // javascript wrapper for 'g_rw_lock_reader_unlock'
+}</pre>
+
+<p>Release a read lock on <em>rw_lock</em>.</p>
+<p>Calling <a href="threads.html#g_rw_lock_reader_unlock">GLib.RWLock.prototype.reader_unlock</a> on a lock that is not held
+by the current thread leads to undefined behaviour.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rw_lock:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="threads.html#GRWLock">GLib.RWLock</a></p>
+</td>
+<td>
+<a title="GLib.RWLock" href="threads.html#GRWLock">GLib.RWLock</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+
+
+            <h2 class="symbol_section" id="">GCond</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GCondMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_cond_init">
+		
+<h4 id="glibcondprototypeinit">
+	<span><code>GLib.Cond.prototype.init</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Cond.prototype.init(): {
+    // javascript wrapper for 'g_cond_init'
+}</pre>
+
+<p>Initialises a <a href="threads.html#GCond">GLib.Cond</a> so that it can be used.</p>
+<p>This function is useful to initialise a <a href="threads.html#GCond">GLib.Cond</a> that has been
+allocated as part of a larger structure.  It is not necessary to
+initialise a <a href="threads.html#GCond">GLib.Cond</a> that has been statically allocated.</p>
+<p>To undo the effect of <a href="threads.html#g_cond_init">GLib.Cond.prototype.init</a> when a <a href="threads.html#GCond">GLib.Cond</a> is no longer
+needed, use <a href="threads.html#g_cond_clear">GLib.Cond.prototype.clear</a>.</p>
+<p>Calling <a href="threads.html#g_cond_init">GLib.Cond.prototype.init</a> on an already-initialised <a href="threads.html#GCond">GLib.Cond</a> leads
+to undefined behaviour.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cond:</code></em></i>
+		</p>
+	</td>
+		<td><p>an uninitialized <a href="threads.html#GCond">GLib.Cond</a></p>
+</td>
+<td>
+<a title="GLib.Cond" href="threads.html#GCond">GLib.Cond</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_cond_signal">
+		
+<h4 id="glibcondprototypesignal">
+	<span><code>GLib.Cond.prototype.signal</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Cond.prototype.signal(): {
+    // javascript wrapper for 'g_cond_signal'
+}</pre>
+
+<p>If threads are waiting for <em>cond</em>, at least one of them is unblocked.
+If no threads are waiting for <em>cond</em>, this function has no effect.
+It is good practice to hold the same lock as the waiting thread
+while calling this function, though not required.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cond:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="threads.html#GCond">GLib.Cond</a></p>
+</td>
+<td>
+<a title="GLib.Cond" href="threads.html#GCond">GLib.Cond</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_cond_broadcast">
+		
+<h4 id="glibcondprototypebroadcast">
+	<span><code>GLib.Cond.prototype.broadcast</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Cond.prototype.broadcast(): {
+    // javascript wrapper for 'g_cond_broadcast'
+}</pre>
+
+<p>If threads are waiting for <em>cond</em>, all of them are unblocked.
+If no threads are waiting for <em>cond</em>, this function has no effect.
+It is good practice to lock the same mutex as the waiting threads
+while calling this function, though not required.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cond:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="threads.html#GCond">GLib.Cond</a></p>
+</td>
+<td>
+<a title="GLib.Cond" href="threads.html#GCond">GLib.Cond</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_cond_clear">
+		
+<h4 id="glibcondprototypeclear">
+	<span><code>GLib.Cond.prototype.clear</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Cond.prototype.clear(): {
+    // javascript wrapper for 'g_cond_clear'
+}</pre>
+
+<p>Frees the resources allocated to a <a href="threads.html#GCond">GLib.Cond</a> with <a href="threads.html#g_cond_init">GLib.Cond.prototype.init</a>.</p>
+<p>This function should not be used with a <a href="threads.html#GCond">GLib.Cond</a> that has been
+statically allocated.</p>
+<p>Calling <a href="threads.html#g_cond_clear">GLib.Cond.prototype.clear</a> for a <a href="threads.html#GCond">GLib.Cond</a> on which threads are
+blocking leads to undefined behaviour.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cond:</code></em></i>
+		</p>
+	</td>
+		<td><p>an initialised <a href="threads.html#GCond">GLib.Cond</a></p>
+</td>
+<td>
+<a title="GLib.Cond" href="threads.html#GCond">GLib.Cond</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_cond_wait_until">
+		
+<h4 id="glibcondprototypewait_until">
+	<span><code>GLib.Cond.prototype.wait_until</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Cond.prototype.wait_until(mutex: GLib.Mutex, end_time: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_cond_wait_until'
+}</pre>
+
+<p>Waits until either <em>cond</em> is signalled or <em>end_time</em> has passed.</p>
+<p>As with <a href="threads.html#g_cond_wait">GLib.Cond.prototype.wait</a> it is possible that a spurious or stolen wakeup
+could occur.  For that reason, waiting on a condition variable should
+always be in a loop, based on an explicitly-checked predicate.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> is returned if the condition variable was signalled (or in the
+case of a spurious wakeup).  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> is returned if <em>end_time</em> has
+passed.</p>
+<p>The following code shows how to correctly perform a timed wait on a
+condition variable (extending the example presented in the
+documentation for <a href="threads.html#GCond">GLib.Cond</a>):</p>
+<pre><code class="language-[&lt;!--"> gpointer
+ pop_data_timed (void)
+ {
+   gint64 end_time;
+   gpointer data;
+
+   g_mutex_lock (&amp;data_mutex);
+
+   end_time = g_get_monotonic_time () + 5 * G_TIME_SPAN_SECOND;
+   while (!current_data)
+     if (!g_cond_wait_until (&amp;data_cond, &amp;data_mutex, end_time))
+       {
+         // timeout has passed.
+         g_mutex_unlock (&amp;data_mutex);
+         return NULL;
+       }
+
+   // there is data for us
+   data = current_data;
+   current_data = NULL;
+
+   g_mutex_unlock (&amp;data_mutex);
+
+   return data;
+ }
+</code></pre>
+<p>Notice that the end time is calculated once, before entering the
+loop and reused.  This is the motivation behind the use of absolute
+time on this API -- if a relative time of 5 seconds were passed
+directly to the call and a spurious wakeup occurred, the program would
+have to start over waiting again (which would lead to a total wait
+time of more than 5 seconds).</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cond:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="threads.html#GCond">GLib.Cond</a></p>
+</td>
+<td>
+<a title="GLib.Cond" href="threads.html#GCond">GLib.Cond</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mutex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a GMutex that is currently locked</p>
+</td>
+<td>
+GLib.Mutex
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>end_time:</code></em></i>
+		</p>
+	</td>
+		<td><p>the monotonic time to wait until</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> on a signal, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> on a timeout</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_cond_wait">
+		
+<h4 id="glibcondprototypewait">
+	<span><code>GLib.Cond.prototype.wait</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Cond.prototype.wait(mutex: GLib.Mutex): {
+    // javascript wrapper for 'g_cond_wait'
+}</pre>
+
+<p>Atomically releases <em>mutex</em> and waits until <em>cond</em> is signalled.
+When this function returns, <em>mutex</em> is locked again and owned by the
+calling thread.</p>
+<p>When using condition variables, it is possible that a spurious wakeup
+may occur (ie: <a href="threads.html#g_cond_wait">GLib.Cond.prototype.wait</a> returns even though <a href="threads.html#g_cond_signal">GLib.Cond.prototype.signal</a> was
+not called).  It's also possible that a stolen wakeup may occur.
+This is when <a href="threads.html#g_cond_signal">GLib.Cond.prototype.signal</a> is called, but another thread acquires
+<em>mutex</em> before this thread and modifies the state of the program in
+such a way that when <a href="threads.html#g_cond_wait">GLib.Cond.prototype.wait</a> is able to return, the expected
+condition is no longer met.</p>
+<p>For this reason, <a href="threads.html#g_cond_wait">GLib.Cond.prototype.wait</a> must always be used in a loop.  See
+the documentation for <a href="threads.html#GCond">GLib.Cond</a> for a complete example.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>cond:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="threads.html#GCond">GLib.Cond</a></p>
+</td>
+<td>
+<a title="GLib.Cond" href="threads.html#GCond">GLib.Cond</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mutex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a GMutex that is currently locked</p>
+</td>
+<td>
+GLib.Mutex
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+            <h2 class="symbol_section" id="">GThread</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GThreadMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_thread_ref">
+		
+<h4 id="glibthreadprototyperef">
+	<span><code>GLib.Thread.prototype.ref</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Thread.prototype.ref(): {
+    // javascript wrapper for 'g_thread_ref'
+}</pre>
+
+<p>Increase the reference count on <em>thread</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>thread:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="threads.html#GThread">GLib.Thread</a></p>
+</td>
+<td>
+<a title="GLib.Thread" href="threads.html#GThread">GLib.Thread</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new reference to <em>thread</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.Thread" href="threads.html#GThread">GLib.Thread</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_thread_unref">
+		
+<h4 id="glibthreadprototypeunref">
+	<span><code>GLib.Thread.prototype.unref</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Thread.prototype.unref(): {
+    // javascript wrapper for 'g_thread_unref'
+}</pre>
+
+<p>Decrease the reference count on <em>thread</em>, possibly freeing all
+resources associated with it.</p>
+<p>Note that each thread holds a reference to its <a href="threads.html#GThread">GLib.Thread</a> while
+it is running, so it is safe to drop your own reference to it
+if you don't need it anymore.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>thread:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="threads.html#GThread">GLib.Thread</a></p>
+</td>
+<td>
+<a title="GLib.Thread" href="threads.html#GThread">GLib.Thread</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_thread_join">
+		
+<h4 id="glibthreadprototypejoin">
+	<span><code>GLib.Thread.prototype.join</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Thread.prototype.join(): {
+    // javascript wrapper for 'g_thread_join'
+}</pre>
+
+<p>Waits until <em>thread</em> finishes, i.e. the function <em>func</em>, as
+given to <a href="../c/threads.html#g_thread_new">g_thread_new (not introspectable)</a>, returns or <a href="threads.html#g_thread_exit">GLib.prototype.thread_exit</a> is called.
+If <em>thread</em> has already terminated, then <a href="threads.html#g_thread_join">GLib.Thread.prototype.join</a>
+returns immediately.</p>
+<p>Any thread can wait for any other thread by calling <a href="threads.html#g_thread_join">GLib.Thread.prototype.join</a>,
+not just its 'creator'. Calling <a href="threads.html#g_thread_join">GLib.Thread.prototype.join</a> from multiple threads
+for the same <em>thread</em> leads to undefined behaviour.</p>
+<p>The value returned by <em>func</em> or given to <a href="threads.html#g_thread_exit">GLib.prototype.thread_exit</a> is
+returned by this function.</p>
+<p><a href="threads.html#g_thread_join">GLib.Thread.prototype.join</a> consumes the reference to the passed-in <em>thread</em>.
+This will usually cause the <a href="threads.html#GThread">GLib.Thread</a> struct and associated resources
+to be freed. Use <a href="threads.html#g_thread_ref">GLib.Thread.prototype.ref</a> to obtain an extra reference if you
+want to keep the GThread alive beyond the <a href="threads.html#g_thread_join">GLib.Thread.prototype.join</a> call.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>thread:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="threads.html#GThread">GLib.Thread</a></p>
+</td>
+<td>
+<a title="GLib.Thread" href="threads.html#GThread">GLib.Thread</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the return value of the thread</p>
+
+	</td>
+	<td>
+		<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+            <h2 class="symbol_section" id="">GRecMutex</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GRecMutexMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_rec_mutex_unlock">
+		
+<h4 id="glibrecmutexprototypeunlock">
+	<span><code>GLib.RecMutex.prototype.unlock</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.RecMutex.prototype.unlock(): {
+    // javascript wrapper for 'g_rec_mutex_unlock'
+}</pre>
+
+<p>Unlocks <em>rec_mutex</em>. If another thread is blocked in a
+<a href="threads.html#g_rec_mutex_lock">GLib.RecMutex.prototype.lock</a> call for <em>rec_mutex</em>, it will become unblocked
+and can lock <em>rec_mutex</em> itself.</p>
+<p>Calling <a href="threads.html#g_rec_mutex_unlock">GLib.RecMutex.prototype.unlock</a> on a recursive mutex that is not
+locked by the current thread leads to undefined behaviour.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rec_mutex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="threads.html#GRecMutex">GLib.RecMutex</a></p>
+</td>
+<td>
+<a title="GLib.RecMutex" href="threads.html#GRecMutex">GLib.RecMutex</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_rec_mutex_trylock">
+		
+<h4 id="glibrecmutexprototypetrylock">
+	<span><code>GLib.RecMutex.prototype.trylock</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.RecMutex.prototype.trylock(): {
+    // javascript wrapper for 'g_rec_mutex_trylock'
+}</pre>
+
+<p>Tries to lock <em>rec_mutex</em>. If <em>rec_mutex</em> is already locked
+by another thread, it immediately returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a>. Otherwise
+it locks <em>rec_mutex</em> and returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rec_mutex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="threads.html#GRecMutex">GLib.RecMutex</a></p>
+</td>
+<td>
+<a title="GLib.RecMutex" href="threads.html#GRecMutex">GLib.RecMutex</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if <em>rec_mutex</em> could be locked</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_rec_mutex_lock">
+		
+<h4 id="glibrecmutexprototypelock">
+	<span><code>GLib.RecMutex.prototype.lock</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.RecMutex.prototype.lock(): {
+    // javascript wrapper for 'g_rec_mutex_lock'
+}</pre>
+
+<p>Locks <em>rec_mutex</em>. If <em>rec_mutex</em> is already locked by another
+thread, the current thread will block until <em>rec_mutex</em> is
+unlocked by the other thread. If <em>rec_mutex</em> is already locked
+by the current thread, the 'lock count' of <em>rec_mutex</em> is increased.
+The mutex will only become available again when it is unlocked
+as many times as it has been locked.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rec_mutex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="threads.html#GRecMutex">GLib.RecMutex</a></p>
+</td>
+<td>
+<a title="GLib.RecMutex" href="threads.html#GRecMutex">GLib.RecMutex</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_rec_mutex_init">
+		
+<h4 id="glibrecmutexprototypeinit">
+	<span><code>GLib.RecMutex.prototype.init</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.RecMutex.prototype.init(): {
+    // javascript wrapper for 'g_rec_mutex_init'
+}</pre>
+
+<p>Initializes a <a href="threads.html#GRecMutex">GLib.RecMutex</a> so that it can be used.</p>
+<p>This function is useful to initialize a recursive mutex
+that has been allocated on the stack, or as part of a larger
+structure.</p>
+<p>It is not necessary to initialise a recursive mutex that has been
+statically allocated.</p>
+<pre><code class="language-[&lt;!--">   typedef struct {
+     GRecMutex m;
+     ...
+   } Blob;
+
+ Blob *b;
+
+ b = g_new (Blob, 1);
+ g_rec_mutex_init (&amp;b-&gt;m);
+</code></pre>
+<p>Calling <a href="threads.html#g_rec_mutex_init">GLib.RecMutex.prototype.init</a> on an already initialized <a href="threads.html#GRecMutex">GLib.RecMutex</a>
+leads to undefined behaviour.</p>
+<p>To undo the effect of <a href="threads.html#g_rec_mutex_init">GLib.RecMutex.prototype.init</a> when a recursive mutex
+is no longer needed, use <a href="threads.html#g_rec_mutex_clear">GLib.RecMutex.prototype.clear</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rec_mutex:</code></em></i>
+		</p>
+	</td>
+		<td><p>an uninitialized <a href="threads.html#GRecMutex">GLib.RecMutex</a></p>
+</td>
+<td>
+<a title="GLib.RecMutex" href="threads.html#GRecMutex">GLib.RecMutex</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_rec_mutex_clear">
+		
+<h4 id="glibrecmutexprototypeclear">
+	<span><code>GLib.RecMutex.prototype.clear</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.RecMutex.prototype.clear(): {
+    // javascript wrapper for 'g_rec_mutex_clear'
+}</pre>
+
+<p>Frees the resources allocated to a recursive mutex with
+<a href="threads.html#g_rec_mutex_init">GLib.RecMutex.prototype.init</a>.</p>
+<p>This function should not be used with a <a href="threads.html#GRecMutex">GLib.RecMutex</a> that has been
+statically allocated.</p>
+<p>Calling <a href="threads.html#g_rec_mutex_clear">GLib.RecMutex.prototype.clear</a> on a locked recursive mutex leads
+to undefined behaviour.</p>
+<p>Sine: 2.32</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rec_mutex:</code></em></i>
+		</p>
+	</td>
+		<td><p>an initialized <a href="threads.html#GRecMutex">GLib.RecMutex</a></p>
+</td>
+<td>
+<a title="GLib.RecMutex" href="threads.html#GRecMutex">GLib.RecMutex</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+            <h2 class="symbol_section" id="">GPrivate</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GPrivateMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_private_replace">
+		
+<h4 id="glibprivateprototypereplace">
+	<span><code>GLib.Private.prototype.replace</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Private.prototype.replace(value: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_private_replace'
+}</pre>
+
+<p>Sets the thread local variable <em>key</em> to have the value <em>value</em> in the
+current thread.</p>
+<p>This function differs from <a href="threads.html#g_private_set">GLib.Private.prototype.set</a> in the following way: if
+the previous value was non-%NULL then the <a href="datasets.html#GDestroyNotify">GLib.DestroyNotify</a> handler for
+<em>key</em> is run on it.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="threads.html#GPrivate">GLib.Private</a></p>
+</td>
+<td>
+<a title="GLib.Private" href="threads.html#GPrivate">GLib.Private</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>the new value</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_private_set">
+		
+<h4 id="glibprivateprototypeset">
+	<span><code>GLib.Private.prototype.set</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Private.prototype.set(value: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_private_set'
+}</pre>
+
+<p>Sets the thread local variable <em>key</em> to have the value <em>value</em> in the
+current thread.</p>
+<p>This function differs from <a href="threads.html#g_private_replace">GLib.Private.prototype.replace</a> in the following way:
+the <a href="datasets.html#GDestroyNotify">GLib.DestroyNotify</a> for <em>key</em> is not called on the old value.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="threads.html#GPrivate">GLib.Private</a></p>
+</td>
+<td>
+<a title="GLib.Private" href="threads.html#GPrivate">GLib.Private</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>the new value</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_private_get">
+		
+<h4 id="glibprivateprototypeget">
+	<span><code>GLib.Private.prototype.get</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Private.prototype.get(): {
+    // javascript wrapper for 'g_private_get'
+}</pre>
+
+<p>Returns the current value of the thread local variable <em>key</em>.</p>
+<p>If the value has not yet been set in this thread, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> is returned.
+Values are never copied between threads (when a new thread is
+created, for example).</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="threads.html#GPrivate">GLib.Private</a></p>
+</td>
+<td>
+<a title="GLib.Private" href="threads.html#GPrivate">GLib.Private</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the thread-local value</p>
+
+	</td>
+	<td>
+		<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Methods">Methods</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_mutex_trylock">
+		
+<h3 id="glibmutexprototypetrylock">
+	<span><code>GLib.Mutex.prototype.trylock</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.Mutex.prototype.trylock(): {
+    // javascript wrapper for 'g_mutex_trylock'
+}</pre>
+
+<p>Tries to lock <em>mutex</em>. If <em>mutex</em> is already locked by another thread,
+it immediately returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a>. Otherwise it locks <em>mutex</em> and returns
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a>.</p>
+<p>GMutex is neither guaranteed to be recursive nor to be
+non-recursive.  As such, calling <a href="threads.html#g_mutex_lock">GLib.Mutex.prototype.lock</a> on a GMutex that has
+already been locked by the same thread results in undefined behaviour
+(including but not limited to deadlocks or arbitrary return values).</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mutex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a GMutex</p>
+</td>
+<td>
+GLib.Mutex
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if <em>mutex</em> could be locked</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_mutex_unlock">
+		
+<h3 id="glibmutexprototypeunlock">
+	<span><code>GLib.Mutex.prototype.unlock</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.Mutex.prototype.unlock(): {
+    // javascript wrapper for 'g_mutex_unlock'
+}</pre>
+
+<p>Unlocks <em>mutex</em>. If another thread is blocked in a <a href="threads.html#g_mutex_lock">GLib.Mutex.prototype.lock</a>
+call for <em>mutex</em>, it will become unblocked and can lock <em>mutex</em> itself.</p>
+<p>Calling <a href="threads.html#g_mutex_unlock">GLib.Mutex.prototype.unlock</a> on a mutex that is not locked by the
+current thread leads to undefined behaviour.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mutex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a GMutex</p>
+</td>
+<td>
+GLib.Mutex
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_mutex_init">
+		
+<h3 id="glibmutexprototypeinit">
+	<span><code>GLib.Mutex.prototype.init</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.Mutex.prototype.init(): {
+    // javascript wrapper for 'g_mutex_init'
+}</pre>
+
+<p>Initializes a GMutex so that it can be used.</p>
+<p>This function is useful to initialize a mutex that has been
+allocated on the stack, or as part of a larger structure.
+It is not necessary to initialize a mutex that has been
+statically allocated.</p>
+<pre><code class="language-[&lt;!--">   typedef struct {
+     GMutex m;
+     ...
+   } Blob;
+
+ Blob *b;
+
+ b = g_new (Blob, 1);
+ g_mutex_init (&amp;b-&gt;m);
+</code></pre>
+<p>To undo the effect of <a href="threads.html#g_mutex_init">GLib.Mutex.prototype.init</a> when a mutex is no longer
+needed, use <a href="threads.html#g_mutex_clear">GLib.Mutex.prototype.clear</a>.</p>
+<p>Calling <a href="threads.html#g_mutex_init">GLib.Mutex.prototype.init</a> on an already initialized GMutex leads
+to undefined behaviour.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mutex:</code></em></i>
+		</p>
+	</td>
+		<td><p>an uninitialized GMutex</p>
+</td>
+<td>
+GLib.Mutex
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_mutex_clear">
+		
+<h3 id="glibmutexprototypeclear">
+	<span><code>GLib.Mutex.prototype.clear</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.Mutex.prototype.clear(): {
+    // javascript wrapper for 'g_mutex_clear'
+}</pre>
+
+<p>Frees the resources allocated to a mutex with <a href="threads.html#g_mutex_init">GLib.Mutex.prototype.init</a>.</p>
+<p>This function should not be used with a GMutex that has been
+statically allocated.</p>
+<p>Calling <a href="threads.html#g_mutex_clear">GLib.Mutex.prototype.clear</a> on a locked mutex leads to undefined
+behaviour.</p>
+<p>Sine: 2.32</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters28">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mutex:</code></em></i>
+		</p>
+	</td>
+		<td><p>an initialized GMutex</p>
+</td>
+<td>
+GLib.Mutex
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_mutex_lock">
+		
+<h3 id="glibmutexprototypelock">
+	<span><code>GLib.Mutex.prototype.lock</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.Mutex.prototype.lock(): {
+    // javascript wrapper for 'g_mutex_lock'
+}</pre>
+
+<p>Locks <em>mutex</em>. If <em>mutex</em> is already locked by another thread, the
+current thread will block until <em>mutex</em> is unlocked by the other
+thread.</p>
+<p>GMutex is neither guaranteed to be recursive nor to be
+non-recursive.  As such, calling <a href="threads.html#g_mutex_lock">GLib.Mutex.prototype.lock</a> on a GMutex that has
+already been locked by the same thread results in undefined behaviour
+(including but not limited to deadlocks).</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters29">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mutex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a GMutex</p>
+</td>
+<td>
+GLib.Mutex
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_thread_exit">
+		
+<h3 id="glibprototypethread_exit">
+	<span><code>GLib.prototype.thread_exit</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.thread_exit(retval: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_thread_exit'
+}</pre>
+
+<p>Terminates the current thread.</p>
+<p>If another thread is waiting for us using <a href="threads.html#g_thread_join">GLib.Thread.prototype.join</a> then the
+waiting thread will be woken up and get <em>retval</em> as the return value
+of <a href="threads.html#g_thread_join">GLib.Thread.prototype.join</a>.</p>
+<p>Calling <a href="threads.html#g_thread_exit">GLib.prototype.thread_exit</a> with a parameter <em>retval</em> is equivalent to
+returning <em>retval</em> from the function <em>func</em>, as given to <a href="../c/threads.html#g_thread_new">g_thread_new (not introspectable)</a>.</p>
+<p>You must only call <a href="threads.html#g_thread_exit">GLib.prototype.thread_exit</a> from a thread that you created
+yourself with <a href="../c/threads.html#g_thread_new">g_thread_new (not introspectable)</a> or related APIs. You must not call
+this function from a thread created with another threading library
+or or from within a <a href="thread_pools.html#GThreadPool">GLib.ThreadPool</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters30">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>retval:</code></em></i>
+		</p>
+	</td>
+		<td><p>the return value of this thread</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.24;" id="g_bit_trylock">
+		
+<h3 id="glibprototypebit_trylock">
+	<span><code>GLib.prototype.bit_trylock</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.bit_trylock(address: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, lock_bit: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_bit_trylock'
+}</pre>
+
+<p>Sets the indicated <em>lock_bit</em> in <em>address</em>, returning <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if
+successful.  If the bit is already set, returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> immediately.</p>
+<p>Attempting to lock on two different bits within the same integer is
+not supported.</p>
+<p>The value of the bit that is set is (1u &lt;&lt; <em>bit</em>).  If <em>bit</em> is not
+between 0 and 31 then the result is undefined.</p>
+<p>This function accesses <em>address</em> atomically.  All other accesses to
+<em>address</em> must be atomic in order for this function to work
+reliably.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters31">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>address:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to an integer</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>lock_bit:</code></em></i>
+		</p>
+	</td>
+		<td><p>a bit value between 0 and 31</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the lock was acquired</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.24
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_pointer_bit_unlock">
+		
+<h3 id="glibprototypepointer_bit_unlock">
+	<span><code>GLib.prototype.pointer_bit_unlock</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.pointer_bit_unlock(address: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, lock_bit: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_pointer_bit_unlock'
+}</pre>
+
+<p>This is equivalent to g_bit_unlock, but working on pointers (or other
+pointer-sized values).</p>
+<p>For portability reasons, you may only lock on the bottom 32 bits of
+the pointer.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters32">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>address:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a gpointer-sized value</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>lock_bit:</code></em></i>
+		</p>
+	</td>
+		<td><p>a bit value between 0 and 31</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_thread_error_quark">
+		
+<h3 id="glibprototypethread_error_quark">
+	<span><code>GLib.prototype.thread_error_quark</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.thread_error_quark(): {
+    // javascript wrapper for 'g_thread_error_quark'
+}</pre>
+
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		<a title="GLib.Quark" href="quarks.html#GQuark">GLib.Quark</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.36;" id="g_get_num_processors">
+		
+<h3 id="glibprototypeget_num_processors">
+	<span><code>GLib.prototype.get_num_processors</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.get_num_processors(): {
+    // javascript wrapper for 'g_get_num_processors'
+}</pre>
+
+<p>Determine the approximate number of threads that the system will
+schedule simultaneously for this process.  This is intended to be
+used as a parameter to <a href="../c/thread_pools.html#g_thread_pool_new">g_thread_pool_new (not introspectable)</a> for CPU bound tasks and
+similar cases.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>Number of schedulable threads, always greater than 0</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.36
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_pointer_bit_lock">
+		
+<h3 id="glibprototypepointer_bit_lock">
+	<span><code>GLib.prototype.pointer_bit_lock</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.pointer_bit_lock(address: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, lock_bit: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_pointer_bit_lock'
+}</pre>
+
+<p>This is equivalent to g_bit_lock, but working on pointers (or other
+pointer-sized values).</p>
+<p>For portability reasons, you may only lock on the bottom 32 bits of
+the pointer.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters33">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>address:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a gpointer-sized value</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>lock_bit:</code></em></i>
+		</p>
+	</td>
+		<td><p>a bit value between 0 and 31</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_once_init_enter">
+		
+<h3 id="glibprototypeonce_init_enter">
+	<span><code>GLib.prototype.once_init_enter</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.once_init_enter(location: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_once_init_enter'
+}</pre>
+
+<p>Function to be called when starting a critical initialization
+section. The argument <em>location</em> must point to a static
+0-initialized variable that will be set to a value other than 0 at
+the end of the initialization section. In combination with
+<a href="threads.html#g_once_init_leave">GLib.prototype.once_init_leave</a> and the unique address <em>value_location</em>, it can
+be ensured that an initialization section will be executed only once
+during a program's life time, and that concurrent threads are
+blocked until initialization completed. To be used in constructs
+like this:</p>
+<pre><code class="language-[&lt;!--">   static gsize initialization_value = 0;
+
+   if (g_once_init_enter (&amp;initialization_value))
+     {
+       gsize setup_value = 42; // initialization code here
+
+       g_once_init_leave (&amp;initialization_value, setup_value);
+     }
+
+   // use initialization_value here
+</code></pre>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters34">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>location:</code></em></i>
+		</p>
+	</td>
+		<td><p>location of a static initializable variable
+containing 0</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the initialization section should be entered,
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> and blocks otherwise</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_thread_yield">
+		
+<h3 id="glibprototypethread_yield">
+	<span><code>GLib.prototype.thread_yield</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.thread_yield(): {
+    // javascript wrapper for 'g_thread_yield'
+}</pre>
+
+<p>Causes the calling thread to voluntarily relinquish the CPU, so
+that other threads can run.</p>
+<p>This function is often used as a method to make busy wait less evil.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.24;" id="g_bit_lock">
+		
+<h3 id="glibprototypebit_lock">
+	<span><code>GLib.prototype.bit_lock</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.bit_lock(address: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, lock_bit: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_bit_lock'
+}</pre>
+
+<p>Sets the indicated <em>lock_bit</em> in <em>address</em>.  If the bit is already
+set, this call will block until <a href="threads.html#g_bit_unlock">GLib.prototype.bit_unlock</a> unsets the
+corresponding bit.</p>
+<p>Attempting to lock on two different bits within the same integer is
+not supported and will very probably cause deadlocks.</p>
+<p>The value of the bit that is set is (1u &lt;&lt; <em>bit</em>).  If <em>bit</em> is not
+between 0 and 31 then the result is undefined.</p>
+<p>This function accesses <em>address</em> atomically.  All other accesses to
+<em>address</em> must be atomic in order for this function to work
+reliably.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters35">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>address:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to an integer</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>lock_bit:</code></em></i>
+		</p>
+	</td>
+		<td><p>a bit value between 0 and 31</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.24
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_once_init_leave">
+		
+<h3 id="glibprototypeonce_init_leave">
+	<span><code>GLib.prototype.once_init_leave</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.once_init_leave(location: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, result: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_once_init_leave'
+}</pre>
+
+<p>Counterpart to <a href="threads.html#g_once_init_enter">GLib.prototype.once_init_enter</a>. Expects a location of a static
+0-initialized initialization variable, and an initialization value
+other than 0. Sets the variable to the initialization value, and
+releases concurrent threads blocking in <a href="threads.html#g_once_init_enter">GLib.prototype.once_init_enter</a> on this
+initialization variable.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters36">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>location:</code></em></i>
+		</p>
+	</td>
+		<td><p>location of a static initializable variable
+containing 0</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>result:</code></em></i>
+		</p>
+	</td>
+		<td><p>new non-0 value for *@value_location</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.24;" id="g_bit_unlock">
+		
+<h3 id="glibprototypebit_unlock">
+	<span><code>GLib.prototype.bit_unlock</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.bit_unlock(address: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, lock_bit: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_bit_unlock'
+}</pre>
+
+<p>Clears the indicated <em>lock_bit</em> in <em>address</em>.  If another thread is
+currently blocked in <a href="threads.html#g_bit_lock">GLib.prototype.bit_lock</a> on this same bit then it will be
+woken up.</p>
+<p>This function accesses <em>address</em> atomically.  All other accesses to
+<em>address</em> must be atomic in order for this function to work
+reliably.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters37">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>address:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to an integer</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>lock_bit:</code></em></i>
+		</p>
+	</td>
+		<td><p>a bit value between 0 and 31</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.24
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_pointer_bit_trylock">
+		
+<h3 id="glibprototypepointer_bit_trylock">
+	<span><code>GLib.prototype.pointer_bit_trylock</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.pointer_bit_trylock(address: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, lock_bit: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_pointer_bit_trylock'
+}</pre>
+
+<p>This is equivalent to g_bit_trylock, but working on pointers (or
+other pointer-sized values).</p>
+<p>For portability reasons, you may only lock on the bottom 32 bits of
+the pointer.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters38">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>address:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a gpointer-sized value</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>lock_bit:</code></em></i>
+		</p>
+	</td>
+		<td><p>a bit value between 0 and 31</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the lock was acquired</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_thread_self">
+		
+<h3 id="glibprototypethread_self">
+	<span><code>GLib.prototype.thread_self</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.thread_self(): {
+    // javascript wrapper for 'g_thread_self'
+}</pre>
+
+<p>This function returns the <a href="threads.html#GThread">GLib.Thread</a> corresponding to the
+current thread. Note that this function does not increase
+the reference count of the returned struct.</p>
+<p>This function will return a <a href="threads.html#GThread">GLib.Thread</a> even for threads that
+were not created by GLib (i.e. those created by other threading
+APIs). This may be useful for thread identification purposes
+(i.e. comparisons) but you must not use GLib functions (such
+as <a href="threads.html#g_thread_join">GLib.Thread.prototype.join</a>) on these threads.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="threads.html#GThread">GLib.Thread</a> representing the current thread</p>
+
+	</td>
+	<td>
+		<a title="GLib.Thread" href="threads.html#GThread">GLib.Thread</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="GOnce">
+		<h3 id="glibonce">
+	GLib.Once
+</h3>
+
+		<p>A <a href="threads.html#GOnce">GLib.Once</a> struct controls a one-time initialization function. Any
+one-time initialization function must have its own unique <a href="threads.html#GOnce">GLib.Once</a>
+struct.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="attributes">Attributes</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GOnce.status">
+		<td>
+		<p>
+		<i><em><code>volatile <a title="GOnceStatus" href="threads.html#GOnceStatus">GOnceStatus</a> <em><code>status</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the status of the <a href="threads.html#GOnce">GOnce</a></p>
+</td>
+</tr>
+
+						<tr id="GOnce.retval">
+		<td>
+		<p>
+		<i><em><code>volatile gpointer <em><code>retval</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the value returned by the call to the function, if <em>status</em>
+is <a href="threads.html#G_ONCE_STATUS_READY">G_ONCE_STATUS_READY</a></p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="GRecMutex">
+		<h3 id="glibrecmutex">
+	GLib.RecMutex
+</h3>
+
+		<p>The GRecMutex struct is an opaque data structure to represent a
+recursive mutex. It is similar to a GMutex with the difference
+that it is possible to lock a GRecMutex multiple times in the same
+thread without deadlock. When doing so, care has to be taken to
+unlock the recursive mutex as often as it has been locked.</p>
+<p>If a <a href="threads.html#GRecMutex">GLib.RecMutex</a> is allocated in static storage then it can be used
+without initialisation.  Otherwise, you should call
+<a href="threads.html#g_rec_mutex_init">GLib.RecMutex.prototype.init</a> on it and <a href="threads.html#g_rec_mutex_clear">GLib.RecMutex.prototype.clear</a> when done.</p>
+<p>A GRecMutex should only be accessed with the
+g_rec_mutex_ functions.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="attributes1">Attributes</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GRecMutex.p">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>p</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GRecMutex.i">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>i</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GCond">
+		<h3 id="glibcond">
+	GLib.Cond
+</h3>
+
+		<p>The <a href="threads.html#GCond">GLib.Cond</a> struct is an opaque data structure that represents a
+condition. Threads can block on a <a href="threads.html#GCond">GLib.Cond</a> if they find a certain
+condition to be false. If other threads change the state of this
+condition they signal the <a href="threads.html#GCond">GLib.Cond</a>, and that causes the waiting
+threads to be woken up.</p>
+<p>Consider the following example of a shared variable.  One or more
+threads can wait for data to be published to the variable and when
+another thread publishes the data, it can signal one of the waiting
+threads to wake up to collect the data.</p>
+<p>Here is an example for using GCond to block a thread until a condition
+is satisfied:</p>
+<pre><code class="language-[&lt;!--">   gpointer current_data = NULL;
+   GMutex data_mutex;
+   GCond data_cond;
+
+   void
+   push_data (gpointer data)
+   {
+     g_mutex_lock (&amp;data_mutex);
+     current_data = data;
+     g_cond_signal (&amp;data_cond);
+     g_mutex_unlock (&amp;data_mutex);
+   }
+
+   gpointer
+   pop_data (void)
+   {
+     gpointer data;
+
+     g_mutex_lock (&amp;data_mutex);
+     while (!current_data)
+       g_cond_wait (&amp;data_cond, &amp;data_mutex);
+     data = current_data;
+     current_data = NULL;
+     g_mutex_unlock (&amp;data_mutex);
+
+     return data;
+   }
+</code></pre>
+<p>Whenever a thread calls pop_data now, it will wait until
+current_data is non-%NULL, i.e. until some other thread
+has called push_data.</p>
+<p>The example shows that use of a condition variable must always be
+paired with a mutex.  Without the use of a mutex, there would be a
+race between the check of <em>current_data</em> by the while loop in
+pop_data and waiting. Specifically, another thread could set
+<em>current_data</em> after the check, and signal the cond (with nobody
+waiting on it) before the first thread goes to sleep. <a href="threads.html#GCond">GLib.Cond</a> is
+specifically useful for its ability to release the mutex and go
+to sleep atomically.</p>
+<p>It is also important to use the <a href="threads.html#g_cond_wait">GLib.Cond.prototype.wait</a> and <a href="threads.html#g_cond_wait_until">GLib.Cond.prototype.wait_until</a>
+functions only inside a loop which checks for the condition to be
+true.  See <a href="threads.html#g_cond_wait">GLib.Cond.prototype.wait</a> for an explanation of why the condition may
+not be true even after it returns.</p>
+<p>If a <a href="threads.html#GCond">GLib.Cond</a> is allocated in static storage then it can be used
+without initialisation.  Otherwise, you should call <a href="threads.html#g_cond_init">GLib.Cond.prototype.init</a>
+on it and <a href="threads.html#g_cond_clear">GLib.Cond.prototype.clear</a> when done.</p>
+<p>A <a href="threads.html#GCond">GLib.Cond</a> should only be accessed via the g_cond_ functions.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="attributes2">Attributes</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GCond.p">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>p</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GCond.i">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>i</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GThread">
+		<h3 id="glibthread">
+	GLib.Thread
+</h3>
+
+		<p>The <a href="threads.html#GThread">GLib.Thread</a> struct represents a running thread. This struct
+is returned by <a href="../c/threads.html#g_thread_new">g_thread_new (not introspectable)</a> or <a href="../c/threads.html#g_thread_try_new">g_thread_try_new (not introspectable)</a>. You can
+obtain the <a href="threads.html#GThread">GLib.Thread</a> struct representing the current thread by
+calling <a href="threads.html#g_thread_self">GLib.prototype.thread_self</a>.</p>
+<p>GThread is refcounted, see <a href="threads.html#g_thread_ref">GLib.Thread.prototype.ref</a> and <a href="threads.html#g_thread_unref">GLib.Thread.prototype.unref</a>.
+The thread represented by it holds a reference while it is running,
+and <a href="threads.html#g_thread_join">GLib.Thread.prototype.join</a> consumes the reference that it is given, so
+it is normally not necessary to manage GThread references
+explicitly.</p>
+<p>The structure is opaque -- none of its fields may be directly
+accessed.</p>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GPrivate">
+		<h3 id="glibprivate">
+	GLib.Private
+</h3>
+
+		<p>The <a href="threads.html#GPrivate">GLib.Private</a> struct is an opaque data structure to represent a
+thread-local data key. It is approximately equivalent to the
+pthread_setspecific/pthread_getspecific APIs on POSIX and to
+TlsSetValue/TlsGetValue on Windows.</p>
+<p>If you don't already know why you might want this functionality,
+then you probably don't need it.</p>
+<p><a href="threads.html#GPrivate">GLib.Private</a> is a very limited resource (as far as 128 per program,
+shared between all libraries). It is also not possible to destroy a
+<a href="threads.html#GPrivate">GLib.Private</a> after it has been used. As such, it is only ever acceptable
+to use <a href="threads.html#GPrivate">GLib.Private</a> in static scope, and even then sparingly so.</p>
+<p>See <a href="../c/threads.html#G_PRIVATE_INIT">G_PRIVATE_INIT (not introspectable)</a> for a couple of examples.</p>
+<p>The <a href="threads.html#GPrivate">GLib.Private</a> structure should be considered opaque.  It should only
+be accessed via the g_private_ functions.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="attributes3">Attributes</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GPrivate.p">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>p</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GPrivate.notify">
+		<td>
+		<p>
+		<i><em><code><a title="GDestroyNotify" href="datasets.html#GDestroyNotify">GDestroyNotify</a> <em><code>notify</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GPrivate.future">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>future</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="GRWLock">
+		<h3 id="glibrwlock">
+	GLib.RWLock
+</h3>
+
+		<p>The GRWLock struct is an opaque data structure to represent a
+reader-writer lock. It is similar to a GMutex in that it allows
+multiple threads to coordinate access to a shared resource.</p>
+<p>The difference to a mutex is that a reader-writer lock discriminates
+between read-only ('reader') and full ('writer') access. While only
+one thread at a time is allowed write access (by holding the 'writer'
+lock via <a href="threads.html#g_rw_lock_writer_lock">GLib.RWLock.prototype.writer_lock</a>), multiple threads can gain
+simultaneous read-only access (by holding the 'reader' lock via
+<a href="threads.html#g_rw_lock_reader_lock">GLib.RWLock.prototype.reader_lock</a>).</p>
+<p>Here is an example for an array with access functions:</p>
+<pre><code class="language-[&lt;!--">   GRWLock lock;
+   GPtrArray *array;
+
+   gpointer
+   my_array_get (guint index)
+   {
+     gpointer retval = NULL;
+
+     if (!array)
+       return NULL;
+
+     g_rw_lock_reader_lock (&amp;lock);
+     if (index &lt; array-&gt;len)
+       retval = g_ptr_array_index (array, index);
+     g_rw_lock_reader_unlock (&amp;lock);
+
+     return retval;
+   }
+
+   void
+   my_array_set (guint index, gpointer data)
+   {
+     g_rw_lock_writer_lock (&amp;lock);
+
+     if (!array)
+       array = g_ptr_array_new ();
+
+     if (index &gt;= array-&gt;len)
+       g_ptr_array_set_size (array, index+1);
+     g_ptr_array_index (array, index) = data;
+
+     g_rw_lock_writer_unlock (&amp;lock);
+   }
+</code></pre>
+<p>This example shows an array which can be accessed by many readers
+(the my_array_get function) simultaneously, whereas the writers
+(the my_array_set function) will only be allowed one at a time
+and only if no readers currently access the array. This is because
+of the potentially dangerous resizing of the array. Using these
+functions is fully multi-thread safe now.</p>
+<p>If a <a href="threads.html#GRWLock">GLib.RWLock</a> is allocated in static storage then it can be used
+without initialisation.  Otherwise, you should call
+<a href="threads.html#g_rw_lock_init">GLib.RWLock.prototype.init</a> on it and <a href="threads.html#g_rw_lock_clear">GLib.RWLock.prototype.clear</a> when done.</p>
+<p>A GRWLock should only be accessed with the g_rw_lock_ functions.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="attributes4">Attributes</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GRWLock.p">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>p</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GRWLock.i">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>i</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="GOnceStatus">
+		
+<h3 id="enum-gliboncestatus">
+		enum GLib.OnceStatus
+	</h3>
+
+		<p>The possible statuses of a one-time initialization function
+controlled by a <a href="threads.html#GOnce">GLib.Once</a> struct.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_ONCE_STATUS_NOTCALLED"></a>
+		GLib.OnceStatus.prototype.notcalled
+		</p>
+	</td>
+	<td><p>the function has not been called yet.</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_ONCE_STATUS_PROGRESS"></a>
+		GLib.OnceStatus.prototype.progress
+		</p>
+	</td>
+	<td><p>the function call is currently in progress.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_ONCE_STATUS_READY"></a>
+		GLib.OnceStatus.prototype.ready
+		</p>
+	</td>
+	<td><p>the function has been called.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GThreadError">
+		
+<h3 id="enum-glibthreaderror">
+		enum GLib.ThreadError
+	</h3>
+
+		<p>Possible errors of thread related functions.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members1">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_THREAD_ERROR_AGAIN"></a>
+		GLib.ThreadError.prototype.thread_error_again
+		</p>
+	</td>
+	<td><p>a thread couldn't be created due to resource
+shortage. Try again later.</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Aliases">Aliases</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.44;" id="GMutexLocker">
+		
+<h3 id="glibmutexlocker">
+	GLib.MutexLocker
+</h3>
+
+		<pre>
+typedef <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a> GLib.MutexLocker</pre>
+<p>Opaque type. See g_mutex_locker_new for details.</p>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GThreadFunc">
+		
+<h3 id="glibthreadfunc">
+	<span><code>GLib.ThreadFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+(*GLib.ThreadFunc) (<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</pre>
+
+<p>Specifies the type of the <em>func</em> functions passed to <a href="../c/threads.html#g_thread_new">g_thread_new (not introspectable)</a>
+or <a href="../c/threads.html#g_thread_try_new">g_thread_try_new (not introspectable)</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters39">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data passed to the thread</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the return value of the thread</p>
+
+	</td>
+	<td>
+		<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

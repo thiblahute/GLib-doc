@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/linked_lists_double.html#g_list_alloc1", "fragment": "g_list_alloc \nAllocates space for one GList element. It is called by g_list_append g_list_prepend g_list_insert and g_list_insert_sorted and so is rarely used on its own. \n"});

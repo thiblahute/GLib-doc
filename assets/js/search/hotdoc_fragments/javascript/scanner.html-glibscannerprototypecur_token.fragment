@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/scanner.html#glibscannerprototypecur_token", "fragment": "GLib.Scanner.prototype.cur_token \nGets the current token type. This is simply the token field in the GLib.Scanner structure. \n"});

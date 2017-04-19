@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/base64.html#parameters4", "fragment": "in \nthe binary data to encode \nlen \nthe length of in \nbreak_lines \nwhether to break long lines \nout \npointer to destination buffer \nstate \nSaved state between steps initialize to \nsave \nSaved state between steps initialize to \n"});

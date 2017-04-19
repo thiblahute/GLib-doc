@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibmaincontextpending", "fragment": "GLib.MainContext.pending \nChecks if any sources have pending events for the given context. \n"});

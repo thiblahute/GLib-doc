@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hmac.html#returns1", "fragment": "\nthe copy of the passed GHmac. Use g_hmac_unref when finished using it. \nSince \n"});

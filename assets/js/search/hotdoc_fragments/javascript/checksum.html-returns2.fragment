@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/checksum.html#returns2", "fragment": "\nthe copy of the passed GLib.Checksum. Use GLib.Checksum.prototype.free when finished using it. \nSince \n"});

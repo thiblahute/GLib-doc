@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/sequence.html#parameters1", "fragment": "seq \na GSequence \ndata \nthe data to insert \ncmp_func \nthe function used to compare items in the sequence \ncmp_data \nuser data passed to cmp_func. \n"});

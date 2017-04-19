@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_utils.html#g_strdup_printf1", "fragment": "g_strdup_printf \nSimilar to the standard C sprintf function but safer since it calculates the maximum space required and allocates memory to hold the result. The returned string should be freed with g_free when no longer needed. \n"});

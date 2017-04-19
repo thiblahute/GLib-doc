@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/sequence.html#glibsequencefree", "fragment": "GLib.Sequence.free \nFrees the memory allocated for seq. If seq has a data destroy function associated with it that function is called on all items in seq. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/sequence.html#glibprototypesequence_set", "fragment": "GLib.prototype.sequence_set \nChanges the data for the item pointed to by iter to be data. If the sequence has a data destroy function associated with it that function is called on the existing data that iter pointed to. \n"});

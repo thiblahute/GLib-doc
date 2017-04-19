@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/thread_pools.html#g_thread_pool_get_num_threads", "fragment": "g_thread_pool_get_num_threads \nReturns the number of threads currently running in pool. \n"});

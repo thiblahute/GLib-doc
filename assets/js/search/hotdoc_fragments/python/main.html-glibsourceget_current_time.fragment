@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibsourceget_current_time", "fragment": "GLib.Source.get_current_time \nThis function ignores source and is otherwise the same as GLib.get_current_time. \n"});

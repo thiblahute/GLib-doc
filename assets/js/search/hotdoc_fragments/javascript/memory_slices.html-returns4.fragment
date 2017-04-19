@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/memory_slices.html#returns4", "fragment": "\na pointer to the allocated block which will be null if and only if mem_size is \nSince \n"});

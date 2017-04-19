@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/string_utils.html#glibstrcanon", "fragment": "GLib.strcanon \nFor each character in string if the character is not in valid_chars replaces the character with substitutor. Modifies string in place and return string itself not a copy. The return value is to allow nesting such as \n"});

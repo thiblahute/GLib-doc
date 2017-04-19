@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/unicode.html#returns53", "fragment": "\nthe result of converting c to uppercase. If c is not an lowercase or titlecase character or has no upper case equivalent c is returned unchanged. \n"});

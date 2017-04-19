@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gregex.html#g_regex_new1", "fragment": "g_regex_new \nCompiles the regular expression to an internal form and does the initial setup of the GRegex structure. \n"});

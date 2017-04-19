@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#glibutf8_get_char_validated", "fragment": "GLib.utf8_get_char_validated \nConvert a sequence of bytes encoded as UTF to a Unicode character. This function checks for incomplete characters for invalid characters such as characters that are out of the range of Unicode and for overlong encodings of valid characters. \n"});

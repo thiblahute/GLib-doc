@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#returns29", "fragment": "\na newly allocated string of Unicode characters. result_len is set to the resulting length of the string. \ndeprecated Use the more flexible g_unichar_fully_decompose instead. \n"});

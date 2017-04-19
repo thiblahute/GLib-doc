@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/option.html#g_option_context_set_description", "fragment": "GLib.OptionContext.prototype.set_description \nAdds a string to be displayed in help output after the list of options. This text often includes a bug reporting address. \nNote that the summary is translated see GLib.OptionContext.prototype.set_translate_func \n"});

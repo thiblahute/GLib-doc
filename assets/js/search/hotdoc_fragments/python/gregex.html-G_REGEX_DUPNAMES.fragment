@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gregex.html#G_REGEX_DUPNAMES", "fragment": "Names used to identify capturing subpatterns need not be unique. This can be helpful for certain types of pattern when it is known that only one instance of the named subpattern can ever be matched. \nGLib.RegexCompileFlags.newline_cr \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/memory.html#glibmalloc0", "fragment": "GLib.malloc0 \nAllocates n_bytes bytes of memory initialized to s. If n_bytes is it returns None. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/trees-binary.html#parameters14", "fragment": "key_compare_func \nthe function used to order the nodes in the GTree. It should return values similar to the standard strcmp function if the two arguments are equal a negative value if the first argument comes before the second or a positive value if the first argument comes after the second. \n"});

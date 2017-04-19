@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GStringChunk</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="string_chunks.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="javascript">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="string_chunks.markdown">
+        <h1 id="gstringchunk">GStringChunk</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GStringChunk</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GStringChunkMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_chunk_insert">
+		
+<h4 id="glibstringchunkprototypeinsert">
+	<span><code>GLib.StringChunk.prototype.insert</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.StringChunk.prototype.insert(string: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_string_chunk_insert'
+}</pre>
+
+<p>Adds a copy of <em>string</em> to the <a href="string_chunks.html#GStringChunk">GLib.StringChunk</a>.
+It returns a pointer to the new copy of the string
+in the <a href="string_chunks.html#GStringChunk">GLib.StringChunk</a>. The characters in the string
+can be changed, if necessary, though you should not
+change anything after the end of the string.</p>
+<p>Unlike <a href="string_chunks.html#g_string_chunk_insert_const">GLib.StringChunk.prototype.insert_const</a>, this function
+does not check for duplicates. Also strings added
+with <a href="string_chunks.html#g_string_chunk_insert">GLib.StringChunk.prototype.insert</a> will not be searched
+by <a href="string_chunks.html#g_string_chunk_insert_const">GLib.StringChunk.prototype.insert_const</a> when looking for
+duplicates.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>chunk:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="string_chunks.html#GStringChunk">GLib.StringChunk</a></p>
+</td>
+<td>
+<a title="GLib.StringChunk" href="string_chunks.html#GStringChunk">GLib.StringChunk</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to add</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to the copy of <em>string</em> within
+the <a href="string_chunks.html#GStringChunk">GLib.StringChunk</a></p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_chunk_insert_const">
+		
+<h4 id="glibstringchunkprototypeinsert_const">
+	<span><code>GLib.StringChunk.prototype.insert_const</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.StringChunk.prototype.insert_const(string: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_string_chunk_insert_const'
+}</pre>
+
+<p>Adds a copy of <em>string</em> to the <a href="string_chunks.html#GStringChunk">GLib.StringChunk</a>, unless the same
+string has already been added to the <a href="string_chunks.html#GStringChunk">GLib.StringChunk</a> with
+<a href="string_chunks.html#g_string_chunk_insert_const">GLib.StringChunk.prototype.insert_const</a>.</p>
+<p>This function is useful if you need to copy a large number
+of strings but do not want to waste space storing duplicates.
+But you must remember that there may be several pointers to
+the same string, and so any changes made to the strings
+should be done very carefully.</p>
+<p>Note that <a href="string_chunks.html#g_string_chunk_insert_const">GLib.StringChunk.prototype.insert_const</a> will not return a
+pointer to a string added with <a href="string_chunks.html#g_string_chunk_insert">GLib.StringChunk.prototype.insert</a>, even
+if they do match.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>chunk:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="string_chunks.html#GStringChunk">GLib.StringChunk</a></p>
+</td>
+<td>
+<a title="GLib.StringChunk" href="string_chunks.html#GStringChunk">GLib.StringChunk</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to add</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to the new or existing copy of <em>string</em>
+within the <a href="string_chunks.html#GStringChunk">GLib.StringChunk</a></p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_chunk_free">
+		
+<h4 id="glibstringchunkprototypefree">
+	<span><code>GLib.StringChunk.prototype.free</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.StringChunk.prototype.free(): {
+    // javascript wrapper for 'g_string_chunk_free'
+}</pre>
+
+<p>Frees all memory allocated by the <a href="string_chunks.html#GStringChunk">GLib.StringChunk</a>.
+After calling <a href="string_chunks.html#g_string_chunk_free">GLib.StringChunk.prototype.free</a> it is not safe to
+access any of the strings which were contained within it.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>chunk:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="string_chunks.html#GStringChunk">GLib.StringChunk</a></p>
+</td>
+<td>
+<a title="GLib.StringChunk" href="string_chunks.html#GStringChunk">GLib.StringChunk</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_string_chunk_insert_len">
+		
+<h4 id="glibstringchunkprototypeinsert_len">
+	<span><code>GLib.StringChunk.prototype.insert_len</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.StringChunk.prototype.insert_len(string: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, len: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_string_chunk_insert_len'
+}</pre>
+
+<p>Adds a copy of the first <em>len</em> bytes of <em>string</em> to the <a href="string_chunks.html#GStringChunk">GLib.StringChunk</a>.
+The copy is nul-terminated.</p>
+<p>Since this function does not stop at nul bytes, it is the caller's
+responsibility to ensure that <em>string</em> has at least <em>len</em> addressable
+bytes.</p>
+<p>The characters in the returned string can be changed, if necessary,
+though you should not change anything after the end of the string.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>chunk:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="string_chunks.html#GStringChunk">GLib.StringChunk</a></p>
+</td>
+<td>
+<a title="GLib.StringChunk" href="string_chunks.html#GStringChunk">GLib.StringChunk</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>bytes to insert</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of bytes of <em>string</em> to insert, or -1 to insert a
+nul-terminated string</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to the copy of <em>string</em> within the <a href="string_chunks.html#GStringChunk">GLib.StringChunk</a></p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_string_chunk_clear">
+		
+<h4 id="glibstringchunkprototypeclear">
+	<span><code>GLib.StringChunk.prototype.clear</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.StringChunk.prototype.clear(): {
+    // javascript wrapper for 'g_string_chunk_clear'
+}</pre>
+
+<p>Frees all strings contained within the <a href="string_chunks.html#GStringChunk">GLib.StringChunk</a>.
+After calling <a href="string_chunks.html#g_string_chunk_clear">GLib.StringChunk.prototype.clear</a> it is not safe to
+access any of the strings which were contained within it.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>chunk:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="string_chunks.html#GStringChunk">GLib.StringChunk</a></p>
+</td>
+<td>
+<a title="GLib.StringChunk" href="string_chunks.html#GStringChunk">GLib.StringChunk</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GStringChunk">
+		<h3 id="glibstringchunk">
+	GLib.StringChunk
+</h3>
+
+		<p>An opaque data structure representing String Chunks.
+It should only be accessed by using the following functions.</p>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

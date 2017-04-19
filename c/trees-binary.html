@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GTree</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="trees-binary.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="trees-binary.markdown">
+        <h1 id="gtree">GTree</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GTree</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GTreeMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_remove">
+		
+<h4 id="g_tree_remove1">
+	<span><code>g_tree_remove</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_tree_remove (<a title="GTree" href="trees-binary.html#GTree">GTree</a> * tree,
+               gconstpointer key)</pre>
+
+<p>Removes a key/value pair from a <a href="trees-binary.html#GTree">GTree</a>.</p>
+<p>If the <a href="trees-binary.html#GTree">GTree</a> was created using <a href="trees-binary.html#g_tree_new_full">g_tree_new_full</a>, the key and value
+are freed using the supplied destroy functions, otherwise you have to
+make sure that any dynamically allocated values are freed yourself.
+If the key does not exist in the <a href="trees-binary.html#GTree">GTree</a>, the function does nothing.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GTree</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to remove</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the key was found (prior to 2.8, this function
+returned nothing)</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_destroy">
+		
+<h4 id="g_tree_destroy1">
+	<span><code>g_tree_destroy</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_tree_destroy (<a title="GTree" href="trees-binary.html#GTree">GTree</a> * tree)</pre>
+
+<p>Removes all keys and values from the <a href="trees-binary.html#GTree">GTree</a> and decreases its
+reference count by one. If keys and/or values are dynamically
+allocated, you should either free them first or create the <a href="trees-binary.html#GTree">GTree</a>
+using <a href="trees-binary.html#g_tree_new_full">g_tree_new_full</a>. In the latter case the destroy functions
+you supplied will be called on all keys and values before destroying
+the <a href="trees-binary.html#GTree">GTree</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GTree</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_lookup">
+		
+<h4 id="g_tree_lookup1">
+	<span><code>g_tree_lookup</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_tree_lookup (<a title="GTree" href="trees-binary.html#GTree">GTree</a> * tree,
+               gconstpointer key)</pre>
+
+<p>Gets the value corresponding to the given key. Since a <a href="trees-binary.html#GTree">GTree</a> is
+automatically balanced as key/value pairs are added, key lookup
+is O(log n) (where n is the number of key/value pairs in the tree).</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GTree</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to look up</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the value corresponding to the key, or <a href="macros.html#NULL">NULL</a>
+if the key was not found</p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_insert">
+		
+<h4 id="g_tree_insert1">
+	<span><code>g_tree_insert</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_tree_insert (<a title="GTree" href="trees-binary.html#GTree">GTree</a> * tree,
+               gpointer key,
+               gpointer value)</pre>
+
+<p>Inserts a key/value pair into a <a href="trees-binary.html#GTree">GTree</a>.</p>
+<p>If the given key already exists in the <a href="trees-binary.html#GTree">GTree</a> its corresponding value
+is set to the new value. If you supplied a <em>value_destroy_func</em> when
+creating the <a href="trees-binary.html#GTree">GTree</a>, the old value is freed using that function. If
+you supplied a <em>key_destroy_func</em> when creating the <a href="trees-binary.html#GTree">GTree</a>, the passed
+key is freed using that function.</p>
+<p>The tree is automatically 'balanced' as new key/value pairs are added,
+so that the distance from the root to every leaf is as small as possible.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GTree</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to insert</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>the value corresponding to the key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_steal">
+		
+<h4 id="g_tree_steal1">
+	<span><code>g_tree_steal</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_tree_steal (<a title="GTree" href="trees-binary.html#GTree">GTree</a> * tree,
+              gconstpointer key)</pre>
+
+<p>Removes a key and its associated value from a <a href="trees-binary.html#GTree">GTree</a> without calling
+the key and value destroy functions.</p>
+<p>If the key does not exist in the <a href="trees-binary.html#GTree">GTree</a>, the function does nothing.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GTree</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to remove</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the key was found (prior to 2.8, this function
+returned nothing)</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_nnodes">
+		
+<h4 id="g_tree_nnodes1">
+	<span><code>g_tree_nnodes</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint
+g_tree_nnodes (<a title="GTree" href="trees-binary.html#GTree">GTree</a> * tree)</pre>
+
+<p>Gets the number of nodes in a <a href="trees-binary.html#GTree">GTree</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GTree</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of nodes in <em>tree</em></p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.2;" id="g_tree_traverse">
+		
+<h4 id="g_tree_traverse1">
+	<span><code>g_tree_traverse</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_tree_traverse (<a title="GTree" href="trees-binary.html#GTree">GTree</a> * tree,
+                 <a title="GTraverseFunc" href="trees-binary.html#GTraverseFunc">GTraverseFunc</a> traverse_func,
+                 <a title="GTraverseType" href="trees-nary.html#GTraverseType">GTraverseType</a> traverse_type,
+                 gpointer user_data)</pre>
+
+<p>Calls the given function for each node in the <a href="trees-binary.html#GTree">GTree</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GTree</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>traverse_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call for each node visited. If this
+function returns <a href="macros.html#TRUE">TRUE</a>, the traversal is stopped.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>traverse_type:</code></em></i>
+		</p>
+	</td>
+		<td><p>the order in which nodes are visited, one of <a href="trees-nary.html#G_IN_ORDER">G_IN_ORDER</a>,
+<a href="trees-nary.html#G_PRE_ORDER">G_PRE_ORDER</a> and <a href="trees-nary.html#G_POST_ORDER">G_POST_ORDER</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data to pass to the function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	deprecated			: 2.2: The order of a balanced tree is somewhat arbitrary.
+     If you just want to visit all nodes in sorted order, use
+     g_tree_foreach() instead. If you really need to visit nodes in
+     a different order, consider using an [n-ary tree][glib-N-ary-Trees].
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_tree_ref">
+		
+<h4 id="g_tree_ref1">
+	<span><code>g_tree_ref</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GTree" href="trees-binary.html#GTree">GTree</a> *
+g_tree_ref (<a title="GTree" href="trees-binary.html#GTree">GTree</a> * tree)</pre>
+
+<p>Increments the reference count of <em>tree</em> by one.</p>
+<p>It is safe to call this function from any thread.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GTree</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the passed in <a href="trees-binary.html#GTree">GTree</a></p>
+
+	</td>
+	<td>
+		<a title="GTree" href="trees-binary.html#GTree">GTree</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_foreach">
+		
+<h4 id="g_tree_foreach1">
+	<span><code>g_tree_foreach</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_tree_foreach (<a title="GTree" href="trees-binary.html#GTree">GTree</a> * tree,
+                <a title="GTraverseFunc" href="trees-binary.html#GTraverseFunc">GTraverseFunc</a> func,
+                gpointer user_data)</pre>
+
+<p>Calls the given function for each of the key/value pairs in the <a href="trees-binary.html#GTree">GTree</a>.
+The function is passed the key and value of each pair, and the given
+<em>data</em> parameter. The tree is traversed in sorted order.</p>
+<p>The tree may not be modified while iterating over it (you can't
+add/remove items). To remove all items matching a predicate, you need
+to add each item to a list in your <a href="trees-binary.html#GTraverseFunc">GTraverseFunc</a> as you walk over
+the tree, then walk the list and remove each item.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GTree</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call for each node visited.
+If this function returns <a href="macros.html#TRUE">TRUE</a>, the traversal is stopped.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data to pass to the function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_lookup_extended">
+		
+<h4 id="g_tree_lookup_extended1">
+	<span><code>g_tree_lookup_extended</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_tree_lookup_extended (<a title="GTree" href="trees-binary.html#GTree">GTree</a> * tree,
+                        gconstpointer lookup_key,
+                        gpointer* orig_key,
+                        gpointer* value)</pre>
+
+<p>Looks up a key in the <a href="trees-binary.html#GTree">GTree</a>, returning the original key and the
+associated value. This is useful if you need to free the memory
+allocated for the original key, for example before calling
+<a href="trees-binary.html#g_tree_remove">g_tree_remove</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GTree</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>lookup_key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to look up</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>orig_key:</code></em></i>
+		</p>
+	</td>
+		<td><p>returns the original key</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>returns the value associated with the key</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the key was found in the <a href="trees-binary.html#GTree">GTree</a></p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_search">
+		
+<h4 id="g_tree_search1">
+	<span><code>g_tree_search</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_tree_search (<a title="GTree" href="trees-binary.html#GTree">GTree</a> * tree,
+               <a title="GCompareFunc" href="linked_lists_double.html#GCompareFunc">GCompareFunc</a> search_func,
+               gconstpointer user_data)</pre>
+
+<p>Searches a <a href="trees-binary.html#GTree">GTree</a> using <em>search_func</em>.</p>
+<p>The <em>search_func</em> is called with a pointer to the key of a key/value
+pair in the tree, and the passed in <em>user_data</em>. If <em>search_func</em> returns
+0 for a key/value pair, then the corresponding value is returned as
+the result of <a href="trees-binary.html#g_tree_search">g_tree_search</a>. If <em>search_func</em> returns -1, searching
+will proceed among the key/value pairs that have a smaller key; if
+<em>search_func</em> returns 1, searching will proceed among the key/value
+pairs that have a larger key.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GTree</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>search_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>a function used to search the <a href="trees-binary.html#GTree">GTree</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data passed as the second argument to <em>search_func</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the value corresponding to the found key, or <a href="macros.html#NULL">NULL</a>
+if the key was not found</p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_height">
+		
+<h4 id="g_tree_height1">
+	<span><code>g_tree_height</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint
+g_tree_height (<a title="GTree" href="trees-binary.html#GTree">GTree</a> * tree)</pre>
+
+<p>Gets the height of a <a href="trees-binary.html#GTree">GTree</a>.</p>
+<p>If the <a href="trees-binary.html#GTree">GTree</a> contains no nodes, the height is 0.
+If the <a href="trees-binary.html#GTree">GTree</a> contains only one root node the height is 1.
+If the root node has children the height is 2, etc.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GTree</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the height of <em>tree</em></p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_replace">
+		
+<h4 id="g_tree_replace1">
+	<span><code>g_tree_replace</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_tree_replace (<a title="GTree" href="trees-binary.html#GTree">GTree</a> * tree,
+                gpointer key,
+                gpointer value)</pre>
+
+<p>Inserts a new key and value into a <a href="trees-binary.html#GTree">GTree</a> similar to <a href="trees-binary.html#g_tree_insert">g_tree_insert</a>.
+The difference is that if the key already exists in the <a href="trees-binary.html#GTree">GTree</a>, it gets
+replaced by the new key. If you supplied a <em>value_destroy_func</em> when
+creating the <a href="trees-binary.html#GTree">GTree</a>, the old value is freed using that function. If you
+supplied a <em>key_destroy_func</em> when creating the <a href="trees-binary.html#GTree">GTree</a>, the old key is
+freed using that function.</p>
+<p>The tree is automatically 'balanced' as new key/value pairs are added,
+so that the distance from the root to every leaf is as small as possible.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GTree</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to insert</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>the value corresponding to the key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_tree_unref">
+		
+<h4 id="g_tree_unref1">
+	<span><code>g_tree_unref</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_tree_unref (<a title="GTree" href="trees-binary.html#GTree">GTree</a> * tree)</pre>
+
+<p>Decrements the reference count of <em>tree</em> by one.
+If the reference count drops to 0, all keys and values will
+be destroyed (if destroy functions were specified) and all
+memory allocated by <em>tree</em> will be released.</p>
+<p>It is safe to call this function from any thread.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GTree</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GTreeFunctions">Functions</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_new">
+		
+<h4 id="g_tree_new1">
+	<span><code>g_tree_new</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GTree" href="trees-binary.html#GTree">GTree</a> *
+g_tree_new (<a title="GCompareFunc" href="linked_lists_double.html#GCompareFunc">GCompareFunc</a> key_compare_func)</pre>
+
+<p>Creates a new <a href="trees-binary.html#GTree">GTree</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_compare_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function used to order the nodes in the <a href="trees-binary.html#GTree">GTree</a>.
+It should return values similar to the standard strcmp function -
+0 if the two arguments are equal, a negative value if the first argument
+comes before the second, or a positive value if the first argument comes
+after the second.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated <a href="trees-binary.html#GTree">GTree</a></p>
+
+	</td>
+	<td>
+		<a title="GTree" href="trees-binary.html#GTree">GTree</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_new_full">
+		
+<h4 id="g_tree_new_full1">
+	<span><code>g_tree_new_full</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GTree" href="trees-binary.html#GTree">GTree</a> *
+g_tree_new_full (<a title="GCompareDataFunc" href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> key_compare_func,
+                 gpointer key_compare_data,
+                 <a title="GDestroyNotify" href="datasets.html#GDestroyNotify">GDestroyNotify</a> key_destroy_func,
+                 <a title="GDestroyNotify" href="datasets.html#GDestroyNotify">GDestroyNotify</a> value_destroy_func)</pre>
+
+<p>Creates a new <a href="trees-binary.html#GTree">GTree</a> like <a href="trees-binary.html#g_tree_new">g_tree_new</a> and allows to specify functions
+to free the memory allocated for the key and value that get called when
+removing the entry from the <a href="trees-binary.html#GTree">GTree</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_compare_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>qsort-style comparison function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_compare_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data to pass to comparison function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_destroy_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>a function to free the memory allocated for the key
+used when removing the entry from the <a href="trees-binary.html#GTree">GTree</a> or <a href="macros.html#NULL">NULL</a> if you don't
+want to supply such a function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value_destroy_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>a function to free the memory allocated for the
+value used when removing the entry from the <a href="trees-binary.html#GTree">GTree</a> or <a href="macros.html#NULL">NULL</a> if you
+don't want to supply such a function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated <a href="trees-binary.html#GTree">GTree</a></p>
+
+	</td>
+	<td>
+		<a title="GTree" href="trees-binary.html#GTree">GTree</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_new_with_data">
+		
+<h4 id="g_tree_new_with_data1">
+	<span><code>g_tree_new_with_data</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GTree" href="trees-binary.html#GTree">GTree</a> *
+g_tree_new_with_data (<a title="GCompareDataFunc" href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> key_compare_func,
+                      gpointer key_compare_data)</pre>
+
+<p>Creates a new <a href="trees-binary.html#GTree">GTree</a> with a comparison function that accepts user data.
+See <a href="trees-binary.html#g_tree_new">g_tree_new</a> for more details.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_compare_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>qsort-style comparison function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_compare_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data to pass to comparison function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated <a href="trees-binary.html#GTree">GTree</a></p>
+
+	</td>
+	<td>
+		<a title="GTree" href="trees-binary.html#GTree">GTree</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GTree">
+		
+<h3 id="struct-gtree">
+		struct GTree
+	</h3>
+
+		<pre class="raw_code">
+struct GTree {
+};
+</pre>
+
+<p>The GTree struct is an opaque data structure representing a
+[balanced binary tree][glib-Balanced-Binary-Trees]. It should be
+accessed only by using the following functions.</p>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GTraverseFunc">
+		
+<h3 id="gtraversefunc">
+	<span><code>GTraverseFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+(*GTraverseFunc) (gpointer key,
+                  gpointer value,
+                  gpointer data)</pre>
+
+<p>Specifies the type of function passed to <a href="trees-binary.html#g_tree_traverse">g_tree_traverse</a>. It is
+passed the key and value of each node, together with the <em>user_data</em>
+parameter passed to <a href="trees-binary.html#g_tree_traverse">g_tree_traverse</a>. If the function returns
+<a href="macros.html#TRUE">TRUE</a>, the traversal is stopped.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key of a <a href="trees-binary.html#GTree">GTree</a> node</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>the value corresponding to the key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="trees-binary.html#g_tree_traverse">g_tree_traverse</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> to stop the traversal</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

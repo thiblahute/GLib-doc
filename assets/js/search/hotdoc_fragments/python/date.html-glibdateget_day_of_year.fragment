@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdateget_day_of_year", "fragment": "GLib.Date.get_day_of_year \nReturns the day of the year where Jan is the first day of the year. The date must be valid. \n"});

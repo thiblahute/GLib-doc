@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvariant.html#glibvariantprototypenew_objv", "fragment": "GLib.Variant.prototype.new_objv \nConstructs an array of object paths GLib.Variant from the given array of strings. \nEach string must be a valid GLib.Variant object path see GLib.prototype.variant_is_object_path. \nIf length is then strv is null terminated. \n"});

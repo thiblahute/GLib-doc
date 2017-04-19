@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/threads.html#glibmutexprototypeclear", "fragment": "GLib.Mutex.prototype.clear \nFrees the resources allocated to a mutex with GLib.Mutex.prototype.init. \nThis function should not be used with a GMutex that has been statically allocated. \nCalling GLib.Mutex.prototype.clear on a locked mutex leads to undefined behaviour. \nSine \n"});

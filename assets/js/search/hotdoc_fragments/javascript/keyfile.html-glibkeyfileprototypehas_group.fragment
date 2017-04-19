@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/keyfile.html#glibkeyfileprototypehas_group", "fragment": "GLib.KeyFile.prototype.has_group \nLooks whether the key file has the group group_name. \n"});

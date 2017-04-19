@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/misc_utils.html#returns10", "fragment": "\nthe value of the environment variable or None if the environment variable is not found. The returned string may be overwritten by the next call to GLib.getenv GLib.setenv or GLib.unsetenv. \n"});

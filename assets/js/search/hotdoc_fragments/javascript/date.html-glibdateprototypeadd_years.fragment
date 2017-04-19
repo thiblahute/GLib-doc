@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#glibdateprototypeadd_years", "fragment": "GLib.Date.prototype.add_years \nIncrements a date by some number of years. If the date is February and the destination year is not a leap year the date will be changed to February The date must be valid. \n"});

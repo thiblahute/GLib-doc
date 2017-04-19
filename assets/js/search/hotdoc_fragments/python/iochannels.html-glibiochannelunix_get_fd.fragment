@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#glibiochannelunix_get_fd", "fragment": "GLib.IOChannel.unix_get_fd \nReturns the file descriptor of the GLib.IOChannel. \nOn Windows this function returns the file descriptor or socket of the GLib.IOChannel. \n"});

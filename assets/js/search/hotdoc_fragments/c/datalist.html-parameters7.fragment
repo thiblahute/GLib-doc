@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/datalist.html#parameters7", "fragment": "datalist \npointer to the location that holds a list \nflags \nthe flags to turn off. The values of the flags are restricted by G_DATALIST_FLAGS_MASK currently giving two possible boolean flags A value for flags that doesn t fit within the mask is an error. \nSince \n"});

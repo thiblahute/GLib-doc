@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_new_bytestring_array", "fragment": "g_variant_new_bytestring_array \nConstructs an array of bytestring GVariant from the given array of strings. \nIf length is then strv is NULL terminated. \n"});

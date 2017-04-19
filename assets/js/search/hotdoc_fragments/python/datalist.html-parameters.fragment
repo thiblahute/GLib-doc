@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/datalist.html#parameters", "fragment": "datalist \nlocation of a datalist \nkey_id \nthe GLib.Quark identifying a data element \noldval \nthe old value to compare against \nnewval \nthe new value to replace it with \ndestroy \ndestroy notify for the new value \nold_destroy \ndestroy notify for the existing value \n"});

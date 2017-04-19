@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/random_numbers.html#glibrand", "fragment": "GLib.Rand \nThe GRand struct is an opaque data structure. It should only be accessed through the g_rand_ functions. \n"});

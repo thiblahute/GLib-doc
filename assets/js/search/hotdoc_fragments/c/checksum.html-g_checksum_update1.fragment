@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/checksum.html#g_checksum_update1", "fragment": "g_checksum_update \nFeeds data into an existing GChecksum. The checksum must still be open that is g_checksum_get_string or g_checksum_get_digest must not have been called on checksum. \n"});

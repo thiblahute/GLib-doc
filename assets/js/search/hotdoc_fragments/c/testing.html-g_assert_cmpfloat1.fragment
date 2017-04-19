@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/testing.html#g_assert_cmpfloat1", "fragment": "g_assert_cmpfloat \nDebugging macro to compare two floating point numbers. \nThe effect of g_assert_cmpfloat n1 op n2 is the same as g_assert_true n1 op n2 The advantage of this macro is that it can produce a message that includes the actual values of n1 and n2. \n"});

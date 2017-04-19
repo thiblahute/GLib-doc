@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/arrays_byte.html#returns12", "fragment": "\nthe element data if free_segment is False otherwise None. The element data should be freed using GLib.free. \n"});

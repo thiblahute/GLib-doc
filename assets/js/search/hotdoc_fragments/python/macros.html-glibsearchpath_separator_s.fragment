@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/macros.html#glibsearchpath_separator_s", "fragment": "GLib.SEARCHPATH_SEPARATOR_S \nThe search path separator as a string. This is on UNIX machines and under Windows. \n"});

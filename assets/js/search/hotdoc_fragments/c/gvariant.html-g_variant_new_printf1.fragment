@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_new_printf1", "fragment": "g_variant_new_printf \nCreates a string type GVariant using printf formatting. \nThis is similar to calling g_strdup_printf and then g_variant_new_string but it saves a temporary variable and an unnecessary copy. \n"});

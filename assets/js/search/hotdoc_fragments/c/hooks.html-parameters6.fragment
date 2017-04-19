@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hooks.html#parameters6", "fragment": "hook_list \na GHookList \nneed_valids \nTRUE if GHook elements which have been destroyed should be skipped \nfunc \nthe function to call for each GHook which should return TRUE when the GHook has been found \ndata \nthe data to pass to func \n"});

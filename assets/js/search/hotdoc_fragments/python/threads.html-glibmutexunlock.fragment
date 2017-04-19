@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/threads.html#glibmutexunlock", "fragment": "GLib.Mutex.unlock \nUnlocks mutex. If another thread is blocked in a GLib.Mutex.lock call for mutex it will become unblocked and can lock mutex itself. \nCalling GLib.Mutex.unlock on a mutex that is not locked by the current thread leads to undefined behaviour. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdateis_last_of_month", "fragment": "GLib.Date.is_last_of_month \nReturns True if the date is the last day of the month. The date must be valid. \n"});

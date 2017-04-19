@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/memory.html#glibprototypememdup", "fragment": "GLib.prototype.memdup \nAllocates byte_size bytes of memory and copies byte_size bytes into it from mem. If mem is null it returns null. \n"});

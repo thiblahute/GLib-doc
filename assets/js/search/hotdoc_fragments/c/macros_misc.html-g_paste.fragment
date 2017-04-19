@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/macros_misc.html#g_paste", "fragment": "G_PASTE \nYields a new preprocessor pasted identifier identifier1identifier2 from its expanded arguments identifier1 and identifier2. For example the following code \nis transformed by the preprocessor into \n"});

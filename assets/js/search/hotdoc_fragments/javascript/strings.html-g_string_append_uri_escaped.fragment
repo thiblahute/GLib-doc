@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/strings.html#g_string_append_uri_escaped", "fragment": "GLib.String.prototype.append_uri_escaped \nAppends unescaped to string escaped any characters that are reserved in URIs using URI style escape sequences. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/checksum.html#returns4", "fragment": "\nthe checksum as a hexadecimal string. The returned string should be freed with GLib.free when done using it. \nSince \n"});

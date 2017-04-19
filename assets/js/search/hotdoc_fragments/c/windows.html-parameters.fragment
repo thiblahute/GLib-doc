@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/windows.html#parameters", "fragment": "static \nempty or static \ndll_name \nthe name of the pointer to the char array where the DLL name will be stored. If this is used you must also include windows.h. If you need a more complex DLL entry point function you cannot use this \n"});

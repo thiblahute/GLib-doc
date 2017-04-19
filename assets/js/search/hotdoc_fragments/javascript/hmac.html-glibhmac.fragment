@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hmac.html#glibhmac", "fragment": "GLib.Hmac \nAn opaque structure representing a HMAC operation. To create a new GHmac use g_hmac_new not introspectable To free a GHmac use GLib.Hmac.prototype.unref. \n"});

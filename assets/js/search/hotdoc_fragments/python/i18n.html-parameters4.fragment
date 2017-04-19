@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/i18n.html#parameters4", "fragment": "domain \nthe translation domain to use or None to use the domain set with textdomain \nmsgctxtid \na combined message context and message id separated by a character \nmsgidoffset \nthe offset of the message id in msgctxid \n"});

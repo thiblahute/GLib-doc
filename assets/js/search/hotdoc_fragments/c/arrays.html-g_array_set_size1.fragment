@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays.html#g_array_set_size1", "fragment": "g_array_set_size \nSets the size of the array expanding it if necessary. If the array was created with clear_ set to TRUE the new elements are set to \n"});

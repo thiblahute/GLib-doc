@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/windows.html#g_win32_is_nt_based", "fragment": "G_WIN32_IS_NT_BASED \nOn Windows this macro defines an expression which evaluates to TRUE if the code is running on an NT based Windows operating system. \nOn non Windows platforms it is not defined. \n"});

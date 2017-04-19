@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/ghostutils.html#g_hostname_is_ip_address", "fragment": "GLib.prototype.hostname_is_ip_address \nTests if hostname is the string form of an IPv4 or IPv6 address. Eg \n"});

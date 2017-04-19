@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvariant.html#parameters95", "fragment": "type \na GLib.VariantType or None \ntext \na string containing a GVariant in text form \nlimit \na pointer to the end of text or None \nendptr \na location to store the end pointer or None \n"});

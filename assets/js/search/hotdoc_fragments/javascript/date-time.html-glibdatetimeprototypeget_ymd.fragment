@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date-time.html#glibdatetimeprototypeget_ymd", "fragment": "GLib.DateTime.prototype.get_ymd \nRetrieves the Gregorian day month and year of a given GLib.DateTime. \n"});

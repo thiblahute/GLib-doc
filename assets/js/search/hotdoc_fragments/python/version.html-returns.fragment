@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/version.html#returns", "fragment": "\nNone if the GLib library is compatible with the given version or a string describing the version mismatch. The returned string is owned by GLib and must not be modified or freed. \nSince \n"});

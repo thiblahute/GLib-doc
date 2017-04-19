@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/conversions.html#returns-a-tuple-made-of2", "fragment": "\nThe converted string or NULL on an error. \nbytes_read \nThe converted string or NULL on an error. \nbytes_written \nThe converted string or NULL on an error. \n"});

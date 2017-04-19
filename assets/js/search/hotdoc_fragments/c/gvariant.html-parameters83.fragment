@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#parameters83", "fragment": "value \na GVariant array with fixed sized elements \nn_elements \na pointer to the location to store the number of items \nelement_size \nthe size of each element \n"});

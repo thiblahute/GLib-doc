@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/macros_misc.html#glibgnuc_function", "fragment": "GLib.GNUC_FUNCTION \nExpands to on all modern compilers and to FUNCTION on gcc version x. Don t use it. \n"});

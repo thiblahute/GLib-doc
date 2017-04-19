@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/strings.html#glibstringprototypeequal", "fragment": "GLib.String.prototype.equal \nCompares two strings for equality returning true if they are equal. For use with GLib.HashTable. \n"});

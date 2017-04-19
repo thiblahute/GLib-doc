@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/messages.html#enum-glibloglevelflags", "fragment": "enum GLib.LogLevelFlags \nFlags specifying the level of log messages. \nIt is possible to change how GLib treats messages of the various levels using g_log_set_handler not introspectable and GLib.prototype.log_set_fatal_mask. \n"});

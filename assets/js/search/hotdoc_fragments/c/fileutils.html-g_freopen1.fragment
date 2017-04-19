@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/fileutils.html#g_freopen1", "fragment": "g_freopen \nA wrapper for the POSIX freopen function. The freopen function opens a file and associates it with an existing stream. \nSee your C library manual for more details about freopen. \n"});

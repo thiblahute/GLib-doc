@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/fileutils.html#G_FILE_TEST_IS_SYMLINK", "fragment": "true if the file is a symlink. \nGLib.FileTest.prototype.is_dir \n"});

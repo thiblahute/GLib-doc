@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/trash_stack.html#struct-gtrashstack", "fragment": "struct GTrashStack \nEach piece of memory that is pushed onto the stack is cast to a GTrashStack \n"});

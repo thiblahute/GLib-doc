@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/string_chunks.html#glibstringchunkprototypeclear", "fragment": "GLib.StringChunk.prototype.clear \nFrees all strings contained within the GLib.StringChunk. After calling GLib.StringChunk.prototype.clear it is not safe to access any of the strings which were contained within it. \n"});

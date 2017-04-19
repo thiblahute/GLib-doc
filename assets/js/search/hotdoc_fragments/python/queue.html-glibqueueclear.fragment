@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/queue.html#glibqueueclear", "fragment": "GLib.Queue.clear \nRemoves all the elements in queue. If queue elements contain dynamically allocated memory they should be freed first. \n"});

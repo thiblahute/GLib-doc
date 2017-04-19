@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/i18n.html#glibdcgettext", "fragment": "GLib.dcgettext \nThis is a variant of GLib.dgettext that allows specifying a locale category instead of always using LC_MESSAGES. See GLib.dgettext for more information about how this functions differs from calling dcgettext directly. \n"});

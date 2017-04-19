@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/random_numbers.html#glibprototyperandom_int_range", "fragment": "GLib.prototype.random_int_range \nReturns a random gint32 equally distributed over the range begin.. end \n"});

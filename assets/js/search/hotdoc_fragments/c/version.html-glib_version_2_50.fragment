@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/version.html#glib_version_2_50", "fragment": "GLIB_VERSION_2_50 \nA macro that evaluates to the version of GLib in a format that can be used by the C pre processor. \n"});

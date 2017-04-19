@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date-time.html#glibdatetimeadd_weeks", "fragment": "GLib.DateTime.add_weeks \nCreates a copy of datetime and adds the specified number of weeks to the copy. Add negative values to subtract weeks. \n"});

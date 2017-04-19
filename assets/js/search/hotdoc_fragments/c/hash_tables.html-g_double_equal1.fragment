@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hash_tables.html#g_double_equal1", "fragment": "g_double_equal \nCompares the two gdouble values being pointed to and returns TRUE if they are equal. It can be passed to g_hash_table_new as the key_equal_func parameter when using non NULL pointers to doubles as keys in a GHashTable. \n"});

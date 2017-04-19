@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/option.html#struct-goptionentry", "fragment": "struct GOptionEntry \nA GOptionEntry struct defines a single option. To have an effect they must be added to a GOptionGroup with g_option_context_add_main_entries or g_option_group_add_entries. \n"});

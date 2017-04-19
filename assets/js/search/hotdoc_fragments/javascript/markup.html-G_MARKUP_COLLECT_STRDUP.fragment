@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/markup.html#G_MARKUP_COLLECT_STRDUP", "fragment": "as with GLib.MarkupCollectType.prototype.string but expects a parameter of type char and GLib.prototype.strdups the returned pointer. The pointer must be freed with GLib.prototype.free \nGLib.MarkupCollectType.prototype.boolean \n"});

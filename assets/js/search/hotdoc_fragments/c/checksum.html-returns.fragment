@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/checksum.html#returns", "fragment": "\nthe newly created GChecksum or NULL. Use g_checksum_free to free the memory allocated by it. \nSince \n"});

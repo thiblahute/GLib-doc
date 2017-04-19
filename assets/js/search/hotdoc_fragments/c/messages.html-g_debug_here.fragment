@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/messages.html#g_debug_here", "fragment": "G_DEBUG_HERE \nA convenience form of g_log_structured recommended to be added to functions when debugging. It prints the current monotonic time and the code location using G_STRLOC. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/threads.html#glibthreadprototypeunref", "fragment": "GLib.Thread.prototype.unref \nDecrease the reference count on thread possibly freeing all resources associated with it. \nNote that each thread holds a reference to its GLib.Thread while it is running so it is safe to drop your own reference to it if you don t need it anymore. \n"});

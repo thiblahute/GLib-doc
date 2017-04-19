@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/scanner.html#glibscannerlookup_symbol", "fragment": "GLib.Scanner.lookup_symbol \nLooks up a symbol in the current scope and return its value. If the symbol is not bound in the current scope None is returned. \n"});

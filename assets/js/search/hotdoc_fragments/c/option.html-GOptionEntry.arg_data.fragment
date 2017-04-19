@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/option.html#GOptionEntry.arg_data", "fragment": "const gchar description \nthe description for the option in help output. The description is translated using the translate_func of the group see g_option_group_set_translation_domain. \n"});

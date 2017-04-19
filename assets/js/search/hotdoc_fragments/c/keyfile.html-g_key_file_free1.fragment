@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/keyfile.html#g_key_file_free1", "fragment": "g_key_file_free \nClears all keys and groups from key_file and decreases the reference count by If the reference count reaches zero frees the key file and all its allocated memory. \n"});

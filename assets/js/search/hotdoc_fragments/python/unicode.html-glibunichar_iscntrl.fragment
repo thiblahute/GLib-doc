@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#glibunichar_iscntrl", "fragment": "GLib.unichar_iscntrl \nDetermines whether a character is a control character. Given some UTF text obtain a character value with GLib.utf8_get_char. \n"});

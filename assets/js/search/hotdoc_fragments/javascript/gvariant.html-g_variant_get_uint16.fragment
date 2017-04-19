@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvariant.html#g_variant_get_uint16", "fragment": "GLib.Variant.prototype.get_uint16 \nReturns the bit unsigned integer value of value. \nIt is an error to call this function with a value of any type other than G_VARIANT_TYPE_UINT16 not introspectable \n"});

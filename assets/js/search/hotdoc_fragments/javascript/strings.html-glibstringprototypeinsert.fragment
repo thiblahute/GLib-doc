@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/strings.html#glibstringprototypeinsert", "fragment": "GLib.String.prototype.insert \nInserts a copy of a string into a GLib.String expanding it if necessary. \n"});

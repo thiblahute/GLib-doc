@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#GPollFD.fd", "fragment": "gushort events \na bitwise combination from GIOCondition specifying which events should be polled for. Typically for reading from a file descriptor you would use G_IO_IN G_IO_HUP G_IO_ERR and for writing you would use G_IO_OUT G_IO_ERR. \n"});

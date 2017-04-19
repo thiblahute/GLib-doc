@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/keyfile.html#GKeyFileError", "fragment": "the text being parsed was in an unknown encoding \nGLib.KeyFileError.prototype.parse \na requested key was not found \nGLib.KeyFileError.prototype.group_not_found \na requested group was not found \nGLib.KeyFileError.prototype.invalid_value \na value could not be parsed \n"});

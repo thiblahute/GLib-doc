@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/option.html#gliboptionentry", "fragment": "GLib.OptionEntry \nA GOptionEntry struct defines a single option. To have an effect they must be added to a GLib.OptionGroup with GLib.OptionContext.prototype.add_main_entries or GLib.OptionGroup.prototype.add_entries. \n"});

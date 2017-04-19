@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/unicode.html#glibprototypeunichar_isprint", "fragment": "GLib.prototype.unichar_isprint \nDetermines whether a character is printable. Unlike GLib.prototype.unichar_isgraph returns true for spaces. Given some UTF text obtain a character value with GLib.prototype.utf8_get_char. \n"});

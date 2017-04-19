@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/strings.html#glibstringoverwrite_len", "fragment": "GLib.String.overwrite_len \nOverwrites part of a string lengthening it if necessary. This function will work with embedded nuls. \n"});

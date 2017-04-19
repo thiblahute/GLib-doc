@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/keyfile.html#g_key_file_load_from_bytes", "fragment": "GLib.KeyFile.prototype.load_from_bytes \nLoads a key file from the data in bytes into an empty GLib.KeyFile structure. If the object cannot be created then error is set to a GLib.KeyFileError. \n"});

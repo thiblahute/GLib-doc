@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/misc_utils.html#returns22", "fragment": "\na null terminated list of strings which must be freed with GLib.prototype.strfreev. \nSince \n"});

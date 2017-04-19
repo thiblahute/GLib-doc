@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/memory.html#glibprototypetry_malloc0", "fragment": "GLib.prototype.try_malloc0 \nAttempts to allocate n_bytes initialized to s and returns null on failure. Contrast with GLib.prototype.malloc0 which aborts the program on failure. \n"});

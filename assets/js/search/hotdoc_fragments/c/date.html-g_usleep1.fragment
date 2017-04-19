@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date.html#g_usleep1", "fragment": "g_usleep \nPauses the current thread for the given number of microseconds. \nThere are million microseconds per second represented by the G_USEC_PER_SEC macro g_usleep may have limited precision depending on hardware and operating system don t rely on the exact length of the sleep. \n"});

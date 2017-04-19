@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/version.html#glibmicro_version", "fragment": "GLib.MICRO_VERSION \nThe micro version number of the GLib library. \nLike gtk_micro_version but from the headers used at application compile time rather than from the library linked against at application run time. \n"});

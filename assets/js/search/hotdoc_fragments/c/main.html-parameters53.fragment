@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/main.html#parameters53", "fragment": "context \na GMainContext if NULL the default context will be used \nis_running \nset to TRUE to indicate that the loop is running. This is not very important since calling g_main_loop_run will set this to TRUE anyway. \n"});

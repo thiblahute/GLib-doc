@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/base64.html#returns", "fragment": "\na newly allocated zero terminated Base encoded string representing data. The returned string must be freed with g_free. \nSince \n"});

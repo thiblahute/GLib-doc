@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hash_tables.html#g_hash_table_iter_next1", "fragment": "g_hash_table_iter_next \nAdvances iter and retrieves the key and or value that are now pointed to as a result of this advancement. If FALSE is returned key and value are not set and the iterator becomes invalid. \n"});

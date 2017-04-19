@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hooks.html#glibprototypehook_free", "fragment": "GLib.prototype.hook_free \nCalls the GLib.HookList finalize_hook function if it exists and frees the memory allocated for the GLib.Hook. \n"});

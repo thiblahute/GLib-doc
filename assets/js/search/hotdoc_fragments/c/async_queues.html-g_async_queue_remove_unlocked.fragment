@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/async_queues.html#g_async_queue_remove_unlocked", "fragment": "g_async_queue_remove_unlocked \nRemove an item from the queue. \nThis function must be called while holding the queue s lock. \n"});

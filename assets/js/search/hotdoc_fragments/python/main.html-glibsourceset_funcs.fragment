@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibsourceset_funcs", "fragment": "GLib.Source.set_funcs \nSets the source functions can be used to override default implementations of an unattached source. \n"});

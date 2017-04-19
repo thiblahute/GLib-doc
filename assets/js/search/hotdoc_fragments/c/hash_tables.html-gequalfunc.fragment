@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hash_tables.html#gequalfunc", "fragment": "GEqualFunc \nSpecifies the type of a function used to test two values for equality. The function should return TRUE if both values are equal and FALSE otherwise. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/bookmarkfile.html#g_bookmark_file_get_modified", "fragment": "GLib.BookmarkFile.prototype.get_modified \nGets the time when the bookmark for uri was last modified. \nIn the event the URI cannot be found is returned and error is set to GLib.BookmarkFileError.prototype.uri_not_found. \n"});

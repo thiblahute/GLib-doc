@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#GPollFD.events", "fragment": "gushort revents \na bitwise combination of flags from GIOCondition returned from the poll function to indicate which events occurred. \n"});

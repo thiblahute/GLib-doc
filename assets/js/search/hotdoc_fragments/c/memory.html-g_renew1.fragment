@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/memory.html#g_renew1", "fragment": "g_renew \nReallocates the memory pointed to by mem so that it now has space for n_structs elements of type struct_type. It returns the new address of the memory which may have been moved. Care is taken to avoid overflow when calculating the size of the allocated block. \n"});

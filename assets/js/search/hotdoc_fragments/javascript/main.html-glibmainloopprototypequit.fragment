@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#glibmainloopprototypequit", "fragment": "GLib.MainLoop.prototype.quit \nStops a GLib.MainLoop from running. Any calls to GLib.MainLoop.prototype.run for the loop will return. \nNote that sources that have already been dispatched when GLib.MainLoop.prototype.quit is called will still be executed. \n"});

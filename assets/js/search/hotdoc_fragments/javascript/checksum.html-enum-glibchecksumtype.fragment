@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/checksum.html#enum-glibchecksumtype", "fragment": "enum GLib.ChecksumType \nThe hashing algorithm to be used by GLib.Checksum when performing the digest of some data. \nNote that the GLib.ChecksumType enumeration may be extended at a later date to include new hashing algorithm types. \n"});

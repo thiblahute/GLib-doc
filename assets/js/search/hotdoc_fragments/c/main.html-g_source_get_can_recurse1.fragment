@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/main.html#g_source_get_can_recurse1", "fragment": "g_source_get_can_recurse \nChecks whether a source is allowed to be called recursively. see g_source_set_can_recurse. \n"});

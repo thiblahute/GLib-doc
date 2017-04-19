@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_get_maybe1", "fragment": "g_variant_get_maybe \nGiven a maybe typed GVariant instance extract its value. If the value is Nothing then this function returns NULL. \n"});

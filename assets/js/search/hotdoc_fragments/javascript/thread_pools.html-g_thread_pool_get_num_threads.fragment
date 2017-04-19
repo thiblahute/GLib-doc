@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/thread_pools.html#g_thread_pool_get_num_threads", "fragment": "GLib.ThreadPool.prototype.get_num_threads \nReturns the number of threads currently running in pool. \n"});

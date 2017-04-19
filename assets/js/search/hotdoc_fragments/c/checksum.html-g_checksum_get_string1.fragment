@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/checksum.html#g_checksum_get_string1", "fragment": "g_checksum_get_string \nGets the digest as an hexadecimal string. \nOnce this function has been called the GChecksum can no longer be updated with g_checksum_update. \nThe hexadecimal characters will be lower case. \n"});

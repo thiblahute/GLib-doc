@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibget_current_time", "fragment": "GLib.get_current_time \nEquivalent to the UNIX gettimeofday function but portable. \nYou may find GLib.get_real_time to be more convenient. \n"});

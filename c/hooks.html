@@ -1,0 +1,3470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GHook</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="hooks.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="hooks.markdown">
+        <h1 id="ghook">GHook</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GHook</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GHookMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_compare_ids">
+		
+<h4 id="g_hook_compare_ids1">
+	<span><code>g_hook_compare_ids</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint
+g_hook_compare_ids (<a title="GHook" href="hooks.html#GHook">GHook</a> * new_hook,
+                    <a title="GHook" href="hooks.html#GHook">GHook</a> * sibling)</pre>
+
+<p>Compares the ids of two <a href="hooks.html#GHook">GHook</a> elements, returning a negative value
+if the second id is greater than the first.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>new_hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHook">GHook</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>sibling:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHook">GHook</a> to compare with <em>new_hook</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a value &lt;= 0 if the id of <em>sibling</em> is &gt;= the id of <em>new_hook</em></p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GHookFunctions">Functions</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_find_func_data">
+		
+<h4 id="g_hook_find_func_data1">
+	<span><code>g_hook_find_func_data</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GHook" href="hooks.html#GHook">GHook</a> *
+g_hook_find_func_data (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list,
+                       gboolean need_valids,
+                       gpointer func,
+                       gpointer data)</pre>
+
+<p>Finds a <a href="hooks.html#GHook">GHook</a> in a <a href="hooks.html#GHookList">GHookList</a> with the given function and data.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>need_valids:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#TRUE">TRUE</a> if <a href="hooks.html#GHook">GHook</a> elements which have been destroyed
+should be skipped</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to find</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data to find</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="hooks.html#GHook">GHook</a> with the given <em>func</em> and <em>data</em> or <a href="macros.html#NULL">NULL</a> if
+no matching <a href="hooks.html#GHook">GHook</a> is found</p>
+
+	</td>
+	<td>
+		<a title="GHook" href="hooks.html#GHook">GHook</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_next_valid">
+		
+<h4 id="g_hook_next_valid1">
+	<span><code>g_hook_next_valid</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GHook" href="hooks.html#GHook">GHook</a> *
+g_hook_next_valid (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list,
+                   <a title="GHook" href="hooks.html#GHook">GHook</a> * hook,
+                   gboolean may_be_in_call)</pre>
+
+<p>Returns the next <a href="hooks.html#GHook">GHook</a> in a <a href="hooks.html#GHookList">GHookList</a> which has not been destroyed.
+The reference count for the <a href="hooks.html#GHook">GHook</a> is incremented, so you must call
+<a href="hooks.html#g_hook_unref">g_hook_unref</a> to restore it when no longer needed. (Or continue to call
+<a href="hooks.html#g_hook_next_valid">g_hook_next_valid</a> until <a href="macros.html#NULL">NULL</a> is returned.)</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>the current <a href="hooks.html#GHook">GHook</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>may_be_in_call:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#TRUE">TRUE</a> if hooks which are currently running
+(e.g. in another thread) are considered valid. If set to <a href="macros.html#FALSE">FALSE</a>,
+these are skipped</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the next valid <a href="hooks.html#GHook">GHook</a>, or <a href="macros.html#NULL">NULL</a> if none are valid</p>
+
+	</td>
+	<td>
+		<a title="GHook" href="hooks.html#GHook">GHook</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_get">
+		
+<h4 id="g_hook_get1">
+	<span><code>g_hook_get</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GHook" href="hooks.html#GHook">GHook</a> *
+g_hook_get (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list,
+            gulong hook_id)</pre>
+
+<p>Returns the <a href="hooks.html#GHook">GHook</a> with the given id, or <a href="macros.html#NULL">NULL</a> if it is not found.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_id:</code></em></i>
+		</p>
+	</td>
+		<td><p>a hook id</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="hooks.html#GHook">GHook</a> with the given id, or <a href="macros.html#NULL">NULL</a> if it is not found</p>
+
+	</td>
+	<td>
+		<a title="GHook" href="hooks.html#GHook">GHook</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_ref">
+		
+<h4 id="g_hook_ref1">
+	<span><code>g_hook_ref</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GHook" href="hooks.html#GHook">GHook</a> *
+g_hook_ref (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list,
+            <a title="GHook" href="hooks.html#GHook">GHook</a> * hook)</pre>
+
+<p>Increments the reference count for a <a href="hooks.html#GHook">GHook</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="hooks.html#GHook">GHook</a> to increment the reference count of</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <em>hook</em> that was passed in (since 2.6)</p>
+
+	</td>
+	<td>
+		<a title="GHook" href="hooks.html#GHook">GHook</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_first_valid">
+		
+<h4 id="g_hook_first_valid1">
+	<span><code>g_hook_first_valid</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GHook" href="hooks.html#GHook">GHook</a> *
+g_hook_first_valid (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list,
+                    gboolean may_be_in_call)</pre>
+
+<p>Returns the first <a href="hooks.html#GHook">GHook</a> in a <a href="hooks.html#GHookList">GHookList</a> which has not been destroyed.
+The reference count for the <a href="hooks.html#GHook">GHook</a> is incremented, so you must call
+<a href="hooks.html#g_hook_unref">g_hook_unref</a> to restore it when no longer needed. (Or call
+<a href="hooks.html#g_hook_next_valid">g_hook_next_valid</a> if you are stepping through the <a href="hooks.html#GHookList">GHookList</a>.)</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>may_be_in_call:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#TRUE">TRUE</a> if hooks which are currently running
+(e.g. in another thread) are considered valid. If set to <a href="macros.html#FALSE">FALSE</a>,
+these are skipped</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the first valid <a href="hooks.html#GHook">GHook</a>, or <a href="macros.html#NULL">NULL</a> if none are valid</p>
+
+	</td>
+	<td>
+		<a title="GHook" href="hooks.html#GHook">GHook</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_find">
+		
+<h4 id="g_hook_find1">
+	<span><code>g_hook_find</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GHook" href="hooks.html#GHook">GHook</a> *
+g_hook_find (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list,
+             gboolean need_valids,
+             <a title="GHookFindFunc" href="hooks.html#GHookFindFunc">GHookFindFunc</a> func,
+             gpointer data)</pre>
+
+<p>Finds a <a href="hooks.html#GHook">GHook</a> in a <a href="hooks.html#GHookList">GHookList</a> using the given function to
+test for a match.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>need_valids:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#TRUE">TRUE</a> if <a href="hooks.html#GHook">GHook</a> elements which have been destroyed
+should be skipped</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call for each <a href="hooks.html#GHook">GHook</a>, which should return
+<a href="macros.html#TRUE">TRUE</a> when the <a href="hooks.html#GHook">GHook</a> has been found</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data to pass to <em>func</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the found <a href="hooks.html#GHook">GHook</a> or <a href="macros.html#NULL">NULL</a> if no matching <a href="hooks.html#GHook">GHook</a> is found</p>
+
+	</td>
+	<td>
+		<a title="GHook" href="hooks.html#GHook">GHook</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_find_func">
+		
+<h4 id="g_hook_find_func1">
+	<span><code>g_hook_find_func</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GHook" href="hooks.html#GHook">GHook</a> *
+g_hook_find_func (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list,
+                  gboolean need_valids,
+                  gpointer func)</pre>
+
+<p>Finds a <a href="hooks.html#GHook">GHook</a> in a <a href="hooks.html#GHookList">GHookList</a> with the given function.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>need_valids:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#TRUE">TRUE</a> if <a href="hooks.html#GHook">GHook</a> elements which have been destroyed
+should be skipped</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to find</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="hooks.html#GHook">GHook</a> with the given <em>func</em> or <a href="macros.html#NULL">NULL</a> if no matching
+<a href="hooks.html#GHook">GHook</a> is found</p>
+
+	</td>
+	<td>
+		<a title="GHook" href="hooks.html#GHook">GHook</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_find_data">
+		
+<h4 id="g_hook_find_data1">
+	<span><code>g_hook_find_data</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GHook" href="hooks.html#GHook">GHook</a> *
+g_hook_find_data (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list,
+                  gboolean need_valids,
+                  gpointer data)</pre>
+
+<p>Finds a <a href="hooks.html#GHook">GHook</a> in a <a href="hooks.html#GHookList">GHookList</a> with the given data.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>need_valids:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#TRUE">TRUE</a> if <a href="hooks.html#GHook">GHook</a> elements which have been destroyed
+should be skipped</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data to find</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="hooks.html#GHook">GHook</a> with the given <em>data</em> or <a href="macros.html#NULL">NULL</a> if no matching
+<a href="hooks.html#GHook">GHook</a> is found</p>
+
+	</td>
+	<td>
+		<a title="GHook" href="hooks.html#GHook">GHook</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_alloc">
+		
+<h4 id="g_hook_alloc1">
+	<span><code>g_hook_alloc</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GHook" href="hooks.html#GHook">GHook</a> *
+g_hook_alloc (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list)</pre>
+
+<p>Allocates space for a <a href="hooks.html#GHook">GHook</a> and initializes it.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="hooks.html#GHook">GHook</a></p>
+
+	</td>
+	<td>
+		<a title="GHook" href="hooks.html#GHook">GHook</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_insert_sorted">
+		
+<h4 id="g_hook_insert_sorted1">
+	<span><code>g_hook_insert_sorted</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_hook_insert_sorted (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list,
+                      <a title="GHook" href="hooks.html#GHook">GHook</a> * hook,
+                      <a title="GHookCompareFunc" href="hooks.html#GHookCompareFunc">GHookCompareFunc</a> func)</pre>
+
+<p>Inserts a <a href="hooks.html#GHook">GHook</a> into a <a href="hooks.html#GHookList">GHookList</a>, sorted by the given function.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="hooks.html#GHook">GHook</a> to insert</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the comparison function used to sort the <a href="hooks.html#GHook">GHook</a> elements</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+            <h2 class="symbol_section" id="">GHookList</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GHookListMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_list_marshal">
+		
+<h4 id="g_hook_list_marshal1">
+	<span><code>g_hook_list_marshal</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_hook_list_marshal (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list,
+                     gboolean may_recurse,
+                     <a title="GHookMarshaller" href="hooks.html#GHookMarshaller">GHookMarshaller</a> marshaller,
+                     gpointer marshal_data)</pre>
+
+<p>Calls a function on each valid <a href="hooks.html#GHook">GHook</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>may_recurse:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#TRUE">TRUE</a> if hooks which are currently running
+(e.g. in another thread) are considered valid. If set to <a href="macros.html#FALSE">FALSE</a>,
+these are skipped</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>marshaller:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call for each <a href="hooks.html#GHook">GHook</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>marshal_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data to pass to <em>marshaller</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_list_init">
+		
+<h4 id="g_hook_list_init1">
+	<span><code>g_hook_list_init</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_hook_list_init (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list,
+                  guint hook_size)</pre>
+
+<p>Initializes a <a href="hooks.html#GHookList">GHookList</a>.
+This must be called before the <a href="hooks.html#GHookList">GHookList</a> is used.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_size:</code></em></i>
+		</p>
+	</td>
+		<td><p>the size of each element in the <a href="hooks.html#GHookList">GHookList</a>,
+typically <code>sizeof (GHook)</code>.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_list_clear">
+		
+<h4 id="g_hook_list_clear1">
+	<span><code>g_hook_list_clear</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_hook_list_clear (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list)</pre>
+
+<p>Removes all the <a href="hooks.html#GHook">GHook</a> elements from a <a href="hooks.html#GHookList">GHookList</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_list_marshal_check">
+		
+<h4 id="g_hook_list_marshal_check1">
+	<span><code>g_hook_list_marshal_check</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_hook_list_marshal_check (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list,
+                           gboolean may_recurse,
+                           <a title="GHookCheckMarshaller" href="hooks.html#GHookCheckMarshaller">GHookCheckMarshaller</a> marshaller,
+                           gpointer marshal_data)</pre>
+
+<p>Calls a function on each valid <a href="hooks.html#GHook">GHook</a> and destroys it if the
+function returns <a href="macros.html#FALSE">FALSE</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>may_recurse:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#TRUE">TRUE</a> if hooks which are currently running
+(e.g. in another thread) are considered valid. If set to <a href="macros.html#FALSE">FALSE</a>,
+these are skipped</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>marshaller:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call for each <a href="hooks.html#GHook">GHook</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>marshal_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data to pass to <em>marshaller</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_list_invoke">
+		
+<h4 id="g_hook_list_invoke1">
+	<span><code>g_hook_list_invoke</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_hook_list_invoke (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list,
+                    gboolean may_recurse)</pre>
+
+<p>Calls all of the <a href="hooks.html#GHook">GHook</a> functions in a <a href="hooks.html#GHookList">GHookList</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>may_recurse:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#TRUE">TRUE</a> if functions which are already running
+(e.g. in another thread) can be called. If set to <a href="macros.html#FALSE">FALSE</a>,
+these are skipped</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_list_invoke_check">
+		
+<h4 id="g_hook_list_invoke_check1">
+	<span><code>g_hook_list_invoke_check</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_hook_list_invoke_check (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list,
+                          gboolean may_recurse)</pre>
+
+<p>Calls all of the <a href="hooks.html#GHook">GHook</a> functions in a <a href="hooks.html#GHookList">GHookList</a>.
+Any function which returns <a href="macros.html#FALSE">FALSE</a> is removed from the <a href="hooks.html#GHookList">GHookList</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>may_recurse:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#TRUE">TRUE</a> if functions which are already running
+(e.g. in another thread) can be called. If set to <a href="macros.html#FALSE">FALSE</a>,
+these are skipped</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_destroy">
+		
+<h3 id="g_hook_destroy1">
+	<span><code>g_hook_destroy</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_hook_destroy (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list,
+                gulong hook_id)</pre>
+
+<p>Destroys a <a href="hooks.html#GHook">GHook</a>, given its ID.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_id:</code></em></i>
+		</p>
+	</td>
+		<td><p>a hook ID</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the <a href="hooks.html#GHook">GHook</a> was found in the <a href="hooks.html#GHookList">GHookList</a> and destroyed</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_unref">
+		
+<h3 id="g_hook_unref1">
+	<span><code>g_hook_unref</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_hook_unref (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list,
+              <a title="GHook" href="hooks.html#GHook">GHook</a> * hook)</pre>
+
+<p>Decrements the reference count of a <a href="hooks.html#GHook">GHook</a>.
+If the reference count falls to 0, the <a href="hooks.html#GHook">GHook</a> is removed
+from the <a href="hooks.html#GHookList">GHookList</a> and <a href="hooks.html#g_hook_free">g_hook_free</a> is called to free it.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="hooks.html#GHook">GHook</a> to unref</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_prepend">
+		
+<h3 id="g_hook_prepend1">
+	<span><code>g_hook_prepend</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_hook_prepend (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list,
+                <a title="GHook" href="hooks.html#GHook">GHook</a> * hook)</pre>
+
+<p>Prepends a <a href="hooks.html#GHook">GHook</a> on the start of a <a href="hooks.html#GHookList">GHookList</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="hooks.html#GHook">GHook</a> to add to the start of <em>hook_list</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_destroy_link">
+		
+<h3 id="g_hook_destroy_link1">
+	<span><code>g_hook_destroy_link</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_hook_destroy_link (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list,
+                     <a title="GHook" href="hooks.html#GHook">GHook</a> * hook)</pre>
+
+<p>Removes one <a href="hooks.html#GHook">GHook</a> from a <a href="hooks.html#GHookList">GHookList</a>, marking it
+inactive and calling <a href="hooks.html#g_hook_unref">g_hook_unref</a> on it.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="hooks.html#GHook">GHook</a> to remove</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_free">
+		
+<h3 id="g_hook_free1">
+	<span><code>g_hook_free</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_hook_free (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list,
+             <a title="GHook" href="hooks.html#GHook">GHook</a> * hook)</pre>
+
+<p>Calls the <a href="hooks.html#GHookList">GHookList</a> <em>finalize_hook</em> function if it exists,
+and frees the memory allocated for the <a href="hooks.html#GHook">GHook</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="hooks.html#GHook">GHook</a> to free</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_insert_before">
+		
+<h3 id="g_hook_insert_before1">
+	<span><code>g_hook_insert_before</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_hook_insert_before (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list,
+                      <a title="GHook" href="hooks.html#GHook">GHook</a> * sibling,
+                      <a title="GHook" href="hooks.html#GHook">GHook</a> * hook)</pre>
+
+<p>Inserts a <a href="hooks.html#GHook">GHook</a> into a <a href="hooks.html#GHookList">GHookList</a>, before a given <a href="hooks.html#GHook">GHook</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>sibling:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="hooks.html#GHook">GHook</a> to insert the new <a href="hooks.html#GHook">GHook</a> before</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="hooks.html#GHook">GHook</a> to insert</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Function_Macros">Function Macros</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_HOOK_IN_CALL">
+		
+<h3 id="g_hook_in_call">
+	<span><code>G_HOOK_IN_CALL</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_HOOK_IN_CALL(hook)		((G_HOOK_FLAGS (hook) &amp; \
+					  G_HOOK_FLAG_IN_CALL) != 0)
+</pre>
+
+<p>Returns <a href="macros.html#TRUE">TRUE</a> if the <a href="hooks.html#GHook">GHook</a> function is currently executing.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHook">GHook</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the <a href="hooks.html#GHook">GHook</a> function is currently executing</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_HOOK_ACTIVE">
+		
+<h3 id="g_hook_active">
+	<span><code>G_HOOK_ACTIVE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_HOOK_ACTIVE(hook)		((G_HOOK_FLAGS (hook) &amp; \
+					  G_HOOK_FLAG_ACTIVE) != 0)
+</pre>
+
+<p>Returns <a href="macros.html#TRUE">TRUE</a> if the <a href="hooks.html#GHook">GHook</a> is active, which is normally the case
+until the <a href="hooks.html#GHook">GHook</a> is destroyed.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHook">GHook</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the <a href="hooks.html#GHook">GHook</a> is active</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_HOOK_IS_UNLINKED">
+		
+<h3 id="g_hook_is_unlinked">
+	<span><code>G_HOOK_IS_UNLINKED</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_HOOK_IS_UNLINKED(hook)	(G_HOOK (hook)-&gt;next == NULL &amp;&amp; \
+					 G_HOOK (hook)-&gt;prev == NULL &amp;&amp; \
+					 G_HOOK (hook)-&gt;hook_id == 0 &amp;&amp; \
+					 G_HOOK (hook)-&gt;ref_count == 0)
+</pre>
+
+<p>Returns <a href="macros.html#TRUE">TRUE</a> if the <a href="hooks.html#GHook">GHook</a> is not in a <a href="hooks.html#GHookList">GHookList</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHook">GHook</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the <a href="hooks.html#GHook">GHook</a> is not in a <a href="hooks.html#GHookList">GHookList</a></p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_HOOK_IS_VALID">
+		
+<h3 id="g_hook_is_valid">
+	<span><code>G_HOOK_IS_VALID</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_HOOK_IS_VALID(hook)		(G_HOOK (hook)-&gt;hook_id != 0 &amp;&amp; \
+					 (G_HOOK_FLAGS (hook) &amp; \
+                                          G_HOOK_FLAG_ACTIVE))
+</pre>
+
+<p>Returns <a href="macros.html#TRUE">TRUE</a> if the <a href="hooks.html#GHook">GHook</a> is valid, i.e. it is in a <a href="hooks.html#GHookList">GHookList</a>,
+it is active and it has not been destroyed.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHook">GHook</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the <a href="hooks.html#GHook">GHook</a> is valid</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_HOOK_FLAGS">
+		
+<h3 id="g_hook_flags">
+	<span><code>G_HOOK_FLAGS</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_HOOK_FLAGS(hook)		(G_HOOK (hook)-&gt;flags)
+</pre>
+
+<p>Gets the flags of a hook.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHook">GHook</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hook_append">
+		
+<h3 id="g_hook_append1">
+	<span><code>g_hook_append</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_hook_append( hook_list, hook )  \
+     g_hook_insert_before ((hook_list), NULL, (hook))
+</pre>
+
+<p>Appends a <a href="hooks.html#GHook">GHook</a> onto the end of a <a href="hooks.html#GHookList">GHookList</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters28">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="hooks.html#GHook">GHook</a> to add to the end of <em>hook_list</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_HOOK">
+		
+<h3 id="g_hook">
+	<span><code>G_HOOK</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_HOOK(hook)			((GHook*) (hook))
+</pre>
+
+<p>Casts a pointer to a <code>GHook*</code>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters29">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHook">
+		
+<h3 id="struct-ghook">
+		struct GHook
+	</h3>
+
+		<pre class="raw_code">
+struct GHook {
+    gpointer data;
+    GHook* next;
+    GHook* prev;
+    guint ref_count;
+    gulong hook_id;
+    guint flags;
+    gpointer func;
+    GDestroyNotify destroy;
+};
+</pre>
+
+<p>The <a href="hooks.html#GHook">GHook</a> struct represents a single hook function in a <a href="hooks.html#GHookList">GHookList</a>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="fields">Fields</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GHook.data">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>data</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>data which is passed to func when this hook is invoked</p>
+</td>
+</tr>
+
+						<tr id="GHook.next">
+		<td>
+		<p>
+		<i><em><code><a title="GHook" href="hooks.html#GHook">GHook</a> * <em><code>next</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>pointer to the next hook in the list</p>
+</td>
+</tr>
+
+						<tr id="GHook.prev">
+		<td>
+		<p>
+		<i><em><code><a title="GHook" href="hooks.html#GHook">GHook</a> * <em><code>prev</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>pointer to the previous hook in the list</p>
+</td>
+</tr>
+
+						<tr id="GHook.ref_count">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>ref_count</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the reference count of this hook</p>
+</td>
+</tr>
+
+						<tr id="GHook.hook_id">
+		<td>
+		<p>
+		<i><em><code>gulong <em><code>hook_id</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the id of this hook, which is unique within its list</p>
+</td>
+</tr>
+
+						<tr id="GHook.flags">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>flags</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>flags which are set for this hook. See <a href="hooks.html#GHookFlagMask">GHookFlagMask</a> for
+predefined flags</p>
+</td>
+</tr>
+
+						<tr id="GHook.func">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>func</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call when this hook is invoked. The possible
+signatures for this function are <a href="hooks.html#GHookFunc">GHookFunc</a> and <a href="hooks.html#GHookCheckFunc">GHookCheckFunc</a></p>
+</td>
+</tr>
+
+						<tr id="GHook.destroy">
+		<td>
+		<p>
+		<i><em><code><a title="GDestroyNotify" href="datasets.html#GDestroyNotify">GDestroyNotify</a> <em><code>destroy</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the default <em>finalize_hook</em> function of a <a href="hooks.html#GHookList">GHookList</a> calls
+this member of the hook that is being finalized</p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHookList">
+		
+<h3 id="struct-ghooklist">
+		struct GHookList
+	</h3>
+
+		<pre class="raw_code">
+struct GHookList {
+    gulong seq_id;
+    guint hook_size;
+    guint is_setup;
+    GHook* hooks;
+    gpointer dummy3;
+    GHookFinalizeFunc finalize_hook;
+    gpointer dummy;
+};
+</pre>
+
+<p>The <a href="hooks.html#GHookList">GHookList</a> struct represents a list of hook functions.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="fields1">Fields</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GHookList.seq_id">
+		<td>
+		<p>
+		<i><em><code>gulong <em><code>seq_id</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the next free <a href="hooks.html#GHook">GHook</a> id</p>
+</td>
+</tr>
+
+						<tr id="GHookList.hook_size">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>hook_size</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the size of the <a href="hooks.html#GHookList">GHookList</a> elements, in bytes</p>
+</td>
+</tr>
+
+						<tr id="GHookList.is_setup">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>is_setup</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>1 if the <a href="hooks.html#GHookList">GHookList</a> has been initialized</p>
+</td>
+</tr>
+
+						<tr id="GHookList.hooks">
+		<td>
+		<p>
+		<i><em><code><a title="GHook" href="hooks.html#GHook">GHook</a> * <em><code>hooks</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the first <a href="hooks.html#GHook">GHook</a> element in the list</p>
+</td>
+</tr>
+
+						<tr id="GHookList.dummy3">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>dummy3</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>unused</p>
+</td>
+</tr>
+
+						<tr id="GHookList.finalize_hook">
+		<td>
+		<p>
+		<i><em><code><a title="GHookFinalizeFunc" href="hooks.html#GHookFinalizeFunc">GHookFinalizeFunc</a> <em><code>finalize_hook</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call to finalize a <a href="hooks.html#GHook">GHook</a> element.
+The default behaviour is to call the hooks <em>destroy</em> function</p>
+</td>
+</tr>
+
+						<tr id="GHookList.dummy">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>dummy</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>unused</p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHookFlagMask">
+		
+<h3 id="enum-ghookflagmask">
+		enum GHookFlagMask
+	</h3>
+
+		<p>Flags used internally in the <a href="hooks.html#GHook">GHook</a> implementation.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_HOOK_FLAG_ACTIVE"></a>
+		G_HOOK_FLAG_ACTIVE
+		</p>
+	</td>
+	<td><p>set if the hook has not been destroyed</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_HOOK_FLAG_IN_CALL"></a>
+		G_HOOK_FLAG_IN_CALL
+		</p>
+	</td>
+	<td><p>set if the hook is currently being run</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_HOOK_FLAG_MASK"></a>
+		G_HOOK_FLAG_MASK
+		</p>
+	</td>
+	<td><p>A mask covering all bits reserved for
+hook flags; see <a href="hooks.html#G_HOOK_FLAG_USER_SHIFT">G_HOOK_FLAG_USER_SHIFT</a></p>
+</td>
+	<td>
+		<span class="value">Value: 15</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_HOOK_FLAG_USER_SHIFT">
+		
+<h3 class="constant" id="g_hook_flag_user_shift">
+	G_HOOK_FLAG_USER_SHIFT
+</h3>
+
+		<pre class="raw_code">
+#define G_HOOK_FLAG_USER_SHIFT	(4)
+</pre>
+
+<p>The position of the first bit which is not reserved for internal
+use be the <a href="hooks.html#GHook">GHook</a> implementation, i.e.
+<code>1 &lt;&lt; G_HOOK_FLAG_USER_SHIFT</code> is the first
+bit which can be used for application-defined flags.</p>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHookCheckFunc">
+		
+<h3 id="ghookcheckfunc">
+	<span><code>GHookCheckFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+(*GHookCheckFunc) (gpointer data)</pre>
+
+<p>Defines the type of a hook function that can be invoked
+by <a href="hooks.html#g_hook_list_invoke_check">g_hook_list_invoke_check</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters30">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data field of the <a href="hooks.html#GHook">GHook</a> is passed to the hook function here</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#FALSE">FALSE</a> if the <a href="hooks.html#GHook">GHook</a> should be destroyed</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHookFindFunc">
+		
+<h3 id="ghookfindfunc">
+	<span><code>GHookFindFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+(*GHookFindFunc) (<a title="GHook" href="hooks.html#GHook">GHook</a> * hook,
+                  gpointer data)</pre>
+
+<p>Defines the type of the function passed to <a href="hooks.html#g_hook_find">g_hook_find</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters31">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHook">GHook</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="hooks.html#g_hook_find_func">g_hook_find_func</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the required <a href="hooks.html#GHook">GHook</a> has been found</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHookCompareFunc">
+		
+<h3 id="ghookcomparefunc">
+	<span><code>GHookCompareFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+(*GHookCompareFunc) (<a title="GHook" href="hooks.html#GHook">GHook</a> * new_hook,
+                     <a title="GHook" href="hooks.html#GHook">GHook</a> * sibling)</pre>
+
+<p>Defines the type of function used to compare <a href="hooks.html#GHook">GHook</a> elements in
+<a href="hooks.html#g_hook_insert_sorted">g_hook_insert_sorted</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters32">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>new_hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="hooks.html#GHook">GHook</a> being inserted</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>sibling:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="hooks.html#GHook">GHook</a> to compare with <em>new_hook</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a value &lt;= 0 if <em>new_hook</em> should be before <em>sibling</em></p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHookMarshaller">
+		
+<h3 id="ghookmarshaller">
+	<span><code>GHookMarshaller</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+(*GHookMarshaller) (<a title="GHook" href="hooks.html#GHook">GHook</a> * hook,
+                    gpointer marshal_data)</pre>
+
+<p>Defines the type of function used by <a href="hooks.html#g_hook_list_marshal">g_hook_list_marshal</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters33">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHook">GHook</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>marshal_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHookCheckMarshaller">
+		
+<h3 id="ghookcheckmarshaller">
+	<span><code>GHookCheckMarshaller</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+(*GHookCheckMarshaller) (<a title="GHook" href="hooks.html#GHook">GHook</a> * hook,
+                         gpointer marshal_data)</pre>
+
+<p>Defines the type of function used by <a href="hooks.html#g_hook_list_marshal_check">g_hook_list_marshal_check</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters34">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHook">GHook</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>marshal_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#FALSE">FALSE</a> if <em>hook</em> should be destroyed</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHookFunc">
+		
+<h3 id="ghookfunc">
+	<span><code>GHookFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+(*GHookFunc) (gpointer data)</pre>
+
+<p>Defines the type of a hook function that can be invoked
+by <a href="hooks.html#g_hook_list_invoke">g_hook_list_invoke</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters35">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data field of the <a href="hooks.html#GHook">GHook</a> is passed to the hook function here</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHookFinalizeFunc">
+		
+<h3 id="ghookfinalizefunc">
+	<span><code>GHookFinalizeFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+(*GHookFinalizeFunc) (<a title="GHookList" href="hooks.html#GHookList">GHookList</a> * hook_list,
+                      <a title="GHook" href="hooks.html#GHook">GHook</a> * hook)</pre>
+
+<p>Defines the type of function to be called when a hook in a
+list of hooks gets finalized.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters36">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hooks.html#GHookList">GHookList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hook:</code></em></i>
+		</p>
+	</td>
+		<td><p>the hook in <em>hook_list</em> that gets finalized</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns21">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

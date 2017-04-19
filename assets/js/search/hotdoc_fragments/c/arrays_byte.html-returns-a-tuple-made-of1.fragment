@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays_byte.html#returns-a-tuple-made-of1", "fragment": "\ntransfer none array length size element type guint8 nullable a pointer to the byte data or NULL \nsize \ntransfer none array length size element type guint8 nullable a pointer to the byte data or NULL \nSince \n"});

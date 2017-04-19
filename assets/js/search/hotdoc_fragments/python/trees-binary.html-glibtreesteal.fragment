@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/trees-binary.html#glibtreesteal", "fragment": "GLib.Tree.steal \nRemoves a key and its associated value from a GLib.Tree without calling the key and value destroy functions. \nIf the key does not exist in the GLib.Tree the function does nothing. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gunix.html#parameters", "fragment": "priority \nthe priority of the source \nfd \na file descriptor \ncondition \nIO conditions to watch for on fd \nfunction \na GLib.UnixFDSourceFunc \nuser_data \ndata to pass to function \nnotify \nfunction to call when the idle is removed or null \n"});

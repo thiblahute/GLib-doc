@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/types.html#glibgsize_modifier", "fragment": "GLib.GSIZE_MODIFIER \nThe platform dependent length modifier for conversion specifiers for scanning and printing values of type gsize. It is a string literal. \n"});

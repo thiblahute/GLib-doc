@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/scanner.html#g_scanner_sync_file_offset1", "fragment": "g_scanner_sync_file_offset \nRewinds the filedescriptor to the current buffer position and blows the file read ahead buffer. This is useful for third party uses of the scanners filedescriptor which hooks onto the current scanning position. \n"});

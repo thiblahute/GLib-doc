@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/checksum.html#returns", "fragment": "\nthe newly created GLib.Checksum or None. Use GLib.Checksum.free to free the memory allocated by it. \nSince \n"});

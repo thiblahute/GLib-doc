@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/types.html#glibgint32_format", "fragment": "GLib.GINT32_FORMAT \nThis is the platform dependent conversion specifier for scanning and printing values of type gint32. See also GLib.GINT16_FORMAT. \n"});

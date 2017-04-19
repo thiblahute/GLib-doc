@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gunix.html#parameters6", "fragment": "fd \nthe fd that triggered the event \ncondition \nthe IO conditions reported on fd \nuser_data \nuser data passed to g_unix_fd_add not introspectable \n"});

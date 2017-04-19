@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#glibdateprototypeset_time", "fragment": "GLib.Date.prototype.set_time \nSets the value of a date from a GLib.Time value. The time to date conversion is done using the user s current timezone. \n"});

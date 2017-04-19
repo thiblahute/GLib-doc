@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/keyfile.html#glibkey_file_desktop_key_path", "fragment": "GLib.KEY_FILE_DESKTOP_KEY_PATH \nA key under GLib.KEY_FILE_DESKTOP_GROUP whose value is a string containing the working directory to run the program in. It is only valid for desktop entries with the Application type. \n"});

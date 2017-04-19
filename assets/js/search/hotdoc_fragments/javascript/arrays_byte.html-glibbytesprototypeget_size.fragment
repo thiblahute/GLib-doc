@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/arrays_byte.html#glibbytesprototypeget_size", "fragment": "GLib.Bytes.prototype.get_size \nGet the size of the byte data in the GLib.Bytes. \nThis function will always return the same value for a given GLib.Bytes. \n"});

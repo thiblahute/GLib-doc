@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/async_queues.html#glibasyncqueueprototypeunlock", "fragment": "GLib.AsyncQueue.prototype.unlock \nReleases the queue s lock. \nCalling this function when you have not acquired the with GLib.AsyncQueue.prototype.lock leads to undefined behaviour. \n"});

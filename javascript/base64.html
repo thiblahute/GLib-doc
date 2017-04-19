@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>base64</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="base64.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="javascript">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="base64.markdown">
+    </div>
+        
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.20;" id="g_base64_decode_inplace">
+		
+<h3 id="glibprototypebase64_decode_inplace">
+	<span><code>GLib.prototype.base64_decode_inplace</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.base64_decode_inplace(text: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, out_len: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_base64_decode_inplace'
+}</pre>
+
+<p>Decode a sequence of Base-64 encoded text into binary data
+by overwriting the input data.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>text:</code></em></i>
+		</p>
+	</td>
+		<td><p>zero-terminated
+string with base64 text to decode</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>out_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>The length of the decoded data is written here</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The binary data that <em>text</em> responds. This pointer
+is the same as the input <em>text</em>.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>text:</i>
+				</p>
+	</td>
+	<td>
+		<p>The binary data that <em>text</em> responds. This pointer
+is the same as the input <em>text</em>.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>out_len:</i>
+				</p>
+	</td>
+	<td>
+		<p>The binary data that <em>text</em> responds. This pointer
+is the same as the input <em>text</em>.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.20
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_base64_decode_step">
+		
+<h3 id="glibprototypebase64_decode_step">
+	<span><code>GLib.prototype.base64_decode_step</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.base64_decode_step(in: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, len: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, state: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, save: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_base64_decode_step'
+}</pre>
+
+<p>Incrementally decode a sequence of binary data from its Base-64 stringified
+representation. By calling this function multiple times you can convert
+data in chunks to avoid having to have the full encoded data in memory.</p>
+<p>The output buffer must be large enough to fit all the data that will
+be written to it. Since base64 encodes 3 bytes in 4 chars you need
+at least: (@len / 4) * 3 + 3 bytes (+ 3 may be needed in case of non-zero
+state).</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>in:</code></em></i>
+		</p>
+	</td>
+		<td><p>binary input data</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>max length of <em>in</em> data to decode</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>state:</code></em></i>
+		</p>
+	</td>
+		<td><p>Saved state between steps, initialize to 0</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>save:</code></em></i>
+		</p>
+	</td>
+		<td><p>Saved state between steps, initialize to 0</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of1">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The number of bytes of output that was written</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>out:</i>
+				</p>
+	</td>
+	<td>
+		<p>The number of bytes of output that was written</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>state:</i>
+				</p>
+	</td>
+	<td>
+		<p>The number of bytes of output that was written</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>save:</i>
+				</p>
+	</td>
+	<td>
+		<p>The number of bytes of output that was written</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_base64_encode">
+		
+<h3 id="glibprototypebase64_encode">
+	<span><code>GLib.prototype.base64_encode</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.base64_encode(data: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, len: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_base64_encode'
+}</pre>
+
+<p>Encode a sequence of binary data into its Base-64 stringified
+representation.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the binary data to encode</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>data</em></p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated, zero-terminated Base-64
+encoded string representing <em>data</em>. The returned string must
+be freed with <a href="memory.html#g_free">GLib.prototype.free</a>.</p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_base64_decode">
+		
+<h3 id="glibprototypebase64_decode">
+	<span><code>GLib.prototype.base64_decode</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.base64_decode(text: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_base64_decode'
+}</pre>
+
+<p>Decode a sequence of Base-64 encoded text into binary data.  Note
+that the returned binary data is not necessarily zero-terminated,
+so it should not be used as a character string.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>text:</code></em></i>
+		</p>
+	</td>
+		<td><p>zero-terminated string with base64 text to decode</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of2">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>(transfer full) (array length=out_len) (element-type guint8):
+newly allocated buffer containing the binary data
+that <em>text</em> represents. The returned buffer must
+be freed with <a href="memory.html#g_free">GLib.prototype.free</a>.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>out_len:</i>
+				</p>
+	</td>
+	<td>
+		<p>(transfer full) (array length=out_len) (element-type guint8):
+newly allocated buffer containing the binary data
+that <em>text</em> represents. The returned buffer must
+be freed with <a href="memory.html#g_free">GLib.prototype.free</a>.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_base64_encode_step">
+		
+<h3 id="glibprototypebase64_encode_step">
+	<span><code>GLib.prototype.base64_encode_step</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.base64_encode_step(in: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, len: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, break_lines: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, state: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, save: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_base64_encode_step'
+}</pre>
+
+<p>Incrementally encode a sequence of binary data into its Base-64 stringified
+representation. By calling this function multiple times you can convert
+data in chunks to avoid having to have the full encoded data in memory.</p>
+<p>When all of the data has been converted you must call
+<a href="base64.html#g_base64_encode_close">GLib.prototype.base64_encode_close</a> to flush the saved state.</p>
+<p>The output buffer must be large enough to fit all the data that will
+be written to it. Due to the way base64 encodes you will need
+at least: (@len / 3 + 1) * 4 + 4 bytes (+ 4 may be needed in case of
+non-zero state). If you enable line-breaking you will need at least:
+((@len / 3 + 1) * 4 + 4) / 72 + 1 bytes of extra space.</p>
+<p><em>break_lines</em> is typically used when putting base64-encoded data in emails.
+It breaks the lines at 72 columns instead of putting all of the text on
+the same line. This avoids problems with long lines in the email system.
+Note however that it breaks the lines with <code>LF</code> characters, not
+<code>CR LF</code> sequences, so the result cannot be passed directly to SMTP
+or certain other protocols.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>in:</code></em></i>
+		</p>
+	</td>
+		<td><p>the binary data to encode</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>in</em></p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>break_lines:</code></em></i>
+		</p>
+	</td>
+		<td><p>whether to break long lines</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>state:</code></em></i>
+		</p>
+	</td>
+		<td><p>Saved state between steps, initialize to 0</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>save:</code></em></i>
+		</p>
+	</td>
+		<td><p>Saved state between steps, initialize to 0</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of3">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The number of bytes of output that was written</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>out:</i>
+				</p>
+	</td>
+	<td>
+		<p>The number of bytes of output that was written</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>state:</i>
+				</p>
+	</td>
+	<td>
+		<p>The number of bytes of output that was written</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>save:</i>
+				</p>
+	</td>
+	<td>
+		<p>The number of bytes of output that was written</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_base64_encode_close">
+		
+<h3 id="glibprototypebase64_encode_close">
+	<span><code>GLib.prototype.base64_encode_close</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.base64_encode_close(break_lines: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, state: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, save: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_base64_encode_close'
+}</pre>
+
+<p>Flush the status from a sequence of calls to <a href="base64.html#g_base64_encode_step">GLib.prototype.base64_encode_step</a>.</p>
+<p>The output buffer must be large enough to fit all the data that will
+be written to it. It will need up to 4 bytes, or up to 5 bytes if
+line-breaking is enabled.</p>
+<p>The <em>out</em> array will not be automatically nul-terminated.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>break_lines:</code></em></i>
+		</p>
+	</td>
+		<td><p>whether to break long lines</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>state:</code></em></i>
+		</p>
+	</td>
+		<td><p>Saved state from <a href="base64.html#g_base64_encode_step">GLib.prototype.base64_encode_step</a></p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>save:</code></em></i>
+		</p>
+	</td>
+		<td><p>Saved state from <a href="base64.html#g_base64_encode_step">GLib.prototype.base64_encode_step</a></p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of4">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The number of bytes of output that was written</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>out:</i>
+				</p>
+	</td>
+	<td>
+		<p>The number of bytes of output that was written</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>state:</i>
+				</p>
+	</td>
+	<td>
+		<p>The number of bytes of output that was written</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>save:</i>
+				</p>
+	</td>
+	<td>
+		<p>The number of bytes of output that was written</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

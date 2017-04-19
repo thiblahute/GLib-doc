@@ -1,0 +1,6451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GRegex</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="gregex.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="gregex.markdown">
+        <h1 id="gregex">GRegex</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GRegex</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GRegexConstructors">Constructors</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_new">
+		
+<h4 id="g_regex_new1">
+	<span><code>g_regex_new</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GRegex" href="gregex.html#GRegex">GRegex</a> *
+g_regex_new (const gchar* pattern,
+             <a title="GRegexCompileFlags" href="gregex.html#GRegexCompileFlags">GRegexCompileFlags</a> compile_options,
+             <a title="GRegexMatchFlags" href="gregex.html#GRegexMatchFlags">GRegexMatchFlags</a> match_options)</pre>
+
+<p>Compiles the regular expression to an internal form, and does
+the initial setup of the <a href="gregex.html#GRegex">GRegex</a> structure.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pattern:</code></em></i>
+		</p>
+	</td>
+		<td><p>the regular expression</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>compile_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>compile options for the regular expression, or 0</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>match options for the regular expression, or 0</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="gregex.html#GRegex">GRegex</a> structure or <a href="macros.html#NULL">NULL</a> if an error occured. Call
+<a href="gregex.html#g_regex_unref">g_regex_unref</a> when you are done with it</p>
+
+	</td>
+	<td>
+		<a title="GRegex" href="gregex.html#GRegex">GRegex</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GRegexMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_split">
+		
+<h4 id="g_regex_split1">
+	<span><code>g_regex_split</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+utf8*
+g_regex_split (const <a title="GRegex" href="gregex.html#GRegex">GRegex</a> * regex,
+               const gchar* string,
+               <a title="GRegexMatchFlags" href="gregex.html#GRegexMatchFlags">GRegexMatchFlags</a> match_options)</pre>
+
+<p>Breaks the string on the pattern, and returns an array of the tokens.
+If the pattern contains capturing parentheses, then the text for each
+of the substrings will also be returned. If the pattern does not match
+anywhere in the string, then the whole string is returned as the first
+token.</p>
+<p>As a special case, the result of splitting the empty string "" is an
+empty vector, not a vector containing a single string. The reason for
+this special case is that being able to represent a empty vector is
+typically more useful than consistent handling of empty elements. If
+you do need to represent empty elements, you'll need to check for the
+empty string before calling this function.</p>
+<p>A pattern that can match empty strings splits <em>string</em> into separate
+characters wherever it matches the empty string between characters.
+For example splitting "ab c" using as a separator "\s*", you will get
+"a", "b" and "c".</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GRegex</a> structure</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to split with the pattern</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>match time option flags</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="macros.html#NULL">NULL</a>-terminated gchar ** array. Free
+it using <a href="string_utils.html#g_strfreev">g_strfreev</a></p>
+
+	</td>
+	<td>
+		utf8*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_match_all">
+		
+<h4 id="g_regex_match_all1">
+	<span><code>g_regex_match_all</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_regex_match_all (const <a title="GRegex" href="gregex.html#GRegex">GRegex</a> * regex,
+                   const gchar* string,
+                   <a title="GRegexMatchFlags" href="gregex.html#GRegexMatchFlags">GRegexMatchFlags</a> match_options,
+                   <a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> ** match_info)</pre>
+
+<p>Using the standard algorithm for regular expression matching only
+the longest match in the string is retrieved. This function uses
+a different algorithm so it can retrieve all the possible matches.
+For more documentation see <a href="gregex.html#g_regex_match_all_full">g_regex_match_all_full</a>.</p>
+<p>A <a href="gregex.html#GMatchInfo">GMatchInfo</a> structure, used to get information on the match, is
+stored in <em>match_info</em> if not <a href="macros.html#NULL">NULL</a>. Note that if <em>match_info</em> is
+not <a href="macros.html#NULL">NULL</a> then it is created even if the function returns <a href="macros.html#FALSE">FALSE</a>,
+i.e. you must free it regardless if regular expression actually
+matched.</p>
+<p><em>string</em> is not copied and is used in <a href="gregex.html#GMatchInfo">GMatchInfo</a> internally. If
+you use any <a href="gregex.html#GMatchInfo">GMatchInfo</a> method (except <a href="gregex.html#g_match_info_free">g_match_info_free</a>) after
+freeing or modifying <em>string</em> then the behaviour is undefined.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GRegex</a> structure from <a href="gregex.html#g_regex_new">g_regex_new</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to scan for matches</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>match options</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>pointer to location where to store
+the <a href="gregex.html#GMatchInfo">GMatchInfo</a>, or <a href="macros.html#NULL">NULL</a> if you do not need it</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> is the string matched, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>match_info:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> is the string matched, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> **
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_ref">
+		
+<h4 id="g_regex_ref1">
+	<span><code>g_regex_ref</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GRegex" href="gregex.html#GRegex">GRegex</a> *
+g_regex_ref (<a title="GRegex" href="gregex.html#GRegex">GRegex</a> * regex)</pre>
+
+<p>Increases reference count of <em>regex</em> by 1.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GRegex</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>regex</em></p>
+
+	</td>
+	<td>
+		<a title="GRegex" href="gregex.html#GRegex">GRegex</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_get_string_number">
+		
+<h4 id="g_regex_get_string_number1">
+	<span><code>g_regex_get_string_number</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint
+g_regex_get_string_number (const <a title="GRegex" href="gregex.html#GRegex">GRegex</a> * regex,
+                           const gchar* name)</pre>
+
+<p>Retrieves the number of the subexpression named <em>name</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="gregex.html#GRegex">GRegex</a> structure</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>name:</code></em></i>
+		</p>
+	</td>
+		<td><p>name of the subexpression</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The number of the subexpression or -1 if <em>name</em>
+does not exists</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.34;" id="g_regex_get_has_cr_or_lf">
+		
+<h4 id="g_regex_get_has_cr_or_lf1">
+	<span><code>g_regex_get_has_cr_or_lf</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_regex_get_has_cr_or_lf (const <a title="GRegex" href="gregex.html#GRegex">GRegex</a> * regex)</pre>
+
+<p>Checks whether the pattern contains explicit CR or LF references.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GRegex</a> structure</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the pattern contains explicit CR or LF references</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.34
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_split_full">
+		
+<h4 id="g_regex_split_full1">
+	<span><code>g_regex_split_full</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+utf8*
+g_regex_split_full (const <a title="GRegex" href="gregex.html#GRegex">GRegex</a> * regex,
+                    gchar string,
+                    gssize string_len,
+                    gint start_position,
+                    <a title="GRegexMatchFlags" href="gregex.html#GRegexMatchFlags">GRegexMatchFlags</a> match_options,
+                    gint max_tokens)</pre>
+
+<p>Breaks the string on the pattern, and returns an array of the tokens.
+If the pattern contains capturing parentheses, then the text for each
+of the substrings will also be returned. If the pattern does not match
+anywhere in the string, then the whole string is returned as the first
+token.</p>
+<p>As a special case, the result of splitting the empty string "" is an
+empty vector, not a vector containing a single string. The reason for
+this special case is that being able to represent a empty vector is
+typically more useful than consistent handling of empty elements. If
+you do need to represent empty elements, you'll need to check for the
+empty string before calling this function.</p>
+<p>A pattern that can match empty strings splits <em>string</em> into separate
+characters wherever it matches the empty string between characters.
+For example splitting "ab c" using as a separator "\s*", you will get
+"a", "b" and "c".</p>
+<p>Setting <em>start_position</em> differs from just passing over a shortened
+string and setting <a href="gregex.html#G_REGEX_MATCH_NOTBOL">G_REGEX_MATCH_NOTBOL</a> in the case of a pattern
+that begins with any kind of lookbehind assertion, such as "\b".</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GRegex</a> structure</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to split with the pattern</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=string_len]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>string</em>, or -1 if <em>string</em> is nul-terminated</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>start_position:</code></em></i>
+		</p>
+	</td>
+		<td><p>starting index of the string to match, in bytes</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>match time option flags</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>max_tokens:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum number of tokens to split <em>string</em> into.
+If this is less than 1, the string is split completely</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="macros.html#NULL">NULL</a>-terminated gchar ** array. Free
+it using <a href="string_utils.html#g_strfreev">g_strfreev</a></p>
+
+	</td>
+	<td>
+		utf8*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.26;" id="g_regex_get_compile_flags">
+		
+<h4 id="g_regex_get_compile_flags1">
+	<span><code>g_regex_get_compile_flags</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GRegexCompileFlags" href="gregex.html#GRegexCompileFlags">GRegexCompileFlags</a>
+g_regex_get_compile_flags (const <a title="GRegex" href="gregex.html#GRegex">GRegex</a> * regex)</pre>
+
+<p>Returns the compile options that <em>regex</em> was created with.</p>
+<p>Depending on the version of PCRE that is used, this may or may not
+include flags set by option expressions such as <code>(?i)</code> found at the
+top-level within the compiled pattern.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GRegex</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>flags from <a href="gregex.html#GRegexCompileFlags">GRegexCompileFlags</a></p>
+
+	</td>
+	<td>
+		<a title="GRegexCompileFlags" href="gregex.html#GRegexCompileFlags">GRegexCompileFlags</a>
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.26
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_replace_literal">
+		
+<h4 id="g_regex_replace_literal1">
+	<span><code>g_regex_replace_literal</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gchar*
+g_regex_replace_literal (const <a title="GRegex" href="gregex.html#GRegex">GRegex</a> * regex,
+                         gchar string,
+                         gssize string_len,
+                         gint start_position,
+                         const gchar* replacement,
+                         <a title="GRegexMatchFlags" href="gregex.html#GRegexMatchFlags">GRegexMatchFlags</a> match_options)</pre>
+
+<p>Replaces all occurrences of the pattern in <em>regex</em> with the
+replacement text. <em>replacement</em> is replaced literally, to
+include backreferences use <a href="gregex.html#g_regex_replace">g_regex_replace</a>.</p>
+<p>Setting <em>start_position</em> differs from just passing over a
+shortened string and setting <a href="gregex.html#G_REGEX_MATCH_NOTBOL">G_REGEX_MATCH_NOTBOL</a> in the
+case of a pattern that begins with any kind of lookbehind
+assertion, such as "\b".</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GRegex</a> structure</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to perform matches against</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=string_len]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>string</em>, or -1 if <em>string</em> is nul-terminated</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>start_position:</code></em></i>
+		</p>
+	</td>
+		<td><p>starting index of the string to match, in bytes</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>replacement:</code></em></i>
+		</p>
+	</td>
+		<td><p>text to replace each match with</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>options for the match</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string containing the replacements</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_get_pattern">
+		
+<h4 id="g_regex_get_pattern1">
+	<span><code>g_regex_get_pattern</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+const gchar*
+g_regex_get_pattern (const <a title="GRegex" href="gregex.html#GRegex">GRegex</a> * regex)</pre>
+
+<p>Gets the pattern string associated with <em>regex</em>, i.e. a copy of
+the string passed to <a href="gregex.html#g_regex_new">g_regex_new</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GRegex</a> structure</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the pattern of <em>regex</em></p>
+
+	</td>
+	<td>
+		const gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_get_max_backref">
+		
+<h4 id="g_regex_get_max_backref1">
+	<span><code>g_regex_get_max_backref</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint
+g_regex_get_max_backref (const <a title="GRegex" href="gregex.html#GRegex">GRegex</a> * regex)</pre>
+
+<p>Returns the number of the highest back reference
+in the pattern, or 0 if the pattern does not contain
+back references.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GRegex</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of the highest back reference</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_replace">
+		
+<h4 id="g_regex_replace1">
+	<span><code>g_regex_replace</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gchar*
+g_regex_replace (const <a title="GRegex" href="gregex.html#GRegex">GRegex</a> * regex,
+                 gchar string,
+                 gssize string_len,
+                 gint start_position,
+                 const gchar* replacement,
+                 <a title="GRegexMatchFlags" href="gregex.html#GRegexMatchFlags">GRegexMatchFlags</a> match_options)</pre>
+
+<p>Replaces all occurrences of the pattern in <em>regex</em> with the
+replacement text. Backreferences of the form '\number' or
+'\g<number>' in the replacement text are interpolated by the
+number-th captured subexpression of the match, '\g<name>' refers
+to the captured subexpression with the given name. '\0' refers
+to the complete match, but '\0' followed by a number is the octal
+representation of a character. To include a literal '' in the
+replacement, write '\'.</name></number></p>
+<p>There are also escapes that changes the case of the following text:</p>
+<ul>
+<li>\l: Convert to lower case the next character</li>
+<li>\u: Convert to upper case the next character</li>
+<li>\L: Convert to lower case till \E</li>
+<li>\U: Convert to upper case till \E</li>
+<li>\E: End case modification</li>
+</ul>
+<p>If you do not need to use backreferences use <a href="gregex.html#g_regex_replace_literal">g_regex_replace_literal</a>.</p>
+<p>The <em>replacement</em> string must be UTF-8 encoded even if <a href="gregex.html#G_REGEX_RAW">G_REGEX_RAW</a> was
+passed to <a href="gregex.html#g_regex_new">g_regex_new</a>. If you want to use not UTF-8 encoded stings
+you can use <a href="gregex.html#g_regex_replace_literal">g_regex_replace_literal</a>.</p>
+<p>Setting <em>start_position</em> differs from just passing over a shortened
+string and setting <a href="gregex.html#G_REGEX_MATCH_NOTBOL">G_REGEX_MATCH_NOTBOL</a> in the case of a pattern that
+begins with any kind of lookbehind assertion, such as "\b".</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GRegex</a> structure</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to perform matches against</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=string_len]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>string</em>, or -1 if <em>string</em> is nul-terminated</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>start_position:</code></em></i>
+		</p>
+	</td>
+		<td><p>starting index of the string to match, in bytes</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>replacement:</code></em></i>
+		</p>
+	</td>
+		<td><p>text to replace each match with</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>options for the match</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string containing the replacements</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_unref">
+		
+<h4 id="g_regex_unref1">
+	<span><code>g_regex_unref</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_regex_unref (<a title="GRegex" href="gregex.html#GRegex">GRegex</a> * regex)</pre>
+
+<p>Decreases reference count of <em>regex</em> by 1. When reference count drops
+to zero, it frees all the memory associated with the regex structure.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GRegex</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_match_full">
+		
+<h4 id="g_regex_match_full1">
+	<span><code>g_regex_match_full</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_regex_match_full (const <a title="GRegex" href="gregex.html#GRegex">GRegex</a> * regex,
+                    gchar string,
+                    gssize string_len,
+                    gint start_position,
+                    <a title="GRegexMatchFlags" href="gregex.html#GRegexMatchFlags">GRegexMatchFlags</a> match_options,
+                    <a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> ** match_info)</pre>
+
+<p>Scans for a match in string for the pattern in <em>regex</em>.
+The <em>match_options</em> are combined with the match options specified
+when the <em>regex</em> structure was created, letting you have more
+flexibility in reusing <a href="gregex.html#GRegex">GRegex</a> structures.</p>
+<p>Setting <em>start_position</em> differs from just passing over a shortened
+string and setting <a href="gregex.html#G_REGEX_MATCH_NOTBOL">G_REGEX_MATCH_NOTBOL</a> in the case of a pattern
+that begins with any kind of lookbehind assertion, such as "\b".</p>
+<p>A <a href="gregex.html#GMatchInfo">GMatchInfo</a> structure, used to get information on the match, is
+stored in <em>match_info</em> if not <a href="macros.html#NULL">NULL</a>. Note that if <em>match_info</em> is
+not <a href="macros.html#NULL">NULL</a> then it is created even if the function returns <a href="macros.html#FALSE">FALSE</a>,
+i.e. you must free it regardless if regular expression actually
+matched.</p>
+<p><em>string</em> is not copied and is used in <a href="gregex.html#GMatchInfo">GMatchInfo</a> internally. If
+you use any <a href="gregex.html#GMatchInfo">GMatchInfo</a> method (except <a href="gregex.html#g_match_info_free">g_match_info_free</a>) after
+freeing or modifying <em>string</em> then the behaviour is undefined.</p>
+<p>To retrieve all the non-overlapping matches of the pattern in
+string you can use <a href="gregex.html#g_match_info_next">g_match_info_next</a>.</p>
+<pre><code class="language-[&lt;!--"> static void
+ print_uppercase_words (const gchar *string)
+ {
+   // Print all uppercase-only words.
+   GRegex *regex;
+   GMatchInfo *match_info;
+   GError *error = NULL;
+
+   regex = g_regex_new ("[A-Z]+", 0, 0, NULL);
+   g_regex_match_full (regex, string, -1, 0, 0, &amp;match_info, &amp;error);
+   while (g_match_info_matches (match_info))
+     {
+       gchar *word = g_match_info_fetch (match_info, 0);
+       g_print ("Found: %s\n", word);
+       g_free (word);
+       g_match_info_next (match_info, &amp;error);
+     }
+   g_match_info_free (match_info);
+   g_regex_unref (regex);
+   if (error != NULL)
+     {
+       g_printerr ("Error while matching: %s\n", error-&gt;message);
+       g_error_free (error);
+     }
+ }
+</code></pre>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GRegex</a> structure from <a href="gregex.html#g_regex_new">g_regex_new</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to scan for matches</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=string_len]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>string</em>, or -1 if <em>string</em> is nul-terminated</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>start_position:</code></em></i>
+		</p>
+	</td>
+		<td><p>starting index of the string to match, in bytes</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>match options</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>pointer to location where to store
+the <a href="gregex.html#GMatchInfo">GMatchInfo</a>, or <a href="macros.html#NULL">NULL</a> if you do not need it</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of1">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> is the string matched, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>match_info:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> is the string matched, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> **
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_match_all_full">
+		
+<h4 id="g_regex_match_all_full1">
+	<span><code>g_regex_match_all_full</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_regex_match_all_full (const <a title="GRegex" href="gregex.html#GRegex">GRegex</a> * regex,
+                        gchar string,
+                        gssize string_len,
+                        gint start_position,
+                        <a title="GRegexMatchFlags" href="gregex.html#GRegexMatchFlags">GRegexMatchFlags</a> match_options,
+                        <a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> ** match_info)</pre>
+
+<p>Using the standard algorithm for regular expression matching only
+the longest match in the string is retrieved, it is not possible
+to obtain all the available matches. For instance matching
+"<a> <b> <c>" against the pattern "&lt;.*&gt;"
+you get "<a> <b> <c>".</c></b></a></c></b></a></p>
+<p>This function uses a different algorithm (called DFA, i.e. deterministic
+finite automaton), so it can retrieve all the possible matches, all
+starting at the same point in the string. For instance matching
+"<a> <b> <c>" against the pattern "&lt;.*&gt;;"
+you would obtain three matches: "<a> <b> <c>",
+"<a> <b>" and "<a>".</a></b></a></c></b></a></c></b></a></p>
+<p>The number of matched strings is retrieved using
+<a href="gregex.html#g_match_info_get_match_count">g_match_info_get_match_count</a>. To obtain the matched strings and
+their position you can use, respectively, <a href="gregex.html#g_match_info_fetch">g_match_info_fetch</a> and
+<a href="gregex.html#g_match_info_fetch_pos">g_match_info_fetch_pos</a>. Note that the strings are returned in
+reverse order of length; that is, the longest matching string is
+given first.</p>
+<p>Note that the DFA algorithm is slower than the standard one and it
+is not able to capture substrings, so backreferences do not work.</p>
+<p>Setting <em>start_position</em> differs from just passing over a shortened
+string and setting <a href="gregex.html#G_REGEX_MATCH_NOTBOL">G_REGEX_MATCH_NOTBOL</a> in the case of a pattern
+that begins with any kind of lookbehind assertion, such as "\b".</p>
+<p>A <a href="gregex.html#GMatchInfo">GMatchInfo</a> structure, used to get information on the match, is
+stored in <em>match_info</em> if not <a href="macros.html#NULL">NULL</a>. Note that if <em>match_info</em> is
+not <a href="macros.html#NULL">NULL</a> then it is created even if the function returns <a href="macros.html#FALSE">FALSE</a>,
+i.e. you must free it regardless if regular expression actually
+matched.</p>
+<p><em>string</em> is not copied and is used in <a href="gregex.html#GMatchInfo">GMatchInfo</a> internally. If
+you use any <a href="gregex.html#GMatchInfo">GMatchInfo</a> method (except <a href="gregex.html#g_match_info_free">g_match_info_free</a>) after
+freeing or modifying <em>string</em> then the behaviour is undefined.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GRegex</a> structure from <a href="gregex.html#g_regex_new">g_regex_new</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to scan for matches</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=string_len]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>string</em>, or -1 if <em>string</em> is nul-terminated</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>start_position:</code></em></i>
+		</p>
+	</td>
+		<td><p>starting index of the string to match, in bytes</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>match options</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>pointer to location where to store
+the <a href="gregex.html#GMatchInfo">GMatchInfo</a>, or <a href="macros.html#NULL">NULL</a> if you do not need it</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of2">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> is the string matched, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>match_info:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> is the string matched, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> **
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_replace_eval">
+		
+<h4 id="g_regex_replace_eval1">
+	<span><code>g_regex_replace_eval</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gchar*
+g_regex_replace_eval (const <a title="GRegex" href="gregex.html#GRegex">GRegex</a> * regex,
+                      gchar string,
+                      gssize string_len,
+                      gint start_position,
+                      <a title="GRegexMatchFlags" href="gregex.html#GRegexMatchFlags">GRegexMatchFlags</a> match_options,
+                      <a title="GRegexEvalCallback" href="gregex.html#GRegexEvalCallback">GRegexEvalCallback</a> eval,
+                      gpointer user_data)</pre>
+
+<p>Replaces occurrences of the pattern in regex with the output of
+<em>eval</em> for that occurrence.</p>
+<p>Setting <em>start_position</em> differs from just passing over a shortened
+string and setting <a href="gregex.html#G_REGEX_MATCH_NOTBOL">G_REGEX_MATCH_NOTBOL</a> in the case of a pattern
+that begins with any kind of lookbehind assertion, such as "\b".</p>
+<p>The following example uses <a href="gregex.html#g_regex_replace_eval">g_regex_replace_eval</a> to replace multiple
+strings at once:</p>
+<pre><code class="language-[&lt;!--"> static gboolean
+ eval_cb (const GMatchInfo *info,
+          GString          *res,
+          gpointer          data)
+ {
+   gchar *match;
+   gchar *r;
+
+    match = g_match_info_fetch (info, 0);
+    r = g_hash_table_lookup ((GHashTable *)data, match);
+    g_string_append (res, r);
+    g_free (match);
+
+    return FALSE;
+ }
+
+ ...
+
+ GRegex *reg;
+ GHashTable *h;
+ gchar *res;
+
+ h = g_hash_table_new (g_str_hash, g_str_equal);
+
+ g_hash_table_insert (h, "1", "ONE");
+ g_hash_table_insert (h, "2", "TWO");
+ g_hash_table_insert (h, "3", "THREE");
+ g_hash_table_insert (h, "4", "FOUR");
+
+ reg = g_regex_new ("1|2|3|4", 0, 0, NULL);
+ res = g_regex_replace_eval (reg, text, -1, 0, 0, eval_cb, h, NULL);
+ g_hash_table_destroy (h);
+
+ ...
+</code></pre>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GRegex</a> structure from <a href="gregex.html#g_regex_new">g_regex_new</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>string to perform matches against</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=string_len]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>string</em>, or -1 if <em>string</em> is nul-terminated</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>start_position:</code></em></i>
+		</p>
+	</td>
+		<td><p>starting index of the string to match, in bytes</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>options for the match</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>eval:</code></em></i>
+		</p>
+	</td>
+		<td><p>a function to call for each match</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data to pass to the function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string containing the replacements</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.26;" id="g_regex_get_match_flags">
+		
+<h4 id="g_regex_get_match_flags1">
+	<span><code>g_regex_get_match_flags</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GRegexMatchFlags" href="gregex.html#GRegexMatchFlags">GRegexMatchFlags</a>
+g_regex_get_match_flags (const <a title="GRegex" href="gregex.html#GRegex">GRegex</a> * regex)</pre>
+
+<p>Returns the match options that <em>regex</em> was created with.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GRegex</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>flags from <a href="gregex.html#GRegexMatchFlags">GRegexMatchFlags</a></p>
+
+	</td>
+	<td>
+		<a title="GRegexMatchFlags" href="gregex.html#GRegexMatchFlags">GRegexMatchFlags</a>
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.26
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_match">
+		
+<h4 id="g_regex_match1">
+	<span><code>g_regex_match</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_regex_match (const <a title="GRegex" href="gregex.html#GRegex">GRegex</a> * regex,
+               const gchar* string,
+               <a title="GRegexMatchFlags" href="gregex.html#GRegexMatchFlags">GRegexMatchFlags</a> match_options,
+               <a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> ** match_info)</pre>
+
+<p>Scans for a match in string for the pattern in <em>regex</em>.
+The <em>match_options</em> are combined with the match options specified
+when the <em>regex</em> structure was created, letting you have more
+flexibility in reusing <a href="gregex.html#GRegex">GRegex</a> structures.</p>
+<p>A <a href="gregex.html#GMatchInfo">GMatchInfo</a> structure, used to get information on the match,
+is stored in <em>match_info</em> if not <a href="macros.html#NULL">NULL</a>. Note that if <em>match_info</em>
+is not <a href="macros.html#NULL">NULL</a> then it is created even if the function returns <a href="macros.html#FALSE">FALSE</a>,
+i.e. you must free it regardless if regular expression actually matched.</p>
+<p>To retrieve all the non-overlapping matches of the pattern in
+string you can use <a href="gregex.html#g_match_info_next">g_match_info_next</a>.</p>
+<pre><code class="language-[&lt;!--"> static void
+ print_uppercase_words (const gchar *string)
+ {
+   // Print all uppercase-only words.
+   GRegex *regex;
+   GMatchInfo *match_info;
+
+   regex = g_regex_new ("[A-Z]+", 0, 0, NULL);
+   g_regex_match (regex, string, 0, &amp;match_info);
+   while (g_match_info_matches (match_info))
+     {
+       gchar *word = g_match_info_fetch (match_info, 0);
+       g_print ("Found: %s\n", word);
+       g_free (word);
+       g_match_info_next (match_info, NULL);
+     }
+   g_match_info_free (match_info);
+   g_regex_unref (regex);
+ }
+</code></pre>
+<p><em>string</em> is not copied and is used in <a href="gregex.html#GMatchInfo">GMatchInfo</a> internally. If
+you use any <a href="gregex.html#GMatchInfo">GMatchInfo</a> method (except <a href="gregex.html#g_match_info_free">g_match_info_free</a>) after
+freeing or modifying <em>string</em> then the behaviour is undefined.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GRegex</a> structure from <a href="gregex.html#g_regex_new">g_regex_new</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to scan for matches</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>match options</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>pointer to location where to store
+the <a href="gregex.html#GMatchInfo">GMatchInfo</a>, or <a href="macros.html#NULL">NULL</a> if you do not need it</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of3">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> is the string matched, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>match_info:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> is the string matched, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> **
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_get_capture_count">
+		
+<h4 id="g_regex_get_capture_count1">
+	<span><code>g_regex_get_capture_count</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint
+g_regex_get_capture_count (const <a title="GRegex" href="gregex.html#GRegex">GRegex</a> * regex)</pre>
+
+<p>Returns the number of capturing subpatterns in the pattern.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GRegex</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of capturing subpatterns</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.38;" id="g_regex_get_max_lookbehind">
+		
+<h4 id="g_regex_get_max_lookbehind1">
+	<span><code>g_regex_get_max_lookbehind</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint
+g_regex_get_max_lookbehind (const <a title="GRegex" href="gregex.html#GRegex">GRegex</a> * regex)</pre>
+
+<p>Gets the number of characters in the longest lookbehind assertion in the
+pattern. This information is useful when doing multi-segment matching using
+the partial matching facilities.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GRegex</a> structure</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of characters in the longest lookbehind assertion.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.38
+		</p>
+
+</div>
+
+
+
+            <h2 class="symbol_section" id="">GMatchInfo</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GMatchInfoMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_free">
+		
+<h4 id="g_match_info_free1">
+	<span><code>g_match_info_free</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_match_info_free (<a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> * match_info)</pre>
+
+<p>If <em>match_info</em> is not <a href="macros.html#NULL">NULL</a>, calls <a href="gregex.html#g_match_info_unref">g_match_info_unref</a>; otherwise does
+nothing.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GMatchInfo</a>, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_fetch">
+		
+<h4 id="g_match_info_fetch1">
+	<span><code>g_match_info_fetch</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gchar*
+g_match_info_fetch (const <a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> * match_info,
+                    gint match_num)</pre>
+
+<p>Retrieves the text matching the <em>match_num</em>'th capturing
+parentheses. 0 is the full text of the match, 1 is the first paren
+set, 2 the second, and so on.</p>
+<p>If <em>match_num</em> is a valid sub pattern but it didn't match anything
+(e.g. sub pattern 1, matching "b" against "(a)?b") then an empty
+string is returned.</p>
+<p>If the match was obtained using the DFA algorithm, that is using
+<a href="gregex.html#g_regex_match_all">g_regex_match_all</a> or <a href="gregex.html#g_regex_match_all_full">g_regex_match_all_full</a>, the retrieved
+string is not that of a set of parentheses but that of a matched
+substring. Substrings are matched in reverse order of length, so
+0 is the longest match.</p>
+<p>The string is fetched from the string passed to the match function,
+so you cannot call this function after freeing the string.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="gregex.html#GMatchInfo">GMatchInfo</a> structure</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_num:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of the sub expression</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The matched substring, or <a href="macros.html#NULL">NULL</a> if an error
+occurred. You have to free the string yourself</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_fetch_named">
+		
+<h4 id="g_match_info_fetch_named1">
+	<span><code>g_match_info_fetch_named</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gchar*
+g_match_info_fetch_named (const <a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> * match_info,
+                          const gchar* name)</pre>
+
+<p>Retrieves the text matching the capturing parentheses named <em>name</em>.</p>
+<p>If <em>name</em> is a valid sub pattern name but it didn't match anything
+(e.g. sub pattern "X", matching "b" against "(?P<x>a)?b")
+then an empty string is returned.</x></p>
+<p>The string is fetched from the string passed to the match function,
+so you cannot call this function after freeing the string.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="gregex.html#GMatchInfo">GMatchInfo</a> structure</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>name:</code></em></i>
+		</p>
+	</td>
+		<td><p>name of the subexpression</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The matched substring, or <a href="macros.html#NULL">NULL</a> if an error
+occurred. You have to free the string yourself</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_expand_references">
+		
+<h4 id="g_match_info_expand_references1">
+	<span><code>g_match_info_expand_references</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gchar*
+g_match_info_expand_references (const <a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> * match_info,
+                                const gchar* string_to_expand)</pre>
+
+<p>Returns a new string containing the text in <em>string_to_expand</em> with
+references and escape sequences expanded. References refer to the last
+match done with <em>string</em> against <em>regex</em> and have the same syntax used by
+<a href="gregex.html#g_regex_replace">g_regex_replace</a>.</p>
+<p>The <em>string_to_expand</em> must be UTF-8 encoded even if <a href="gregex.html#G_REGEX_RAW">G_REGEX_RAW</a> was
+passed to <a href="gregex.html#g_regex_new">g_regex_new</a>.</p>
+<p>The backreferences are extracted from the string passed to the match
+function, so you cannot call this function after freeing the string.</p>
+<p><em>match_info</em> may be <a href="macros.html#NULL">NULL</a> in which case <em>string_to_expand</em> must not
+contain references. For instance "foo\n" does not refer to an actual
+pattern and '\n' merely will be replaced with \n character,
+while to expand "\0" (whole match) one needs the result of a match.
+Use <a href="gregex.html#g_regex_check_replacement">g_regex_check_replacement</a> to find out whether <em>string_to_expand</em>
+contains references.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GMatchInfo</a> or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string_to_expand:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to expand</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the expanded string, or <a href="macros.html#NULL">NULL</a> if an error occurred</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_fetch_all">
+		
+<h4 id="g_match_info_fetch_all1">
+	<span><code>g_match_info_fetch_all</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+utf8*
+g_match_info_fetch_all (const <a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> * match_info)</pre>
+
+<p>Bundles up pointers to each of the matching substrings from a match
+and stores them in an array of gchar pointers. The first element in
+the returned array is the match number 0, i.e. the entire matched
+text.</p>
+<p>If a sub pattern didn't match anything (e.g. sub pattern 1, matching
+"b" against "(a)?b") then an empty string is inserted.</p>
+<p>If the last match was obtained using the DFA algorithm, that is using
+<a href="gregex.html#g_regex_match_all">g_regex_match_all</a> or <a href="gregex.html#g_regex_match_all_full">g_regex_match_all_full</a>, the retrieved
+strings are not that matched by sets of parentheses but that of the
+matched substring. Substrings are matched in reverse order of length,
+so the first one is the longest match.</p>
+<p>The strings are fetched from the string passed to the match function,
+so you cannot call this function after freeing the string.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GMatchInfo</a> structure</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="macros.html#NULL">NULL</a>-terminated array of gchar *
+pointers.  It must be freed using <a href="string_utils.html#g_strfreev">g_strfreev</a>. If the previous
+match failed <a href="macros.html#NULL">NULL</a> is returned</p>
+
+	</td>
+	<td>
+		utf8*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_get_string">
+		
+<h4 id="g_match_info_get_string1">
+	<span><code>g_match_info_get_string</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+const gchar*
+g_match_info_get_string (const <a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> * match_info)</pre>
+
+<p>Returns the string searched with <em>match_info</em>. This is the
+string passed to <a href="gregex.html#g_regex_match">g_regex_match</a> or <a href="gregex.html#g_regex_replace">g_regex_replace</a> so
+you may not free it before calling this function.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GMatchInfo</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the string searched with <em>match_info</em></p>
+
+	</td>
+	<td>
+		const gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_fetch_pos">
+		
+<h4 id="g_match_info_fetch_pos1">
+	<span><code>g_match_info_fetch_pos</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_match_info_fetch_pos (const <a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> * match_info,
+                        gint match_num,
+                        gint* start_pos,
+                        gint* end_pos)</pre>
+
+<p>Retrieves the position in bytes of the <em>match_num</em>'th capturing
+parentheses. 0 is the full text of the match, 1 is the first
+paren set, 2 the second, and so on.</p>
+<p>If <em>match_num</em> is a valid sub pattern but it didn't match anything
+(e.g. sub pattern 1, matching "b" against "(a)?b") then <em>start_pos</em>
+and <em>end_pos</em> are set to -1 and <a href="macros.html#TRUE">TRUE</a> is returned.</p>
+<p>If the match was obtained using the DFA algorithm, that is using
+<a href="gregex.html#g_regex_match_all">g_regex_match_all</a> or <a href="gregex.html#g_regex_match_all_full">g_regex_match_all_full</a>, the retrieved
+position is not that of a set of parentheses but that of a matched
+substring. Substrings are matched in reverse order of length, so
+0 is the longest match.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="gregex.html#GMatchInfo">GMatchInfo</a> structure</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_num:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of the sub expression</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>start_pos:</code></em></i>
+		</p>
+	</td>
+		<td><p>pointer to location where to store
+the start position, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>end_pos:</code></em></i>
+		</p>
+	</td>
+		<td><p>pointer to location where to store
+the end position, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of4">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the position was fetched, <a href="macros.html#FALSE">FALSE</a> otherwise. If
+the position cannot be fetched, <em>start_pos</em> and <em>end_pos</em> are left
+unchanged</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>start_pos:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the position was fetched, <a href="macros.html#FALSE">FALSE</a> otherwise. If
+the position cannot be fetched, <em>start_pos</em> and <em>end_pos</em> are left
+unchanged</p>
+
+	</td>
+	<td>
+		gint*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>end_pos:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the position was fetched, <a href="macros.html#FALSE">FALSE</a> otherwise. If
+the position cannot be fetched, <em>start_pos</em> and <em>end_pos</em> are left
+unchanged</p>
+
+	</td>
+	<td>
+		gint*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_is_partial_match">
+		
+<h4 id="g_match_info_is_partial_match1">
+	<span><code>g_match_info_is_partial_match</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_match_info_is_partial_match (const <a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> * match_info)</pre>
+
+<p>Usually if the string passed to g_regex_match*() matches as far as
+it goes, but is too short to match the entire pattern, <a href="macros.html#FALSE">FALSE</a> is
+returned. There are circumstances where it might be helpful to
+distinguish this case from other cases in which there is no match.</p>
+<p>Consider, for example, an application where a human is required to
+type in data for a field with specific formatting requirements. An
+example might be a date in the form ddmmmyy, defined by the pattern
+"^\d?\d(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\d\d$".
+If the application sees the userâ€™s keystrokes one by one, and can
+check that what has been typed so far is potentially valid, it is
+able to raise an error as soon as a mistake is made.</p>
+<p>GRegex supports the concept of partial matching by means of the
+<a href="gregex.html#G_REGEX_MATCH_PARTIAL_SOFT">G_REGEX_MATCH_PARTIAL_SOFT</a> and <a href="gregex.html#G_REGEX_MATCH_PARTIAL_HARD">G_REGEX_MATCH_PARTIAL_HARD</a> flags.
+When they are used, the return code for
+<a href="gregex.html#g_regex_match">g_regex_match</a> or <a href="gregex.html#g_regex_match_full">g_regex_match_full</a> is, as usual, <a href="macros.html#TRUE">TRUE</a>
+for a complete match, <a href="macros.html#FALSE">FALSE</a> otherwise. But, when these functions
+return <a href="macros.html#FALSE">FALSE</a>, you can check if the match was partial calling
+<a href="gregex.html#g_match_info_is_partial_match">g_match_info_is_partial_match</a>.</p>
+<p>The difference between <a href="gregex.html#G_REGEX_MATCH_PARTIAL_SOFT">G_REGEX_MATCH_PARTIAL_SOFT</a> and
+<a href="gregex.html#G_REGEX_MATCH_PARTIAL_HARD">G_REGEX_MATCH_PARTIAL_HARD</a> is that when a partial match is encountered
+with <a href="gregex.html#G_REGEX_MATCH_PARTIAL_SOFT">G_REGEX_MATCH_PARTIAL_SOFT</a>, matching continues to search for a
+possible complete match, while with <a href="gregex.html#G_REGEX_MATCH_PARTIAL_HARD">G_REGEX_MATCH_PARTIAL_HARD</a> matching
+stops at the partial match.
+When both <a href="gregex.html#G_REGEX_MATCH_PARTIAL_SOFT">G_REGEX_MATCH_PARTIAL_SOFT</a> and <a href="gregex.html#G_REGEX_MATCH_PARTIAL_HARD">G_REGEX_MATCH_PARTIAL_HARD</a>
+are set, the latter takes precedence.</p>
+<p>There were formerly some restrictions on the pattern for partial matching.
+The restrictions no longer apply.</p>
+<p>See pcrepartial(3) for more information on partial matching.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GMatchInfo</a> structure</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the match was partial, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_get_regex">
+		
+<h4 id="g_match_info_get_regex1">
+	<span><code>g_match_info_get_regex</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GRegex" href="gregex.html#GRegex">GRegex</a> *
+g_match_info_get_regex (const <a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> * match_info)</pre>
+
+<p>Returns <a href="gregex.html#GRegex">GRegex</a> object used in <em>match_info</em>. It belongs to Glib
+and must not be freed. Use <a href="gregex.html#g_regex_ref">g_regex_ref</a> if you need to keep it
+after you free <em>match_info</em> object.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters28">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GMatchInfo</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns21">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="gregex.html#GRegex">GRegex</a> object used in <em>match_info</em></p>
+
+	</td>
+	<td>
+		<a title="GRegex" href="gregex.html#GRegex">GRegex</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_matches">
+		
+<h4 id="g_match_info_matches1">
+	<span><code>g_match_info_matches</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_match_info_matches (const <a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> * match_info)</pre>
+
+<p>Returns whether the previous match operation succeeded.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters29">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GMatchInfo</a> structure</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns22">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the previous match operation succeeded,
+<a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_fetch_named_pos">
+		
+<h4 id="g_match_info_fetch_named_pos1">
+	<span><code>g_match_info_fetch_named_pos</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_match_info_fetch_named_pos (const <a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> * match_info,
+                              const gchar* name,
+                              gint* start_pos,
+                              gint* end_pos)</pre>
+
+<p>Retrieves the position in bytes of the capturing parentheses named <em>name</em>.</p>
+<p>If <em>name</em> is a valid sub pattern name but it didn't match anything
+(e.g. sub pattern "X", matching "b" against "(?P<x>a)?b")
+then <em>start_pos</em> and <em>end_pos</em> are set to -1 and <a href="macros.html#TRUE">TRUE</a> is returned.</x></p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters30">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="gregex.html#GMatchInfo">GMatchInfo</a> structure</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>name:</code></em></i>
+		</p>
+	</td>
+		<td><p>name of the subexpression</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>start_pos:</code></em></i>
+		</p>
+	</td>
+		<td><p>pointer to location where to store
+the start position, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>end_pos:</code></em></i>
+		</p>
+	</td>
+		<td><p>pointer to location where to store
+the end position, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of5">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the position was fetched, <a href="macros.html#FALSE">FALSE</a> otherwise.
+If the position cannot be fetched, <em>start_pos</em> and <em>end_pos</em>
+are left unchanged.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>start_pos:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the position was fetched, <a href="macros.html#FALSE">FALSE</a> otherwise.
+If the position cannot be fetched, <em>start_pos</em> and <em>end_pos</em>
+are left unchanged.</p>
+
+	</td>
+	<td>
+		gint*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>end_pos:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the position was fetched, <a href="macros.html#FALSE">FALSE</a> otherwise.
+If the position cannot be fetched, <em>start_pos</em> and <em>end_pos</em>
+are left unchanged.</p>
+
+	</td>
+	<td>
+		gint*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_match_info_ref">
+		
+<h4 id="g_match_info_ref1">
+	<span><code>g_match_info_ref</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> *
+g_match_info_ref (<a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> * match_info)</pre>
+
+<p>Increases reference count of <em>match_info</em> by 1.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters31">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GMatchInfo</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns23">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>match_info</em></p>
+
+	</td>
+	<td>
+		<a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_next">
+		
+<h4 id="g_match_info_next1">
+	<span><code>g_match_info_next</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_match_info_next (<a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> * match_info)</pre>
+
+<p>Scans for the next match using the same parameters of the previous
+call to <a href="gregex.html#g_regex_match_full">g_regex_match_full</a> or <a href="gregex.html#g_regex_match">g_regex_match</a> that returned
+<em>match_info</em>.</p>
+<p>The match is done on the string passed to the match function, so you
+cannot free it before calling this function.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters32">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GMatchInfo</a> structure</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns24">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> is the string matched, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_match_info_unref">
+		
+<h4 id="g_match_info_unref1">
+	<span><code>g_match_info_unref</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_match_info_unref (<a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> * match_info)</pre>
+
+<p>Decreases reference count of <em>match_info</em> by 1. When reference count drops
+to zero, it frees all the memory associated with the match_info structure.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters33">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GMatchInfo</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_get_match_count">
+		
+<h4 id="g_match_info_get_match_count1">
+	<span><code>g_match_info_get_match_count</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint
+g_match_info_get_match_count (const <a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> * match_info)</pre>
+
+<p>Retrieves the number of matched substrings (including substring 0,
+that is the whole matched text), so 1 is returned if the pattern
+has no substrings in it and 0 is returned if the match failed.</p>
+<p>If the last match was obtained using the DFA algorithm, that is
+using <a href="gregex.html#g_regex_match_all">g_regex_match_all</a> or <a href="gregex.html#g_regex_match_all_full">g_regex_match_all_full</a>, the retrieved
+count is not that of the number of capturing parentheses but that of
+the number of matched substrings.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters34">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GMatchInfo</a> structure</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns25">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>Number of matched substrings, or -1 if an error occurred</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_regex_escape_nul">
+		
+<h3 id="g_regex_escape_nul1">
+	<span><code>g_regex_escape_nul</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_regex_escape_nul (const gchar* string,
+                    gint length)</pre>
+
+<p>Escapes the nul characters in <em>string</em> to "\x00".  It can be used
+to compile a regex with embedded nul characters.</p>
+<p>For completeness, <em>length</em> can be -1 for a nul-terminated string.
+In this case the output string will be of course equal to <em>string</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters35">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to escape</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>string</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns26">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated escaped string</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_check_replacement">
+		
+<h3 id="g_regex_check_replacement1">
+	<span><code>g_regex_check_replacement</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_regex_check_replacement (const gchar* replacement,
+                           gboolean* has_references)</pre>
+
+<p>Checks whether <em>replacement</em> is a valid replacement string
+(see <a href="gregex.html#g_regex_replace">g_regex_replace</a>), i.e. that all escape sequences in
+it are valid.</p>
+<p>If <em>has_references</em> is not <a href="macros.html#NULL">NULL</a> then <em>replacement</em> is checked
+for pattern references. For instance, replacement text 'foo\n'
+does not contain references and may be evaluated without information
+about actual match, but '\0\1' (whole match followed by first
+subpattern) requires valid <a href="gregex.html#GMatchInfo">GMatchInfo</a> object.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters36">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>replacement:</code></em></i>
+		</p>
+	</td>
+		<td><p>the replacement string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>has_references:</code></em></i>
+		</p>
+	</td>
+		<td><p>location to store information about
+references in <em>replacement</em> or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of6">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>whether <em>replacement</em> is a valid replacement string</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>has_references:</i>
+				</p>
+	</td>
+	<td>
+		<p>whether <em>replacement</em> is a valid replacement string</p>
+
+	</td>
+	<td>
+		gboolean*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_escape_string">
+		
+<h3 id="g_regex_escape_string1">
+	<span><code>g_regex_escape_string</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_regex_escape_string (gchar string,
+                       gint length)</pre>
+
+<p>Escapes the special characters used for regular expressions
+in <em>string</em>, for instance "a.b*c" becomes "a.b*c". This
+function is useful to dynamically generate regular expressions.</p>
+<p><em>string</em> can contain nul characters that are replaced with "\0",
+in this case remember to specify the correct length of <em>string</em>
+in <em>length</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters37">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to escape</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=length]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>string</em>, or -1 if <em>string</em> is nul-terminated</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns27">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated escaped string</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_split_simple">
+		
+<h3 id="g_regex_split_simple1">
+	<span><code>g_regex_split_simple</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+utf8*
+g_regex_split_simple (const gchar* pattern,
+                      const gchar* string,
+                      <a title="GRegexCompileFlags" href="gregex.html#GRegexCompileFlags">GRegexCompileFlags</a> compile_options,
+                      <a title="GRegexMatchFlags" href="gregex.html#GRegexMatchFlags">GRegexMatchFlags</a> match_options)</pre>
+
+<p>Breaks the string on the pattern, and returns an array of
+the tokens. If the pattern contains capturing parentheses,
+then the text for each of the substrings will also be returned.
+If the pattern does not match anywhere in the string, then the
+whole string is returned as the first token.</p>
+<p>This function is equivalent to <a href="gregex.html#g_regex_split">g_regex_split</a> but it does
+not require to compile the pattern with <a href="gregex.html#g_regex_new">g_regex_new</a>, avoiding
+some lines of code when you need just to do a split without
+extracting substrings, capture counts, and so on.</p>
+<p>If this function is to be called on the same <em>pattern</em> more than
+once, it's more efficient to compile the pattern once with
+<a href="gregex.html#g_regex_new">g_regex_new</a> and then use <a href="gregex.html#g_regex_split">g_regex_split</a>.</p>
+<p>As a special case, the result of splitting the empty string ""
+is an empty vector, not a vector containing a single string.
+The reason for this special case is that being able to represent
+a empty vector is typically more useful than consistent handling
+of empty elements. If you do need to represent empty elements,
+you'll need to check for the empty string before calling this
+function.</p>
+<p>A pattern that can match empty strings splits <em>string</em> into
+separate characters wherever it matches the empty string between
+characters. For example splitting "ab c" using as a separator
+"\s*", you will get "a", "b" and "c".</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters38">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pattern:</code></em></i>
+		</p>
+	</td>
+		<td><p>the regular expression</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to scan for matches</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>compile_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>compile options for the regular expression, or 0</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>match options, or 0</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns28">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="macros.html#NULL">NULL</a>-terminated array of strings. Free
+it using <a href="string_utils.html#g_strfreev">g_strfreev</a></p>
+
+	</td>
+	<td>
+		utf8*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_match_simple">
+		
+<h3 id="g_regex_match_simple1">
+	<span><code>g_regex_match_simple</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_regex_match_simple (const gchar* pattern,
+                      const gchar* string,
+                      <a title="GRegexCompileFlags" href="gregex.html#GRegexCompileFlags">GRegexCompileFlags</a> compile_options,
+                      <a title="GRegexMatchFlags" href="gregex.html#GRegexMatchFlags">GRegexMatchFlags</a> match_options)</pre>
+
+<p>Scans for a match in <em>string</em> for <em>pattern</em>.</p>
+<p>This function is equivalent to <a href="gregex.html#g_regex_match">g_regex_match</a> but it does not
+require to compile the pattern with <a href="gregex.html#g_regex_new">g_regex_new</a>, avoiding some
+lines of code when you need just to do a match without extracting
+substrings, capture counts, and so on.</p>
+<p>If this function is to be called on the same <em>pattern</em> more than
+once, it's more efficient to compile the pattern once with
+<a href="gregex.html#g_regex_new">g_regex_new</a> and then use <a href="gregex.html#g_regex_match">g_regex_match</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters39">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pattern:</code></em></i>
+		</p>
+	</td>
+		<td><p>the regular expression</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to scan for matches</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>compile_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>compile options for the regular expression, or 0</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>match options, or 0</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns29">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the string matched, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_regex_error_quark">
+		
+<h3 id="g_regex_error_quark1">
+	<span><code>g_regex_error_quark</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="GQuark" href="quarks.html#GQuark">GQuark</a>
+g_regex_error_quark ()</pre>
+
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns30">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		<a title="GQuark" href="quarks.html#GQuark">GQuark</a>
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="GRegex">
+		
+<h3 id="struct-gregex">
+		struct GRegex
+	</h3>
+
+		<pre class="raw_code">
+struct GRegex {
+};
+</pre>
+
+<p>A GRegex is the "compiled" form of a regular expression pattern.
+This structure is opaque and its fields cannot be accessed directly.</p>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GMatchInfo">
+		
+<h3 id="struct-gmatchinfo">
+		struct GMatchInfo
+	</h3>
+
+		<pre class="raw_code">
+struct GMatchInfo {
+};
+</pre>
+
+<p>A GMatchInfo is an opaque struct used to return information about
+matches.</p>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="GRegexCompileFlags">
+		
+<h3 id="enum-gregexcompileflags">
+		enum GRegexCompileFlags
+	</h3>
+
+		<p>Flags specifying compile-time options.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_CASELESS"></a>
+		G_REGEX_CASELESS
+		</p>
+	</td>
+	<td><p>Letters in the pattern match both upper- and
+lowercase letters. This option can be changed within a pattern
+by a "(?i)" option setting.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MULTILINE"></a>
+		G_REGEX_MULTILINE
+		</p>
+	</td>
+	<td><p>By default, GRegex treats the strings as consisting
+of a single line of characters (even if it actually contains
+newlines). The "start of line" metacharacter ("^") matches only
+at the start of the string, while the "end of line" metacharacter
+("$") matches only at the end of the string, or before a terminating
+newline (unless <a href="gregex.html#G_REGEX_DOLLAR_ENDONLY">G_REGEX_DOLLAR_ENDONLY</a> is set). When
+<a href="gregex.html#G_REGEX_MULTILINE">G_REGEX_MULTILINE</a> is set, the "start of line" and "end of line"
+constructs match immediately following or immediately before any
+newline in the string, respectively, as well as at the very start
+and end. This can be changed within a pattern by a "(?m)" option
+setting.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_DOTALL"></a>
+		G_REGEX_DOTALL
+		</p>
+	</td>
+	<td><p>A dot metacharater (".") in the pattern matches all
+characters, including newlines. Without it, newlines are excluded.
+This option can be changed within a pattern by a ("?s") option setting.</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_EXTENDED"></a>
+		G_REGEX_EXTENDED
+		</p>
+	</td>
+	<td><p>Whitespace data characters in the pattern are
+totally ignored except when escaped or inside a character class.
+Whitespace does not include the VT character (code 11). In addition,
+characters between an unescaped "#" outside a character class and
+the next newline character, inclusive, are also ignored. This can
+be changed within a pattern by a "(?x)" option setting.</p>
+</td>
+	<td>
+		<span class="value">Value: 8</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ANCHORED"></a>
+		G_REGEX_ANCHORED
+		</p>
+	</td>
+	<td><p>The pattern is forced to be "anchored", that is,
+it is constrained to match only at the first matching point in the
+string that is being searched. This effect can also be achieved by
+appropriate constructs in the pattern itself such as the "^"
+metacharater.</p>
+</td>
+	<td>
+		<span class="value">Value: 16</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_DOLLAR_ENDONLY"></a>
+		G_REGEX_DOLLAR_ENDONLY
+		</p>
+	</td>
+	<td><p>A dollar metacharacter ("$") in the pattern
+matches only at the end of the string. Without this option, a
+dollar also matches immediately before the final character if
+it is a newline (but not before any other newlines). This option
+is ignored if <a href="gregex.html#G_REGEX_MULTILINE">G_REGEX_MULTILINE</a> is set.</p>
+</td>
+	<td>
+		<span class="value">Value: 32</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_UNGREEDY"></a>
+		G_REGEX_UNGREEDY
+		</p>
+	</td>
+	<td><p>Inverts the "greediness" of the quantifiers so that
+they are not greedy by default, but become greedy if followed by "?".
+It can also be set by a "(?U)" option setting within the pattern.</p>
+</td>
+	<td>
+		<span class="value">Value: 512</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_RAW"></a>
+		G_REGEX_RAW
+		</p>
+	</td>
+	<td><p>Usually strings must be valid UTF-8 strings, using this
+flag they are considered as a raw sequence of bytes.</p>
+</td>
+	<td>
+		<span class="value">Value: 2048</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_NO_AUTO_CAPTURE"></a>
+		G_REGEX_NO_AUTO_CAPTURE
+		</p>
+	</td>
+	<td><p>Disables the use of numbered capturing
+parentheses in the pattern. Any opening parenthesis that is not
+followed by "?" behaves as if it were followed by "?:" but named
+parentheses can still be used for capturing (and they acquire numbers
+in the usual way).</p>
+</td>
+	<td>
+		<span class="value">Value: 4096</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_OPTIMIZE"></a>
+		G_REGEX_OPTIMIZE
+		</p>
+	</td>
+	<td><p>Optimize the regular expression. If the pattern will
+be used many times, then it may be worth the effort to optimize it
+to improve the speed of matches.</p>
+</td>
+	<td>
+		<span class="value">Value: 8192</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_FIRSTLINE"></a>
+		G_REGEX_FIRSTLINE
+		</p>
+	</td>
+	<td><p>Limits an unanchored pattern to match before (or at) the
+first newline. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 262144</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_DUPNAMES"></a>
+		G_REGEX_DUPNAMES
+		</p>
+	</td>
+	<td><p>Names used to identify capturing subpatterns need not
+be unique. This can be helpful for certain types of pattern when it
+is known that only one instance of the named subpattern can ever be
+matched.</p>
+</td>
+	<td>
+		<span class="value">Value: 524288</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_NEWLINE_CR"></a>
+		G_REGEX_NEWLINE_CR
+		</p>
+	</td>
+	<td><p>Usually any newline character or character sequence is
+recognized. If this option is set, the only recognized newline character
+is '\r'.</p>
+</td>
+	<td>
+		<span class="value">Value: 1048576</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_NEWLINE_LF"></a>
+		G_REGEX_NEWLINE_LF
+		</p>
+	</td>
+	<td><p>Usually any newline character or character sequence is
+recognized. If this option is set, the only recognized newline character
+is '\n'.</p>
+</td>
+	<td>
+		<span class="value">Value: 2097152</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_NEWLINE_CRLF"></a>
+		G_REGEX_NEWLINE_CRLF
+		</p>
+	</td>
+	<td><p>Usually any newline character or character sequence is
+recognized. If this option is set, the only recognized newline character
+sequence is '\r\n'.</p>
+</td>
+	<td>
+		<span class="value">Value: 3145728</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_NEWLINE_ANYCRLF"></a>
+		G_REGEX_NEWLINE_ANYCRLF
+		</p>
+	</td>
+	<td><p>Usually any newline character or character sequence
+is recognized. If this option is set, the only recognized newline character
+sequences are '\r', '\n', and '\r\n'. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 5242880</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_BSR_ANYCRLF"></a>
+		G_REGEX_BSR_ANYCRLF
+		</p>
+	</td>
+	<td><p>Usually any newline character or character sequence
+is recognised. If this option is set, then "\R" only recognizes the newline
+characters '\r', '\n' and '\r\n'. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 8388608</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_JAVASCRIPT_COMPAT"></a>
+		G_REGEX_JAVASCRIPT_COMPAT
+		</p>
+	</td>
+	<td><p>Changes behaviour so that it is compatible with
+JavaScript rather than PCRE. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 33554432</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="GRegexError">
+		
+<h3 id="enum-gregexerror">
+		enum GRegexError
+	</h3>
+
+		<p>Error codes returned by regular expressions functions.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members1">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_COMPILE"></a>
+		G_REGEX_ERROR_COMPILE
+		</p>
+	</td>
+	<td><p>Compilation of the regular expression failed.</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_OPTIMIZE"></a>
+		G_REGEX_ERROR_OPTIMIZE
+		</p>
+	</td>
+	<td><p>Optimization of the regular expression failed.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_REPLACE"></a>
+		G_REGEX_ERROR_REPLACE
+		</p>
+	</td>
+	<td><p>Replacement failed due to an ill-formed replacement
+string.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_MATCH"></a>
+		G_REGEX_ERROR_MATCH
+		</p>
+	</td>
+	<td><p>The match process failed.</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_INTERNAL"></a>
+		G_REGEX_ERROR_INTERNAL
+		</p>
+	</td>
+	<td><p>Internal error of the regular expression engine.
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_STRAY_BACKSLASH"></a>
+		G_REGEX_ERROR_STRAY_BACKSLASH
+		</p>
+	</td>
+	<td><p>"\" at end of pattern. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 101</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_MISSING_CONTROL_CHAR"></a>
+		G_REGEX_ERROR_MISSING_CONTROL_CHAR
+		</p>
+	</td>
+	<td><p>"\c" at end of pattern. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 102</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_UNRECOGNIZED_ESCAPE"></a>
+		G_REGEX_ERROR_UNRECOGNIZED_ESCAPE
+		</p>
+	</td>
+	<td><p>Unrecognized character follows "\".
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 103</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_QUANTIFIERS_OUT_OF_ORDER"></a>
+		G_REGEX_ERROR_QUANTIFIERS_OUT_OF_ORDER
+		</p>
+	</td>
+	<td><p>Numbers out of order in "{}"
+quantifier. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 104</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_QUANTIFIER_TOO_BIG"></a>
+		G_REGEX_ERROR_QUANTIFIER_TOO_BIG
+		</p>
+	</td>
+	<td><p>Number too big in "{}" quantifier.
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 105</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_UNTERMINATED_CHARACTER_CLASS"></a>
+		G_REGEX_ERROR_UNTERMINATED_CHARACTER_CLASS
+		</p>
+	</td>
+	<td><p>Missing terminating "]" for
+character class. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 106</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_INVALID_ESCAPE_IN_CHARACTER_CLASS"></a>
+		G_REGEX_ERROR_INVALID_ESCAPE_IN_CHARACTER_CLASS
+		</p>
+	</td>
+	<td><p>Invalid escape sequence
+in character class. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 107</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_RANGE_OUT_OF_ORDER"></a>
+		G_REGEX_ERROR_RANGE_OUT_OF_ORDER
+		</p>
+	</td>
+	<td><p>Range out of order in character class.
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 108</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_NOTHING_TO_REPEAT"></a>
+		G_REGEX_ERROR_NOTHING_TO_REPEAT
+		</p>
+	</td>
+	<td><p>Nothing to repeat. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 109</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_UNRECOGNIZED_CHARACTER"></a>
+		G_REGEX_ERROR_UNRECOGNIZED_CHARACTER
+		</p>
+	</td>
+	<td><p>Unrecognized character after "(?",
+"(?&lt;" or "(?P". Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 112</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_POSIX_NAMED_CLASS_OUTSIDE_CLASS"></a>
+		G_REGEX_ERROR_POSIX_NAMED_CLASS_OUTSIDE_CLASS
+		</p>
+	</td>
+	<td><p>POSIX named classes are
+supported only within a class. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 113</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_UNMATCHED_PARENTHESIS"></a>
+		G_REGEX_ERROR_UNMATCHED_PARENTHESIS
+		</p>
+	</td>
+	<td><p>Missing terminating ")" or ")"
+without opening "(". Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 114</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_INEXISTENT_SUBPATTERN_REFERENCE"></a>
+		G_REGEX_ERROR_INEXISTENT_SUBPATTERN_REFERENCE
+		</p>
+	</td>
+	<td><p>Reference to non-existent
+subpattern. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 115</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_UNTERMINATED_COMMENT"></a>
+		G_REGEX_ERROR_UNTERMINATED_COMMENT
+		</p>
+	</td>
+	<td><p>Missing terminating ")" after comment.
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 118</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_EXPRESSION_TOO_LARGE"></a>
+		G_REGEX_ERROR_EXPRESSION_TOO_LARGE
+		</p>
+	</td>
+	<td><p>Regular expression too large.
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 120</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_MEMORY_ERROR"></a>
+		G_REGEX_ERROR_MEMORY_ERROR
+		</p>
+	</td>
+	<td><p>Failed to get memory. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 121</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_VARIABLE_LENGTH_LOOKBEHIND"></a>
+		G_REGEX_ERROR_VARIABLE_LENGTH_LOOKBEHIND
+		</p>
+	</td>
+	<td><p>Lookbehind assertion is not
+fixed length. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 125</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_MALFORMED_CONDITION"></a>
+		G_REGEX_ERROR_MALFORMED_CONDITION
+		</p>
+	</td>
+	<td><p>Malformed number or name after "(?(".
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 126</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_TOO_MANY_CONDITIONAL_BRANCHES"></a>
+		G_REGEX_ERROR_TOO_MANY_CONDITIONAL_BRANCHES
+		</p>
+	</td>
+	<td><p>Conditional group contains
+more than two branches. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 127</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_ASSERTION_EXPECTED"></a>
+		G_REGEX_ERROR_ASSERTION_EXPECTED
+		</p>
+	</td>
+	<td><p>Assertion expected after "(?(".
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 128</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_UNKNOWN_POSIX_CLASS_NAME"></a>
+		G_REGEX_ERROR_UNKNOWN_POSIX_CLASS_NAME
+		</p>
+	</td>
+	<td><p>Unknown POSIX class name.
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 130</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_POSIX_COLLATING_ELEMENTS_NOT_SUPPORTED"></a>
+		G_REGEX_ERROR_POSIX_COLLATING_ELEMENTS_NOT_SUPPORTED
+		</p>
+	</td>
+	<td><p>POSIX collating
+elements are not supported. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 131</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_HEX_CODE_TOO_LARGE"></a>
+		G_REGEX_ERROR_HEX_CODE_TOO_LARGE
+		</p>
+	</td>
+	<td><p>Character value in "\x{...}" sequence
+is too large. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 134</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_INVALID_CONDITION"></a>
+		G_REGEX_ERROR_INVALID_CONDITION
+		</p>
+	</td>
+	<td><p>Invalid condition "(?(0)". Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 135</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_SINGLE_BYTE_MATCH_IN_LOOKBEHIND"></a>
+		G_REGEX_ERROR_SINGLE_BYTE_MATCH_IN_LOOKBEHIND
+		</p>
+	</td>
+	<td><p>\C not allowed in
+lookbehind assertion. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 136</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_INFINITE_LOOP"></a>
+		G_REGEX_ERROR_INFINITE_LOOP
+		</p>
+	</td>
+	<td><p>Recursive call could loop indefinitely.
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 140</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_MISSING_SUBPATTERN_NAME_TERMINATOR"></a>
+		G_REGEX_ERROR_MISSING_SUBPATTERN_NAME_TERMINATOR
+		</p>
+	</td>
+	<td><p>Missing terminator
+in subpattern name. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 142</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_DUPLICATE_SUBPATTERN_NAME"></a>
+		G_REGEX_ERROR_DUPLICATE_SUBPATTERN_NAME
+		</p>
+	</td>
+	<td><p>Two named subpatterns have
+the same name. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 143</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_MALFORMED_PROPERTY"></a>
+		G_REGEX_ERROR_MALFORMED_PROPERTY
+		</p>
+	</td>
+	<td><p>Malformed "\P" or "\p" sequence.
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 146</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_UNKNOWN_PROPERTY"></a>
+		G_REGEX_ERROR_UNKNOWN_PROPERTY
+		</p>
+	</td>
+	<td><p>Unknown property name after "\P" or
+"\p". Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 147</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_SUBPATTERN_NAME_TOO_LONG"></a>
+		G_REGEX_ERROR_SUBPATTERN_NAME_TOO_LONG
+		</p>
+	</td>
+	<td><p>Subpattern name is too long
+(maximum 32 characters). Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 148</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_TOO_MANY_SUBPATTERNS"></a>
+		G_REGEX_ERROR_TOO_MANY_SUBPATTERNS
+		</p>
+	</td>
+	<td><p>Too many named subpatterns (maximum
+10,000). Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 149</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_INVALID_OCTAL_VALUE"></a>
+		G_REGEX_ERROR_INVALID_OCTAL_VALUE
+		</p>
+	</td>
+	<td><p>Octal value is greater than "\377".
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 151</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_TOO_MANY_BRANCHES_IN_DEFINE"></a>
+		G_REGEX_ERROR_TOO_MANY_BRANCHES_IN_DEFINE
+		</p>
+	</td>
+	<td><p>"DEFINE" group contains more
+than one branch. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 154</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_DEFINE_REPETION"></a>
+		G_REGEX_ERROR_DEFINE_REPETION
+		</p>
+	</td>
+	<td><p>Repeating a "DEFINE" group is not allowed.
+This error is never raised. Since: 2.16 Deprecated: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 155</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_INCONSISTENT_NEWLINE_OPTIONS"></a>
+		G_REGEX_ERROR_INCONSISTENT_NEWLINE_OPTIONS
+		</p>
+	</td>
+	<td><p>Inconsistent newline options.
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 156</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_MISSING_BACK_REFERENCE"></a>
+		G_REGEX_ERROR_MISSING_BACK_REFERENCE
+		</p>
+	</td>
+	<td><p>"\g" is not followed by a braced,
+angle-bracketed, or quoted name or number, or by a plain number. Since: 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 157</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_INVALID_RELATIVE_REFERENCE"></a>
+		G_REGEX_ERROR_INVALID_RELATIVE_REFERENCE
+		</p>
+	</td>
+	<td><p>relative reference must not be zero. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 158</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_BACKTRACKING_CONTROL_VERB_ARGUMENT_FORBIDDEN"></a>
+		G_REGEX_ERROR_BACKTRACKING_CONTROL_VERB_ARGUMENT_FORBIDDEN
+		</p>
+	</td>
+	<td><p>the backtracing
+control verb used does not allow an argument. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 159</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_UNKNOWN_BACKTRACKING_CONTROL_VERB"></a>
+		G_REGEX_ERROR_UNKNOWN_BACKTRACKING_CONTROL_VERB
+		</p>
+	</td>
+	<td><p>unknown backtracing
+control verb. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 160</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_NUMBER_TOO_BIG"></a>
+		G_REGEX_ERROR_NUMBER_TOO_BIG
+		</p>
+	</td>
+	<td><p>number is too big in escape sequence. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 161</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_MISSING_SUBPATTERN_NAME"></a>
+		G_REGEX_ERROR_MISSING_SUBPATTERN_NAME
+		</p>
+	</td>
+	<td><p>Missing subpattern name. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 162</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_MISSING_DIGIT"></a>
+		G_REGEX_ERROR_MISSING_DIGIT
+		</p>
+	</td>
+	<td><p>Missing digit. Since 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 163</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_INVALID_DATA_CHARACTER"></a>
+		G_REGEX_ERROR_INVALID_DATA_CHARACTER
+		</p>
+	</td>
+	<td><p>In JavaScript compatibility mode,
+"[" is an invalid data character. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 164</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_EXTRA_SUBPATTERN_NAME"></a>
+		G_REGEX_ERROR_EXTRA_SUBPATTERN_NAME
+		</p>
+	</td>
+	<td><p>different names for subpatterns of the
+same number are not allowed. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 165</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_BACKTRACKING_CONTROL_VERB_ARGUMENT_REQUIRED"></a>
+		G_REGEX_ERROR_BACKTRACKING_CONTROL_VERB_ARGUMENT_REQUIRED
+		</p>
+	</td>
+	<td><p>the backtracing control
+verb requires an argument. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 166</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_INVALID_CONTROL_CHAR"></a>
+		G_REGEX_ERROR_INVALID_CONTROL_CHAR
+		</p>
+	</td>
+	<td><p>"\c" must be followed by an ASCII
+character. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 168</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_MISSING_NAME"></a>
+		G_REGEX_ERROR_MISSING_NAME
+		</p>
+	</td>
+	<td><p>"\k" is not followed by a braced, angle-bracketed, or
+quoted name. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 169</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_NOT_SUPPORTED_IN_CLASS"></a>
+		G_REGEX_ERROR_NOT_SUPPORTED_IN_CLASS
+		</p>
+	</td>
+	<td><p>"\N" is not supported in a class. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 171</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_TOO_MANY_FORWARD_REFERENCES"></a>
+		G_REGEX_ERROR_TOO_MANY_FORWARD_REFERENCES
+		</p>
+	</td>
+	<td><p>too many forward references. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 172</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_NAME_TOO_LONG"></a>
+		G_REGEX_ERROR_NAME_TOO_LONG
+		</p>
+	</td>
+	<td><p>the name is too long in "(*MARK)", "(*PRUNE)",
+"(*SKIP)", or "(*THEN)". Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 175</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_CHARACTER_VALUE_TOO_LARGE"></a>
+		G_REGEX_ERROR_CHARACTER_VALUE_TOO_LARGE
+		</p>
+	</td>
+	<td><p>the character value in the \u sequence is
+too large. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 176</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="GRegexMatchFlags">
+		
+<h3 id="enum-gregexmatchflags">
+		enum GRegexMatchFlags
+	</h3>
+
+		<p>Flags specifying match-time options.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members2">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_ANCHORED"></a>
+		G_REGEX_MATCH_ANCHORED
+		</p>
+	</td>
+	<td><p>The pattern is forced to be "anchored", that is,
+it is constrained to match only at the first matching point in the
+string that is being searched. This effect can also be achieved by
+appropriate constructs in the pattern itself such as the "^"
+metacharater.</p>
+</td>
+	<td>
+		<span class="value">Value: 16</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_NOTBOL"></a>
+		G_REGEX_MATCH_NOTBOL
+		</p>
+	</td>
+	<td><p>Specifies that first character of the string is
+not the beginning of a line, so the circumflex metacharacter should
+not match before it. Setting this without <a href="gregex.html#G_REGEX_MULTILINE">G_REGEX_MULTILINE</a> (at
+compile time) causes circumflex never to match. This option affects
+only the behaviour of the circumflex metacharacter, it does not
+affect "\A".</p>
+</td>
+	<td>
+		<span class="value">Value: 128</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_NOTEOL"></a>
+		G_REGEX_MATCH_NOTEOL
+		</p>
+	</td>
+	<td><p>Specifies that the end of the subject string is
+not the end of a line, so the dollar metacharacter should not match
+it nor (except in multiline mode) a newline immediately before it.
+Setting this without <a href="gregex.html#G_REGEX_MULTILINE">G_REGEX_MULTILINE</a> (at compile time) causes
+dollar never to match. This option affects only the behaviour of
+the dollar metacharacter, it does not affect "\Z" or "\z".</p>
+</td>
+	<td>
+		<span class="value">Value: 256</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_NOTEMPTY"></a>
+		G_REGEX_MATCH_NOTEMPTY
+		</p>
+	</td>
+	<td><p>An empty string is not considered to be a valid
+match if this option is set. If there are alternatives in the pattern,
+they are tried. If all the alternatives match the empty string, the
+entire match fails. For example, if the pattern "a?b?" is applied to
+a string not beginning with "a" or "b", it matches the empty string
+at the start of the string. With this flag set, this match is not
+valid, so GRegex searches further into the string for occurrences
+of "a" or "b".</p>
+</td>
+	<td>
+		<span class="value">Value: 1024</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_PARTIAL"></a>
+		G_REGEX_MATCH_PARTIAL
+		</p>
+	</td>
+	<td><p>Turns on the partial matching feature, for more
+documentation on partial matching see <a href="gregex.html#g_match_info_is_partial_match">g_match_info_is_partial_match</a>.</p>
+</td>
+	<td>
+		<span class="value">Value: 32768</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_NEWLINE_CR"></a>
+		G_REGEX_MATCH_NEWLINE_CR
+		</p>
+	</td>
+	<td><p>Overrides the newline definition set when
+creating a new <a href="gregex.html#GRegex">GRegex</a>, setting the '\r' character as line terminator.</p>
+</td>
+	<td>
+		<span class="value">Value: 1048576</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_NEWLINE_LF"></a>
+		G_REGEX_MATCH_NEWLINE_LF
+		</p>
+	</td>
+	<td><p>Overrides the newline definition set when
+creating a new <a href="gregex.html#GRegex">GRegex</a>, setting the '\n' character as line terminator.</p>
+</td>
+	<td>
+		<span class="value">Value: 2097152</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_NEWLINE_CRLF"></a>
+		G_REGEX_MATCH_NEWLINE_CRLF
+		</p>
+	</td>
+	<td><p>Overrides the newline definition set when
+creating a new <a href="gregex.html#GRegex">GRegex</a>, setting the '\r\n' characters sequence as line terminator.</p>
+</td>
+	<td>
+		<span class="value">Value: 3145728</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_NEWLINE_ANY"></a>
+		G_REGEX_MATCH_NEWLINE_ANY
+		</p>
+	</td>
+	<td><p>Overrides the newline definition set when
+creating a new <a href="gregex.html#GRegex">GRegex</a>, any Unicode newline sequence
+is recognised as a newline. These are '\r', '\n' and '\rn', and the
+single characters U+000B LINE TABULATION, U+000C FORM FEED (FF),
+U+0085 NEXT LINE (NEL), U+2028 LINE SEPARATOR and
+U+2029 PARAGRAPH SEPARATOR.</p>
+</td>
+	<td>
+		<span class="value">Value: 4194304</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_NEWLINE_ANYCRLF"></a>
+		G_REGEX_MATCH_NEWLINE_ANYCRLF
+		</p>
+	</td>
+	<td><p>Overrides the newline definition set when
+creating a new <a href="gregex.html#GRegex">GRegex</a>; any '\r', '\n', or '\r\n' character sequence
+is recognized as a newline. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 5242880</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_BSR_ANYCRLF"></a>
+		G_REGEX_MATCH_BSR_ANYCRLF
+		</p>
+	</td>
+	<td><p>Overrides the newline definition for "\R" set when
+creating a new <a href="gregex.html#GRegex">GRegex</a>; only '\r', '\n', or '\r\n' character sequences
+are recognized as a newline by "\R". Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 8388608</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_BSR_ANY"></a>
+		G_REGEX_MATCH_BSR_ANY
+		</p>
+	</td>
+	<td><p>Overrides the newline definition for "\R" set when
+creating a new <a href="gregex.html#GRegex">GRegex</a>; any Unicode newline character or character sequence
+are recognized as a newline by "\R". These are '\r', '\n' and '\rn', and the
+single characters U+000B LINE TABULATION, U+000C FORM FEED (FF),
+U+0085 NEXT LINE (NEL), U+2028 LINE SEPARATOR and
+U+2029 PARAGRAPH SEPARATOR. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 16777216</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_PARTIAL_SOFT"></a>
+		G_REGEX_MATCH_PARTIAL_SOFT
+		</p>
+	</td>
+	<td><p>An alias for <a href="gregex.html#G_REGEX_MATCH_PARTIAL">G_REGEX_MATCH_PARTIAL</a>. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 32768</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_PARTIAL_HARD"></a>
+		G_REGEX_MATCH_PARTIAL_HARD
+		</p>
+	</td>
+	<td><p>Turns on the partial matching feature. In contrast to
+to <a href="gregex.html#G_REGEX_MATCH_PARTIAL_SOFT">G_REGEX_MATCH_PARTIAL_SOFT</a>, this stops matching as soon as a partial match
+is found, without continuing to search for a possible complete match. See
+<a href="gregex.html#g_match_info_is_partial_match">g_match_info_is_partial_match</a> for more information. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 134217728</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_NOTEMPTY_ATSTART"></a>
+		G_REGEX_MATCH_NOTEMPTY_ATSTART
+		</p>
+	</td>
+	<td><p>Like <a href="gregex.html#G_REGEX_MATCH_NOTEMPTY">G_REGEX_MATCH_NOTEMPTY</a>, but only applied to
+the start of the matched string. For anchored
+patterns this can only happen for pattern containing "\K". Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 268435456</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_REGEX_ERROR">
+		
+<h3 class="constant" id="g_regex_error">
+	G_REGEX_ERROR
+</h3>
+
+		<pre class="raw_code">
+#define G_REGEX_ERROR g_regex_error_quark ()
+</pre>
+
+<p>Error domain for regular expressions. Errors in this domain will be
+from the <a href="gregex.html#GRegexError">GRegexError</a> enumeration. See <a href="error_reporting.html#GError">GError</a> for information on
+error domains.</p>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="GRegexEvalCallback">
+		
+<h3 id="gregexevalcallback">
+	<span><code>GRegexEvalCallback</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+(*GRegexEvalCallback) (const <a title="GMatchInfo" href="gregex.html#GMatchInfo">GMatchInfo</a> * match_info,
+                       <a title="GString" href="strings.html#GString">GString</a> * result,
+                       gpointer user_data)</pre>
+
+<p>Specifies the type of the function passed to <a href="gregex.html#g_regex_replace_eval">g_regex_replace_eval</a>.
+It is called for each occurrence of the pattern in the string passed
+to <a href="gregex.html#g_regex_replace_eval">g_regex_replace_eval</a>, and it should append the replacement to
+<em>result</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters40">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="gregex.html#GMatchInfo">GMatchInfo</a> generated by the match.
+Use <a href="gregex.html#g_match_info_get_regex">g_match_info_get_regex</a> and <a href="gregex.html#g_match_info_get_string">g_match_info_get_string</a> if you
+need the <a href="gregex.html#GRegex">GRegex</a> or the matched string.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>result:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GString</a> containing the new string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="gregex.html#g_regex_replace_eval">g_regex_replace_eval</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns31">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#FALSE">FALSE</a> to continue the replacement process, <a href="macros.html#TRUE">TRUE</a> to stop it</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

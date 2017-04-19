@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#g_io_channel_get_line_term1", "fragment": "g_io_channel_get_line_term \nThis returns the string that GIOChannel uses to determine where in the file a line break occurs. A value of NULL indicates autodetection. \n"});

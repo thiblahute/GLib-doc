@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gunix.html#parameters4", "fragment": "fd \na file descriptor \ncondition \nIO conditions to watch for on fd \nfunction \na GPollFDFunc \nuser_data \ndata to pass to function \n"});

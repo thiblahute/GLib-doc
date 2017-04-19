@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/string_utils.html#glibprototypestrsignal", "fragment": "GLib.prototype.strsignal \nReturns a string describing the given signal e.g. Segmentation fault You should use this function in preference to strsignal because it returns a string in UTF encoding and since not all platforms support the strsignal function. \n"});

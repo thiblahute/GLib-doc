@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/testing.html#glibprototypetest_get_dir", "fragment": "GLib.prototype.test_get_dir \nGets the pathname of the directory containing test files of the type specified by file_type. \nThis is approximately the same as calling g_test_build_filename but you don t need to free the return value. \n"});

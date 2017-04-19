@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/datasets.html#glibdataset_id_get_data", "fragment": "GLib.dataset_id_get_data \nGets the data element corresponding to a GLib.Quark. \n"});

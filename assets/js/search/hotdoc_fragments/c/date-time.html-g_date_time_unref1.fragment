@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date-time.html#g_date_time_unref1", "fragment": "g_date_time_unref \nAtomically decrements the reference count of datetime by one. \nWhen the reference count reaches zero the resources allocated by datetime are freed \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/macros.html#g_struct_member", "fragment": "G_STRUCT_MEMBER \nReturns a member of a structure at a given offset using the given type. \n"});

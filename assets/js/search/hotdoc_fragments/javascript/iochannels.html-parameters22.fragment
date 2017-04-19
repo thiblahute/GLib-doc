@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/iochannels.html#parameters22", "fragment": "channel \na GLib.IOChannel \ncount \nthe size of the buffer. Note that the buffer may not be complelely filled even if there is data in the buffer if the remaining data is not a complete character. \n"});

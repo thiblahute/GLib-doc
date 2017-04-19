@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/async_queues.html#g_async_queue_unref_and_unlock", "fragment": "g_async_queue_unref_and_unlock \nDecreases the reference count of the asynchronous queue by and releases the lock. This function must be called while holding the queue s lock. If the reference count went to the queue will be destroyed and the memory allocated will be freed. \n"});

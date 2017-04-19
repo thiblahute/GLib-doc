@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/option.html#returns7", "fragment": "\na newly created GOptionContext which must be freed with g_option_context_free after use. \nSince \n"});

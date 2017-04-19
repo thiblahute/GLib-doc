@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvarianttype.html#g_variant_type_get_string_length", "fragment": "GLib.VariantType.get_string_length \nReturns the length of the type string corresponding to the given type. This function must be used to determine the valid extent of the memory region returned by g_variant_type_peek_string not introspectable \n"});

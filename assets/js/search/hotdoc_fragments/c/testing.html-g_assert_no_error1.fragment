@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/testing.html#g_assert_no_error1", "fragment": "g_assert_no_error \nDebugging macro to check that a GError is not set. \nThe effect of g_assert_no_error err is the same as g_assert_true err NULL The advantage of this macro is that it can produce a message that includes the error message and code. \n"});

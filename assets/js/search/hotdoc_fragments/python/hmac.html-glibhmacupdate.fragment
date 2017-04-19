@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hmac.html#glibhmacupdate", "fragment": "GLib.Hmac.update \nFeeds data into an existing GLib.Hmac. \nThe HMAC must still be open that is GLib.Hmac.get_string or GLib.Hmac.get_digest must not have been called on hmac. \n"});

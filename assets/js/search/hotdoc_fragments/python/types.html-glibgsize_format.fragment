@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/types.html#glibgsize_format", "fragment": "GLib.GSIZE_FORMAT \nThis is the platform dependent conversion specifier for scanning and printing values of type gsize. See also GLib.GINT16_FORMAT. \n"});

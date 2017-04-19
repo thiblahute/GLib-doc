@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/testing.html#glibprototypetest_subprocess", "fragment": "GLib.prototype.test_subprocess \nReturns true after g_test_init not introspectable has been called if the test program is running under GLib.prototype.test_trap_subprocess. \n"});

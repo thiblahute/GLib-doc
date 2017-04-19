@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvarianttype.html#g_variant_type_hash1", "fragment": "g_variant_type_hash \nHashes type. \nThe argument type of type is only gconstpointer to allow use with GHashTable without function pointer casting. A valid GVariantType must be provided. \n"});

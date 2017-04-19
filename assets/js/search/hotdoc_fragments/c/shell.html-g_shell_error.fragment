@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/shell.html#g_shell_error", "fragment": "G_SHELL_ERROR \nError domain for shell functions. Errors in this domain will be from the GShellError enumeration. See GError for information on error domains. \n"});

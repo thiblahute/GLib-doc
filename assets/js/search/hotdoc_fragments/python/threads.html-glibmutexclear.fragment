@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/threads.html#glibmutexclear", "fragment": "GLib.Mutex.clear \nFrees the resources allocated to a mutex with GLib.Mutex.init. \nThis function should not be used with a GMutex that has been statically allocated. \nCalling GLib.Mutex.clear on a locked mutex leads to undefined behaviour. \nSine \n"});

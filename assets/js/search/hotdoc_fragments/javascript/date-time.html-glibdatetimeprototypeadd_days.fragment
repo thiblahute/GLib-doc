@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date-time.html#glibdatetimeprototypeadd_days", "fragment": "GLib.DateTime.prototype.add_days \nCreates a copy of datetime and adds the specified number of days to the copy. Add negative values to subtract days. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#g_rec_mutex_unlock1", "fragment": "g_rec_mutex_unlock \nUnlocks rec_mutex. If another thread is blocked in a g_rec_mutex_lock call for rec_mutex it will become unblocked and can lock rec_mutex itself. \nCalling g_rec_mutex_unlock on a recursive mutex that is not locked by the current thread leads to undefined behaviour. \n"});

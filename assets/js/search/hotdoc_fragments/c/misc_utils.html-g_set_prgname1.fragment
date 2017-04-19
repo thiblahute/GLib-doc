@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/misc_utils.html#g_set_prgname1", "fragment": "g_set_prgname \nSets the name of the program. This name should not be localized in contrast to g_set_application_name. \nNote that for thread safety reasons this function can only be called once. \n"});

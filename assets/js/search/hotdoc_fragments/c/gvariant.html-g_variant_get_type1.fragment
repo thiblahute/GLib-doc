@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_get_type1", "fragment": "g_variant_get_type \nDetermines the type of value. \nThe return value is valid for the lifetime of value and must not be freed. \n"});

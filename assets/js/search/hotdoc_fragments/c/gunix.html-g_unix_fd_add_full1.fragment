@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gunix.html#g_unix_fd_add_full1", "fragment": "g_unix_fd_add_full \nSets a function to be called when the IO condition as specified by condition becomes true for fd. \nThis is the same as g_unix_fd_add except that it allows you to specify a non default priority and a provide a GDestroyNotify for user_data. \n"});

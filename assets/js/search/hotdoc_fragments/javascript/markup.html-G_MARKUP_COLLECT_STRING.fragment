@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/markup.html#G_MARKUP_COLLECT_STRING", "fragment": "collect the string pointer directly from the attribute_values array. Expects a parameter of type const char If GLib.MarkupCollectType.prototype.optional is specified and the attribute isn t present then the pointer will be set to null \nGLib.MarkupCollectType.prototype.strdup \n"});

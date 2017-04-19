@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#parameters27", "fragment": "format_string \na string that is prefixed with a format string \nendptr \nlocation to store the end pointer or NULL \napp \na pointer to a va_list \n"});

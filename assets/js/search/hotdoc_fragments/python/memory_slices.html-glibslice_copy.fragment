@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/memory_slices.html#glibslice_copy", "fragment": "GLib.slice_copy \nAllocates a block of memory from the slice allocator and copies block_size bytes into it from mem_block. \nmem_block must be non NULL if block_size is non zero. \n"});

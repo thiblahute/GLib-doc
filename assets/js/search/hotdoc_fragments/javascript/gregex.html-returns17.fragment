@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gregex.html#returns17", "fragment": "\na null terminated array of gchar pointers. It must be freed using GLib.prototype.strfreev. If the previous match failed null is returned \nSince \n"});

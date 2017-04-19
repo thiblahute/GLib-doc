@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/option.html#g_option_group_set_error_hook", "fragment": "g_option_group_set_error_hook \nAssociates a function with group which will be called from g_option_context_parse when an error occurs. \nNote that the user data to be passed to error_func can be specified when constructing the group with g_option_group_new. \n"});

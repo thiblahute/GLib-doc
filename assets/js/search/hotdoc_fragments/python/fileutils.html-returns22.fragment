@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/fileutils.html#returns22", "fragment": "\nA pointer to tmpl which has been modified to hold the directory name. In case of errors None is returned and errno will be set. \nSince \n"});

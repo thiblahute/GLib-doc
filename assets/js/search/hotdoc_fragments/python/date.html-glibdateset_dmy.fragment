@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdateset_dmy", "fragment": "GLib.Date.set_dmy \nSets the value of a GLib.Date from a day month and year. The day month year triplet must be valid if you aren t sure it is call GLib.date_valid_dmy to check before you set it. \n"});

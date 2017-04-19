@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/string_utils.html#glibstrcmp0", "fragment": "GLib.strcmp0 \nCompares str1 and str2 like strcmp. Handles None gracefully by sorting it before non NULL strings. Comparing two None pointers returns \n"});

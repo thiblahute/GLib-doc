@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays.html#g_array_index1", "fragment": "g_array_index \nReturns the element of a GArray at the given index. The return value is cast to the given type. \nThis example gets a pointer to an element in a GArray \n"});

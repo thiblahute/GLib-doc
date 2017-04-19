@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/option.html#G_OPTION_FLAG_FILENAME", "fragment": "For options of the GLib.OptionArg.callback kind this flag indicates that the argument should be passed to the callback in the GLib filename encoding rather than UTF Since \nGLib.OptionFlags.optional_arg \n"});

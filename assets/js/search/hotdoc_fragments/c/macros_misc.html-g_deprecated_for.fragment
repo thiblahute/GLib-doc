@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/macros_misc.html#g_deprecated_for", "fragment": "G_DEPRECATED_FOR \nThis macro is similar to G_GNUC_DEPRECATED_FOR and can be used to mark functions declarations as deprecated. Unlike G_GNUC_DEPRECATED_FOR it is meant to be portable across different compilers and must be placed before the function declaration. \n"});

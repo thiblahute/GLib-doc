@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/markup.html#parameters", "fragment": "parser \na GMarkupParser \nflags \none or more GMarkupParseFlags \nuser_data \nuser data to pass to GMarkupParser functions \nuser_data_dnotify \nuser data destroy notifier called when the parse context is freed \n"});

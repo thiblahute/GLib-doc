@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/trees-binary.html#g_tree_steal1", "fragment": "g_tree_steal \nRemoves a key and its associated value from a GTree without calling the key and value destroy functions. \nIf the key does not exist in the GTree the function does nothing. \n"});

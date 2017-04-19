@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/keyfile.html#parameters29", "fragment": "key_file \nan empty GLib.KeyFile struct \ndata \nkey file loaded in memory \nlength \nthe length of data in bytes or gsize if data is nul terminated \nflags \nflags from GLib.KeyFileFlags \n"});

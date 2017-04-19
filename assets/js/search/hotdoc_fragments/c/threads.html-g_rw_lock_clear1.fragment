@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#g_rw_lock_clear1", "fragment": "g_rw_lock_clear \nFrees the resources allocated to a lock with g_rw_lock_init. \nThis function should not be used with a GRWLock that has been statically allocated. \nCalling g_rw_lock_clear when any thread holds the lock leads to undefined behaviour. \nSine \n"});

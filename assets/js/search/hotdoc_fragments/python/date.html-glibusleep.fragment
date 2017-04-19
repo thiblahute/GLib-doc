@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibusleep", "fragment": "GLib.usleep \nPauses the current thread for the given number of microseconds. \nThere are million microseconds per second represented by the GLib.USEC_PER_SEC macro GLib.usleep may have limited precision depending on hardware and operating system don t rely on the exact length of the sleep. \n"});

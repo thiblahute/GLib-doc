@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvariant.html#g_variant_dup_string", "fragment": "GLib.Variant.prototype.dup_string \nSimilar to GLib.Variant.prototype.get_string except that instead of returning a constant string the string is duplicated. \nThe string will always be UTF encoded. \nThe return value must be freed using GLib.prototype.free. \n"});

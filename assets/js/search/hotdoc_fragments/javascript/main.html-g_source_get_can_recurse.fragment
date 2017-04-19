@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#g_source_get_can_recurse", "fragment": "GLib.Source.prototype.get_can_recurse \nChecks whether a source is allowed to be called recursively. see GLib.Source.prototype.set_can_recurse. \n"});

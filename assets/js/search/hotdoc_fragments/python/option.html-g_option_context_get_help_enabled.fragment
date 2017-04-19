@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/option.html#g_option_context_get_help_enabled", "fragment": "GLib.OptionContext.get_help_enabled \nReturns whether automatic help generation is turned on for context. See GLib.OptionContext.set_help_enabled. \n"});

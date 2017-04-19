@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/unicode.html#g_utf8_substring1", "fragment": "g_utf8_substring \nCopies a substring out of a UTF encoded string. The substring will contain end_pos start_pos characters. \n"});

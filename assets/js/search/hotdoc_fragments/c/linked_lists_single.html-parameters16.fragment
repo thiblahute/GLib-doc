@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/linked_lists_single.html#parameters16", "fragment": "list \na GSList \ndata \nthe data for the new element \nfunc \nthe function to compare elements in the list. It should return a number if the first parameter comes after the second parameter in the sort order. \n"});

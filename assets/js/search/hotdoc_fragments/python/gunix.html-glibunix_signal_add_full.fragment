@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gunix.html#glibunix_signal_add_full", "fragment": "GLib.unix_signal_add_full \nA convenience function for GLib.unix_signal_source_new which attaches to the default GLib.MainContext. You can remove the watch using GLib.source_remove. \n"});

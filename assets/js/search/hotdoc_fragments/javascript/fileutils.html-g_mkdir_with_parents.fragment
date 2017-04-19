@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/fileutils.html#g_mkdir_with_parents", "fragment": "GLib.prototype.mkdir_with_parents \nCreate a directory if it doesn t already exist. Create intermediate parent directories as needed too. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date-time.html#glibdatetimeprototypeget_year", "fragment": "GLib.DateTime.prototype.get_year \nRetrieves the year represented by datetime in the Gregorian calendar. \n"});

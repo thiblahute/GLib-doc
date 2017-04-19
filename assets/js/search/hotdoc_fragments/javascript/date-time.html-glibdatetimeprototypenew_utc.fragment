@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date-time.html#glibdatetimeprototypenew_utc", "fragment": "GLib.DateTime.prototype.new_utc \nCreates a new GLib.DateTime corresponding to the given date and time in UTC. \nThis call is equivalent to calling GLib.DateTime.prototype.new with the time zone returned by GLib.TimeZone.prototype.new_utc. \n"});

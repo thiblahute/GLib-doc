@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/keyfile.html#glibkeyfilenew", "fragment": "GLib.KeyFile.new \nCreates a new empty GLib.KeyFile object. Use GLib.KeyFile.load_from_file GLib.KeyFile.load_from_data GLib.KeyFile.load_from_dirs or GLib.KeyFile.load_from_data_dirs to read an existing key file. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/arrays_byte.html#glibbytesprototypenew", "fragment": "GLib.Bytes.prototype.new \nCreates a new GLib.Bytes from data. \ndata is copied. If size is data may be null. \n"});

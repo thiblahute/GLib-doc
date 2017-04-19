@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#g_date_is_first_of_month", "fragment": "GLib.Date.prototype.is_first_of_month \nReturns true if the date is on the first of a month. The date must be valid. \n"});

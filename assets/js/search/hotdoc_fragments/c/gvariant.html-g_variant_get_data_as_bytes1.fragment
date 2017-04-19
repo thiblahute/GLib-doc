@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_get_data_as_bytes1", "fragment": "g_variant_get_data_as_bytes \nReturns a pointer to the serialised form of a GVariant instance. The semantics of this function are exactly the same as g_variant_get_data except that the returned GBytes holds a reference to the variant data. \n"});

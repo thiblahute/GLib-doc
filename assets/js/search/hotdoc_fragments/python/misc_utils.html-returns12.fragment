@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/misc_utils.html#returns12", "fragment": "\nthe value of the environment variable or None if the environment variable is not set in envp. The returned string is owned by envp and will be freed if variable is set or unset again. \nSince \n"});

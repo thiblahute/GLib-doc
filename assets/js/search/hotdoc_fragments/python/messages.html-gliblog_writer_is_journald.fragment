@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/messages.html#gliblog_writer_is_journald", "fragment": "GLib.log_writer_is_journald \nCheck whether the given output_fd file descriptor is a connection to the systemd journal or something else like a log file or stdout or stderr \n"});

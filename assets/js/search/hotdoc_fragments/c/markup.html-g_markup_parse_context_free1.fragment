@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/markup.html#g_markup_parse_context_free1", "fragment": "g_markup_parse_context_free \nFrees a GMarkupParseContext. \nThis function can t be called from inside one of the GMarkupParser functions or while a subparser is pushed. \n"});

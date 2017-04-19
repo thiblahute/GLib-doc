@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gurifuncs.html#returns1", "fragment": "\nan unescaped version of escaped_string or None on error. The returned string should be freed when no longer needed. As a special case if None is given for escaped_string this function will return None. \nSince \n"});

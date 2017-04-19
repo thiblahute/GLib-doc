@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gregex.html#g_match_info_get_regex", "fragment": "GLib.MatchInfo.prototype.get_regex \nReturns GLib.Regex object used in match_info. It belongs to Glib and must not be freed. Use GLib.Regex.prototype.ref if you need to keep it after you free match_info object. \n"});

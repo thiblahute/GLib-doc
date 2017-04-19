@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/byte_order.html#guint16_swap_le_pdp", "fragment": "GUINT16_SWAP_LE_PDP \nConverts a guint16 value between little endian and pdp endian byte order. The conversion is symmetric so it can be used both ways. \n"});

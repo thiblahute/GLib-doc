@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#g_main_current_source", "fragment": "GLib.prototype.main_current_source \nReturns the currently firing source for this thread. \n"});

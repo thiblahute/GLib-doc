@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdate_valid_dmy", "fragment": "GLib.date_valid_dmy \nReturns True if the day month year triplet forms a valid existing day in the range of days GLib.Date understands Year or later no more than a few thousand years in the future \n"});

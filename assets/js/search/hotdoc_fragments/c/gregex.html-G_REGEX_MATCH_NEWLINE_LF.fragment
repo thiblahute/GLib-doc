@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gregex.html#G_REGEX_MATCH_NEWLINE_LF", "fragment": "Overrides the newline definition set when creating a new GRegex setting the n character as line terminator. \nG_REGEX_MATCH_NEWLINE_CRLF \n"});

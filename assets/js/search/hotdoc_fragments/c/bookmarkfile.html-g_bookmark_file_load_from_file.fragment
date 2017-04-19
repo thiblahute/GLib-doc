@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/bookmarkfile.html#g_bookmark_file_load_from_file", "fragment": "g_bookmark_file_load_from_file \nLoads a desktop bookmark file into an empty GBookmarkFile structure. If the file could not be loaded then error is set to either a GFileError or GBookmarkFileError. \n"});

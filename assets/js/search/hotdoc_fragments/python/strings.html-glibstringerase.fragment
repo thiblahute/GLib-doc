@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/strings.html#glibstringerase", "fragment": "GLib.String.erase \nRemoves len bytes from a GLib.String starting at position pos. The rest of the GLib.String is shifted down to fill the gap. \n"});

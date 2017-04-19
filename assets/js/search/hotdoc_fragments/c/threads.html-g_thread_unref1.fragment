@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#g_thread_unref1", "fragment": "g_thread_unref \nDecrease the reference count on thread possibly freeing all resources associated with it. \nNote that each thread holds a reference to its GThread while it is running so it is safe to drop your own reference to it if you don t need it anymore. \n"});

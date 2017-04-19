@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_utils.html#g_strstrip1", "fragment": "g_strstrip \nRemoves leading and trailing whitespace from a string. See g_strchomp and g_strchug. \n"});

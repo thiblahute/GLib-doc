@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/macros_misc.html#g_gnuc_check_version", "fragment": "G_GNUC_CHECK_VERSION \nExpands to a a check for a compiler with GNUC defined and a version greater than or equal to the major and minor numbers provided. For example the following would only match on compilers such as GCC or newer. \n"});

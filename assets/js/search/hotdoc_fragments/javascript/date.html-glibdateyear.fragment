@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#glibdateyear", "fragment": "GLib.DateYear \nInteger representing a year GLib.DATE_BAD_YEAR is the invalid value. The year must be or higher negative BC years are not allowed. The year is represented with four digits. \n"});

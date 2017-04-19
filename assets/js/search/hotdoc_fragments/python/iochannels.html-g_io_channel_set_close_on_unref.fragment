@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#g_io_channel_set_close_on_unref", "fragment": "GLib.IOChannel.set_close_on_unref \nSetting this flag to True for a channel you have already closed can cause problems. \n"});

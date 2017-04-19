@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date-time.html#parameters5", "fragment": "tz \na GTimeZone \nyear \nthe year component of the date \nmonth \nthe month component of the date \nday \nthe day component of the date \nhour \nthe hour component of the date \nminute \nthe minute component of the date \nseconds \nthe number of seconds past the minute \n"});

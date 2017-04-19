@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvariant.html#glibvariantiterprototypefree", "fragment": "GLib.VariantIter.prototype.free \nFrees a heap allocated GVariantIter not introspectable Only call this function on iterators that were returned by g_variant_iter_new not introspectable or g_variant_iter_copy not introspectable \n"});

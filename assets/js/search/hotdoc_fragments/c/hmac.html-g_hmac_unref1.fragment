@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hmac.html#g_hmac_unref1", "fragment": "g_hmac_unref \nAtomically decrements the reference count of hmac by one. \nIf the reference count drops to all keys and values will be destroyed and all memory allocated by the hash table is released. This function is MT safe and may be called from any thread. Frees the memory allocated for hmac. \n"});

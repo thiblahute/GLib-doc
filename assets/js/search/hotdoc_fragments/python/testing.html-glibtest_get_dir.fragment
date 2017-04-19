@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/testing.html#glibtest_get_dir", "fragment": "GLib.test_get_dir \nGets the pathname of the directory containing test files of the type specified by file_type. \nThis is approximately the same as calling g_test_build_filename but you don t need to free the return value. \n"});

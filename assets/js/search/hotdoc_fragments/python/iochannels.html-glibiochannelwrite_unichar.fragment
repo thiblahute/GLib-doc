@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#glibiochannelwrite_unichar", "fragment": "GLib.IOChannel.write_unichar \nWrites a Unicode character to channel. This function cannot be called on a channel with None encoding. \n"});

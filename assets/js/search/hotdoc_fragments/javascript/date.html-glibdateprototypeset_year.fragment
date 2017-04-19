@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#glibdateprototypeset_year", "fragment": "GLib.Date.prototype.set_year \nSets the year for a GLib.Date. If the resulting day month year triplet is invalid the date will be invalid. \n"});

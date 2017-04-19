@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/patterns.html#g_pattern_spec_equal1", "fragment": "g_pattern_spec_equal \nCompares two compiled pattern specs and returns whether they will match the same set of strings. \n"});

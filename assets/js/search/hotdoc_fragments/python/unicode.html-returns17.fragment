@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#returns17", "fragment": "\nIf c is a decimal digit according to GLib.unichar_isdigit its numeric value. Otherwise \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/messages.html#g_log_remove_handler", "fragment": "GLib.prototype.log_remove_handler \nRemoves the log handler. \nThis has no effect if structured logging is enabled see Using Structured Logging using structured logging \n"});

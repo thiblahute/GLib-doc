@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvarianttype.html#glibvarianttypeprototypevalue", "fragment": "GLib.VariantType.prototype.value \nDetermines the value type of a dictionary entry type. \nThis function may only be used with a dictionary entry type. \n"});

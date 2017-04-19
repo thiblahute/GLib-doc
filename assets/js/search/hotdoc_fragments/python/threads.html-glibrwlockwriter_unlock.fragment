@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/threads.html#glibrwlockwriter_unlock", "fragment": "GLib.RWLock.writer_unlock \nRelease a write lock on rw_lock. \nCalling GLib.RWLock.writer_unlock on a lock that is not held by the current thread leads to undefined behaviour. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#glibunichar_ispunct", "fragment": "GLib.unichar_ispunct \nDetermines whether a character is punctuation or a symbol. Given some UTF text obtain a character value with GLib.utf8_get_char. \n"});

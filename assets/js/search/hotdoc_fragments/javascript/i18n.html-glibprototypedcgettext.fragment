@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/i18n.html#glibprototypedcgettext", "fragment": "GLib.prototype.dcgettext \nThis is a variant of GLib.prototype.dgettext that allows specifying a locale category instead of always using LC_MESSAGES. See GLib.prototype.dgettext for more information about how this functions differs from calling dcgettext directly. \n"});

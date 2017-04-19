@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gregex.html#G_REGEX_NO_AUTO_CAPTURE", "fragment": "Disables the use of numbered capturing parentheses in the pattern. Any opening parenthesis that is not followed by behaves as if it were followed by but named parentheses can still be used for capturing and they acquire numbers in the usual way \nG_REGEX_OPTIMIZE \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/fileutils.html#returns16", "fragment": "\nA file handle as from open to the file opened for reading and writing. The file is opened in binary mode on platforms where there is a difference. The file handle should be closed with close. In case of errors is returned and errno will be set. \n"});

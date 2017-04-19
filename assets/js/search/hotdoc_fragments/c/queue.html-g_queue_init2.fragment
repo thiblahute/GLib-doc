@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/queue.html#g_queue_init2", "fragment": "G_QUEUE_INIT \nA statically allocated GQueue must be initialized with this macro before it can be used. This macro can be used to initialize a variable but it cannot be assigned to a variable. In that case you have to use g_queue_init. \n"});

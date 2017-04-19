@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/misc_utils.html#glibbuild_filenamev", "fragment": "GLib.build_filenamev \nBehaves exactly like g_build_filename not introspectable but takes the path elements as a string array instead of varargs. This function is mainly meant for language bindings. \n"});

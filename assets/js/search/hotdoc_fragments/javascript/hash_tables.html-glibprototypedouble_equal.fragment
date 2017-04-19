@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hash_tables.html#glibprototypedouble_equal", "fragment": "GLib.prototype.double_equal \nCompares the two gdouble values being pointed to and returns true if they are equal. It can be passed to g_hash_table_new not introspectable as the key_equal_func parameter when using non NULL pointers to doubles as keys in a GLib.HashTable. \n"});

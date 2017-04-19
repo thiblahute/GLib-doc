@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/main.html#g_source_get_ready_time1", "fragment": "g_source_get_ready_time \nGets the ready time of source as set by g_source_set_ready_time. \nAny time before the current monotonic time including is an indication that the source will fire immediately. \n"});

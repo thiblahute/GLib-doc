@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/fileutils.html#glibmappedfilefree", "fragment": "GLib.MappedFile.free \nThis call existed before GLib.MappedFile had refcounting and is currently exactly the same as GLib.MappedFile.unref. \n"});

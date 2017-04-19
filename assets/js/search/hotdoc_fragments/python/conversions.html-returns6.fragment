@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/conversions.html#returns6", "fragment": "\nIf the conversion was successful a newly allocated nul terminated string which must be freed with GLib.free. Otherwise None and error will be set. \n"});

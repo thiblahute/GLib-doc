@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date.html#enum-gdatemonth", "fragment": "enum GDateMonth \nEnumeration representing a month values are G_DATE_JANUARY G_DATE_FEBRUARY etc. G_DATE_BAD_MONTH is the invalid value. \n"});

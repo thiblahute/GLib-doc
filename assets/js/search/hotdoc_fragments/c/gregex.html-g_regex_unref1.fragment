@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gregex.html#g_regex_unref1", "fragment": "g_regex_unref \nDecreases reference count of regex by When reference count drops to zero it frees all the memory associated with the regex structure. \n"});

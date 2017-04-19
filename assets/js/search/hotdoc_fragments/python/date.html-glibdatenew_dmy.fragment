@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdatenew_dmy", "fragment": "GLib.Date.new_dmy \nLike GLib.Date.new but also sets the value of the date. Assuming the day month year triplet you pass in represents an existing day the returned date will be valid. \n"});

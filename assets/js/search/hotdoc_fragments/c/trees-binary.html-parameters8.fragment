@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/trees-binary.html#parameters8", "fragment": "tree \na GTree \nfunc \nthe function to call for each node visited. If this function returns TRUE the traversal is stopped. \nuser_data \nuser data to pass to the function \n"});

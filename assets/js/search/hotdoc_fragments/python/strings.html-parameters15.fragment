@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/strings.html#parameters15", "fragment": "string \na GLib.String \nunescaped \na string \nreserved_chars_allowed \na string of reserved characters allowed to be used or None \nallow_utf8 \nset True if the escaped string may include UTF8 characters \n"});

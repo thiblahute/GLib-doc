@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_utils.html#g_strcmp01", "fragment": "g_strcmp0 \nCompares str1 and str2 like strcmp. Handles NULL gracefully by sorting it before non NULL strings. Comparing two NULL pointers returns \n"});

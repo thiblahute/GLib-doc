@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>macros_misc</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="macros_misc.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="macros_misc.markdown">
+    </div>
+        
+
+        
+
+
+
+            <h2 class="symbol_section" id="Function_Macros">Function Macros</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="G_STATIC_ASSERT_EXPR">
+		
+<h3 id="g_static_assert_expr">
+	<span><code>G_STATIC_ASSERT_EXPR</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_STATIC_ASSERT_EXPR(expr) ((void) sizeof (char[(expr) ? 1 : -1]))
+</pre>
+
+<p>The <a href="macros_misc.html#G_STATIC_ASSERT_EXPR">G_STATIC_ASSERT_EXPR</a> macro lets the programmer check
+a condition at compile time. The condition needs to be
+compile time computable.</p>
+<p>Unlike <a href="macros_misc.html#G_STATIC_ASSERT">G_STATIC_ASSERT</a>, this macro evaluates to an expression
+and, as such, can be used in the middle of other expressions.
+Its value should be ignored. This can be accomplished by placing
+it as the first argument of a comma expression.</p>
+<pre><code class="language-[&lt;!--"> #define ADD_ONE_TO_INT(x) \
+   (G_STATIC_ASSERT_EXPR(sizeof (x) == sizeof (int)), ((x) + 1))
+</code></pre>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.20;" id="G_STATIC_ASSERT">
+		
+<h3 id="g_static_assert">
+	<span><code>G_STATIC_ASSERT</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_STATIC_ASSERT(expr) typedef char G_PASTE (_GStaticAssertCompileTimeAssertion_, __LINE__)[(expr) ? 1 : -1] G_GNUC_UNUSED
+</pre>
+
+<p>The <a href="macros_misc.html#G_STATIC_ASSERT">G_STATIC_ASSERT</a> macro lets the programmer check
+a condition at compile time, the condition needs to
+be compile time computable. The macro can be used in
+any place where a typedef is valid.</p>
+<p>A typedef is generally allowed in exactly the same places that
+a variable declaration is allowed. For this reason, you should
+not use <a href="macros_misc.html#G_STATIC_ASSERT">G_STATIC_ASSERT</a> in the middle of blocks of code.</p>
+<p>The macro should only be used once per source code line.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.18;" id="G_GNUC_ALLOC_SIZE2">
+		
+<h3 id="g_gnuc_alloc_size2">
+	<span><code>G_GNUC_ALLOC_SIZE2</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_ALLOC_SIZE2(x,y)
+</pre>
+
+<p>Expands to the GNU C alloc_size function attribute if the compiler is a
+new enough gcc. This attribute tells the compiler that the function returns
+a pointer to memory of a size that is specified by the product of two
+function parameters.</p>
+<p>Place the attribute after the function declaration, just before the
+semicolon.</p>
+<p>See the GNU C documentation for more details.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.26;" id="G_GNUC_DEPRECATED_FOR">
+		
+<h3 id="g_gnuc_deprecated_for">
+	<span><code>G_GNUC_DEPRECATED_FOR</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_DEPRECATED_FOR(f)        G_GNUC_DEPRECATED
+</pre>
+
+<p>Like <a href="macros_misc.html#G_GNUC_DEPRECATED">G_GNUC_DEPRECATED</a>, but names the intended replacement for the
+deprecated symbol if the version of gcc in use is new enough to support
+custom deprecation messages.</p>
+<p>Place the attribute after the declaration, just before the semicolon.</p>
+<p>See the GNU C documentation for more details.</p>
+<p>Note that if <em>f</em> is a macro, it will be expanded in the warning message.
+You can enclose it in quotes to prevent this. (The quotes will show up
+in the warning, but it's better than showing the macro expansion.)</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.18;" id="G_GNUC_ALLOC_SIZE">
+		
+<h3 id="g_gnuc_alloc_size">
+	<span><code>G_GNUC_ALLOC_SIZE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_ALLOC_SIZE(x)
+</pre>
+
+<p>Expands to the GNU C alloc_size function attribute if the compiler
+is a new enough gcc. This attribute tells the compiler that the
+function returns a pointer to memory of a size that is specified
+by the <em>xth</em> function parameter.</p>
+<p>Place the attribute after the function declaration, just before the
+semicolon.</p>
+<p>See the GNU C documentation for more details.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="G_UNAVAILABLE">
+		
+<h3 id="g_unavailable">
+	<span><code>G_UNAVAILABLE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_UNAVAILABLE(maj,min) G_DEPRECATED
+</pre>
+
+<p>This macro can be used to mark a function declaration as unavailable.
+It must be placed before the function declaration. Use of a function
+that has been annotated with this macros will produce a compiler warning.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VA_COPY">
+		
+<h3 id="g_va_copy">
+	<span><code>G_VA_COPY</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_VA_COPY(ap1, ap2)	  ((ap1) = (ap2))
+</pre>
+
+<p>Portable way to copy va_list variables.</p>
+<p>In order to use this function, you must include string.h yourself,
+because this macro may use memmove and GLib does not include
+string.h for you.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>ap1:</code></em></i>
+		</p>
+	</td>
+		<td><p>the va_list variable to place a copy of <em>ap2</em> in</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>ap2:</code></em></i>
+		</p>
+	</td>
+		<td><p>a va_list</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.44;" id="G_DEFINE_AUTO_CLEANUP_FREE_FUNC">
+		
+<h3 id="g_define_auto_cleanup_free_func">
+	<span><code>G_DEFINE_AUTO_CLEANUP_FREE_FUNC</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_DEFINE_AUTO_CLEANUP_FREE_FUNC(TypeName, func, none)
+</pre>
+
+<p>Defines the appropriate cleanup function for a type.</p>
+<p>With this definition, it will be possible to use <a href="macros_misc.html#g_auto">g_auto</a> with
+<em>TypeName</em>.</p>
+<p>This function will be rarely used.  It is used with pointer-based
+typedefs and non-pointer types where the value of the variable
+represents a resource that must be freed.  Two examples are <a href="string_utils.html#GStrv">GStrv</a>
+and file descriptors.</p>
+<p><em>none</em> specifies the "none" value for the type in question.  It is
+probably something like <a href="macros.html#NULL">NULL</a> or -1.  If the variable is found to
+contain this value then the free function will not be called.</p>
+<pre><code class="language-["> G_DEFINE_AUTO_CLEANUP_FREE_FUNC(GStrv, g_strfreev, NULL)
+</code></pre>
+<p>This macro should be used unconditionally; it is a no-op on compilers
+where cleanup is not supported.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.44;" id="G_DEFINE_AUTO_CLEANUP_CLEAR_FUNC">
+		
+<h3 id="g_define_auto_cleanup_clear_func">
+	<span><code>G_DEFINE_AUTO_CLEANUP_CLEAR_FUNC</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_DEFINE_AUTO_CLEANUP_CLEAR_FUNC(TypeName, func)
+</pre>
+
+<p>Defines the appropriate cleanup function for a type.</p>
+<p>This will typically be the _clear function for the given type.</p>
+<p>With this definition, it will be possible to use <a href="macros_misc.html#g_auto">g_auto</a> with
+<em>TypeName</em>.</p>
+<pre><code class="language-["> G_DEFINE_AUTO_CLEANUP_CLEAR_FUNC(GQueue, g_queue_clear)
+</code></pre>
+<p>This macro should be used unconditionally; it is a no-op on compilers
+where cleanup is not supported.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_GNUC_FORMAT">
+		
+<h3 id="g_gnuc_format">
+	<span><code>G_GNUC_FORMAT</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_FORMAT( arg_idx )
+</pre>
+
+<p>Expands to the GNU C format_arg function attribute if the compiler
+is gcc. This function attribute specifies that a function takes a
+format string for a printf, scanf, strftime or strfmon style
+function and modifies it, so that the result can be passed to a printf,
+scanf, strftime or strfmon style function (with the remaining
+arguments to the format function the same as they would have been
+for the unmodified string).</p>
+<p>Place the attribute after the function declaration, just before the
+semicolon.</p>
+<p>See the GNU C documentation for more details.</p>
+<pre><code class="language-[&lt;!--"> gchar *g_dgettext (gchar *domain_name, gchar *msgid) G_GNUC_FORMAT (2);
+</code></pre>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.44;" id="g_autoptr">
+		
+<h3 id="g_autoptr1">
+	<span><code>g_autoptr</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_autoptr(TypeName) _GLIB_CLEANUP(_GLIB_AUTOPTR_FUNC_NAME(TypeName)) _GLIB_AUTOPTR_TYPENAME(TypeName)
+</pre>
+
+<p>Helper to declare a pointer variable with automatic cleanup.</p>
+<p>The variable is cleaned up in a way appropriate to its type when the
+variable goes out of scope.  The type must support this.</p>
+<p>This feature is only supported on GCC and clang.  This macro is not
+defined on other compilers and should not be used in programs that
+are intended to be portable to those compilers.</p>
+<p>This is meant to be used to declare pointers to types with cleanup
+functions.  The type of the variable is a pointer to <em>TypeName</em>.  You
+must not add your own '*'.</p>
+<p>This macro can be used to avoid having to do explicit cleanups of
+local variables when exiting functions.  It often vastly simplifies
+handling of error conditions, removing the need for various tricks
+such as 'goto out' or repeating of cleanup code.  It is also helpful
+for non-error cases.</p>
+<p>Consider the following example:</p>
+<pre><code class="language-["> gboolean
+ check_exists(GVariant *dict)
+ {
+   g_autoptr(GVariant) dirname, basename = NULL;
+   g_autofree gchar *path = NULL;
+
+   dirname = g_variant_lookup_value (dict, "dirname", G_VARIANT_TYPE_STRING);
+
+   if (dirname == NULL)
+     return FALSE;
+
+   basename = g_variant_lookup_value (dict, "basename", G_VARIANT_TYPE_STRING);
+
+   if (basename == NULL)
+     return FALSE;
+
+   path = g_build_filename (g_variant_get_string (dirname, NULL),
+                            g_variant_get_string (basename, NULL),
+                            NULL);
+
+   return g_access (path, R_OK) == 0;
+ }
+</code></pre>
+<p>You must initialise the variable in some way -- either by use of an
+initialiser or by ensuring that it is assigned to unconditionally
+before it goes out of scope.</p>
+<p>See also <a href="macros_misc.html#g_auto">g_auto</a>, <a href="macros_misc.html#g_autofree">g_autofree</a> and <a href="memory.html#g_steal_pointer">g_steal_pointer</a>.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.2;" id="G_UNLIKELY">
+		
+<h3 id="g_unlikely">
+	<span><code>G_UNLIKELY</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_UNLIKELY(expr) (expr)
+</pre>
+
+<p>Hints the compiler that the expression is unlikely to evaluate to
+a true value. The compiler may use this information for optimizations.</p>
+<pre><code class="language-[&lt;!--"> if (G_UNLIKELY (random () == 1))
+   g_print ("a random one");
+</code></pre>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_STRINGIFY_ARG">
+		
+<h3 id="g_stringify_arg">
+	<span><code>G_STRINGIFY_ARG</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_STRINGIFY_ARG(contents)	#contents
+</pre>
+
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.2;" id="G_LIKELY">
+		
+<h3 id="g_likely">
+	<span><code>G_LIKELY</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_LIKELY(expr) (expr)
+</pre>
+
+<p>Hints the compiler that the expression is likely to evaluate to
+a true value. The compiler may use this information for optimizations.</p>
+<pre><code class="language-[&lt;!--"> if (G_LIKELY (random () != 1))
+   g_print ("not one");
+</code></pre>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GLIB_DEPRECATED_FOR">
+		
+<h3 id="glib_deprecated_for">
+	<span><code>GLIB_DEPRECATED_FOR</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GLIB_DEPRECATED_FOR(f) G_DEPRECATED_FOR(f) _GLIB_EXTERN
+</pre>
+
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="G_DEPRECATED_FOR">
+		
+<h3 id="g_deprecated_for">
+	<span><code>G_DEPRECATED_FOR</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_DEPRECATED_FOR(f) G_DEPRECATED
+</pre>
+
+<p>This macro is similar to <a href="macros_misc.html#G_GNUC_DEPRECATED_FOR">G_GNUC_DEPRECATED_FOR</a>, and can be used to mark
+functions declarations as deprecated. Unlike <a href="macros_misc.html#G_GNUC_DEPRECATED_FOR">G_GNUC_DEPRECATED_FOR</a>, it
+is meant to be portable across different compilers and must be placed
+before the function declaration.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_STRINGIFY">
+		
+<h3 id="g_stringify">
+	<span><code>G_STRINGIFY</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_STRINGIFY(macro_or_string)	G_STRINGIFY_ARG (macro_or_string)
+</pre>
+
+<p>Accepts a macro or a string and converts it into a string after
+preprocessor argument expansion. For example, the following code:</p>
+<pre><code class="language-[&lt;!--"> #define AGE 27
+ const gchar *greeting = G_STRINGIFY (AGE) " today!";
+</code></pre>
+<p>is transformed by the preprocessor into (code equivalent to):</p>
+<pre><code class="language-[&lt;!--"> const gchar *greeting = "27 today!";
+</code></pre>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_PASTE_ARGS">
+		
+<h3 id="g_paste_args">
+	<span><code>G_PASTE_ARGS</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_PASTE_ARGS(identifier1,identifier2) identifier1 ## identifier2
+</pre>
+
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GLIB_UNAVAILABLE">
+		
+<h3 id="glib_unavailable">
+	<span><code>GLIB_UNAVAILABLE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define GLIB_UNAVAILABLE(maj,min) G_UNAVAILABLE(maj,min) _GLIB_EXTERN
+</pre>
+
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.44;" id="g_auto">
+		
+<h3 id="g_auto1">
+	<span><code>g_auto</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_auto(TypeName) _GLIB_CLEANUP(_GLIB_AUTO_FUNC_NAME(TypeName)) TypeName
+</pre>
+
+<p>Helper to declare a variable with automatic cleanup.</p>
+<p>The variable is cleaned up in a way appropriate to its type when the
+variable goes out of scope.  The type must support this.</p>
+<p>This feature is only supported on GCC and clang.  This macro is not
+defined on other compilers and should not be used in programs that
+are intended to be portable to those compilers.</p>
+<p>This is meant to be used with stack-allocated structures and
+non-pointer types.  For the (more commonly used) pointer version, see
+<a href="macros_misc.html#g_autoptr">g_autoptr</a>.</p>
+<p>This macro can be used to avoid having to do explicit cleanups of
+local variables when exiting functions.  It often vastly simplifies
+handling of error conditions, removing the need for various tricks
+such as 'goto out' or repeating of cleanup code.  It is also helpful
+for non-error cases.</p>
+<p>Consider the following example:</p>
+<pre><code class="language-["> GVariant *
+ my_func(void)
+ {
+   g_auto(GQueue) queue = G_QUEUE_INIT;
+   g_auto(GVariantBuilder) builder;
+   g_auto(GStrv) strv;
+
+   g_variant_builder_init (&amp;builder, G_VARIANT_TYPE_VARDICT);
+   strv = g_strsplit("a:b:c", ":", -1);
+
+   ...
+
+   if (error_condition)
+     return NULL;
+
+   ...
+
+   return g_variant_builder_end (&amp;builder);
+ }
+</code></pre>
+<p>You must initialize the variable in some way -- either by use of an
+initialiser or by ensuring that an _init function will be called on
+it unconditionally before it goes out of scope.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_GNUC_PRINTF">
+		
+<h3 id="g_gnuc_printf">
+	<span><code>G_GNUC_PRINTF</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_PRINTF( format_idx, arg_idx )
+</pre>
+
+<p>Expands to the GNU C format function attribute if the compiler is gcc.
+This is used for declaring functions which take a variable number of
+arguments, with the same syntax as printf. It allows the compiler
+to type-check the arguments passed to the function.</p>
+<p>Place the attribute after the function declaration, just before the
+semicolon.</p>
+<p>See the
+<a href="https://gcc.gnu.org/onlinedocs/gcc/Common-Function-Attributes.html#index-Wformat-3288">GNU C documentation</a>
+for more details.</p>
+<pre><code class="language-[&lt;!--"> gint g_snprintf (gchar  *string,
+                  gulong       n,
+                  gchar const *format,
+                  ...) G_GNUC_PRINTF (3, 4);
+</code></pre>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.42;" id="G_GNUC_CHECK_VERSION">
+		
+<h3 id="g_gnuc_check_version">
+	<span><code>G_GNUC_CHECK_VERSION</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_CHECK_VERSION(major, minor) \
+    (defined(__GNUC__) &amp;&amp; \
+     ((__GNUC__ &gt; (major)) || \
+      ((__GNUC__ == (major)) &amp;&amp; \
+       (__GNUC_MINOR__ &gt;= (minor)))))
+</pre>
+
+<p>Expands to a a check for a compiler with <strong>GNUC</strong> defined and a version
+greater than or equal to the major and minor numbers provided. For example,
+the following would only match on compilers such as GCC 4.8 or newer.</p>
+<pre><code class="language-[&lt;!--"> #if G_GNUC_CHECK_VERSION(4, 8)
+ #endif
+</code></pre>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_GNUC_SCANF">
+		
+<h3 id="g_gnuc_scanf">
+	<span><code>G_GNUC_SCANF</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_SCANF( format_idx, arg_idx )
+</pre>
+
+<p>Expands to the GNU C format function attribute if the compiler is gcc.
+This is used for declaring functions which take a variable number of
+arguments, with the same syntax as scanf. It allows the compiler
+to type-check the arguments passed to the function.</p>
+<p>See the
+<a href="https://gcc.gnu.org/onlinedocs/gcc/Common-Function-Attributes.html#index-Wformat-3288">GNU C documentation</a>
+for details.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.20;" id="G_PASTE">
+		
+<h3 id="g_paste">
+	<span><code>G_PASTE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_PASTE(identifier1,identifier2)      G_PASTE_ARGS (identifier1, identifier2)
+</pre>
+
+<p>Yields a new preprocessor pasted identifier
+<em>identifier1identifier2</em> from its expanded
+arguments <em>identifier1</em> and <em>identifier2</em>. For example,
+the following code:</p>
+<pre><code class="language-[&lt;!--"> #define GET(traveller,method) G_PASTE(traveller_get_, method) (traveller)
+ const gchar *name = GET (traveller, name);
+ const gchar *quest = GET (traveller, quest);
+ GdkColor *favourite = GET (traveller, favourite_colour);
+</code></pre>
+<p>is transformed by the preprocessor into:</p>
+<pre><code class="language-[&lt;!--"> const gchar *name = traveller_get_name (traveller);
+ const gchar *quest = traveller_get_quest (traveller);
+ GdkColor *favourite = traveller_get_favourite_colour (traveller);
+</code></pre>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.44;" id="G_DEFINE_AUTOPTR_CLEANUP_FUNC">
+		
+<h3 id="g_define_autoptr_cleanup_func">
+	<span><code>G_DEFINE_AUTOPTR_CLEANUP_FUNC</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_DEFINE_AUTOPTR_CLEANUP_FUNC(TypeName, func)
+</pre>
+
+<p>Defines the appropriate cleanup function for a pointer type.</p>
+<p>The function will not be called if the variable to be cleaned up
+contains <a href="macros.html#NULL">NULL</a>.</p>
+<p>This will typically be the _free or _unref function for the given
+type.</p>
+<p>With this definition, it will be possible to use <a href="macros_misc.html#g_autoptr">g_autoptr</a> with
+<em>TypeName</em>.</p>
+<pre><code class="language-["> G_DEFINE_AUTOPTR_CLEANUP_FUNC(GObject, g_object_unref)
+</code></pre>
+<p>This macro should be used unconditionally; it is a no-op on compilers
+where cleanup is not supported.</p>
+
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.16;" id="G_GNUC_PRETTY_FUNCTION">
+		
+<h3 class="constant" id="g_gnuc_pretty_function">
+	G_GNUC_PRETTY_FUNCTION
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_PRETTY_FUNCTION  ""
+</pre>
+
+<p>Expands to "" on all modern compilers, and to <strong>PRETTY_FUNCTION</strong>
+on gcc version 2.x. Don't use it.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_GNUC_EXTENSION">
+		
+<h3 class="constant" id="g_gnuc_extension">
+	G_GNUC_EXTENSION
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_EXTENSION
+</pre>
+
+<p>Expands to <strong>extension</strong> when gcc is used as the compiler. This simply
+tells gcc not to warn about the following non-standard code when compiling
+with the <code>-pedantic</code> option.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.16;" id="G_GNUC_FUNCTION">
+		
+<h3 class="constant" id="g_gnuc_function">
+	G_GNUC_FUNCTION
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_FUNCTION         ""
+</pre>
+
+<p>Expands to "" on all modern compilers, and to  <strong>FUNCTION</strong> on gcc
+version 2.x. Don't use it.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.44;" id="g_autofree">
+		
+<h3 class="constant" id="g_autofree1">
+	g_autofree
+</h3>
+
+		<pre class="raw_code">
+#define g_autofree _GLIB_CLEANUP(g_autoptr_cleanup_generic_gfree)
+</pre>
+
+<p>Macro to add an attribute to pointer variable to ensure automatic
+cleanup using <a href="memory.html#g_free">g_free</a>.</p>
+<p>This macro differs from <a href="macros_misc.html#g_autoptr">g_autoptr</a> in that it is an attribute supplied
+before the type name, rather than wrapping the type definition.  Instead
+of using a type-specific lookup, this macro always calls <a href="memory.html#g_free">g_free</a> directly.</p>
+<p>This means it's useful for any type that is returned from
+<a href="memory.html#g_malloc">g_malloc</a>.</p>
+<p>Otherwise, this macro has similar constraints as <a href="macros_misc.html#g_autoptr">g_autoptr</a> - only
+supported on GCC and clang, the variable must be initialized, etc.</p>
+<pre><code class="language-["> gboolean
+ operate_on_malloc_buf (void)
+ {
+   g_autofree guint8* membuf = NULL;
+
+   membuf = g_malloc (8192);
+
+   /&lt;!-- --&gt;* Some computation on membuf *&lt;!-- --&gt;/
+
+   /&lt;!-- --&gt;* membuf will be automatically freed here *&lt;!-- --&gt;/
+   return TRUE;
+ }
+</code></pre>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="G_GNUC_END_IGNORE_DEPRECATIONS">
+		
+<h3 class="constant" id="g_gnuc_end_ignore_deprecations">
+	G_GNUC_END_IGNORE_DEPRECATIONS
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_END_IGNORE_DEPRECATIONS
+</pre>
+
+<p>Undoes the effect of <a href="macros_misc.html#G_GNUC_BEGIN_IGNORE_DEPRECATIONS">G_GNUC_BEGIN_IGNORE_DEPRECATIONS</a>, telling
+gcc to begin outputting warnings again (assuming those warnings
+had been enabled to begin with).</p>
+<p>This macro can be used either inside or outside of a function body,
+but must appear on a line by itself.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_ANALYZER_NORETURN">
+		
+<h3 class="constant" id="g_analyzer_noreturn">
+	G_ANALYZER_NORETURN
+</h3>
+
+		<pre class="raw_code">
+#define G_ANALYZER_NORETURN
+</pre>
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_HAVE_GNUC_VARARGS">
+		
+<h3 class="constant" id="g_have_gnuc_varargs">
+	G_HAVE_GNUC_VARARGS
+</h3>
+
+		<pre class="raw_code">
+#define G_HAVE_GNUC_VARARGS 1
+</pre>
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="G_GNUC_BEGIN_IGNORE_DEPRECATIONS">
+		
+<h3 class="constant" id="g_gnuc_begin_ignore_deprecations">
+	G_GNUC_BEGIN_IGNORE_DEPRECATIONS
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_BEGIN_IGNORE_DEPRECATIONS
+</pre>
+
+<p>Tells gcc (if it is a new enough version) to temporarily stop emitting
+warnings when functions marked with <a href="macros_misc.html#G_GNUC_DEPRECATED">G_GNUC_DEPRECATED</a> or
+<a href="macros_misc.html#G_GNUC_DEPRECATED_FOR">G_GNUC_DEPRECATED_FOR</a> are called. This is useful for when you have
+one deprecated function calling another one, or when you still have
+regression tests for deprecated functions.</p>
+<p>Use <a href="macros_misc.html#G_GNUC_END_IGNORE_DEPRECATIONS">G_GNUC_END_IGNORE_DEPRECATIONS</a> to begin warning again. (If you
+are not compiling with <code>-Wdeprecated-declarations</code> then neither macro
+has any effect.)</p>
+<p>This macro can be used either inside or outside of a function body,
+but must appear on a line by itself.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.48;" id="G_INLINE_FUNC">
+		
+<h3 class="constant" id="g_inline_func">
+	G_INLINE_FUNC
+</h3>
+
+		<pre class="raw_code">
+#define G_INLINE_FUNC static inline
+</pre>
+
+<p>This macro used to be used to conditionally define inline functions
+in a compatible way before this feature was supported in all
+compilers.  These days, GLib requires inlining support from the
+compiler, so your GLib-using programs can safely assume that the
+"inline" keywork works properly.</p>
+<p>Never use this macro anymore.  Just say "static inline".</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_HAVE_GNUC_VISIBILITY">
+		
+<h3 class="constant" id="g_have_gnuc_visibility">
+	G_HAVE_GNUC_VISIBILITY
+</h3>
+
+		<pre class="raw_code">
+#define G_HAVE_GNUC_VISIBILITY 1
+</pre>
+
+<p>Defined to 1 if gcc-style visibility handling is supported.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GLIB_VAR">
+		
+<h3 class="constant" id="glib_var">
+	GLIB_VAR
+</h3>
+
+		<pre class="raw_code">
+#define GLIB_VAR _GLIB_EXTERN
+</pre>
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_STMT_START">
+		
+<h3 class="constant" id="g_stmt_start">
+	G_STMT_START
+</h3>
+
+		<pre class="raw_code">
+#define G_STMT_START  do
+</pre>
+
+<p>Used within multi-statement macros so that they can be used in places
+where only one statement is expected by the compiler.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_STMT_END">
+		
+<h3 class="constant" id="g_stmt_end">
+	G_STMT_END
+</h3>
+
+		<pre class="raw_code">
+#define G_STMT_END    while (0)
+</pre>
+
+<p>Used within multi-statement macros so that they can be used in places
+where only one statement is expected by the compiler.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_GNUC_NORETURN">
+		
+<h3 class="constant" id="g_gnuc_noreturn">
+	G_GNUC_NORETURN
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_NORETURN
+</pre>
+
+<p>Expands to the GNU C noreturn function attribute if the compiler is gcc.
+It is used for declaring functions which never return. It enables
+optimization of the function, and avoids possible compiler warnings.</p>
+<p>Place the attribute after the declaration, just before the semicolon.</p>
+<p>See the GNU C documentation for more details.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_GNUC_CONST">
+		
+<h3 class="constant" id="g_gnuc_const">
+	G_GNUC_CONST
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_CONST
+</pre>
+
+<p>Expands to the GNU C const function attribute if the compiler is gcc.
+Declaring a function as const enables better optimization of calls to
+the function. A const function doesn't examine any values except its
+parameters, and has no effects except its return value.</p>
+<p>Place the attribute after the declaration, just before the semicolon.</p>
+<p>See the GNU C documentation for more details.</p>
+<p>A function that has pointer arguments and examines the data pointed to
+must not be declared const. Likewise, a function that calls a non-const
+function usually must not be const. It doesn't make sense for a const
+function to return void.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.10;" id="G_GNUC_WARN_UNUSED_RESULT">
+		
+<h3 class="constant" id="g_gnuc_warn_unused_result">
+	G_GNUC_WARN_UNUSED_RESULT
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_WARN_UNUSED_RESULT
+</pre>
+
+<p>Expands to the GNU C warn_unused_result function attribute if the compiler
+is gcc. This function attribute makes the compiler emit a warning if the
+result of a function call is ignored.</p>
+<p>Place the attribute after the declaration, just before the semicolon.</p>
+<p>See the GNU C documentation for more details.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="G_GNUC_INTERNAL">
+		
+<h3 class="constant" id="g_gnuc_internal">
+	G_GNUC_INTERNAL
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_INTERNAL
+</pre>
+
+<p>This attribute can be used for marking library functions as being used
+internally to the library only, which may allow the compiler to handle
+function calls more efficiently. Note that static functions do not need
+to be marked as internal in this way. See the GNU C documentation for
+details.</p>
+<p>When using a compiler that supports the GNU C hidden visibility attribute,
+this macro expands to <strong>attribute</strong>((visibility("hidden"))).
+When using the Sun Studio compiler, it expands to __hidden.</p>
+<p>Note that for portability, the attribute should be placed before the
+function declaration. While GCC allows the macro after the declaration,
+Sun Studio does not.</p>
+<pre><code class="language-[&lt;!--"> G_GNUC_INTERNAL
+ void _g_log_fallback_handler (const gchar    *log_domain,
+                               GLogLevelFlags  log_level,
+                               const gchar    *message,
+                               gpointer        unused_data);
+</code></pre>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_END_DECLS">
+		
+<h3 class="constant" id="g_end_decls">
+	G_END_DECLS
+</h3>
+
+		<pre class="raw_code">
+#define G_END_DECLS
+</pre>
+
+<p>Used (along with <a href="macros_misc.html#G_BEGIN_DECLS">G_BEGIN_DECLS</a>) to bracket header files. If the
+compiler in use is a C++ compiler, adds extern "C"
+around the header.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GLIB_DEPRECATED">
+		
+<h3 class="constant" id="glib_deprecated">
+	GLIB_DEPRECATED
+</h3>
+
+		<pre class="raw_code">
+#define GLIB_DEPRECATED G_DEPRECATED _GLIB_EXTERN
+</pre>
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_GNUC_NO_INSTRUMENT">
+		
+<h3 class="constant" id="g_gnuc_no_instrument">
+	G_GNUC_NO_INSTRUMENT
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_NO_INSTRUMENT
+</pre>
+
+<p>Expands to the GNU C no_instrument_function function attribute if the
+compiler is gcc. Functions with this attribute will not be instrumented
+for profiling, when the compiler is called with the
+<code>-finstrument-functions</code> option.</p>
+<p>Place the attribute after the declaration, just before the semicolon.</p>
+<p>See the GNU C documentation for more details.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_GNUC_MAY_ALIAS">
+		
+<h3 class="constant" id="g_gnuc_may_alias">
+	G_GNUC_MAY_ALIAS
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_MAY_ALIAS
+</pre>
+
+<p>Expands to the GNU C may_alias type attribute if the compiler is gcc.
+Types with this attribute will not be subjected to type-based alias
+analysis, but are assumed to alias with any other type, just like char.</p>
+<p>See the GNU C documentation for details.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="G_GNUC_MALLOC">
+		
+<h3 class="constant" id="g_gnuc_malloc">
+	G_GNUC_MALLOC
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_MALLOC
+</pre>
+
+<p>Expands to the GNU C malloc function attribute if the compiler is gcc.
+Declaring a function as malloc enables better optimization of the function.
+A function can have the malloc attribute if it returns a pointer which is
+guaranteed to not alias with any other pointer when the function returns
+(in practice, this means newly allocated memory).</p>
+<p>Place the attribute after the declaration, just before the semicolon.</p>
+<p>See the GNU C documentation for more details.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="inline">
+		
+<h3 class="constant" id="inline1">
+	inline
+</h3>
+
+		<pre class="raw_code">
+#define inline __inline
+</pre>
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.2;" id="G_GNUC_DEPRECATED">
+		
+<h3 class="constant" id="g_gnuc_deprecated">
+	G_GNUC_DEPRECATED
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_DEPRECATED
+</pre>
+
+<p>Expands to the GNU C deprecated attribute if the compiler is gcc.
+It can be used to mark typedefs, variables and functions as deprecated.
+When called with the <code>-Wdeprecated-declarations</code> option,
+gcc will generate warnings when deprecated interfaces are used.</p>
+<p>Place the attribute after the declaration, just before the semicolon.</p>
+<p>See the GNU C documentation for more details.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_GNUC_PURE">
+		
+<h3 class="constant" id="g_gnuc_pure">
+	G_GNUC_PURE
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_PURE
+</pre>
+
+<p>Expands to the GNU C pure function attribute if the compiler is gcc.
+Declaring a function as pure enables better optimization of calls to
+the function. A pure function has no effects except its return value
+and the return value depends only on the parameters and/or global
+variables.</p>
+<p>Place the attribute after the declaration, just before the semicolon.</p>
+<p>See the GNU C documentation for more details.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_BEGIN_DECLS">
+		
+<h3 class="constant" id="g_begin_decls">
+	G_BEGIN_DECLS
+</h3>
+
+		<pre class="raw_code">
+#define G_BEGIN_DECLS
+</pre>
+
+<p>Used (along with <a href="macros_misc.html#G_END_DECLS">G_END_DECLS</a>) to bracket header files. If the
+compiler in use is a C++ compiler, adds extern "C"
+around the header.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_CAN_INLINE">
+		
+<h3 class="constant" id="g_can_inline">
+	G_CAN_INLINE
+</h3>
+
+		<pre class="raw_code">
+#define G_CAN_INLINE
+</pre>
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_ANALYZER_ANALYZING">
+		
+<h3 class="constant" id="g_analyzer_analyzing">
+	G_ANALYZER_ANALYZING
+</h3>
+
+		<pre class="raw_code">
+#define G_ANALYZER_ANALYZING 0
+</pre>
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="G_STRFUNC">
+		
+<h3 class="constant" id="g_strfunc">
+	G_STRFUNC
+</h3>
+
+		<pre class="raw_code">
+#define G_STRFUNC     ((const char*) ("???"))
+</pre>
+
+<p>Expands to a string identifying the current function.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_HAVE_GROWING_STACK">
+		
+<h3 class="constant" id="g_have_growing_stack">
+	G_HAVE_GROWING_STACK
+</h3>
+
+		<pre class="raw_code">
+#define G_HAVE_GROWING_STACK 0
+</pre>
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="G_GNUC_NULL_TERMINATED">
+		
+<h3 class="constant" id="g_gnuc_null_terminated">
+	G_GNUC_NULL_TERMINATED
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_NULL_TERMINATED
+</pre>
+
+<p>Expands to the GNU C sentinel function attribute if the compiler is gcc.
+This function attribute only applies to variadic functions and instructs
+the compiler to check that the argument list is terminated with an
+explicit <a href="macros.html#NULL">NULL</a>.</p>
+<p>Place the attribute after the declaration, just before the semicolon.</p>
+<p>See the GNU C documentation for more details.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_GNUC_UNUSED">
+		
+<h3 class="constant" id="g_gnuc_unused">
+	G_GNUC_UNUSED
+</h3>
+
+		<pre class="raw_code">
+#define G_GNUC_UNUSED
+</pre>
+
+<p>Expands to the GNU C unused function attribute if the compiler is gcc.
+It is used for declaring functions and arguments which may never be used.
+It avoids possible compiler warnings.</p>
+<p>For functions, place the attribute after the declaration, just before the
+semicolon. For arguments, place the attribute at the beginning of the
+argument declaration.</p>
+<pre><code class="language-[&lt;!--"> void my_unused_function (G_GNUC_UNUSED gint unused_argument,
+                          gint other_argument) G_GNUC_UNUSED;
+</code></pre>
+<p>See the GNU C documentation for more details.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_HAVE_ISO_VARARGS">
+		
+<h3 class="constant" id="g_have_iso_varargs">
+	G_HAVE_ISO_VARARGS
+</h3>
+
+		<pre class="raw_code">
+#define G_HAVE_ISO_VARARGS 1
+</pre>
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_STRLOC">
+		
+<h3 class="constant" id="g_strloc">
+	G_STRLOC
+</h3>
+
+		<pre class="raw_code">
+#define G_STRLOC	__FILE__ ":" G_STRINGIFY (__LINE__)
+</pre>
+
+<p>Expands to a string identifying the current code position.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_VA_COPY_AS_ARRAY">
+		
+<h3 class="constant" id="g_va_copy_as_array">
+	G_VA_COPY_AS_ARRAY
+</h3>
+
+		<pre class="raw_code">
+#define G_VA_COPY_AS_ARRAY 1
+</pre>
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="G_DEPRECATED">
+		
+<h3 class="constant" id="g_deprecated">
+	G_DEPRECATED
+</h3>
+
+		<pre class="raw_code">
+#define G_DEPRECATED
+</pre>
+
+<p>This macro is similar to <a href="macros_misc.html#G_GNUC_DEPRECATED">G_GNUC_DEPRECATED</a>, and can be used to mark
+functions declarations as deprecated. Unlike <a href="macros_misc.html#G_GNUC_DEPRECATED">G_GNUC_DEPRECATED</a>, it is
+meant to be portable across different compilers and must be placed
+before the function declaration.</p>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

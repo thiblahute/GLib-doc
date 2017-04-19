@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/bookmarkfile.html#glibbookmarkfileadd_group", "fragment": "GLib.BookmarkFile.add_group \nAdds group to the list of groups to which the bookmark for uri belongs to. \nIf no bookmark for uri is found then it is created. \n"});

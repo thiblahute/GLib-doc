@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibtimevaladd", "fragment": "GLib.TimeVal.add \nAdds the given number of microseconds to time_. microseconds can also be negative to decrease the value of time_. \n"});

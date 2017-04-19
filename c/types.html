@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>types</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="types.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="types.markdown">
+    </div>
+        
+
+        
+
+
+
+            <h2 class="symbol_section" id="Function_Macros">Function Macros</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.10;" id="G_GUINT64_CONSTANT">
+		
+<h3 id="g_guint64_constant">
+	<span><code>G_GUINT64_CONSTANT</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_GUINT64_CONSTANT(val)	(val##UL)
+</pre>
+
+<p>This macro is used to insert 64-bit unsigned integer
+literals into the source code.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a literal integer value, e.g. 0x1d636b02300a7aa7U</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.20;" id="G_GOFFSET_CONSTANT">
+		
+<h3 id="g_goffset_constant">
+	<span><code>G_GOFFSET_CONSTANT</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_GOFFSET_CONSTANT(val) G_GINT64_CONSTANT(val)
+</pre>
+
+<p>This macro is used to insert goffset 64-bit integer literals
+into the source code.</p>
+<p>See also <a href="types.html#G_GINT64_CONSTANT">G_GINT64_CONSTANT</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a literal integer value, e.g. 0x1d636b02300a7aa7</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_GINT64_CONSTANT">
+		
+<h3 id="g_gint64_constant">
+	<span><code>G_GINT64_CONSTANT</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_GINT64_CONSTANT(val)	(val##L)
+</pre>
+
+<p>This macro is used to insert 64-bit integer literals
+into the source code.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>a literal integer value, e.g. 0x1d636b02300a7aa7</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_MAXUINT">
+		
+<h3 class="constant" id="g_maxuint">
+	G_MAXUINT
+</h3>
+
+		<pre class="raw_code">
+#define G_MAXUINT	UINT_MAX
+</pre>
+
+<p>The maximum value which can be held in a guint.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_MINSSIZE">
+		
+<h3 class="constant" id="g_minssize">
+	G_MINSSIZE
+</h3>
+
+		<pre class="raw_code">
+#define G_MINSSIZE	G_MINLONG
+</pre>
+
+<p>The minimum value which can be held in a gssize.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="G_GINTPTR_FORMAT">
+		
+<h3 class="constant" id="g_gintptr_format">
+	G_GINTPTR_FORMAT
+</h3>
+
+		<pre class="raw_code">
+#define G_GINTPTR_FORMAT        "li"
+</pre>
+
+<p>This is the platform dependent conversion specifier for scanning
+and printing values of type gintptr.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="G_MAXINT16">
+		
+<h3 class="constant" id="g_maxint16">
+	G_MAXINT16
+</h3>
+
+		<pre class="raw_code">
+#define G_MAXINT16	((gint16)  0x7fff)
+</pre>
+
+<p>The maximum value which can be held in a gint16.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_MAXUINT64">
+		
+<h3 class="constant" id="g_maxuint64">
+	G_MAXUINT64
+</h3>
+
+		<pre class="raw_code">
+#define G_MAXUINT64	G_GUINT64_CONSTANT(0xffffffffffffffff)
+</pre>
+
+<p>The maximum value which can be held in a guint64.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_MAXINT">
+		
+<h3 class="constant" id="g_maxint">
+	G_MAXINT
+</h3>
+
+		<pre class="raw_code">
+#define G_MAXINT	INT_MAX
+</pre>
+
+<p>The maximum value which can be held in a gint.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_MININT64">
+		
+<h3 class="constant" id="g_minint64">
+	G_MININT64
+</h3>
+
+		<pre class="raw_code">
+#define G_MININT64	((gint64) G_GINT64_CONSTANT(-0x8000000000000000))
+</pre>
+
+<p>The minimum value which can be held in a gint64.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_MAXSSIZE">
+		
+<h3 class="constant" id="g_maxssize">
+	G_MAXSSIZE
+</h3>
+
+		<pre class="raw_code">
+#define G_MAXSSIZE	G_MAXLONG
+</pre>
+
+<p>The maximum value which can be held in a gssize.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="G_MININT32">
+		
+<h3 class="constant" id="g_minint32">
+	G_MININT32
+</h3>
+
+		<pre class="raw_code">
+#define G_MININT32	((gint32) -0x80000000)
+</pre>
+
+<p>The minimum value which can be held in a gint32.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GLIB_SIZEOF_SIZE_T">
+		
+<h3 class="constant" id="glib_sizeof_size_t">
+	GLIB_SIZEOF_SIZE_T
+</h3>
+
+		<pre class="raw_code">
+#define GLIB_SIZEOF_SIZE_T 8
+</pre>
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_GINT64_FORMAT">
+		
+<h3 class="constant" id="g_gint64_format">
+	G_GINT64_FORMAT
+</h3>
+
+		<pre class="raw_code">
+#define G_GINT64_FORMAT "li"
+</pre>
+
+<p>This is the platform dependent conversion specifier for scanning
+and printing values of type gint64. See also <a href="types.html#G_GINT16_FORMAT">G_GINT16_FORMAT</a>.</p>
+<p>Some platforms do not support scanning and printing 64-bit integers,
+even though the types are supported. On such platforms <a href="types.html#G_GINT64_FORMAT">G_GINT64_FORMAT</a>
+is not defined. Note that scanf may not support 64-bit integers, even
+if <a href="types.html#G_GINT64_FORMAT">G_GINT64_FORMAT</a> is defined. Due to its weak error handling, scanf
+is not recommended for parsing anyway; consider using <a href="string_utils.html#g_ascii_strtoull">g_ascii_strtoull</a>
+instead.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.20;" id="G_GOFFSET_FORMAT">
+		
+<h3 class="constant" id="g_goffset_format">
+	G_GOFFSET_FORMAT
+</h3>
+
+		<pre class="raw_code">
+#define G_GOFFSET_FORMAT        G_GINT64_FORMAT
+</pre>
+
+<p>This is the platform dependent conversion specifier for scanning
+and printing values of type goffset. See also <a href="types.html#G_GINT64_FORMAT">G_GINT64_FORMAT</a>.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="G_MAXUINT32">
+		
+<h3 class="constant" id="g_maxuint32">
+	G_MAXUINT32
+</h3>
+
+		<pre class="raw_code">
+#define G_MAXUINT32	((guint32) 0xffffffff)
+</pre>
+
+<p>The maximum value which can be held in a guint32.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_GINT32_FORMAT">
+		
+<h3 class="constant" id="g_gint32_format">
+	G_GINT32_FORMAT
+</h3>
+
+		<pre class="raw_code">
+#define G_GINT32_FORMAT "i"
+</pre>
+
+<p>This is the platform dependent conversion specifier for scanning
+and printing values of type gint32. See also <a href="types.html#G_GINT16_FORMAT">G_GINT16_FORMAT</a>.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="G_MAXINT32">
+		
+<h3 class="constant" id="g_maxint32">
+	G_MAXINT32
+</h3>
+
+		<pre class="raw_code">
+#define G_MAXINT32	((gint32)  0x7fffffff)
+</pre>
+
+<p>The maximum value which can be held in a gint32.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_MAXOFFSET">
+		
+<h3 class="constant" id="g_maxoffset">
+	G_MAXOFFSET
+</h3>
+
+		<pre class="raw_code">
+#define G_MAXOFFSET	G_MAXINT64
+</pre>
+
+<p>The maximum value which can be held in a goffset.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="G_GSIZE_FORMAT">
+		
+<h3 class="constant" id="g_gsize_format">
+	G_GSIZE_FORMAT
+</h3>
+
+		<pre class="raw_code">
+#define G_GSIZE_FORMAT "lu"
+</pre>
+
+<p>This is the platform dependent conversion specifier for scanning
+and printing values of type gsize. See also <a href="types.html#G_GINT16_FORMAT">G_GINT16_FORMAT</a>.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GLIB_SIZEOF_LONG">
+		
+<h3 class="constant" id="glib_sizeof_long">
+	GLIB_SIZEOF_LONG
+</h3>
+
+		<pre class="raw_code">
+#define GLIB_SIZEOF_LONG   8
+</pre>
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="G_GINT32_MODIFIER">
+		
+<h3 class="constant" id="g_gint32_modifier">
+	G_GINT32_MODIFIER
+</h3>
+
+		<pre class="raw_code">
+#define G_GINT32_MODIFIER ""
+</pre>
+
+<p>The platform dependent length modifier for conversion specifiers
+for scanning and printing values of type gint32 or guint32. It
+is a string literal. See also <a href="types.html#G_GINT16_MODIFIER">G_GINT16_MODIFIER</a>.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="G_MAXINT8">
+		
+<h3 class="constant" id="g_maxint8">
+	G_MAXINT8
+</h3>
+
+		<pre class="raw_code">
+#define G_MAXINT8	((gint8)  0x7f)
+</pre>
+
+<p>The maximum value which can be held in a gint8.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="G_GUINTPTR_FORMAT">
+		
+<h3 class="constant" id="g_guintptr_format">
+	G_GUINTPTR_FORMAT
+</h3>
+
+		<pre class="raw_code">
+#define G_GUINTPTR_FORMAT       "lu"
+</pre>
+
+<p>This is the platform dependent conversion specifier
+for scanning and printing values of type guintptr.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="G_GSSIZE_MODIFIER">
+		
+<h3 class="constant" id="g_gssize_modifier">
+	G_GSSIZE_MODIFIER
+</h3>
+
+		<pre class="raw_code">
+#define G_GSSIZE_MODIFIER "l"
+</pre>
+
+<p>The platform dependent length modifier for conversion specifiers
+for scanning and printing values of type gssize. It
+is a string literal.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_GUINT32_FORMAT">
+		
+<h3 class="constant" id="g_guint32_format">
+	G_GUINT32_FORMAT
+</h3>
+
+		<pre class="raw_code">
+#define G_GUINT32_FORMAT "u"
+</pre>
+
+<p>This is the platform dependent conversion specifier for scanning
+and printing values of type guint32. See also <a href="types.html#G_GINT16_FORMAT">G_GINT16_FORMAT</a>.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_GUINT16_FORMAT">
+		
+<h3 class="constant" id="g_guint16_format">
+	G_GUINT16_FORMAT
+</h3>
+
+		<pre class="raw_code">
+#define G_GUINT16_FORMAT "hu"
+</pre>
+
+<p>This is the platform dependent conversion specifier for scanning
+and printing values of type guint16. See also <a href="types.html#G_GINT16_FORMAT">G_GINT16_FORMAT</a></p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="G_GSIZE_MODIFIER">
+		
+<h3 class="constant" id="g_gsize_modifier">
+	G_GSIZE_MODIFIER
+</h3>
+
+		<pre class="raw_code">
+#define G_GSIZE_MODIFIER "l"
+</pre>
+
+<p>The platform dependent length modifier for conversion specifiers
+for scanning and printing values of type gsize. It
+is a string literal.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="G_GINT64_MODIFIER">
+		
+<h3 class="constant" id="g_gint64_modifier">
+	G_GINT64_MODIFIER
+</h3>
+
+		<pre class="raw_code">
+#define G_GINT64_MODIFIER "l"
+</pre>
+
+<p>The platform dependent length modifier for conversion specifiers
+for scanning and printing values of type gint64 or guint64.
+It is a string literal.</p>
+<p>Some platforms do not support printing 64-bit integers, even
+though the types are supported. On such platforms <a href="types.html#G_GINT64_MODIFIER">G_GINT64_MODIFIER</a>
+is not defined.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="G_MAXSIZE">
+		
+<h3 class="constant" id="g_maxsize">
+	G_MAXSIZE
+</h3>
+
+		<pre class="raw_code">
+#define G_MAXSIZE	G_MAXULONG
+</pre>
+
+<p>The maximum value which can be held in a gsize.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_MINOFFSET">
+		
+<h3 class="constant" id="g_minoffset">
+	G_MINOFFSET
+</h3>
+
+		<pre class="raw_code">
+#define G_MINOFFSET	G_MININT64
+</pre>
+
+<p>The minimum value which can be held in a goffset.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="G_MININT16">
+		
+<h3 class="constant" id="g_minint16">
+	G_MININT16
+</h3>
+
+		<pre class="raw_code">
+#define G_MININT16	((gint16) -0x8000)
+</pre>
+
+<p>The minimum value which can be held in a gint16.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_MAXINT64">
+		
+<h3 class="constant" id="g_maxint64">
+	G_MAXINT64
+</h3>
+
+		<pre class="raw_code">
+#define G_MAXINT64	G_GINT64_CONSTANT(0x7fffffffffffffff)
+</pre>
+
+<p>The maximum value which can be held in a gint64.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="G_GSSIZE_FORMAT">
+		
+<h3 class="constant" id="g_gssize_format">
+	G_GSSIZE_FORMAT
+</h3>
+
+		<pre class="raw_code">
+#define G_GSSIZE_FORMAT "li"
+</pre>
+
+<p>This is the platform dependent conversion specifier for scanning
+and printing values of type gssize. See also <a href="types.html#G_GINT16_FORMAT">G_GINT16_FORMAT</a>.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="G_MININT8">
+		
+<h3 class="constant" id="g_minint8">
+	G_MININT8
+</h3>
+
+		<pre class="raw_code">
+#define G_MININT8	((gint8) -0x80)
+</pre>
+
+<p>The minimum value which can be held in a gint8.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_GUINT64_FORMAT">
+		
+<h3 class="constant" id="g_guint64_format">
+	G_GUINT64_FORMAT
+</h3>
+
+		<pre class="raw_code">
+#define G_GUINT64_FORMAT "lu"
+</pre>
+
+<p>This is the platform dependent conversion specifier for scanning
+and printing values of type guint64. See also <a href="types.html#G_GINT16_FORMAT">G_GINT16_FORMAT</a>.</p>
+<p>Some platforms do not support scanning and printing 64-bit integers,
+even though the types are supported. On such platforms <a href="types.html#G_GUINT64_FORMAT">G_GUINT64_FORMAT</a>
+is not defined.  Note that scanf may not support 64-bit integers, even
+if <a href="types.html#G_GINT64_FORMAT">G_GINT64_FORMAT</a> is defined. Due to its weak error handling, scanf
+is not recommended for parsing anyway; consider using <a href="string_utils.html#g_ascii_strtoull">g_ascii_strtoull</a>
+instead.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="G_GINT16_MODIFIER">
+		
+<h3 class="constant" id="g_gint16_modifier">
+	G_GINT16_MODIFIER
+</h3>
+
+		<pre class="raw_code">
+#define G_GINT16_MODIFIER "h"
+</pre>
+
+<p>The platform dependent length modifier for conversion specifiers
+for scanning and printing values of type gint16 or guint16. It
+is a string literal, but doesn't include the percent-sign, such
+that you can add precision and length modifiers between percent-sign
+and conversion specifier and append a conversion specifier.</p>
+<p>The following example prints "0x7b";</p>
+<pre><code class="language-[&lt;!--"> gint16 value = 123;
+ g_print ("%#" G_GINT16_MODIFIER "x", value);
+</code></pre>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_MINFLOAT">
+		
+<h3 class="constant" id="g_minfloat">
+	G_MINFLOAT
+</h3>
+
+		<pre class="raw_code">
+#define G_MINFLOAT	FLT_MIN
+</pre>
+
+<p>The minimum positive value which can be held in a gfloat.</p>
+<p>If you are interested in the smallest value which can be held
+in a gfloat, use -%G_MAXFLOAT.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_MINLONG">
+		
+<h3 class="constant" id="g_minlong">
+	G_MINLONG
+</h3>
+
+		<pre class="raw_code">
+#define G_MINLONG	LONG_MIN
+</pre>
+
+<p>The minimum value which can be held in a glong.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="G_MAXUINT8">
+		
+<h3 class="constant" id="g_maxuint8">
+	G_MAXUINT8
+</h3>
+
+		<pre class="raw_code">
+#define G_MAXUINT8	((guint8) 0xff)
+</pre>
+
+<p>The maximum value which can be held in a guint8.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_HAVE_GINT64">
+		
+<h3 class="constant" id="g_have_gint64">
+	G_HAVE_GINT64
+</h3>
+
+		<pre class="raw_code">
+#define G_HAVE_GINT64 1          /* deprecated, always true */
+</pre>
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_MAXUSHORT">
+		
+<h3 class="constant" id="g_maxushort">
+	G_MAXUSHORT
+</h3>
+
+		<pre class="raw_code">
+#define G_MAXUSHORT	USHRT_MAX
+</pre>
+
+<p>The maximum value which can be held in a gushort.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="G_GINTPTR_MODIFIER">
+		
+<h3 class="constant" id="g_gintptr_modifier">
+	G_GINTPTR_MODIFIER
+</h3>
+
+		<pre class="raw_code">
+#define G_GINTPTR_MODIFIER      "l"
+</pre>
+
+<p>The platform dependent length modifier for conversion specifiers
+for scanning and printing values of type gintptr or guintptr.
+It is a string literal.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_MAXLONG">
+		
+<h3 class="constant" id="g_maxlong">
+	G_MAXLONG
+</h3>
+
+		<pre class="raw_code">
+#define G_MAXLONG	LONG_MAX
+</pre>
+
+<p>The maximum value which can be held in a glong.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GLIB_SIZEOF_SSIZE_T">
+		
+<h3 class="constant" id="glib_sizeof_ssize_t">
+	GLIB_SIZEOF_SSIZE_T
+</h3>
+
+		<pre class="raw_code">
+#define GLIB_SIZEOF_SSIZE_T 8
+</pre>
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_MAXULONG">
+		
+<h3 class="constant" id="g_maxulong">
+	G_MAXULONG
+</h3>
+
+		<pre class="raw_code">
+#define G_MAXULONG	ULONG_MAX
+</pre>
+
+<p>The maximum value which can be held in a gulong.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_MININT">
+		
+<h3 class="constant" id="g_minint">
+	G_MININT
+</h3>
+
+		<pre class="raw_code">
+#define G_MININT	INT_MIN
+</pre>
+
+<p>The minimum value which can be held in a gint.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_MAXDOUBLE">
+		
+<h3 class="constant" id="g_maxdouble">
+	G_MAXDOUBLE
+</h3>
+
+		<pre class="raw_code">
+#define G_MAXDOUBLE	DBL_MAX
+</pre>
+
+<p>The maximum value which can be held in a gdouble.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GLIB_SIZEOF_VOID_P">
+		
+<h3 class="constant" id="glib_sizeof_void_p">
+	GLIB_SIZEOF_VOID_P
+</h3>
+
+		<pre class="raw_code">
+#define GLIB_SIZEOF_VOID_P 8
+</pre>
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_GINT16_FORMAT">
+		
+<h3 class="constant" id="g_gint16_format">
+	G_GINT16_FORMAT
+</h3>
+
+		<pre class="raw_code">
+#define G_GINT16_FORMAT "hi"
+</pre>
+
+<p>This is the platform dependent conversion specifier for scanning and
+printing values of type gint16. It is a string literal, but doesn't
+include the percent-sign, such that you can add precision and length
+modifiers between percent-sign and conversion specifier.</p>
+<pre><code class="language-[&lt;!--"> gint16 in;
+ gint32 out;
+ sscanf ("42", "%" G_GINT16_FORMAT, &amp;in)
+ out = in * 1000;
+ g_print ("%" G_GINT32_FORMAT, out);
+</code></pre>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_MAXSHORT">
+		
+<h3 class="constant" id="g_maxshort">
+	G_MAXSHORT
+</h3>
+
+		<pre class="raw_code">
+#define G_MAXSHORT	SHRT_MAX
+</pre>
+
+<p>The maximum value which can be held in a gshort.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_MINSHORT">
+		
+<h3 class="constant" id="g_minshort">
+	G_MINSHORT
+</h3>
+
+		<pre class="raw_code">
+#define G_MINSHORT	SHRT_MIN
+</pre>
+
+<p>The minimum value which can be held in a gshort.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="G_MAXUINT16">
+		
+<h3 class="constant" id="g_maxuint16">
+	G_MAXUINT16
+</h3>
+
+		<pre class="raw_code">
+#define G_MAXUINT16	((guint16) 0xffff)
+</pre>
+
+<p>The maximum value which can be held in a guint16.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_MAXFLOAT">
+		
+<h3 class="constant" id="g_maxfloat">
+	G_MAXFLOAT
+</h3>
+
+		<pre class="raw_code">
+#define G_MAXFLOAT	FLT_MAX
+</pre>
+
+<p>The maximum value which can be held in a gfloat.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.20;" id="G_GOFFSET_MODIFIER">
+		
+<h3 class="constant" id="g_goffset_modifier">
+	G_GOFFSET_MODIFIER
+</h3>
+
+		<pre class="raw_code">
+#define G_GOFFSET_MODIFIER      G_GINT64_MODIFIER
+</pre>
+
+<p>The platform dependent length modifier for conversion specifiers
+for scanning and printing values of type goffset. It is a string
+literal. See also <a href="types.html#G_GINT64_MODIFIER">G_GINT64_MODIFIER</a>.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_MINDOUBLE">
+		
+<h3 class="constant" id="g_mindouble">
+	G_MINDOUBLE
+</h3>
+
+		<pre class="raw_code">
+#define G_MINDOUBLE	DBL_MIN
+</pre>
+
+<p>The minimum positive value which can be held in a gdouble.</p>
+<p>If you are interested in the smallest value which can be held
+in a gdouble, use -%G_MAXDOUBLE.</p>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

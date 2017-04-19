@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/timers.html#glibtimerreset", "fragment": "GLib.Timer.reset \nThis function is useless it s fine to call GLib.Timer.start on an already started timer to reset the start time so GLib.Timer.reset serves no purpose. \n"});

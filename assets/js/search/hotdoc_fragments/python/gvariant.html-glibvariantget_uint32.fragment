@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvariant.html#glibvariantget_uint32", "fragment": "GLib.Variant.get_uint32 \nReturns the bit unsigned integer value of value. \nIt is an error to call this function with a value of any type other than G_VARIANT_TYPE_UINT32 not introspectable \n"});

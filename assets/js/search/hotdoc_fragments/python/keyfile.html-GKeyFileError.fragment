@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/keyfile.html#GKeyFileError", "fragment": "the text being parsed was in an unknown encoding \nGLib.KeyFileError.parse \na requested key was not found \nGLib.KeyFileError.group_not_found \na requested group was not found \nGLib.KeyFileError.invalid_value \na value could not be parsed \n"});

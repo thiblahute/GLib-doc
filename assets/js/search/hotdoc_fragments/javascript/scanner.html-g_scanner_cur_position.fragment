@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/scanner.html#g_scanner_cur_position", "fragment": "GLib.Scanner.prototype.cur_position \nReturns the current position in the current line counting from This is the position of the last token parsed via GLib.Scanner.prototype.get_next_token. \n"});

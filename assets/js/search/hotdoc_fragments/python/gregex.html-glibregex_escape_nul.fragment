@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gregex.html#glibregex_escape_nul", "fragment": "GLib.regex_escape_nul \nEscapes the nul characters in string to x00 It can be used to compile a regex with embedded nul characters. \nFor completeness length can be for a nul terminated string. In this case the output string will be of course equal to string. \n"});

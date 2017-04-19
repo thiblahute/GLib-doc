@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#enum-gioerror", "fragment": "enum GIOError \nGIOError is only used by the deprecated functions g_io_channel_read g_io_channel_write and g_io_channel_seek. \n"});

@@ -1,0 +1,4336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GHashTable</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="hash_tables.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="hash_tables.markdown">
+        <h1 id="ghashtable">GHashTable</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GHashTable</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GHashTableFunctions">Functions</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_foreach_remove">
+		
+<h4 id="g_hash_table_foreach_remove1">
+	<span><code>g_hash_table_foreach_remove</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint
+g_hash_table_foreach_remove (<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table,
+                             <a title="GHRFunc" href="hash_tables.html#GHRFunc">GHRFunc</a> func,
+                             gpointer user_data)</pre>
+
+<p>Calls the given function for each key/value pair in the
+<a href="hash_tables.html#GHashTable">GHashTable</a>. If the function returns <a href="macros.html#TRUE">TRUE</a>, then the key/value
+pair is removed from the <a href="hash_tables.html#GHashTable">GHashTable</a>. If you supplied key or
+value destroy functions when creating the <a href="hash_tables.html#GHashTable">GHashTable</a>, they are
+used to free the memory allocated for the removed keys and values.</p>
+<p>See <a href="hash_tables.html#GHashTableIter">GHashTableIter</a> for an alternative way to loop over the
+key/value pairs in the hash table.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call for each key/value pair</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data to pass to the function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of key/value pairs removed</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_foreach_steal">
+		
+<h4 id="g_hash_table_foreach_steal1">
+	<span><code>g_hash_table_foreach_steal</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint
+g_hash_table_foreach_steal (<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table,
+                            <a title="GHRFunc" href="hash_tables.html#GHRFunc">GHRFunc</a> func,
+                            gpointer user_data)</pre>
+
+<p>Calls the given function for each key/value pair in the
+<a href="hash_tables.html#GHashTable">GHashTable</a>. If the function returns <a href="macros.html#TRUE">TRUE</a>, then the key/value
+pair is removed from the <a href="hash_tables.html#GHashTable">GHashTable</a>, but no key or value
+destroy functions are called.</p>
+<p>See <a href="hash_tables.html#GHashTableIter">GHashTableIter</a> for an alternative way to loop over the
+key/value pairs in the hash table.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call for each key/value pair</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data to pass to the function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of key/value pairs removed.</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.40;" id="g_hash_table_get_keys_as_array">
+		
+<h4 id="g_hash_table_get_keys_as_array1">
+	<span><code>g_hash_table_get_keys_as_array</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_hash_table_get_keys_as_array (<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table,
+                                guint* length)</pre>
+
+<p>Retrieves every key inside <em>hash_table</em>, as an array.</p>
+<p>The returned array is <a href="macros.html#NULL">NULL</a>-terminated but may contain <a href="macros.html#NULL">NULL</a> as a
+key.  Use <em>length</em> to determine the true length if it's possible that
+<a href="macros.html#NULL">NULL</a> was used as the value for a key.</p>
+<p>Note: in the common case of a string-keyed <a href="hash_tables.html#GHashTable">GHashTable</a>, the return
+value of this function can be conveniently cast to (const gchar **).</p>
+<p>This iterates over every entry in the hash table to build its return value.
+To iterate over the entries in a <a href="hash_tables.html#GHashTable">GHashTable</a> more efficiently, use a
+<a href="hash_tables.html#GHashTableIter">GHashTableIter</a>.</p>
+<p>You should always free the return result with <a href="memory.html#g_free">g_free</a>.  In the
+above-mentioned case of a string-keyed hash table, it may be
+appropriate to use <a href="string_utils.html#g_strfreev">g_strfreev</a> if you call <a href="hash_tables.html#g_hash_table_steal_all">g_hash_table_steal_all</a>
+first to transfer ownership of the keys.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of the returned array</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a
+<a href="macros.html#NULL">NULL</a>-terminated array containing each key from the table.</p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=length]</span>
+<span class="annotation">[<abbr title="Free data container after the code is done"><span class="acronym">transfer: container</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p>a
+<a href="macros.html#NULL">NULL</a>-terminated array containing each key from the table.</p>
+
+	</td>
+	<td>
+		guint*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=length]</span>
+<span class="annotation">[<abbr title="Free data container after the code is done"><span class="acronym">transfer: container</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.40
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.10;" id="g_hash_table_ref">
+		
+<h4 id="g_hash_table_ref1">
+	<span><code>g_hash_table_ref</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> *
+g_hash_table_ref (<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table)</pre>
+
+<p>Atomically increments the reference count of <em>hash_table</em> by one.
+This function is MT-safe and may be called from any thread.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the passed in <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+
+	</td>
+	<td>
+		<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.10
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_foreach">
+		
+<h4 id="g_hash_table_foreach1">
+	<span><code>g_hash_table_foreach</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_hash_table_foreach (<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table,
+                      <a title="GHFunc" href="hash_tables.html#GHFunc">GHFunc</a> func,
+                      gpointer user_data)</pre>
+
+<p>Calls the given function for each of the key/value pairs in the
+<a href="hash_tables.html#GHashTable">GHashTable</a>.  The function is passed the key and value of each
+pair, and the given <em>user_data</em> parameter.  The hash table may not
+be modified while iterating over it (you can't add/remove
+items). To remove all items matching a predicate, use
+<a href="hash_tables.html#g_hash_table_foreach_remove">g_hash_table_foreach_remove</a>.</p>
+<p>See <a href="hash_tables.html#g_hash_table_find">g_hash_table_find</a> for performance caveats for linear
+order searches in contrast to <a href="hash_tables.html#g_hash_table_lookup">g_hash_table_lookup</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call for each key/value pair</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data to pass to the function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_hash_table_find">
+		
+<h4 id="g_hash_table_find1">
+	<span><code>g_hash_table_find</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_hash_table_find (<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table,
+                   <a title="GHRFunc" href="hash_tables.html#GHRFunc">GHRFunc</a> predicate,
+                   gpointer user_data)</pre>
+
+<p>Calls the given function for key/value pairs in the <a href="hash_tables.html#GHashTable">GHashTable</a>
+until <em>predicate</em> returns <a href="macros.html#TRUE">TRUE</a>. The function is passed the key
+and value of each pair, and the given <em>user_data</em> parameter. The
+hash table may not be modified while iterating over it (you can't
+add/remove items).</p>
+<p>Note, that hash tables are really only optimized for forward
+lookups, i.e. <a href="hash_tables.html#g_hash_table_lookup">g_hash_table_lookup</a>. So code that frequently issues
+<a href="hash_tables.html#g_hash_table_find">g_hash_table_find</a> or <a href="hash_tables.html#g_hash_table_foreach">g_hash_table_foreach</a> (e.g. in the order of
+once per every entry in a hash table) should probably be reworked
+to use additional or different data structures for reverse lookups
+(keep in mind that an O(n) find/foreach operation issued for all n
+values in a hash table ends up needing O(n*n) operations).</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>predicate:</code></em></i>
+		</p>
+	</td>
+		<td><p>function to test the key/value pairs for a certain property</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data to pass to the function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The value of the first key/value pair is returned,
+for which <em>predicate</em> evaluates to <a href="macros.html#TRUE">TRUE</a>. If no pair with the
+requested property is found, <a href="macros.html#NULL">NULL</a> is returned.</p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_hash_table_get_keys">
+		
+<h4 id="g_hash_table_get_keys1">
+	<span><code>g_hash_table_get_keys</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GList" href="linked_lists_double.html#GList">GList</a> *
+g_hash_table_get_keys (<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table)</pre>
+
+<p>Retrieves every key inside <em>hash_table</em>. The returned data is valid
+until changes to the hash release those keys.</p>
+<p>This iterates over every entry in the hash table to build its return value.
+To iterate over the entries in a <a href="hash_tables.html#GHashTable">GHashTable</a> more efficiently, use a
+<a href="hash_tables.html#GHashTableIter">GHashTableIter</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="linked_lists_double.html#GList">GList</a> containing all the keys
+inside the hash table. The content of the list is owned by the
+hash table and should not be modified or freed. Use <a href="linked_lists_double.html#g_list_free">g_list_free</a>
+when done using the list.</p>
+
+	</td>
+	<td>
+		<a title="GList" href="linked_lists_double.html#GList">GList</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data container after the code is done"><span class="acronym">transfer: container</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_new">
+		
+<h4 id="g_hash_table_new1">
+	<span><code>g_hash_table_new</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> *
+g_hash_table_new (<a title="GHashFunc" href="hash_tables.html#GHashFunc">GHashFunc</a> hash_func,
+                  <a title="GEqualFunc" href="hash_tables.html#GEqualFunc">GEqualFunc</a> key_equal_func)</pre>
+
+<p>Creates a new <a href="hash_tables.html#GHashTable">GHashTable</a> with a reference count of 1.</p>
+<p>Hash values returned by <em>hash_func</em> are used to determine where keys
+are stored within the <a href="hash_tables.html#GHashTable">GHashTable</a> data structure. The <a href="hash_tables.html#g_direct_hash">g_direct_hash</a>,
+<a href="hash_tables.html#g_int_hash">g_int_hash</a>, <a href="hash_tables.html#g_int64_hash">g_int64_hash</a>, <a href="hash_tables.html#g_double_hash">g_double_hash</a> and <a href="hash_tables.html#g_str_hash">g_str_hash</a>
+functions are provided for some common types of keys.
+If <em>hash_func</em> is <a href="macros.html#NULL">NULL</a>, <a href="hash_tables.html#g_direct_hash">g_direct_hash</a> is used.</p>
+<p><em>key_equal_func</em> is used when looking up keys in the <a href="hash_tables.html#GHashTable">GHashTable</a>.
+The <a href="hash_tables.html#g_direct_equal">g_direct_equal</a>, <a href="hash_tables.html#g_int_equal">g_int_equal</a>, <a href="hash_tables.html#g_int64_equal">g_int64_equal</a>, <a href="hash_tables.html#g_double_equal">g_double_equal</a>
+and <a href="hash_tables.html#g_str_equal">g_str_equal</a> functions are provided for the most common types
+of keys. If <em>key_equal_func</em> is <a href="macros.html#NULL">NULL</a>, keys are compared directly in
+a similar fashion to <a href="hash_tables.html#g_direct_equal">g_direct_equal</a>, but without the overhead of
+a function call. <em>key_equal_func</em> is called with the key from the hash table
+as its first parameter, and the user-provided key to check against as
+its second.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>a function to create a hash value from a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_equal_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>a function to check two keys for equality</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+
+	</td>
+	<td>
+		<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_new_full">
+		
+<h4 id="g_hash_table_new_full1">
+	<span><code>g_hash_table_new_full</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> *
+g_hash_table_new_full (<a title="GHashFunc" href="hash_tables.html#GHashFunc">GHashFunc</a> hash_func,
+                       <a title="GEqualFunc" href="hash_tables.html#GEqualFunc">GEqualFunc</a> key_equal_func,
+                       <a title="GDestroyNotify" href="datasets.html#GDestroyNotify">GDestroyNotify</a> key_destroy_func,
+                       <a title="GDestroyNotify" href="datasets.html#GDestroyNotify">GDestroyNotify</a> value_destroy_func)</pre>
+
+<p>Creates a new <a href="hash_tables.html#GHashTable">GHashTable</a> like <a href="hash_tables.html#g_hash_table_new">g_hash_table_new</a> with a reference
+count of 1 and allows to specify functions to free the memory
+allocated for the key and value that get called when removing the
+entry from the <a href="hash_tables.html#GHashTable">GHashTable</a>.</p>
+<p>Since version 2.42 it is permissible for destroy notify functions to
+recursively remove further items from the hash table. This is only
+permissible if the application still holds a reference to the hash table.
+This means that you may need to ensure that the hash table is empty by
+calling <a href="hash_tables.html#g_hash_table_remove_all">g_hash_table_remove_all</a> before releasing the last reference using
+<a href="hash_tables.html#g_hash_table_unref">g_hash_table_unref</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>a function to create a hash value from a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_equal_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>a function to check two keys for equality</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_destroy_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>a function to free the memory allocated for the key
+used when removing the entry from the <a href="hash_tables.html#GHashTable">GHashTable</a>, or <a href="macros.html#NULL">NULL</a>
+if you don't want to supply such a function.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value_destroy_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>a function to free the memory allocated for the
+value used when removing the entry from the <a href="hash_tables.html#GHashTable">GHashTable</a>, or <a href="macros.html#NULL">NULL</a>
+if you don't want to supply such a function.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+
+	</td>
+	<td>
+		<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_hash_table_get_values">
+		
+<h4 id="g_hash_table_get_values1">
+	<span><code>g_hash_table_get_values</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GList" href="linked_lists_double.html#GList">GList</a> *
+g_hash_table_get_values (<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table)</pre>
+
+<p>Retrieves every value inside <em>hash_table</em>. The returned data
+is valid until <em>hash_table</em> is modified.</p>
+<p>This iterates over every entry in the hash table to build its return value.
+To iterate over the entries in a <a href="hash_tables.html#GHashTable">GHashTable</a> more efficiently, use a
+<a href="hash_tables.html#GHashTableIter">GHashTableIter</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="linked_lists_double.html#GList">GList</a> containing all the values
+inside the hash table. The content of the list is owned by the
+hash table and should not be modified or freed. Use <a href="linked_lists_double.html#g_list_free">g_list_free</a>
+when done using the list.</p>
+
+	</td>
+	<td>
+		<a title="GList" href="linked_lists_double.html#GList">GList</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data container after the code is done"><span class="acronym">transfer: container</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+
+
+            <h2 class="symbol_section" id="">GHashTableIter</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GHashTableIterMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_hash_table_iter_next">
+		
+<h4 id="g_hash_table_iter_next1">
+	<span><code>g_hash_table_iter_next</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_hash_table_iter_next (<a title="GHashTableIter" href="hash_tables.html#GHashTableIter">GHashTableIter</a> * iter,
+                        gpointer* key,
+                        gpointer* value)</pre>
+
+<p>Advances <em>iter</em> and retrieves the key and/or value that are now
+pointed to as a result of this advancement. If <a href="macros.html#FALSE">FALSE</a> is returned,
+<em>key</em> and <em>value</em> are not set, and the iterator becomes invalid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>an initialized <a href="hash_tables.html#GHashTableIter">GHashTableIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a location to store the key</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>a location to store the value</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of1">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#FALSE">FALSE</a> if the end of the <a href="hash_tables.html#GHashTable">GHashTable</a> has been reached.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>key:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#FALSE">FALSE</a> if the end of the <a href="hash_tables.html#GHashTable">GHashTable</a> has been reached.</p>
+
+	</td>
+	<td>
+		gpointer*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>value:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#FALSE">FALSE</a> if the end of the <a href="hash_tables.html#GHashTable">GHashTable</a> has been reached.</p>
+
+	</td>
+	<td>
+		gpointer*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_hash_table_iter_replace">
+		
+<h4 id="g_hash_table_iter_replace1">
+	<span><code>g_hash_table_iter_replace</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_hash_table_iter_replace (<a title="GHashTableIter" href="hash_tables.html#GHashTableIter">GHashTableIter</a> * iter,
+                           gpointer value)</pre>
+
+<p>Replaces the value currently pointed to by the iterator
+from its associated <a href="hash_tables.html#GHashTable">GHashTable</a>. Can only be called after
+<a href="hash_tables.html#g_hash_table_iter_next">g_hash_table_iter_next</a> returned <a href="macros.html#TRUE">TRUE</a>.</p>
+<p>If you supplied a <em>value_destroy_func</em> when creating the
+<a href="hash_tables.html#GHashTable">GHashTable</a>, the old value is freed using that function.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>an initialized <a href="hash_tables.html#GHashTableIter">GHashTableIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>the value to replace with</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_hash_table_iter_remove">
+		
+<h4 id="g_hash_table_iter_remove1">
+	<span><code>g_hash_table_iter_remove</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_hash_table_iter_remove (<a title="GHashTableIter" href="hash_tables.html#GHashTableIter">GHashTableIter</a> * iter)</pre>
+
+<p>Removes the key/value pair currently pointed to by the iterator
+from its associated <a href="hash_tables.html#GHashTable">GHashTable</a>. Can only be called after
+<a href="hash_tables.html#g_hash_table_iter_next">g_hash_table_iter_next</a> returned <a href="macros.html#TRUE">TRUE</a>, and cannot be called
+more than once for the same key/value pair.</p>
+<p>If the <a href="hash_tables.html#GHashTable">GHashTable</a> was created using <a href="hash_tables.html#g_hash_table_new_full">g_hash_table_new_full</a>,
+the key and value are freed using the supplied destroy functions,
+otherwise you have to make sure that any dynamically allocated
+values are freed yourself.</p>
+<p>It is safe to continue iterating the <a href="hash_tables.html#GHashTable">GHashTable</a> afterward:</p>
+<pre><code class="language-[&lt;!--"> while (g_hash_table_iter_next (&amp;iter, &amp;key, &amp;value))
+   {
+     if (condition)
+       g_hash_table_iter_remove (&amp;iter);
+   }
+</code></pre>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>an initialized <a href="hash_tables.html#GHashTableIter">GHashTableIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_hash_table_iter_get_hash_table">
+		
+<h4 id="g_hash_table_iter_get_hash_table1">
+	<span><code>g_hash_table_iter_get_hash_table</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> *
+g_hash_table_iter_get_hash_table (<a title="GHashTableIter" href="hash_tables.html#GHashTableIter">GHashTableIter</a> * iter)</pre>
+
+<p>Returns the <a href="hash_tables.html#GHashTable">GHashTable</a> associated with <em>iter</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>an initialized <a href="hash_tables.html#GHashTableIter">GHashTableIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="hash_tables.html#GHashTable">GHashTable</a> associated with <em>iter</em>.</p>
+
+	</td>
+	<td>
+		<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_hash_table_iter_init">
+		
+<h4 id="g_hash_table_iter_init1">
+	<span><code>g_hash_table_iter_init</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_hash_table_iter_init (<a title="GHashTableIter" href="hash_tables.html#GHashTableIter">GHashTableIter</a> * iter,
+                        <a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table)</pre>
+
+<p>Initializes a key/value pair iterator and associates it with
+<em>hash_table</em>. Modifying the hash table after calling this function
+invalidates the returned iterator.</p>
+<pre><code class="language-[&lt;!--"> GHashTableIter iter;
+ gpointer key, value;
+
+ g_hash_table_iter_init (&amp;iter, hash_table);
+ while (g_hash_table_iter_next (&amp;iter, &amp;key, &amp;value))
+   {
+     // do something with key and value
+   }
+</code></pre>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>an uninitialized <a href="hash_tables.html#GHashTableIter">GHashTableIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_hash_table_iter_steal">
+		
+<h4 id="g_hash_table_iter_steal1">
+	<span><code>g_hash_table_iter_steal</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_hash_table_iter_steal (<a title="GHashTableIter" href="hash_tables.html#GHashTableIter">GHashTableIter</a> * iter)</pre>
+
+<p>Removes the key/value pair currently pointed to by the
+iterator from its associated <a href="hash_tables.html#GHashTable">GHashTable</a>, without calling
+the key and value destroy functions. Can only be called
+after <a href="hash_tables.html#g_hash_table_iter_next">g_hash_table_iter_next</a> returned <a href="macros.html#TRUE">TRUE</a>, and cannot
+be called more than once for the same key/value pair.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>an initialized <a href="hash_tables.html#GHashTableIter">GHashTableIter</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_size">
+		
+<h3 id="g_hash_table_size1">
+	<span><code>g_hash_table_size</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+guint
+g_hash_table_size (<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table)</pre>
+
+<p>Returns the number of elements contained in the <a href="hash_tables.html#GHashTable">GHashTable</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of key/value pairs in the <a href="hash_tables.html#GHashTable">GHashTable</a>.</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_lookup">
+		
+<h3 id="g_hash_table_lookup1">
+	<span><code>g_hash_table_lookup</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gpointer
+g_hash_table_lookup (<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table,
+                     gconstpointer key)</pre>
+
+<p>Looks up a key in a <a href="hash_tables.html#GHashTable">GHashTable</a>. Note that this function cannot
+distinguish between a key that is not present and one which is present
+and has the value <a href="macros.html#NULL">NULL</a>. If you need this distinction, use
+<a href="hash_tables.html#g_hash_table_lookup_extended">g_hash_table_lookup_extended</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to look up</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the associated value, or <a href="macros.html#NULL">NULL</a> if the key is not found</p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_double_hash">
+		
+<h3 id="g_double_hash1">
+	<span><code>g_double_hash</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+guint
+g_double_hash (gconstpointer v)</pre>
+
+<p>Converts a pointer to a gdouble to a hash value.
+It can be passed to <a href="hash_tables.html#g_hash_table_new">g_hash_table_new</a> as the <em>hash_func</em> parameter,
+It can be passed to <a href="hash_tables.html#g_hash_table_new">g_hash_table_new</a> as the <em>hash_func</em> parameter,
+when using non-%NULL pointers to doubles as keys in a <a href="hash_tables.html#GHashTable">GHashTable</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a gdouble key</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a hash value corresponding to the key.</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_int64_equal">
+		
+<h3 id="g_int64_equal1">
+	<span><code>g_int64_equal</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_int64_equal (gconstpointer v1,
+               gconstpointer v2)</pre>
+
+<p>Compares the two gint64 values being pointed to and returns
+<a href="macros.html#TRUE">TRUE</a> if they are equal.
+It can be passed to <a href="hash_tables.html#g_hash_table_new">g_hash_table_new</a> as the <em>key_equal_func</em>
+parameter, when using non-%NULL pointers to 64-bit integers as keys in a
+<a href="hash_tables.html#GHashTable">GHashTable</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v1:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a gint64 key</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v2:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a gint64 key to compare with <em>v1</em></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the two keys match.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.10;" id="g_hash_table_unref">
+		
+<h3 id="g_hash_table_unref1">
+	<span><code>g_hash_table_unref</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_hash_table_unref (<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table)</pre>
+
+<p>Atomically decrements the reference count of <em>hash_table</em> by one.
+If the reference count drops to 0, all keys and values will be
+destroyed, and all memory allocated by the hash table is released.
+This function is MT-safe and may be called from any thread.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.10
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_int64_hash">
+		
+<h3 id="g_int64_hash1">
+	<span><code>g_int64_hash</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+guint
+g_int64_hash (gconstpointer v)</pre>
+
+<p>Converts a pointer to a gint64 to a hash value.</p>
+<p>It can be passed to <a href="hash_tables.html#g_hash_table_new">g_hash_table_new</a> as the <em>hash_func</em> parameter,
+when using non-%NULL pointers to 64-bit integer values as keys in a
+<a href="hash_tables.html#GHashTable">GHashTable</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a gint64 key</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a hash value corresponding to the key.</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_hash_table_steal_all">
+		
+<h3 id="g_hash_table_steal_all1">
+	<span><code>g_hash_table_steal_all</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_hash_table_steal_all (<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table)</pre>
+
+<p>Removes all keys and their associated values from a <a href="hash_tables.html#GHashTable">GHashTable</a>
+without calling the key and value destroy functions.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_lookup_extended">
+		
+<h3 id="g_hash_table_lookup_extended1">
+	<span><code>g_hash_table_lookup_extended</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_hash_table_lookup_extended (<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table,
+                              gconstpointer lookup_key,
+                              gpointer* orig_key,
+                              gpointer* value)</pre>
+
+<p>Looks up a key in the <a href="hash_tables.html#GHashTable">GHashTable</a>, returning the original key and the
+associated value and a gboolean which is <a href="macros.html#TRUE">TRUE</a> if the key was found. This
+is useful if you need to free the memory allocated for the original key,
+for example before calling <a href="hash_tables.html#g_hash_table_remove">g_hash_table_remove</a>.</p>
+<p>You can actually pass <a href="macros.html#NULL">NULL</a> for <em>lookup_key</em> to test
+whether the <a href="macros.html#NULL">NULL</a> key exists, provided the hash and equal functions
+of <em>hash_table</em> are <a href="macros.html#NULL">NULL</a>-safe.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>lookup_key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to look up</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>orig_key:</code></em></i>
+		</p>
+	</td>
+		<td><p>return location for the original key</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>return location for the value associated
+with the key</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of2">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the key was found in the <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>orig_key:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the key was found in the <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+
+	</td>
+	<td>
+		gpointer*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>value:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the key was found in the <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+
+	</td>
+	<td>
+		gpointer*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_hash_table_contains">
+		
+<h3 id="g_hash_table_contains1">
+	<span><code>g_hash_table_contains</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_hash_table_contains (<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table,
+                       gconstpointer key)</pre>
+
+<p>Checks if <em>key</em> is in <em>hash_table</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key to check</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>key</em> is in <em>hash_table</em>, <a href="macros.html#FALSE">FALSE</a> otherwise.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_str_equal">
+		
+<h3 id="g_str_equal1">
+	<span><code>g_str_equal</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_str_equal (gconstpointer v1,
+             gconstpointer v2)</pre>
+
+<p>Compares two strings for byte-by-byte equality and returns <a href="macros.html#TRUE">TRUE</a>
+if they are equal. It can be passed to <a href="hash_tables.html#g_hash_table_new">g_hash_table_new</a> as the
+<em>key_equal_func</em> parameter, when using non-%NULL strings as keys in a
+<a href="hash_tables.html#GHashTable">GHashTable</a>.</p>
+<p>Note that this function is primarily meant as a hash table comparison
+function. For a general-purpose, <a href="macros.html#NULL">NULL</a>-safe string comparison function,
+see <a href="string_utils.html#g_strcmp0">g_strcmp0</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v1:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v2:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key to compare with <em>v1</em></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the two keys match</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_str_hash">
+		
+<h3 id="g_str_hash1">
+	<span><code>g_str_hash</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+guint
+g_str_hash (gconstpointer v)</pre>
+
+<p>Converts a string to a hash value.</p>
+<p>This function implements the widely used "djb" hash apparently
+posted by Daniel Bernstein to comp.lang.c some time ago.  The 32
+bit unsigned hash value starts at 5381 and for each byte 'c' in
+the string, is updated: <code>hash = hash * 33 + c</code>. This function
+uses the signed value of each byte.</p>
+<p>It can be passed to <a href="hash_tables.html#g_hash_table_new">g_hash_table_new</a> as the <em>hash_func</em> parameter,
+when using non-%NULL strings as keys in a <a href="hash_tables.html#GHashTable">GHashTable</a>.</p>
+<p>Note that this function may not be a perfect fit for all use cases.
+For example, it produces some hash collisions with strings as short
+as 2.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string key</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a hash value corresponding to the key</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_replace">
+		
+<h3 id="g_hash_table_replace1">
+	<span><code>g_hash_table_replace</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_hash_table_replace (<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table,
+                      gpointer key,
+                      gpointer value)</pre>
+
+<p>Inserts a new key and value into a <a href="hash_tables.html#GHashTable">GHashTable</a> similar to
+<a href="hash_tables.html#g_hash_table_insert">g_hash_table_insert</a>. The difference is that if the key
+already exists in the <a href="hash_tables.html#GHashTable">GHashTable</a>, it gets replaced by the
+new key. If you supplied a <em>value_destroy_func</em> when creating
+the <a href="hash_tables.html#GHashTable">GHashTable</a>, the old value is freed using that function.
+If you supplied a <em>key_destroy_func</em> when creating the
+<a href="hash_tables.html#GHashTable">GHashTable</a>, the old key is freed using that function.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key to insert</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>the value to associate with the key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the key did not exist yet</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_double_equal">
+		
+<h3 id="g_double_equal1">
+	<span><code>g_double_equal</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_double_equal (gconstpointer v1,
+                gconstpointer v2)</pre>
+
+<p>Compares the two gdouble values being pointed to and returns
+<a href="macros.html#TRUE">TRUE</a> if they are equal.
+It can be passed to <a href="hash_tables.html#g_hash_table_new">g_hash_table_new</a> as the <em>key_equal_func</em>
+parameter, when using non-%NULL pointers to doubles as keys in a
+<a href="hash_tables.html#GHashTable">GHashTable</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters28">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v1:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a gdouble key</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v2:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a gdouble key to compare with <em>v1</em></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the two keys match.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_int_equal">
+		
+<h3 id="g_int_equal1">
+	<span><code>g_int_equal</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_int_equal (gconstpointer v1,
+             gconstpointer v2)</pre>
+
+<p>Compares the two gint values being pointed to and returns
+<a href="macros.html#TRUE">TRUE</a> if they are equal.
+It can be passed to <a href="hash_tables.html#g_hash_table_new">g_hash_table_new</a> as the <em>key_equal_func</em>
+parameter, when using non-%NULL pointers to integers as keys in a
+<a href="hash_tables.html#GHashTable">GHashTable</a>.</p>
+<p>Note that this function acts on pointers to gint, not on gint
+directly: if your hash table's keys are of the form
+<code>GINT_TO_POINTER (n)</code>, use <a href="hash_tables.html#g_direct_equal">g_direct_equal</a> instead.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters29">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v1:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a gint key</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v2:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a gint key to compare with <em>v1</em></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the two keys match.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_remove">
+		
+<h3 id="g_hash_table_remove1">
+	<span><code>g_hash_table_remove</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_hash_table_remove (<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table,
+                     gconstpointer key)</pre>
+
+<p>Removes a key and its associated value from a <a href="hash_tables.html#GHashTable">GHashTable</a>.</p>
+<p>If the <a href="hash_tables.html#GHashTable">GHashTable</a> was created using <a href="hash_tables.html#g_hash_table_new_full">g_hash_table_new_full</a>, the
+key and value are freed using the supplied destroy functions, otherwise
+you have to make sure that any dynamically allocated values are freed
+yourself.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters30">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to remove</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the key was found and removed from the <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_int_hash">
+		
+<h3 id="g_int_hash1">
+	<span><code>g_int_hash</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+guint
+g_int_hash (gconstpointer v)</pre>
+
+<p>Converts a pointer to a gint to a hash value.
+It can be passed to <a href="hash_tables.html#g_hash_table_new">g_hash_table_new</a> as the <em>hash_func</em> parameter,
+when using non-%NULL pointers to integer values as keys in a <a href="hash_tables.html#GHashTable">GHashTable</a>.</p>
+<p>Note that this function acts on pointers to gint, not on gint
+directly: if your hash table's keys are of the form
+<code>GINT_TO_POINTER (n)</code>, use <a href="hash_tables.html#g_direct_hash">g_direct_hash</a> instead.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters31">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a gint key</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns21">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a hash value corresponding to the key.</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_direct_hash">
+		
+<h3 id="g_direct_hash1">
+	<span><code>g_direct_hash</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+guint
+g_direct_hash (gconstpointer v)</pre>
+
+<p>Converts a gpointer to a hash value.
+It can be passed to <a href="hash_tables.html#g_hash_table_new">g_hash_table_new</a> as the <em>hash_func</em> parameter,
+when using opaque pointers compared by pointer value as keys in a
+<a href="hash_tables.html#GHashTable">GHashTable</a>.</p>
+<p>This hash function is also appropriate for keys that are integers
+stored in pointers, such as <code>GINT_TO_POINTER (n)</code>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters32">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v:</code></em></i>
+		</p>
+	</td>
+		<td><p>a gpointer key</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns22">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a hash value corresponding to the key.</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_insert">
+		
+<h3 id="g_hash_table_insert1">
+	<span><code>g_hash_table_insert</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_hash_table_insert (<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table,
+                     gpointer key,
+                     gpointer value)</pre>
+
+<p>Inserts a new key and value into a <a href="hash_tables.html#GHashTable">GHashTable</a>.</p>
+<p>If the key already exists in the <a href="hash_tables.html#GHashTable">GHashTable</a> its current
+value is replaced with the new value. If you supplied a
+<em>value_destroy_func</em> when creating the <a href="hash_tables.html#GHashTable">GHashTable</a>, the old
+value is freed using that function. If you supplied a
+<em>key_destroy_func</em> when creating the <a href="hash_tables.html#GHashTable">GHashTable</a>, the passed
+key is freed using that function.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters33">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key to insert</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>the value to associate with the key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns23">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the key did not exist yet</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_steal">
+		
+<h3 id="g_hash_table_steal1">
+	<span><code>g_hash_table_steal</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_hash_table_steal (<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table,
+                    gconstpointer key)</pre>
+
+<p>Removes a key and its associated value from a <a href="hash_tables.html#GHashTable">GHashTable</a> without
+calling the key and value destroy functions.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters34">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to remove</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns24">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the key was found and removed from the <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_hash_table_remove_all">
+		
+<h3 id="g_hash_table_remove_all1">
+	<span><code>g_hash_table_remove_all</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_hash_table_remove_all (<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table)</pre>
+
+<p>Removes all keys and their associated values from a <a href="hash_tables.html#GHashTable">GHashTable</a>.</p>
+<p>If the <a href="hash_tables.html#GHashTable">GHashTable</a> was created using <a href="hash_tables.html#g_hash_table_new_full">g_hash_table_new_full</a>,
+the keys and values are freed using the supplied destroy functions,
+otherwise you have to make sure that any dynamically allocated
+values are freed yourself.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters35">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_destroy">
+		
+<h3 id="g_hash_table_destroy1">
+	<span><code>g_hash_table_destroy</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_hash_table_destroy (<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table)</pre>
+
+<p>Destroys all keys and values in the <a href="hash_tables.html#GHashTable">GHashTable</a> and decrements its
+reference count by 1. If keys and/or values are dynamically allocated,
+you should either free them first or create the <a href="hash_tables.html#GHashTable">GHashTable</a> with destroy
+notifiers using <a href="hash_tables.html#g_hash_table_new_full">g_hash_table_new_full</a>. In the latter case the destroy
+functions you supplied will be called on all keys and values during the
+destruction phase.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters36">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_direct_equal">
+		
+<h3 id="g_direct_equal1">
+	<span><code>g_direct_equal</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_direct_equal (gconstpointer v1,
+                gconstpointer v2)</pre>
+
+<p>Compares two gpointer arguments and returns <a href="macros.html#TRUE">TRUE</a> if they are equal.
+It can be passed to <a href="hash_tables.html#g_hash_table_new">g_hash_table_new</a> as the <em>key_equal_func</em>
+parameter, when using opaque pointers compared by pointer value as
+keys in a <a href="hash_tables.html#GHashTable">GHashTable</a>.</p>
+<p>This equality function is also appropriate for keys that are integers
+stored in pointers, such as <code>GINT_TO_POINTER (n)</code>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters37">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v1:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v2:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key to compare with <em>v1</em></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns25">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the two keys match.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_hash_table_add">
+		
+<h3 id="g_hash_table_add1">
+	<span><code>g_hash_table_add</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_hash_table_add (<a title="GHashTable" href="hash_tables.html#GHashTable">GHashTable</a> * hash_table,
+                  gpointer key)</pre>
+
+<p>This is a convenience function for using a <a href="hash_tables.html#GHashTable">GHashTable</a> as a set.  It
+is equivalent to calling <a href="hash_tables.html#g_hash_table_replace">g_hash_table_replace</a> with <em>key</em> as both the
+key and the value.</p>
+<p>When a hash table only ever contains keys that have themselves as the
+corresponding value it is able to be stored more efficiently.  See
+the discussion in the section description.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters38">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GHashTable</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key to insert</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns26">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the key did not exist yet</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Function_Macros">Function Macros</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_thaw">
+		
+<h3 id="g_hash_table_thaw1">
+	<span><code>g_hash_table_thaw</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_hash_table_thaw(hash_table) ((void)0)
+</pre>
+
+<p>This function is deprecated and will be removed in the next major
+release of GLib. It does nothing.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_freeze">
+		
+<h3 id="g_hash_table_freeze1">
+	<span><code>g_hash_table_freeze</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_hash_table_freeze(hash_table) ((void)0)
+</pre>
+
+<p>This function is deprecated and will be removed in the next major
+release of GLib. It does nothing.</p>
+
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHashTable">
+		
+<h3 id="struct-ghashtable">
+		struct GHashTable
+	</h3>
+
+		<pre class="raw_code">
+struct GHashTable {
+};
+</pre>
+
+<p>The <a href="hash_tables.html#GHashTable">GHashTable</a> struct is an opaque data structure to represent a
+[Hash Table][glib-Hash-Tables]. It should only be accessed via the
+following functions.</p>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHashTableIter">
+		
+<h3 id="struct-ghashtableiter">
+		struct GHashTableIter
+	</h3>
+
+		<pre class="raw_code">
+struct GHashTableIter {
+    gpointer dummy1; /* &lt; private &gt; */
+    gpointer dummy2; /* &lt; private &gt; */
+    gpointer dummy3; /* &lt; private &gt; */
+    int dummy4; /* &lt; private &gt; */
+    gboolean dummy5; /* &lt; private &gt; */
+    gpointer dummy6; /* &lt; private &gt; */
+};
+</pre>
+
+<p>A GHashTableIter structure represents an iterator that can be used
+to iterate over the elements of a <a href="hash_tables.html#GHashTable">GHashTable</a>. GHashTableIter
+structures are typically allocated on the stack and then initialized
+with <a href="hash_tables.html#g_hash_table_iter_init">g_hash_table_iter_init</a>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="fields">Fields</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GHashTableIter.dummy1">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>dummy1</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GHashTableIter.dummy2">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>dummy2</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GHashTableIter.dummy3">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>dummy3</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GHashTableIter.dummy4">
+		<td>
+		<p>
+		<i><em><code>int <em><code>dummy4</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GHashTableIter.dummy5">
+		<td>
+		<p>
+		<i><em><code>gboolean <em><code>dummy5</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GHashTableIter.dummy6">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>dummy6</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GEqualFunc">
+		
+<h3 id="gequalfunc">
+	<span><code>GEqualFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+(*GEqualFunc) (gconstpointer a,
+               gconstpointer b)</pre>
+
+<p>Specifies the type of a function used to test two values for
+equality. The function should return <a href="macros.html#TRUE">TRUE</a> if both values are equal
+and <a href="macros.html#FALSE">FALSE</a> otherwise.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters39">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>a:</code></em></i>
+		</p>
+	</td>
+		<td><p>a value</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>b:</code></em></i>
+		</p>
+	</td>
+		<td><p>a value to compare with</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns27">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>a</em> = <em>b</em>; <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHFunc">
+		
+<h3 id="ghfunc">
+	<span><code>GHFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+(*GHFunc) (gpointer key,
+           gpointer value,
+           gpointer user_data)</pre>
+
+<p>Specifies the type of the function passed to <a href="hash_tables.html#g_hash_table_foreach">g_hash_table_foreach</a>.
+It is called with each key/value pair, together with the <em>user_data</em>
+parameter which is passed to <a href="hash_tables.html#g_hash_table_foreach">g_hash_table_foreach</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters40">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>the value corresponding to the key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="hash_tables.html#g_hash_table_foreach">g_hash_table_foreach</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns28">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHashFunc">
+		
+<h3 id="ghashfunc">
+	<span><code>GHashFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+guint
+(*GHashFunc) (gconstpointer key)</pre>
+
+<p>Specifies the type of the hash function which is passed to
+<a href="hash_tables.html#g_hash_table_new">g_hash_table_new</a> when a <a href="hash_tables.html#GHashTable">GHashTable</a> is created.</p>
+<p>The function is passed a key and should return a guint hash value.
+The functions <a href="hash_tables.html#g_direct_hash">g_direct_hash</a>, <a href="hash_tables.html#g_int_hash">g_int_hash</a> and <a href="hash_tables.html#g_str_hash">g_str_hash</a> provide
+hash functions which can be used when the key is a gpointer, gint*,
+and gchar* respectively.</p>
+<p><a href="hash_tables.html#g_direct_hash">g_direct_hash</a> is also the appropriate hash function for keys
+of the form <code>GINT_TO_POINTER (n)</code> (or similar macros).</p>
+ <!-- FIXME: Need more here. --> A good hash functions should produce
+<p>hash values that are evenly distributed over a fairly large range.
+The modulus is taken with the hash table size (a prime number) to
+find the 'bucket' to place each key into. The function should also
+be very fast, since it is called for each key lookup.</p>
+<p>Note that the hash functions provided by GLib have these qualities,
+but are not particularly robust against manufactured keys that
+cause hash collisions. Therefore, you should consider choosing
+a more secure hash function when using a GHashTable with keys
+that originate in untrusted data (such as HTTP requests).
+Using <a href="hash_tables.html#g_str_hash">g_str_hash</a> in that situation might make your application
+vulerable to
+<a href="https://lwn.net/Articles/474912/">Algorithmic Complexity Attacks</a>.</p>
+<p>The key to choosing a good hash is unpredictability.  Even
+cryptographic hashes are very easy to find collisions for when the
+remainder is taken modulo a somewhat predictable prime number.  There
+must be an element of randomness that an attacker is unable to guess.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters41">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns29">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the hash value corresponding to the key</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHRFunc">
+		
+<h3 id="ghrfunc">
+	<span><code>GHRFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+(*GHRFunc) (gpointer key,
+            gpointer value,
+            gpointer user_data)</pre>
+
+<p>Specifies the type of the function passed to
+<a href="hash_tables.html#g_hash_table_foreach_remove">g_hash_table_foreach_remove</a>. It is called with each key/value
+pair, together with the <em>user_data</em> parameter passed to
+<a href="hash_tables.html#g_hash_table_foreach_remove">g_hash_table_foreach_remove</a>. It should return <a href="macros.html#TRUE">TRUE</a> if the
+key/value pair should be removed from the <a href="hash_tables.html#GHashTable">GHashTable</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters42">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>the value associated with the key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="hash_tables.html#g_hash_table_remove">g_hash_table_remove</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns30">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the key/value pair should be removed from the
+<a href="hash_tables.html#GHashTable">GHashTable</a></p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

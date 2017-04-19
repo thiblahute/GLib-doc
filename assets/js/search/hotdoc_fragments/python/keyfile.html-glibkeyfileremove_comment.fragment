@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/keyfile.html#glibkeyfileremove_comment", "fragment": "GLib.KeyFile.remove_comment \nRemoves a comment above key from group_name. If key is None then comment will be removed above group_name. If both key and group_name are None then comment will be removed above the first group in the file. \n"});

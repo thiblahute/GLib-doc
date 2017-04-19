@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/keyfile.html#glibkeyfileset_double", "fragment": "GLib.KeyFile.set_double \nAssociates a new double value with key under group_name. If key cannot be found then it is created. \n"});

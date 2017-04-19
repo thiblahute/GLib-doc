@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gregex.html#g_match_info_get_string", "fragment": "GLib.MatchInfo.prototype.get_string \nReturns the string searched with match_info. This is the string passed to GLib.Regex.prototype.match or GLib.Regex.prototype.replace so you may not free it before calling this function. \n"});

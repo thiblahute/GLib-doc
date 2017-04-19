@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_utils.html#returns53", "fragment": "\na newly allocated NULL terminated array of strings. Use g_strfreev to free it. \nSince \n"});

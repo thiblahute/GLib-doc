@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvariant.html#g_variant_dup_bytestring", "fragment": "GLib.Variant.prototype.dup_bytestring \nSimilar to GLib.Variant.prototype.get_bytestring except that instead of returning a constant string the string is duplicated. \nThe return value must be freed using GLib.prototype.free. \n"});

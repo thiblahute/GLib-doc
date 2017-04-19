@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/misc_utils.html#g_path_get_dirname1", "fragment": "g_path_get_dirname \nGets the directory components of a file name. \nIf the file name has no directory components is returned. The returned string should be freed when no longer needed. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibsourceget_name", "fragment": "GLib.Source.get_name \nGets a name for the source used in debugging and profiling. The name may be None if it has never been set with GLib.Source.set_name. \n"});

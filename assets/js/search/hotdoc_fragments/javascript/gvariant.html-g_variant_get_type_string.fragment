@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvariant.html#g_variant_get_type_string", "fragment": "GLib.Variant.prototype.get_type_string \nReturns the type string of value. Unlike the result of calling g_variant_type_peek_string not introspectable this string is nul terminated. This string belongs to GLib.Variant and must not be freed. \n"});

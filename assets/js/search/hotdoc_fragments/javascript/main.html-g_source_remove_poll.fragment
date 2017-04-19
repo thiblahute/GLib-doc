@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#g_source_remove_poll", "fragment": "GLib.Source.prototype.remove_poll \nRemoves a file descriptor from the set of file descriptors polled for this source. \nThis API is only intended to be used by implementations of GLib.Source. Do not call this API on a GLib.Source that you did not create. \n"});

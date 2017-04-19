@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hooks.html#glibhooklistprototypeclear", "fragment": "GLib.HookList.prototype.clear \nRemoves all the GLib.Hook elements from a GLib.HookList. \n"});

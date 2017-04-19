@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gregex.html#glibregexget_has_cr_or_lf", "fragment": "GLib.Regex.get_has_cr_or_lf \nChecks whether the pattern contains explicit CR or LF references. \n"});

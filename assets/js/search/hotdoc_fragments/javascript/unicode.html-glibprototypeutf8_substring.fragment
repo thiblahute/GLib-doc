@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/unicode.html#glibprototypeutf8_substring", "fragment": "GLib.prototype.utf8_substring \nCopies a substring out of a UTF encoded string. The substring will contain end_pos start_pos characters. \n"});

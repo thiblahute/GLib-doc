@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#G_UNICHAR_MAX_DECOMPOSITION_LENGTH", "fragment": "GLib.UNICHAR_MAX_DECOMPOSITION_LENGTH \nThe maximum length in codepoints of a compatibility or canonical decomposition of a single Unicode character. \nThis is as defined by Unicode \n"});

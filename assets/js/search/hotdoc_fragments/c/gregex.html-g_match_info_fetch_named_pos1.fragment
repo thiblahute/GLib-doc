@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gregex.html#g_match_info_fetch_named_pos1", "fragment": "g_match_info_fetch_named_pos \nRetrieves the position in bytes of the capturing parentheses named name. \nIf name is a valid sub pattern name but it didn t match anything e.g. sub pattern X matching b against Pa b then start_pos and end_pos are set to and TRUE is returned. \n"});

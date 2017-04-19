@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/threads.html#glibrwlockwriter_trylock", "fragment": "GLib.RWLock.writer_trylock \nTries to obtain a write lock on rw_lock. If any other thread holds a read or write lock on rw_lock it immediately returns False. Otherwise it locks rw_lock and returns True. \n"});

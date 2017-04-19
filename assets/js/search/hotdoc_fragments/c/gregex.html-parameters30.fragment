@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gregex.html#parameters30", "fragment": "match_info \nGMatchInfo structure \nname \nname of the subexpression \nstart_pos \npointer to location where to store the start position or NULL \nend_pos \npointer to location where to store the end position or NULL \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/sequence.html#g_sequence_is_empty1", "fragment": "g_sequence_is_empty \nReturns TRUE if the sequence contains zero items. \nThis function is functionally identical to checking the result of g_sequence_get_length being equal to zero. However this function is implemented in O running time. \n"});

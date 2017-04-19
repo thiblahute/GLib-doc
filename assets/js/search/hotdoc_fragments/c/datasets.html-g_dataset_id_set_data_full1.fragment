@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/datasets.html#g_dataset_id_set_data_full1", "fragment": "g_dataset_id_set_data_full \nSets the data element associated with the given GQuark id and also the function to call when the data element is destroyed. Any previous data with the same key is removed and its destroy function is called. \n"});

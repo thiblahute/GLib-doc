@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/base64.html#glibprototypebase64_decode", "fragment": "GLib.prototype.base64_decode \nDecode a sequence of Base encoded text into binary data. Note that the returned binary data is not necessarily zero terminated so it should not be used as a character string. \n"});

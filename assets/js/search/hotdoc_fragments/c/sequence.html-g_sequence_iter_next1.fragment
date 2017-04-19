@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/sequence.html#g_sequence_iter_next1", "fragment": "g_sequence_iter_next \nReturns an iterator pointing to the next position after iter. If iter is the end iterator the end iterator is returned. \n"});

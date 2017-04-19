@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/unicode.html#g_utf8_get_char1", "fragment": "g_utf8_get_char \nConverts a sequence of bytes encoded as UTF to a Unicode character. \nIf p does not point to a valid UTF encoded character results are undefined. If you are not sure that the bytes are complete valid Unicode characters you should use g_utf8_get_char_validated instead. \n"});

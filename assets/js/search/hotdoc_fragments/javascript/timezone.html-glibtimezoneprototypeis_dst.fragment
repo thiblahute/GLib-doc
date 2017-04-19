@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/timezone.html#glibtimezoneprototypeis_dst", "fragment": "GLib.TimeZone.prototype.is_dst \nDetermines if daylight savings time is in effect during a particular interval of time in the time zone tz. \n"});

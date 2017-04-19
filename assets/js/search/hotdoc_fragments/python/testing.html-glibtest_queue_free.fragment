@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/testing.html#glibtest_queue_free", "fragment": "GLib.test_queue_free \nEnqueue a pointer to be released with GLib.free during the next teardown phase. This is equivalent to calling GLib.test_queue_destroy with a destroy callback of GLib.free. \n"});

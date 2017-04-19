@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GQueue</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="queue.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="python">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="queue.markdown">
+        <h1 id="gqueue">GQueue</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GQueue</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GQueueMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_peek_nth">
+		
+<h4 id="glibqueuepeek_nth">
+	<span><code>GLib.Queue.peek_nth</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Queue.peek_nth (self, n):
+    #python wrapper for 'g_queue_peek_nth'</pre>
+
+<p>Returns the <em>n</em>'th element of <em>queue</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GLib.Queue</a></p>
+</td>
+<td>
+<a title="GLib.Queue" href="queue.html#GQueue">GLib.Queue</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n:</code></em></i>
+		</p>
+	</td>
+		<td><p>the position of the element</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the data for the <em>n</em>'th element of <em>queue</em>,
+or <a href="https://docs.python.org/2/library/constants.html#None">None</a> if <em>n</em> is off the end of <em>queue</em></p>
+
+	</td>
+	<td>
+		<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_queue_is_empty">
+		
+<h4 id="glibqueueis_empty">
+	<span><code>GLib.Queue.is_empty</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Queue.is_empty (self):
+    #python wrapper for 'g_queue_is_empty'</pre>
+
+<p>Returns <a href="https://docs.python.org/2/library/constants.html#True">True</a> if the queue is empty.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GLib.Queue</a>.</p>
+</td>
+<td>
+<a title="GLib.Queue" href="queue.html#GQueue">GLib.Queue</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the queue is empty</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_reverse">
+		
+<h4 id="glibqueuereverse">
+	<span><code>GLib.Queue.reverse</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Queue.reverse (self):
+    #python wrapper for 'g_queue_reverse'</pre>
+
+<p>Reverses the order of the items in <em>queue</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GLib.Queue</a></p>
+</td>
+<td>
+<a title="GLib.Queue" href="queue.html#GQueue">GLib.Queue</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_queue_push_tail">
+		
+<h4 id="glibqueuepush_tail">
+	<span><code>GLib.Queue.push_tail</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Queue.push_tail (self, data):
+    #python wrapper for 'g_queue_push_tail'</pre>
+
+<p>Adds a new element at the tail of the queue.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GLib.Queue</a></p>
+</td>
+<td>
+<a title="GLib.Queue" href="queue.html#GQueue">GLib.Queue</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data for the new element</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_remove_all">
+		
+<h4 id="glibqueueremove_all">
+	<span><code>GLib.Queue.remove_all</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Queue.remove_all (self, data):
+    #python wrapper for 'g_queue_remove_all'</pre>
+
+<p>Remove all elements whose data equals <em>data</em> from <em>queue</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GLib.Queue</a></p>
+</td>
+<td>
+<a title="GLib.Queue" href="queue.html#GQueue">GLib.Queue</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data to remove</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of elements removed from <em>queue</em></p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_push_nth">
+		
+<h4 id="glibqueuepush_nth">
+	<span><code>GLib.Queue.push_nth</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Queue.push_nth (self, data, n):
+    #python wrapper for 'g_queue_push_nth'</pre>
+
+<p>Inserts a new element into <em>queue</em> at the given position.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GLib.Queue</a></p>
+</td>
+<td>
+<a title="GLib.Queue" href="queue.html#GQueue">GLib.Queue</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data for the new element</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n:</code></em></i>
+		</p>
+	</td>
+		<td><p>the position to insert the new element. If <em>n</em> is negative or
+larger than the number of elements in the <em>queue</em>, the element is
+added to the end of the queue.</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_queue_push_head">
+		
+<h4 id="glibqueuepush_head">
+	<span><code>GLib.Queue.push_head</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Queue.push_head (self, data):
+    #python wrapper for 'g_queue_push_head'</pre>
+
+<p>Adds a new element at the head of the queue.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GLib.Queue</a>.</p>
+</td>
+<td>
+<a title="GLib.Queue" href="queue.html#GQueue">GLib.Queue</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data for the new element.</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_pop_nth">
+		
+<h4 id="glibqueuepop_nth">
+	<span><code>GLib.Queue.pop_nth</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Queue.pop_nth (self, n):
+    #python wrapper for 'g_queue_pop_nth'</pre>
+
+<p>Removes the <em>n</em>'th element of <em>queue</em> and returns its data.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GLib.Queue</a></p>
+</td>
+<td>
+<a title="GLib.Queue" href="queue.html#GQueue">GLib.Queue</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n:</code></em></i>
+		</p>
+	</td>
+		<td><p>the position of the element</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the element's data, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> if <em>n</em> is off the end of <em>queue</em></p>
+
+	</td>
+	<td>
+		<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_queue_peek_head">
+		
+<h4 id="glibqueuepeek_head">
+	<span><code>GLib.Queue.peek_head</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Queue.peek_head (self):
+    #python wrapper for 'g_queue_peek_head'</pre>
+
+<p>Returns the first element of the queue.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GLib.Queue</a></p>
+</td>
+<td>
+<a title="GLib.Queue" href="queue.html#GQueue">GLib.Queue</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the data of the first element in the queue, or <a href="https://docs.python.org/2/library/constants.html#None">None</a>
+if the queue is empty</p>
+
+	</td>
+	<td>
+		<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_queue_init">
+		
+<h4 id="glibqueueinit">
+	<span><code>GLib.Queue.init</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Queue.init (self):
+    #python wrapper for 'g_queue_init'</pre>
+
+<p>A statically-allocated <a href="queue.html#GQueue">GLib.Queue</a> must be initialized with this function
+before it can be used. Alternatively you can initialize it with
+<a href="../c/queue.html#G_QUEUE_INIT">G_QUEUE_INIT (not introspectable)</a>. It is not necessary to initialize queues created with
+<a href="../c/queue.html#g_queue_new">g_queue_new (not introspectable)</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>an uninitialized <a href="queue.html#GQueue">GLib.Queue</a></p>
+</td>
+<td>
+<a title="GLib.Queue" href="queue.html#GQueue">GLib.Queue</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_queue_free_full">
+		
+<h4 id="glibqueuefree_full">
+	<span><code>GLib.Queue.free_full</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Queue.free_full (self, free_func):
+    #python wrapper for 'g_queue_free_full'</pre>
+
+<p>Convenience method, which frees all the memory used by a <a href="queue.html#GQueue">GLib.Queue</a>,
+and calls the specified destroy function on every element's data.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a <a href="queue.html#GQueue">GLib.Queue</a></p>
+</td>
+<td>
+<a title="GLib.Queue" href="queue.html#GQueue">GLib.Queue</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>free_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to be called to free each element's data</p>
+</td>
+<td>
+<a title="GLib.DestroyNotify" href="datasets.html#GDestroyNotify">GLib.DestroyNotify</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_queue_pop_tail">
+		
+<h4 id="glibqueuepop_tail">
+	<span><code>GLib.Queue.pop_tail</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Queue.pop_tail (self):
+    #python wrapper for 'g_queue_pop_tail'</pre>
+
+<p>Removes the last element of the queue and returns its data.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GLib.Queue</a></p>
+</td>
+<td>
+<a title="GLib.Queue" href="queue.html#GQueue">GLib.Queue</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the data of the last element in the queue, or <a href="https://docs.python.org/2/library/constants.html#None">None</a>
+if the queue is empty</p>
+
+	</td>
+	<td>
+		<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_get_length">
+		
+<h4 id="glibqueueget_length">
+	<span><code>GLib.Queue.get_length</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Queue.get_length (self):
+    #python wrapper for 'g_queue_get_length'</pre>
+
+<p>Returns the number of items in <em>queue</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GLib.Queue</a></p>
+</td>
+<td>
+<a title="GLib.Queue" href="queue.html#GQueue">GLib.Queue</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of items in <em>queue</em></p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_remove">
+		
+<h4 id="glibqueueremove">
+	<span><code>GLib.Queue.remove</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Queue.remove (self, data):
+    #python wrapper for 'g_queue_remove'</pre>
+
+<p>Removes the first element in <em>queue</em> that contains <em>data</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GLib.Queue</a></p>
+</td>
+<td>
+<a title="GLib.Queue" href="queue.html#GQueue">GLib.Queue</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data to remove</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if <em>data</em> was found and removed from <em>queue</em></p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_index">
+		
+<h4 id="glibqueueindex">
+	<span><code>GLib.Queue.index</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Queue.index (self, data):
+    #python wrapper for 'g_queue_index'</pre>
+
+<p>Returns the position of the first element in <em>queue</em> which contains <em>data</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GLib.Queue</a></p>
+</td>
+<td>
+<a title="GLib.Queue" href="queue.html#GQueue">GLib.Queue</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data to find</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the position of the first element in <em>queue</em> which
+contains <em>data</em>, or -1 if no element in <em>queue</em> contains <em>data</em></p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_queue_free">
+		
+<h4 id="glibqueuefree">
+	<span><code>GLib.Queue.free</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Queue.free (self):
+    #python wrapper for 'g_queue_free'</pre>
+
+<p>Frees the memory allocated for the <a href="queue.html#GQueue">GLib.Queue</a>. Only call this function
+if <em>queue</em> was created with <a href="../c/queue.html#g_queue_new">g_queue_new (not introspectable)</a>. If queue elements contain
+dynamically-allocated memory, they should be freed first.</p>
+<p>If queue elements contain dynamically-allocated memory, you should
+either use <a href="queue.html#g_queue_free_full">GLib.Queue.free_full</a> or free them manually first.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GLib.Queue</a></p>
+</td>
+<td>
+<a title="GLib.Queue" href="queue.html#GQueue">GLib.Queue</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_queue_pop_head">
+		
+<h4 id="glibqueuepop_head">
+	<span><code>GLib.Queue.pop_head</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Queue.pop_head (self):
+    #python wrapper for 'g_queue_pop_head'</pre>
+
+<p>Removes the first element of the queue and returns its data.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GLib.Queue</a></p>
+</td>
+<td>
+<a title="GLib.Queue" href="queue.html#GQueue">GLib.Queue</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the data of the first element in the queue, or <a href="https://docs.python.org/2/library/constants.html#None">None</a>
+if the queue is empty</p>
+
+	</td>
+	<td>
+		<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_queue_peek_tail">
+		
+<h4 id="glibqueuepeek_tail">
+	<span><code>GLib.Queue.peek_tail</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Queue.peek_tail (self):
+    #python wrapper for 'g_queue_peek_tail'</pre>
+
+<p>Returns the last element of the queue.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GLib.Queue</a></p>
+</td>
+<td>
+<a title="GLib.Queue" href="queue.html#GQueue">GLib.Queue</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the data of the last element in the queue, or <a href="https://docs.python.org/2/library/constants.html#None">None</a>
+if the queue is empty</p>
+
+	</td>
+	<td>
+		<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_queue_clear">
+		
+<h4 id="glibqueueclear">
+	<span><code>GLib.Queue.clear</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Queue.clear (self):
+    #python wrapper for 'g_queue_clear'</pre>
+
+<p>Removes all the elements in <em>queue</em>. If queue elements contain
+dynamically-allocated memory, they should be freed first.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GLib.Queue</a></p>
+</td>
+<td>
+<a title="GLib.Queue" href="queue.html#GQueue">GLib.Queue</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GQueue">
+		<h3 id="glibqueue">
+	GLib.Queue
+</h3>
+
+		<p>Contains the public fields of a
+[Queue][glib-Double-ended-Queues].</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="attributes">Attributes</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GQueue.head">
+		<td>
+		<p>
+		<i><em><code><a title="GList" href="linked_lists_double.html#GList">GList</a> * <em><code>head</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to the first element of the queue</p>
+</td>
+</tr>
+
+						<tr id="GQueue.tail">
+		<td>
+		<p>
+		<i><em><code><a title="GList" href="linked_lists_double.html#GList">GList</a> * <em><code>tail</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to the last element of the queue</p>
+</td>
+</tr>
+
+						<tr id="GQueue.length">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>length</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of elements in the queue</p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

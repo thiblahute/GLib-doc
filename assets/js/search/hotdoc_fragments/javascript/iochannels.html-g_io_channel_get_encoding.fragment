@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/iochannels.html#g_io_channel_get_encoding", "fragment": "GLib.IOChannel.prototype.get_encoding \nGets the encoding for the input output of the channel. The internal encoding is always UTF The encoding null makes the channel safe for binary data. \n"});

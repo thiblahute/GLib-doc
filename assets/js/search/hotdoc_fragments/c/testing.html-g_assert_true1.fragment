@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/testing.html#g_assert_true1", "fragment": "g_assert_true \nDebugging macro to check that an expression is true. \nIf the assertion fails i.e. the expression is not true an error message is logged and the application is either terminated or the testcase marked as failed. \nSee g_test_set_nonfatal_assertions. \n"});

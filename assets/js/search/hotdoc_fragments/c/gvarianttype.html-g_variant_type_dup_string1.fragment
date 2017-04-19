@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvarianttype.html#g_variant_type_dup_string1", "fragment": "g_variant_type_dup_string \nReturns a newly allocated copy of the type string corresponding to type. The returned string is nul terminated. It is appropriate to call g_free on the return value. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#struct-gvariantbuilder", "fragment": "struct GVariantBuilder \nA utility type for constructing container type GVariant instances. \nThis is an opaque structure and may only be accessed using the following functions. \nGVariantBuilder is not threadsafe in any way. Do not attempt to access it from more than one thread. \n"});

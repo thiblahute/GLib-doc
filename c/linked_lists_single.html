@@ -1,0 +1,2938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GSList</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="linked_lists_single.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="linked_lists_single.markdown">
+        <h1 id="gslist">GSList</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GSList</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GSListFunctions">Functions</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_alloc">
+		
+<h4 id="g_slist_alloc1">
+	<span><code>g_slist_alloc</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+g_slist_alloc ()</pre>
+
+<p>Allocates space for one <a href="linked_lists_single.html#GSList">GSList</a> element. It is called by the
+<a href="linked_lists_single.html#g_slist_append">g_slist_append</a>, <a href="linked_lists_single.html#g_slist_prepend">g_slist_prepend</a>, <a href="linked_lists_single.html#g_slist_insert">g_slist_insert</a> and
+<a href="linked_lists_single.html#g_slist_insert_sorted">g_slist_insert_sorted</a> functions and so is rarely used on its own.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to the newly-allocated <a href="linked_lists_single.html#GSList">GSList</a> element.</p>
+
+	</td>
+	<td>
+		<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_remove">
+		
+<h4 id="g_slist_remove1">
+	<span><code>g_slist_remove</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+g_slist_remove (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list,
+                gconstpointer data)</pre>
+
+<p>Removes an element from a <a href="linked_lists_single.html#GSList">GSList</a>.
+If two elements contain the same data, only the first is removed.
+If none of the elements contain the data, the <a href="linked_lists_single.html#GSList">GSList</a> is unchanged.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data of the element to remove</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new start of the <a href="linked_lists_single.html#GSList">GSList</a></p>
+
+	</td>
+	<td>
+		<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_foreach">
+		
+<h4 id="g_slist_foreach1">
+	<span><code>g_slist_foreach</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_slist_foreach (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list,
+                 <a title="GFunc" href="linked_lists_double.html#GFunc">GFunc</a> func,
+                 gpointer user_data)</pre>
+
+<p>Calls a function for each element of a <a href="linked_lists_single.html#GSList">GSList</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call with each element's data</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data to pass to the function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_concat">
+		
+<h4 id="g_slist_concat1">
+	<span><code>g_slist_concat</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+g_slist_concat (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list1,
+                <a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list2)</pre>
+
+<p>Adds the second <a href="linked_lists_single.html#GSList">GSList</a> onto the end of the first <a href="linked_lists_single.html#GSList">GSList</a>.
+Note that the elements of the second <a href="linked_lists_single.html#GSList">GSList</a> are not copied.
+They are used directly.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list1:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list2:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="linked_lists_single.html#GSList">GSList</a> to add to the end of the first <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the start of the new <a href="linked_lists_single.html#GSList">GSList</a></p>
+
+	</td>
+	<td>
+		<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_sort_with_data">
+		
+<h4 id="g_slist_sort_with_data1">
+	<span><code>g_slist_sort_with_data</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+g_slist_sort_with_data (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list,
+                        <a title="GCompareDataFunc" href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> compare_func,
+                        gpointer user_data)</pre>
+
+<p>Like <a href="linked_lists_single.html#g_slist_sort">g_slist_sort</a>, but the sort function accepts a user data argument.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>compare_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>comparison function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data to pass to comparison function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>new head of the list</p>
+
+	</td>
+	<td>
+		<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_free_1">
+		
+<h4 id="g_slist_free_11">
+	<span><code>g_slist_free_1</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_slist_free_1 (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list)</pre>
+
+<p>Frees one <a href="linked_lists_single.html#GSList">GSList</a> element.
+It is usually used after <a href="linked_lists_single.html#g_slist_remove_link">g_slist_remove_link</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a> element</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.10;" id="g_slist_insert_sorted_with_data">
+		
+<h4 id="g_slist_insert_sorted_with_data1">
+	<span><code>g_slist_insert_sorted_with_data</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+g_slist_insert_sorted_with_data (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list,
+                                 gpointer data,
+                                 <a title="GCompareDataFunc" href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> func,
+                                 gpointer user_data)</pre>
+
+<p>Inserts a new element into the list, using the given
+comparison function to determine its position.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data for the new element</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to compare elements in the list.
+It should return a number &gt; 0 if the first parameter
+comes after the second parameter in the sort order.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data to pass to comparison function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new start of the <a href="linked_lists_single.html#GSList">GSList</a></p>
+
+	</td>
+	<td>
+		<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.10
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_remove_link">
+		
+<h4 id="g_slist_remove_link1">
+	<span><code>g_slist_remove_link</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+g_slist_remove_link (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list,
+                     <a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * link_)</pre>
+
+<p>Removes an element from a <a href="linked_lists_single.html#GSList">GSList</a>, without
+freeing the element. The removed element's next
+link is set to <a href="macros.html#NULL">NULL</a>, so that it becomes a
+self-contained list with one element.</p>
+<p>Removing arbitrary nodes from a singly-linked list
+requires time that is proportional to the length of the list
+(ie. O(n)). If you find yourself using <a href="linked_lists_single.html#g_slist_remove_link">g_slist_remove_link</a>
+frequently, you should consider a different data structure,
+such as the doubly-linked <a href="linked_lists_double.html#GList">GList</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>link_:</code></em></i>
+		</p>
+	</td>
+		<td><p>an element in the <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new start of the <a href="linked_lists_single.html#GSList">GSList</a>, without the element</p>
+
+	</td>
+	<td>
+		<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_find_custom">
+		
+<h4 id="g_slist_find_custom1">
+	<span><code>g_slist_find_custom</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+g_slist_find_custom (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list,
+                     gconstpointer data,
+                     <a title="GCompareFunc" href="linked_lists_double.html#GCompareFunc">GCompareFunc</a> func)</pre>
+
+<p>Finds an element in a <a href="linked_lists_single.html#GSList">GSList</a>, using a supplied function to
+find the desired element. It iterates over the list, calling
+the given function which should return 0 when the desired
+element is found. The function takes two gconstpointer arguments,
+the <a href="linked_lists_single.html#GSList">GSList</a> element's data as the first argument and the
+given user data.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to the function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call for each element.
+It should return 0 when the desired element is found</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the found <a href="linked_lists_single.html#GSList">GSList</a> element, or <a href="macros.html#NULL">NULL</a> if it is not found</p>
+
+	</td>
+	<td>
+		<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_delete_link">
+		
+<h4 id="g_slist_delete_link1">
+	<span><code>g_slist_delete_link</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+g_slist_delete_link (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list,
+                     <a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * link_)</pre>
+
+<p>Removes the node link_ from the list and frees it.
+Compare this to <a href="linked_lists_single.html#g_slist_remove_link">g_slist_remove_link</a> which removes the node
+without freeing it.</p>
+<p>Removing arbitrary nodes from a singly-linked list requires time
+that is proportional to the length of the list (ie. O(n)). If you
+find yourself using <a href="linked_lists_single.html#g_slist_delete_link">g_slist_delete_link</a> frequently, you should
+consider a different data structure, such as the doubly-linked
+<a href="linked_lists_double.html#GList">GList</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>link_:</code></em></i>
+		</p>
+	</td>
+		<td><p>node to delete</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new head of <em>list</em></p>
+
+	</td>
+	<td>
+		<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_reverse">
+		
+<h4 id="g_slist_reverse1">
+	<span><code>g_slist_reverse</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+g_slist_reverse (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list)</pre>
+
+<p>Reverses a <a href="linked_lists_single.html#GSList">GSList</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the start of the reversed <a href="linked_lists_single.html#GSList">GSList</a></p>
+
+	</td>
+	<td>
+		<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_nth_data">
+		
+<h4 id="g_slist_nth_data1">
+	<span><code>g_slist_nth_data</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_slist_nth_data (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list,
+                  guint n)</pre>
+
+<p>Gets the data of the element at the given position.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n:</code></em></i>
+		</p>
+	</td>
+		<td><p>the position of the element</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the element's data, or <a href="macros.html#NULL">NULL</a> if the position
+is off the end of the <a href="linked_lists_single.html#GSList">GSList</a></p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_length">
+		
+<h4 id="g_slist_length1">
+	<span><code>g_slist_length</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint
+g_slist_length (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list)</pre>
+
+<p>Gets the number of elements in a <a href="linked_lists_single.html#GSList">GSList</a>.</p>
+<p>This function iterates over the whole list to
+count its elements. To check whether the list is non-empty, it is faster to
+check <em>list</em> against <a href="macros.html#NULL">NULL</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of elements in the <a href="linked_lists_single.html#GSList">GSList</a></p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_position">
+		
+<h4 id="g_slist_position1">
+	<span><code>g_slist_position</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint
+g_slist_position (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list,
+                  <a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * llink)</pre>
+
+<p>Gets the position of the given element
+in the <a href="linked_lists_single.html#GSList">GSList</a> (starting from 0).</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>llink:</code></em></i>
+		</p>
+	</td>
+		<td><p>an element in the <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the position of the element in the <a href="linked_lists_single.html#GSList">GSList</a>,
+or -1 if the element is not found</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.34;" id="g_slist_copy_deep">
+		
+<h4 id="g_slist_copy_deep1">
+	<span><code>g_slist_copy_deep</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+g_slist_copy_deep (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list,
+                   <a title="GCopyFunc" href="trees-nary.html#GCopyFunc">GCopyFunc</a> func,
+                   gpointer user_data)</pre>
+
+<p>Makes a full (deep) copy of a <a href="linked_lists_single.html#GSList">GSList</a>.</p>
+<p>In contrast with <a href="linked_lists_single.html#g_slist_copy">g_slist_copy</a>, this function uses <em>func</em> to make a copy of
+each list element, in addition to copying the list container itself.</p>
+<p><em>func</em>, as a <a href="trees-nary.html#GCopyFunc">GCopyFunc</a>, takes two arguments, the data to be copied and a user
+pointer. It's safe to pass <a href="macros.html#NULL">NULL</a> as user_data, if the copy function takes only
+one argument.</p>
+<p>For instance, if <em>list</em> holds a list of GObjects, you can do:</p>
+<pre><code class="language-[&lt;!--"> another_list = g_slist_copy_deep (list, (GCopyFunc) g_object_ref, NULL);
+</code></pre>
+<p>And, to entirely free the new list, you could do:</p>
+<pre><code class="language-[&lt;!--"> g_slist_free_full (another_list, g_object_unref);
+</code></pre>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>a copy function used to copy every element in the list</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to the copy function <em>func</em>, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a full copy of <em>list</em>, use <a href="linked_lists_single.html#g_slist_free_full">g_slist_free_full</a> to free it</p>
+
+	</td>
+	<td>
+		<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.34
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_copy">
+		
+<h4 id="g_slist_copy1">
+	<span><code>g_slist_copy</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+g_slist_copy (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list)</pre>
+
+<p>Copies a <a href="linked_lists_single.html#GSList">GSList</a>.</p>
+<p>Note that this is a "shallow" copy. If the list elements
+consist of pointers to data, the pointers are copied but
+the actual data isn't. See <a href="linked_lists_single.html#g_slist_copy_deep">g_slist_copy_deep</a> if you need
+to copy the data as well.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a copy of <em>list</em></p>
+
+	</td>
+	<td>
+		<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_remove_all">
+		
+<h4 id="g_slist_remove_all1">
+	<span><code>g_slist_remove_all</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+g_slist_remove_all (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list,
+                    gconstpointer data)</pre>
+
+<p>Removes all list nodes with data equal to <em>data</em>.
+Returns the new head of the list. Contrast with
+<a href="linked_lists_single.html#g_slist_remove">g_slist_remove</a> which removes only the first node
+matching the given data.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data to remove</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>new head of <em>list</em></p>
+
+	</td>
+	<td>
+		<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_insert_sorted">
+		
+<h4 id="g_slist_insert_sorted1">
+	<span><code>g_slist_insert_sorted</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+g_slist_insert_sorted (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list,
+                       gpointer data,
+                       <a title="GCompareFunc" href="linked_lists_double.html#GCompareFunc">GCompareFunc</a> func)</pre>
+
+<p>Inserts a new element into the list, using the given
+comparison function to determine its position.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data for the new element</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to compare elements in the list.
+It should return a number &gt; 0 if the first parameter
+comes after the second parameter in the sort order.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new start of the <a href="linked_lists_single.html#GSList">GSList</a></p>
+
+	</td>
+	<td>
+		<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_last">
+		
+<h4 id="g_slist_last1">
+	<span><code>g_slist_last</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+g_slist_last (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list)</pre>
+
+<p>Gets the last element in a <a href="linked_lists_single.html#GSList">GSList</a>.</p>
+<p>This function iterates over the whole list.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the last element in the <a href="linked_lists_single.html#GSList">GSList</a>,
+or <a href="macros.html#NULL">NULL</a> if the <a href="linked_lists_single.html#GSList">GSList</a> has no elements</p>
+
+	</td>
+	<td>
+		<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_insert_before">
+		
+<h4 id="g_slist_insert_before1">
+	<span><code>g_slist_insert_before</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+g_slist_insert_before (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * slist,
+                       <a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * sibling,
+                       gpointer data)</pre>
+
+<p>Inserts a node before <em>sibling</em> containing <em>data</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>slist:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>sibling:</code></em></i>
+		</p>
+	</td>
+		<td><p>node to insert <em>data</em> before</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data to put in the newly-inserted node</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new head of the list.</p>
+
+	</td>
+	<td>
+		<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_sort">
+		
+<h4 id="g_slist_sort1">
+	<span><code>g_slist_sort</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+g_slist_sort (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list,
+              <a title="GCompareFunc" href="linked_lists_double.html#GCompareFunc">GCompareFunc</a> compare_func)</pre>
+
+<p>Sorts a <a href="linked_lists_single.html#GSList">GSList</a> using the given comparison function.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>compare_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the comparison function used to sort the <a href="linked_lists_single.html#GSList">GSList</a>.
+This function is passed the data from 2 elements of the <a href="linked_lists_single.html#GSList">GSList</a>
+and should return 0 if they are equal, a negative value if the
+first element comes before the second, or a positive value if
+the first element comes after the second.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the start of the sorted <a href="linked_lists_single.html#GSList">GSList</a></p>
+
+	</td>
+	<td>
+		<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_index">
+		
+<h4 id="g_slist_index1">
+	<span><code>g_slist_index</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint
+g_slist_index (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list,
+               gconstpointer data)</pre>
+
+<p>Gets the position of the element containing
+the given data (starting from 0).</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data to find</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the index of the element containing the data,
+or -1 if the data is not found</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_insert">
+		
+<h4 id="g_slist_insert1">
+	<span><code>g_slist_insert</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+g_slist_insert (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list,
+                gpointer data,
+                gint position)</pre>
+
+<p>Inserts a new element into the list at the given position.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data for the new element</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>position:</code></em></i>
+		</p>
+	</td>
+		<td><p>the position to insert the element.
+If this is negative, or is larger than the number
+of elements in the list, the new element is added on
+to the end of the list.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new start of the <a href="linked_lists_single.html#GSList">GSList</a></p>
+
+	</td>
+	<td>
+		<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_append">
+		
+<h4 id="g_slist_append1">
+	<span><code>g_slist_append</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+g_slist_append (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list,
+                gpointer data)</pre>
+
+<p>Adds a new element on to the end of the list.</p>
+<p>The return value is the new start of the list, which may
+have changed, so make sure you store the new value.</p>
+<p>Note that <a href="linked_lists_single.html#g_slist_append">g_slist_append</a> has to traverse the entire list
+to find the end, which is inefficient when adding multiple
+elements. A common idiom to avoid the inefficiency is to prepend
+the elements and reverse the list when all elements have been added.</p>
+<pre><code class="language-[&lt;!--"> // Notice that these are initialized to the empty list.
+ GSList *list = NULL, *number_list = NULL;
+
+ // This is a list of strings.
+ list = g_slist_append (list, "first");
+ list = g_slist_append (list, "second");
+
+ // This is a list of integers.
+ number_list = g_slist_append (number_list, GINT_TO_POINTER (27));
+ number_list = g_slist_append (number_list, GINT_TO_POINTER (14));
+</code></pre>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data for the new element</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns21">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new start of the <a href="linked_lists_single.html#GSList">GSList</a></p>
+
+	</td>
+	<td>
+		<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_nth">
+		
+<h4 id="g_slist_nth1">
+	<span><code>g_slist_nth</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+g_slist_nth (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list,
+             guint n)</pre>
+
+<p>Gets the element at the given position in a <a href="linked_lists_single.html#GSList">GSList</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n:</code></em></i>
+		</p>
+	</td>
+		<td><p>the position of the element, counting from 0</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns22">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the element, or <a href="macros.html#NULL">NULL</a> if the position is off
+the end of the <a href="linked_lists_single.html#GSList">GSList</a></p>
+
+	</td>
+	<td>
+		<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_find">
+		
+<h4 id="g_slist_find1">
+	<span><code>g_slist_find</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+g_slist_find (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list,
+              gconstpointer data)</pre>
+
+<p>Finds the element in a <a href="linked_lists_single.html#GSList">GSList</a> which
+contains the given data.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the element data to find</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns23">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the found <a href="linked_lists_single.html#GSList">GSList</a> element,
+or <a href="macros.html#NULL">NULL</a> if it is not found</p>
+
+	</td>
+	<td>
+		<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_prepend">
+		
+<h4 id="g_slist_prepend1">
+	<span><code>g_slist_prepend</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+g_slist_prepend (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list,
+                 gpointer data)</pre>
+
+<p>Adds a new element on to the start of the list.</p>
+<p>The return value is the new start of the list, which
+may have changed, so make sure you store the new value.</p>
+<pre><code class="language-[&lt;!--"> // Notice that it is initialized to the empty list.
+ GSList *list = NULL;
+ list = g_slist_prepend (list, "last");
+ list = g_slist_prepend (list, "first");
+</code></pre>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data for the new element</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns24">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new start of the <a href="linked_lists_single.html#GSList">GSList</a></p>
+
+	</td>
+	<td>
+		<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.28;" id="g_slist_free_full">
+		
+<h4 id="g_slist_free_full1">
+	<span><code>g_slist_free_full</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_slist_free_full (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list,
+                   <a title="GDestroyNotify" href="datasets.html#GDestroyNotify">GDestroyNotify</a> free_func)</pre>
+
+<p>Convenience method, which frees all the memory used by a <a href="linked_lists_single.html#GSList">GSList</a>, and
+calls the specified destroy function on every element's data.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>free_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to be called to free each element's data</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.28
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_free">
+		
+<h4 id="g_slist_free2">
+	<span><code>g_slist_free</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_slist_free (<a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * list)</pre>
+
+<p>Frees all of the memory used by a <a href="linked_lists_single.html#GSList">GSList</a>.
+The freed elements are returned to the slice allocator.</p>
+<p>If list elements contain dynamically-allocated memory,
+you should either use <a href="linked_lists_single.html#g_slist_free_full">g_slist_free_full</a> or free them manually
+first.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_single.html#GSList">GSList</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Function_Macros">Function Macros</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_slist_next">
+		
+<h3 id="g_slist_next1">
+	<span><code>g_slist_next</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_slist_next(slist)	         ((slist) ? (((GSList *)(slist))-&gt;next) : NULL)
+</pre>
+
+<p>A convenience macro to get the next element in a <a href="linked_lists_single.html#GSList">GSList</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters28">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>slist:</code></em></i>
+		</p>
+	</td>
+		<td><p>an element in a <a href="linked_lists_single.html#GSList">GSList</a>.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns25">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the next element, or <a href="macros.html#NULL">NULL</a> if there are no more elements.</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GSList">
+		
+<h3 id="struct-gslist">
+		struct GSList
+	</h3>
+
+		<pre class="raw_code">
+struct GSList {
+    gpointer data;
+    GSList* next;
+};
+</pre>
+
+<p>The <a href="linked_lists_single.html#GSList">GSList</a> struct is used for each element in the singly-linked
+list.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="fields">Fields</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GSList.data">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>data</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>holds the element's data, which can be a pointer to any kind
+of data, or any integer value using the
+[Type Conversion Macros][glib-Type-Conversion-Macros]</p>
+</td>
+</tr>
+
+						<tr id="GSList.next">
+		<td>
+		<p>
+		<i><em><code><a title="GSList" href="linked_lists_single.html#GSList">GSList</a> * <em><code>next</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>contains the link to the next element in the list.</p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.10;" id="g_slist_free1">
+		
+<h3 class="constant" id="g_slist_free11">
+	g_slist_free1
+</h3>
+
+		<pre class="raw_code">
+#define g_slist_free1		         g_slist_free_1
+</pre>
+
+<p>A macro which does the same as <a href="linked_lists_single.html#g_slist_free_1">g_slist_free_1</a>.</p>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

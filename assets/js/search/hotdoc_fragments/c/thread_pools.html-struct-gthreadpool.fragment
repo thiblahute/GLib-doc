@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/thread_pools.html#struct-gthreadpool", "fragment": "struct GThreadPool \nThe GThreadPool struct represents a thread pool. It has three public read only members but the underlying struct is bigger so you must not copy this struct. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/fileutils.html#glibdirprototyperewind", "fragment": "GLib.Dir.prototype.rewind \nResets the given directory. The next call to GLib.Dir.prototype.read_name will return the first entry again. \n"});

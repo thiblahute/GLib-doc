@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/string_utils.html#glibstrcompress", "fragment": "GLib.strcompress \nReplaces all escaped characters with their one byte equivalent. \nThis function does the reverse conversion of GLib.strescape. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/memory.html#parameters12", "fragment": "mem \npreviously allocated memory or None. \nn_blocks \nthe number of blocks to allocate \nn_block_bytes \nthe size of each block in bytes \n"});

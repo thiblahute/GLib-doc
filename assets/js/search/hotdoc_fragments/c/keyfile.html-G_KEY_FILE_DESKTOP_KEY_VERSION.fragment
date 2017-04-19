@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/keyfile.html#G_KEY_FILE_DESKTOP_KEY_VERSION", "fragment": "G_KEY_FILE_DESKTOP_KEY_VERSION \nA key under G_KEY_FILE_DESKTOP_GROUP whose value is a string giving the version of the Desktop Entry Specification used for the desktop entry file. \n"});

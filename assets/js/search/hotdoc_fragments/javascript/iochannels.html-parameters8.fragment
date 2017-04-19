@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/iochannels.html#parameters8", "fragment": "channel \na GLib.IOChannel \nbuf \na buffer to read the data into which should be at least count bytes long \ncount \nthe number of bytes to read from the GLib.IOChannel \nbytes_read \nreturns the number of bytes actually read \n"});

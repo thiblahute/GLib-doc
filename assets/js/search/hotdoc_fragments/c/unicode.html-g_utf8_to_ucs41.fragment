@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/unicode.html#g_utf8_to_ucs41", "fragment": "g_utf8_to_ucs4 \nConvert a string from UTF to a bit fixed width representation as UCS A trailing character will be added to the string after the converted text. \n"});

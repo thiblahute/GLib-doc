@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvarianttype.html#glibvarianttypeprototypecopy", "fragment": "GLib.VariantType.prototype.copy \nMakes a copy of a GLib.VariantType. It is appropriate to call GLib.VariantType.prototype.free on the return value. type may not be null. \n"});

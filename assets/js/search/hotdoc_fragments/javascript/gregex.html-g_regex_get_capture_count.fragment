@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gregex.html#g_regex_get_capture_count", "fragment": "GLib.Regex.prototype.get_capture_count \nReturns the number of capturing subpatterns in the pattern. \n"});

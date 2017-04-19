@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_utils.html#g_ascii_digit_value1", "fragment": "g_ascii_digit_value \nDetermines the numeric value of a character as a decimal digit. Differs from g_unichar_digit_value because it takes a char so there s no worry about sign extension if characters are signed. \n"});

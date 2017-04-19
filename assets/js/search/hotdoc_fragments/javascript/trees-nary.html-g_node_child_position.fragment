@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/trees-nary.html#g_node_child_position", "fragment": "GLib.Node.prototype.child_position \nGets the position of a GLib.Node with respect to its siblings. child must be a child of node. The first child is numbered the second and so on. \n"});

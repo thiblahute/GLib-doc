@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/trees-binary.html#parameters10", "fragment": "key \na key of a GLib.Tree node \nvalue \nthe value corresponding to the key \ndata \nuser data passed to g_tree_traverse not introspectable \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/threads.html#glibcondsignal", "fragment": "GLib.Cond.signal \nIf threads are waiting for cond at least one of them is unblocked. If no threads are waiting for cond this function has no effect. It is good practice to hold the same lock as the waiting thread while calling this function though not required. \n"});

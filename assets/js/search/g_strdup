@@ -1,0 +1,1 @@
+urls_downloaded_cb({"token": "g_strdup", "urls": ["c/string_utils.html#g_strdup1", "c/string_utils.html#g_strlcpy1", "c/arrays_byte.html#g_bytes_new_take1", "c/arrays_byte.html#g_byte_array_new_take1"]});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/threads.html#glibrecmutextrylock", "fragment": "GLib.RecMutex.trylock \nTries to lock rec_mutex. If rec_mutex is already locked by another thread it immediately returns False. Otherwise it locks rec_mutex and returns True. \n"});

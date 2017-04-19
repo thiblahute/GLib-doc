@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/misc_utils.html#returns16", "fragment": "\na newly allocated formatted string containing a human readable file size \nSince \ndeprecated This function is broken due to its use of SI suffixes to denote IEC units. Use g_format_size instead. \n"});

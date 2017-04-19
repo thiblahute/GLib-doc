@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/testing.html#glibprototypetest_queue_free", "fragment": "GLib.prototype.test_queue_free \nEnqueue a pointer to be released with GLib.prototype.free during the next teardown phase. This is equivalent to calling GLib.prototype.test_queue_destroy with a destroy callback of GLib.prototype.free. \n"});

@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>i18n</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="i18n.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="i18n.markdown">
+    </div>
+        
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.26;" id="g_dcgettext">
+		
+<h3 id="g_dcgettext1">
+	<span><code>g_dcgettext</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+const gchar*
+g_dcgettext (const gchar* domain,
+             const gchar* msgid,
+             gint category)</pre>
+
+<p>This is a variant of <a href="i18n.html#g_dgettext">g_dgettext</a> that allows specifying a locale
+category instead of always using <code>LC_MESSAGES</code>. See <a href="i18n.html#g_dgettext">g_dgettext</a> for
+more information about how this functions differs from calling
+dcgettext directly.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the translation domain to use, or <a href="macros.html#NULL">NULL</a> to use
+the domain set with textdomain</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>msgid:</code></em></i>
+		</p>
+	</td>
+		<td><p>message to translate</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>category:</code></em></i>
+		</p>
+	</td>
+		<td><p>a locale category</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the translated string for the given locale category</p>
+
+	</td>
+	<td>
+		const gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.26
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.18;" id="g_dpgettext2">
+		
+<h3 id="g_dpgettext21">
+	<span><code>g_dpgettext2</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+const gchar*
+g_dpgettext2 (const gchar* domain,
+              const gchar* context,
+              const gchar* msgid)</pre>
+
+<p>This function is a variant of <a href="i18n.html#g_dgettext">g_dgettext</a> which supports
+a disambiguating message context. GNU gettext uses the
+'\004' character to separate the message context and
+message id in <em>msgctxtid</em>.</p>
+<p>This uses <a href="i18n.html#g_dgettext">g_dgettext</a> internally. See that functions for differences
+with dgettext proper.</p>
+<p>This function differs from <a href="i18n.html#C_">C_</a> in that it is not a macro and
+thus you may use non-string-literals as context and msgid arguments.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the translation domain to use, or <a href="macros.html#NULL">NULL</a> to use
+the domain set with textdomain</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>the message context</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>msgid:</code></em></i>
+		</p>
+	</td>
+		<td><p>the message</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The translated string</p>
+
+	</td>
+	<td>
+		const gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.18
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_get_language_names">
+		
+<h3 id="g_get_language_names1">
+	<span><code>g_get_language_names</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+utf8*
+g_get_language_names ()</pre>
+
+<p>Computes a list of applicable locale names, which can be used to
+e.g. construct locale-dependent filenames or search paths. The returned
+list is sorted from most desirable to least desirable and always contains
+the default locale "C".</p>
+<p>For example, if LANGUAGE=de:en_US, then the returned list is
+"de", "en_US", "en", "C".</p>
+<p>This function consults the environment variables <code>LANGUAGE</code>, <code>LC_ALL</code>,
+<code>LC_MESSAGES</code> and <code>LANG</code> to find the list of locales specified by the
+user.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="macros.html#NULL">NULL</a>-terminated array of strings owned by GLib
+that must not be modified or freed.</p>
+
+	</td>
+	<td>
+		utf8*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+<span class="annotation">[<abbr title="Don't free data after the code is done"><span class="acronym">transfer: none</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_strip_context">
+		
+<h3 id="g_strip_context1">
+	<span><code>g_strip_context</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+const gchar*
+g_strip_context (const gchar* msgid,
+                 const gchar* msgval)</pre>
+
+<p>An auxiliary function for gettext support (see <a href="i18n.html#Q_">Q_</a>).</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>msgid:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>msgval:</code></em></i>
+		</p>
+	</td>
+		<td><p>another string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>msgval</em>, unless <em>msgval</em> is identical to <em>msgid</em>
+and contains a '|' character, in which case a pointer to
+the substring of msgid after the first '|' character is returned.</p>
+
+	</td>
+	<td>
+		const gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.18;" id="g_dngettext">
+		
+<h3 id="g_dngettext1">
+	<span><code>g_dngettext</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+const gchar*
+g_dngettext (const gchar* domain,
+             const gchar* msgid,
+             const gchar* msgid_plural,
+             gulong n)</pre>
+
+<p>This function is a wrapper of dngettext which does not translate
+the message if the default domain as set with textdomain has no
+translations for the current locale.</p>
+<p>See <a href="i18n.html#g_dgettext">g_dgettext</a> for details of how this differs from dngettext
+proper.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the translation domain to use, or <a href="macros.html#NULL">NULL</a> to use
+the domain set with textdomain</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>msgid:</code></em></i>
+		</p>
+	</td>
+		<td><p>message to translate</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>msgid_plural:</code></em></i>
+		</p>
+	</td>
+		<td><p>plural form of the message</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n:</code></em></i>
+		</p>
+	</td>
+		<td><p>the quantity for which translation is needed</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The translated string</p>
+
+	</td>
+	<td>
+		const gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.18
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_dpgettext">
+		
+<h3 id="g_dpgettext1">
+	<span><code>g_dpgettext</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+const gchar*
+g_dpgettext (const gchar* domain,
+             const gchar* msgctxtid,
+             gsize msgidoffset)</pre>
+
+<p>This function is a variant of <a href="i18n.html#g_dgettext">g_dgettext</a> which supports
+a disambiguating message context. GNU gettext uses the
+'\004' character to separate the message context and
+message id in <em>msgctxtid</em>.
+If 0 is passed as <em>msgidoffset</em>, this function will fall back to
+trying to use the deprecated convention of using "|" as a separation
+character.</p>
+<p>This uses <a href="i18n.html#g_dgettext">g_dgettext</a> internally. See that functions for differences
+with dgettext proper.</p>
+<p>Applications should normally not use this function directly,
+but use the <a href="i18n.html#C_">C_</a> macro for translations with context.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the translation domain to use, or <a href="macros.html#NULL">NULL</a> to use
+the domain set with textdomain</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>msgctxtid:</code></em></i>
+		</p>
+	</td>
+		<td><p>a combined message context and message id, separated
+by a \004 character</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>msgidoffset:</code></em></i>
+		</p>
+	</td>
+		<td><p>the offset of the message id in <em>msgctxid</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The translated string</p>
+
+	</td>
+	<td>
+		const gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.18;" id="g_dgettext">
+		
+<h3 id="g_dgettext1">
+	<span><code>g_dgettext</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+const gchar*
+g_dgettext (const gchar* domain,
+            const gchar* msgid)</pre>
+
+<p>This function is a wrapper of dgettext which does not translate
+the message if the default domain as set with textdomain has no
+translations for the current locale.</p>
+<p>The advantage of using this function over dgettext proper is that
+libraries using this function (like GTK+) will not use translations
+if the application using the library does not have translations for
+the current locale.  This results in a consistent English-only
+interface instead of one having partial translations.  For this
+feature to work, the call to textdomain and setlocale should
+precede any <a href="i18n.html#g_dgettext">g_dgettext</a> invocations.  For GTK+, it means calling
+textdomain before gtk_init or its variants.</p>
+<p>This function disables translations if and only if upon its first
+call all the following conditions hold:</p>
+<ul>
+<li>
+<p><em>domain</em> is not <a href="macros.html#NULL">NULL</a></p>
+</li>
+<li>
+<p>textdomain has been called to set a default text domain</p>
+</li>
+<li>
+<p>there is no translations available for the default text domain
+and the current locale</p>
+</li>
+<li>
+<p>current locale is not "C" or any English locales (those
+starting with "en_")</p>
+</li>
+</ul>
+<p>Note that this behavior may not be desired for example if an application
+has its untranslated messages in a language other than English. In those
+cases the application should call textdomain after initializing GTK+.</p>
+<p>Applications should normally not use this function directly,
+but use the <a href="i18n.html#_">_</a> macro for translations.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the translation domain to use, or <a href="macros.html#NULL">NULL</a> to use
+the domain set with textdomain</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>msgid:</code></em></i>
+		</p>
+	</td>
+		<td><p>message to translate</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The translated string</p>
+
+	</td>
+	<td>
+		const gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.18
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.28;" id="g_get_locale_variants">
+		
+<h3 id="g_get_locale_variants1">
+	<span><code>g_get_locale_variants</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+utf8*
+g_get_locale_variants (const gchar* locale)</pre>
+
+<p>Returns a list of derived variants of <em>locale</em>, which can be used to
+e.g. construct locale-dependent filenames or search paths. The returned
+list is sorted from most desirable to least desirable.
+This function handles territory, charset and extra locale modifiers.</p>
+<p>For example, if <em>locale</em> is "fr_BE", then the returned list
+is "fr_BE", "fr".</p>
+<p>If you need the list of variants for the current locale,
+use <a href="i18n.html#g_get_language_names">g_get_language_names</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>locale:</code></em></i>
+		</p>
+	</td>
+		<td><p>a locale identifier</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly
+allocated array of newly allocated strings with the locale variants. Free with
+<a href="string_utils.html#g_strfreev">g_strfreev</a>.</p>
+
+	</td>
+	<td>
+		utf8*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+<span class="annotation">[<abbr title="Generic and defining element of containers and arrays"><span class="acronym">element-type</span></abbr> utf8]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.28
+		</p>
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Function_Macros">Function Macros</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.18;" id="NC_">
+		
+<h3 id="nc_">
+	<span><code>NC_</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define NC_(Context, String) (String)
+</pre>
+
+<p>Only marks a string for translation, with context.
+This is useful in situations where the translated strings can't
+be directly used, e.g. in string array initializers. To get the
+translated string, you should call <a href="i18n.html#g_dpgettext2">g_dpgettext2</a> at runtime.</p>
+<pre><code class="language-[&lt;!--"> {
+   static const char *messages[] = {
+     NC_("some context", "some very meaningful message"),
+     NC_("some context", "and another one")
+   };
+   const char *string;
+   ...
+   string
+     = index &gt; 1 ? g_dpgettext2 (NULL, "some context", "a default message")
+                 : g_dpgettext2 (NULL, "some context", messages[index]);
+
+   fputs (string);
+   ...
+ }
+</code></pre>
+<p>If you are using the <a href="i18n.html#NC_">NC_</a> macro, you need to make sure that you pass
+<code>--keyword=NC_:1c,2</code> to xgettext when extracting messages.
+Note that this only works with GNU gettext &gt;= 0.15. Intltool has support
+for the <a href="i18n.html#NC_">NC_</a> macro since version 0.40.1.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>Context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a message context, must be a string literal</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>String:</code></em></i>
+		</p>
+	</td>
+		<td><p>a message id, must be a string literal</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="_">
+		
+<h3 id="_1">
+	<span><code>_</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define _(String) gettext (String)
+</pre>
+
+<p>Marks a string for translation, gets replaced with the translated string
+at runtime.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>String:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to be translated</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="Q_">
+		
+<h3 id="q_">
+	<span><code>Q_</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define Q_(String) g_dpgettext (NULL, String, 0)
+</pre>
+
+<p>Like <a href="i18n.html#_">_</a>, but handles context in message ids. This has the advantage
+that the string can be adorned with a prefix to guarantee uniqueness
+and provide context to the translator.</p>
+<p>One use case given in the gettext manual is GUI translation, where one
+could e.g. disambiguate two "Open" menu entries as "File|Open" and
+"Printer|Open". Another use case is the string "Russian" which may
+have to be translated differently depending on whether it's the name
+of a character set or a language. This could be solved by using
+"charset|Russian" and "language|Russian".</p>
+<p>See the <a href="i18n.html#C_">C_</a> macro for a different way to mark up translatable strings
+with context.</p>
+<p>If you are using the <a href="i18n.html#Q_">Q_</a> macro, you need to make sure that you pass
+<code>--keyword=Q_</code> to xgettext when extracting messages.
+If you are using GNU gettext &gt;= 0.15, you can also use
+<code>--keyword=Q_:1g</code> to let xgettext split the context
+string off into a msgctxt line in the po file.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>String:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to be translated, with a '|'-separated prefix
+which must not be translated</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the translated message</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="C_">
+		
+<h3 id="c_">
+	<span><code>C_</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define C_(Context,String) g_dpgettext (NULL, Context "\004" String, strlen (Context) + 1)
+</pre>
+
+<p>Uses gettext to get the translation for <em>String</em>. <em>Context</em> is
+used as a context. This is mainly useful for short strings which
+may need different translations, depending on the context in which
+they are used.</p>
+<pre><code class="language-[&lt;!--"> label1 = C_("Navigation", "Back");
+ label2 = C_("Body part", "Back");
+</code></pre>
+<p>If you are using the <a href="i18n.html#C_">C_</a> macro, you need to make sure that you pass
+<code>--keyword=C_:1c,2</code> to xgettext when extracting messages.
+Note that this only works with GNU gettext &gt;= 0.15.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>Context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a message context, must be a string literal</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>String:</code></em></i>
+		</p>
+	</td>
+		<td><p>a message id, must be a string literal</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the translated message</p>
+
+	</td>
+	<td>
+		
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="N_">
+		
+<h3 id="n_">
+	<span><code>N_</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define N_(String) (String)
+</pre>
+
+<p>Only marks a string for translation. This is useful in situations
+where the translated strings can't be directly used, e.g. in string
+array initializers. To get the translated string, call gettext
+at runtime.</p>
+<pre><code class="language-[&lt;!--"> {
+   static const char *messages[] = {
+     N_("some very meaningful message"),
+     N_("and another one")
+   };
+   const char *string;
+   ...
+   string
+     = index &amp;gt; 1 ? _("a default message") : gettext (messages[index]);
+
+   fputs (string);
+   ...
+ }
+</code></pre>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>String:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to be translated</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_utils.html#g_strnfill1", "fragment": "g_strnfill \nCreates a new string length bytes long filled with fill_char. The returned string should be freed when no longer needed. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gregex.html#glibregexget_capture_count", "fragment": "GLib.Regex.get_capture_count \nReturns the number of capturing subpatterns in the pattern. \n"});

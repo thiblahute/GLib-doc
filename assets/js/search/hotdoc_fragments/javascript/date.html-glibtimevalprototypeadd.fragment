@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#glibtimevalprototypeadd", "fragment": "GLib.TimeVal.prototype.add \nAdds the given number of microseconds to time_. microseconds can also be negative to decrease the value of time_. \n"});

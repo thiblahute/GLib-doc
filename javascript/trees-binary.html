@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GTree</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="trees-binary.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="javascript">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="trees-binary.markdown">
+        <h1 id="gtree">GTree</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GTree</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GTreeMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_remove">
+		
+<h4 id="glibtreeprototyperemove">
+	<span><code>GLib.Tree.prototype.remove</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Tree.prototype.remove(key: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_tree_remove'
+}</pre>
+
+<p>Removes a key/value pair from a <a href="trees-binary.html#GTree">GLib.Tree</a>.</p>
+<p>If the <a href="trees-binary.html#GTree">GLib.Tree</a> was created using <a href="../c/trees-binary.html#g_tree_new_full">g_tree_new_full (not introspectable)</a>, the key and value
+are freed using the supplied destroy functions, otherwise you have to
+make sure that any dynamically allocated values are freed yourself.
+If the key does not exist in the <a href="trees-binary.html#GTree">GLib.Tree</a>, the function does nothing.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GLib.Tree</a></p>
+</td>
+<td>
+<a title="GLib.Tree" href="trees-binary.html#GTree">GLib.Tree</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to remove</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the key was found (prior to 2.8, this function
+returned nothing)</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_destroy">
+		
+<h4 id="glibtreeprototypedestroy">
+	<span><code>GLib.Tree.prototype.destroy</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Tree.prototype.destroy(): {
+    // javascript wrapper for 'g_tree_destroy'
+}</pre>
+
+<p>Removes all keys and values from the <a href="trees-binary.html#GTree">GLib.Tree</a> and decreases its
+reference count by one. If keys and/or values are dynamically
+allocated, you should either free them first or create the <a href="trees-binary.html#GTree">GLib.Tree</a>
+using <a href="../c/trees-binary.html#g_tree_new_full">g_tree_new_full (not introspectable)</a>. In the latter case the destroy functions
+you supplied will be called on all keys and values before destroying
+the <a href="trees-binary.html#GTree">GLib.Tree</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GLib.Tree</a></p>
+</td>
+<td>
+<a title="GLib.Tree" href="trees-binary.html#GTree">GLib.Tree</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_lookup">
+		
+<h4 id="glibtreeprototypelookup">
+	<span><code>GLib.Tree.prototype.lookup</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Tree.prototype.lookup(key: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_tree_lookup'
+}</pre>
+
+<p>Gets the value corresponding to the given key. Since a <a href="trees-binary.html#GTree">GLib.Tree</a> is
+automatically balanced as key/value pairs are added, key lookup
+is O(log n) (where n is the number of key/value pairs in the tree).</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GLib.Tree</a></p>
+</td>
+<td>
+<a title="GLib.Tree" href="trees-binary.html#GTree">GLib.Tree</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to look up</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the value corresponding to the key, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>
+if the key was not found</p>
+
+	</td>
+	<td>
+		<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_insert">
+		
+<h4 id="glibtreeprototypeinsert">
+	<span><code>GLib.Tree.prototype.insert</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Tree.prototype.insert(key: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, value: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_tree_insert'
+}</pre>
+
+<p>Inserts a key/value pair into a <a href="trees-binary.html#GTree">GLib.Tree</a>.</p>
+<p>If the given key already exists in the <a href="trees-binary.html#GTree">GLib.Tree</a> its corresponding value
+is set to the new value. If you supplied a <em>value_destroy_func</em> when
+creating the <a href="trees-binary.html#GTree">GLib.Tree</a>, the old value is freed using that function. If
+you supplied a <em>key_destroy_func</em> when creating the <a href="trees-binary.html#GTree">GLib.Tree</a>, the passed
+key is freed using that function.</p>
+<p>The tree is automatically 'balanced' as new key/value pairs are added,
+so that the distance from the root to every leaf is as small as possible.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GLib.Tree</a></p>
+</td>
+<td>
+<a title="GLib.Tree" href="trees-binary.html#GTree">GLib.Tree</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to insert</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>the value corresponding to the key</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_steal">
+		
+<h4 id="glibtreeprototypesteal">
+	<span><code>GLib.Tree.prototype.steal</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Tree.prototype.steal(key: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_tree_steal'
+}</pre>
+
+<p>Removes a key and its associated value from a <a href="trees-binary.html#GTree">GLib.Tree</a> without calling
+the key and value destroy functions.</p>
+<p>If the key does not exist in the <a href="trees-binary.html#GTree">GLib.Tree</a>, the function does nothing.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GLib.Tree</a></p>
+</td>
+<td>
+<a title="GLib.Tree" href="trees-binary.html#GTree">GLib.Tree</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to remove</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the key was found (prior to 2.8, this function
+returned nothing)</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_nnodes">
+		
+<h4 id="glibtreeprototypennodes">
+	<span><code>GLib.Tree.prototype.nnodes</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Tree.prototype.nnodes(): {
+    // javascript wrapper for 'g_tree_nnodes'
+}</pre>
+
+<p>Gets the number of nodes in a <a href="trees-binary.html#GTree">GLib.Tree</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GLib.Tree</a></p>
+</td>
+<td>
+<a title="GLib.Tree" href="trees-binary.html#GTree">GLib.Tree</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of nodes in <em>tree</em></p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_lookup_extended">
+		
+<h4 id="glibtreeprototypelookup_extended">
+	<span><code>GLib.Tree.prototype.lookup_extended</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Tree.prototype.lookup_extended(lookup_key: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, orig_key: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, value: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_tree_lookup_extended'
+}</pre>
+
+<p>Looks up a key in the <a href="trees-binary.html#GTree">GLib.Tree</a>, returning the original key and the
+associated value. This is useful if you need to free the memory
+allocated for the original key, for example before calling
+<a href="trees-binary.html#g_tree_remove">GLib.Tree.prototype.remove</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GLib.Tree</a></p>
+</td>
+<td>
+<a title="GLib.Tree" href="trees-binary.html#GTree">GLib.Tree</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>lookup_key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to look up</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>orig_key:</code></em></i>
+		</p>
+	</td>
+		<td><p>returns the original key</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>returns the value associated with the key</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the key was found in the <a href="trees-binary.html#GTree">GLib.Tree</a></p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_height">
+		
+<h4 id="glibtreeprototypeheight">
+	<span><code>GLib.Tree.prototype.height</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Tree.prototype.height(): {
+    // javascript wrapper for 'g_tree_height'
+}</pre>
+
+<p>Gets the height of a <a href="trees-binary.html#GTree">GLib.Tree</a>.</p>
+<p>If the <a href="trees-binary.html#GTree">GLib.Tree</a> contains no nodes, the height is 0.
+If the <a href="trees-binary.html#GTree">GLib.Tree</a> contains only one root node the height is 1.
+If the root node has children the height is 2, etc.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GLib.Tree</a></p>
+</td>
+<td>
+<a title="GLib.Tree" href="trees-binary.html#GTree">GLib.Tree</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the height of <em>tree</em></p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_tree_replace">
+		
+<h4 id="glibtreeprototypereplace">
+	<span><code>GLib.Tree.prototype.replace</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Tree.prototype.replace(key: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, value: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_tree_replace'
+}</pre>
+
+<p>Inserts a new key and value into a <a href="trees-binary.html#GTree">GLib.Tree</a> similar to <a href="trees-binary.html#g_tree_insert">GLib.Tree.prototype.insert</a>.
+The difference is that if the key already exists in the <a href="trees-binary.html#GTree">GLib.Tree</a>, it gets
+replaced by the new key. If you supplied a <em>value_destroy_func</em> when
+creating the <a href="trees-binary.html#GTree">GLib.Tree</a>, the old value is freed using that function. If you
+supplied a <em>key_destroy_func</em> when creating the <a href="trees-binary.html#GTree">GLib.Tree</a>, the old key is
+freed using that function.</p>
+<p>The tree is automatically 'balanced' as new key/value pairs are added,
+so that the distance from the root to every leaf is as small as possible.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GLib.Tree</a></p>
+</td>
+<td>
+<a title="GLib.Tree" href="trees-binary.html#GTree">GLib.Tree</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to insert</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>the value corresponding to the key</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_tree_unref">
+		
+<h4 id="glibtreeprototypeunref">
+	<span><code>GLib.Tree.prototype.unref</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Tree.prototype.unref(): {
+    // javascript wrapper for 'g_tree_unref'
+}</pre>
+
+<p>Decrements the reference count of <em>tree</em> by one.
+If the reference count drops to 0, all keys and values will
+be destroyed (if destroy functions were specified) and all
+memory allocated by <em>tree</em> will be released.</p>
+<p>It is safe to call this function from any thread.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tree:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="trees-binary.html#GTree">GLib.Tree</a></p>
+</td>
+<td>
+<a title="GLib.Tree" href="trees-binary.html#GTree">GLib.Tree</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GTree">
+		<h3 id="glibtree">
+	GLib.Tree
+</h3>
+
+		<p>The GTree struct is an opaque data structure representing a
+[balanced binary tree][glib-Balanced-Binary-Trees]. It should be
+accessed only by using the following functions.</p>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GTraverseFunc">
+		
+<h3 id="glibtraversefunc">
+	<span><code>GLib.TraverseFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+(*GLib.TraverseFunc) (<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>,
+                      <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>,
+                      <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</pre>
+
+<p>Specifies the type of function passed to <a href="../c/trees-binary.html#g_tree_traverse">g_tree_traverse (not introspectable)</a>. It is
+passed the key and value of each node, together with the <em>user_data</em>
+parameter passed to <a href="../c/trees-binary.html#g_tree_traverse">g_tree_traverse (not introspectable)</a>. If the function returns
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a>, the traversal is stopped.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key of a <a href="trees-binary.html#GTree">GLib.Tree</a> node</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>the value corresponding to the key</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="../c/trees-binary.html#g_tree_traverse">g_tree_traverse (not introspectable)</a></p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> to stop the traversal</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

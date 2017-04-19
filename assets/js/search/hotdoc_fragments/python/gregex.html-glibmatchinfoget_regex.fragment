@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gregex.html#glibmatchinfoget_regex", "fragment": "GLib.MatchInfo.get_regex \nReturns GLib.Regex object used in match_info. It belongs to Glib and must not be freed. Use GLib.Regex.ref if you need to keep it after you free match_info object. \n"});

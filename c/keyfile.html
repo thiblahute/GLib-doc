@@ -1,0 +1,6284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GKeyFile</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="keyfile.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="keyfile.markdown">
+        <h1 id="gkeyfile">GKeyFile</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GKeyFile</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GKeyFileConstructors">Constructors</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_new">
+		
+<h4 id="g_key_file_new1">
+	<span><code>g_key_file_new</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> *
+g_key_file_new ()</pre>
+
+<p>Creates a new empty <a href="keyfile.html#GKeyFile">GKeyFile</a> object. Use
+<a href="keyfile.html#g_key_file_load_from_file">g_key_file_load_from_file</a>, <a href="keyfile.html#g_key_file_load_from_data">g_key_file_load_from_data</a>,
+<a href="keyfile.html#g_key_file_load_from_dirs">g_key_file_load_from_dirs</a> or <a href="keyfile.html#g_key_file_load_from_data_dirs">g_key_file_load_from_data_dirs</a> to
+read an existing key file.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>an empty <a href="keyfile.html#GKeyFile">GKeyFile</a>.</p>
+
+	</td>
+	<td>
+		<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GKeyFileMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_boolean">
+		
+<h4 id="g_key_file_get_boolean1">
+	<span><code>g_key_file_get_boolean</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_key_file_get_boolean (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                        const gchar* group_name,
+                        const gchar* key)</pre>
+
+<p>Returns the value associated with <em>key</em> under <em>group_name</em> as a
+boolean.</p>
+<p>If <em>key</em> cannot be found then <a href="macros.html#FALSE">FALSE</a> is returned and <em>error</em> is set
+to <a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">G_KEY_FILE_ERROR_KEY_NOT_FOUND</a>. Likewise, if the value
+associated with <em>key</em> cannot be interpreted as a boolean then <a href="macros.html#FALSE">FALSE</a>
+is returned and <em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_INVALID_VALUE">G_KEY_FILE_ERROR_INVALID_VALUE</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the value associated with the key as a boolean,
+or <a href="macros.html#FALSE">FALSE</a> if the key was not found or could not be parsed.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_load_from_data_dirs">
+		
+<h4 id="g_key_file_load_from_data_dirs1">
+	<span><code>g_key_file_load_from_data_dirs</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_key_file_load_from_data_dirs (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                                gchar* file,
+                                gchar** full_path,
+                                <a title="GKeyFileFlags" href="keyfile.html#GKeyFileFlags">GKeyFileFlags</a> flags)</pre>
+
+<p>This function looks for a key file named <em>file</em> in the paths
+returned from <a href="misc_utils.html#g_get_user_data_dir">g_get_user_data_dir</a> and <a href="misc_utils.html#g_get_system_data_dirs">g_get_system_data_dirs</a>,
+loads the file into <em>key_file</em> and returns the file's full path in
+<em>full_path</em>.  If the file could not be loaded then an error is
+set to either a <a href="fileutils.html#GFileError">GFileError</a> or <a href="keyfile.html#GKeyFileError">GKeyFileError</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>an empty <a href="keyfile.html#GKeyFile">GKeyFile</a> struct</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a relative path to a filename to open and parse</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>full_path:</code></em></i>
+		</p>
+	</td>
+		<td><p>return location for a string containing the full path
+of the file, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>flags from <a href="keyfile.html#GKeyFileFlags">GKeyFileFlags</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if a key file could be loaded, <a href="macros.html#FALSE">FALSE</a> othewise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>full_path:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if a key file could be loaded, <a href="macros.html#FALSE">FALSE</a> othewise</p>
+
+	</td>
+	<td>
+		gchar**
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_locale_string">
+		
+<h4 id="g_key_file_set_locale_string1">
+	<span><code>g_key_file_set_locale_string</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_key_file_set_locale_string (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                              const gchar* group_name,
+                              const gchar* key,
+                              const gchar* locale,
+                              const gchar* string)</pre>
+
+<p>Associates a string value for <em>key</em> and <em>locale</em> under <em>group_name</em>.
+If the translation for <em>key</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>locale:</code></em></i>
+		</p>
+	</td>
+		<td><p>a locale identifier</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_key_file_set_double_list">
+		
+<h4 id="g_key_file_set_double_list1">
+	<span><code>g_key_file_set_double_list</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_key_file_set_double_list (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                            const gchar* group_name,
+                            const gchar* key,
+                            gdouble list,
+                            gsize length)</pre>
+
+<p>Associates a list of double values with <em>key</em> under
+<em>group_name</em>.  If <em>key</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>an array of double values</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=length]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of double values in <em>list</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_boolean_list">
+		
+<h4 id="g_key_file_get_boolean_list1">
+	<span><code>g_key_file_get_boolean_list</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean*
+g_key_file_get_boolean_list (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                             const gchar* group_name,
+                             const gchar* key,
+                             gsize* length)</pre>
+
+<p>Returns the values associated with <em>key</em> under <em>group_name</em> as
+booleans.</p>
+<p>If <em>key</em> cannot be found then <a href="macros.html#NULL">NULL</a> is returned and <em>error</em> is set to
+<a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">G_KEY_FILE_ERROR_KEY_NOT_FOUND</a>. Likewise, if the values associated
+with <em>key</em> cannot be interpreted as booleans then <a href="macros.html#NULL">NULL</a> is returned
+and <em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_INVALID_VALUE">G_KEY_FILE_ERROR_INVALID_VALUE</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of booleans returned</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of1">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>(array length=length) (element-type gboolean) (transfer container):
+the values associated with the key as a list of booleans, or <a href="macros.html#NULL">NULL</a> if the
+key was not found or could not be parsed. The returned list of booleans
+should be freed with <a href="memory.html#g_free">g_free</a> when no longer needed.</p>
+
+	</td>
+	<td>
+		gboolean*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p>(array length=length) (element-type gboolean) (transfer container):
+the values associated with the key as a list of booleans, or <a href="macros.html#NULL">NULL</a> if the
+key was not found or could not be parsed. The returned list of booleans
+should be freed with <a href="memory.html#g_free">g_free</a> when no longer needed.</p>
+
+	</td>
+	<td>
+		gsize*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_integer_list">
+		
+<h4 id="g_key_file_get_integer_list1">
+	<span><code>g_key_file_get_integer_list</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint*
+g_key_file_get_integer_list (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                             const gchar* group_name,
+                             const gchar* key,
+                             gsize* length)</pre>
+
+<p>Returns the values associated with <em>key</em> under <em>group_name</em> as
+integers.</p>
+<p>If <em>key</em> cannot be found then <a href="macros.html#NULL">NULL</a> is returned and <em>error</em> is set to
+<a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">G_KEY_FILE_ERROR_KEY_NOT_FOUND</a>. Likewise, if the values associated
+with <em>key</em> cannot be interpreted as integers, or are out of range for
+gint, then <a href="macros.html#NULL">NULL</a> is returned
+and <em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_INVALID_VALUE">G_KEY_FILE_ERROR_INVALID_VALUE</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of integers returned</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of2">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>(array length=length) (element-type gint) (transfer container):
+the values associated with the key as a list of integers, or <a href="macros.html#NULL">NULL</a> if
+the key was not found or could not be parsed. The returned list of
+integers should be freed with <a href="memory.html#g_free">g_free</a> when no longer needed.</p>
+
+	</td>
+	<td>
+		gint*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p>(array length=length) (element-type gint) (transfer container):
+the values associated with the key as a list of integers, or <a href="macros.html#NULL">NULL</a> if
+the key was not found or could not be parsed. The returned list of
+integers should be freed with <a href="memory.html#g_free">g_free</a> when no longer needed.</p>
+
+	</td>
+	<td>
+		gsize*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_boolean">
+		
+<h4 id="g_key_file_set_boolean1">
+	<span><code>g_key_file_set_boolean</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_key_file_set_boolean (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                        const gchar* group_name,
+                        const gchar* key,
+                        gboolean value)</pre>
+
+<p>Associates a new boolean value with <em>key</em> under <em>group_name</em>.
+If <em>key</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#TRUE">TRUE</a> or <a href="macros.html#FALSE">FALSE</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_free">
+		
+<h4 id="g_key_file_free1">
+	<span><code>g_key_file_free</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_key_file_free (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file)</pre>
+
+<p>Clears all keys and groups from <em>key_file</em>, and decreases the
+reference count by 1. If the reference count reaches zero,
+frees the key file and all its allocated memory.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_string_list">
+		
+<h4 id="g_key_file_set_string_list1">
+	<span><code>g_key_file_set_string_list</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_key_file_set_string_list (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                            const gchar* group_name,
+                            const gchar* key,
+                            utf8* list,
+                            gsize length)</pre>
+
+<p>Associates a list of string values for <em>key</em> under <em>group_name</em>.
+If <em>key</em> cannot be found then it is created.
+If <em>group_name</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>an array of string values</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+<span class="annotation">[<abbr title="Generic and defining element of containers and arrays"><span class="acronym">element-type</span></abbr> utf8]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of string values in <em>list</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_load_from_file">
+		
+<h4 id="g_key_file_load_from_file1">
+	<span><code>g_key_file_load_from_file</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_key_file_load_from_file (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                           gchar* file,
+                           <a title="GKeyFileFlags" href="keyfile.html#GKeyFileFlags">GKeyFileFlags</a> flags)</pre>
+
+<p>Loads a key file into an empty <a href="keyfile.html#GKeyFile">GKeyFile</a> structure.</p>
+<p>If the OS returns an error when opening or reading the file, a
+<a href="fileutils.html#G_FILE_ERROR">G_FILE_ERROR</a> is returned. If there is a problem parsing the file, a
+<a href="keyfile.html#G_KEY_FILE_ERROR">G_KEY_FILE_ERROR</a> is returned.</p>
+<p>This function will never return a <a href="keyfile.html#G_KEY_FILE_ERROR_NOT_FOUND">G_KEY_FILE_ERROR_NOT_FOUND</a> error. If the
+<em>file</em> is not found, <a href="fileutils.html#G_FILE_ERROR_NOENT">G_FILE_ERROR_NOENT</a> is returned.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>an empty <a href="keyfile.html#GKeyFile">GKeyFile</a> struct</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td><p>the path of a filename to load, in the GLib filename encoding</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>flags from <a href="keyfile.html#GKeyFileFlags">GKeyFileFlags</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if a key file could be loaded, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_string">
+		
+<h4 id="g_key_file_get_string1">
+	<span><code>g_key_file_get_string</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gchar*
+g_key_file_get_string (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                       const gchar* group_name,
+                       const gchar* key)</pre>
+
+<p>Returns the string value associated with <em>key</em> under <em>group_name</em>.
+Unlike <a href="keyfile.html#g_key_file_get_value">g_key_file_get_value</a>, this function handles escape sequences
+like \s.</p>
+<p>In the event the key cannot be found, <a href="macros.html#NULL">NULL</a> is returned and
+<em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">G_KEY_FILE_ERROR_KEY_NOT_FOUND</a>.  In the
+event that the <em>group_name</em> cannot be found, <a href="macros.html#NULL">NULL</a> is returned
+and <em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_GROUP_NOT_FOUND">G_KEY_FILE_ERROR_GROUP_NOT_FOUND</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string or <a href="macros.html#NULL">NULL</a> if the specified
+key cannot be found.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_locale_string_list">
+		
+<h4 id="g_key_file_get_locale_string_list1">
+	<span><code>g_key_file_get_locale_string_list</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+utf8*
+g_key_file_get_locale_string_list (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                                   const gchar* group_name,
+                                   const gchar* key,
+                                   const gchar* locale,
+                                   gsize* length)</pre>
+
+<p>Returns the values associated with <em>key</em> under <em>group_name</em>
+translated in the given <em>locale</em> if available.  If <em>locale</em> is
+<a href="macros.html#NULL">NULL</a> then the current locale is assumed.</p>
+<p>If <em>key</em> cannot be found then <a href="macros.html#NULL">NULL</a> is returned and <em>error</em> is set
+to <a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">G_KEY_FILE_ERROR_KEY_NOT_FOUND</a>. If the values associated
+with <em>key</em> cannot be interpreted or no suitable translations
+can be found then the untranslated values are returned. The
+returned array is <a href="macros.html#NULL">NULL</a>-terminated, so <em>length</em> may optionally
+be <a href="macros.html#NULL">NULL</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>locale:</code></em></i>
+		</p>
+	</td>
+		<td><p>a locale identifier or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>return location for the number of returned strings or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of3">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated <a href="macros.html#NULL">NULL</a>-terminated string array
+or <a href="macros.html#NULL">NULL</a> if the key isn't found. The string array should be freed
+with <a href="string_utils.html#g_strfreev">g_strfreev</a>.</p>
+
+	</td>
+	<td>
+		utf8*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+<span class="annotation">[<abbr title="Generic and defining element of containers and arrays"><span class="acronym">element-type</span></abbr> utf8]</span>
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated <a href="macros.html#NULL">NULL</a>-terminated string array
+or <a href="macros.html#NULL">NULL</a> if the key isn't found. The string array should be freed
+with <a href="string_utils.html#g_strfreev">g_strfreev</a>.</p>
+
+	</td>
+	<td>
+		gsize*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+<span class="annotation">[<abbr title="Generic and defining element of containers and arrays"><span class="acronym">element-type</span></abbr> utf8]</span>
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.26;" id="g_key_file_get_int64">
+		
+<h4 id="g_key_file_get_int641">
+	<span><code>g_key_file_get_int64</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint64
+g_key_file_get_int64 (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                      const gchar* group_name,
+                      const gchar* key)</pre>
+
+<p>Returns the value associated with <em>key</em> under <em>group_name</em> as a signed
+64-bit integer. This is similar to <a href="keyfile.html#g_key_file_get_integer">g_key_file_get_integer</a> but can return
+64-bit results without truncation.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a non-%NULL <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a non-%NULL group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a non-%NULL key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the value associated with the key as a signed 64-bit integer, or
+0 if the key was not found or could not be parsed.</p>
+
+	</td>
+	<td>
+		gint64
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.26
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_value">
+		
+<h4 id="g_key_file_set_value1">
+	<span><code>g_key_file_set_value</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_key_file_set_value (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                      const gchar* group_name,
+                      const gchar* key,
+                      const gchar* value)</pre>
+
+<p>Associates a new value with <em>key</em> under <em>group_name</em>.</p>
+<p>If <em>key</em> cannot be found then it is created. If <em>group_name</em> cannot
+be found then it is created. To set an UTF-8 string which may contain
+characters that need escaping (such as newlines or spaces), use
+<a href="keyfile.html#g_key_file_set_string">g_key_file_set_string</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.26;" id="g_key_file_set_int64">
+		
+<h4 id="g_key_file_set_int641">
+	<span><code>g_key_file_set_int64</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_key_file_set_int64 (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                      const gchar* group_name,
+                      const gchar* key,
+                      gint64 value)</pre>
+
+<p>Associates a new integer value with <em>key</em> under <em>group_name</em>.
+If <em>key</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>an integer value</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.26
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_remove_key">
+		
+<h4 id="g_key_file_remove_key1">
+	<span><code>g_key_file_remove_key</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_key_file_remove_key (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                       const gchar* group_name,
+                       const gchar* key)</pre>
+
+<p>Removes <em>key</em> in <em>group_name</em> from the key file.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key name to remove</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the key was removed, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_key_file_load_from_dirs">
+		
+<h4 id="g_key_file_load_from_dirs1">
+	<span><code>g_key_file_load_from_dirs</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_key_file_load_from_dirs (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                           gchar* file,
+                           filename* search_dirs,
+                           gchar** full_path,
+                           <a title="GKeyFileFlags" href="keyfile.html#GKeyFileFlags">GKeyFileFlags</a> flags)</pre>
+
+<p>This function looks for a key file named <em>file</em> in the paths
+specified in <em>search_dirs</em>, loads the file into <em>key_file</em> and
+returns the file's full path in <em>full_path</em>.</p>
+<p>If the file could not be found in any of the <em>search_dirs</em>,
+<a href="keyfile.html#G_KEY_FILE_ERROR_NOT_FOUND">G_KEY_FILE_ERROR_NOT_FOUND</a> is returned. If
+the file is found but the OS returns an error when opening or reading the
+file, a <a href="fileutils.html#G_FILE_ERROR">G_FILE_ERROR</a> is returned. If there is a problem parsing the file, a
+<a href="keyfile.html#G_KEY_FILE_ERROR">G_KEY_FILE_ERROR</a> is returned.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>an empty <a href="keyfile.html#GKeyFile">GKeyFile</a> struct</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a relative path to a filename to open and parse</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>search_dirs:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#NULL">NULL</a>-terminated array of directories to search</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+<span class="annotation">[<abbr title="Generic and defining element of containers and arrays"><span class="acronym">element-type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>full_path:</code></em></i>
+		</p>
+	</td>
+		<td><p>return location for a string containing the full path
+of the file, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>flags from <a href="keyfile.html#GKeyFileFlags">GKeyFileFlags</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of4">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if a key file could be loaded, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>full_path:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if a key file could be loaded, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gchar**
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_integer_list">
+		
+<h4 id="g_key_file_set_integer_list1">
+	<span><code>g_key_file_set_integer_list</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_key_file_set_integer_list (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                             const gchar* group_name,
+                             const gchar* key,
+                             gint list,
+                             gsize length)</pre>
+
+<p>Associates a list of integer values with <em>key</em> under <em>group_name</em>.
+If <em>key</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>an array of integer values</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=length]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of integer values in <em>list</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_keys">
+		
+<h4 id="g_key_file_get_keys1">
+	<span><code>g_key_file_get_keys</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+utf8*
+g_key_file_get_keys (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                     const gchar* group_name,
+                     gsize* length)</pre>
+
+<p>Returns all keys for the group name <em>group_name</em>.  The array of
+returned keys will be <a href="macros.html#NULL">NULL</a>-terminated, so <em>length</em> may
+optionally be <a href="macros.html#NULL">NULL</a>. In the event that the <em>group_name</em> cannot
+be found, <a href="macros.html#NULL">NULL</a> is returned and <em>error</em> is set to
+<a href="keyfile.html#G_KEY_FILE_ERROR_GROUP_NOT_FOUND">G_KEY_FILE_ERROR_GROUP_NOT_FOUND</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>return location for the number of keys returned, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of5">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated <a href="macros.html#NULL">NULL</a>-terminated array of strings.
+Use <a href="string_utils.html#g_strfreev">g_strfreev</a> to free it.</p>
+
+	</td>
+	<td>
+		utf8*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated <a href="macros.html#NULL">NULL</a>-terminated array of strings.
+Use <a href="string_utils.html#g_strfreev">g_strfreev</a> to free it.</p>
+
+	</td>
+	<td>
+		gsize*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_boolean_list">
+		
+<h4 id="g_key_file_set_boolean_list1">
+	<span><code>g_key_file_set_boolean_list</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_key_file_set_boolean_list (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                             const gchar* group_name,
+                             const gchar* key,
+                             gboolean list,
+                             gsize length)</pre>
+
+<p>Associates a list of boolean values with <em>key</em> under <em>group_name</em>.
+If <em>key</em> cannot be found then it is created.
+If <em>group_name</em> is <a href="macros.html#NULL">NULL</a>, the start_group is used.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>an array of boolean values</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=length]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>list</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_groups">
+		
+<h4 id="g_key_file_get_groups1">
+	<span><code>g_key_file_get_groups</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+utf8*
+g_key_file_get_groups (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                       gsize* length)</pre>
+
+<p>Returns all groups in the key file loaded with <em>key_file</em>.
+The array of returned groups will be <a href="macros.html#NULL">NULL</a>-terminated, so
+<em>length</em> may optionally be <a href="macros.html#NULL">NULL</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>return location for the number of returned groups, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of6">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated <a href="macros.html#NULL">NULL</a>-terminated array of strings.
+Use <a href="string_utils.html#g_strfreev">g_strfreev</a> to free it.</p>
+
+	</td>
+	<td>
+		utf8*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated <a href="macros.html#NULL">NULL</a>-terminated array of strings.
+Use <a href="string_utils.html#g_strfreev">g_strfreev</a> to free it.</p>
+
+	</td>
+	<td>
+		gsize*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_integer">
+		
+<h4 id="g_key_file_set_integer1">
+	<span><code>g_key_file_set_integer</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_key_file_set_integer (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                        const gchar* group_name,
+                        const gchar* key,
+                        gint value)</pre>
+
+<p>Associates a new integer value with <em>key</em> under <em>group_name</em>.
+If <em>key</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>an integer value</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_locale_string_list">
+		
+<h4 id="g_key_file_set_locale_string_list1">
+	<span><code>g_key_file_set_locale_string_list</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_key_file_set_locale_string_list (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                                   const gchar* group_name,
+                                   const gchar* key,
+                                   const gchar* locale,
+                                   gchar list,
+                                   gsize length)</pre>
+
+<p>Associates a list of string values for <em>key</em> and <em>locale</em> under
+<em>group_name</em>.  If the translation for <em>key</em> cannot be found then
+it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>locale:</code></em></i>
+		</p>
+	</td>
+		<td><p>a locale identifier</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>list:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="macros.html#NULL">NULL</a>-terminated array of locale string values</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>list</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_comment">
+		
+<h4 id="g_key_file_set_comment1">
+	<span><code>g_key_file_set_comment</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_key_file_set_comment (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                        const gchar* group_name,
+                        const gchar* key,
+                        const gchar* comment)</pre>
+
+<p>Places a comment above <em>key</em> from <em>group_name</em>.</p>
+<p>If <em>key</em> is <a href="macros.html#NULL">NULL</a> then <em>comment</em> will be written above <em>group_name</em>.
+If both <em>key</em> and <em>group_name</em>  are <a href="macros.html#NULL">NULL</a>, then <em>comment</em> will be
+written above the first group in the file.</p>
+<p>Note that this function prepends a '#' comment marker to
+each line of <em>comment</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>comment:</code></em></i>
+		</p>
+	</td>
+		<td><p>a comment</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the comment was written, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_key_file_ref">
+		
+<h4 id="g_key_file_ref1">
+	<span><code>g_key_file_ref</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> *
+g_key_file_ref (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file)</pre>
+
+<p>Increases the reference count of <em>key_file</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the same <em>key_file</em>.</p>
+
+	</td>
+	<td>
+		<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_has_group">
+		
+<h4 id="g_key_file_has_group1">
+	<span><code>g_key_file_has_group</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_key_file_has_group (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                      const gchar* group_name)</pre>
+
+<p>Looks whether the key file has the group <em>group_name</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>group_name</em> is a part of <em>key_file</em>, <a href="macros.html#FALSE">FALSE</a>
+otherwise.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_has_key">
+		
+<h4 id="g_key_file_has_key1">
+	<span><code>g_key_file_has_key</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_key_file_has_key (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                    const gchar* group_name,
+                    const gchar* key)</pre>
+
+<p>Looks whether the key file has the key <em>key</em> in the group
+<em>group_name</em>.</p>
+<p>Note that this function does not follow the rules for <a href="error_reporting.html#GError">GError</a> strictly;
+the return value both carries meaning and signals an error.  To use
+this function, you must pass a <a href="error_reporting.html#GError">GError</a> pointer in <em>error</em>, and check
+whether it is not <a href="macros.html#NULL">NULL</a> to see if an error occurred.</p>
+<p>Language bindings should use <a href="keyfile.html#g_key_file_get_value">g_key_file_get_value</a> to test whether
+or not a key exists.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>key</em> is a part of <em>group_name</em>, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_remove_group">
+		
+<h4 id="g_key_file_remove_group1">
+	<span><code>g_key_file_remove_group</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_key_file_remove_group (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                         const gchar* group_name)</pre>
+
+<p>Removes the specified group, <em>group_name</em>,
+from the key file.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the group was removed, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_start_group">
+		
+<h4 id="g_key_file_get_start_group1">
+	<span><code>g_key_file_get_start_group</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gchar*
+g_key_file_get_start_group (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file)</pre>
+
+<p>Returns the name of the start group of the file.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters28">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The start group of the key file.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_to_data">
+		
+<h4 id="g_key_file_to_data1">
+	<span><code>g_key_file_to_data</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gchar*
+g_key_file_to_data (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                    gsize* length)</pre>
+
+<p>This function outputs <em>key_file</em> as a string.</p>
+<p>Note that this function never reports an error,
+so it is safe to pass <a href="macros.html#NULL">NULL</a> as <em>error</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters29">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>return location for the length of the
+returned string, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of7">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string holding
+the contents of the <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string holding
+the contents of the <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+
+	</td>
+	<td>
+		gsize*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_key_file_load_from_bytes">
+		
+<h4 id="g_key_file_load_from_bytes1">
+	<span><code>g_key_file_load_from_bytes</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_key_file_load_from_bytes (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                            <a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> * bytes,
+                            <a title="GKeyFileFlags" href="keyfile.html#GKeyFileFlags">GKeyFileFlags</a> flags)</pre>
+
+<p>Loads a key file from the data in <em>bytes</em> into an empty <a href="keyfile.html#GKeyFile">GKeyFile</a> structure.
+If the object cannot be created then error is set to a <a href="keyfile.html#GKeyFileError">GKeyFileError</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters30">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>an empty <a href="keyfile.html#GKeyFile">GKeyFile</a> struct</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GBytes">GBytes</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>flags from <a href="keyfile.html#GKeyFileFlags">GKeyFileFlags</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if a key file could be loaded, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.26;" id="g_key_file_set_uint64">
+		
+<h4 id="g_key_file_set_uint641">
+	<span><code>g_key_file_set_uint64</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_key_file_set_uint64 (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                       const gchar* group_name,
+                       const gchar* key,
+                       guint64 value)</pre>
+
+<p>Associates a new integer value with <em>key</em> under <em>group_name</em>.
+If <em>key</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters31">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>an integer value</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.26
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_load_from_data">
+		
+<h4 id="g_key_file_load_from_data1">
+	<span><code>g_key_file_load_from_data</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_key_file_load_from_data (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                           const gchar* data,
+                           gsize length,
+                           <a title="GKeyFileFlags" href="keyfile.html#GKeyFileFlags">GKeyFileFlags</a> flags)</pre>
+
+<p>Loads a key file from memory into an empty <a href="keyfile.html#GKeyFile">GKeyFile</a> structure.
+If the object cannot be created then error is set to a <a href="keyfile.html#GKeyFileError">GKeyFileError</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters32">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>an empty <a href="keyfile.html#GKeyFile">GKeyFile</a> struct</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>key file loaded in memory</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>data</em> in bytes (or (gsize)-1 if data is nul-terminated)</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>flags from <a href="keyfile.html#GKeyFileFlags">GKeyFileFlags</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if a key file could be loaded, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_key_file_unref">
+		
+<h4 id="g_key_file_unref1">
+	<span><code>g_key_file_unref</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_key_file_unref (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file)</pre>
+
+<p>Decreases the reference count of <em>key_file</em> by 1. If the reference count
+reaches zero, frees the key file and all its allocated memory.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters33">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_comment">
+		
+<h4 id="g_key_file_get_comment1">
+	<span><code>g_key_file_get_comment</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gchar*
+g_key_file_get_comment (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                        const gchar* group_name,
+                        const gchar* key)</pre>
+
+<p>Retrieves a comment above <em>key</em> from <em>group_name</em>.
+If <em>key</em> is <a href="macros.html#NULL">NULL</a> then <em>comment</em> will be read from above
+<em>group_name</em>. If both <em>key</em> and <em>group_name</em> are <a href="macros.html#NULL">NULL</a>, then
+<em>comment</em> will be read from above the first group in the file.</p>
+<p>Note that the returned string includes the '#' comment markers.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters34">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a comment that should be freed with <a href="memory.html#g_free">g_free</a></p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_remove_comment">
+		
+<h4 id="g_key_file_remove_comment1">
+	<span><code>g_key_file_remove_comment</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_key_file_remove_comment (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                           const gchar* group_name,
+                           const gchar* key)</pre>
+
+<p>Removes a comment above <em>key</em> from <em>group_name</em>.
+If <em>key</em> is <a href="macros.html#NULL">NULL</a> then <em>comment</em> will be removed above <em>group_name</em>.
+If both <em>key</em> and <em>group_name</em> are <a href="macros.html#NULL">NULL</a>, then <em>comment</em> will
+be removed above the first group in the file.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters35">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the comment was removed, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_key_file_get_double_list">
+		
+<h4 id="g_key_file_get_double_list1">
+	<span><code>g_key_file_get_double_list</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gdouble*
+g_key_file_get_double_list (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                            const gchar* group_name,
+                            const gchar* key,
+                            gsize* length)</pre>
+
+<p>Returns the values associated with <em>key</em> under <em>group_name</em> as
+doubles.</p>
+<p>If <em>key</em> cannot be found then <a href="macros.html#NULL">NULL</a> is returned and <em>error</em> is set to
+<a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">G_KEY_FILE_ERROR_KEY_NOT_FOUND</a>. Likewise, if the values associated
+with <em>key</em> cannot be interpreted as doubles then <a href="macros.html#NULL">NULL</a> is returned
+and <em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_INVALID_VALUE">G_KEY_FILE_ERROR_INVALID_VALUE</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters36">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of doubles returned</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of8">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>(array length=length) (element-type gdouble) (transfer container):
+the values associated with the key as a list of doubles, or <a href="macros.html#NULL">NULL</a> if the
+key was not found or could not be parsed. The returned list of doubles
+should be freed with <a href="memory.html#g_free">g_free</a> when no longer needed.</p>
+
+	</td>
+	<td>
+		gdouble*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p>(array length=length) (element-type gdouble) (transfer container):
+the values associated with the key as a list of doubles, or <a href="macros.html#NULL">NULL</a> if the
+key was not found or could not be parsed. The returned list of doubles
+should be freed with <a href="memory.html#g_free">g_free</a> when no longer needed.</p>
+
+	</td>
+	<td>
+		gsize*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_string">
+		
+<h4 id="g_key_file_set_string1">
+	<span><code>g_key_file_set_string</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_key_file_set_string (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                       const gchar* group_name,
+                       const gchar* key,
+                       const gchar* string)</pre>
+
+<p>Associates a new string value with <em>key</em> under <em>group_name</em>.
+If <em>key</em> cannot be found then it is created.
+If <em>group_name</em> cannot be found then it is created.
+Unlike <a href="keyfile.html#g_key_file_set_value">g_key_file_set_value</a>, this function handles characters
+that need escaping, such as newlines.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters37">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.40;" id="g_key_file_save_to_file">
+		
+<h4 id="g_key_file_save_to_file1">
+	<span><code>g_key_file_save_to_file</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_key_file_save_to_file (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                         const gchar* filename)</pre>
+
+<p>Writes the contents of <em>key_file</em> to <em>filename</em> using
+<a href="fileutils.html#g_file_set_contents">g_file_set_contents</a>.</p>
+<p>This function can fail for any of the reasons that
+<a href="fileutils.html#g_file_set_contents">g_file_set_contents</a> may fail.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters38">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>the name of the file to write to</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if successful, else <a href="macros.html#FALSE">FALSE</a> with <em>error</em> set</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.40
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_value">
+		
+<h4 id="g_key_file_get_value1">
+	<span><code>g_key_file_get_value</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gchar*
+g_key_file_get_value (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                      const gchar* group_name,
+                      const gchar* key)</pre>
+
+<p>Returns the raw value associated with <em>key</em> under <em>group_name</em>.
+Use <a href="keyfile.html#g_key_file_get_string">g_key_file_get_string</a> to retrieve an unescaped UTF-8 string.</p>
+<p>In the event the key cannot be found, <a href="macros.html#NULL">NULL</a> is returned and
+<em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">G_KEY_FILE_ERROR_KEY_NOT_FOUND</a>.  In the
+event that the <em>group_name</em> cannot be found, <a href="macros.html#NULL">NULL</a> is returned
+and <em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_GROUP_NOT_FOUND">G_KEY_FILE_ERROR_GROUP_NOT_FOUND</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters39">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string or <a href="macros.html#NULL">NULL</a> if the specified
+key cannot be found.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_key_file_get_double">
+		
+<h4 id="g_key_file_get_double1">
+	<span><code>g_key_file_get_double</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gdouble
+g_key_file_get_double (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                       const gchar* group_name,
+                       const gchar* key)</pre>
+
+<p>Returns the value associated with <em>key</em> under <em>group_name</em> as a
+double. If <em>group_name</em> is <a href="macros.html#NULL">NULL</a>, the start_group is used.</p>
+<p>If <em>key</em> cannot be found then 0.0 is returned and <em>error</em> is set to
+<a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">G_KEY_FILE_ERROR_KEY_NOT_FOUND</a>. Likewise, if the value associated
+with <em>key</em> cannot be interpreted as a double then 0.0 is returned
+and <em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_INVALID_VALUE">G_KEY_FILE_ERROR_INVALID_VALUE</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters40">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the value associated with the key as a double, or
+0.0 if the key was not found or could not be parsed.</p>
+
+	</td>
+	<td>
+		gdouble
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_key_file_set_double">
+		
+<h4 id="g_key_file_set_double1">
+	<span><code>g_key_file_set_double</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_key_file_set_double (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                       const gchar* group_name,
+                       const gchar* key,
+                       gdouble value)</pre>
+
+<p>Associates a new double value with <em>key</em> under <em>group_name</em>.
+If <em>key</em> cannot be found then it is created.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters41">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>an double value</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.26;" id="g_key_file_get_uint64">
+		
+<h4 id="g_key_file_get_uint641">
+	<span><code>g_key_file_get_uint64</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint64
+g_key_file_get_uint64 (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                       const gchar* group_name,
+                       const gchar* key)</pre>
+
+<p>Returns the value associated with <em>key</em> under <em>group_name</em> as an unsigned
+64-bit integer. This is similar to <a href="keyfile.html#g_key_file_get_integer">g_key_file_get_integer</a> but can return
+large positive results without truncation.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters42">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a non-%NULL <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a non-%NULL group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a non-%NULL key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the value associated with the key as an unsigned 64-bit integer,
+or 0 if the key was not found or could not be parsed.</p>
+
+	</td>
+	<td>
+		guint64
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.26
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_integer">
+		
+<h4 id="g_key_file_get_integer1">
+	<span><code>g_key_file_get_integer</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint
+g_key_file_get_integer (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                        const gchar* group_name,
+                        const gchar* key)</pre>
+
+<p>Returns the value associated with <em>key</em> under <em>group_name</em> as an
+integer.</p>
+<p>If <em>key</em> cannot be found then 0 is returned and <em>error</em> is set to
+<a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">G_KEY_FILE_ERROR_KEY_NOT_FOUND</a>. Likewise, if the value associated
+with <em>key</em> cannot be interpreted as an integer, or is out of range
+for a gint, then 0 is returned
+and <em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_INVALID_VALUE">G_KEY_FILE_ERROR_INVALID_VALUE</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters43">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the value associated with the key as an integer, or
+0 if the key was not found or could not be parsed.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_string_list">
+		
+<h4 id="g_key_file_get_string_list1">
+	<span><code>g_key_file_get_string_list</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+utf8*
+g_key_file_get_string_list (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                            const gchar* group_name,
+                            const gchar* key,
+                            gsize* length)</pre>
+
+<p>Returns the values associated with <em>key</em> under <em>group_name</em>.</p>
+<p>In the event the key cannot be found, <a href="macros.html#NULL">NULL</a> is returned and
+<em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">G_KEY_FILE_ERROR_KEY_NOT_FOUND</a>.  In the
+event that the <em>group_name</em> cannot be found, <a href="macros.html#NULL">NULL</a> is returned
+and <em>error</em> is set to <a href="keyfile.html#G_KEY_FILE_ERROR_GROUP_NOT_FOUND">G_KEY_FILE_ERROR_GROUP_NOT_FOUND</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters44">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>return location for the number of returned strings, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of9">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>(array zero-terminated=1 length=length) (element-type utf8) (transfer full):
+a <a href="macros.html#NULL">NULL</a>-terminated string array or <a href="macros.html#NULL">NULL</a> if the specified
+key cannot be found. The array should be freed with <a href="string_utils.html#g_strfreev">g_strfreev</a>.</p>
+
+	</td>
+	<td>
+		utf8*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p>(array zero-terminated=1 length=length) (element-type utf8) (transfer full):
+a <a href="macros.html#NULL">NULL</a>-terminated string array or <a href="macros.html#NULL">NULL</a> if the specified
+key cannot be found. The array should be freed with <a href="string_utils.html#g_strfreev">g_strfreev</a>.</p>
+
+	</td>
+	<td>
+		gsize*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_get_locale_string">
+		
+<h4 id="g_key_file_get_locale_string1">
+	<span><code>g_key_file_get_locale_string</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gchar*
+g_key_file_get_locale_string (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                              const gchar* group_name,
+                              const gchar* key,
+                              const gchar* locale)</pre>
+
+<p>Returns the value associated with <em>key</em> under <em>group_name</em>
+translated in the given <em>locale</em> if available.  If <em>locale</em> is
+<a href="macros.html#NULL">NULL</a> then the current locale is assumed.</p>
+<p>If <em>key</em> cannot be found then <a href="macros.html#NULL">NULL</a> is returned and <em>error</em> is set
+to <a href="keyfile.html#G_KEY_FILE_ERROR_KEY_NOT_FOUND">G_KEY_FILE_ERROR_KEY_NOT_FOUND</a>. If the value associated
+with <em>key</em> cannot be interpreted or no suitable translation can
+be found then the untranslated value is returned.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters45">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>a group name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>locale:</code></em></i>
+		</p>
+	</td>
+		<td><p>a locale identifier or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns21">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string or <a href="macros.html#NULL">NULL</a> if the specified
+key cannot be found.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_key_file_set_list_separator">
+		
+<h4 id="g_key_file_set_list_separator1">
+	<span><code>g_key_file_set_list_separator</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_key_file_set_list_separator (<a title="GKeyFile" href="keyfile.html#GKeyFile">GKeyFile</a> * key_file,
+                               gchar separator)</pre>
+
+<p>Sets the character which is used to separate
+values in lists. Typically ';' or ',' are used
+as separators. The default list separator is ';'.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters46">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="keyfile.html#GKeyFile">GKeyFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>separator:</code></em></i>
+		</p>
+	</td>
+		<td><p>the separator</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_key_file_error_quark">
+		
+<h3 id="g_key_file_error_quark1">
+	<span><code>g_key_file_error_quark</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="GQuark" href="quarks.html#GQuark">GQuark</a>
+g_key_file_error_quark ()</pre>
+
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns22">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		<a title="GQuark" href="quarks.html#GQuark">GQuark</a>
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GKeyFile">
+		
+<h3 id="struct-gkeyfile">
+		struct GKeyFile
+	</h3>
+
+		<pre class="raw_code">
+struct GKeyFile {
+};
+</pre>
+
+<p>The GKeyFile struct contains only private data
+and should not be accessed directly.</p>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GKeyFileError">
+		
+<h3 id="enum-gkeyfileerror">
+		enum GKeyFileError
+	</h3>
+
+		<p>Error codes returned by key file parsing.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_KEY_FILE_ERROR_UNKNOWN_ENCODING"></a>
+		G_KEY_FILE_ERROR_UNKNOWN_ENCODING
+		</p>
+	</td>
+	<td><p>the text being parsed was in
+an unknown encoding</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_KEY_FILE_ERROR_PARSE"></a>
+		G_KEY_FILE_ERROR_PARSE
+		</p>
+	</td>
+	<td><p>document was ill-formed</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_KEY_FILE_ERROR_NOT_FOUND"></a>
+		G_KEY_FILE_ERROR_NOT_FOUND
+		</p>
+	</td>
+	<td><p>the file was not found</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_KEY_FILE_ERROR_KEY_NOT_FOUND"></a>
+		G_KEY_FILE_ERROR_KEY_NOT_FOUND
+		</p>
+	</td>
+	<td><p>a requested key was not found</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_KEY_FILE_ERROR_GROUP_NOT_FOUND"></a>
+		G_KEY_FILE_ERROR_GROUP_NOT_FOUND
+		</p>
+	</td>
+	<td><p>a requested group was not found</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_KEY_FILE_ERROR_INVALID_VALUE"></a>
+		G_KEY_FILE_ERROR_INVALID_VALUE
+		</p>
+	</td>
+	<td><p>a value could not be parsed</p>
+</td>
+	<td>
+		<span class="value">Value: 5</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GKeyFileFlags">
+		
+<h3 id="enum-gkeyfileflags">
+		enum GKeyFileFlags
+	</h3>
+
+		<p>Flags which influence the parsing.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members1">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_KEY_FILE_NONE"></a>
+		G_KEY_FILE_NONE
+		</p>
+	</td>
+	<td><p>No flags, default behaviour</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_KEY_FILE_KEEP_COMMENTS"></a>
+		G_KEY_FILE_KEEP_COMMENTS
+		</p>
+	</td>
+	<td><p>Use this flag if you plan to write the
+(possibly modified) contents of the key file back to a file;
+otherwise all comments will be lost when the key file is
+written back.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_KEY_FILE_KEEP_TRANSLATIONS"></a>
+		G_KEY_FILE_KEEP_TRANSLATIONS
+		</p>
+	</td>
+	<td><p>Use this flag if you plan to write the
+(possibly modified) contents of the key file back to a file;
+otherwise only the translations for the current language will be
+written back.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_TRY_EXEC">
+		
+<h3 class="constant" id="g_key_file_desktop_key_try_exec">
+	G_KEY_FILE_DESKTOP_KEY_TRY_EXEC
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_KEY_TRY_EXEC         "TryExec"
+</pre>
+
+<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">G_KEY_FILE_DESKTOP_GROUP</a>, whose value is a string
+giving the file name of a binary on disk used to determine if the
+program is actually installed. It is only valid for desktop entries
+with the <code>Application</code> type.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_STARTUP_WM_CLASS">
+		
+<h3 class="constant" id="g_key_file_desktop_key_startup_wm_class">
+	G_KEY_FILE_DESKTOP_KEY_STARTUP_WM_CLASS
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_KEY_STARTUP_WM_CLASS "StartupWMClass"
+</pre>
+
+<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">G_KEY_FILE_DESKTOP_GROUP</a>, whose value is string
+identifying the WM class or name hint of a window that the application
+will create, which can be used to emulate Startup Notification with
+older applications.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_URL">
+		
+<h3 class="constant" id="g_key_file_desktop_key_url">
+	G_KEY_FILE_DESKTOP_KEY_URL
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_KEY_URL              "URL"
+</pre>
+
+<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">G_KEY_FILE_DESKTOP_GROUP</a>, whose value is a string
+giving the URL to access. It is only valid for desktop entries
+with the <code>Link</code> type.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.38;" id="G_KEY_FILE_DESKTOP_KEY_ACTIONS">
+		
+<h3 class="constant" id="g_key_file_desktop_key_actions">
+	G_KEY_FILE_DESKTOP_KEY_ACTIONS
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_KEY_ACTIONS          "Actions"
+</pre>
+
+<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">G_KEY_FILE_DESKTOP_GROUP</a>, whose value is a string list
+giving the available application actions.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_NO_DISPLAY">
+		
+<h3 class="constant" id="g_key_file_desktop_key_no_display">
+	G_KEY_FILE_DESKTOP_KEY_NO_DISPLAY
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_KEY_NO_DISPLAY       "NoDisplay"
+</pre>
+
+<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">G_KEY_FILE_DESKTOP_GROUP</a>, whose value is a boolean
+stating whether the desktop entry should be shown in menus.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_TYPE_LINK">
+		
+<h3 class="constant" id="g_key_file_desktop_type_link">
+	G_KEY_FILE_DESKTOP_TYPE_LINK
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_TYPE_LINK            "Link"
+</pre>
+
+<p>The value of the <a href="keyfile.html#G_KEY_FILE_DESKTOP_KEY_TYPE">G_KEY_FILE_DESKTOP_KEY_TYPE</a>, key for desktop
+entries representing links to documents.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_ONLY_SHOW_IN">
+		
+<h3 class="constant" id="g_key_file_desktop_key_only_show_in">
+	G_KEY_FILE_DESKTOP_KEY_ONLY_SHOW_IN
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_KEY_ONLY_SHOW_IN     "OnlyShowIn"
+</pre>
+
+<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">G_KEY_FILE_DESKTOP_GROUP</a>, whose value is a list of
+strings identifying the environments that should display the
+desktop entry.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_ICON">
+		
+<h3 class="constant" id="g_key_file_desktop_key_icon">
+	G_KEY_FILE_DESKTOP_KEY_ICON
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_KEY_ICON             "Icon"
+</pre>
+
+<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">G_KEY_FILE_DESKTOP_GROUP</a>, whose value is a localized
+string giving the name of the icon to be displayed for the desktop
+entry.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_COMMENT">
+		
+<h3 class="constant" id="g_key_file_desktop_key_comment">
+	G_KEY_FILE_DESKTOP_KEY_COMMENT
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_KEY_COMMENT          "Comment"
+</pre>
+
+<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">G_KEY_FILE_DESKTOP_GROUP</a>, whose value is a localized
+string giving the tooltip for the desktop entry.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_EXEC">
+		
+<h3 class="constant" id="g_key_file_desktop_key_exec">
+	G_KEY_FILE_DESKTOP_KEY_EXEC
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_KEY_EXEC             "Exec"
+</pre>
+
+<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">G_KEY_FILE_DESKTOP_GROUP</a>, whose value is a string
+giving the command line to execute. It is only valid for desktop
+entries with the <code>Application</code> type.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_STARTUP_NOTIFY">
+		
+<h3 class="constant" id="g_key_file_desktop_key_startup_notify">
+	G_KEY_FILE_DESKTOP_KEY_STARTUP_NOTIFY
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_KEY_STARTUP_NOTIFY   "StartupNotify"
+</pre>
+
+<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">G_KEY_FILE_DESKTOP_GROUP</a>, whose value is a boolean
+stating whether the application supports the
+<a href="http://www.freedesktop.org/Standards/startup-notification-spec">Startup Notification Protocol Specification</a>.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_GENERIC_NAME">
+		
+<h3 class="constant" id="g_key_file_desktop_key_generic_name">
+	G_KEY_FILE_DESKTOP_KEY_GENERIC_NAME
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_KEY_GENERIC_NAME     "GenericName"
+</pre>
+
+<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">G_KEY_FILE_DESKTOP_GROUP</a>, whose value is a localized
+string giving the generic name of the desktop entry.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_TYPE_APPLICATION">
+		
+<h3 class="constant" id="g_key_file_desktop_type_application">
+	G_KEY_FILE_DESKTOP_TYPE_APPLICATION
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_TYPE_APPLICATION     "Application"
+</pre>
+
+<p>The value of the <a href="keyfile.html#G_KEY_FILE_DESKTOP_KEY_TYPE">G_KEY_FILE_DESKTOP_KEY_TYPE</a>, key for desktop
+entries representing applications.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_NOT_SHOW_IN">
+		
+<h3 class="constant" id="g_key_file_desktop_key_not_show_in">
+	G_KEY_FILE_DESKTOP_KEY_NOT_SHOW_IN
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_KEY_NOT_SHOW_IN      "NotShowIn"
+</pre>
+
+<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">G_KEY_FILE_DESKTOP_GROUP</a>, whose value is a list of
+strings identifying the environments that should not display the
+desktop entry.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_PATH">
+		
+<h3 class="constant" id="g_key_file_desktop_key_path">
+	G_KEY_FILE_DESKTOP_KEY_PATH
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_KEY_PATH             "Path"
+</pre>
+
+<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">G_KEY_FILE_DESKTOP_GROUP</a>, whose value is a string
+containing the working directory to run the program in. It is only
+valid for desktop entries with the <code>Application</code> type.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_MIME_TYPE">
+		
+<h3 class="constant" id="g_key_file_desktop_key_mime_type">
+	G_KEY_FILE_DESKTOP_KEY_MIME_TYPE
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_KEY_MIME_TYPE        "MimeType"
+</pre>
+
+<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">G_KEY_FILE_DESKTOP_GROUP</a>, whose value is a list
+of strings giving the MIME types supported by this desktop entry.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_GROUP">
+		
+<h3 class="constant" id="g_key_file_desktop_group">
+	G_KEY_FILE_DESKTOP_GROUP
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_GROUP                "Desktop Entry"
+</pre>
+
+<p>The name of the main group of a desktop entry file, as defined in the
+<a href="http://freedesktop.org/Standards/desktop-entry-spec">Desktop Entry Specification</a>.
+Consult the specification for more
+details about the meanings of the keys below.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_HIDDEN">
+		
+<h3 class="constant" id="g_key_file_desktop_key_hidden">
+	G_KEY_FILE_DESKTOP_KEY_HIDDEN
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_KEY_HIDDEN           "Hidden"
+</pre>
+
+<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">G_KEY_FILE_DESKTOP_GROUP</a>, whose value is a boolean
+stating whether the desktop entry has been deleted by the user.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_CATEGORIES">
+		
+<h3 class="constant" id="g_key_file_desktop_key_categories">
+	G_KEY_FILE_DESKTOP_KEY_CATEGORIES
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_KEY_CATEGORIES       "Categories"
+</pre>
+
+<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">G_KEY_FILE_DESKTOP_GROUP</a>, whose value is a list
+of strings giving the categories in which the desktop entry
+should be shown in a menu.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_VERSION">
+		
+<h3 class="constant" id="g_key_file_desktop_key_version">
+	G_KEY_FILE_DESKTOP_KEY_VERSION
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_KEY_VERSION          "Version"
+</pre>
+
+<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">G_KEY_FILE_DESKTOP_GROUP</a>, whose value is a string
+giving the version of the Desktop Entry Specification used for
+the desktop entry file.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.38;" id="G_KEY_FILE_DESKTOP_KEY_DBUS_ACTIVATABLE">
+		
+<h3 class="constant" id="g_key_file_desktop_key_dbus_activatable">
+	G_KEY_FILE_DESKTOP_KEY_DBUS_ACTIVATABLE
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_KEY_DBUS_ACTIVATABLE "DBusActivatable"
+</pre>
+
+<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">G_KEY_FILE_DESKTOP_GROUP</a>, whose value is a boolean set to true
+if the application is D-Bus activatable.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_TERMINAL">
+		
+<h3 class="constant" id="g_key_file_desktop_key_terminal">
+	G_KEY_FILE_DESKTOP_KEY_TERMINAL
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_KEY_TERMINAL         "Terminal"
+</pre>
+
+<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">G_KEY_FILE_DESKTOP_GROUP</a>, whose value is a boolean
+stating whether the program should be run in a terminal window.
+It is only valid for desktop entries with the
+<code>Application</code> type.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_KEY_FILE_ERROR">
+		
+<h3 class="constant" id="g_key_file_error">
+	G_KEY_FILE_ERROR
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_ERROR g_key_file_error_quark()
+</pre>
+
+<p>Error domain for key file parsing. Errors in this domain will
+be from the <a href="keyfile.html#GKeyFileError">GKeyFileError</a> enumeration.</p>
+<p>See <a href="error_reporting.html#GError">GError</a> for information on error domains.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_TYPE">
+		
+<h3 class="constant" id="g_key_file_desktop_key_type">
+	G_KEY_FILE_DESKTOP_KEY_TYPE
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_KEY_TYPE             "Type"
+</pre>
+
+<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">G_KEY_FILE_DESKTOP_GROUP</a>, whose value is a string
+giving the type of the desktop entry. Usually
+<a href="keyfile.html#G_KEY_FILE_DESKTOP_TYPE_APPLICATION">G_KEY_FILE_DESKTOP_TYPE_APPLICATION</a>,
+<a href="keyfile.html#G_KEY_FILE_DESKTOP_TYPE_LINK">G_KEY_FILE_DESKTOP_TYPE_LINK</a>, or
+<a href="keyfile.html#G_KEY_FILE_DESKTOP_TYPE_DIRECTORY">G_KEY_FILE_DESKTOP_TYPE_DIRECTORY</a>.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_TYPE_DIRECTORY">
+		
+<h3 class="constant" id="g_key_file_desktop_type_directory">
+	G_KEY_FILE_DESKTOP_TYPE_DIRECTORY
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_TYPE_DIRECTORY       "Directory"
+</pre>
+
+<p>The value of the <a href="keyfile.html#G_KEY_FILE_DESKTOP_KEY_TYPE">G_KEY_FILE_DESKTOP_KEY_TYPE</a>, key for desktop
+entries representing directories.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_KEY_FILE_DESKTOP_KEY_NAME">
+		
+<h3 class="constant" id="g_key_file_desktop_key_name">
+	G_KEY_FILE_DESKTOP_KEY_NAME
+</h3>
+
+		<pre class="raw_code">
+#define G_KEY_FILE_DESKTOP_KEY_NAME             "Name"
+</pre>
+
+<p>A key under <a href="keyfile.html#G_KEY_FILE_DESKTOP_GROUP">G_KEY_FILE_DESKTOP_GROUP</a>, whose value is a localized
+string giving the specific name of the desktop entry.</p>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

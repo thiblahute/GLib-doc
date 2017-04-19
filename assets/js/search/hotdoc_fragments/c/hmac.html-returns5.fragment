@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hmac.html#returns5", "fragment": "\nthe HMAC as a hexadecimal string. The returned string should be freed with g_free when done using it. \nSince \n"});

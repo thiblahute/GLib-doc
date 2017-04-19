@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#g_rw_lock_reader_unlock1", "fragment": "g_rw_lock_reader_unlock \nRelease a read lock on rw_lock. \nCalling g_rw_lock_reader_unlock on a lock that is not held by the current thread leads to undefined behaviour. \n"});

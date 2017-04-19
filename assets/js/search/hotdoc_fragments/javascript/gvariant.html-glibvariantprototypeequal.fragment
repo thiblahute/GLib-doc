@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvariant.html#glibvariantprototypeequal", "fragment": "GLib.Variant.prototype.equal \nChecks if one and two have the same type and value. \nThe types of one and two are gconstpointer only to allow use of this function with GLib.HashTable. They must each be a GLib.Variant. \n"});

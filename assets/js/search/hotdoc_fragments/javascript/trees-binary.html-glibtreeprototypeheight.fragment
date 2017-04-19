@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/trees-binary.html#glibtreeprototypeheight", "fragment": "GLib.Tree.prototype.height \nGets the height of a GLib.Tree. \nIf the GLib.Tree contains no nodes the height is If the GLib.Tree contains only one root node the height is If the root node has children the height is etc. \n"});

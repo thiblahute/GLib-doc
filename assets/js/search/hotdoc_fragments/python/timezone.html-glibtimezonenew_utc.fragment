@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/timezone.html#glibtimezonenew_utc", "fragment": "GLib.TimeZone.new_utc \nCreates a GLib.TimeZone corresponding to UTC. \nThis is equivalent to calling GLib.TimeZone.new with a value like Z UTC etc. \nYou should release the return value by calling GLib.TimeZone.unref when you are done with it. \n"});

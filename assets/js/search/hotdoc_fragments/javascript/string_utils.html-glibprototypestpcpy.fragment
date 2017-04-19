@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/string_utils.html#glibprototypestpcpy", "fragment": "GLib.prototype.stpcpy \nCopies a nul terminated string into the dest buffer include the trailing nul and return a pointer to the trailing nul byte. This is useful for concatenating multiple strings together without having to repeatedly scan for the end. \n"});

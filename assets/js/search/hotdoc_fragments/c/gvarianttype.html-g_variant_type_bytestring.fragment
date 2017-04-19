@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvarianttype.html#g_variant_type_bytestring", "fragment": "G_VARIANT_TYPE_BYTESTRING \nThe type of an array of bytes. This type is commonly used to pass around strings that may not be valid utf8. In that case the convention is that the nul terminator character should be included as the last character in the array. \n"});

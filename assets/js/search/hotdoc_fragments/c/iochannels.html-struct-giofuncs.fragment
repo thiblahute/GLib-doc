@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#struct-giofuncs", "fragment": "struct GIOFuncs \nA table of functions used to handle different types of GIOChannel in a generic way. \n"});

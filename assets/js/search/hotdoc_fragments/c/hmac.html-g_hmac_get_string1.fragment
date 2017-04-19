@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hmac.html#g_hmac_get_string1", "fragment": "g_hmac_get_string \nGets the HMAC as an hexadecimal string. \nOnce this function has been called the GHmac can no longer be updated with g_hmac_update. \nThe hexadecimal characters will be lower case. \n"});

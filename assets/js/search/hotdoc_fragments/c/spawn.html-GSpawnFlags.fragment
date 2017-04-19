@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/spawn.html#GSpawnFlags", "fragment": "the parent s open file descriptors will be inherited by the child otherwise all descriptors except stdin stdout and stderr will be closed before calling exec in the child. \nG_SPAWN_DO_NOT_REAP_CHILD \n"});

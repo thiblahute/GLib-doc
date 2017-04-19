@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/trees-nary.html#g_node_is_ancestor1", "fragment": "g_node_is_ancestor \nReturns TRUE if node is an ancestor of descendant. This is true if node is the parent of descendant or if node is the grandparent of descendant etc. \n"});

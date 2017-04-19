@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/checksum.html#struct-gchecksum", "fragment": "struct GChecksum \nAn opaque structure representing a checksumming operation. To create a new GChecksum use g_checksum_new. To free a GChecksum use g_checksum_free. \n"});

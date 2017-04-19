@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hooks.html#glibhooklistinvoke_check", "fragment": "GLib.HookList.invoke_check \nCalls all of the GLib.Hook functions in a GLib.HookList. Any function which returns False is removed from the GLib.HookList. \n"});

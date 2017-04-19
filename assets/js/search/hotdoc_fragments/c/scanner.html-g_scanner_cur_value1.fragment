@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/scanner.html#g_scanner_cur_value1", "fragment": "g_scanner_cur_value \nGets the current token value. This is simply the value field in the GScanner structure. \n"});

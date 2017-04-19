@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/option.html#G_OPTION_FLAG_NO_ARG", "fragment": "For options of the GLib.OptionArg.callback kind this flag indicates that the callback does not take any argument like a GLib.OptionArg.none option Since \nGLib.OptionFlags.filename \n"});

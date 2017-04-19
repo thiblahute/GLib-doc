@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#enum-gseektype", "fragment": "enum GSeekType \nAn enumeration specifying the base position for a g_io_channel_seek_position operation. \n"});

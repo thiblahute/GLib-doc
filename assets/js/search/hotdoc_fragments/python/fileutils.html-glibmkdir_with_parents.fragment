@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/fileutils.html#glibmkdir_with_parents", "fragment": "GLib.mkdir_with_parents \nCreate a directory if it doesn t already exist. Create intermediate parent directories as needed too. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/warnings.html#g_set_print_handler1", "fragment": "g_set_print_handler \nSets the print handler. \nAny messages passed to g_print will be output via the new handler. The default handler simply outputs the message to stdout. By providing your own handler you can redirect the output to a GTK widget or a log file for example. \n"});

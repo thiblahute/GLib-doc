@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/trees-nary.html#glibnodeprototypedestroy", "fragment": "GLib.Node.prototype.destroy \nRemoves root and its children from the tree freeing any memory allocated. \n"});

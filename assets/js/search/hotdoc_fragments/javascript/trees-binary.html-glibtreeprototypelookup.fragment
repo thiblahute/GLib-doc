@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/trees-binary.html#glibtreeprototypelookup", "fragment": "GLib.Tree.prototype.lookup \nGets the value corresponding to the given key. Since a GLib.Tree is automatically balanced as key value pairs are added key lookup is O log n where n is the number of key value pairs in the tree \n"});

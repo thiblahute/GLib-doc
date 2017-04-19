@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/memory.html#g_try_malloc0_n1", "fragment": "g_try_malloc0_n \nThis function is similar to g_try_malloc0 allocating n_blocks n_block_bytes bytes but care is taken to detect possible overflow during multiplication. \n"});

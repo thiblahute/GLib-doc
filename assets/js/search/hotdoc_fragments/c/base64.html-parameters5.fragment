@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/base64.html#parameters5", "fragment": "break_lines \nwhether to break long lines \nout \npointer to destination buffer \nstate \nSaved state from g_base64_encode_step \nsave \nSaved state from g_base64_encode_step \n"});

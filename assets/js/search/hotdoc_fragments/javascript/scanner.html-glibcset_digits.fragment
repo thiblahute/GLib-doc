@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/scanner.html#glibcset_digits", "fragment": "GLib.CSET_DIGITS \nThe set of ASCII digits. Used for specifying valid identifier characters in GLib.ScannerConfig. \n"});

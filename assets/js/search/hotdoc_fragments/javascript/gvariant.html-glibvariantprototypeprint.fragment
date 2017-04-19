@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvariant.html#glibvariantprototypeprint", "fragment": "GLib.Variant.prototype.print \nPretty prints value in the format understood by GLib.prototype.variant_parse. \nThe format is described here gvariant text \nIf type_annotate is true then type information is included in the output. \n"});

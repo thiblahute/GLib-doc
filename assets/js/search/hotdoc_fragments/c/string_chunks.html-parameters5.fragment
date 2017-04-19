@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_chunks.html#parameters5", "fragment": "size \nthe default size of the blocks of memory which are allocated to store the strings. If a particular string is larger than this default size a larger block of memory will be allocated for it. \n"});

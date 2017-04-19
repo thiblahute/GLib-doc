@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/scanner.html#enum-glibtokentype", "fragment": "enum GLib.TokenType \nThe possible types of token returned from each GLib.Scanner.get_next_token call. \n"});

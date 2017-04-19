@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date-time.html#glibprototypedate_time_equal", "fragment": "GLib.prototype.date_time_equal \nChecks to see if dt1 and dt2 are equal. \nEqual here means that they represent the same moment after converting them to the same time zone. \n"});

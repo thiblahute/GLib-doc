@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/string_utils.html#glibprototypestrcompress", "fragment": "GLib.prototype.strcompress \nReplaces all escaped characters with their one byte equivalent. \nThis function does the reverse conversion of GLib.prototype.strescape. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays.html#g_array_sized_new1", "fragment": "g_array_sized_new \nCreates a new GArray with reserved_size elements preallocated and a reference count of This avoids frequent reallocation if you are going to add many elements to the array. Note however that the size of the array is still \n"});

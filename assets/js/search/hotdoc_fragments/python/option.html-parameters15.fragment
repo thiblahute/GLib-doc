@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/option.html#parameters15", "fragment": "context \na GLib.OptionContext \nentries \na None terminated array of GLib.OptionEntry \ntranslation_domain \na translation domain to use for translating the help output for the options in entries with gettext or None \nSince \n"});

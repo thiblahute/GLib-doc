@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/testing.html#glibtest_rand_double_range", "fragment": "GLib.test_rand_double_range \nGet a reproducible random floating pointer number out of a specified range see GLib.test_rand_int for details on test case random numbers. \n"});

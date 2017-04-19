@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/macros_misc.html#g_begin_decls", "fragment": "G_BEGIN_DECLS \nUsed along with G_END_DECLS to bracket header files. If the compiler in use is a C compiler adds extern C around the header. \n"});

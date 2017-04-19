@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/linked_lists_single.html#g_slist_last1", "fragment": "g_slist_last \nGets the last element in a GSList. \nThis function iterates over the whole list. \n"});

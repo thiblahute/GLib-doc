@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/byte_order.html#glong_from_be", "fragment": "GLONG_FROM_BE \nConverts a glong value from big endian to the host byte order. \n"});

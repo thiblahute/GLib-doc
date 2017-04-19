@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/string_utils.html#returns", "fragment": "\npassed in string pointer with all the uppercase characters converted to lowercase in place with semantics that exactly match GLib.ascii_tolower. \n"});

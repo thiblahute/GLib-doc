@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date.html#g_date_set_year1", "fragment": "g_date_set_year \nSets the year for a GDate. If the resulting day month year triplet is invalid the date will be invalid. \n"});

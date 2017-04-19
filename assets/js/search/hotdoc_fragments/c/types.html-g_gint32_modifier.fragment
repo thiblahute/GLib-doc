@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/types.html#g_gint32_modifier", "fragment": "G_GINT32_MODIFIER \nThe platform dependent length modifier for conversion specifiers for scanning and printing values of type gint32 or guint32. It is a string literal. See also G_GINT16_MODIFIER. \n"});

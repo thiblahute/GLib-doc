@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvariant.html#g_variant_dict_remove", "fragment": "GLib.VariantDict.prototype.remove \nRemoves a key and its associated value from a GLib.VariantDict. \n"});

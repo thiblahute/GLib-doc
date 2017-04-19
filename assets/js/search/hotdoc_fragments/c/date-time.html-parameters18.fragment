@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date-time.html#parameters18", "fragment": "datetime \na GDateTime. \nyear \nthe return location for the gregorian year or NULL. \nmonth \nthe return location for the month of the year or NULL. \nday \nthe return location for the day of the month or NULL. \n"});

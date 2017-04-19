@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/sequence.html#glibprototypesequence_move", "fragment": "GLib.prototype.sequence_move \nMoves the item pointed to by src to the position indicated by dest. After calling this function dest will point to the position immediately after src. It is allowed for src and dest to point into different sequences. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gregex.html#G_REGEX_MATCH_PARTIAL", "fragment": "Turns on the partial matching feature for more documentation on partial matching see GLib.MatchInfo.is_partial_match. \nGLib.RegexMatchFlags.newline_cr \n"});

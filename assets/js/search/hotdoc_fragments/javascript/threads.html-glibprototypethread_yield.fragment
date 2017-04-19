@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/threads.html#glibprototypethread_yield", "fragment": "GLib.prototype.thread_yield \nCauses the calling thread to voluntarily relinquish the CPU so that other threads can run. \nThis function is often used as a method to make busy wait less evil. \n"});

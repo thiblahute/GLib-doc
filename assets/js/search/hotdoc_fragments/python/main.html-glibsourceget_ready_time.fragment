@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibsourceget_ready_time", "fragment": "GLib.Source.get_ready_time \nGets the ready time of source as set by GLib.Source.set_ready_time. \nAny time before the current monotonic time including is an indication that the source will fire immediately. \n"});

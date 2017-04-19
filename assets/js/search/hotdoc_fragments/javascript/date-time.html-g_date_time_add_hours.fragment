@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date-time.html#g_date_time_add_hours", "fragment": "GLib.DateTime.prototype.add_hours \nCreates a copy of datetime and adds the specified number of hours. Add negative values to subtract hours. \n"});

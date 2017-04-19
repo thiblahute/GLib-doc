@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibsourceset_can_recurse", "fragment": "GLib.Source.set_can_recurse \nSets whether a source can be called recursively. If can_recurse is True then while the source is being dispatched then this source will be processed normally. Otherwise all processing of this source is blocked until the dispatch function returns. \n"});

@@ -1,0 +1,3202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GLogField</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="messages.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="messages.markdown">
+        <h1 id="glogfield">GLogField</h1>
+    </div>
+        
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_log_set_fatal_mask">
+		
+<h3 id="g_log_set_fatal_mask1">
+	<span><code>g_log_set_fatal_mask</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a>
+g_log_set_fatal_mask (const gchar* log_domain,
+                      <a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a> fatal_mask)</pre>
+
+<p>Sets the log levels which are fatal in the given domain.
+<a href="messages.html#G_LOG_LEVEL_ERROR">G_LOG_LEVEL_ERROR</a> is always fatal.</p>
+<p>This has no effect on structured log messages (using <a href="messages.html#g_log_structured">g_log_structured</a> or
+<a href="messages.html#g_log_structured_array">g_log_structured_array</a>). To change the fatal behaviour for specific log
+messages, programs must install a custom log writer function using
+<a href="messages.html#g_log_set_writer_func">g_log_set_writer_func</a>. See
+[Using Structured Logging][using-structured-logging].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log domain</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fatal_mask:</code></em></i>
+		</p>
+	</td>
+		<td><p>the new fatal mask</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the old fatal mask for the log domain</p>
+
+	</td>
+	<td>
+		<a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a>
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_log_set_handler">
+		
+<h3 id="g_log_set_handler1">
+	<span><code>g_log_set_handler</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+guint
+g_log_set_handler (const gchar* log_domain,
+                   <a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a> log_levels,
+                   <a title="GLogFunc" href="messages.html#GLogFunc">GLogFunc</a> log_func,
+                   gpointer user_data)</pre>
+
+<p>Sets the log handler for a domain and a set of log levels.
+To handle fatal and recursive messages the <em>log_levels</em> parameter
+must be combined with the <a href="messages.html#G_LOG_FLAG_FATAL">G_LOG_FLAG_FATAL</a> and <a href="messages.html#G_LOG_FLAG_RECURSION">G_LOG_FLAG_RECURSION</a>
+bit flags.</p>
+<p>Note that since the <a href="messages.html#G_LOG_LEVEL_ERROR">G_LOG_LEVEL_ERROR</a> log level is always fatal, if
+you want to set a handler for this log level you must combine it with
+<a href="messages.html#G_LOG_FLAG_FATAL">G_LOG_FLAG_FATAL</a>.</p>
+<p>This has no effect if structured logging is enabled; see
+[Using Structured Logging][using-structured-logging].</p>
+<p>Here is an example for adding a log handler for all warning messages
+in the default domain:</p>
+<pre><code class="language-[&lt;!--"> g_log_set_handler (NULL, G_LOG_LEVEL_WARNING | G_LOG_FLAG_FATAL
+                    | G_LOG_FLAG_RECURSION, my_log_handler, NULL);
+</code></pre>
+<p>This example adds a log handler for all critical messages from GTK+:</p>
+<pre><code class="language-[&lt;!--"> g_log_set_handler ("Gtk", G_LOG_LEVEL_CRITICAL | G_LOG_FLAG_FATAL
+                    | G_LOG_FLAG_RECURSION, my_log_handler, NULL);
+</code></pre>
+<p>This example adds a log handler for all messages from GLib:</p>
+<pre><code class="language-[&lt;!--"> g_log_set_handler ("GLib", G_LOG_LEVEL_MASK | G_LOG_FLAG_FATAL
+                    | G_LOG_FLAG_RECURSION, my_log_handler, NULL);
+</code></pre>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log domain, or <a href="macros.html#NULL">NULL</a> for the default ""
+application domain</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_levels:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log levels to apply the log handler for.
+To handle fatal and recursive messages as well, combine
+the log levels with the <a href="messages.html#G_LOG_FLAG_FATAL">G_LOG_FLAG_FATAL</a> and
+<a href="messages.html#G_LOG_FLAG_RECURSION">G_LOG_FLAG_RECURSION</a> bit flags.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log handler function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data passed to the log handler</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the id of the new handler</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_log_remove_handler">
+		
+<h3 id="g_log_remove_handler1">
+	<span><code>g_log_remove_handler</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_log_remove_handler (const gchar* log_domain,
+                      guint handler_id)</pre>
+
+<p>Removes the log handler.</p>
+<p>This has no effect if structured logging is enabled; see
+[Using Structured Logging][using-structured-logging].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log domain</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>handler_id:</code></em></i>
+		</p>
+	</td>
+		<td><p>the id of the handler, which was returned
+in <a href="messages.html#g_log_set_handler">g_log_set_handler</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_log_set_always_fatal">
+		
+<h3 id="g_log_set_always_fatal1">
+	<span><code>g_log_set_always_fatal</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a>
+g_log_set_always_fatal (<a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a> fatal_mask)</pre>
+
+<p>Sets the message levels which are always fatal, in any log domain.
+When a message with any of these levels is logged the program terminates.
+You can only set the levels defined by GLib to be fatal.
+<a href="messages.html#G_LOG_LEVEL_ERROR">G_LOG_LEVEL_ERROR</a> is always fatal.</p>
+<p>You can also make some message levels fatal at runtime by setting
+the <code>G_DEBUG</code> environment variable (see
+<a href="glib-running.html">Running GLib Applications</a>).</p>
+<p>Libraries should not call this function, as it affects all messages logged
+by a process, including those from other libraries.</p>
+<p>Structured log messages (using <a href="messages.html#g_log_structured">g_log_structured</a> and
+<a href="messages.html#g_log_structured_array">g_log_structured_array</a>) are fatal only if the default log writer is used;
+otherwise it is up to the writer function to determine which log messages
+are fatal. See [Using Structured Logging][using-structured-logging].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fatal_mask:</code></em></i>
+		</p>
+	</td>
+		<td><p>the mask containing bits set for each level
+of error which is to be fatal</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the old fatal mask</p>
+
+	</td>
+	<td>
+		<a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a>
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_log_variant">
+		
+<h3 id="g_log_variant1">
+	<span><code>g_log_variant</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_log_variant (const gchar* log_domain,
+               <a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a> log_level,
+               <a title="GVariant" href="gvariant.html#GVariant">GVariant</a> * fields)</pre>
+
+<p>Log a message with structured data, accepting the data within a <a href="gvariant.html#GVariant">GVariant</a>. This
+version is especially useful for use in other languages, via introspection.</p>
+<p>The only mandatory item in the <em>fields</em> dictionary is the "MESSAGE" which must
+contain the text shown to the user.</p>
+<p>The values in the <em>fields</em> dictionary are likely to be of type String
+(#G_VARIANT_TYPE_STRING). Array of bytes (#G_VARIANT_TYPE_BYTESTRING) is also
+supported. In this case the message is handled as binary and will be forwarded
+to the log writer as such. The size of the array should not be higher than
+<a href="types.html#G_MAXSSIZE">G_MAXSSIZE</a>. Otherwise it will be truncated to this size. For other types
+<a href="gvariant.html#g_variant_print">g_variant_print</a> will be used to convert the value into a string.</p>
+<p>For more details on its usage and about the parameters, see <a href="messages.html#g_log_structured">g_log_structured</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>log domain, usually <a href="messages.html#G_LOG_DOMAIN">G_LOG_DOMAIN</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>log level, either from <a href="messages.html#GLogLevelFlags">GLogLevelFlags</a>, or a user-defined
+level</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>a dictionary (#GVariant of the type <a href="gvarianttype.html#G_VARIANT_TYPE_VARDICT">G_VARIANT_TYPE_VARDICT</a>)
+containing the key-value pairs of message data.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_log_writer_supports_color">
+		
+<h3 id="g_log_writer_supports_color1">
+	<span><code>g_log_writer_supports_color</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_log_writer_supports_color (gint output_fd)</pre>
+
+<p>Check whether the given <em>output_fd</em> file descriptor supports ANSI color
+escape sequences. If so, they can safely be used when formatting log
+messages.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>output_fd:</code></em></i>
+		</p>
+	</td>
+		<td><p>output file descriptor to check</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if ANSI color escapes are supported, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_log_set_default_handler">
+		
+<h3 id="g_log_set_default_handler1">
+	<span><code>g_log_set_default_handler</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="GLogFunc" href="messages.html#GLogFunc">GLogFunc</a>
+g_log_set_default_handler (<a title="GLogFunc" href="messages.html#GLogFunc">GLogFunc</a> log_func,
+                           gpointer user_data)</pre>
+
+<p>Installs a default log handler which is used if no
+log handler has been set for the particular log domain
+and log level combination. By default, GLib uses
+<a href="messages.html#g_log_default_handler">g_log_default_handler</a> as default log handler.</p>
+<p>This has no effect if structured logging is enabled; see
+[Using Structured Logging][using-structured-logging].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log handler function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data passed to the log handler</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the previous default log handler</p>
+
+	</td>
+	<td>
+		<a title="GLogFunc" href="messages.html#GLogFunc">GLogFunc</a>
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_logv">
+		
+<h3 id="g_logv1">
+	<span><code>g_logv</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_logv (const gchar* log_domain,
+        <a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a> log_level,
+        const gchar* format,
+        va_list args)</pre>
+
+<p>Logs an error or debugging message.</p>
+<p>If the log level has been set as fatal, the abort
+function is called to terminate the program.</p>
+<p>If <a href="messages.html#g_log_default_handler">g_log_default_handler</a> is used as the log handler function, a new-line
+character will automatically be appended to <em></em>..., and need not be entered
+manually.</p>
+<p>If [structured logging is enabled][using-structured-logging] this will
+output via the structured log writer function (see <a href="messages.html#g_log_set_writer_func">g_log_set_writer_func</a>).</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log domain, or <a href="macros.html#NULL">NULL</a> for the default ""
+application domain</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log level</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>format:</code></em></i>
+		</p>
+	</td>
+		<td><p>the message format. See the printf documentation</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>args:</code></em></i>
+		</p>
+	</td>
+		<td><p>the parameters to insert into the format string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_log_structured">
+		
+<h3 id="g_log_structured1">
+	<span><code>g_log_structured</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_log_structured (const gchar* log_domain,
+                  <a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a> log_level,
+                  ... ...)</pre>
+
+<p>Log a message with structured data. The message will be passed through to
+the log writer set by the application using <a href="messages.html#g_log_set_writer_func">g_log_set_writer_func</a>. If the
+message is fatal (i.e. its log level is <a href="messages.html#G_LOG_LEVEL_ERROR">G_LOG_LEVEL_ERROR</a>), the program will
+be aborted at the end of this function.</p>
+<p>The structured data is provided as keyâ€“value pairs, where keys are UTF-8
+strings, and values are arbitrary pointers â€” typically pointing to UTF-8
+strings, but that is not a requirement. To pass binary (non-nul-terminated)
+structured data, use <a href="messages.html#g_log_structured_array">g_log_structured_array</a>. The keys for structured data
+should follow the <a href="https://www.freedesktop.org/software/systemd/man/systemd.journal-fields.html">systemd journal
+fields</a>
+specification. It is suggested that custom keys are namespaced according to
+the code which sets them. For example, custom keys from GLib all have a
+<code>GLIB_</code> prefix.</p>
+<p>The <em>log_domain</em> will be converted into a <code>GLIB_DOMAIN</code> field. <em>log_level</em> will
+be converted into a
+<a href="https://www.freedesktop.org/software/systemd/man/systemd.journal-fields.html#PRIORITY="><code>PRIORITY</code></a>
+field. The format string will have its placeholders substituted for the provided
+values and be converted into a
+<a href="https://www.freedesktop.org/software/systemd/man/systemd.journal-fields.html#MESSAGE="><code>MESSAGE</code></a>
+field.</p>
+<p>Other fields you may commonly want to pass into this function:</p>
+<ul>
+<li><a href="https://www.freedesktop.org/software/systemd/man/systemd.journal-fields.html#MESSAGE_ID="><code>MESSAGE_ID</code></a></li>
+<li><a href="https://www.freedesktop.org/software/systemd/man/systemd.journal-fields.html#CODE_FILE="><code>CODE_FILE</code></a></li>
+<li><a href="https://www.freedesktop.org/software/systemd/man/systemd.journal-fields.html#CODE_LINE="><code>CODE_LINE</code></a></li>
+<li><a href="https://www.freedesktop.org/software/systemd/man/systemd.journal-fields.html#CODE_FUNC="><code>CODE_FUNC</code></a></li>
+<li><a href="https://www.freedesktop.org/software/systemd/man/systemd.journal-fields.html#ERRNO="><code>ERRNO</code></a></li>
+</ul>
+<p>Note that <code>CODE_FILE</code>, <code>CODE_LINE</code> and <code>CODE_FUNC</code> are automatically set by
+the logging macros, <a href="messages.html#G_DEBUG_HERE">G_DEBUG_HERE</a>, <a href="messages.html#g_message">g_message</a>, <a href="messages.html#g_warning">g_warning</a>, <a href="messages.html#g_critical">g_critical</a>,
+<a href="messages.html#g_error">g_error</a>, etc, if the symbols <code>G_LOG_USE_STRUCTURED</code> is defined before including
+glib.h.</p>
+<p>For example:</p>
+<pre><code class="language-[&lt;!--"> g_log_structured (G_LOG_DOMAIN, G_LOG_LEVEL_DEBUG,
+                   "MESSAGE_ID", "06d4df59e6c24647bfe69d2c27ef0b4e",
+                   "MY_APPLICATION_CUSTOM_FIELD", "some debug string",
+                   "MESSAGE", "This is a debug message about pointer %p and integer %u.",
+                   some_pointer, some_integer);
+</code></pre>
+<p>Note that each <code>MESSAGE_ID</code> must be <a href="https://www.freedesktop.org/software/systemd/man/systemd.journal-fields.html#MESSAGE_ID=">uniquely and randomly
+generated</a>.
+If adding a <code>MESSAGE_ID</code>, consider shipping a <a href="https://www.freedesktop.org/wiki/Software/systemd/catalog/">message
+catalog</a> with
+your software.</p>
+<p>To pass a user data pointer to the log writer function which is specific to
+this logging call, you must use <a href="messages.html#g_log_structured_array">g_log_structured_array</a> and pass the pointer
+as a field with <a href="messages.html#GLogField.length">GLogField.length</a> set to zero, otherwise it will be
+interpreted as a string.</p>
+<p>For example:</p>
+<pre><code class="language-[&lt;!--"> const GLogField fields[] = {
+   { "MESSAGE", "This is a debug message.", -1 },
+   { "MESSAGE_ID", "fcfb2e1e65c3494386b74878f1abf893", -1 },
+   { "MY_APPLICATION_CUSTOM_FIELD", "some debug string", -1 },
+   { "MY_APPLICATION_STATE", state_object, 0 },
+ };
+ g_log_structured_array (G_LOG_LEVEL_DEBUG, fields, G_N_ELEMENTS (fields));
+</code></pre>
+<p>Note also that, even if no other structured fields are specified, there
+must always be a <code>MESSAGE</code> key before the format string. The <code>MESSAGE</code>-format
+pair has to be the last of the key-value pairs, and <code>MESSAGE</code> is the only
+field for which printf-style formatting is supported.</p>
+<p>The default writer function for <code>stdout</code> and <code>stderr</code> will automatically
+append a new-line character after the message, so you should not add one
+manually to the format string.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>log domain, usually <a href="messages.html#G_LOG_DOMAIN">G_LOG_DOMAIN</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>log level, either from <a href="messages.html#GLogLevelFlags">GLogLevelFlags</a>, or a user-defined
+level</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>key-value pairs of structured data to add to the log entry, followed
+by the key "MESSAGE", followed by a printf-style message format,
+followed by parameters to insert in the format string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_log_set_writer_func">
+		
+<h3 id="g_log_set_writer_func1">
+	<span><code>g_log_set_writer_func</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_log_set_writer_func (<a title="GLogWriterFunc" href="messages.html#GLogWriterFunc">GLogWriterFunc</a> func,
+                       gpointer user_data,
+                       <a title="GDestroyNotify" href="datasets.html#GDestroyNotify">GDestroyNotify</a> user_data_free)</pre>
+
+<p>Set a writer function which will be called to format and write out each log
+message. Each program should set a writer function, or the default writer
+(<a href="messages.html#g_log_writer_default">g_log_writer_default</a>) will be used.</p>
+<p>Libraries <strong>must not</strong> call this function â€” only programs are allowed to
+install a writer function, as there must be a single, central point where
+log messages are formatted and outputted.</p>
+<p>There can only be one writer function. It is an error to set more than one.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>log writer function, which must not be <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data to pass to <em>func</em></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="This parameter is a closure for callbacks, many bindings can pass NULL to func"><span class="acronym">closure</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data_free:</code></em></i>
+		</p>
+	</td>
+		<td><p>function to free <em>user_data</em> once itÃ¢â‚¬â„¢s
+finished with, if non-%NULL</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_log">
+		
+<h3 id="g_log1">
+	<span><code>g_log</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_log (const gchar* log_domain,
+       <a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a> log_level,
+       const gchar* format,
+       ... ...)</pre>
+
+<p>Logs an error or debugging message.</p>
+<p>If the log level has been set as fatal, the abort
+function is called to terminate the program.</p>
+<p>If <a href="messages.html#g_log_default_handler">g_log_default_handler</a> is used as the log handler function, a new-line
+character will automatically be appended to <em></em>..., and need not be entered
+manually.</p>
+<p>If [structured logging is enabled][using-structured-logging] this will
+output via the structured log writer function (see <a href="messages.html#g_log_set_writer_func">g_log_set_writer_func</a>).</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log domain, usually <a href="messages.html#G_LOG_DOMAIN">G_LOG_DOMAIN</a>, or <a href="macros.html#NULL">NULL</a>
+for the default</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log level, either from <a href="messages.html#GLogLevelFlags">GLogLevelFlags</a>
+or a user-defined level</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>format:</code></em></i>
+		</p>
+	</td>
+		<td><p>the message format. See the printf documentation</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>the parameters to insert into the format string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_log_structured_array">
+		
+<h3 id="g_log_structured_array1">
+	<span><code>g_log_structured_array</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_log_structured_array (<a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a> log_level,
+                        <a title="GLogField" href="messages.html#GLogField">GLogField</a> fields,
+                        gsize n_fields)</pre>
+
+<p>Log a message with structured data. The message will be passed through to the
+log writer set by the application using <a href="messages.html#g_log_set_writer_func">g_log_set_writer_func</a>. If the
+message is fatal (i.e. its log level is <a href="messages.html#G_LOG_LEVEL_ERROR">G_LOG_LEVEL_ERROR</a>), the program will
+be aborted at the end of this function.</p>
+<p>See <a href="messages.html#g_log_structured">g_log_structured</a> for more documentation.</p>
+<p>This assumes that <em>log_level</em> is already present in <em>fields</em> (typically as the
+<code>PRIORITY</code> field).</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>log level, either from <a href="messages.html#GLogLevelFlags">GLogLevelFlags</a>, or a user-defined
+level</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>keyâ€“value pairs of structured data to add
+to the log message</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=n_fields]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n_fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of elements in the <em>fields</em> array</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_log_writer_journald">
+		
+<h3 id="g_log_writer_journald1">
+	<span><code>g_log_writer_journald</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="GLogWriterOutput" href="messages.html#GLogWriterOutput">GLogWriterOutput</a>
+g_log_writer_journald (<a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a> log_level,
+                       <a title="GLogField" href="messages.html#GLogField">GLogField</a> fields,
+                       gsize n_fields,
+                       gpointer user_data)</pre>
+
+<p>Format a structured log message and send it to the systemd journal as a set
+of keyâ€“value pairs. All fields are sent to the journal, but if a field has
+length zero (indicating program-specific data) then only its key will be
+sent.</p>
+<p>This is suitable for use as a <a href="messages.html#GLogWriterFunc">GLogWriterFunc</a>.</p>
+<p>If GLib has been compiled without systemd support, this function is still
+defined, but will always return <a href="messages.html#G_LOG_WRITER_UNHANDLED">G_LOG_WRITER_UNHANDLED</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>log level, either from <a href="messages.html#GLogLevelFlags">GLogLevelFlags</a>, or a user-defined
+level</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>keyâ€“value pairs of structured data forming
+the log message</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=n_fields]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n_fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of elements in the <em>fields</em> array</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="messages.html#g_log_set_writer_func">g_log_set_writer_func</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="messages.html#G_LOG_WRITER_HANDLED">G_LOG_WRITER_HANDLED</a> on success, <a href="messages.html#G_LOG_WRITER_UNHANDLED">G_LOG_WRITER_UNHANDLED</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="GLogWriterOutput" href="messages.html#GLogWriterOutput">GLogWriterOutput</a>
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_log_default_handler">
+		
+<h3 id="g_log_default_handler1">
+	<span><code>g_log_default_handler</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_log_default_handler (const gchar* log_domain,
+                       <a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a> log_level,
+                       const gchar* message,
+                       gpointer unused_data)</pre>
+
+<p>The default log handler set up by GLib; <a href="messages.html#g_log_set_default_handler">g_log_set_default_handler</a>
+allows to install an alternate default log handler.
+This is used if no log handler has been set for the particular log
+domain and log level combination. It outputs the message to stderr
+or stdout and if the log level is fatal it calls abort. It automatically
+prints a new-line character after the message, so one does not need to be
+manually included in <em>message</em>.</p>
+<p>The behavior of this log handler can be influenced by a number of
+environment variables:</p>
+<ul>
+<li>
+<p><code>G_MESSAGES_PREFIXED</code>: A :-separated list of log levels for which
+messages should be prefixed by the program name and PID of the
+aplication.</p>
+</li>
+<li>
+<p><code>G_MESSAGES_DEBUG</code>: A space-separated list of log domains for
+which debug and informational messages are printed. By default
+these messages are not printed.</p>
+</li>
+</ul>
+<p>stderr is used for levels <a href="messages.html#G_LOG_LEVEL_ERROR">G_LOG_LEVEL_ERROR</a>, <a href="messages.html#G_LOG_LEVEL_CRITICAL">G_LOG_LEVEL_CRITICAL</a>,
+<a href="messages.html#G_LOG_LEVEL_WARNING">G_LOG_LEVEL_WARNING</a> and <a href="messages.html#G_LOG_LEVEL_MESSAGE">G_LOG_LEVEL_MESSAGE</a>. stdout is used for
+the rest.</p>
+<p>This has no effect if structured logging is enabled; see
+[Using Structured Logging][using-structured-logging].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log domain of the message, or <a href="macros.html#NULL">NULL</a> for the
+default "" application domain</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>the level of the message</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>message:</code></em></i>
+		</p>
+	</td>
+		<td><p>the message</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>unused_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data passed from <a href="messages.html#g_log">g_log</a> which is unused</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_log_writer_format_fields">
+		
+<h3 id="g_log_writer_format_fields1">
+	<span><code>g_log_writer_format_fields</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_log_writer_format_fields (<a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a> log_level,
+                            <a title="GLogField" href="messages.html#GLogField">GLogField</a> fields,
+                            gsize n_fields,
+                            gboolean use_color)</pre>
+
+<p>Format a structured log message as a string suitable for outputting to the
+terminal (or elsewhere). This will include the values of all fields it knows
+how to interpret, which includes <code>MESSAGE</code> and <code>GLIB_DOMAIN</code> (see the
+documentation for <a href="messages.html#g_log_structured">g_log_structured</a>). It does not include values from
+unknown fields.</p>
+<p>The returned string does <strong>not</strong> have a trailing new-line character. It is
+encoded in the character set of the current locale, which is not necessarily
+UTF-8.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>log level, either from <a href="messages.html#GLogLevelFlags">GLogLevelFlags</a>, or a user-defined
+level</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>keyâ€“value pairs of structured data forming
+the log message</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=n_fields]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n_fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of elements in the <em>fields</em> array</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>use_color:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#TRUE">TRUE</a> to use ANSI color escape sequences when formatting the
+message, <a href="macros.html#FALSE">FALSE</a> to not</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>string containing the formatted log message, in
+the character set of the current locale</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_log_writer_default">
+		
+<h3 id="g_log_writer_default1">
+	<span><code>g_log_writer_default</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="GLogWriterOutput" href="messages.html#GLogWriterOutput">GLogWriterOutput</a>
+g_log_writer_default (<a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a> log_level,
+                      <a title="GLogField" href="messages.html#GLogField">GLogField</a> fields,
+                      gsize n_fields,
+                      gpointer user_data)</pre>
+
+<p>Format a structured log message and output it to the default log destination
+for the platform. On Linux, this is typically the systemd journal, falling
+back to <code>stdout</code> or <code>stderr</code> if running from the terminal or if output is
+being redirected to a file.</p>
+<p>Support for other platform-specific logging mechanisms may be added in
+future. Distributors of GLib may modify this function to impose their own
+(documented) platform-specific log writing policies.</p>
+<p>This is suitable for use as a <a href="messages.html#GLogWriterFunc">GLogWriterFunc</a>, and is the default writer used
+if no other is set using <a href="messages.html#g_log_set_writer_func">g_log_set_writer_func</a>.</p>
+<p>As with <a href="messages.html#g_log_default_handler">g_log_default_handler</a>, this function drops debug and informational
+messages unless their log domain (or <code>all</code>) is listed in the space-separated
+<code>G_MESSAGES_DEBUG</code> environment variable.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>log level, either from <a href="messages.html#GLogLevelFlags">GLogLevelFlags</a>, or a user-defined
+level</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>keyâ€“value pairs of structured data forming
+the log message</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=n_fields]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n_fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of elements in the <em>fields</em> array</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="messages.html#g_log_set_writer_func">g_log_set_writer_func</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="messages.html#G_LOG_WRITER_HANDLED">G_LOG_WRITER_HANDLED</a> on success, <a href="messages.html#G_LOG_WRITER_UNHANDLED">G_LOG_WRITER_UNHANDLED</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="GLogWriterOutput" href="messages.html#GLogWriterOutput">GLogWriterOutput</a>
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.46;" id="g_log_set_handler_full">
+		
+<h3 id="g_log_set_handler_full1">
+	<span><code>g_log_set_handler_full</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+guint
+g_log_set_handler_full (const gchar* log_domain,
+                        <a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a> log_levels,
+                        <a title="GLogFunc" href="messages.html#GLogFunc">GLogFunc</a> log_func,
+                        gpointer user_data,
+                        <a title="GDestroyNotify" href="datasets.html#GDestroyNotify">GDestroyNotify</a> destroy)</pre>
+
+<p>Like g_log_sets_handler, but takes a destroy notify for the <em>user_data</em>.</p>
+<p>This has no effect if structured logging is enabled; see
+[Using Structured Logging][using-structured-logging].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log domain, or <a href="macros.html#NULL">NULL</a> for the default ""
+application domain</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_levels:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log levels to apply the log handler for.
+To handle fatal and recursive messages as well, combine
+the log levels with the <a href="messages.html#G_LOG_FLAG_FATAL">G_LOG_FLAG_FATAL</a> and
+<a href="messages.html#G_LOG_FLAG_RECURSION">G_LOG_FLAG_RECURSION</a> bit flags.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log handler function</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data passed to the log handler</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>destroy:</code></em></i>
+		</p>
+	</td>
+		<td><p>destroy notify for <em>user_data</em>, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the id of the new handler</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.46
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_log_writer_standard_streams">
+		
+<h3 id="g_log_writer_standard_streams1">
+	<span><code>g_log_writer_standard_streams</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="GLogWriterOutput" href="messages.html#GLogWriterOutput">GLogWriterOutput</a>
+g_log_writer_standard_streams (<a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a> log_level,
+                               <a title="GLogField" href="messages.html#GLogField">GLogField</a> fields,
+                               gsize n_fields,
+                               gpointer user_data)</pre>
+
+<p>Format a structured log message and print it to either <code>stdout</code> or <code>stderr</code>,
+depending on its log level. <a href="messages.html#G_LOG_LEVEL_INFO">G_LOG_LEVEL_INFO</a> and <a href="messages.html#G_LOG_LEVEL_DEBUG">G_LOG_LEVEL_DEBUG</a> messages
+are sent to <code>stdout</code>; all other log levels are sent to <code>stderr</code>. Only fields
+which are understood by this function are included in the formatted string
+which is printed.</p>
+<p>If the output stream supports ANSI color escape sequences, they will be used
+in the output.</p>
+<p>A trailing new-line character is added to the log message when it is printed.</p>
+<p>This is suitable for use as a <a href="messages.html#GLogWriterFunc">GLogWriterFunc</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>log level, either from <a href="messages.html#GLogLevelFlags">GLogLevelFlags</a>, or a user-defined
+level</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>keyâ€“value pairs of structured data forming
+the log message</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=n_fields]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n_fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of elements in the <em>fields</em> array</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="messages.html#g_log_set_writer_func">g_log_set_writer_func</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="messages.html#G_LOG_WRITER_HANDLED">G_LOG_WRITER_HANDLED</a> on success, <a href="messages.html#G_LOG_WRITER_UNHANDLED">G_LOG_WRITER_UNHANDLED</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="GLogWriterOutput" href="messages.html#GLogWriterOutput">GLogWriterOutput</a>
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_log_writer_is_journald">
+		
+<h3 id="g_log_writer_is_journald1">
+	<span><code>g_log_writer_is_journald</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_log_writer_is_journald (gint output_fd)</pre>
+
+<p>Check whether the given <em>output_fd</em> file descriptor is a connection to the
+systemd journal, or something else (like a log file or <code>stdout</code> or
+<code>stderr</code>).</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>output_fd:</code></em></i>
+		</p>
+	</td>
+		<td><p>output file descriptor to check</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>output_fd</em> points to the journal, <a href="macros.html#FALSE">FALSE</a> otherwise</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Function_Macros">Function Macros</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_error">
+		
+<h3 id="g_error1">
+	<span><code>g_error</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_error(format...)    G_STMT_START {                 \
+                                g_log (G_LOG_DOMAIN,         \
+                                       G_LOG_LEVEL_ERROR,    \
+                                       format);              \
+                                for (;;) ;                   \
+                              } G_STMT_END
+</pre>
+
+<p>A convenience function/macro to log an error message.</p>
+<p>This is not intended for end user error reporting. Use of <a href="error_reporting.html#GError">GError</a> is
+preferred for that instead, as it allows calling functions to perform actions
+conditional on the type of error.</p>
+<p>Error messages are always fatal, resulting in a call to
+abort to terminate the application. This function will
+result in a core dump; don't use it for errors you expect.
+Using this function indicates a bug in your program, i.e.
+an assertion failure.</p>
+<p>If <a href="messages.html#g_log_default_handler">g_log_default_handler</a> is used as the log handler function, a new-line
+character will automatically be appended to <em></em>..., and need not be entered
+manually.</p>
+<p>If structured logging is enabled, this will use <a href="messages.html#g_log_structured">g_log_structured</a>;
+otherwise it will use <a href="messages.html#g_log">g_log</a>. See
+[Using Structured Logging][using-structured-logging].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>format string, followed by parameters to insert
+into the format string (as with printf)</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="G_DEBUG_HERE">
+		
+<h3 id="g_debug_here">
+	<span><code>G_DEBUG_HERE</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define G_DEBUG_HERE()                                          \
+  g_log_structured (G_LOG_DOMAIN, G_LOG_LEVEL_DEBUG,            \
+                    "CODE_FILE", __FILE__,                      \
+                    "CODE_LINE", G_STRINGIFY (__LINE__),        \
+                    "CODE_FUNC", G_STRFUNC,                      \
+                    "MESSAGE", "%" G_GINT64_FORMAT ": %s",      \
+                    g_get_monotonic_time (), G_STRLOC)
+</pre>
+
+<p>A convenience form of <a href="messages.html#g_log_structured">g_log_structured</a>, recommended to be added to
+functions when debugging. It prints the current monotonic time and the code
+location using <a href="macros_misc.html#G_STRLOC">G_STRLOC</a>.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.40;" id="g_info">
+		
+<h3 id="g_info1">
+	<span><code>g_info</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_info(format...)       g_log (G_LOG_DOMAIN,         \
+                                       G_LOG_LEVEL_INFO,     \
+                                       format)
+</pre>
+
+<p>A convenience function/macro to log an informational message. Seldom used.</p>
+<p>If <a href="messages.html#g_log_default_handler">g_log_default_handler</a> is used as the log handler function, a new-line
+character will automatically be appended to <em></em>..., and need not be entered
+manually.</p>
+<p>Such messages are suppressed by the <a href="messages.html#g_log_default_handler">g_log_default_handler</a> and
+<a href="messages.html#g_log_writer_default">g_log_writer_default</a> unless the <code>G_MESSAGES_DEBUG</code> environment variable is
+set appropriately.</p>
+<p>If structured logging is enabled, this will use <a href="messages.html#g_log_structured">g_log_structured</a>;
+otherwise it will use <a href="messages.html#g_log">g_log</a>. See
+[Using Structured Logging][using-structured-logging].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>format string, followed by parameters to insert
+into the format string (as with printf)</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_critical">
+		
+<h3 id="g_critical1">
+	<span><code>g_critical</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_critical(format...)   g_log (G_LOG_DOMAIN,         \
+                                       G_LOG_LEVEL_CRITICAL, \
+                                       format)
+</pre>
+
+<p>Logs a "critical warning" (#G_LOG_LEVEL_CRITICAL).
+It's more or less application-defined what constitutes
+a critical vs. a regular warning. You could call
+<a href="messages.html#g_log_set_always_fatal">g_log_set_always_fatal</a> to make critical warnings exit
+the program, then use <a href="messages.html#g_critical">g_critical</a> for fatal errors, for
+example.</p>
+<p>You can also make critical warnings fatal at runtime by
+setting the <code>G_DEBUG</code> environment variable (see
+<a href="glib-running.html">Running GLib Applications</a>).</p>
+<p>If <a href="messages.html#g_log_default_handler">g_log_default_handler</a> is used as the log handler function, a new-line
+character will automatically be appended to <em></em>..., and need not be entered
+manually.</p>
+<p>If structured logging is enabled, this will use <a href="messages.html#g_log_structured">g_log_structured</a>;
+otherwise it will use <a href="messages.html#g_log">g_log</a>. See
+[Using Structured Logging][using-structured-logging].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>format string, followed by parameters to insert
+into the format string (as with printf)</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_debug">
+		
+<h3 id="g_debug1">
+	<span><code>g_debug</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_debug(format...)      g_log (G_LOG_DOMAIN,         \
+                                       G_LOG_LEVEL_DEBUG,    \
+                                       format)
+</pre>
+
+<p>A convenience function/macro to log a debug message.</p>
+<p>If <a href="messages.html#g_log_default_handler">g_log_default_handler</a> is used as the log handler function, a new-line
+character will automatically be appended to <em></em>..., and need not be entered
+manually.</p>
+<p>Such messages are suppressed by the <a href="messages.html#g_log_default_handler">g_log_default_handler</a> and
+<a href="messages.html#g_log_writer_default">g_log_writer_default</a> unless the <code>G_MESSAGES_DEBUG</code> environment variable is
+set appropriately.</p>
+<p>If structured logging is enabled, this will use <a href="messages.html#g_log_structured">g_log_structured</a>;
+otherwise it will use <a href="messages.html#g_log">g_log</a>. See
+[Using Structured Logging][using-structured-logging].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>format string, followed by parameters to insert
+into the format string (as with printf)</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_warning">
+		
+<h3 id="g_warning1">
+	<span><code>g_warning</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_warning(format...)    g_log (G_LOG_DOMAIN,         \
+                                       G_LOG_LEVEL_WARNING,  \
+                                       format)
+</pre>
+
+<p>A convenience function/macro to log a warning message.</p>
+<p>This is not intended for end user error reporting. Use of <a href="error_reporting.html#GError">GError</a> is
+preferred for that instead, as it allows calling functions to perform actions
+conditional on the type of error.</p>
+<p>You can make warnings fatal at runtime by setting the <code>G_DEBUG</code>
+environment variable (see
+<a href="glib-running.html">Running GLib Applications</a>).</p>
+<p>If <a href="messages.html#g_log_default_handler">g_log_default_handler</a> is used as the log handler function,
+a newline character will automatically be appended to <em></em>..., and
+need not be entered manually.</p>
+<p>If structured logging is enabled, this will use <a href="messages.html#g_log_structured">g_log_structured</a>;
+otherwise it will use <a href="messages.html#g_log">g_log</a>. See
+[Using Structured Logging][using-structured-logging].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>format string, followed by parameters to insert
+into the format string (as with printf)</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_message">
+		
+<h3 id="g_message1">
+	<span><code>g_message</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_message(format...)    g_log (G_LOG_DOMAIN,         \
+                                       G_LOG_LEVEL_MESSAGE,  \
+                                       format)
+</pre>
+
+<p>A convenience function/macro to log a normal message.</p>
+<p>If <a href="messages.html#g_log_default_handler">g_log_default_handler</a> is used as the log handler function, a new-line
+character will automatically be appended to <em></em>..., and need not be entered
+manually.</p>
+<p>If structured logging is enabled, this will use <a href="messages.html#g_log_structured">g_log_structured</a>;
+otherwise it will use <a href="messages.html#g_log">g_log</a>. See
+[Using Structured Logging][using-structured-logging].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>format string, followed by parameters to insert
+into the format string (as with printf)</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="GLogField">
+		
+<h3 id="struct-glogfield">
+		struct GLogField
+	</h3>
+
+		<pre class="raw_code">
+struct GLogField {
+    const gchar* key;
+    gconstpointer value;
+    gssize length;
+};
+</pre>
+
+<p>Structure representing a single field in a structured log entry. See
+<a href="messages.html#g_log_structured">g_log_structured</a> for details.</p>
+<p>Log fields may contain arbitrary values, including binary with embedded nul
+bytes. If the field contains a string, the string must be UTF-8 encoded and
+have a trailing nul byte. Otherwise, <em>length</em> must be set to a non-negative
+value.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="fields">Fields</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GLogField.key">
+		<td>
+		<p>
+		<i><em><code>const gchar* <em><code>key</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>field name (UTF-8 string)</p>
+</td>
+</tr>
+
+						<tr id="GLogField.value">
+		<td>
+		<p>
+		<i><em><code>gconstpointer <em><code>value</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>field value (arbitrary bytes)</p>
+</td>
+</tr>
+
+						<tr id="GLogField.length">
+		<td>
+		<p>
+		<i><em><code>gssize <em><code>length</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>value</em>, in bytes, or -1 if it is nul-terminated</p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GLogLevelFlags">
+		
+<h3 id="enum-gloglevelflags">
+		enum GLogLevelFlags
+	</h3>
+
+		<p>Flags specifying the level of log messages.</p>
+<p>It is possible to change how GLib treats messages of the various
+levels using <a href="messages.html#g_log_set_handler">g_log_set_handler</a> and <a href="messages.html#g_log_set_fatal_mask">g_log_set_fatal_mask</a>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_FLAG_RECURSION"></a>
+		G_LOG_FLAG_RECURSION
+		</p>
+	</td>
+	<td><p>internal flag</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_FLAG_FATAL"></a>
+		G_LOG_FLAG_FATAL
+		</p>
+	</td>
+	<td><p>internal flag</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_LEVEL_ERROR"></a>
+		G_LOG_LEVEL_ERROR
+		</p>
+	</td>
+	<td><p>log level for errors, see <a href="messages.html#g_error">g_error</a>.
+This level is also used for messages produced by <a href="testing.html#g_assert">g_assert</a>.</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_LEVEL_CRITICAL"></a>
+		G_LOG_LEVEL_CRITICAL
+		</p>
+	</td>
+	<td><p>log level for critical warning messages, see
+<a href="messages.html#g_critical">g_critical</a>.
+This level is also used for messages produced by <a href="warnings.html#g_return_if_fail">g_return_if_fail</a>
+and <a href="warnings.html#g_return_val_if_fail">g_return_val_if_fail</a>.</p>
+</td>
+	<td>
+		<span class="value">Value: 8</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_LEVEL_WARNING"></a>
+		G_LOG_LEVEL_WARNING
+		</p>
+	</td>
+	<td><p>log level for warnings, see <a href="messages.html#g_warning">g_warning</a></p>
+</td>
+	<td>
+		<span class="value">Value: 16</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_LEVEL_MESSAGE"></a>
+		G_LOG_LEVEL_MESSAGE
+		</p>
+	</td>
+	<td><p>log level for messages, see <a href="messages.html#g_message">g_message</a></p>
+</td>
+	<td>
+		<span class="value">Value: 32</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_LEVEL_INFO"></a>
+		G_LOG_LEVEL_INFO
+		</p>
+	</td>
+	<td><p>log level for informational messages, see <a href="messages.html#g_info">g_info</a></p>
+</td>
+	<td>
+		<span class="value">Value: 64</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_LEVEL_DEBUG"></a>
+		G_LOG_LEVEL_DEBUG
+		</p>
+	</td>
+	<td><p>log level for debug messages, see <a href="messages.html#g_debug">g_debug</a></p>
+</td>
+	<td>
+		<span class="value">Value: 128</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_LEVEL_MASK"></a>
+		G_LOG_LEVEL_MASK
+		</p>
+	</td>
+	<td><p>a mask including all log levels</p>
+</td>
+	<td>
+		<span class="value">Value: -4</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="GLogWriterOutput">
+		
+<h3 id="enum-glogwriteroutput">
+		enum GLogWriterOutput
+	</h3>
+
+		<p>Return values from <a href="messages.html#GLogWriterFunc">GLogWriterFunc</a> to indicate whether the given log entry
+was successfully handled by the writer, or whether there was an error in
+handling it (and hence a fallback writer should be used).</p>
+<p>If a <a href="messages.html#GLogWriterFunc">GLogWriterFunc</a> ignores a log entry, it should return
+<a href="messages.html#G_LOG_WRITER_HANDLED">G_LOG_WRITER_HANDLED</a>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members1">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_WRITER_HANDLED"></a>
+		G_LOG_WRITER_HANDLED
+		</p>
+	</td>
+	<td><p>Log writer has handled the log entry.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_LOG_WRITER_UNHANDLED"></a>
+		G_LOG_WRITER_UNHANDLED
+		</p>
+	</td>
+	<td><p>Log writer could not handle the log entry.</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_LOG_DOMAIN">
+		
+<h3 class="constant" id="g_log_domain">
+	G_LOG_DOMAIN
+</h3>
+
+		<pre class="raw_code">
+#define G_LOG_DOMAIN    ((gchar*) 0)
+</pre>
+
+<p>Defines the log domain.</p>
+<p>For applications, this is typically left as the default <a href="macros.html#NULL">NULL</a>
+(or "") domain. Libraries should define this so that any messages
+which they log can be differentiated from messages from other
+libraries and application code. But be careful not to define
+it in any public header files.</p>
+<p>For example, GTK+ uses this in its Makefile.am:</p>
+<pre><code class="language-["> AM_CPPFLAGS = -DG_LOG_DOMAIN=\"Gtk\"
+</code></pre>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_LOG_FATAL_MASK">
+		
+<h3 class="constant" id="g_log_fatal_mask">
+	G_LOG_FATAL_MASK
+</h3>
+
+		<pre class="raw_code">
+#define G_LOG_FATAL_MASK        (G_LOG_FLAG_RECURSION | G_LOG_LEVEL_ERROR)
+</pre>
+
+<p>GLib log levels that are considered fatal by default.</p>
+<p>This is not used if structured logging is enabled; see
+[Using Structured Logging][using-structured-logging].</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_LOG_LEVEL_USER_SHIFT">
+		
+<h3 class="constant" id="g_log_level_user_shift">
+	G_LOG_LEVEL_USER_SHIFT
+</h3>
+
+		<pre class="raw_code">
+#define G_LOG_LEVEL_USER_SHIFT  (8)
+</pre>
+
+<p>Log levels below 1&lt;&lt;G_LOG_LEVEL_USER_SHIFT are used by GLib.
+Higher bits can be used for user-defined log levels.</p>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="GLogWriterFunc">
+		
+<h3 id="glogwriterfunc">
+	<span><code>GLogWriterFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="GLogWriterOutput" href="messages.html#GLogWriterOutput">GLogWriterOutput</a>
+(*GLogWriterFunc) (<a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a> log_level,
+                   <a title="GLogField" href="messages.html#GLogField">GLogField</a> fields,
+                   gsize n_fields,
+                   gpointer user_data)</pre>
+
+<p>Writer function for log entries. A log entry is a collection of one or more
+<a href="messages.html#GLogField">GLogField</a>, using the standard <a href="https://www.freedesktop.org/software/systemd/man/systemd.journal-fields.html">field names from journal
+specification</a>.
+See <a href="messages.html#g_log_structured">g_log_structured</a> for more information.</p>
+<p>Writer functions must ignore fields which they do not recognise, unless they
+can write arbitrary binary output, as field values may be arbitrary binary.</p>
+<p><em>log_level</em> is guaranteed to be included in <em>fields</em> as the <code>PRIORITY</code> field,
+but is provided separately for convenience of deciding whether or where to
+output the log entry.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>log level of the message</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>fields forming the message</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=n_fields]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n_fields:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of <em>fields</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="messages.html#g_log_set_writer_func">g_log_set_writer_func</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="messages.html#G_LOG_WRITER_HANDLED">G_LOG_WRITER_HANDLED</a> if the log entry was handled successfully;
+<a href="messages.html#G_LOG_WRITER_UNHANDLED">G_LOG_WRITER_UNHANDLED</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="GLogWriterOutput" href="messages.html#GLogWriterOutput">GLogWriterOutput</a>
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GLogFunc">
+		
+<h3 id="glogfunc">
+	<span><code>GLogFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+(*GLogFunc) (const gchar* log_domain,
+             <a title="GLogLevelFlags" href="messages.html#GLogLevelFlags">GLogLevelFlags</a> log_level,
+             const gchar* message,
+             gpointer user_data)</pre>
+
+<p>Specifies the prototype of log handler functions.</p>
+<p>The default log handler, <a href="messages.html#g_log_default_handler">g_log_default_handler</a>, automatically appends a
+new-line character to <em>message</em> when printing it. It is advised that any
+custom log handler functions behave similarly, so that logging calls in user
+code do not need modifying to add a new-line character to the message if the
+log handler is changed.</p>
+<p>This is not used if structured logging is enabled; see
+[Using Structured Logging][using-structured-logging].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log domain of the message</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>log_level:</code></em></i>
+		</p>
+	</td>
+		<td><p>the log level of the message (including the
+fatal and recursion flags)</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>message:</code></em></i>
+		</p>
+	</td>
+		<td><p>the message to process</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data, set in <a href="messages.html#g_log_set_handler">g_log_set_handler</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

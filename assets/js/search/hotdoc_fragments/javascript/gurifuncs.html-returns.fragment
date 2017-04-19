@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gurifuncs.html#returns", "fragment": "\na newly allocated null terminated list of strings holding the individual URIs. The array should be freed with GLib.prototype.strfreev. \nSince \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/string_utils.html#glibprototypestrreverse", "fragment": "GLib.prototype.strreverse \nReverses all of the bytes in a string. For example g_strreverse abcdef will result in fedcba \nNote that GLib.prototype.strreverse doesn t work on UTF strings containing multibyte characters. For that purpose use GLib.prototype.utf8_strreverse. \n"});

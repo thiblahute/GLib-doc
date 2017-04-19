@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/misc_utils.html#parameters2", "fragment": "string \na list of debug options separated by colons spaces or commas or null. \nkeys \npointer to an array of GLib.DebugKey which associate strings with bit flags. \nnkeys \nthe number of GLib.DebugKey in the array. \n"});

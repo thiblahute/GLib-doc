@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#g_io_channel_get_buffer_condition", "fragment": "GLib.IOChannel.get_buffer_condition \nThis function returns a GLib.IOCondition depending on whether there is data to be read space to write data in the internal buffers in the GLib.IOChannel. Only the flags GLib.IOCondition.in and GLib.IOCondition.out may be set. \n"});

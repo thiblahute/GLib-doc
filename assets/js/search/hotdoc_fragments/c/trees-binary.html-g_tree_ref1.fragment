@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/trees-binary.html#g_tree_ref1", "fragment": "g_tree_ref \nIncrements the reference count of tree by one. \nIt is safe to call this function from any thread. \n"});

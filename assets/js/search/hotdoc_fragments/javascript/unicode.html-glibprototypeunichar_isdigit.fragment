@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/unicode.html#glibprototypeunichar_isdigit", "fragment": "GLib.prototype.unichar_isdigit \nDetermines whether a character is numeric i.e. a digit This covers ASCII and also digits in other languages scripts. Given some UTF text obtain a character value with GLib.prototype.utf8_get_char. \n"});

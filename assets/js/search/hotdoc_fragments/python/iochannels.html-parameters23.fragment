@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#parameters23", "fragment": "channel \na GLib.IOChannel \nbuf \nthe buffer containing the data to write \ncount \nthe number of bytes to write \nbytes_written \nthe number of bytes actually written \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/threads.html#glibthreadfunc", "fragment": "GLib.ThreadFunc \nSpecifies the type of the func functions passed to g_thread_new not introspectable or g_thread_try_new not introspectable \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#g_io_channel_read_unichar1", "fragment": "g_io_channel_read_unichar \nReads a Unicode character from channel. This function cannot be called on a channel with NULL encoding. \n"});

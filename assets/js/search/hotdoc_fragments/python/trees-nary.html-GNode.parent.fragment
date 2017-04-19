@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/trees-nary.html#GNode.parent", "fragment": "GNode children \npoints to the first child of the GNode. The other children are accessed by using the next pointer of each child. \n"});

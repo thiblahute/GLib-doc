@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/atomic_operations.html#glibatomic_pointer_set", "fragment": "GLib.atomic_pointer_set \nSets the value of atomic to newval. \nThis call acts as a full compiler and hardware memory barrier after the set \n"});

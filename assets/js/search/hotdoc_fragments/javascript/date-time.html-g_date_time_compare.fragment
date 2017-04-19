@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date-time.html#g_date_time_compare", "fragment": "GLib.prototype.date_time_compare \nA comparison function for GLib.DateTime that is suitable as a GLib.CompareFunc. Both GLib.DateTime must be non NULL. \n"});

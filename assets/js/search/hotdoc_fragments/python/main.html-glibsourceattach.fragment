@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibsourceattach", "fragment": "GLib.Source.attach \nAdds a GLib.Source to a context so that it will be executed within that context. Remove it by calling GLib.Source.destroy. \n"});

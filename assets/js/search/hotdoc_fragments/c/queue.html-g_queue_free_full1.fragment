@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/queue.html#g_queue_free_full1", "fragment": "g_queue_free_full \nConvenience method which frees all the memory used by a GQueue and calls the specified destroy function on every element s data. \n"});

@@ -1,0 +1,3808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GStatBuf</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="fileutils.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="fileutils.markdown">
+        <h1 id="gstatbuf">GStatBuf</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GMappedFile</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GMappedFileConstructors">Constructors</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_mapped_file_new_from_fd">
+		
+<h4 id="g_mapped_file_new_from_fd1">
+	<span><code>g_mapped_file_new_from_fd</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GMappedFile" href="fileutils.html#GMappedFile">GMappedFile</a> *
+g_mapped_file_new_from_fd (gint fd,
+                           gboolean writable)</pre>
+
+<p>Maps a file into memory. On UNIX, this is using the mmap function.</p>
+<p>If <em>writable</em> is <a href="macros.html#TRUE">TRUE</a>, the mapped buffer may be modified, otherwise
+it is an error to modify the mapped buffer. Modifications to the buffer
+are not visible to other processes mapping the same file, and are not
+written back to the file.</p>
+<p>Note that modifications of the underlying file might affect the contents
+of the <a href="fileutils.html#GMappedFile">GMappedFile</a>. Therefore, mapping should only be used if the file
+will not be modified, or if all modifications of the file are done
+atomically (e.g. using <a href="fileutils.html#g_file_set_contents">g_file_set_contents</a>).</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fd:</code></em></i>
+		</p>
+	</td>
+		<td><p>The file descriptor of the file to load</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>writable:</code></em></i>
+		</p>
+	</td>
+		<td><p>whether the mapping should be writable</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated <a href="fileutils.html#GMappedFile">GMappedFile</a> which must be unref'd
+with <a href="fileutils.html#g_mapped_file_unref">g_mapped_file_unref</a>, or <a href="macros.html#NULL">NULL</a> if the mapping failed.</p>
+
+	</td>
+	<td>
+		<a title="GMappedFile" href="fileutils.html#GMappedFile">GMappedFile</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_mapped_file_new">
+		
+<h4 id="g_mapped_file_new1">
+	<span><code>g_mapped_file_new</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GMappedFile" href="fileutils.html#GMappedFile">GMappedFile</a> *
+g_mapped_file_new (gchar* filename,
+                   gboolean writable)</pre>
+
+<p>Maps a file into memory. On UNIX, this is using the mmap function.</p>
+<p>If <em>writable</em> is <a href="macros.html#TRUE">TRUE</a>, the mapped buffer may be modified, otherwise
+it is an error to modify the mapped buffer. Modifications to the buffer
+are not visible to other processes mapping the same file, and are not
+written back to the file.</p>
+<p>Note that modifications of the underlying file might affect the contents
+of the <a href="fileutils.html#GMappedFile">GMappedFile</a>. Therefore, mapping should only be used if the file
+will not be modified, or if all modifications of the file are done
+atomically (e.g. using <a href="fileutils.html#g_file_set_contents">g_file_set_contents</a>).</p>
+<p>If <em>filename</em> is the name of an empty, regular file, the function
+will successfully return an empty <a href="fileutils.html#GMappedFile">GMappedFile</a>. In other cases of
+size 0 (e.g. device files such as /dev/null), <em>error</em> will be set
+to the <a href="fileutils.html#GFileError">GFileError</a> value <a href="fileutils.html#G_FILE_ERROR_INVAL">G_FILE_ERROR_INVAL</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>The path of the file to load, in the GLib
+filename encoding</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>writable:</code></em></i>
+		</p>
+	</td>
+		<td><p>whether the mapping should be writable</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated <a href="fileutils.html#GMappedFile">GMappedFile</a> which must be unref'd
+with <a href="fileutils.html#g_mapped_file_unref">g_mapped_file_unref</a>, or <a href="macros.html#NULL">NULL</a> if the mapping failed.</p>
+
+	</td>
+	<td>
+		<a title="GMappedFile" href="fileutils.html#GMappedFile">GMappedFile</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GMappedFileMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;deprecated:2.22;" id="g_mapped_file_free">
+		
+<h4 id="g_mapped_file_free1">
+	<span><code>g_mapped_file_free</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_mapped_file_free (<a title="GMappedFile" href="fileutils.html#GMappedFile">GMappedFile</a> * file)</pre>
+
+<p>This call existed before <a href="fileutils.html#GMappedFile">GMappedFile</a> had refcounting and is currently
+exactly the same as <a href="fileutils.html#g_mapped_file_unref">g_mapped_file_unref</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="fileutils.html#GMappedFile">GMappedFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+	<p>
+	deprecated			: 2.22: Use g_mapped_file_unref() instead.
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_mapped_file_get_contents">
+		
+<h4 id="g_mapped_file_get_contents1">
+	<span><code>g_mapped_file_get_contents</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gchar*
+g_mapped_file_get_contents (<a title="GMappedFile" href="fileutils.html#GMappedFile">GMappedFile</a> * file)</pre>
+
+<p>Returns the contents of a <a href="fileutils.html#GMappedFile">GMappedFile</a>.</p>
+<p>Note that the contents may not be zero-terminated,
+even if the <a href="fileutils.html#GMappedFile">GMappedFile</a> is backed by a text file.</p>
+<p>If the file is empty then <a href="macros.html#NULL">NULL</a> is returned.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="fileutils.html#GMappedFile">GMappedFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the contents of <em>file</em>, or <a href="macros.html#NULL">NULL</a>.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.34;" id="g_mapped_file_get_bytes">
+		
+<h4 id="g_mapped_file_get_bytes1">
+	<span><code>g_mapped_file_get_bytes</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> *
+g_mapped_file_get_bytes (<a title="GMappedFile" href="fileutils.html#GMappedFile">GMappedFile</a> * file)</pre>
+
+<p>Creates a new <a href="arrays_byte.html#GBytes">GBytes</a> which references the data mapped from <em>file</em>.
+The mapped contents of the file must not be modified after creating this
+bytes object, because a <a href="arrays_byte.html#GBytes">GBytes</a> should be immutable.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="fileutils.html#GMappedFile">GMappedFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A newly allocated <a href="arrays_byte.html#GBytes">GBytes</a> referencing data
+from <em>file</em></p>
+
+	</td>
+	<td>
+		<a title="GBytes" href="arrays_byte.html#GBytes">GBytes</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.34
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_mapped_file_unref">
+		
+<h4 id="g_mapped_file_unref1">
+	<span><code>g_mapped_file_unref</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_mapped_file_unref (<a title="GMappedFile" href="fileutils.html#GMappedFile">GMappedFile</a> * file)</pre>
+
+<p>Decrements the reference count of <em>file</em> by one.  If the reference count
+drops to 0, unmaps the buffer of <em>file</em> and frees it.</p>
+<p>It is safe to call this function from any thread.</p>
+<p>Since 2.22</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="fileutils.html#GMappedFile">GMappedFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_mapped_file_get_length">
+		
+<h4 id="g_mapped_file_get_length1">
+	<span><code>g_mapped_file_get_length</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gsize
+g_mapped_file_get_length (<a title="GMappedFile" href="fileutils.html#GMappedFile">GMappedFile</a> * file)</pre>
+
+<p>Returns the length of the contents of a <a href="fileutils.html#GMappedFile">GMappedFile</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="fileutils.html#GMappedFile">GMappedFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the length of the contents of <em>file</em>.</p>
+
+	</td>
+	<td>
+		gsize
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_mapped_file_ref">
+		
+<h4 id="g_mapped_file_ref1">
+	<span><code>g_mapped_file_ref</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GMappedFile" href="fileutils.html#GMappedFile">GMappedFile</a> *
+g_mapped_file_ref (<a title="GMappedFile" href="fileutils.html#GMappedFile">GMappedFile</a> * file)</pre>
+
+<p>Increments the reference count of <em>file</em> by one.  It is safe to call
+this function from any thread.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="fileutils.html#GMappedFile">GMappedFile</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the passed in <a href="fileutils.html#GMappedFile">GMappedFile</a>.</p>
+
+	</td>
+	<td>
+		<a title="GMappedFile" href="fileutils.html#GMappedFile">GMappedFile</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+
+
+            <h2 class="symbol_section" id="">GDir</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GDirMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_dir_read_name">
+		
+<h4 id="g_dir_read_name1">
+	<span><code>g_dir_read_name</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gchar*
+g_dir_read_name (<a title="GDir" href="fileutils.html#GDir">GDir</a> * dir)</pre>
+
+<p>Retrieves the name of another entry in the directory, or <a href="macros.html#NULL">NULL</a>.
+The order of entries returned from this function is not defined,
+and may vary by file system or other operating-system dependent
+factors.</p>
+<p><a href="macros.html#NULL">NULL</a> may also be returned in case of errors. On Unix, you can
+check <code>errno</code> to find out if <a href="macros.html#NULL">NULL</a> was returned because of an error.</p>
+<p>On Unix, the '.' and '..' entries are omitted, and the returned
+name is in the on-disk encoding.</p>
+<p>On Windows, as is true of all GLib functions which operate on
+filenames, the returned name is in UTF-8.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dir:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="fileutils.html#GDir">GDir</a>* created by <a href="fileutils.html#g_dir_open">g_dir_open</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The entry's name or <a href="macros.html#NULL">NULL</a> if there are no
+more entries. The return value is owned by GLib and
+must not be modified or freed.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_dir_rewind">
+		
+<h4 id="g_dir_rewind1">
+	<span><code>g_dir_rewind</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_dir_rewind (<a title="GDir" href="fileutils.html#GDir">GDir</a> * dir)</pre>
+
+<p>Resets the given directory. The next call to <a href="fileutils.html#g_dir_read_name">g_dir_read_name</a>
+will return the first entry again.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dir:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="fileutils.html#GDir">GDir</a>* created by <a href="fileutils.html#g_dir_open">g_dir_open</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_dir_close">
+		
+<h4 id="g_dir_close1">
+	<span><code>g_dir_close</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_dir_close (<a title="GDir" href="fileutils.html#GDir">GDir</a> * dir)</pre>
+
+<p>Closes the directory and deallocates all related resources.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dir:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="fileutils.html#GDir">GDir</a>* created by <a href="fileutils.html#g_dir_open">g_dir_open</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GDirFunctions">Functions</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_dir_open">
+		
+<h4 id="g_dir_open1">
+	<span><code>g_dir_open</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GDir" href="fileutils.html#GDir">GDir</a> *
+g_dir_open (const gchar* path,
+            guint flags)</pre>
+
+<p>Opens a directory for reading. The names of the files in the
+directory can then be retrieved using <a href="fileutils.html#g_dir_read_name">g_dir_read_name</a>.  Note
+that the ordering is not defined.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>path:</code></em></i>
+		</p>
+	</td>
+		<td><p>the path to the directory you are interested in. On Unix
+in the on-disk encoding. On Windows in UTF-8</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>Currently must be set to 0. Reserved for future use.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated <a href="fileutils.html#GDir">GDir</a> on success, <a href="macros.html#NULL">NULL</a> on failure.
+If non-%NULL, you must free the result with <a href="fileutils.html#g_dir_close">g_dir_close</a>
+when you are finished with it.</p>
+
+	</td>
+	<td>
+		<a title="GDir" href="fileutils.html#GDir">GDir</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_unlink">
+		
+<h3 id="g_unlink1">
+	<span><code>g_unlink</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+int
+g_unlink (gchar* filename)</pre>
+
+<p>A wrapper for the POSIX unlink function. The unlink function
+deletes a name from the filesystem. If this was the last link to the
+file and no processes have it opened, the diskspace occupied by the
+file is freed.</p>
+<p>See your C library manual for more details about unlink. Note
+that on Windows, it is in general not possible to delete files that
+are open to some process, or mapped into memory.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pathname in the GLib file name encoding
+(UTF-8 on Windows)</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>0 if the name was successfully deleted, -1 if an error
+occurred</p>
+
+	</td>
+	<td>
+		int
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_access">
+		
+<h3 id="g_access1">
+	<span><code>g_access</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+int
+g_access (gchar* filename,
+          int mode)</pre>
+
+<p>A wrapper for the POSIX access function. This function is used to
+test a pathname for one or several of read, write or execute
+permissions, or just existence.</p>
+<p>On Windows, the file protection mechanism is not at all POSIX-like,
+and the underlying function in the C library only checks the
+FAT-style READONLY attribute, and does not look at the ACL of a
+file at all. This function is this in practise almost useless on
+Windows. Software that needs to handle file permissions on Windows
+more exactly should use the Win32 API.</p>
+<p>See your C library manual for more details about access.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pathname in the GLib file name encoding
+(UTF-8 on Windows)</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mode:</code></em></i>
+		</p>
+	</td>
+		<td><p>as in access</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>zero if the pathname refers to an existing file system
+object that has all the tested permissions, or -1 otherwise
+or on error.</p>
+
+	</td>
+	<td>
+		int
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_file_open_tmp">
+		
+<h3 id="g_file_open_tmp1">
+	<span><code>g_file_open_tmp</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_file_open_tmp (gchar* tmpl,
+                 gchar** name_used)</pre>
+
+<p>Opens a file for writing in the preferred directory for temporary
+files (as returned by <a href="misc_utils.html#g_get_tmp_dir">g_get_tmp_dir</a>).</p>
+<p><em>tmpl</em> should be a string in the GLib file name encoding containing
+a sequence of six 'X' characters, as the parameter to <a href="fileutils.html#g_mkstemp">g_mkstemp</a>.
+However, unlike these functions, the template should only be a
+basename, no directory components are allowed. If template is
+<a href="macros.html#NULL">NULL</a>, a default template is used.</p>
+<p>Note that in contrast to <a href="fileutils.html#g_mkstemp">g_mkstemp</a> (and mkstemp) <em>tmpl</em> is not
+modified, and might thus be a read-only literal string.</p>
+<p>Upon success, and if <em>name_used</em> is non-%NULL, the actual name used
+is returned in <em>name_used</em>. This string should be freed with <a href="memory.html#g_free">g_free</a>
+when not needed any longer. The returned name is in the GLib file
+name encoding.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tmpl:</code></em></i>
+		</p>
+	</td>
+		<td><p>Template for file name, as in
+<a href="fileutils.html#g_mkstemp">g_mkstemp</a>, basename only, or <a href="macros.html#NULL">NULL</a> for a default template</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>name_used:</code></em></i>
+		</p>
+	</td>
+		<td><p>location to store actual name used,
+or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A file handle (as from open) to the file opened for
+reading and writing. The file is opened in binary mode on platforms
+where there is a difference. The file handle should be closed with
+close. In case of errors, -1 is returned and <em>error</em> will be set.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>name_used:</i>
+				</p>
+	</td>
+	<td>
+		<p>A file handle (as from open) to the file opened for
+reading and writing. The file is opened in binary mode on platforms
+where there is a difference. The file handle should be closed with
+close. In case of errors, -1 is returned and <em>error</em> will be set.</p>
+
+	</td>
+	<td>
+		gchar**
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_mkstemp_full">
+		
+<h3 id="g_mkstemp_full1">
+	<span><code>g_mkstemp_full</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_mkstemp_full (gchar* tmpl,
+                gint flags,
+                gint mode)</pre>
+
+<p>Opens a temporary file. See the mkstemp documentation
+on most UNIX-like systems.</p>
+<p>The parameter is a string that should follow the rules for
+mkstemp templates, i.e. contain the string "XXXXXX".
+<a href="fileutils.html#g_mkstemp_full">g_mkstemp_full</a> is slightly more flexible than mkstemp
+in that the sequence does not have to occur at the very end of the
+template and you can pass a <em>mode</em> and additional <em>flags</em>. The X
+string will be modified to form the name of a file that didn't exist.
+The string should be in the GLib file name encoding. Most importantly,
+on Windows it should be in UTF-8.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tmpl:</code></em></i>
+		</p>
+	</td>
+		<td><p>template filename</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>flags:</code></em></i>
+		</p>
+	</td>
+		<td><p>flags to pass to an open call in addition to O_EXCL
+and O_CREAT, which are passed automatically</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mode:</code></em></i>
+		</p>
+	</td>
+		<td><p>permissions to create the temporary file with</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A file handle (as from open) to the file
+opened for reading and writing. The file handle should be
+closed with close. In case of errors, -1 is returned
+and errno will be set.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_rmdir">
+		
+<h3 id="g_rmdir1">
+	<span><code>g_rmdir</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+int
+g_rmdir (gchar* filename)</pre>
+
+<p>A wrapper for the POSIX rmdir function. The rmdir function
+deletes a directory from the filesystem.</p>
+<p>See your C library manual for more details about how rmdir works
+on your system.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pathname in the GLib file name encoding
+(UTF-8 on Windows)</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>0 if the directory was successfully removed, -1 if an error
+occurred</p>
+
+	</td>
+	<td>
+		int
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_dir_make_tmp">
+		
+<h3 id="g_dir_make_tmp1">
+	<span><code>g_dir_make_tmp</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_dir_make_tmp (gchar* tmpl)</pre>
+
+<p>Creates a subdirectory in the preferred directory for temporary
+files (as returned by <a href="misc_utils.html#g_get_tmp_dir">g_get_tmp_dir</a>).</p>
+<p><em>tmpl</em> should be a string in the GLib file name encoding containing
+a sequence of six 'X' characters, as the parameter to <a href="fileutils.html#g_mkstemp">g_mkstemp</a>.
+However, unlike these functions, the template should only be a
+basename, no directory components are allowed. If template is
+<a href="macros.html#NULL">NULL</a>, a default template is used.</p>
+<p>Note that in contrast to <a href="fileutils.html#g_mkdtemp">g_mkdtemp</a> (and mkdtemp) <em>tmpl</em> is not
+modified, and might thus be a read-only literal string.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tmpl:</code></em></i>
+		</p>
+	</td>
+		<td><p>Template for directory name,
+as in <a href="fileutils.html#g_mkdtemp">g_mkdtemp</a>, basename only, or <a href="macros.html#NULL">NULL</a> for a default template</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The actual name used. This string
+should be freed with <a href="memory.html#g_free">g_free</a> when not needed any longer and is
+is in the GLib file name encoding. In case of errors, <a href="macros.html#NULL">NULL</a> is
+returned and <em>error</em> will be set.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.36;" id="g_close">
+		
+<h3 id="g_close1">
+	<span><code>g_close</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_close (gint fd)</pre>
+
+<p>This wraps the close call; in case of error, errno will be
+preserved, but the error will also be stored as a <a href="error_reporting.html#GError">GError</a> in <em>error</em>.</p>
+<p>Besides using <a href="error_reporting.html#GError">GError</a>, there is another major reason to prefer this
+function over the call provided by the system; on Unix, it will
+attempt to correctly handle EINTR, which has platform-specific
+semantics.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fd:</code></em></i>
+		</p>
+	</td>
+		<td><p>A file descriptor</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> on success, <a href="macros.html#FALSE">FALSE</a> if there was an error.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.36
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_file_error_quark">
+		
+<h3 id="g_file_error_quark1">
+	<span><code>g_file_error_quark</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="GQuark" href="quarks.html#GQuark">GQuark</a>
+g_file_error_quark ()</pre>
+
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		<a title="GQuark" href="quarks.html#GQuark">GQuark</a>
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_mkdtemp">
+		
+<h3 id="g_mkdtemp1">
+	<span><code>g_mkdtemp</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_mkdtemp (gchar* tmpl)</pre>
+
+<p>Creates a temporary directory. See the mkdtemp documentation
+on most UNIX-like systems.</p>
+<p>The parameter is a string that should follow the rules for
+mkdtemp templates, i.e. contain the string "XXXXXX".
+<a href="fileutils.html#g_mkdtemp">g_mkdtemp</a> is slightly more flexible than mkdtemp in that the
+sequence does not have to occur at the very end of the template.
+The X string will be modified to form the name of a directory that
+didn't exist.
+The string should be in the GLib file name encoding. Most importantly,
+on Windows it should be in UTF-8.</p>
+<p>If you are going to be creating a temporary directory inside the
+directory returned by <a href="misc_utils.html#g_get_tmp_dir">g_get_tmp_dir</a>, you might want to use
+<a href="fileutils.html#g_dir_make_tmp">g_dir_make_tmp</a> instead.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tmpl:</code></em></i>
+		</p>
+	</td>
+		<td><p>template directory name</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A pointer to <em>tmpl</em>, which has been
+modified to hold the directory name.  In case of errors, <a href="macros.html#NULL">NULL</a> is
+returned and errno will be set.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_mkdir_with_parents">
+		
+<h3 id="g_mkdir_with_parents1">
+	<span><code>g_mkdir_with_parents</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_mkdir_with_parents (gchar* pathname,
+                      gint mode)</pre>
+
+<p>Create a directory if it doesn't already exist. Create intermediate
+parent directories as needed, too.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pathname:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pathname in the GLib file name encoding</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mode:</code></em></i>
+		</p>
+	</td>
+		<td><p>permissions to use for newly created directories</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>0 if the directory already exists, or was successfully
+created. Returns -1 if an error occurred, with errno set.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_mkstemp">
+		
+<h3 id="g_mkstemp1">
+	<span><code>g_mkstemp</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_mkstemp (gchar* tmpl)</pre>
+
+<p>Opens a temporary file. See the mkstemp documentation
+on most UNIX-like systems.</p>
+<p>The parameter is a string that should follow the rules for
+mkstemp templates, i.e. contain the string "XXXXXX".
+<a href="fileutils.html#g_mkstemp">g_mkstemp</a> is slightly more flexible than mkstemp in that the
+sequence does not have to occur at the very end of the template.
+The X string will be modified to form the name of a file that
+didn't exist. The string should be in the GLib file name encoding.
+Most importantly, on Windows it should be in UTF-8.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tmpl:</code></em></i>
+		</p>
+	</td>
+		<td><p>template filename</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A file handle (as from open) to the file
+opened for reading and writing. The file is opened in binary
+mode on platforms where there is a difference. The file handle
+should be closed with close. In case of errors, -1 is
+returned and errno will be set.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_file_get_contents">
+		
+<h3 id="g_file_get_contents1">
+	<span><code>g_file_get_contents</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_file_get_contents (gchar* filename,
+                     guint8* contents,
+                     gsize* length)</pre>
+
+<p>Reads an entire file into allocated memory, with good error
+checking.</p>
+<p>If the call was successful, it returns <a href="macros.html#TRUE">TRUE</a> and sets <em>contents</em> to the file
+contents and <em>length</em> to the length of the file contents in bytes. The string
+stored in <em>contents</em> will be nul-terminated, so for text files you can pass
+<a href="macros.html#NULL">NULL</a> for the <em>length</em> argument. If the call was not successful, it returns
+<a href="macros.html#FALSE">FALSE</a> and sets <em>error</em>. The error domain is <a href="fileutils.html#G_FILE_ERROR">G_FILE_ERROR</a>. Possible error
+codes are those in the <a href="fileutils.html#GFileError">GFileError</a> enumeration. In the error case,
+<em>contents</em> is set to <a href="macros.html#NULL">NULL</a> and <em>length</em> is set to zero.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>name of a file to read contents from, in the GLib file name encoding</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>contents:</code></em></i>
+		</p>
+	</td>
+		<td><p>location to store an allocated string, use <a href="memory.html#g_free">g_free</a> to free
+the returned string</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=length]</span>
+<span class="annotation">[<abbr title="Generic and defining element of containers and arrays"><span class="acronym">element-type</span></abbr> guint8]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>location to store length in bytes of the contents, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of1">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> on success, <a href="macros.html#FALSE">FALSE</a> if an error occurred</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>contents:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> on success, <a href="macros.html#FALSE">FALSE</a> if an error occurred</p>
+
+	</td>
+	<td>
+		guint8*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>length:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> on success, <a href="macros.html#FALSE">FALSE</a> if an error occurred</p>
+
+	</td>
+	<td>
+		gsize*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_file_test">
+		
+<h3 id="g_file_test1">
+	<span><code>g_file_test</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_file_test (gchar* filename,
+             <a title="GFileTest" href="fileutils.html#GFileTest">GFileTest</a> test)</pre>
+
+<p>Returns <a href="macros.html#TRUE">TRUE</a> if any of the tests in the bitfield <em>test</em> are
+<a href="macros.html#TRUE">TRUE</a>. For example, <code>(G_FILE_TEST_EXISTS | G_FILE_TEST_IS_DIR)</code>
+will return <a href="macros.html#TRUE">TRUE</a> if the file exists; the check whether it's a
+directory doesn't matter since the existence test is <a href="macros.html#TRUE">TRUE</a>. With
+the current set of available tests, there's no point passing in
+more than one test at a time.</p>
+<p>Apart from <a href="fileutils.html#G_FILE_TEST_IS_SYMLINK">G_FILE_TEST_IS_SYMLINK</a> all tests follow symbolic links,
+so for a symbolic link to a regular file <a href="fileutils.html#g_file_test">g_file_test</a> will return
+<a href="macros.html#TRUE">TRUE</a> for both <a href="fileutils.html#G_FILE_TEST_IS_SYMLINK">G_FILE_TEST_IS_SYMLINK</a> and <a href="fileutils.html#G_FILE_TEST_IS_REGULAR">G_FILE_TEST_IS_REGULAR</a>.</p>
+<p>Note, that for a dangling symbolic link <a href="fileutils.html#g_file_test">g_file_test</a> will return
+<a href="macros.html#TRUE">TRUE</a> for <a href="fileutils.html#G_FILE_TEST_IS_SYMLINK">G_FILE_TEST_IS_SYMLINK</a> and <a href="macros.html#FALSE">FALSE</a> for all other flags.</p>
+<p>You should never use <a href="fileutils.html#g_file_test">g_file_test</a> to test whether it is safe
+to perform an operation, because there is always the possibility
+of the condition changing before you actually perform the operation.
+For example, you might think you could use <a href="fileutils.html#G_FILE_TEST_IS_SYMLINK">G_FILE_TEST_IS_SYMLINK</a>
+to know whether it is safe to write to a file without being
+tricked into writing into a different location. It doesn't work!</p>
+<pre><code class="language-[&lt;!--">  // DON'T DO THIS
+  if (!g_file_test (filename, G_FILE_TEST_IS_SYMLINK))
+    {
+      fd = g_open (filename, O_WRONLY);
+      // write to fd
+    }
+</code></pre>
+<p>Another thing to note is that <a href="fileutils.html#G_FILE_TEST_EXISTS">G_FILE_TEST_EXISTS</a> and
+<a href="fileutils.html#G_FILE_TEST_IS_EXECUTABLE">G_FILE_TEST_IS_EXECUTABLE</a> are implemented using the access
+system call. This usually doesn't matter, but if your program
+is setuid or setgid it means that these tests will give you
+the answer for the real user ID and group ID, rather than the
+effective user ID and group ID.</p>
+<p>On Windows, there are no symlinks, so testing for
+<a href="fileutils.html#G_FILE_TEST_IS_SYMLINK">G_FILE_TEST_IS_SYMLINK</a> will always return <a href="macros.html#FALSE">FALSE</a>. Testing for
+<a href="fileutils.html#G_FILE_TEST_IS_EXECUTABLE">G_FILE_TEST_IS_EXECUTABLE</a> will just check that the file exists and
+its name indicates that it is executable, checking for well-known
+extensions and those listed in the <code>PATHEXT</code> environment variable.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>a filename to test in the
+GLib file name encoding</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>test:</code></em></i>
+		</p>
+	</td>
+		<td><p>bitfield of <a href="fileutils.html#GFileTest">GFileTest</a> flags</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>whether a test was <a href="macros.html#TRUE">TRUE</a></p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_file_set_contents">
+		
+<h3 id="g_file_set_contents1">
+	<span><code>g_file_set_contents</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_file_set_contents (gchar* filename,
+                     guint8* contents,
+                     gssize length)</pre>
+
+<p>Writes all of <em>contents</em> to a file named <em>filename</em>, with good error checking.
+If a file called <em>filename</em> already exists it will be overwritten.</p>
+<p>This write is atomic in the sense that it is first written to a temporary
+file which is then renamed to the final name. Notes:</p>
+<ul>
+<li>
+<p>On UNIX, if <em>filename</em> already exists hard links to <em>filename</em> will break.
+Also since the file is recreated, existing permissions, access control
+lists, metadata etc. may be lost. If <em>filename</em> is a symbolic link,
+the link itself will be replaced, not the linked file.</p>
+</li>
+<li>
+<p>On Windows renaming a file will not remove an existing file with the
+new name, so on Windows there is a race condition between the existing
+file being removed and the temporary file being renamed.</p>
+</li>
+<li>
+<p>On Windows there is no way to remove a file that is open to some
+process, or mapped into memory. Thus, this function will fail if
+<em>filename</em> already exists and is open.</p>
+</li>
+</ul>
+<p>If the call was successful, it returns <a href="macros.html#TRUE">TRUE</a>. If the call was not successful,
+it returns <a href="macros.html#FALSE">FALSE</a> and sets <em>error</em>. The error domain is <a href="fileutils.html#G_FILE_ERROR">G_FILE_ERROR</a>.
+Possible error codes are those in the <a href="fileutils.html#GFileError">GFileError</a> enumeration.</p>
+<p>Note that the name for the temporary file is constructed by appending up
+to 7 characters to <em>filename</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>name of a file to write <em>contents</em> to, in the GLib file name
+encoding</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>contents:</code></em></i>
+		</p>
+	</td>
+		<td><p>string to write to the file</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=length]</span>
+<span class="annotation">[<abbr title="Generic and defining element of containers and arrays"><span class="acronym">element-type</span></abbr> guint8]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>contents</em>, or -1 if <em>contents</em> is a nul-terminated string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> on success, <a href="macros.html#FALSE">FALSE</a> if an error occurred</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_file_read_link">
+		
+<h3 id="g_file_read_link1">
+	<span><code>g_file_read_link</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_file_read_link (gchar* filename)</pre>
+
+<p>Reads the contents of the symbolic link <em>filename</em> like the POSIX
+readlink function.  The returned string is in the encoding used
+for filenames. Use <a href="conversions.html#g_filename_to_utf8">g_filename_to_utf8</a> to convert it to UTF-8.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>the symbolic link</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A newly-allocated string with the contents of
+the symbolic link, or <a href="macros.html#NULL">NULL</a> if an error occurred.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_chdir">
+		
+<h3 id="g_chdir1">
+	<span><code>g_chdir</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+int
+g_chdir (gchar* path)</pre>
+
+<p>A wrapper for the POSIX chdir function. The function changes the
+current directory of the process to <em>path</em>.</p>
+<p>See your C library manual for more details about chdir.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>path:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pathname in the GLib file name encoding
+(UTF-8 on Windows)</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns21">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>0 on success, -1 if an error occurred.</p>
+
+	</td>
+	<td>
+		int
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_file_error_from_errno">
+		
+<h3 id="g_file_error_from_errno1">
+	<span><code>g_file_error_from_errno</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="GFileError" href="fileutils.html#GFileError">GFileError</a>
+g_file_error_from_errno (gint err_no)</pre>
+
+<p>Gets a <a href="fileutils.html#GFileError">GFileError</a> constant based on the passed-in <em>err_no</em>.
+For example, if you pass in <code>EEXIST</code> this function returns
+<a href="fileutils.html#G_FILE_ERROR_EXIST">G_FILE_ERROR_EXIST</a>. Unlike <code>errno</code> values, you can portably
+assume that all <a href="fileutils.html#GFileError">GFileError</a> values will exist.</p>
+<p>Normally a <a href="fileutils.html#GFileError">GFileError</a> value goes into a <a href="error_reporting.html#GError">GError</a> returned
+from a function that manipulates files. So you would use
+<a href="fileutils.html#g_file_error_from_errno">g_file_error_from_errno</a> when constructing a <a href="error_reporting.html#GError">GError</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>err_no:</code></em></i>
+		</p>
+	</td>
+		<td><p>an "errno" value</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns22">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="fileutils.html#GFileError">GFileError</a> corresponding to the given <em>errno</em></p>
+
+	</td>
+	<td>
+		<a title="GFileError" href="fileutils.html#GFileError">GFileError</a>
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_mkdtemp_full">
+		
+<h3 id="g_mkdtemp_full1">
+	<span><code>g_mkdtemp_full</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_mkdtemp_full (gchar* tmpl,
+                gint mode)</pre>
+
+<p>Creates a temporary directory. See the mkdtemp documentation
+on most UNIX-like systems.</p>
+<p>The parameter is a string that should follow the rules for
+mkdtemp templates, i.e. contain the string "XXXXXX".
+<a href="fileutils.html#g_mkdtemp_full">g_mkdtemp_full</a> is slightly more flexible than mkdtemp in that the
+sequence does not have to occur at the very end of the template
+and you can pass a <em>mode</em>. The X string will be modified to form
+the name of a directory that didn't exist. The string should be
+in the GLib file name encoding. Most importantly, on Windows it
+should be in UTF-8.</p>
+<p>If you are going to be creating a temporary directory inside the
+directory returned by <a href="misc_utils.html#g_get_tmp_dir">g_get_tmp_dir</a>, you might want to use
+<a href="fileutils.html#g_dir_make_tmp">g_dir_make_tmp</a> instead.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters28">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tmpl:</code></em></i>
+		</p>
+	</td>
+		<td><p>template directory name</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mode:</code></em></i>
+		</p>
+	</td>
+		<td><p>permissions to create the temporary directory with</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns23">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A pointer to <em>tmpl</em>, which has been
+modified to hold the directory name. In case of errors, <a href="macros.html#NULL">NULL</a> is
+returned, and errno will be set.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+<span class="annotation">[<abbr title="Override the parsed C type with given type"><span class="acronym">type</span></abbr> filename]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GStatBuf">
+		
+<h3 id="struct-gstatbuf">
+		struct GStatBuf
+	</h3>
+
+		<pre class="raw_code">
+struct GStatBuf {
+};
+</pre>
+
+<p>A type corresponding to the appropriate struct type for the stat
+system call, depending on the platform and/or compiler being used.</p>
+<p>See <a href="fileutils.html#g_stat">g_stat</a> for more information.</p>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GMappedFile">
+		
+<h3 id="struct-gmappedfile">
+		struct GMappedFile
+	</h3>
+
+		<pre class="raw_code">
+struct GMappedFile {
+};
+</pre>
+
+<p>The <a href="fileutils.html#GMappedFile">GMappedFile</a> represents a file mapping created with
+<a href="fileutils.html#g_mapped_file_new">g_mapped_file_new</a>. It has only private members and should
+not be accessed directly.</p>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GDir">
+		
+<h3 id="struct-gdir">
+		struct GDir
+	</h3>
+
+		<pre class="raw_code">
+struct GDir {
+};
+</pre>
+
+<p>An opaque structure representing an opened directory.</p>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GFileTest">
+		
+<h3 id="enum-gfiletest">
+		enum GFileTest
+	</h3>
+
+		<p>A test to perform on a file using <a href="fileutils.html#g_file_test">g_file_test</a>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_TEST_IS_REGULAR"></a>
+		G_FILE_TEST_IS_REGULAR
+		</p>
+	</td>
+	<td><p><a href="macros.html#TRUE">TRUE</a> if the file is a regular file
+(not a directory). Note that this test will also return <a href="macros.html#TRUE">TRUE</a>
+if the tested file is a symlink to a regular file.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_TEST_IS_SYMLINK"></a>
+		G_FILE_TEST_IS_SYMLINK
+		</p>
+	</td>
+	<td><p><a href="macros.html#TRUE">TRUE</a> if the file is a symlink.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_TEST_IS_DIR"></a>
+		G_FILE_TEST_IS_DIR
+		</p>
+	</td>
+	<td><p><a href="macros.html#TRUE">TRUE</a> if the file is a directory.</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_TEST_IS_EXECUTABLE"></a>
+		G_FILE_TEST_IS_EXECUTABLE
+		</p>
+	</td>
+	<td><p><a href="macros.html#TRUE">TRUE</a> if the file is executable.</p>
+</td>
+	<td>
+		<span class="value">Value: 8</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_TEST_EXISTS"></a>
+		G_FILE_TEST_EXISTS
+		</p>
+	</td>
+	<td><p><a href="macros.html#TRUE">TRUE</a> if the file exists. It may or may not
+be a regular file.</p>
+</td>
+	<td>
+		<span class="value">Value: 16</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GFileError">
+		
+<h3 id="enum-gfileerror">
+		enum GFileError
+	</h3>
+
+		<p>Values corresponding to <em>errno</em> codes returned from file operations
+on UNIX. Unlike <em>errno</em> codes, GFileError values are available on
+all systems, even Windows. The exact meaning of each code depends
+on what sort of file operation you were performing; the UNIX
+documentation gives more details. The following error code descriptions
+come from the GNU C Library manual, and are under the copyright
+of that manual.</p>
+<p>It's not very portable to make detailed assumptions about exactly
+which errors will be returned from a given operation. Some errors
+don't occur on some systems, etc., sometimes there are subtle
+differences in when a system will report a given error, etc.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members1">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_EXIST"></a>
+		G_FILE_ERROR_EXIST
+		</p>
+	</td>
+	<td><p>Operation not permitted; only the owner of
+the file (or other resource) or processes with special privileges
+can perform the operation.</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_ISDIR"></a>
+		G_FILE_ERROR_ISDIR
+		</p>
+	</td>
+	<td><p>File is a directory; you cannot open a directory
+for writing, or create or remove hard links to it.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_ACCES"></a>
+		G_FILE_ERROR_ACCES
+		</p>
+	</td>
+	<td><p>Permission denied; the file permissions do not
+allow the attempted operation.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_NAMETOOLONG"></a>
+		G_FILE_ERROR_NAMETOOLONG
+		</p>
+	</td>
+	<td><p>Filename too long.</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_NOENT"></a>
+		G_FILE_ERROR_NOENT
+		</p>
+	</td>
+	<td><p>No such file or directory. This is a "file
+doesn't exist" error for ordinary files that are referenced in
+contexts where they are expected to already exist.</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_NOTDIR"></a>
+		G_FILE_ERROR_NOTDIR
+		</p>
+	</td>
+	<td><p>A file that isn't a directory was specified when
+a directory is required.</p>
+</td>
+	<td>
+		<span class="value">Value: 5</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_NXIO"></a>
+		G_FILE_ERROR_NXIO
+		</p>
+	</td>
+	<td><p>No such device or address. The system tried to
+use the device represented by a file you specified, and it
+couldn't find the device. This can mean that the device file was
+installed incorrectly, or that the physical device is missing or
+not correctly attached to the computer.</p>
+</td>
+	<td>
+		<span class="value">Value: 6</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_NODEV"></a>
+		G_FILE_ERROR_NODEV
+		</p>
+	</td>
+	<td><p>The underlying file system of the specified file
+does not support memory mapping.</p>
+</td>
+	<td>
+		<span class="value">Value: 7</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_ROFS"></a>
+		G_FILE_ERROR_ROFS
+		</p>
+	</td>
+	<td><p>The directory containing the new link can't be
+modified because it's on a read-only file system.</p>
+</td>
+	<td>
+		<span class="value">Value: 8</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_TXTBSY"></a>
+		G_FILE_ERROR_TXTBSY
+		</p>
+	</td>
+	<td><p>Text file busy.</p>
+</td>
+	<td>
+		<span class="value">Value: 9</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_FAULT"></a>
+		G_FILE_ERROR_FAULT
+		</p>
+	</td>
+	<td><p>You passed in a pointer to bad memory.
+(GLib won't reliably return this, don't pass in pointers to bad
+memory.)</p>
+</td>
+	<td>
+		<span class="value">Value: 10</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_LOOP"></a>
+		G_FILE_ERROR_LOOP
+		</p>
+	</td>
+	<td><p>Too many levels of symbolic links were encountered
+in looking up a file name. This often indicates a cycle of symbolic
+links.</p>
+</td>
+	<td>
+		<span class="value">Value: 11</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_NOSPC"></a>
+		G_FILE_ERROR_NOSPC
+		</p>
+	</td>
+	<td><p>No space left on device; write operation on a
+file failed because the disk is full.</p>
+</td>
+	<td>
+		<span class="value">Value: 12</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_NOMEM"></a>
+		G_FILE_ERROR_NOMEM
+		</p>
+	</td>
+	<td><p>No memory available. The system cannot allocate
+more virtual memory because its capacity is full.</p>
+</td>
+	<td>
+		<span class="value">Value: 13</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_MFILE"></a>
+		G_FILE_ERROR_MFILE
+		</p>
+	</td>
+	<td><p>The current process has too many files open and
+can't open any more. Duplicate descriptors do count toward this
+limit.</p>
+</td>
+	<td>
+		<span class="value">Value: 14</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_NFILE"></a>
+		G_FILE_ERROR_NFILE
+		</p>
+	</td>
+	<td><p>There are too many distinct file openings in the
+entire system.</p>
+</td>
+	<td>
+		<span class="value">Value: 15</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_BADF"></a>
+		G_FILE_ERROR_BADF
+		</p>
+	</td>
+	<td><p>Bad file descriptor; for example, I/O on a
+descriptor that has been closed or reading from a descriptor open
+only for writing (or vice versa).</p>
+</td>
+	<td>
+		<span class="value">Value: 16</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_INVAL"></a>
+		G_FILE_ERROR_INVAL
+		</p>
+	</td>
+	<td><p>Invalid argument. This is used to indicate
+various kinds of problems with passing the wrong argument to a
+library function.</p>
+</td>
+	<td>
+		<span class="value">Value: 17</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_PIPE"></a>
+		G_FILE_ERROR_PIPE
+		</p>
+	</td>
+	<td><p>Broken pipe; there is no process reading from the
+other end of a pipe. Every library function that returns this
+error code also generates a 'SIGPIPE' signal; this signal
+terminates the program if not handled or blocked. Thus, your
+program will never actually see this code unless it has handled
+or blocked 'SIGPIPE'.</p>
+</td>
+	<td>
+		<span class="value">Value: 18</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_AGAIN"></a>
+		G_FILE_ERROR_AGAIN
+		</p>
+	</td>
+	<td><p>Resource temporarily unavailable; the call might
+work if you try again later.</p>
+</td>
+	<td>
+		<span class="value">Value: 19</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_INTR"></a>
+		G_FILE_ERROR_INTR
+		</p>
+	</td>
+	<td><p>Interrupted function call; an asynchronous signal
+occurred and prevented completion of the call. When this
+happens, you should try the call again.</p>
+</td>
+	<td>
+		<span class="value">Value: 20</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_IO"></a>
+		G_FILE_ERROR_IO
+		</p>
+	</td>
+	<td><p>Input/output error; usually used for physical read
+or write errors. i.e. the disk or other physical device hardware
+is returning errors.</p>
+</td>
+	<td>
+		<span class="value">Value: 21</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_PERM"></a>
+		G_FILE_ERROR_PERM
+		</p>
+	</td>
+	<td><p>Operation not permitted; only the owner of the
+file (or other resource) or processes with special privileges can
+perform the operation.</p>
+</td>
+	<td>
+		<span class="value">Value: 22</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_NOSYS"></a>
+		G_FILE_ERROR_NOSYS
+		</p>
+	</td>
+	<td><p>Function not implemented; this indicates that
+the system is missing some functionality.</p>
+</td>
+	<td>
+		<span class="value">Value: 23</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_FILE_ERROR_FAILED"></a>
+		G_FILE_ERROR_FAILED
+		</p>
+	</td>
+	<td><p>Does not correspond to a UNIX error code; this
+is the standard "failed for unspecified reason" error code present
+in all <a href="error_reporting.html#GError">GError</a> error code enumerations. Returned if no specific
+code applies.</p>
+</td>
+	<td>
+		<span class="value">Value: 24</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_rename">
+		
+<h3 class="constant" id="g_rename1">
+	g_rename
+</h3>
+
+		<pre class="raw_code">
+#define g_rename  rename
+</pre>
+
+<p>A wrapper for the POSIX rename function. The rename function
+renames a file, moving it between directories if required.</p>
+<p>See your C library manual for more details about how rename works
+on your system. It is not possible in general on Windows to rename
+a file that is open to some process.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_creat">
+		
+<h3 class="constant" id="g_creat1">
+	g_creat
+</h3>
+
+		<pre class="raw_code">
+#define g_creat   creat
+</pre>
+
+<p>A wrapper for the POSIX creat function. The creat function is
+used to convert a pathname into a file descriptor, creating a file
+if necessary.</p>
+<p>On POSIX systems file descriptors are implemented by the operating
+system. On Windows, it's the C library that implements creat and
+file descriptors. The actual Windows API for opening files is
+different, see MSDN documentation for CreateFile. The Win32 API
+uses file handles, which are more randomish integers, not small
+integers like file descriptors.</p>
+<p>Because file descriptors are specific to the C library on Windows,
+the file descriptor returned by this function makes sense only to
+functions in the same C library. Thus if the GLib-using code uses a
+different C library than GLib does, the file descriptor returned by
+this function cannot be passed to C library functions like write
+or read.</p>
+<p>See your C library manual for more details about creat.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_stat">
+		
+<h3 class="constant" id="g_stat1">
+	g_stat
+</h3>
+
+		<pre class="raw_code">
+#define g_stat    stat
+</pre>
+
+<p>A wrapper for the POSIX stat function. The stat function
+returns information about a file. On Windows the stat function in
+the C library checks only the FAT-style READONLY attribute and does
+not look at the ACL at all. Thus on Windows the protection bits in
+the <em>st_mode</em> field are a fabrication of little use.</p>
+<p>On Windows the Microsoft C libraries have several variants of the
+stat struct and stat function with names like _stat, _stat32,
+_stat32i64 and _stat64i32. The one used here is for 32-bit code
+the one with 32-bit size and time fields, specifically called _stat32.</p>
+<p>In Microsoft's compiler, by default struct stat means one with
+64-bit time fields while in MinGW struct stat is the legacy one
+with 32-bit fields. To hopefully clear up this messs, the gstdio.h
+header defines a type <a href="fileutils.html#GStatBuf">GStatBuf</a> which is the appropriate struct type
+depending on the platform and/or compiler being used. On POSIX it
+is just struct stat, but note that even on POSIX platforms, stat
+might be a macro.</p>
+<p>See your C library manual for more details about stat.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_chmod">
+		
+<h3 class="constant" id="g_chmod1">
+	g_chmod
+</h3>
+
+		<pre class="raw_code">
+#define g_chmod   chmod
+</pre>
+
+<p>A wrapper for the POSIX chmod function. The chmod function is
+used to set the permissions of a file system object.</p>
+<p>On Windows the file protection mechanism is not at all POSIX-like,
+and the underlying chmod function in the C library just sets or
+clears the FAT-style READONLY attribute. It does not touch any
+ACL. Software that needs to manage file permissions on Windows
+exactly should use the Win32 API.</p>
+<p>See your C library manual for more details about chmod.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_FILE_ERROR">
+		
+<h3 class="constant" id="g_file_error">
+	G_FILE_ERROR
+</h3>
+
+		<pre class="raw_code">
+#define G_FILE_ERROR g_file_error_quark ()
+</pre>
+
+<p>Error domain for file operations. Errors in this domain will
+be from the <a href="fileutils.html#GFileError">GFileError</a> enumeration. See <a href="error_reporting.html#GError">GError</a> for information
+on error domains.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_lstat">
+		
+<h3 class="constant" id="g_lstat1">
+	g_lstat
+</h3>
+
+		<pre class="raw_code">
+#define g_lstat   lstat
+</pre>
+
+<p>A wrapper for the POSIX lstat function. The lstat function is
+like stat except that in the case of symbolic links, it returns
+information about the symbolic link itself and not the file that it
+refers to. If the system does not support symbolic links <a href="fileutils.html#g_lstat">g_lstat</a>
+is identical to <a href="fileutils.html#g_stat">g_stat</a>.</p>
+<p>See your C library manual for more details about lstat.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_mkdir">
+		
+<h3 class="constant" id="g_mkdir1">
+	g_mkdir
+</h3>
+
+		<pre class="raw_code">
+#define g_mkdir   mkdir
+</pre>
+
+<p>A wrapper for the POSIX mkdir function. The mkdir function
+attempts to create a directory with the given name and permissions.
+The mode argument is ignored on Windows.</p>
+<p>See your C library manual for more details about mkdir.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.18;" id="g_utime">
+		
+<h3 class="constant" id="g_utime1">
+	g_utime
+</h3>
+
+		<pre class="raw_code">
+#define g_utime   utime
+</pre>
+
+<p>A wrapper for the POSIX utime function. The utime function
+sets the access and modification timestamps of a file.</p>
+<p>See your C library manual for more details about how utime works
+on your system.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_fopen">
+		
+<h3 class="constant" id="g_fopen1">
+	g_fopen
+</h3>
+
+		<pre class="raw_code">
+#define g_fopen   fopen
+</pre>
+
+<p>A wrapper for the stdio fopen function. The fopen function
+opens a file and associates a new stream with it.</p>
+<p>Because file descriptors are specific to the C library on Windows,
+and a file descriptor is part of the FILE struct, the FILE* returned
+by this function makes sense only to functions in the same C library.
+Thus if the GLib-using code uses a different C library than GLib does,
+the FILE* returned by this function cannot be passed to C library
+functions like fprintf or fread.</p>
+<p>See your C library manual for more details about fopen.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_open">
+		
+<h3 class="constant" id="g_open1">
+	g_open
+</h3>
+
+		<pre class="raw_code">
+#define g_open    open
+</pre>
+
+<p>A wrapper for the POSIX open function. The open function is
+used to convert a pathname into a file descriptor.</p>
+<p>On POSIX systems file descriptors are implemented by the operating
+system. On Windows, it's the C library that implements open and
+file descriptors. The actual Win32 API for opening files is quite
+different, see MSDN documentation for CreateFile. The Win32 API
+uses file handles, which are more randomish integers, not small
+integers like file descriptors.</p>
+<p>Because file descriptors are specific to the C library on Windows,
+the file descriptor returned by this function makes sense only to
+functions in the same C library. Thus if the GLib-using code uses a
+different C library than GLib does, the file descriptor returned by
+this function cannot be passed to C library functions like write
+or read.</p>
+<p>See your C library manual for more details about open.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_freopen">
+		
+<h3 class="constant" id="g_freopen1">
+	g_freopen
+</h3>
+
+		<pre class="raw_code">
+#define g_freopen freopen
+</pre>
+
+<p>A wrapper for the POSIX freopen function. The freopen function
+opens a file and associates it with an existing stream.</p>
+<p>See your C library manual for more details about freopen.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_remove">
+		
+<h3 class="constant" id="g_remove1">
+	g_remove
+</h3>
+
+		<pre class="raw_code">
+#define g_remove  remove
+</pre>
+
+<p>A wrapper for the POSIX remove function. The remove function
+deletes a name from the filesystem.</p>
+<p>See your C library manual for more details about how remove works
+on your system. On Unix, remove removes also directories, as it
+calls unlink for files and rmdir for directories. On Windows,
+although remove in the C library only works for files, this
+function tries first remove and then if that fails rmdir, and
+thus works for both files and directories. Note however, that on
+Windows, it is in general not possible to remove a file that is
+open to some process, or mapped into memory.</p>
+<p>If this function fails on Windows you can't infer too much from the
+errno value. rmdir is tried regardless of what caused remove to
+fail. Any errno value set by remove will be overwritten by that
+set by rmdir.</p>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

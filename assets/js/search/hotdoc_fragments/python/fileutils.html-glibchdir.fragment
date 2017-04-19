@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/fileutils.html#glibchdir", "fragment": "GLib.chdir \nA wrapper for the POSIX chdir function. The function changes the current directory of the process to path. \nSee your C library manual for more details about chdir. \n"});

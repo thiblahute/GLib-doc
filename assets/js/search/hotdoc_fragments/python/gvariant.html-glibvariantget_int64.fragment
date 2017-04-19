@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvariant.html#glibvariantget_int64", "fragment": "GLib.Variant.get_int64 \nReturns the bit signed integer value of value. \nIt is an error to call this function with a value of any type other than G_VARIANT_TYPE_INT64 not introspectable \n"});

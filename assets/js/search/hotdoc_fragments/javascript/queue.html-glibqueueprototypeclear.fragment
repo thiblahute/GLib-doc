@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/queue.html#glibqueueprototypeclear", "fragment": "GLib.Queue.prototype.clear \nRemoves all the elements in queue. If queue elements contain dynamically allocated memory they should be freed first. \n"});

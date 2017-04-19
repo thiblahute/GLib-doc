@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gregex.html#g_regex_get_pattern1", "fragment": "g_regex_get_pattern \nGets the pattern string associated with regex i.e. a copy of the string passed to g_regex_new. \n"});

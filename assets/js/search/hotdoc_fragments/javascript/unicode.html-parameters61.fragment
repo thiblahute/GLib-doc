@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/unicode.html#parameters61", "fragment": "str \na UTF encoded string \nlen \nthe maximum length number of bytes of str to use. If len then the string is nul terminated. \n"});

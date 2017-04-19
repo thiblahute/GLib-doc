@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#G_IO_FLAG_IS_READABLE", "fragment": "indicates that the io channel is readable. This flag cannot be changed. \nGLib.IOFlags.is_writable \n"});

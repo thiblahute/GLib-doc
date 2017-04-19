@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#glibprototypedate_valid_year", "fragment": "GLib.prototype.date_valid_year \nReturns true if the year is valid. Any year greater than is valid though there is a bit limit to what GLib.Date will understand. \n"});

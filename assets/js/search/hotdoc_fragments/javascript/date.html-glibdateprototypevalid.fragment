@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#glibdateprototypevalid", "fragment": "GLib.Date.prototype.valid \nReturns true if the GLib.Date represents an existing day. The date must not contain garbage it should have been initialized with GLib.Date.prototype.clear if it wasn t allocated by one of the GLib.Date.prototype.new variants. \n"});

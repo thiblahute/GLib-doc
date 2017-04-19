@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date.html#g_date_to_struct_tm1", "fragment": "g_date_to_struct_tm \nFills in the date related bits of a struct tm using the date value. Initializes the non date parts with something sane but meaningless. \n"});

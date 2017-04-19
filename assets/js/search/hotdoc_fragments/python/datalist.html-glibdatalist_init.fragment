@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/datalist.html#glibdatalist_init", "fragment": "GLib.datalist_init \nResets the datalist to None. It does not free any memory or call any destroy functions. \n"});

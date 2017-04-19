@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/markup.html#g_markup_parse_context_get_user_data", "fragment": "GLib.MarkupParseContext.prototype.get_user_data \nReturns the user_data associated with context. \nThis will either be the user_data that was provided to GLib.MarkupParseContext.prototype.new or to the most recent call of GLib.MarkupParseContext.prototype.push. \n"});

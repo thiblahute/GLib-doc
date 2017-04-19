@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvariant.html#glibvariantdup_bytestring", "fragment": "GLib.Variant.dup_bytestring \nSimilar to GLib.Variant.get_bytestring except that instead of returning a constant string the string is duplicated. \nThe return value must be freed using GLib.free. \n"});

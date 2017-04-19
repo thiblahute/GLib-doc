@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#parameters28", "fragment": "channel \na GIOChannel \nbuffer \na GString into which the line will be written. If buffer already contains data the old data will be overwritten. \nterminator_pos \nlocation to store position of line terminator or NULL \n"});

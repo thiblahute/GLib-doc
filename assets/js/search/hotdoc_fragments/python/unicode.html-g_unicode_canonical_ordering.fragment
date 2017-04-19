@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#g_unicode_canonical_ordering", "fragment": "GLib.unicode_canonical_ordering \nComputes the canonical ordering of a string in place. This rearranges decomposed characters in the string according to their combining classes. See the Unicode manual for more information. \n"});

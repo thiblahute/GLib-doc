@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/memory.html#glibprototypemem_profile", "fragment": "GLib.prototype.mem_profile \nGLib used to support some tools for memory profiling but this no longer works. There are many other useful tools for memory profiling these days which can be used instead. \ndeprecated Use other memory profiling tools instead \n"});

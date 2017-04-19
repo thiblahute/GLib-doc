@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gregex.html#g_regex_get_max_lookbehind1", "fragment": "g_regex_get_max_lookbehind \nGets the number of characters in the longest lookbehind assertion in the pattern. This information is useful when doing multi segment matching using the partial matching facilities. \n"});

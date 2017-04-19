@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays.html#parameters12", "fragment": "zero_terminated \nTRUE if the array should have an extra element at the end which is set to \nclear_ \nTRUE if GArray elements should be automatically cleared to when they are allocated \nelement_size \nthe size of each element in bytes \n"});

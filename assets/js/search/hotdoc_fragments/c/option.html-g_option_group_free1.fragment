@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/option.html#g_option_group_free1", "fragment": "g_option_group_free \nFrees a GOptionGroup. Note that you must not free groups which have been added to a GOptionContext. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hash_tables.html#g_double_hash1", "fragment": "g_double_hash \nConverts a pointer to a gdouble to a hash value. It can be passed to g_hash_table_new as the hash_func parameter It can be passed to g_hash_table_new as the hash_func parameter when using non NULL pointers to doubles as keys in a GHashTable. \n"});

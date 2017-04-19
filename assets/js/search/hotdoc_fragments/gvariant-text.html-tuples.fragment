@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "gvariant-text.html#tuples", "fragment": "Tuples \nTuples are formed using the same syntax as Python. Here are some examples \nparses as the empty tuple. \nis a tuple containing a single value. \nhello is a pair. Note that values of different types are permitted. \n"});

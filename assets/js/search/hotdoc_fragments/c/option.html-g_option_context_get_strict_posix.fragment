@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/option.html#g_option_context_get_strict_posix", "fragment": "g_option_context_get_strict_posix \nReturns whether strict POSIX code is enabled. \nSee g_option_context_set_strict_posix for more information. \n"});

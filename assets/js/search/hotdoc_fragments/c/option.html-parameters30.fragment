@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/option.html#parameters30", "fragment": "context \nThe active GOptionContext \ngroup \nThe group to which the function belongs \ndata \nUser data added to the GOptionGroup containing the option when it was created with g_option_group_new \n"});

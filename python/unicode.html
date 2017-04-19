@@ -1,0 +1,8932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>unicode</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="unicode.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="python">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="unicode.markdown">
+    </div>
+        
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf8_prev_char">
+		
+<h3 id="glibutf8_prev_char">
+	<span><code>GLib.utf8_prev_char</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_prev_char (p):
+    #python wrapper for 'g_utf8_prev_char'</pre>
+
+<p>Finds the previous UTF-8 character in the string before <em>p</em>.</p>
+<p><em>p</em> does not have to be at the beginning of a UTF-8 character. No check
+is made to see if the character found is actually valid other than
+it starts with an appropriate byte. If <em>p</em> might be the first
+character of the string, you must use <a href="unicode.html#g_utf8_find_prev_char">GLib.utf8_find_prev_char</a> instead.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>p:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a position within a UTF-8 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to the found character</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf8_find_prev_char">
+		
+<h3 id="glibutf8_find_prev_char">
+	<span><code>GLib.utf8_find_prev_char</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_find_prev_char (str, p):
+    #python wrapper for 'g_utf8_find_prev_char'</pre>
+
+<p>Given a position <em>p</em> with a UTF-8 encoded string <em>str</em>, find the start
+of the previous UTF-8 character starting before <em>p</em>. Returns <a href="https://docs.python.org/2/library/constants.html#None">None</a> if no
+UTF-8 characters are present in <em>str</em> before <em>p</em>.</p>
+<p><em>p</em> does not have to be at the beginning of a UTF-8 character. No check
+is made to see if the character found is actually valid other than
+it starts with an appropriate byte.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>pointer to the beginning of a UTF-8 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>p:</code></em></i>
+		</p>
+	</td>
+		<td><p>pointer to some position within <em>str</em></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to the found character or <a href="https://docs.python.org/2/library/constants.html#None">None</a>.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_type">
+		
+<h3 id="glibunichar_type">
+	<span><code>GLib.unichar_type</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_type (c):
+    #python wrapper for 'g_unichar_type'</pre>
+
+<p>Classifies a Unicode character by type.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the type of the character.</p>
+
+	</td>
+	<td>
+		<a title="GLib.UnicodeType" href="unicode.html#GUnicodeType">GLib.UnicodeType</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_isalnum">
+		
+<h3 id="glibunichar_isalnum">
+	<span><code>GLib.unichar_isalnum</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_isalnum (c):
+    #python wrapper for 'g_unichar_isalnum'</pre>
+
+<p>Determines whether a character is alphanumeric.
+Given some UTF-8 text, obtain a character value
+with <a href="unicode.html#g_utf8_get_char">GLib.utf8_get_char</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if <em>c</em> is an alphanumeric character</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_validate">
+		
+<h3 id="glibunichar_validate">
+	<span><code>GLib.unichar_validate</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_validate (ch):
+    #python wrapper for 'g_unichar_validate'</pre>
+
+<p>Checks whether <em>ch</em> is a valid Unicode character. Some possible
+integer values of <em>ch</em> will not be valid. 0 is considered a valid
+character, though it's normally a string terminator.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>ch:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if <em>ch</em> is a valid Unicode character</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_isalpha">
+		
+<h3 id="glibunichar_isalpha">
+	<span><code>GLib.unichar_isalpha</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_isalpha (c):
+    #python wrapper for 'g_unichar_isalpha'</pre>
+
+<p>Determines whether a character is alphabetic (i.e. a letter).
+Given some UTF-8 text, obtain a character value with
+<a href="unicode.html#g_utf8_get_char">GLib.utf8_get_char</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if <em>c</em> is an alphabetic character</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_isupper">
+		
+<h3 id="glibunichar_isupper">
+	<span><code>GLib.unichar_isupper</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_isupper (c):
+    #python wrapper for 'g_unichar_isupper'</pre>
+
+<p>Determines if a character is uppercase.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if <em>c</em> is an uppercase character</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_unichar_get_script">
+		
+<h3 id="glibunichar_get_script">
+	<span><code>GLib.unichar_get_script</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_get_script (ch):
+    #python wrapper for 'g_unichar_get_script'</pre>
+
+<p>Looks up the <a href="unicode.html#GUnicodeScript">GLib.UnicodeScript</a> for a particular character (as defined
+by Unicode Standard Annex #24). No check is made for <em>ch</em> being a
+valid Unicode character; if you pass in invalid character, the
+result is undefined.</p>
+<p>This function is equivalent to pango_script_for_unichar and the
+two are interchangeable.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>ch:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="unicode.html#GUnicodeScript">GLib.UnicodeScript</a> for the character.</p>
+
+	</td>
+	<td>
+		<a title="GLib.UnicodeScript" href="unicode.html#GUnicodeScript">GLib.UnicodeScript</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf8_casefold">
+		
+<h3 id="glibutf8_casefold">
+	<span><code>GLib.utf8_casefold</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_casefold (str, len):
+    #python wrapper for 'g_utf8_casefold'</pre>
+
+<p>Converts a string into a form that is independent of case. The
+result will not correspond to any particular case, but can be
+compared for equality or ordered with the results of calling
+<a href="unicode.html#g_utf8_casefold">GLib.utf8_casefold</a> on other strings.</p>
+<p>Note that calling <a href="unicode.html#g_utf8_casefold">GLib.utf8_casefold</a> followed by <a href="unicode.html#g_utf8_collate">GLib.utf8_collate</a> is
+only an approximation to the correct linguistic case insensitive
+ordering, though it is a fairly good one. Getting this exactly
+right would require a more sophisticated collation function that
+takes case sensitivity into account. GLib does not currently
+provide such a function.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UTF-8 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>str</em>, in bytes, or -1 if <em>str</em> is nul-terminated.</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string, that is a
+case independent form of <em>str</em>.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.2;" id="g_utf8_strreverse">
+		
+<h3 id="glibutf8_strreverse">
+	<span><code>GLib.utf8_strreverse</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_strreverse (str, len):
+    #python wrapper for 'g_utf8_strreverse'</pre>
+
+<p>Reverses a UTF-8 string. <em>str</em> must be valid UTF-8 encoded text.
+(Use <a href="unicode.html#g_utf8_validate">GLib.utf8_validate</a> on all text before trying to use UTF-8
+utility functions with it.)</p>
+<p>This function is intended for programmatic uses of reversed strings.
+It pays no attention to decomposed characters, combining marks, byte
+order marks, directional indicators (LRM, LRO, etc) and similar
+characters which might need special handling when reversing a string
+for display purposes.</p>
+<p>Note that unlike <a href="string_utils.html#g_strreverse">GLib.strreverse</a>, this function returns
+newly-allocated memory, which should be freed with <a href="memory.html#g_free">GLib.free</a> when
+no longer needed.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UTF-8 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum length of <em>str</em> to use, in bytes. If <em>len</em> &lt; 0,
+then the string is nul-terminated.</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated string which is the reverse of <em>str</em></p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.2
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf8_strlen">
+		
+<h3 id="glibutf8_strlen">
+	<span><code>GLib.utf8_strlen</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_strlen (p, max):
+    #python wrapper for 'g_utf8_strlen'</pre>
+
+<p>Computes the length of the string in characters, not including
+the terminating nul character. If the <em>max</em>'th byte falls in the
+middle of a character, the last (partial) character is not counted.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>p:</code></em></i>
+		</p>
+	</td>
+		<td><p>pointer to the start of a UTF-8 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>max:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum number of bytes to examine. If <em>max</em>
+is less than 0, then the string is assumed to be
+nul-terminated. If <em>max</em> is 0, <em>p</em> will not be examined and
+may be <a href="https://docs.python.org/2/library/constants.html#None">None</a>. If <em>max</em> is greater than 0, up to <em>max</em>
+bytes are examined</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the length of the string in characters</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf8_strdown">
+		
+<h3 id="glibutf8_strdown">
+	<span><code>GLib.utf8_strdown</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_strdown (str, len):
+    #python wrapper for 'g_utf8_strdown'</pre>
+
+<p>Converts all Unicode characters in the string that have a case
+to lowercase. The exact manner that this is done depends
+on the current locale, and may result in the number of
+characters in the string changing.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UTF-8 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>str</em>, in bytes, or -1 if <em>str</em> is nul-terminated.</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string, with all characters
+converted to lowercase.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_unichar_decompose">
+		
+<h3 id="glibunichar_decompose">
+	<span><code>GLib.unichar_decompose</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_decompose (ch, a, b):
+    #python wrapper for 'g_unichar_decompose'</pre>
+
+<p>Performs a single decomposition step of the
+Unicode canonical decomposition algorithm.</p>
+<p>This function does not include compatibility
+decompositions. It does, however, include algorithmic
+Hangul Jamo decomposition, as well as 'singleton'
+decompositions which replace a character by a single
+other character. In the case of singletons *@b will
+be set to zero.</p>
+<p>If <em>ch</em> is not decomposable, *@a is set to <em>ch</em> and *@b
+is set to zero.</p>
+<p>Note that the way Unicode decomposition pairs are
+defined, it is guaranteed that <em>b</em> would not decompose
+further, but <em>a</em> may itself decompose.  To get the full
+canonical decomposition for <em>ch</em>, one would need to
+recursively call this function on <em>a</em>.  Or use
+<a href="unicode.html#g_unichar_fully_decompose">GLib.unichar_fully_decompose</a>.</p>
+<p>See
+<a href="http://unicode.org/reports/tr15/">UAX#15</a>
+for details.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>ch:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>a:</code></em></i>
+		</p>
+	</td>
+		<td><p>return location for the first component of <em>ch</em></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>b:</code></em></i>
+		</p>
+	</td>
+		<td><p>return location for the second component of <em>ch</em></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the character could be decomposed</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_islower">
+		
+<h3 id="glibunichar_islower">
+	<span><code>GLib.unichar_islower</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_islower (c):
+    #python wrapper for 'g_unichar_islower'</pre>
+
+<p>Determines whether a character is a lowercase letter.
+Given some UTF-8 text, obtain a character value with
+<a href="unicode.html#g_utf8_get_char">GLib.utf8_get_char</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if <em>c</em> is a lowercase letter</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf8_collate">
+		
+<h3 id="glibutf8_collate">
+	<span><code>GLib.utf8_collate</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_collate (str1, str2):
+    #python wrapper for 'g_utf8_collate'</pre>
+
+<p>Compares two strings for ordering using the linguistically
+correct rules for the [current locale][setlocale].
+When sorting a large number of strings, it will be significantly
+faster to obtain collation keys with <a href="unicode.html#g_utf8_collate_key">GLib.utf8_collate_key</a> and
+compare the keys with strcmp when sorting instead of sorting
+the original strings.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str1:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UTF-8 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str2:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UTF-8 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>&lt; 0 if <em>str1</em> compares before <em>str2</em>,
+0 if they compare equal, &gt; 0 if <em>str1</em> compares after <em>str2</em>.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_isgraph">
+		
+<h3 id="glibunichar_isgraph">
+	<span><code>GLib.unichar_isgraph</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_isgraph (c):
+    #python wrapper for 'g_unichar_isgraph'</pre>
+
+<p>Determines whether a character is printable and not a space
+(returns <a href="https://docs.python.org/2/library/constants.html#False">False</a> for control characters, format characters, and
+spaces). <a href="unicode.html#g_unichar_isprint">GLib.unichar_isprint</a> is similar, but returns <a href="https://docs.python.org/2/library/constants.html#True">True</a> for
+spaces. Given some UTF-8 text, obtain a character value with
+<a href="unicode.html#g_utf8_get_char">GLib.utf8_get_char</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if <em>c</em> is printable unless it's a space</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_ispunct">
+		
+<h3 id="glibunichar_ispunct">
+	<span><code>GLib.unichar_ispunct</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_ispunct (c):
+    #python wrapper for 'g_unichar_ispunct'</pre>
+
+<p>Determines whether a character is punctuation or a symbol.
+Given some UTF-8 text, obtain a character value with
+<a href="unicode.html#g_utf8_get_char">GLib.utf8_get_char</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if <em>c</em> is a punctuation or symbol character</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_digit_value">
+		
+<h3 id="glibunichar_digit_value">
+	<span><code>GLib.unichar_digit_value</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_digit_value (c):
+    #python wrapper for 'g_unichar_digit_value'</pre>
+
+<p>Determines the numeric value of a character as a decimal
+digit.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>If <em>c</em> is a decimal digit (according to
+<a href="unicode.html#g_unichar_isdigit">GLib.unichar_isdigit</a>), its numeric value. Otherwise, -1.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_break_type">
+		
+<h3 id="glibunichar_break_type">
+	<span><code>GLib.unichar_break_type</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_break_type (c):
+    #python wrapper for 'g_unichar_break_type'</pre>
+
+<p>Determines the break type of <em>c</em>. <em>c</em> should be a Unicode character
+(to derive a character from UTF-8 encoded text, use
+<a href="unicode.html#g_utf8_get_char">GLib.utf8_get_char</a>). The break type is used to find word and line
+breaks ("text boundaries"), Pango implements the Unicode boundary
+resolution algorithms and normally you would use a function such
+as pango_break instead of caring about break types yourself.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the break type of <em>c</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.UnicodeBreakType" href="unicode.html#GUnicodeBreakType">GLib.UnicodeBreakType</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_unicode_script_to_iso15924">
+		
+<h3 id="glibunicode_script_to_iso15924">
+	<span><code>GLib.unicode_script_to_iso15924</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unicode_script_to_iso15924 (script):
+    #python wrapper for 'g_unicode_script_to_iso15924'</pre>
+
+<p>Looks up the ISO 15924 code for <em>script</em>.  ISO 15924 assigns four-letter
+codes to scripts.  For example, the code for Arabic is 'Arab'.  The
+four letter codes are encoded as a <em>guint32</em> by this function in a
+big-endian fashion.  That is, the code returned for Arabic is
+0x41726162 (0x41 is ASCII code for 'A', 0x72 is ASCII code for 'r', etc).</p>
+<p>See
+<a href="http://unicode.org/iso15924/codelists.html">Codes for the representation of names of scripts</a>
+for details.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>script:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode script</p>
+</td>
+<td>
+<a title="GLib.UnicodeScript" href="unicode.html#GUnicodeScript">GLib.UnicodeScript</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the ISO 15924 code for <em>script</em>, encoded as an integer,
+of zero if <em>script</em> is <a href="unicode.html#G_UNICODE_SCRIPT_INVALID_CODE">GLib.UnicodeScript.invalid_code</a> or
+ISO 15924 code 'Zzzz' (script code for UNKNOWN) if <em>script</em> is not understood.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf8_collate_key">
+		
+<h3 id="glibutf8_collate_key">
+	<span><code>GLib.utf8_collate_key</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_collate_key (str, len):
+    #python wrapper for 'g_utf8_collate_key'</pre>
+
+<p>Converts a string into a collation key that can be compared
+with other collation keys produced by the same function using
+strcmp.</p>
+<p>The results of comparing the collation keys of two strings
+with strcmp will always be the same as comparing the two
+original keys with <a href="unicode.html#g_utf8_collate">GLib.utf8_collate</a>.</p>
+<p>Note that this function depends on the [current locale][setlocale].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UTF-8 encoded string.</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>str</em>, in bytes, or -1 if <em>str</em> is nul-terminated.</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string. This string should
+be freed with <a href="memory.html#g_free">GLib.free</a> when you are done with it.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_isdigit">
+		
+<h3 id="glibunichar_isdigit">
+	<span><code>GLib.unichar_isdigit</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_isdigit (c):
+    #python wrapper for 'g_unichar_isdigit'</pre>
+
+<p>Determines whether a character is numeric (i.e. a digit).  This
+covers ASCII 0-9 and also digits in other languages/scripts.  Given
+some UTF-8 text, obtain a character value with <a href="unicode.html#g_utf8_get_char">GLib.utf8_get_char</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns21">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if <em>c</em> is a digit</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_iscntrl">
+		
+<h3 id="glibunichar_iscntrl">
+	<span><code>GLib.unichar_iscntrl</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_iscntrl (c):
+    #python wrapper for 'g_unichar_iscntrl'</pre>
+
+<p>Determines whether a character is a control character.
+Given some UTF-8 text, obtain a character value with
+<a href="unicode.html#g_utf8_get_char">GLib.utf8_get_char</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns22">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if <em>c</em> is a control character</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf8_pointer_to_offset">
+		
+<h3 id="glibutf8_pointer_to_offset">
+	<span><code>GLib.utf8_pointer_to_offset</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_pointer_to_offset (str, pos):
+    #python wrapper for 'g_utf8_pointer_to_offset'</pre>
+
+<p>Converts from a pointer to position within a string to a integer
+character offset.</p>
+<p>Since 2.10, this function allows <em>pos</em> to be before <em>str</em>, and returns
+a negative offset in this case.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UTF-8 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pos:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a position within <em>str</em></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns23">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the resulting character offset</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_isprint">
+		
+<h3 id="glibunichar_isprint">
+	<span><code>GLib.unichar_isprint</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_isprint (c):
+    #python wrapper for 'g_unichar_isprint'</pre>
+
+<p>Determines whether a character is printable.
+Unlike <a href="unicode.html#g_unichar_isgraph">GLib.unichar_isgraph</a>, returns <a href="https://docs.python.org/2/library/constants.html#True">True</a> for spaces.
+Given some UTF-8 text, obtain a character value with
+<a href="unicode.html#g_utf8_get_char">GLib.utf8_get_char</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns24">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if <em>c</em> is printable</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf8_strrchr">
+		
+<h3 id="glibutf8_strrchr">
+	<span><code>GLib.utf8_strrchr</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_strrchr (p, len, c):
+    #python wrapper for 'g_utf8_strrchr'</pre>
+
+<p>Find the rightmost occurrence of the given Unicode character
+in a UTF-8 encoded string, while limiting the search to <em>len</em> bytes.
+If <em>len</em> is -1, allow unbounded search.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>p:</code></em></i>
+		</p>
+	</td>
+		<td><p>a nul-terminated UTF-8 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum length of <em>p</em></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns25">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#None">None</a> if the string does not contain the character,
+otherwise, a pointer to the start of the rightmost occurrence
+of the character in the string.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf8_normalize">
+		
+<h3 id="glibutf8_normalize">
+	<span><code>GLib.utf8_normalize</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_normalize (str, len, mode):
+    #python wrapper for 'g_utf8_normalize'</pre>
+
+<p>Converts a string into canonical form, standardizing
+such issues as whether a character with an accent
+is represented as a base character and combining
+accent or as a single precomposed character. The
+string has to be valid UTF-8, otherwise <a href="https://docs.python.org/2/library/constants.html#None">None</a> is
+returned. You should generally call <a href="unicode.html#g_utf8_normalize">GLib.utf8_normalize</a>
+before comparing two Unicode strings.</p>
+<p>The normalization mode <a href="unicode.html#G_NORMALIZE_DEFAULT">GLib.NormalizeMode.default</a> only
+standardizes differences that do not affect the
+text content, such as the above-mentioned accent
+representation. <a href="unicode.html#G_NORMALIZE_ALL">GLib.NormalizeMode.all</a> also standardizes
+the "compatibility" characters in Unicode, such
+as SUPERSCRIPT THREE to the standard forms
+(in this case DIGIT THREE). Formatting information
+may be lost but for most text operations such
+characters should be considered the same.</p>
+<p><a href="unicode.html#G_NORMALIZE_DEFAULT_COMPOSE">GLib.NormalizeMode.default_compose</a> and <a href="unicode.html#G_NORMALIZE_ALL_COMPOSE">GLib.NormalizeMode.all_compose</a>
+are like <a href="unicode.html#G_NORMALIZE_DEFAULT">GLib.NormalizeMode.default</a> and <a href="unicode.html#G_NORMALIZE_ALL">GLib.NormalizeMode.all</a>,
+but returned a result with composed forms rather
+than a maximally decomposed form. This is often
+useful if you intend to convert the string to
+a legacy encoding or pass it to a system with
+less capable Unicode handling.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UTF-8 encoded string.</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>str</em>, in bytes, or -1 if <em>str</em> is nul-terminated.</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mode:</code></em></i>
+		</p>
+	</td>
+		<td><p>the type of normalization to perform.</p>
+</td>
+<td>
+<a title="GLib.NormalizeMode" href="unicode.html#GNormalizeMode">GLib.NormalizeMode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns26">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string, that is the
+normalized form of <em>str</em>, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> if <em>str</em> is not
+valid UTF-8.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ucs4_to_utf16">
+		
+<h3 id="glibucs4_to_utf16">
+	<span><code>GLib.ucs4_to_utf16</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.ucs4_to_utf16 (str, len):
+    #python wrapper for 'g_ucs4_to_utf16'</pre>
+
+<p>Convert a string from UCS-4 to UTF-16. A 0 character will be
+added to the result after the converted text.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UCS-4 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum length (number of characters) of <em>str</em> to use.
+If <em>len</em> &lt; 0, then the string is nul-terminated.</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to a newly allocated UTF-16 string.
+This value must be freed with <a href="memory.html#g_free">GLib.free</a>. If an error occurs,
+<a href="https://docs.python.org/2/library/constants.html#None">None</a> will be returned and <em>error</em> set.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>items_read:</i>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to a newly allocated UTF-16 string.
+This value must be freed with <a href="memory.html#g_free">GLib.free</a>. If an error occurs,
+<a href="https://docs.python.org/2/library/constants.html#None">None</a> will be returned and <em>error</em> set.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>items_written:</i>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to a newly allocated UTF-16 string.
+This value must be freed with <a href="memory.html#g_free">GLib.free</a>. If an error occurs,
+<a href="https://docs.python.org/2/library/constants.html#None">None</a> will be returned and <em>error</em> set.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf8_to_ucs4_fast">
+		
+<h3 id="glibutf8_to_ucs4_fast">
+	<span><code>GLib.utf8_to_ucs4_fast</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_to_ucs4_fast (str, len):
+    #python wrapper for 'g_utf8_to_ucs4_fast'</pre>
+
+<p>Convert a string from UTF-8 to a 32-bit fixed width
+representation as UCS-4, assuming valid UTF-8 input.
+This function is roughly twice as fast as <a href="unicode.html#g_utf8_to_ucs4">GLib.utf8_to_ucs4</a>
+but does no error checking on the input. A trailing 0 character
+will be added to the string after the converted text.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters28">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UTF-8 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum length of <em>str</em> to use, in bytes. If <em>len</em> &lt; 0,
+then the string is nul-terminated.</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of1">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to a newly allocated UCS-4 string.
+This value must be freed with <a href="memory.html#g_free">GLib.free</a>.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>items_written:</i>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to a newly allocated UCS-4 string.
+This value must be freed with <a href="memory.html#g_free">GLib.free</a>.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_tolower">
+		
+<h3 id="glibunichar_tolower">
+	<span><code>GLib.unichar_tolower</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_tolower (c):
+    #python wrapper for 'g_unichar_tolower'</pre>
+
+<p>Converts a character to lower case.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters29">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character.</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns27">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the result of converting <em>c</em> to lower case.
+If <em>c</em> is not an upperlower or titlecase character,
+or has no lowercase equivalent <em>c</em> is returned unchanged.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_to_utf8">
+		
+<h3 id="glibunichar_to_utf8">
+	<span><code>GLib.unichar_to_utf8</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_to_utf8 (c):
+    #python wrapper for 'g_unichar_to_utf8'</pre>
+
+<p>Converts a single character to UTF-8.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters30">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character code</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of2">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>number of bytes written</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>outbuf:</i>
+				</p>
+	</td>
+	<td>
+		<p>number of bytes written</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_isspace">
+		
+<h3 id="glibunichar_isspace">
+	<span><code>GLib.unichar_isspace</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_isspace (c):
+    #python wrapper for 'g_unichar_isspace'</pre>
+
+<p>Determines whether a character is a space, tab, or line separator
+(newline, carriage return, etc.).  Given some UTF-8 text, obtain a
+character value with <a href="unicode.html#g_utf8_get_char">GLib.utf8_get_char</a>.</p>
+<p>(Note: don't use this to do word breaking; you have to use
+Pango or equivalent to get word breaking right, the algorithm
+is fairly complex.)</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters31">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns28">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if <em>c</em> is a space character</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.30;" id="g_unicode_canonical_decomposition">
+		
+<h3 id="glibunicode_canonical_decomposition">
+	<span><code>GLib.unicode_canonical_decomposition</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unicode_canonical_decomposition (ch, result_len):
+    #python wrapper for 'g_unicode_canonical_decomposition'</pre>
+
+<p>Computes the canonical decomposition of a Unicode character.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters32">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>ch:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character.</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>result_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>location to store the length of the return value.</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns29">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string of Unicode characters.
+<em>result_len</em> is set to the resulting length of the string.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	deprecated			: 2.30: Use the more flexible g_unichar_fully_decompose()
+   instead.
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf8_get_char_validated">
+		
+<h3 id="glibutf8_get_char_validated">
+	<span><code>GLib.utf8_get_char_validated</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_get_char_validated (p, max_len):
+    #python wrapper for 'g_utf8_get_char_validated'</pre>
+
+<p>Convert a sequence of bytes encoded as UTF-8 to a Unicode character.
+This function checks for incomplete characters, for invalid characters
+such as characters that are out of the range of Unicode, and for
+overlong encodings of valid characters.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters33">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>p:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to Unicode character encoded as UTF-8</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>max_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum number of bytes to read, or -1 if <em>p</em> is nul-terminated</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns30">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the resulting character. If <em>p</em> points to a partial
+sequence at the end of a string that could begin a valid
+character (or if <em>max_len</em> is zero), returns (gunichar)-2;
+otherwise, if <em>p</em> does not point to a valid UTF-8 encoded
+Unicode character, returns (gunichar)-1.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf8_find_next_char">
+		
+<h3 id="glibutf8_find_next_char">
+	<span><code>GLib.utf8_find_next_char</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_find_next_char (p, end):
+    #python wrapper for 'g_utf8_find_next_char'</pre>
+
+<p>Finds the start of the next UTF-8 character in the string after <em>p</em>.</p>
+<p><em>p</em> does not have to be at the beginning of a UTF-8 character. No check
+is made to see if the character found is actually valid other than
+it starts with an appropriate byte.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters34">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>p:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a position within a UTF-8 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>end:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to the byte following the end of the string,
+or <a href="https://docs.python.org/2/library/constants.html#None">None</a> to indicate that the string is nul-terminated</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns31">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to the found character or <a href="https://docs.python.org/2/library/constants.html#None">None</a></p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_totitle">
+		
+<h3 id="glibunichar_totitle">
+	<span><code>GLib.unichar_totitle</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_totitle (c):
+    #python wrapper for 'g_unichar_totitle'</pre>
+
+<p>Converts a character to the titlecase.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters35">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns32">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the result of converting <em>c</em> to titlecase.
+If <em>c</em> is not an uppercase or lowercase character,
+<em>c</em> is returned unchanged.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_unicode_script_from_iso15924">
+		
+<h3 id="glibunicode_script_from_iso15924">
+	<span><code>GLib.unicode_script_from_iso15924</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unicode_script_from_iso15924 (iso15924):
+    #python wrapper for 'g_unicode_script_from_iso15924'</pre>
+
+<p>Looks up the Unicode script for <em>iso15924</em>.  ISO 15924 assigns four-letter
+codes to scripts.  For example, the code for Arabic is 'Arab'.
+This function accepts four letter codes encoded as a <em>guint32</em> in a
+big-endian fashion.  That is, the code expected for Arabic is
+0x41726162 (0x41 is ASCII code for 'A', 0x72 is ASCII code for 'r', etc).</p>
+<p>See
+<a href="http://unicode.org/iso15924/codelists.html">Codes for the representation of names of scripts</a>
+for details.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters36">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iso15924:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode script</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns33">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the Unicode script for <em>iso15924</em>, or
+of <a href="unicode.html#G_UNICODE_SCRIPT_INVALID_CODE">GLib.UnicodeScript.invalid_code</a> if <em>iso15924</em> is zero and
+<a href="unicode.html#G_UNICODE_SCRIPT_UNKNOWN">GLib.UnicodeScript.unknown</a> if <em>iso15924</em> is unknown.</p>
+
+	</td>
+	<td>
+		<a title="GLib.UnicodeScript" href="unicode.html#GUnicodeScript">GLib.UnicodeScript</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_istitle">
+		
+<h3 id="glibunichar_istitle">
+	<span><code>GLib.unichar_istitle</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_istitle (c):
+    #python wrapper for 'g_unichar_istitle'</pre>
+
+<p>Determines if a character is titlecase. Some characters in
+Unicode which are composites, such as the DZ digraph
+have three case variants instead of just two. The titlecase
+form is used at the beginning of a word where only the
+first letter is capitalized. The titlecase form of the DZ
+digraph is U+01F2 LATIN CAPITAL LETTTER D WITH SMALL LETTER Z.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters37">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns34">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the character is titlecase</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_unichar_fully_decompose">
+		
+<h3 id="glibunichar_fully_decompose">
+	<span><code>GLib.unichar_fully_decompose</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_fully_decompose (ch, compat, result, result_len):
+    #python wrapper for 'g_unichar_fully_decompose'</pre>
+
+<p>Computes the canonical or compatibility decomposition of a
+Unicode character.  For compatibility decomposition,
+pass <a href="https://docs.python.org/2/library/constants.html#True">True</a> for <em>compat</em>; for canonical decomposition
+pass <a href="https://docs.python.org/2/library/constants.html#False">False</a> for <em>compat</em>.</p>
+<p>The decomposed sequence is placed in <em>result</em>.  Only up to
+<em>result_len</em> characters are written into <em>result</em>.  The length
+of the full decomposition (irrespective of <em>result_len</em>) is
+returned by the function.  For canonical decomposition,
+currently all decompositions are of length at most 4, but
+this may change in the future (very unlikely though).
+At any rate, Unicode does guarantee that a buffer of length
+18 is always enough for both compatibility and canonical
+decompositions, so that is the size recommended. This is provided
+as <a href="unicode.html#G_UNICHAR_MAX_DECOMPOSITION_LENGTH">GLib.UNICHAR_MAX_DECOMPOSITION_LENGTH</a>.</p>
+<p>See
+<a href="http://unicode.org/reports/tr15/">UAX#15</a>
+for details.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters38">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>ch:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character.</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>compat:</code></em></i>
+		</p>
+	</td>
+		<td><p>whether perform canonical or compatibility decomposition</p>
+</td>
+<td>
+<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>result:</code></em></i>
+		</p>
+	</td>
+		<td><p>location to store decomposed result, or <a href="https://docs.python.org/2/library/constants.html#None">None</a></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>result_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>result</em></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns35">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the length of the full decomposition.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_unichar_compose">
+		
+<h3 id="glibunichar_compose">
+	<span><code>GLib.unichar_compose</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_compose (a, b, ch):
+    #python wrapper for 'g_unichar_compose'</pre>
+
+<p>Performs a single composition step of the
+Unicode canonical composition algorithm.</p>
+<p>This function includes algorithmic Hangul Jamo composition,
+but it is not exactly the inverse of <a href="unicode.html#g_unichar_decompose">GLib.unichar_decompose</a>.
+No composition can have either of <em>a</em> or <em>b</em> equal to zero.
+To be precise, this function composes if and only if
+there exists a Primary Composite P which is canonically
+equivalent to the sequence &lt;@a,@b&gt;.  See the Unicode
+Standard for the definition of Primary Composite.</p>
+<p>If <em>a</em> and <em>b</em> do not compose a new character, <em>ch</em> is set to zero.</p>
+<p>See
+<a href="http://unicode.org/reports/tr15/">UAX#15</a>
+for details.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters39">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>a:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>b:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>ch:</code></em></i>
+		</p>
+	</td>
+		<td><p>return location for the composed character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns36">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the characters could be composed</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_unichar_get_mirror_char">
+		
+<h3 id="glibunichar_get_mirror_char">
+	<span><code>GLib.unichar_get_mirror_char</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_get_mirror_char (ch, mirrored_ch):
+    #python wrapper for 'g_unichar_get_mirror_char'</pre>
+
+<p>In Unicode, some characters are "mirrored". This means that their
+images are mirrored horizontally in text that is laid out from right
+to left. For instance, "(" would become its mirror image, ")", in
+right-to-left text.</p>
+<p>If <em>ch</em> has the Unicode mirrored property and there is another unicode
+character that typically has a glyph that is the mirror image of <em>ch</em>'s
+glyph and <em>mirrored_ch</em> is set, it puts that character in the address
+pointed to by <em>mirrored_ch</em>.  Otherwise the original character is put.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters40">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>ch:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>mirrored_ch:</code></em></i>
+		</p>
+	</td>
+		<td><p>location to store the mirrored character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns37">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if <em>ch</em> has a mirrored character, <a href="https://docs.python.org/2/library/constants.html#False">False</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_unichar_ismark">
+		
+<h3 id="glibunichar_ismark">
+	<span><code>GLib.unichar_ismark</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_ismark (c):
+    #python wrapper for 'g_unichar_ismark'</pre>
+
+<p>Determines whether a character is a mark (non-spacing mark,
+combining mark, or enclosing mark in Unicode speak).
+Given some UTF-8 text, obtain a character value
+with <a href="unicode.html#g_utf8_get_char">GLib.utf8_get_char</a>.</p>
+<p>Note: in most cases where isalpha characters are allowed,
+ismark characters should be allowed to as they are essential
+for writing most European languages as well as many non-Latin
+scripts.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters41">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns38">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if <em>c</em> is a mark character</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf8_validate">
+		
+<h3 id="glibutf8_validate">
+	<span><code>GLib.utf8_validate</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_validate (str, max_len):
+    #python wrapper for 'g_utf8_validate'</pre>
+
+<p>Validates UTF-8 encoded text. <em>str</em> is the text to validate;
+if <em>str</em> is nul-terminated, then <em>max_len</em> can be -1, otherwise
+<em>max_len</em> should be the number of bytes to validate.
+If <em>end</em> is non-%NULL, then the end of the valid range
+will be stored there (i.e. the start of the first invalid
+character if some bytes were invalid, or the end of the text
+being validated otherwise).</p>
+<p>Note that <a href="unicode.html#g_utf8_validate">GLib.utf8_validate</a> returns <a href="https://docs.python.org/2/library/constants.html#False">False</a> if <em>max_len</em> is
+positive and any of the <em>max_len</em> bytes are nul.</p>
+<p>Returns <a href="https://docs.python.org/2/library/constants.html#True">True</a> if all of <em>str</em> was valid. Many GLib and GTK+
+routines require valid UTF-8 as input; so data read from a file
+or the network should be checked with <a href="unicode.html#g_utf8_validate">GLib.utf8_validate</a> before
+doing anything else with it.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters42">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to character data</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>max_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>max bytes to validate, or -1 to go until NUL</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of3">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the text was valid UTF-8</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>end:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the text was valid UTF-8</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_utf8_substring">
+		
+<h3 id="glibutf8_substring">
+	<span><code>GLib.utf8_substring</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_substring (str, start_pos, end_pos):
+    #python wrapper for 'g_utf8_substring'</pre>
+
+<p>Copies a substring out of a UTF-8 encoded string.
+The substring will contain <em>end_pos</em> - <em>start_pos</em> characters.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters43">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UTF-8 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>start_pos:</code></em></i>
+		</p>
+	</td>
+		<td><p>a character offset within <em>str</em></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>end_pos:</code></em></i>
+		</p>
+	</td>
+		<td><p>another character offset within <em>str</em></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns39">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated copy of the requested
+substring. Free with <a href="memory.html#g_free">GLib.free</a> when no longer needed.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf16_to_ucs4">
+		
+<h3 id="glibutf16_to_ucs4">
+	<span><code>GLib.utf16_to_ucs4</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.utf16_to_ucs4 (str, len):
+    #python wrapper for 'g_utf16_to_ucs4'</pre>
+
+<p>Convert a string from UTF-16 to UCS-4. The result will be
+nul-terminated.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters44">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UTF-16 encoded string</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum length (number of gunichar2) of <em>str</em> to use.
+If <em>len</em> &lt; 0, then the string is nul-terminated.</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of4">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to a newly allocated UCS-4 string.
+This value must be freed with <a href="memory.html#g_free">GLib.free</a>. If an error occurs,
+<a href="https://docs.python.org/2/library/constants.html#None">None</a> will be returned and <em>error</em> set.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>items_read:</i>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to a newly allocated UCS-4 string.
+This value must be freed with <a href="memory.html#g_free">GLib.free</a>. If an error occurs,
+<a href="https://docs.python.org/2/library/constants.html#None">None</a> will be returned and <em>error</em> set.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>items_written:</i>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to a newly allocated UCS-4 string.
+This value must be freed with <a href="memory.html#g_free">GLib.free</a>. If an error occurs,
+<a href="https://docs.python.org/2/library/constants.html#None">None</a> will be returned and <em>error</em> set.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_isdefined">
+		
+<h3 id="glibunichar_isdefined">
+	<span><code>GLib.unichar_isdefined</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_isdefined (c):
+    #python wrapper for 'g_unichar_isdefined'</pre>
+
+<p>Determines if a given character is assigned in the Unicode
+standard.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters45">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns40">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the character has an assigned value</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_isxdigit">
+		
+<h3 id="glibunichar_isxdigit">
+	<span><code>GLib.unichar_isxdigit</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_isxdigit (c):
+    #python wrapper for 'g_unichar_isxdigit'</pre>
+
+<p>Determines if a character is a hexidecimal digit.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters46">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character.</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns41">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the character is a hexadecimal digit</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_iswide">
+		
+<h3 id="glibunichar_iswide">
+	<span><code>GLib.unichar_iswide</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_iswide (c):
+    #python wrapper for 'g_unichar_iswide'</pre>
+
+<p>Determines if a character is typically rendered in a double-width
+cell.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters47">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns42">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the character is wide</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf8_strncpy">
+		
+<h3 id="glibutf8_strncpy">
+	<span><code>GLib.utf8_strncpy</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_strncpy (dest, src, n):
+    #python wrapper for 'g_utf8_strncpy'</pre>
+
+<p>Like the standard C strncpy function, but copies a given number
+of characters instead of a given number of bytes. The <em>src</em> string
+must be valid UTF-8 encoded text. (Use <a href="unicode.html#g_utf8_validate">GLib.utf8_validate</a> on all
+text before trying to use UTF-8 utility functions with it.)</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters48">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dest:</code></em></i>
+		</p>
+	</td>
+		<td><p>buffer to fill with characters from <em>src</em></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>src:</code></em></i>
+		</p>
+	</td>
+		<td><p>UTF-8 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n:</code></em></i>
+		</p>
+	</td>
+		<td><p>character count</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns43">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>dest</em></p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf8_strchr">
+		
+<h3 id="glibutf8_strchr">
+	<span><code>GLib.utf8_strchr</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_strchr (p, len, c):
+    #python wrapper for 'g_utf8_strchr'</pre>
+
+<p>Finds the leftmost occurrence of the given Unicode character
+in a UTF-8 encoded string, while limiting the search to <em>len</em> bytes.
+If <em>len</em> is -1, allow unbounded search.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters49">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>p:</code></em></i>
+		</p>
+	</td>
+		<td><p>a nul-terminated UTF-8 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum length of <em>p</em></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns44">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#None">None</a> if the string does not contain the character,
+otherwise, a pointer to the start of the leftmost occurrence
+of the character in the string.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf8_strup">
+		
+<h3 id="glibutf8_strup">
+	<span><code>GLib.utf8_strup</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_strup (str, len):
+    #python wrapper for 'g_utf8_strup'</pre>
+
+<p>Converts all Unicode characters in the string that have a case
+to uppercase. The exact manner that this is done depends
+on the current locale, and may result in the number of
+characters in the string increasing. (For instance, the
+German ess-zet will be changed to SS.)</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters50">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UTF-8 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>str</em>, in bytes, or -1 if <em>str</em> is nul-terminated.</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns45">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string, with all characters
+converted to uppercase.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_unichar_iszerowidth">
+		
+<h3 id="glibunichar_iszerowidth">
+	<span><code>GLib.unichar_iszerowidth</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_iszerowidth (c):
+    #python wrapper for 'g_unichar_iszerowidth'</pre>
+
+<p>Determines if a given character typically takes zero width when rendered.
+The return value is <a href="https://docs.python.org/2/library/constants.html#True">True</a> for all non-spacing and enclosing marks
+(e.g., combining accents), format characters, zero-width
+space, but not U+00AD SOFT HYPHEN.</p>
+<p>A typical use of this function is with one of <a href="unicode.html#g_unichar_iswide">GLib.unichar_iswide</a> or
+<a href="unicode.html#g_unichar_iswide_cjk">GLib.unichar_iswide_cjk</a> to determine the number of cells a string occupies
+when displayed on a grid display (terminals).  However, note that not all
+terminals support zero-width rendering of zero-width marks.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters51">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns46">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the character has zero width</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf8_get_char">
+		
+<h3 id="glibutf8_get_char">
+	<span><code>GLib.utf8_get_char</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_get_char (p):
+    #python wrapper for 'g_utf8_get_char'</pre>
+
+<p>Converts a sequence of bytes encoded as UTF-8 to a Unicode character.</p>
+<p>If <em>p</em> does not point to a valid UTF-8 encoded character, results
+are undefined. If you are not sure that the bytes are complete
+valid Unicode characters, you should use <a href="unicode.html#g_utf8_get_char_validated">GLib.utf8_get_char_validated</a>
+instead.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters52">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>p:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to Unicode character encoded as UTF-8</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns47">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the resulting character</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_xdigit_value">
+		
+<h3 id="glibunichar_xdigit_value">
+	<span><code>GLib.unichar_xdigit_value</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_xdigit_value (c):
+    #python wrapper for 'g_unichar_xdigit_value'</pre>
+
+<p>Determines the numeric value of a character as a hexidecimal
+digit.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters53">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns48">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>If <em>c</em> is a hex digit (according to
+<a href="unicode.html#g_unichar_isxdigit">GLib.unichar_isxdigit</a>), its numeric value. Otherwise, -1.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf16_to_utf8">
+		
+<h3 id="glibutf16_to_utf8">
+	<span><code>GLib.utf16_to_utf8</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.utf16_to_utf8 (str, len):
+    #python wrapper for 'g_utf16_to_utf8'</pre>
+
+<p>Convert a string from UTF-16 to UTF-8. The result will be
+terminated with a 0 byte.</p>
+<p>Note that the input is expected to be already in native endianness,
+an initial byte-order-mark character is not handled specially.
+<a href="conversions.html#g_convert">GLib.convert</a> can be used to convert a byte buffer of UTF-16 data of
+ambiguous endianess.</p>
+<p>Further note that this function does not validate the result
+string; it may e.g. include embedded NUL characters. The only
+validation done by this function is to ensure that the input can
+be correctly interpreted as UTF-16, i.e. it doesn't contain
+things unpaired surrogates.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters54">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UTF-16 encoded string</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum length (number of gunichar2) of <em>str</em> to use.
+If <em>len</em> &lt; 0, then the string is nul-terminated.</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of5">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to a newly allocated UTF-8 string.
+This value must be freed with <a href="memory.html#g_free">GLib.free</a>. If an error occurs,
+<a href="https://docs.python.org/2/library/constants.html#None">None</a> will be returned and <em>error</em> set.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>items_read:</i>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to a newly allocated UTF-8 string.
+This value must be freed with <a href="memory.html#g_free">GLib.free</a>. If an error occurs,
+<a href="https://docs.python.org/2/library/constants.html#None">None</a> will be returned and <em>error</em> set.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>items_written:</i>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to a newly allocated UTF-8 string.
+This value must be freed with <a href="memory.html#g_free">GLib.free</a>. If an error occurs,
+<a href="https://docs.python.org/2/library/constants.html#None">None</a> will be returned and <em>error</em> set.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf8_offset_to_pointer">
+		
+<h3 id="glibutf8_offset_to_pointer">
+	<span><code>GLib.utf8_offset_to_pointer</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_offset_to_pointer (str, offset):
+    #python wrapper for 'g_utf8_offset_to_pointer'</pre>
+
+<p>Converts from an integer character offset to a pointer to a position
+within the string.</p>
+<p>Since 2.10, this function allows to pass a negative <em>offset</em> to
+step backwards. It is usually worth stepping backwards from the end
+instead of forwards if <em>offset</em> is in the last fourth of the string,
+since moving forward is about 3 times faster than moving backward.</p>
+<p>Note that this function doesn't abort when reaching the end of <em>str</em>.
+Therefore you should be sure that <em>offset</em> is within string boundaries
+before calling that function. Call <a href="unicode.html#g_utf8_strlen">GLib.utf8_strlen</a> when unsure.
+This limitation exists as this function is called frequently during
+text rendering and therefore has to be as fast as possible.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters55">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UTF-8 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>offset:</code></em></i>
+		</p>
+	</td>
+		<td><p>a character offset within <em>str</em></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns49">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the resulting pointer</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ucs4_to_utf8">
+		
+<h3 id="glibucs4_to_utf8">
+	<span><code>GLib.ucs4_to_utf8</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.ucs4_to_utf8 (str, len):
+    #python wrapper for 'g_ucs4_to_utf8'</pre>
+
+<p>Convert a string from a 32-bit fixed width representation as UCS-4.
+to UTF-8. The result will be terminated with a 0 byte.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters56">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UCS-4 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum length (number of characters) of <em>str</em> to use.
+If <em>len</em> &lt; 0, then the string is nul-terminated.</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of6">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to a newly allocated UTF-8 string.
+This value must be freed with <a href="memory.html#g_free">GLib.free</a>. If an error occurs,
+<a href="https://docs.python.org/2/library/constants.html#None">None</a> will be returned and <em>error</em> set. In that case, <em>items_read</em>
+will be set to the position of the first invalid input character.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>items_read:</i>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to a newly allocated UTF-8 string.
+This value must be freed with <a href="memory.html#g_free">GLib.free</a>. If an error occurs,
+<a href="https://docs.python.org/2/library/constants.html#None">None</a> will be returned and <em>error</em> set. In that case, <em>items_read</em>
+will be set to the position of the first invalid input character.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>items_written:</i>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to a newly allocated UTF-8 string.
+This value must be freed with <a href="memory.html#g_free">GLib.free</a>. If an error occurs,
+<a href="https://docs.python.org/2/library/constants.html#None">None</a> will be returned and <em>error</em> set. In that case, <em>items_read</em>
+will be set to the position of the first invalid input character.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_unichar_combining_class">
+		
+<h3 id="glibunichar_combining_class">
+	<span><code>GLib.unichar_combining_class</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_combining_class (uc):
+    #python wrapper for 'g_unichar_combining_class'</pre>
+
+<p>Determines the canonical combining class of a Unicode character.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters57">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uc:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns50">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the combining class of the character</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf8_to_ucs4">
+		
+<h3 id="glibutf8_to_ucs4">
+	<span><code>GLib.utf8_to_ucs4</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.utf8_to_ucs4 (str, len):
+    #python wrapper for 'g_utf8_to_ucs4'</pre>
+
+<p>Convert a string from UTF-8 to a 32-bit fixed width
+representation as UCS-4. A trailing 0 character will be added to the
+string after the converted text.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters58">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UTF-8 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum length of <em>str</em> to use, in bytes. If <em>len</em> &lt; 0,
+then the string is nul-terminated.</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of7">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to a newly allocated UCS-4 string.
+This value must be freed with <a href="memory.html#g_free">GLib.free</a>. If an error occurs,
+<a href="https://docs.python.org/2/library/constants.html#None">None</a> will be returned and <em>error</em> set.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>items_read:</i>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to a newly allocated UCS-4 string.
+This value must be freed with <a href="memory.html#g_free">GLib.free</a>. If an error occurs,
+<a href="https://docs.python.org/2/library/constants.html#None">None</a> will be returned and <em>error</em> set.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>items_written:</i>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to a newly allocated UCS-4 string.
+This value must be freed with <a href="memory.html#g_free">GLib.free</a>. If an error occurs,
+<a href="https://docs.python.org/2/library/constants.html#None">None</a> will be returned and <em>error</em> set.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unicode_canonical_ordering">
+		
+<h3 id="glibunicode_canonical_ordering">
+	<span><code>GLib.unicode_canonical_ordering</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unicode_canonical_ordering (string, len):
+    #python wrapper for 'g_unicode_canonical_ordering'</pre>
+
+<p>Computes the canonical ordering of a string in-place.
+This rearranges decomposed characters in the string
+according to their combining classes.  See the Unicode
+manual for more information.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters59">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UCS-4 encoded string.</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum length of <em>string</em> to use.</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_unichar_iswide_cjk">
+		
+<h3 id="glibunichar_iswide_cjk">
+	<span><code>GLib.unichar_iswide_cjk</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_iswide_cjk (c):
+    #python wrapper for 'g_unichar_iswide_cjk'</pre>
+
+<p>Determines if a character is typically rendered in a double-width
+cell under legacy East Asian locales.  If a character is wide according to
+<a href="unicode.html#g_unichar_iswide">GLib.unichar_iswide</a>, then it is also reported wide with this function, but
+the converse is not necessarily true. See the
+<a href="http://www.unicode.org/reports/tr11/">Unicode Standard Annex 11</a>
+for details.</p>
+<p>If a character passes the <a href="unicode.html#g_unichar_iswide">GLib.unichar_iswide</a> test then it will also pass
+this test, but not the other way around.  Note that some characters may
+pass both this test and <a href="unicode.html#g_unichar_iszerowidth">GLib.unichar_iszerowidth</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters60">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns51">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the character is wide in legacy East Asian locales</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_utf8_to_utf16">
+		
+<h3 id="glibutf8_to_utf16">
+	<span><code>GLib.utf8_to_utf16</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.utf8_to_utf16 (str, len):
+    #python wrapper for 'g_utf8_to_utf16'</pre>
+
+<p>Convert a string from UTF-8 to UTF-16. A 0 character will be
+added to the result after the converted text.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters61">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UTF-8 encoded string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum length (number of bytes) of <em>str</em> to use.
+If <em>len</em> &lt; 0, then the string is nul-terminated.</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of8">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to a newly allocated UTF-16 string.
+This value must be freed with <a href="memory.html#g_free">GLib.free</a>. If an error occurs,
+<a href="https://docs.python.org/2/library/constants.html#None">None</a> will be returned and <em>error</em> set.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>items_read:</i>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to a newly allocated UTF-16 string.
+This value must be freed with <a href="memory.html#g_free">GLib.free</a>. If an error occurs,
+<a href="https://docs.python.org/2/library/constants.html#None">None</a> will be returned and <em>error</em> set.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>items_written:</i>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to a newly allocated UTF-16 string.
+This value must be freed with <a href="memory.html#g_free">GLib.free</a>. If an error occurs,
+<a href="https://docs.python.org/2/library/constants.html#None">None</a> will be returned and <em>error</em> set.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.8;" id="g_utf8_collate_key_for_filename">
+		
+<h3 id="glibutf8_collate_key_for_filename">
+	<span><code>GLib.utf8_collate_key_for_filename</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.utf8_collate_key_for_filename (str, len):
+    #python wrapper for 'g_utf8_collate_key_for_filename'</pre>
+
+<p>Converts a string into a collation key that can be compared
+with other collation keys produced by the same function using strcmp.</p>
+<p>In order to sort filenames correctly, this function treats the dot '.'
+as a special case. Most dictionary orderings seem to consider it
+insignificant, thus producing the ordering "event.c" "eventgenerator.c"
+"event.h" instead of "event.c" "event.h" "eventgenerator.c". Also, we
+would like to treat numbers intelligently so that "file1" "file10" "file5"
+is sorted as "file1" "file5" "file10".</p>
+<p>Note that this function depends on the [current locale][setlocale].</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters62">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a UTF-8 encoded string.</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>str</em>, in bytes, or -1 if <em>str</em> is nul-terminated.</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns52">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string. This string should
+be freed with <a href="memory.html#g_free">GLib.free</a> when you are done with it.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.8
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_unichar_toupper">
+		
+<h3 id="glibunichar_toupper">
+	<span><code>GLib.unichar_toupper</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.unichar_toupper (c):
+    #python wrapper for 'g_unichar_toupper'</pre>
+
+<p>Converts a character to uppercase.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters63">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns53">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the result of converting <em>c</em> to uppercase.
+If <em>c</em> is not an lowercase or titlecase character,
+or has no upper case equivalent <em>c</em> is returned unchanged.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUnicodeBreakType">
+		
+<h3 id="enum-glibunicodebreaktype">
+		enum GLib.UnicodeBreakType
+	</h3>
+
+		<p>These are the possible line break classifications.</p>
+<p>Since new unicode versions may add new types here, applications should be ready
+to handle unknown values. They may be regarded as <a href="unicode.html#G_UNICODE_BREAK_UNKNOWN">GLib.UnicodeBreakType.unknown</a>.</p>
+<p>See <a href="http://www.unicode.org/unicode/reports/tr14/">Unicode Line Breaking Algorithm</a>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_MANDATORY"></a>
+		GLib.UnicodeBreakType.mandatory
+		</p>
+	</td>
+	<td><p>Mandatory Break (BK)</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_CARRIAGE_RETURN"></a>
+		GLib.UnicodeBreakType.carriage_return
+		</p>
+	</td>
+	<td><p>Carriage Return (CR)</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_LINE_FEED"></a>
+		GLib.UnicodeBreakType.line_feed
+		</p>
+	</td>
+	<td><p>Line Feed (LF)</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_COMBINING_MARK"></a>
+		GLib.UnicodeBreakType.combining_mark
+		</p>
+	</td>
+	<td><p>Attached Characters and Combining Marks (CM)</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_SURROGATE"></a>
+		GLib.UnicodeBreakType.surrogate
+		</p>
+	</td>
+	<td><p>Surrogates (SG)</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_ZERO_WIDTH_SPACE"></a>
+		GLib.UnicodeBreakType.zero_width_space
+		</p>
+	</td>
+	<td><p>Zero Width Space (ZW)</p>
+</td>
+	<td>
+		<span class="value">Value: 5</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_INSEPARABLE"></a>
+		GLib.UnicodeBreakType.inseparable
+		</p>
+	</td>
+	<td><p>Inseparable (IN)</p>
+</td>
+	<td>
+		<span class="value">Value: 6</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_NON_BREAKING_GLUE"></a>
+		GLib.UnicodeBreakType.non_breaking_glue
+		</p>
+	</td>
+	<td><p>Non-breaking ("Glue") (GL)</p>
+</td>
+	<td>
+		<span class="value">Value: 7</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_CONTINGENT"></a>
+		GLib.UnicodeBreakType.contingent
+		</p>
+	</td>
+	<td><p>Contingent Break Opportunity (CB)</p>
+</td>
+	<td>
+		<span class="value">Value: 8</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_SPACE"></a>
+		GLib.UnicodeBreakType.space
+		</p>
+	</td>
+	<td><p>Space (SP)</p>
+</td>
+	<td>
+		<span class="value">Value: 9</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_AFTER"></a>
+		GLib.UnicodeBreakType.after
+		</p>
+	</td>
+	<td><p>Break Opportunity After (BA)</p>
+</td>
+	<td>
+		<span class="value">Value: 10</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_BEFORE"></a>
+		GLib.UnicodeBreakType.before
+		</p>
+	</td>
+	<td><p>Break Opportunity Before (BB)</p>
+</td>
+	<td>
+		<span class="value">Value: 11</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_BEFORE_AND_AFTER"></a>
+		GLib.UnicodeBreakType.before_and_after
+		</p>
+	</td>
+	<td><p>Break Opportunity Before and After (B2)</p>
+</td>
+	<td>
+		<span class="value">Value: 12</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_HYPHEN"></a>
+		GLib.UnicodeBreakType.hyphen
+		</p>
+	</td>
+	<td><p>Hyphen (HY)</p>
+</td>
+	<td>
+		<span class="value">Value: 13</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_NON_STARTER"></a>
+		GLib.UnicodeBreakType.non_starter
+		</p>
+	</td>
+	<td><p>Nonstarter (NS)</p>
+</td>
+	<td>
+		<span class="value">Value: 14</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_OPEN_PUNCTUATION"></a>
+		GLib.UnicodeBreakType.open_punctuation
+		</p>
+	</td>
+	<td><p>Opening Punctuation (OP)</p>
+</td>
+	<td>
+		<span class="value">Value: 15</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_CLOSE_PUNCTUATION"></a>
+		GLib.UnicodeBreakType.close_punctuation
+		</p>
+	</td>
+	<td><p>Closing Punctuation (CL)</p>
+</td>
+	<td>
+		<span class="value">Value: 16</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_QUOTATION"></a>
+		GLib.UnicodeBreakType.quotation
+		</p>
+	</td>
+	<td><p>Ambiguous Quotation (QU)</p>
+</td>
+	<td>
+		<span class="value">Value: 17</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_EXCLAMATION"></a>
+		GLib.UnicodeBreakType.exclamation
+		</p>
+	</td>
+	<td><p>Exclamation/Interrogation (EX)</p>
+</td>
+	<td>
+		<span class="value">Value: 18</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_IDEOGRAPHIC"></a>
+		GLib.UnicodeBreakType.ideographic
+		</p>
+	</td>
+	<td><p>Ideographic (ID)</p>
+</td>
+	<td>
+		<span class="value">Value: 19</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_NUMERIC"></a>
+		GLib.UnicodeBreakType.numeric
+		</p>
+	</td>
+	<td><p>Numeric (NU)</p>
+</td>
+	<td>
+		<span class="value">Value: 20</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_INFIX_SEPARATOR"></a>
+		GLib.UnicodeBreakType.infix_separator
+		</p>
+	</td>
+	<td><p>Infix Separator (Numeric) (IS)</p>
+</td>
+	<td>
+		<span class="value">Value: 21</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_SYMBOL"></a>
+		GLib.UnicodeBreakType.symbol
+		</p>
+	</td>
+	<td><p>Symbols Allowing Break After (SY)</p>
+</td>
+	<td>
+		<span class="value">Value: 22</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_ALPHABETIC"></a>
+		GLib.UnicodeBreakType.alphabetic
+		</p>
+	</td>
+	<td><p>Ordinary Alphabetic and Symbol Characters (AL)</p>
+</td>
+	<td>
+		<span class="value">Value: 23</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_PREFIX"></a>
+		GLib.UnicodeBreakType.prefix
+		</p>
+	</td>
+	<td><p>Prefix (Numeric) (PR)</p>
+</td>
+	<td>
+		<span class="value">Value: 24</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_POSTFIX"></a>
+		GLib.UnicodeBreakType.postfix
+		</p>
+	</td>
+	<td><p>Postfix (Numeric) (PO)</p>
+</td>
+	<td>
+		<span class="value">Value: 25</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_COMPLEX_CONTEXT"></a>
+		GLib.UnicodeBreakType.complex_context
+		</p>
+	</td>
+	<td><p>Complex Content Dependent (South East Asian) (SA)</p>
+</td>
+	<td>
+		<span class="value">Value: 26</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_AMBIGUOUS"></a>
+		GLib.UnicodeBreakType.ambiguous
+		</p>
+	</td>
+	<td><p>Ambiguous (Alphabetic or Ideographic) (AI)</p>
+</td>
+	<td>
+		<span class="value">Value: 27</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_UNKNOWN"></a>
+		GLib.UnicodeBreakType.unknown
+		</p>
+	</td>
+	<td><p>Unknown (XX)</p>
+</td>
+	<td>
+		<span class="value">Value: 28</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_NEXT_LINE"></a>
+		GLib.UnicodeBreakType.next_line
+		</p>
+	</td>
+	<td><p>Next Line (NL)</p>
+</td>
+	<td>
+		<span class="value">Value: 29</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_WORD_JOINER"></a>
+		GLib.UnicodeBreakType.word_joiner
+		</p>
+	</td>
+	<td><p>Word Joiner (WJ)</p>
+</td>
+	<td>
+		<span class="value">Value: 30</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_HANGUL_L_JAMO"></a>
+		GLib.UnicodeBreakType.hangul_l_jamo
+		</p>
+	</td>
+	<td><p>Hangul L Jamo (JL)</p>
+</td>
+	<td>
+		<span class="value">Value: 31</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_HANGUL_V_JAMO"></a>
+		GLib.UnicodeBreakType.hangul_v_jamo
+		</p>
+	</td>
+	<td><p>Hangul V Jamo (JV)</p>
+</td>
+	<td>
+		<span class="value">Value: 32</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_HANGUL_T_JAMO"></a>
+		GLib.UnicodeBreakType.hangul_t_jamo
+		</p>
+	</td>
+	<td><p>Hangul T Jamo (JT)</p>
+</td>
+	<td>
+		<span class="value">Value: 33</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_HANGUL_LV_SYLLABLE"></a>
+		GLib.UnicodeBreakType.hangul_lv_syllable
+		</p>
+	</td>
+	<td><p>Hangul LV Syllable (H2)</p>
+</td>
+	<td>
+		<span class="value">Value: 34</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_HANGUL_LVT_SYLLABLE"></a>
+		GLib.UnicodeBreakType.hangul_lvt_syllable
+		</p>
+	</td>
+	<td><p>Hangul LVT Syllable (H3)</p>
+</td>
+	<td>
+		<span class="value">Value: 35</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_CLOSE_PARANTHESIS"></a>
+		GLib.UnicodeBreakType.close_paranthesis
+		</p>
+	</td>
+	<td><p>Closing Parenthesis (CP). Since 2.28</p>
+</td>
+	<td>
+		<span class="value">Value: 36</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_CONDITIONAL_JAPANESE_STARTER"></a>
+		GLib.UnicodeBreakType.conditional_japanese_starter
+		</p>
+	</td>
+	<td><p>Conditional Japanese Starter (CJ). Since: 2.32</p>
+</td>
+	<td>
+		<span class="value">Value: 37</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_HEBREW_LETTER"></a>
+		GLib.UnicodeBreakType.hebrew_letter
+		</p>
+	</td>
+	<td><p>Hebrew Letter (HL). Since: 2.32</p>
+</td>
+	<td>
+		<span class="value">Value: 38</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_REGIONAL_INDICATOR"></a>
+		GLib.UnicodeBreakType.regional_indicator
+		</p>
+	</td>
+	<td><p>Regional Indicator (RI). Since: 2.36</p>
+</td>
+	<td>
+		<span class="value">Value: 39</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_EMOJI_BASE"></a>
+		GLib.UnicodeBreakType.emoji_base
+		</p>
+	</td>
+	<td><p>Emoji Base (EB). Since: 2.50</p>
+</td>
+	<td>
+		<span class="value">Value: 40</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_EMOJI_MODIFIER"></a>
+		GLib.UnicodeBreakType.emoji_modifier
+		</p>
+	</td>
+	<td><p>Emoji Modifier (EM). Since: 2.50</p>
+</td>
+	<td>
+		<span class="value">Value: 41</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_BREAK_ZERO_WIDTH_JOINER"></a>
+		GLib.UnicodeBreakType.zero_width_joiner
+		</p>
+	</td>
+	<td><p>Zero Width Joiner (ZWJ). Since: 2.50</p>
+</td>
+	<td>
+		<span class="value">Value: 42</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUnicodeType">
+		
+<h3 id="enum-glibunicodetype">
+		enum GLib.UnicodeType
+	</h3>
+
+		<p>These are the possible character classifications from the
+Unicode specification.
+See <a href="http://www.unicode.org/reports/tr44/#General_Category_Values">Unicode Character Database</a>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members1">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_CONTROL"></a>
+		GLib.UnicodeType.control
+		</p>
+	</td>
+	<td><p>General category "Other, Control" (Cc)</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_FORMAT"></a>
+		GLib.UnicodeType.format
+		</p>
+	</td>
+	<td><p>General category "Other, Format" (Cf)</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_UNASSIGNED"></a>
+		GLib.UnicodeType.unassigned
+		</p>
+	</td>
+	<td><p>General category "Other, Not Assigned" (Cn)</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_PRIVATE_USE"></a>
+		GLib.UnicodeType.private_use
+		</p>
+	</td>
+	<td><p>General category "Other, Private Use" (Co)</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SURROGATE"></a>
+		GLib.UnicodeType.surrogate
+		</p>
+	</td>
+	<td><p>General category "Other, Surrogate" (Cs)</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_LOWERCASE_LETTER"></a>
+		GLib.UnicodeType.lowercase_letter
+		</p>
+	</td>
+	<td><p>General category "Letter, Lowercase" (Ll)</p>
+</td>
+	<td>
+		<span class="value">Value: 5</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_MODIFIER_LETTER"></a>
+		GLib.UnicodeType.modifier_letter
+		</p>
+	</td>
+	<td><p>General category "Letter, Modifier" (Lm)</p>
+</td>
+	<td>
+		<span class="value">Value: 6</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_OTHER_LETTER"></a>
+		GLib.UnicodeType.other_letter
+		</p>
+	</td>
+	<td><p>General category "Letter, Other" (Lo)</p>
+</td>
+	<td>
+		<span class="value">Value: 7</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_TITLECASE_LETTER"></a>
+		GLib.UnicodeType.titlecase_letter
+		</p>
+	</td>
+	<td><p>General category "Letter, Titlecase" (Lt)</p>
+</td>
+	<td>
+		<span class="value">Value: 8</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_UPPERCASE_LETTER"></a>
+		GLib.UnicodeType.uppercase_letter
+		</p>
+	</td>
+	<td><p>General category "Letter, Uppercase" (Lu)</p>
+</td>
+	<td>
+		<span class="value">Value: 9</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SPACING_MARK"></a>
+		GLib.UnicodeType.spacing_mark
+		</p>
+	</td>
+	<td><p>General category "Mark, Spacing" (Mc)</p>
+</td>
+	<td>
+		<span class="value">Value: 10</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_ENCLOSING_MARK"></a>
+		GLib.UnicodeType.enclosing_mark
+		</p>
+	</td>
+	<td><p>General category "Mark, Enclosing" (Me)</p>
+</td>
+	<td>
+		<span class="value">Value: 11</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_NON_SPACING_MARK"></a>
+		GLib.UnicodeType.non_spacing_mark
+		</p>
+	</td>
+	<td><p>General category "Mark, Nonspacing" (Mn)</p>
+</td>
+	<td>
+		<span class="value">Value: 12</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_DECIMAL_NUMBER"></a>
+		GLib.UnicodeType.decimal_number
+		</p>
+	</td>
+	<td><p>General category "Number, Decimal Digit" (Nd)</p>
+</td>
+	<td>
+		<span class="value">Value: 13</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_LETTER_NUMBER"></a>
+		GLib.UnicodeType.letter_number
+		</p>
+	</td>
+	<td><p>General category "Number, Letter" (Nl)</p>
+</td>
+	<td>
+		<span class="value">Value: 14</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_OTHER_NUMBER"></a>
+		GLib.UnicodeType.other_number
+		</p>
+	</td>
+	<td><p>General category "Number, Other" (No)</p>
+</td>
+	<td>
+		<span class="value">Value: 15</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_CONNECT_PUNCTUATION"></a>
+		GLib.UnicodeType.connect_punctuation
+		</p>
+	</td>
+	<td><p>General category "Punctuation, Connector" (Pc)</p>
+</td>
+	<td>
+		<span class="value">Value: 16</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_DASH_PUNCTUATION"></a>
+		GLib.UnicodeType.dash_punctuation
+		</p>
+	</td>
+	<td><p>General category "Punctuation, Dash" (Pd)</p>
+</td>
+	<td>
+		<span class="value">Value: 17</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_CLOSE_PUNCTUATION"></a>
+		GLib.UnicodeType.close_punctuation
+		</p>
+	</td>
+	<td><p>General category "Punctuation, Close" (Pe)</p>
+</td>
+	<td>
+		<span class="value">Value: 18</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_FINAL_PUNCTUATION"></a>
+		GLib.UnicodeType.final_punctuation
+		</p>
+	</td>
+	<td><p>General category "Punctuation, Final quote" (Pf)</p>
+</td>
+	<td>
+		<span class="value">Value: 19</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_INITIAL_PUNCTUATION"></a>
+		GLib.UnicodeType.initial_punctuation
+		</p>
+	</td>
+	<td><p>General category "Punctuation, Initial quote" (Pi)</p>
+</td>
+	<td>
+		<span class="value">Value: 20</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_OTHER_PUNCTUATION"></a>
+		GLib.UnicodeType.other_punctuation
+		</p>
+	</td>
+	<td><p>General category "Punctuation, Other" (Po)</p>
+</td>
+	<td>
+		<span class="value">Value: 21</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_OPEN_PUNCTUATION"></a>
+		GLib.UnicodeType.open_punctuation
+		</p>
+	</td>
+	<td><p>General category "Punctuation, Open" (Ps)</p>
+</td>
+	<td>
+		<span class="value">Value: 22</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_CURRENCY_SYMBOL"></a>
+		GLib.UnicodeType.currency_symbol
+		</p>
+	</td>
+	<td><p>General category "Symbol, Currency" (Sc)</p>
+</td>
+	<td>
+		<span class="value">Value: 23</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_MODIFIER_SYMBOL"></a>
+		GLib.UnicodeType.modifier_symbol
+		</p>
+	</td>
+	<td><p>General category "Symbol, Modifier" (Sk)</p>
+</td>
+	<td>
+		<span class="value">Value: 24</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_MATH_SYMBOL"></a>
+		GLib.UnicodeType.math_symbol
+		</p>
+	</td>
+	<td><p>General category "Symbol, Math" (Sm)</p>
+</td>
+	<td>
+		<span class="value">Value: 25</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_OTHER_SYMBOL"></a>
+		GLib.UnicodeType.other_symbol
+		</p>
+	</td>
+	<td><p>General category "Symbol, Other" (So)</p>
+</td>
+	<td>
+		<span class="value">Value: 26</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_LINE_SEPARATOR"></a>
+		GLib.UnicodeType.line_separator
+		</p>
+	</td>
+	<td><p>General category "Separator, Line" (Zl)</p>
+</td>
+	<td>
+		<span class="value">Value: 27</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_PARAGRAPH_SEPARATOR"></a>
+		GLib.UnicodeType.paragraph_separator
+		</p>
+	</td>
+	<td><p>General category "Separator, Paragraph" (Zp)</p>
+</td>
+	<td>
+		<span class="value">Value: 28</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SPACE_SEPARATOR"></a>
+		GLib.UnicodeType.space_separator
+		</p>
+	</td>
+	<td><p>General category "Separator, Space" (Zs)</p>
+</td>
+	<td>
+		<span class="value">Value: 29</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GUnicodeScript">
+		
+<h3 id="enum-glibunicodescript">
+		enum GLib.UnicodeScript
+	</h3>
+
+		<p>The <a href="unicode.html#GUnicodeScript">GLib.UnicodeScript</a> enumeration identifies different writing
+systems. The values correspond to the names as defined in the
+Unicode standard. The enumeration has been added in GLib 2.14,
+and is interchangeable with PangoScript.</p>
+<p>Note that new types may be added in the future. Applications
+should be ready to handle unknown values.
+See <a href="http://www.unicode.org/reports/tr24/">Unicode Standard Annex 24: Script names</a>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members2">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_INVALID_CODE"></a>
+		GLib.UnicodeScript.invalid_code
+		</p>
+	</td>
+	<td><p>a value never returned from <a href="unicode.html#g_unichar_get_script">GLib.unichar_get_script</a></p>
+</td>
+	<td>
+		<span class="value">Value: -1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_COMMON"></a>
+		GLib.UnicodeScript.common
+		</p>
+	</td>
+	<td><p>a character used by multiple different scripts</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_INHERITED"></a>
+		GLib.UnicodeScript.inherited
+		</p>
+	</td>
+	<td><p>a mark glyph that takes its script from the
+base glyph to which it is attached</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_ARABIC"></a>
+		GLib.UnicodeScript.arabic
+		</p>
+	</td>
+	<td><p>Arabic</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_ARMENIAN"></a>
+		GLib.UnicodeScript.armenian
+		</p>
+	</td>
+	<td><p>Armenian</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_BENGALI"></a>
+		GLib.UnicodeScript.bengali
+		</p>
+	</td>
+	<td><p>Bengali</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_BOPOMOFO"></a>
+		GLib.UnicodeScript.bopomofo
+		</p>
+	</td>
+	<td><p>Bopomofo</p>
+</td>
+	<td>
+		<span class="value">Value: 5</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_CHEROKEE"></a>
+		GLib.UnicodeScript.cherokee
+		</p>
+	</td>
+	<td><p>Cherokee</p>
+</td>
+	<td>
+		<span class="value">Value: 6</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_COPTIC"></a>
+		GLib.UnicodeScript.coptic
+		</p>
+	</td>
+	<td><p>Coptic</p>
+</td>
+	<td>
+		<span class="value">Value: 7</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_CYRILLIC"></a>
+		GLib.UnicodeScript.cyrillic
+		</p>
+	</td>
+	<td><p>Cyrillic</p>
+</td>
+	<td>
+		<span class="value">Value: 8</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_DESERET"></a>
+		GLib.UnicodeScript.deseret
+		</p>
+	</td>
+	<td><p>Deseret</p>
+</td>
+	<td>
+		<span class="value">Value: 9</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_DEVANAGARI"></a>
+		GLib.UnicodeScript.devanagari
+		</p>
+	</td>
+	<td><p>Devanagari</p>
+</td>
+	<td>
+		<span class="value">Value: 10</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_ETHIOPIC"></a>
+		GLib.UnicodeScript.ethiopic
+		</p>
+	</td>
+	<td><p>Ethiopic</p>
+</td>
+	<td>
+		<span class="value">Value: 11</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_GEORGIAN"></a>
+		GLib.UnicodeScript.georgian
+		</p>
+	</td>
+	<td><p>Georgian</p>
+</td>
+	<td>
+		<span class="value">Value: 12</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_GOTHIC"></a>
+		GLib.UnicodeScript.gothic
+		</p>
+	</td>
+	<td><p>Gothic</p>
+</td>
+	<td>
+		<span class="value">Value: 13</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_GREEK"></a>
+		GLib.UnicodeScript.greek
+		</p>
+	</td>
+	<td><p>Greek</p>
+</td>
+	<td>
+		<span class="value">Value: 14</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_GUJARATI"></a>
+		GLib.UnicodeScript.gujarati
+		</p>
+	</td>
+	<td><p>Gujarati</p>
+</td>
+	<td>
+		<span class="value">Value: 15</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_GURMUKHI"></a>
+		GLib.UnicodeScript.gurmukhi
+		</p>
+	</td>
+	<td><p>Gurmukhi</p>
+</td>
+	<td>
+		<span class="value">Value: 16</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_HAN"></a>
+		GLib.UnicodeScript.han
+		</p>
+	</td>
+	<td><p>Han</p>
+</td>
+	<td>
+		<span class="value">Value: 17</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_HANGUL"></a>
+		GLib.UnicodeScript.hangul
+		</p>
+	</td>
+	<td><p>Hangul</p>
+</td>
+	<td>
+		<span class="value">Value: 18</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_HEBREW"></a>
+		GLib.UnicodeScript.hebrew
+		</p>
+	</td>
+	<td><p>Hebrew</p>
+</td>
+	<td>
+		<span class="value">Value: 19</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_HIRAGANA"></a>
+		GLib.UnicodeScript.hiragana
+		</p>
+	</td>
+	<td><p>Hiragana</p>
+</td>
+	<td>
+		<span class="value">Value: 20</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_KANNADA"></a>
+		GLib.UnicodeScript.kannada
+		</p>
+	</td>
+	<td><p>Kannada</p>
+</td>
+	<td>
+		<span class="value">Value: 21</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_KATAKANA"></a>
+		GLib.UnicodeScript.katakana
+		</p>
+	</td>
+	<td><p>Katakana</p>
+</td>
+	<td>
+		<span class="value">Value: 22</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_KHMER"></a>
+		GLib.UnicodeScript.khmer
+		</p>
+	</td>
+	<td><p>Khmer</p>
+</td>
+	<td>
+		<span class="value">Value: 23</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_LAO"></a>
+		GLib.UnicodeScript.lao
+		</p>
+	</td>
+	<td><p>Lao</p>
+</td>
+	<td>
+		<span class="value">Value: 24</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_LATIN"></a>
+		GLib.UnicodeScript.latin
+		</p>
+	</td>
+	<td><p>Latin</p>
+</td>
+	<td>
+		<span class="value">Value: 25</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_MALAYALAM"></a>
+		GLib.UnicodeScript.malayalam
+		</p>
+	</td>
+	<td><p>Malayalam</p>
+</td>
+	<td>
+		<span class="value">Value: 26</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_MONGOLIAN"></a>
+		GLib.UnicodeScript.mongolian
+		</p>
+	</td>
+	<td><p>Mongolian</p>
+</td>
+	<td>
+		<span class="value">Value: 27</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_MYANMAR"></a>
+		GLib.UnicodeScript.myanmar
+		</p>
+	</td>
+	<td><p>Myanmar</p>
+</td>
+	<td>
+		<span class="value">Value: 28</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_OGHAM"></a>
+		GLib.UnicodeScript.ogham
+		</p>
+	</td>
+	<td><p>Ogham</p>
+</td>
+	<td>
+		<span class="value">Value: 29</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_OLD_ITALIC"></a>
+		GLib.UnicodeScript.old_italic
+		</p>
+	</td>
+	<td><p>Old Italic</p>
+</td>
+	<td>
+		<span class="value">Value: 30</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_ORIYA"></a>
+		GLib.UnicodeScript.oriya
+		</p>
+	</td>
+	<td><p>Oriya</p>
+</td>
+	<td>
+		<span class="value">Value: 31</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_RUNIC"></a>
+		GLib.UnicodeScript.runic
+		</p>
+	</td>
+	<td><p>Runic</p>
+</td>
+	<td>
+		<span class="value">Value: 32</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_SINHALA"></a>
+		GLib.UnicodeScript.sinhala
+		</p>
+	</td>
+	<td><p>Sinhala</p>
+</td>
+	<td>
+		<span class="value">Value: 33</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_SYRIAC"></a>
+		GLib.UnicodeScript.syriac
+		</p>
+	</td>
+	<td><p>Syriac</p>
+</td>
+	<td>
+		<span class="value">Value: 34</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_TAMIL"></a>
+		GLib.UnicodeScript.tamil
+		</p>
+	</td>
+	<td><p>Tamil</p>
+</td>
+	<td>
+		<span class="value">Value: 35</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_TELUGU"></a>
+		GLib.UnicodeScript.telugu
+		</p>
+	</td>
+	<td><p>Telugu</p>
+</td>
+	<td>
+		<span class="value">Value: 36</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_THAANA"></a>
+		GLib.UnicodeScript.thaana
+		</p>
+	</td>
+	<td><p>Thaana</p>
+</td>
+	<td>
+		<span class="value">Value: 37</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_THAI"></a>
+		GLib.UnicodeScript.thai
+		</p>
+	</td>
+	<td><p>Thai</p>
+</td>
+	<td>
+		<span class="value">Value: 38</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_TIBETAN"></a>
+		GLib.UnicodeScript.tibetan
+		</p>
+	</td>
+	<td><p>Tibetan</p>
+</td>
+	<td>
+		<span class="value">Value: 39</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_CANADIAN_ABORIGINAL"></a>
+		GLib.UnicodeScript.canadian_aboriginal
+		</p>
+	</td>
+	<td><p>Canadian Aboriginal</p>
+</td>
+	<td>
+		<span class="value">Value: 40</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_YI"></a>
+		GLib.UnicodeScript.yi
+		</p>
+	</td>
+	<td><p>Yi</p>
+</td>
+	<td>
+		<span class="value">Value: 41</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_TAGALOG"></a>
+		GLib.UnicodeScript.tagalog
+		</p>
+	</td>
+	<td><p>Tagalog</p>
+</td>
+	<td>
+		<span class="value">Value: 42</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_HANUNOO"></a>
+		GLib.UnicodeScript.hanunoo
+		</p>
+	</td>
+	<td><p>Hanunoo</p>
+</td>
+	<td>
+		<span class="value">Value: 43</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_BUHID"></a>
+		GLib.UnicodeScript.buhid
+		</p>
+	</td>
+	<td><p>Buhid</p>
+</td>
+	<td>
+		<span class="value">Value: 44</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_TAGBANWA"></a>
+		GLib.UnicodeScript.tagbanwa
+		</p>
+	</td>
+	<td><p>Tagbanwa</p>
+</td>
+	<td>
+		<span class="value">Value: 45</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_BRAILLE"></a>
+		GLib.UnicodeScript.braille
+		</p>
+	</td>
+	<td><p>Braille</p>
+</td>
+	<td>
+		<span class="value">Value: 46</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_CYPRIOT"></a>
+		GLib.UnicodeScript.cypriot
+		</p>
+	</td>
+	<td><p>Cypriot</p>
+</td>
+	<td>
+		<span class="value">Value: 47</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_LIMBU"></a>
+		GLib.UnicodeScript.limbu
+		</p>
+	</td>
+	<td><p>Limbu</p>
+</td>
+	<td>
+		<span class="value">Value: 48</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_OSMANYA"></a>
+		GLib.UnicodeScript.osmanya
+		</p>
+	</td>
+	<td><p>Osmanya</p>
+</td>
+	<td>
+		<span class="value">Value: 49</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_SHAVIAN"></a>
+		GLib.UnicodeScript.shavian
+		</p>
+	</td>
+	<td><p>Shavian</p>
+</td>
+	<td>
+		<span class="value">Value: 50</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_LINEAR_B"></a>
+		GLib.UnicodeScript.linear_b
+		</p>
+	</td>
+	<td><p>Linear B</p>
+</td>
+	<td>
+		<span class="value">Value: 51</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_TAI_LE"></a>
+		GLib.UnicodeScript.tai_le
+		</p>
+	</td>
+	<td><p>Tai Le</p>
+</td>
+	<td>
+		<span class="value">Value: 52</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_UGARITIC"></a>
+		GLib.UnicodeScript.ugaritic
+		</p>
+	</td>
+	<td><p>Ugaritic</p>
+</td>
+	<td>
+		<span class="value">Value: 53</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_NEW_TAI_LUE"></a>
+		GLib.UnicodeScript.new_tai_lue
+		</p>
+	</td>
+	<td><p>New Tai Lue</p>
+</td>
+	<td>
+		<span class="value">Value: 54</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_BUGINESE"></a>
+		GLib.UnicodeScript.buginese
+		</p>
+	</td>
+	<td><p>Buginese</p>
+</td>
+	<td>
+		<span class="value">Value: 55</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_GLAGOLITIC"></a>
+		GLib.UnicodeScript.glagolitic
+		</p>
+	</td>
+	<td><p>Glagolitic</p>
+</td>
+	<td>
+		<span class="value">Value: 56</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_TIFINAGH"></a>
+		GLib.UnicodeScript.tifinagh
+		</p>
+	</td>
+	<td><p>Tifinagh</p>
+</td>
+	<td>
+		<span class="value">Value: 57</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_SYLOTI_NAGRI"></a>
+		GLib.UnicodeScript.syloti_nagri
+		</p>
+	</td>
+	<td><p>Syloti Nagri</p>
+</td>
+	<td>
+		<span class="value">Value: 58</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_OLD_PERSIAN"></a>
+		GLib.UnicodeScript.old_persian
+		</p>
+	</td>
+	<td><p>Old Persian</p>
+</td>
+	<td>
+		<span class="value">Value: 59</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_KHAROSHTHI"></a>
+		GLib.UnicodeScript.kharoshthi
+		</p>
+	</td>
+	<td><p>Kharoshthi</p>
+</td>
+	<td>
+		<span class="value">Value: 60</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_UNKNOWN"></a>
+		GLib.UnicodeScript.unknown
+		</p>
+	</td>
+	<td><p>an unassigned code point</p>
+</td>
+	<td>
+		<span class="value">Value: 61</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_BALINESE"></a>
+		GLib.UnicodeScript.balinese
+		</p>
+	</td>
+	<td><p>Balinese</p>
+</td>
+	<td>
+		<span class="value">Value: 62</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_CUNEIFORM"></a>
+		GLib.UnicodeScript.cuneiform
+		</p>
+	</td>
+	<td><p>Cuneiform</p>
+</td>
+	<td>
+		<span class="value">Value: 63</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_PHOENICIAN"></a>
+		GLib.UnicodeScript.phoenician
+		</p>
+	</td>
+	<td><p>Phoenician</p>
+</td>
+	<td>
+		<span class="value">Value: 64</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_PHAGS_PA"></a>
+		GLib.UnicodeScript.phags_pa
+		</p>
+	</td>
+	<td><p>Phags-pa</p>
+</td>
+	<td>
+		<span class="value">Value: 65</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_NKO"></a>
+		GLib.UnicodeScript.nko
+		</p>
+	</td>
+	<td><p>N'Ko</p>
+</td>
+	<td>
+		<span class="value">Value: 66</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_KAYAH_LI"></a>
+		GLib.UnicodeScript.kayah_li
+		</p>
+	</td>
+	<td><p>Kayah Li. Since 2.16.3</p>
+</td>
+	<td>
+		<span class="value">Value: 67</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_LEPCHA"></a>
+		GLib.UnicodeScript.lepcha
+		</p>
+	</td>
+	<td><p>Lepcha. Since 2.16.3</p>
+</td>
+	<td>
+		<span class="value">Value: 68</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_REJANG"></a>
+		GLib.UnicodeScript.rejang
+		</p>
+	</td>
+	<td><p>Rejang. Since 2.16.3</p>
+</td>
+	<td>
+		<span class="value">Value: 69</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_SUNDANESE"></a>
+		GLib.UnicodeScript.sundanese
+		</p>
+	</td>
+	<td><p>Sundanese. Since 2.16.3</p>
+</td>
+	<td>
+		<span class="value">Value: 70</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_SAURASHTRA"></a>
+		GLib.UnicodeScript.saurashtra
+		</p>
+	</td>
+	<td><p>Saurashtra. Since 2.16.3</p>
+</td>
+	<td>
+		<span class="value">Value: 71</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_CHAM"></a>
+		GLib.UnicodeScript.cham
+		</p>
+	</td>
+	<td><p>Cham. Since 2.16.3</p>
+</td>
+	<td>
+		<span class="value">Value: 72</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_OL_CHIKI"></a>
+		GLib.UnicodeScript.ol_chiki
+		</p>
+	</td>
+	<td><p>Ol Chiki. Since 2.16.3</p>
+</td>
+	<td>
+		<span class="value">Value: 73</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_VAI"></a>
+		GLib.UnicodeScript.vai
+		</p>
+	</td>
+	<td><p>Vai. Since 2.16.3</p>
+</td>
+	<td>
+		<span class="value">Value: 74</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_CARIAN"></a>
+		GLib.UnicodeScript.carian
+		</p>
+	</td>
+	<td><p>Carian. Since 2.16.3</p>
+</td>
+	<td>
+		<span class="value">Value: 75</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_LYCIAN"></a>
+		GLib.UnicodeScript.lycian
+		</p>
+	</td>
+	<td><p>Lycian. Since 2.16.3</p>
+</td>
+	<td>
+		<span class="value">Value: 76</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_LYDIAN"></a>
+		GLib.UnicodeScript.lydian
+		</p>
+	</td>
+	<td><p>Lydian. Since 2.16.3</p>
+</td>
+	<td>
+		<span class="value">Value: 77</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_AVESTAN"></a>
+		GLib.UnicodeScript.avestan
+		</p>
+	</td>
+	<td><p>Avestan. Since 2.26</p>
+</td>
+	<td>
+		<span class="value">Value: 78</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_BAMUM"></a>
+		GLib.UnicodeScript.bamum
+		</p>
+	</td>
+	<td><p>Bamum. Since 2.26</p>
+</td>
+	<td>
+		<span class="value">Value: 79</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_EGYPTIAN_HIEROGLYPHS"></a>
+		GLib.UnicodeScript.egyptian_hieroglyphs
+		</p>
+	</td>
+	<td><p>Egyptian Hieroglpyhs. Since 2.26</p>
+</td>
+	<td>
+		<span class="value">Value: 80</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_IMPERIAL_ARAMAIC"></a>
+		GLib.UnicodeScript.imperial_aramaic
+		</p>
+	</td>
+	<td><p>Imperial Aramaic. Since 2.26</p>
+</td>
+	<td>
+		<span class="value">Value: 81</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_INSCRIPTIONAL_PAHLAVI"></a>
+		GLib.UnicodeScript.inscriptional_pahlavi
+		</p>
+	</td>
+	<td><p>Inscriptional Pahlavi. Since 2.26</p>
+</td>
+	<td>
+		<span class="value">Value: 82</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_INSCRIPTIONAL_PARTHIAN"></a>
+		GLib.UnicodeScript.inscriptional_parthian
+		</p>
+	</td>
+	<td><p>Inscriptional Parthian. Since 2.26</p>
+</td>
+	<td>
+		<span class="value">Value: 83</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_JAVANESE"></a>
+		GLib.UnicodeScript.javanese
+		</p>
+	</td>
+	<td><p>Javanese. Since 2.26</p>
+</td>
+	<td>
+		<span class="value">Value: 84</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_KAITHI"></a>
+		GLib.UnicodeScript.kaithi
+		</p>
+	</td>
+	<td><p>Kaithi. Since 2.26</p>
+</td>
+	<td>
+		<span class="value">Value: 85</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_LISU"></a>
+		GLib.UnicodeScript.lisu
+		</p>
+	</td>
+	<td><p>Lisu. Since 2.26</p>
+</td>
+	<td>
+		<span class="value">Value: 86</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_MEETEI_MAYEK"></a>
+		GLib.UnicodeScript.meetei_mayek
+		</p>
+	</td>
+	<td><p>Meetei Mayek. Since 2.26</p>
+</td>
+	<td>
+		<span class="value">Value: 87</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_OLD_SOUTH_ARABIAN"></a>
+		GLib.UnicodeScript.old_south_arabian
+		</p>
+	</td>
+	<td><p>Old South Arabian. Since 2.26</p>
+</td>
+	<td>
+		<span class="value">Value: 88</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_OLD_TURKIC"></a>
+		GLib.UnicodeScript.old_turkic
+		</p>
+	</td>
+	<td><p>Old Turkic. Since 2.28</p>
+</td>
+	<td>
+		<span class="value">Value: 89</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_SAMARITAN"></a>
+		GLib.UnicodeScript.samaritan
+		</p>
+	</td>
+	<td><p>Samaritan. Since 2.26</p>
+</td>
+	<td>
+		<span class="value">Value: 90</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_TAI_THAM"></a>
+		GLib.UnicodeScript.tai_tham
+		</p>
+	</td>
+	<td><p>Tai Tham. Since 2.26</p>
+</td>
+	<td>
+		<span class="value">Value: 91</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_TAI_VIET"></a>
+		GLib.UnicodeScript.tai_viet
+		</p>
+	</td>
+	<td><p>Tai Viet. Since 2.26</p>
+</td>
+	<td>
+		<span class="value">Value: 92</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_BATAK"></a>
+		GLib.UnicodeScript.batak
+		</p>
+	</td>
+	<td><p>Batak. Since 2.28</p>
+</td>
+	<td>
+		<span class="value">Value: 93</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_BRAHMI"></a>
+		GLib.UnicodeScript.brahmi
+		</p>
+	</td>
+	<td><p>Brahmi. Since 2.28</p>
+</td>
+	<td>
+		<span class="value">Value: 94</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_MANDAIC"></a>
+		GLib.UnicodeScript.mandaic
+		</p>
+	</td>
+	<td><p>Mandaic. Since 2.28</p>
+</td>
+	<td>
+		<span class="value">Value: 95</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_CHAKMA"></a>
+		GLib.UnicodeScript.chakma
+		</p>
+	</td>
+	<td><p>Chakma. Since: 2.32</p>
+</td>
+	<td>
+		<span class="value">Value: 96</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_MEROITIC_CURSIVE"></a>
+		GLib.UnicodeScript.meroitic_cursive
+		</p>
+	</td>
+	<td><p>Meroitic Cursive. Since: 2.32</p>
+</td>
+	<td>
+		<span class="value">Value: 97</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_MEROITIC_HIEROGLYPHS"></a>
+		GLib.UnicodeScript.meroitic_hieroglyphs
+		</p>
+	</td>
+	<td><p>Meroitic Hieroglyphs. Since: 2.32</p>
+</td>
+	<td>
+		<span class="value">Value: 98</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_MIAO"></a>
+		GLib.UnicodeScript.miao
+		</p>
+	</td>
+	<td><p>Miao. Since: 2.32</p>
+</td>
+	<td>
+		<span class="value">Value: 99</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_SHARADA"></a>
+		GLib.UnicodeScript.sharada
+		</p>
+	</td>
+	<td><p>Sharada. Since: 2.32</p>
+</td>
+	<td>
+		<span class="value">Value: 100</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_SORA_SOMPENG"></a>
+		GLib.UnicodeScript.sora_sompeng
+		</p>
+	</td>
+	<td><p>Sora Sompeng. Since: 2.32</p>
+</td>
+	<td>
+		<span class="value">Value: 101</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_TAKRI"></a>
+		GLib.UnicodeScript.takri
+		</p>
+	</td>
+	<td><p>Takri. Since: 2.32</p>
+</td>
+	<td>
+		<span class="value">Value: 102</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_BASSA_VAH"></a>
+		GLib.UnicodeScript.bassa_vah
+		</p>
+	</td>
+	<td><p>Bassa. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 103</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_CAUCASIAN_ALBANIAN"></a>
+		GLib.UnicodeScript.caucasian_albanian
+		</p>
+	</td>
+	<td><p>Caucasian Albanian. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 104</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_DUPLOYAN"></a>
+		GLib.UnicodeScript.duployan
+		</p>
+	</td>
+	<td><p>Duployan. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 105</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_ELBASAN"></a>
+		GLib.UnicodeScript.elbasan
+		</p>
+	</td>
+	<td><p>Elbasan. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 106</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_GRANTHA"></a>
+		GLib.UnicodeScript.grantha
+		</p>
+	</td>
+	<td><p>Grantha. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 107</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_KHOJKI"></a>
+		GLib.UnicodeScript.khojki
+		</p>
+	</td>
+	<td><p>Kjohki. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 108</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_KHUDAWADI"></a>
+		GLib.UnicodeScript.khudawadi
+		</p>
+	</td>
+	<td><p>Khudawadi, Sindhi. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 109</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_LINEAR_A"></a>
+		GLib.UnicodeScript.linear_a
+		</p>
+	</td>
+	<td><p>Linear A. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 110</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_MAHAJANI"></a>
+		GLib.UnicodeScript.mahajani
+		</p>
+	</td>
+	<td><p>Mahajani. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 111</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_MANICHAEAN"></a>
+		GLib.UnicodeScript.manichaean
+		</p>
+	</td>
+	<td><p>Manichaean. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 112</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_MENDE_KIKAKUI"></a>
+		GLib.UnicodeScript.mende_kikakui
+		</p>
+	</td>
+	<td><p>Mende Kikakui. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 113</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_MODI"></a>
+		GLib.UnicodeScript.modi
+		</p>
+	</td>
+	<td><p>Modi. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 114</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_MRO"></a>
+		GLib.UnicodeScript.mro
+		</p>
+	</td>
+	<td><p>Mro. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 115</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_NABATAEAN"></a>
+		GLib.UnicodeScript.nabataean
+		</p>
+	</td>
+	<td><p>Nabataean. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 116</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_OLD_NORTH_ARABIAN"></a>
+		GLib.UnicodeScript.old_north_arabian
+		</p>
+	</td>
+	<td><p>Old North Arabian. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 117</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_OLD_PERMIC"></a>
+		GLib.UnicodeScript.old_permic
+		</p>
+	</td>
+	<td><p>Old Permic. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 118</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_PAHAWH_HMONG"></a>
+		GLib.UnicodeScript.pahawh_hmong
+		</p>
+	</td>
+	<td><p>Pahawh Hmong. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 119</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_PALMYRENE"></a>
+		GLib.UnicodeScript.palmyrene
+		</p>
+	</td>
+	<td><p>Palmyrene. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 120</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_PAU_CIN_HAU"></a>
+		GLib.UnicodeScript.pau_cin_hau
+		</p>
+	</td>
+	<td><p>Pau Cin Hau. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 121</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_PSALTER_PAHLAVI"></a>
+		GLib.UnicodeScript.psalter_pahlavi
+		</p>
+	</td>
+	<td><p>Psalter Pahlavi. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 122</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_SIDDHAM"></a>
+		GLib.UnicodeScript.siddham
+		</p>
+	</td>
+	<td><p>Siddham. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 123</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_TIRHUTA"></a>
+		GLib.UnicodeScript.tirhuta
+		</p>
+	</td>
+	<td><p>Tirhuta. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 124</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_WARANG_CITI"></a>
+		GLib.UnicodeScript.warang_citi
+		</p>
+	</td>
+	<td><p>Warang Citi. Since: 2.42</p>
+</td>
+	<td>
+		<span class="value">Value: 125</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_AHOM"></a>
+		GLib.UnicodeScript.ahom
+		</p>
+	</td>
+	<td><p>Ahom. Since: 2.48</p>
+</td>
+	<td>
+		<span class="value">Value: 126</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_ANATOLIAN_HIEROGLYPHS"></a>
+		GLib.UnicodeScript.anatolian_hieroglyphs
+		</p>
+	</td>
+	<td><p>Anatolian Hieroglyphs. Since: 2.48</p>
+</td>
+	<td>
+		<span class="value">Value: 127</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_HATRAN"></a>
+		GLib.UnicodeScript.hatran
+		</p>
+	</td>
+	<td><p>Hatran. Since: 2.48</p>
+</td>
+	<td>
+		<span class="value">Value: 128</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_MULTANI"></a>
+		GLib.UnicodeScript.multani
+		</p>
+	</td>
+	<td><p>Multani. Since: 2.48</p>
+</td>
+	<td>
+		<span class="value">Value: 129</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_OLD_HUNGARIAN"></a>
+		GLib.UnicodeScript.old_hungarian
+		</p>
+	</td>
+	<td><p>Old Hungarian. Since: 2.48</p>
+</td>
+	<td>
+		<span class="value">Value: 130</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_SIGNWRITING"></a>
+		GLib.UnicodeScript.signwriting
+		</p>
+	</td>
+	<td><p>Signwriting. Since: 2.48</p>
+</td>
+	<td>
+		<span class="value">Value: 131</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_ADLAM"></a>
+		GLib.UnicodeScript.adlam
+		</p>
+	</td>
+	<td><p>Adlam. Since: 2.50</p>
+</td>
+	<td>
+		<span class="value">Value: 132</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_BHAIKSUKI"></a>
+		GLib.UnicodeScript.bhaiksuki
+		</p>
+	</td>
+	<td><p>Bhaiksuki. Since: 2.50</p>
+</td>
+	<td>
+		<span class="value">Value: 133</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_MARCHEN"></a>
+		GLib.UnicodeScript.marchen
+		</p>
+	</td>
+	<td><p>Marchen. Since: 2.50</p>
+</td>
+	<td>
+		<span class="value">Value: 134</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_NEWA"></a>
+		GLib.UnicodeScript.newa
+		</p>
+	</td>
+	<td><p>Newa. Since: 2.50</p>
+</td>
+	<td>
+		<span class="value">Value: 135</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_OSAGE"></a>
+		GLib.UnicodeScript.osage
+		</p>
+	</td>
+	<td><p>Osage. Since: 2.50</p>
+</td>
+	<td>
+		<span class="value">Value: 136</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_UNICODE_SCRIPT_TANGUT"></a>
+		GLib.UnicodeScript.tangut
+		</p>
+	</td>
+	<td><p>Tangut. Since: 2.50</p>
+</td>
+	<td>
+		<span class="value">Value: 137</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GNormalizeMode">
+		
+<h3 id="enum-glibnormalizemode">
+		enum GLib.NormalizeMode
+	</h3>
+
+		<p>Defines how a Unicode string is transformed in a canonical
+form, standardizing such issues as whether a character with
+an accent is represented as a base character and combining
+accent or as a single precomposed character. Unicode strings
+should generally be normalized before comparing them.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members3">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_NORMALIZE_DEFAULT"></a>
+		GLib.NormalizeMode.default
+		</p>
+	</td>
+	<td><p>standardize differences that do not affect the
+text content, such as the above-mentioned accent representation</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_NORMALIZE_NFD"></a>
+		GLib.NormalizeMode.nfd
+		</p>
+	</td>
+	<td><p>another name for <a href="unicode.html#G_NORMALIZE_DEFAULT">GLib.NormalizeMode.default</a></p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_NORMALIZE_DEFAULT_COMPOSE"></a>
+		GLib.NormalizeMode.default_compose
+		</p>
+	</td>
+	<td><p>like <a href="unicode.html#G_NORMALIZE_DEFAULT">GLib.NormalizeMode.default</a>, but with
+composed forms rather than a maximally decomposed form</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_NORMALIZE_NFC"></a>
+		GLib.NormalizeMode.nfc
+		</p>
+	</td>
+	<td><p>another name for <a href="unicode.html#G_NORMALIZE_DEFAULT_COMPOSE">GLib.NormalizeMode.default_compose</a></p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_NORMALIZE_ALL"></a>
+		GLib.NormalizeMode.all
+		</p>
+	</td>
+	<td><p>beyond <a href="unicode.html#G_NORMALIZE_DEFAULT">GLib.NormalizeMode.default</a> also standardize the
+"compatibility" characters in Unicode, such as SUPERSCRIPT THREE
+to the standard forms (in this case DIGIT THREE). Formatting
+information may be lost but for most text operations such
+characters should be considered the same</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_NORMALIZE_NFKD"></a>
+		GLib.NormalizeMode.nfkd
+		</p>
+	</td>
+	<td><p>another name for <a href="unicode.html#G_NORMALIZE_ALL">GLib.NormalizeMode.all</a></p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_NORMALIZE_ALL_COMPOSE"></a>
+		GLib.NormalizeMode.all_compose
+		</p>
+	</td>
+	<td><p>like <a href="unicode.html#G_NORMALIZE_ALL">GLib.NormalizeMode.all</a>, but with composed
+forms rather than a maximally decomposed form</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_NORMALIZE_NFKC"></a>
+		GLib.NormalizeMode.nfkc
+		</p>
+	</td>
+	<td><p>another name for <a href="unicode.html#G_NORMALIZE_ALL_COMPOSE">GLib.NormalizeMode.all_compose</a></p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="G_UNICHAR_MAX_DECOMPOSITION_LENGTH">
+		
+<h3 class="constant" id="glibunichar_max_decomposition_length">
+	GLib.UNICHAR_MAX_DECOMPOSITION_LENGTH
+</h3>
+
+		<p>The maximum length (in codepoints) of a compatibility or canonical
+decomposition of a single Unicode character.</p>
+<p>This is as defined by Unicode 6.1.</p>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

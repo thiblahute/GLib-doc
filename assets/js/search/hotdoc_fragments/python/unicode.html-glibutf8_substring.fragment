@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#glibutf8_substring", "fragment": "GLib.utf8_substring \nCopies a substring out of a UTF encoded string. The substring will contain end_pos start_pos characters. \n"});

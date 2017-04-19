@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hooks.html#glibprototypehook_prepend", "fragment": "GLib.prototype.hook_prepend \nPrepends a GLib.Hook on the start of a GLib.HookList. \n"});

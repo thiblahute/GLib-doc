@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/async_queues.html#glibasyncqueuetimeout_pop", "fragment": "GLib.AsyncQueue.timeout_pop \nPops data from the queue. If the queue is empty blocks for timeout microseconds or until data becomes available. \nIf no data is received before the timeout None is returned. \n"});

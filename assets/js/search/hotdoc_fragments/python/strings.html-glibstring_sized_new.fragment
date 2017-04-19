@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/strings.html#glibstring_sized_new", "fragment": "GLib.string_sized_new \nCreates a new GLib.String with enough space for dfl_size bytes. This is useful if you are going to add a lot of text to the string and don t want it to be reallocated too often. \n"});

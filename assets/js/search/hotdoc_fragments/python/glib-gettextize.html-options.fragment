@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/glib-gettextize.html#options", "fragment": "Options \nhelp print help and exit \nversion print version information and exit \nc copy copy files instead of making symlinks \nf force force writing of new files even if old ones exist \n"});

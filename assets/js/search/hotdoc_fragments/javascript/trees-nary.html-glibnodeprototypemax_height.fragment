@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/trees-nary.html#glibnodeprototypemax_height", "fragment": "GLib.Node.prototype.max_height \nGets the maximum height of all branches beneath a GLib.Node. This is the maximum distance from the GLib.Node to all leaf nodes. \nIf root is null is returned. If root has no children is returned. If root has children is returned. And so on. \n"});

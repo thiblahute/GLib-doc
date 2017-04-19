@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvarianttype.html#g_variant_type_is_subtype_of", "fragment": "GLib.VariantType.prototype.is_subtype_of \nChecks if type is a subtype of supertype. \nThis function returns true if type is a subtype of supertype. All types are considered to be subtypes of themselves. Aside from that only indefinite types can have subtypes. \n"});

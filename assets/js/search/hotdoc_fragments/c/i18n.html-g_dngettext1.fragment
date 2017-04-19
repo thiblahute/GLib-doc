@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/i18n.html#g_dngettext1", "fragment": "g_dngettext \nThis function is a wrapper of dngettext which does not translate the message if the default domain as set with textdomain has no translations for the current locale. \nSee g_dgettext for details of how this differs from dngettext proper. \n"});

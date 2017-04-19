@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gregex.html#glibregexprototypenew", "fragment": "GLib.Regex.prototype.new \nCompiles the regular expression to an internal form and does the initial setup of the GLib.Regex structure. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hooks.html#g_hook_unref1", "fragment": "g_hook_unref \nDecrements the reference count of a GHook. If the reference count falls to the GHook is removed from the GHookList and g_hook_free is called to free it. \n"});

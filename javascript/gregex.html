@@ -1,0 +1,5667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GRegex</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="gregex.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="javascript">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="gregex.markdown">
+        <h1 id="gregex">GRegex</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GRegex</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GRegexConstructors">Constructors</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_new">
+		
+<h4 id="glibregexprototypenew">
+	<span><code>GLib.Regex.prototype.new</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Regex.prototype.new(pattern: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, compile_options: <a title="GLib.RegexCompileFlags" href="gregex.html#GRegexCompileFlags">GLib.RegexCompileFlags</a>, match_options: <a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>): {
+    // javascript wrapper for 'g_regex_new'
+}</pre>
+
+<p>Compiles the regular expression to an internal form, and does
+the initial setup of the <a href="gregex.html#GRegex">GLib.Regex</a> structure.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pattern:</code></em></i>
+		</p>
+	</td>
+		<td><p>the regular expression</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>compile_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>compile options for the regular expression, or 0</p>
+</td>
+<td>
+<a title="GLib.RegexCompileFlags" href="gregex.html#GRegexCompileFlags">GLib.RegexCompileFlags</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>match options for the regular expression, or 0</p>
+</td>
+<td>
+<a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="gregex.html#GRegex">GLib.Regex</a> structure or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> if an error occured. Call
+<a href="gregex.html#g_regex_unref">GLib.Regex.prototype.unref</a> when you are done with it</p>
+
+	</td>
+	<td>
+		<a title="GLib.Regex" href="gregex.html#GRegex">GLib.Regex</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GRegexMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_split">
+		
+<h4 id="glibregexprototypesplit">
+	<span><code>GLib.Regex.prototype.split</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Regex.prototype.split(string: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, match_options: <a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>): {
+    // javascript wrapper for 'g_regex_split'
+}</pre>
+
+<p>Breaks the string on the pattern, and returns an array of the tokens.
+If the pattern contains capturing parentheses, then the text for each
+of the substrings will also be returned. If the pattern does not match
+anywhere in the string, then the whole string is returned as the first
+token.</p>
+<p>As a special case, the result of splitting the empty string "" is an
+empty vector, not a vector containing a single string. The reason for
+this special case is that being able to represent a empty vector is
+typically more useful than consistent handling of empty elements. If
+you do need to represent empty elements, you'll need to check for the
+empty string before calling this function.</p>
+<p>A pattern that can match empty strings splits <em>string</em> into separate
+characters wherever it matches the empty string between characters.
+For example splitting "ab c" using as a separator "\s*", you will get
+"a", "b" and "c".</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GLib.Regex</a> structure</p>
+</td>
+<td>
+<a title="GLib.Regex" href="gregex.html#GRegex">GLib.Regex</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to split with the pattern</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>match time option flags</p>
+</td>
+<td>
+<a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>-terminated gchar ** array. Free
+it using <a href="string_utils.html#g_strfreev">GLib.prototype.strfreev</a></p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_match_all">
+		
+<h4 id="glibregexprototypematch_all">
+	<span><code>GLib.Regex.prototype.match_all</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Regex.prototype.match_all(string: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, match_options: <a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>): {
+    // javascript wrapper for 'g_regex_match_all'
+}</pre>
+
+<p>Using the standard algorithm for regular expression matching only
+the longest match in the string is retrieved. This function uses
+a different algorithm so it can retrieve all the possible matches.
+For more documentation see <a href="gregex.html#g_regex_match_all_full">GLib.Regex.prototype.match_all_full</a>.</p>
+<p>A <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> structure, used to get information on the match, is
+stored in <em>match_info</em> if not <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>. Note that if <em>match_info</em> is
+not <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> then it is created even if the function returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a>,
+i.e. you must free it regardless if regular expression actually
+matched.</p>
+<p><em>string</em> is not copied and is used in <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> internally. If
+you use any <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> method (except <a href="gregex.html#g_match_info_free">GLib.MatchInfo.prototype.free</a>) after
+freeing or modifying <em>string</em> then the behaviour is undefined.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GLib.Regex</a> structure from <a href="gregex.html#g_regex_new">GLib.Regex.prototype.new</a></p>
+</td>
+<td>
+<a title="GLib.Regex" href="gregex.html#GRegex">GLib.Regex</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to scan for matches</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>match options</p>
+</td>
+<td>
+<a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> is the string matched, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>match_info:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> is the string matched, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_ref">
+		
+<h4 id="glibregexprototyperef">
+	<span><code>GLib.Regex.prototype.ref</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Regex.prototype.ref(): {
+    // javascript wrapper for 'g_regex_ref'
+}</pre>
+
+<p>Increases reference count of <em>regex</em> by 1.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GLib.Regex</a></p>
+</td>
+<td>
+<a title="GLib.Regex" href="gregex.html#GRegex">GLib.Regex</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>regex</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.Regex" href="gregex.html#GRegex">GLib.Regex</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_get_string_number">
+		
+<h4 id="glibregexprototypeget_string_number">
+	<span><code>GLib.Regex.prototype.get_string_number</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Regex.prototype.get_string_number(name: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_regex_get_string_number'
+}</pre>
+
+<p>Retrieves the number of the subexpression named <em>name</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="gregex.html#GRegex">GLib.Regex</a> structure</p>
+</td>
+<td>
+<a title="GLib.Regex" href="gregex.html#GRegex">GLib.Regex</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>name:</code></em></i>
+		</p>
+	</td>
+		<td><p>name of the subexpression</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The number of the subexpression or -1 if <em>name</em>
+does not exists</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.34;" id="g_regex_get_has_cr_or_lf">
+		
+<h4 id="glibregexprototypeget_has_cr_or_lf">
+	<span><code>GLib.Regex.prototype.get_has_cr_or_lf</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Regex.prototype.get_has_cr_or_lf(): {
+    // javascript wrapper for 'g_regex_get_has_cr_or_lf'
+}</pre>
+
+<p>Checks whether the pattern contains explicit CR or LF references.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GLib.Regex</a> structure</p>
+</td>
+<td>
+<a title="GLib.Regex" href="gregex.html#GRegex">GLib.Regex</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the pattern contains explicit CR or LF references</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.34
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_split_full">
+		
+<h4 id="glibregexprototypesplit_full">
+	<span><code>GLib.Regex.prototype.split_full</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Regex.prototype.split_full(string: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, string_len: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, start_position: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, match_options: <a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>, max_tokens: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_regex_split_full'
+}</pre>
+
+<p>Breaks the string on the pattern, and returns an array of the tokens.
+If the pattern contains capturing parentheses, then the text for each
+of the substrings will also be returned. If the pattern does not match
+anywhere in the string, then the whole string is returned as the first
+token.</p>
+<p>As a special case, the result of splitting the empty string "" is an
+empty vector, not a vector containing a single string. The reason for
+this special case is that being able to represent a empty vector is
+typically more useful than consistent handling of empty elements. If
+you do need to represent empty elements, you'll need to check for the
+empty string before calling this function.</p>
+<p>A pattern that can match empty strings splits <em>string</em> into separate
+characters wherever it matches the empty string between characters.
+For example splitting "ab c" using as a separator "\s*", you will get
+"a", "b" and "c".</p>
+<p>Setting <em>start_position</em> differs from just passing over a shortened
+string and setting <a href="gregex.html#G_REGEX_MATCH_NOTBOL">GLib.RegexMatchFlags.prototype.notbol</a> in the case of a pattern
+that begins with any kind of lookbehind assertion, such as "\b".</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GLib.Regex</a> structure</p>
+</td>
+<td>
+<a title="GLib.Regex" href="gregex.html#GRegex">GLib.Regex</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to split with the pattern</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>string</em>, or -1 if <em>string</em> is nul-terminated</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>start_position:</code></em></i>
+		</p>
+	</td>
+		<td><p>starting index of the string to match, in bytes</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>match time option flags</p>
+</td>
+<td>
+<a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>max_tokens:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum number of tokens to split <em>string</em> into.
+If this is less than 1, the string is split completely</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>-terminated gchar ** array. Free
+it using <a href="string_utils.html#g_strfreev">GLib.prototype.strfreev</a></p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.26;" id="g_regex_get_compile_flags">
+		
+<h4 id="glibregexprototypeget_compile_flags">
+	<span><code>GLib.Regex.prototype.get_compile_flags</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Regex.prototype.get_compile_flags(): {
+    // javascript wrapper for 'g_regex_get_compile_flags'
+}</pre>
+
+<p>Returns the compile options that <em>regex</em> was created with.</p>
+<p>Depending on the version of PCRE that is used, this may or may not
+include flags set by option expressions such as <code>(?i)</code> found at the
+top-level within the compiled pattern.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GLib.Regex</a></p>
+</td>
+<td>
+<a title="GLib.Regex" href="gregex.html#GRegex">GLib.Regex</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>flags from <a href="gregex.html#GRegexCompileFlags">GLib.RegexCompileFlags</a></p>
+
+	</td>
+	<td>
+		<a title="GLib.RegexCompileFlags" href="gregex.html#GRegexCompileFlags">GLib.RegexCompileFlags</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.26
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_replace_literal">
+		
+<h4 id="glibregexprototypereplace_literal">
+	<span><code>GLib.Regex.prototype.replace_literal</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Regex.prototype.replace_literal(string: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, string_len: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, start_position: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, replacement: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, match_options: <a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>): {
+    // javascript wrapper for 'g_regex_replace_literal'
+}</pre>
+
+<p>Replaces all occurrences of the pattern in <em>regex</em> with the
+replacement text. <em>replacement</em> is replaced literally, to
+include backreferences use <a href="gregex.html#g_regex_replace">GLib.Regex.prototype.replace</a>.</p>
+<p>Setting <em>start_position</em> differs from just passing over a
+shortened string and setting <a href="gregex.html#G_REGEX_MATCH_NOTBOL">GLib.RegexMatchFlags.prototype.notbol</a> in the
+case of a pattern that begins with any kind of lookbehind
+assertion, such as "\b".</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GLib.Regex</a> structure</p>
+</td>
+<td>
+<a title="GLib.Regex" href="gregex.html#GRegex">GLib.Regex</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to perform matches against</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>string</em>, or -1 if <em>string</em> is nul-terminated</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>start_position:</code></em></i>
+		</p>
+	</td>
+		<td><p>starting index of the string to match, in bytes</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>replacement:</code></em></i>
+		</p>
+	</td>
+		<td><p>text to replace each match with</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>options for the match</p>
+</td>
+<td>
+<a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string containing the replacements</p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_get_pattern">
+		
+<h4 id="glibregexprototypeget_pattern">
+	<span><code>GLib.Regex.prototype.get_pattern</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Regex.prototype.get_pattern(): {
+    // javascript wrapper for 'g_regex_get_pattern'
+}</pre>
+
+<p>Gets the pattern string associated with <em>regex</em>, i.e. a copy of
+the string passed to <a href="gregex.html#g_regex_new">GLib.Regex.prototype.new</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GLib.Regex</a> structure</p>
+</td>
+<td>
+<a title="GLib.Regex" href="gregex.html#GRegex">GLib.Regex</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the pattern of <em>regex</em></p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_get_max_backref">
+		
+<h4 id="glibregexprototypeget_max_backref">
+	<span><code>GLib.Regex.prototype.get_max_backref</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Regex.prototype.get_max_backref(): {
+    // javascript wrapper for 'g_regex_get_max_backref'
+}</pre>
+
+<p>Returns the number of the highest back reference
+in the pattern, or 0 if the pattern does not contain
+back references.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GLib.Regex</a></p>
+</td>
+<td>
+<a title="GLib.Regex" href="gregex.html#GRegex">GLib.Regex</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of the highest back reference</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_replace">
+		
+<h4 id="glibregexprototypereplace">
+	<span><code>GLib.Regex.prototype.replace</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Regex.prototype.replace(string: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, string_len: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, start_position: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, replacement: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, match_options: <a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>): {
+    // javascript wrapper for 'g_regex_replace'
+}</pre>
+
+<p>Replaces all occurrences of the pattern in <em>regex</em> with the
+replacement text. Backreferences of the form '\number' or
+'\g<number>' in the replacement text are interpolated by the
+number-th captured subexpression of the match, '\g<name>' refers
+to the captured subexpression with the given name. '\0' refers
+to the complete match, but '\0' followed by a number is the octal
+representation of a character. To include a literal '' in the
+replacement, write '\'.</name></number></p>
+<p>There are also escapes that changes the case of the following text:</p>
+<ul>
+<li>\l: Convert to lower case the next character</li>
+<li>\u: Convert to upper case the next character</li>
+<li>\L: Convert to lower case till \E</li>
+<li>\U: Convert to upper case till \E</li>
+<li>\E: End case modification</li>
+</ul>
+<p>If you do not need to use backreferences use <a href="gregex.html#g_regex_replace_literal">GLib.Regex.prototype.replace_literal</a>.</p>
+<p>The <em>replacement</em> string must be UTF-8 encoded even if <a href="gregex.html#G_REGEX_RAW">GLib.RegexCompileFlags.prototype.raw</a> was
+passed to <a href="gregex.html#g_regex_new">GLib.Regex.prototype.new</a>. If you want to use not UTF-8 encoded stings
+you can use <a href="gregex.html#g_regex_replace_literal">GLib.Regex.prototype.replace_literal</a>.</p>
+<p>Setting <em>start_position</em> differs from just passing over a shortened
+string and setting <a href="gregex.html#G_REGEX_MATCH_NOTBOL">GLib.RegexMatchFlags.prototype.notbol</a> in the case of a pattern that
+begins with any kind of lookbehind assertion, such as "\b".</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GLib.Regex</a> structure</p>
+</td>
+<td>
+<a title="GLib.Regex" href="gregex.html#GRegex">GLib.Regex</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to perform matches against</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>string</em>, or -1 if <em>string</em> is nul-terminated</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>start_position:</code></em></i>
+		</p>
+	</td>
+		<td><p>starting index of the string to match, in bytes</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>replacement:</code></em></i>
+		</p>
+	</td>
+		<td><p>text to replace each match with</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>options for the match</p>
+</td>
+<td>
+<a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string containing the replacements</p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_unref">
+		
+<h4 id="glibregexprototypeunref">
+	<span><code>GLib.Regex.prototype.unref</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Regex.prototype.unref(): {
+    // javascript wrapper for 'g_regex_unref'
+}</pre>
+
+<p>Decreases reference count of <em>regex</em> by 1. When reference count drops
+to zero, it frees all the memory associated with the regex structure.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GLib.Regex</a></p>
+</td>
+<td>
+<a title="GLib.Regex" href="gregex.html#GRegex">GLib.Regex</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_match_full">
+		
+<h4 id="glibregexprototypematch_full">
+	<span><code>GLib.Regex.prototype.match_full</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Regex.prototype.match_full(string: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, string_len: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, start_position: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, match_options: <a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>): {
+    // javascript wrapper for 'g_regex_match_full'
+}</pre>
+
+<p>Scans for a match in string for the pattern in <em>regex</em>.
+The <em>match_options</em> are combined with the match options specified
+when the <em>regex</em> structure was created, letting you have more
+flexibility in reusing <a href="gregex.html#GRegex">GLib.Regex</a> structures.</p>
+<p>Setting <em>start_position</em> differs from just passing over a shortened
+string and setting <a href="gregex.html#G_REGEX_MATCH_NOTBOL">GLib.RegexMatchFlags.prototype.notbol</a> in the case of a pattern
+that begins with any kind of lookbehind assertion, such as "\b".</p>
+<p>A <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> structure, used to get information on the match, is
+stored in <em>match_info</em> if not <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>. Note that if <em>match_info</em> is
+not <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> then it is created even if the function returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a>,
+i.e. you must free it regardless if regular expression actually
+matched.</p>
+<p><em>string</em> is not copied and is used in <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> internally. If
+you use any <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> method (except <a href="gregex.html#g_match_info_free">GLib.MatchInfo.prototype.free</a>) after
+freeing or modifying <em>string</em> then the behaviour is undefined.</p>
+<p>To retrieve all the non-overlapping matches of the pattern in
+string you can use <a href="gregex.html#g_match_info_next">GLib.MatchInfo.prototype.next</a>.</p>
+<pre><code class="language-[&lt;!--"> static void
+ print_uppercase_words (const gchar *string)
+ {
+   // Print all uppercase-only words.
+   GRegex *regex;
+   GMatchInfo *match_info;
+   GError *error = NULL;
+
+   regex = g_regex_new ("[A-Z]+", 0, 0, NULL);
+   g_regex_match_full (regex, string, -1, 0, 0, &amp;match_info, &amp;error);
+   while (g_match_info_matches (match_info))
+     {
+       gchar *word = g_match_info_fetch (match_info, 0);
+       g_print ("Found: %s\n", word);
+       g_free (word);
+       g_match_info_next (match_info, &amp;error);
+     }
+   g_match_info_free (match_info);
+   g_regex_unref (regex);
+   if (error != NULL)
+     {
+       g_printerr ("Error while matching: %s\n", error-&gt;message);
+       g_error_free (error);
+     }
+ }
+</code></pre>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GLib.Regex</a> structure from <a href="gregex.html#g_regex_new">GLib.Regex.prototype.new</a></p>
+</td>
+<td>
+<a title="GLib.Regex" href="gregex.html#GRegex">GLib.Regex</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to scan for matches</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>string</em>, or -1 if <em>string</em> is nul-terminated</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>start_position:</code></em></i>
+		</p>
+	</td>
+		<td><p>starting index of the string to match, in bytes</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>match options</p>
+</td>
+<td>
+<a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of1">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> is the string matched, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>match_info:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> is the string matched, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_match_all_full">
+		
+<h4 id="glibregexprototypematch_all_full">
+	<span><code>GLib.Regex.prototype.match_all_full</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Regex.prototype.match_all_full(string: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, string_len: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, start_position: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, match_options: <a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>): {
+    // javascript wrapper for 'g_regex_match_all_full'
+}</pre>
+
+<p>Using the standard algorithm for regular expression matching only
+the longest match in the string is retrieved, it is not possible
+to obtain all the available matches. For instance matching
+"<a> <b> <c>" against the pattern "&lt;.*&gt;"
+you get "<a> <b> <c>".</c></b></a></c></b></a></p>
+<p>This function uses a different algorithm (called DFA, i.e. deterministic
+finite automaton), so it can retrieve all the possible matches, all
+starting at the same point in the string. For instance matching
+"<a> <b> <c>" against the pattern "&lt;.*&gt;;"
+you would obtain three matches: "<a> <b> <c>",
+"<a> <b>" and "<a>".</a></b></a></c></b></a></c></b></a></p>
+<p>The number of matched strings is retrieved using
+<a href="gregex.html#g_match_info_get_match_count">GLib.MatchInfo.prototype.get_match_count</a>. To obtain the matched strings and
+their position you can use, respectively, <a href="gregex.html#g_match_info_fetch">GLib.MatchInfo.prototype.fetch</a> and
+<a href="gregex.html#g_match_info_fetch_pos">GLib.MatchInfo.prototype.fetch_pos</a>. Note that the strings are returned in
+reverse order of length; that is, the longest matching string is
+given first.</p>
+<p>Note that the DFA algorithm is slower than the standard one and it
+is not able to capture substrings, so backreferences do not work.</p>
+<p>Setting <em>start_position</em> differs from just passing over a shortened
+string and setting <a href="gregex.html#G_REGEX_MATCH_NOTBOL">GLib.RegexMatchFlags.prototype.notbol</a> in the case of a pattern
+that begins with any kind of lookbehind assertion, such as "\b".</p>
+<p>A <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> structure, used to get information on the match, is
+stored in <em>match_info</em> if not <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>. Note that if <em>match_info</em> is
+not <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> then it is created even if the function returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a>,
+i.e. you must free it regardless if regular expression actually
+matched.</p>
+<p><em>string</em> is not copied and is used in <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> internally. If
+you use any <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> method (except <a href="gregex.html#g_match_info_free">GLib.MatchInfo.prototype.free</a>) after
+freeing or modifying <em>string</em> then the behaviour is undefined.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GLib.Regex</a> structure from <a href="gregex.html#g_regex_new">GLib.Regex.prototype.new</a></p>
+</td>
+<td>
+<a title="GLib.Regex" href="gregex.html#GRegex">GLib.Regex</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to scan for matches</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>string</em>, or -1 if <em>string</em> is nul-terminated</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>start_position:</code></em></i>
+		</p>
+	</td>
+		<td><p>starting index of the string to match, in bytes</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>match options</p>
+</td>
+<td>
+<a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of2">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> is the string matched, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>match_info:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> is the string matched, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.26;" id="g_regex_get_match_flags">
+		
+<h4 id="glibregexprototypeget_match_flags">
+	<span><code>GLib.Regex.prototype.get_match_flags</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Regex.prototype.get_match_flags(): {
+    // javascript wrapper for 'g_regex_get_match_flags'
+}</pre>
+
+<p>Returns the match options that <em>regex</em> was created with.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GLib.Regex</a></p>
+</td>
+<td>
+<a title="GLib.Regex" href="gregex.html#GRegex">GLib.Regex</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>flags from <a href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a></p>
+
+	</td>
+	<td>
+		<a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.26
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_match">
+		
+<h4 id="glibregexprototypematch">
+	<span><code>GLib.Regex.prototype.match</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Regex.prototype.match(string: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, match_options: <a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>): {
+    // javascript wrapper for 'g_regex_match'
+}</pre>
+
+<p>Scans for a match in string for the pattern in <em>regex</em>.
+The <em>match_options</em> are combined with the match options specified
+when the <em>regex</em> structure was created, letting you have more
+flexibility in reusing <a href="gregex.html#GRegex">GLib.Regex</a> structures.</p>
+<p>A <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> structure, used to get information on the match,
+is stored in <em>match_info</em> if not <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>. Note that if <em>match_info</em>
+is not <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> then it is created even if the function returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a>,
+i.e. you must free it regardless if regular expression actually matched.</p>
+<p>To retrieve all the non-overlapping matches of the pattern in
+string you can use <a href="gregex.html#g_match_info_next">GLib.MatchInfo.prototype.next</a>.</p>
+<pre><code class="language-[&lt;!--"> static void
+ print_uppercase_words (const gchar *string)
+ {
+   // Print all uppercase-only words.
+   GRegex *regex;
+   GMatchInfo *match_info;
+
+   regex = g_regex_new ("[A-Z]+", 0, 0, NULL);
+   g_regex_match (regex, string, 0, &amp;match_info);
+   while (g_match_info_matches (match_info))
+     {
+       gchar *word = g_match_info_fetch (match_info, 0);
+       g_print ("Found: %s\n", word);
+       g_free (word);
+       g_match_info_next (match_info, NULL);
+     }
+   g_match_info_free (match_info);
+   g_regex_unref (regex);
+ }
+</code></pre>
+<p><em>string</em> is not copied and is used in <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> internally. If
+you use any <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> method (except <a href="gregex.html#g_match_info_free">GLib.MatchInfo.prototype.free</a>) after
+freeing or modifying <em>string</em> then the behaviour is undefined.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GLib.Regex</a> structure from <a href="gregex.html#g_regex_new">GLib.Regex.prototype.new</a></p>
+</td>
+<td>
+<a title="GLib.Regex" href="gregex.html#GRegex">GLib.Regex</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to scan for matches</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>match options</p>
+</td>
+<td>
+<a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of3">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> is the string matched, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>match_info:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> is the string matched, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_get_capture_count">
+		
+<h4 id="glibregexprototypeget_capture_count">
+	<span><code>GLib.Regex.prototype.get_capture_count</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Regex.prototype.get_capture_count(): {
+    // javascript wrapper for 'g_regex_get_capture_count'
+}</pre>
+
+<p>Returns the number of capturing subpatterns in the pattern.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GLib.Regex</a></p>
+</td>
+<td>
+<a title="GLib.Regex" href="gregex.html#GRegex">GLib.Regex</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of capturing subpatterns</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.38;" id="g_regex_get_max_lookbehind">
+		
+<h4 id="glibregexprototypeget_max_lookbehind">
+	<span><code>GLib.Regex.prototype.get_max_lookbehind</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Regex.prototype.get_max_lookbehind(): {
+    // javascript wrapper for 'g_regex_get_max_lookbehind'
+}</pre>
+
+<p>Gets the number of characters in the longest lookbehind assertion in the
+pattern. This information is useful when doing multi-segment matching using
+the partial matching facilities.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>regex:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GRegex">GLib.Regex</a> structure</p>
+</td>
+<td>
+<a title="GLib.Regex" href="gregex.html#GRegex">GLib.Regex</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of characters in the longest lookbehind assertion.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.38
+		</p>
+
+</div>
+
+
+
+            <h2 class="symbol_section" id="">GMatchInfo</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GMatchInfoMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_free">
+		
+<h4 id="glibmatchinfoprototypefree">
+	<span><code>GLib.MatchInfo.prototype.free</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MatchInfo.prototype.free(): {
+    // javascript wrapper for 'g_match_info_free'
+}</pre>
+
+<p>If <em>match_info</em> is not <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>, calls <a href="gregex.html#g_match_info_unref">GLib.MatchInfo.prototype.unref</a>; otherwise does
+nothing.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a>, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></p>
+</td>
+<td>
+<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_fetch">
+		
+<h4 id="glibmatchinfoprototypefetch">
+	<span><code>GLib.MatchInfo.prototype.fetch</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MatchInfo.prototype.fetch(match_num: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_match_info_fetch'
+}</pre>
+
+<p>Retrieves the text matching the <em>match_num</em>'th capturing
+parentheses. 0 is the full text of the match, 1 is the first paren
+set, 2 the second, and so on.</p>
+<p>If <em>match_num</em> is a valid sub pattern but it didn't match anything
+(e.g. sub pattern 1, matching "b" against "(a)?b") then an empty
+string is returned.</p>
+<p>If the match was obtained using the DFA algorithm, that is using
+<a href="gregex.html#g_regex_match_all">GLib.Regex.prototype.match_all</a> or <a href="gregex.html#g_regex_match_all_full">GLib.Regex.prototype.match_all_full</a>, the retrieved
+string is not that of a set of parentheses but that of a matched
+substring. Substrings are matched in reverse order of length, so
+0 is the longest match.</p>
+<p>The string is fetched from the string passed to the match function,
+so you cannot call this function after freeing the string.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> structure</p>
+</td>
+<td>
+<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_num:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of the sub expression</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The matched substring, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> if an error
+occurred. You have to free the string yourself</p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_fetch_named">
+		
+<h4 id="glibmatchinfoprototypefetch_named">
+	<span><code>GLib.MatchInfo.prototype.fetch_named</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MatchInfo.prototype.fetch_named(name: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_match_info_fetch_named'
+}</pre>
+
+<p>Retrieves the text matching the capturing parentheses named <em>name</em>.</p>
+<p>If <em>name</em> is a valid sub pattern name but it didn't match anything
+(e.g. sub pattern "X", matching "b" against "(?P<x>a)?b")
+then an empty string is returned.</x></p>
+<p>The string is fetched from the string passed to the match function,
+so you cannot call this function after freeing the string.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> structure</p>
+</td>
+<td>
+<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>name:</code></em></i>
+		</p>
+	</td>
+		<td><p>name of the subexpression</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The matched substring, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> if an error
+occurred. You have to free the string yourself</p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_expand_references">
+		
+<h4 id="glibmatchinfoprototypeexpand_references">
+	<span><code>GLib.MatchInfo.prototype.expand_references</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MatchInfo.prototype.expand_references(string_to_expand: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_match_info_expand_references'
+}</pre>
+
+<p>Returns a new string containing the text in <em>string_to_expand</em> with
+references and escape sequences expanded. References refer to the last
+match done with <em>string</em> against <em>regex</em> and have the same syntax used by
+<a href="gregex.html#g_regex_replace">GLib.Regex.prototype.replace</a>.</p>
+<p>The <em>string_to_expand</em> must be UTF-8 encoded even if <a href="gregex.html#G_REGEX_RAW">GLib.RegexCompileFlags.prototype.raw</a> was
+passed to <a href="gregex.html#g_regex_new">GLib.Regex.prototype.new</a>.</p>
+<p>The backreferences are extracted from the string passed to the match
+function, so you cannot call this function after freeing the string.</p>
+<p><em>match_info</em> may be <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> in which case <em>string_to_expand</em> must not
+contain references. For instance "foo\n" does not refer to an actual
+pattern and '\n' merely will be replaced with \n character,
+while to expand "\0" (whole match) one needs the result of a match.
+Use <a href="gregex.html#g_regex_check_replacement">GLib.prototype.regex_check_replacement</a> to find out whether <em>string_to_expand</em>
+contains references.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></p>
+</td>
+<td>
+<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string_to_expand:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to expand</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the expanded string, or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> if an error occurred</p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_fetch_all">
+		
+<h4 id="glibmatchinfoprototypefetch_all">
+	<span><code>GLib.MatchInfo.prototype.fetch_all</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MatchInfo.prototype.fetch_all(): {
+    // javascript wrapper for 'g_match_info_fetch_all'
+}</pre>
+
+<p>Bundles up pointers to each of the matching substrings from a match
+and stores them in an array of gchar pointers. The first element in
+the returned array is the match number 0, i.e. the entire matched
+text.</p>
+<p>If a sub pattern didn't match anything (e.g. sub pattern 1, matching
+"b" against "(a)?b") then an empty string is inserted.</p>
+<p>If the last match was obtained using the DFA algorithm, that is using
+<a href="gregex.html#g_regex_match_all">GLib.Regex.prototype.match_all</a> or <a href="gregex.html#g_regex_match_all_full">GLib.Regex.prototype.match_all_full</a>, the retrieved
+strings are not that matched by sets of parentheses but that of the
+matched substring. Substrings are matched in reverse order of length,
+so the first one is the longest match.</p>
+<p>The strings are fetched from the string passed to the match function,
+so you cannot call this function after freeing the string.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> structure</p>
+</td>
+<td>
+<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>-terminated array of gchar *
+pointers.  It must be freed using <a href="string_utils.html#g_strfreev">GLib.prototype.strfreev</a>. If the previous
+match failed <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> is returned</p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_get_string">
+		
+<h4 id="glibmatchinfoprototypeget_string">
+	<span><code>GLib.MatchInfo.prototype.get_string</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MatchInfo.prototype.get_string(): {
+    // javascript wrapper for 'g_match_info_get_string'
+}</pre>
+
+<p>Returns the string searched with <em>match_info</em>. This is the
+string passed to <a href="gregex.html#g_regex_match">GLib.Regex.prototype.match</a> or <a href="gregex.html#g_regex_replace">GLib.Regex.prototype.replace</a> so
+you may not free it before calling this function.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a></p>
+</td>
+<td>
+<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the string searched with <em>match_info</em></p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_fetch_pos">
+		
+<h4 id="glibmatchinfoprototypefetch_pos">
+	<span><code>GLib.MatchInfo.prototype.fetch_pos</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MatchInfo.prototype.fetch_pos(match_num: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_match_info_fetch_pos'
+}</pre>
+
+<p>Retrieves the position in bytes of the <em>match_num</em>'th capturing
+parentheses. 0 is the full text of the match, 1 is the first
+paren set, 2 the second, and so on.</p>
+<p>If <em>match_num</em> is a valid sub pattern but it didn't match anything
+(e.g. sub pattern 1, matching "b" against "(a)?b") then <em>start_pos</em>
+and <em>end_pos</em> are set to -1 and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> is returned.</p>
+<p>If the match was obtained using the DFA algorithm, that is using
+<a href="gregex.html#g_regex_match_all">GLib.Regex.prototype.match_all</a> or <a href="gregex.html#g_regex_match_all_full">GLib.Regex.prototype.match_all_full</a>, the retrieved
+position is not that of a set of parentheses but that of a matched
+substring. Substrings are matched in reverse order of length, so
+0 is the longest match.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> structure</p>
+</td>
+<td>
+<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_num:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of the sub expression</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of4">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the position was fetched, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise. If
+the position cannot be fetched, <em>start_pos</em> and <em>end_pos</em> are left
+unchanged</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>start_pos:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the position was fetched, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise. If
+the position cannot be fetched, <em>start_pos</em> and <em>end_pos</em> are left
+unchanged</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>end_pos:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the position was fetched, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise. If
+the position cannot be fetched, <em>start_pos</em> and <em>end_pos</em> are left
+unchanged</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_is_partial_match">
+		
+<h4 id="glibmatchinfoprototypeis_partial_match">
+	<span><code>GLib.MatchInfo.prototype.is_partial_match</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MatchInfo.prototype.is_partial_match(): {
+    // javascript wrapper for 'g_match_info_is_partial_match'
+}</pre>
+
+<p>Usually if the string passed to g_regex_match*() matches as far as
+it goes, but is too short to match the entire pattern, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> is
+returned. There are circumstances where it might be helpful to
+distinguish this case from other cases in which there is no match.</p>
+<p>Consider, for example, an application where a human is required to
+type in data for a field with specific formatting requirements. An
+example might be a date in the form ddmmmyy, defined by the pattern
+"^\d?\d(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\d\d$".
+If the application sees the userâ€™s keystrokes one by one, and can
+check that what has been typed so far is potentially valid, it is
+able to raise an error as soon as a mistake is made.</p>
+<p>GRegex supports the concept of partial matching by means of the
+<a href="gregex.html#G_REGEX_MATCH_PARTIAL_SOFT">GLib.RegexMatchFlags.prototype.partial_soft</a> and <a href="gregex.html#G_REGEX_MATCH_PARTIAL_HARD">GLib.RegexMatchFlags.prototype.partial_hard</a> flags.
+When they are used, the return code for
+<a href="gregex.html#g_regex_match">GLib.Regex.prototype.match</a> or <a href="gregex.html#g_regex_match_full">GLib.Regex.prototype.match_full</a> is, as usual, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a>
+for a complete match, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise. But, when these functions
+return <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a>, you can check if the match was partial calling
+<a href="gregex.html#g_match_info_is_partial_match">GLib.MatchInfo.prototype.is_partial_match</a>.</p>
+<p>The difference between <a href="gregex.html#G_REGEX_MATCH_PARTIAL_SOFT">GLib.RegexMatchFlags.prototype.partial_soft</a> and
+<a href="gregex.html#G_REGEX_MATCH_PARTIAL_HARD">GLib.RegexMatchFlags.prototype.partial_hard</a> is that when a partial match is encountered
+with <a href="gregex.html#G_REGEX_MATCH_PARTIAL_SOFT">GLib.RegexMatchFlags.prototype.partial_soft</a>, matching continues to search for a
+possible complete match, while with <a href="gregex.html#G_REGEX_MATCH_PARTIAL_HARD">GLib.RegexMatchFlags.prototype.partial_hard</a> matching
+stops at the partial match.
+When both <a href="gregex.html#G_REGEX_MATCH_PARTIAL_SOFT">GLib.RegexMatchFlags.prototype.partial_soft</a> and <a href="gregex.html#G_REGEX_MATCH_PARTIAL_HARD">GLib.RegexMatchFlags.prototype.partial_hard</a>
+are set, the latter takes precedence.</p>
+<p>There were formerly some restrictions on the pattern for partial matching.
+The restrictions no longer apply.</p>
+<p>See pcrepartial(3) for more information on partial matching.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> structure</p>
+</td>
+<td>
+<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the match was partial, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_get_regex">
+		
+<h4 id="glibmatchinfoprototypeget_regex">
+	<span><code>GLib.MatchInfo.prototype.get_regex</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MatchInfo.prototype.get_regex(): {
+    // javascript wrapper for 'g_match_info_get_regex'
+}</pre>
+
+<p>Returns <a href="gregex.html#GRegex">GLib.Regex</a> object used in <em>match_info</em>. It belongs to Glib
+and must not be freed. Use <a href="gregex.html#g_regex_ref">GLib.Regex.prototype.ref</a> if you need to keep it
+after you free <em>match_info</em> object.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a></p>
+</td>
+<td>
+<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="gregex.html#GRegex">GLib.Regex</a> object used in <em>match_info</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.Regex" href="gregex.html#GRegex">GLib.Regex</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_matches">
+		
+<h4 id="glibmatchinfoprototypematches">
+	<span><code>GLib.MatchInfo.prototype.matches</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MatchInfo.prototype.matches(): {
+    // javascript wrapper for 'g_match_info_matches'
+}</pre>
+
+<p>Returns whether the previous match operation succeeded.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters28">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> structure</p>
+</td>
+<td>
+<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns21">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the previous match operation succeeded,
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_fetch_named_pos">
+		
+<h4 id="glibmatchinfoprototypefetch_named_pos">
+	<span><code>GLib.MatchInfo.prototype.fetch_named_pos</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MatchInfo.prototype.fetch_named_pos(name: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_match_info_fetch_named_pos'
+}</pre>
+
+<p>Retrieves the position in bytes of the capturing parentheses named <em>name</em>.</p>
+<p>If <em>name</em> is a valid sub pattern name but it didn't match anything
+(e.g. sub pattern "X", matching "b" against "(?P<x>a)?b")
+then <em>start_pos</em> and <em>end_pos</em> are set to -1 and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> is returned.</x></p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters29">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> structure</p>
+</td>
+<td>
+<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>name:</code></em></i>
+		</p>
+	</td>
+		<td><p>name of the subexpression</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of5">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the position was fetched, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise.
+If the position cannot be fetched, <em>start_pos</em> and <em>end_pos</em>
+are left unchanged.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>start_pos:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the position was fetched, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise.
+If the position cannot be fetched, <em>start_pos</em> and <em>end_pos</em>
+are left unchanged.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>end_pos:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the position was fetched, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise.
+If the position cannot be fetched, <em>start_pos</em> and <em>end_pos</em>
+are left unchanged.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_match_info_ref">
+		
+<h4 id="glibmatchinfoprototyperef">
+	<span><code>GLib.MatchInfo.prototype.ref</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MatchInfo.prototype.ref(): {
+    // javascript wrapper for 'g_match_info_ref'
+}</pre>
+
+<p>Increases reference count of <em>match_info</em> by 1.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters30">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a></p>
+</td>
+<td>
+<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns22">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>match_info</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_next">
+		
+<h4 id="glibmatchinfoprototypenext">
+	<span><code>GLib.MatchInfo.prototype.next</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MatchInfo.prototype.next(): {
+    // javascript wrapper for 'g_match_info_next'
+}</pre>
+
+<p>Scans for the next match using the same parameters of the previous
+call to <a href="gregex.html#g_regex_match_full">GLib.Regex.prototype.match_full</a> or <a href="gregex.html#g_regex_match">GLib.Regex.prototype.match</a> that returned
+<em>match_info</em>.</p>
+<p>The match is done on the string passed to the match function, so you
+cannot free it before calling this function.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters31">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> structure</p>
+</td>
+<td>
+<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns23">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> is the string matched, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_match_info_unref">
+		
+<h4 id="glibmatchinfoprototypeunref">
+	<span><code>GLib.MatchInfo.prototype.unref</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MatchInfo.prototype.unref(): {
+    // javascript wrapper for 'g_match_info_unref'
+}</pre>
+
+<p>Decreases reference count of <em>match_info</em> by 1. When reference count drops
+to zero, it frees all the memory associated with the match_info structure.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters32">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a></p>
+</td>
+<td>
+<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_match_info_get_match_count">
+		
+<h4 id="glibmatchinfoprototypeget_match_count">
+	<span><code>GLib.MatchInfo.prototype.get_match_count</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.MatchInfo.prototype.get_match_count(): {
+    // javascript wrapper for 'g_match_info_get_match_count'
+}</pre>
+
+<p>Retrieves the number of matched substrings (including substring 0,
+that is the whole matched text), so 1 is returned if the pattern
+has no substrings in it and 0 is returned if the match failed.</p>
+<p>If the last match was obtained using the DFA algorithm, that is
+using <a href="gregex.html#g_regex_match_all">GLib.Regex.prototype.match_all</a> or <a href="gregex.html#g_regex_match_all_full">GLib.Regex.prototype.match_all_full</a>, the retrieved
+count is not that of the number of capturing parentheses but that of
+the number of matched substrings.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters33">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> structure</p>
+</td>
+<td>
+<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns24">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>Number of matched substrings, or -1 if an error occurred</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_regex_escape_nul">
+		
+<h3 id="glibprototyperegex_escape_nul">
+	<span><code>GLib.prototype.regex_escape_nul</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.regex_escape_nul(string: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, length: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_regex_escape_nul'
+}</pre>
+
+<p>Escapes the nul characters in <em>string</em> to "\x00".  It can be used
+to compile a regex with embedded nul characters.</p>
+<p>For completeness, <em>length</em> can be -1 for a nul-terminated string.
+In this case the output string will be of course equal to <em>string</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters34">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to escape</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>string</em></p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns25">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated escaped string</p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_check_replacement">
+		
+<h3 id="glibprototyperegex_check_replacement">
+	<span><code>GLib.prototype.regex_check_replacement</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.regex_check_replacement(replacement: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_regex_check_replacement'
+}</pre>
+
+<p>Checks whether <em>replacement</em> is a valid replacement string
+(see <a href="gregex.html#g_regex_replace">GLib.Regex.prototype.replace</a>), i.e. that all escape sequences in
+it are valid.</p>
+<p>If <em>has_references</em> is not <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a> then <em>replacement</em> is checked
+for pattern references. For instance, replacement text 'foo\n'
+does not contain references and may be evaluated without information
+about actual match, but '\0\1' (whole match followed by first
+subpattern) requires valid <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> object.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters35">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>replacement:</code></em></i>
+		</p>
+	</td>
+		<td><p>the replacement string</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of6">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>whether <em>replacement</em> is a valid replacement string</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>has_references:</i>
+				</p>
+	</td>
+	<td>
+		<p>whether <em>replacement</em> is a valid replacement string</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_escape_string">
+		
+<h3 id="glibprototyperegex_escape_string">
+	<span><code>GLib.prototype.regex_escape_string</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.regex_escape_string(string: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, length: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_regex_escape_string'
+}</pre>
+
+<p>Escapes the special characters used for regular expressions
+in <em>string</em>, for instance "a.b*c" becomes "a.b*c". This
+function is useful to dynamically generate regular expressions.</p>
+<p><em>string</em> can contain nul characters that are replaced with "\0",
+in this case remember to specify the correct length of <em>string</em>
+in <em>length</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters36">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to escape</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>string</em>, or -1 if <em>string</em> is nul-terminated</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns26">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated escaped string</p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_split_simple">
+		
+<h3 id="glibprototyperegex_split_simple">
+	<span><code>GLib.prototype.regex_split_simple</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.regex_split_simple(pattern: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, string: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, compile_options: <a title="GLib.RegexCompileFlags" href="gregex.html#GRegexCompileFlags">GLib.RegexCompileFlags</a>, match_options: <a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>): {
+    // javascript wrapper for 'g_regex_split_simple'
+}</pre>
+
+<p>Breaks the string on the pattern, and returns an array of
+the tokens. If the pattern contains capturing parentheses,
+then the text for each of the substrings will also be returned.
+If the pattern does not match anywhere in the string, then the
+whole string is returned as the first token.</p>
+<p>This function is equivalent to <a href="gregex.html#g_regex_split">GLib.Regex.prototype.split</a> but it does
+not require to compile the pattern with <a href="gregex.html#g_regex_new">GLib.Regex.prototype.new</a>, avoiding
+some lines of code when you need just to do a split without
+extracting substrings, capture counts, and so on.</p>
+<p>If this function is to be called on the same <em>pattern</em> more than
+once, it's more efficient to compile the pattern once with
+<a href="gregex.html#g_regex_new">GLib.Regex.prototype.new</a> and then use <a href="gregex.html#g_regex_split">GLib.Regex.prototype.split</a>.</p>
+<p>As a special case, the result of splitting the empty string ""
+is an empty vector, not a vector containing a single string.
+The reason for this special case is that being able to represent
+a empty vector is typically more useful than consistent handling
+of empty elements. If you do need to represent empty elements,
+you'll need to check for the empty string before calling this
+function.</p>
+<p>A pattern that can match empty strings splits <em>string</em> into
+separate characters wherever it matches the empty string between
+characters. For example splitting "ab c" using as a separator
+"\s*", you will get "a", "b" and "c".</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters37">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pattern:</code></em></i>
+		</p>
+	</td>
+		<td><p>the regular expression</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to scan for matches</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>compile_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>compile options for the regular expression, or 0</p>
+</td>
+<td>
+<a title="GLib.RegexCompileFlags" href="gregex.html#GRegexCompileFlags">GLib.RegexCompileFlags</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>match options, or 0</p>
+</td>
+<td>
+<a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns27">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>-terminated array of strings. Free
+it using <a href="string_utils.html#g_strfreev">GLib.prototype.strfreev</a></p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_regex_match_simple">
+		
+<h3 id="glibprototyperegex_match_simple">
+	<span><code>GLib.prototype.regex_match_simple</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.regex_match_simple(pattern: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, string: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, compile_options: <a title="GLib.RegexCompileFlags" href="gregex.html#GRegexCompileFlags">GLib.RegexCompileFlags</a>, match_options: <a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>): {
+    // javascript wrapper for 'g_regex_match_simple'
+}</pre>
+
+<p>Scans for a match in <em>string</em> for <em>pattern</em>.</p>
+<p>This function is equivalent to <a href="gregex.html#g_regex_match">GLib.Regex.prototype.match</a> but it does not
+require to compile the pattern with <a href="gregex.html#g_regex_new">GLib.Regex.prototype.new</a>, avoiding some
+lines of code when you need just to do a match without extracting
+substrings, capture counts, and so on.</p>
+<p>If this function is to be called on the same <em>pattern</em> more than
+once, it's more efficient to compile the pattern once with
+<a href="gregex.html#g_regex_new">GLib.Regex.prototype.new</a> and then use <a href="gregex.html#g_regex_match">GLib.Regex.prototype.match</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters38">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pattern:</code></em></i>
+		</p>
+	</td>
+		<td><p>the regular expression</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to scan for matches</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>compile_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>compile options for the regular expression, or 0</p>
+</td>
+<td>
+<a title="GLib.RegexCompileFlags" href="gregex.html#GRegexCompileFlags">GLib.RegexCompileFlags</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_options:</code></em></i>
+		</p>
+	</td>
+		<td><p>match options, or 0</p>
+</td>
+<td>
+<a title="GLib.RegexMatchFlags" href="gregex.html#GRegexMatchFlags">GLib.RegexMatchFlags</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns28">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the string matched, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_regex_error_quark">
+		
+<h3 id="glibprototyperegex_error_quark">
+	<span><code>GLib.prototype.regex_error_quark</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.regex_error_quark(): {
+    // javascript wrapper for 'g_regex_error_quark'
+}</pre>
+
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns29">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		<a title="GLib.Quark" href="quarks.html#GQuark">GLib.Quark</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="GRegex">
+		<h3 id="glibregex">
+	GLib.Regex
+</h3>
+
+		<p>A GRegex is the "compiled" form of a regular expression pattern.
+This structure is opaque and its fields cannot be accessed directly.</p>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GMatchInfo">
+		<h3 id="glibmatchinfo">
+	GLib.MatchInfo
+</h3>
+
+		<p>A GMatchInfo is an opaque struct used to return information about
+matches.</p>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="GRegexCompileFlags">
+		
+<h3 id="enum-glibregexcompileflags">
+		enum GLib.RegexCompileFlags
+	</h3>
+
+		<p>Flags specifying compile-time options.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_CASELESS"></a>
+		GLib.RegexCompileFlags.prototype.caseless
+		</p>
+	</td>
+	<td><p>Letters in the pattern match both upper- and
+lowercase letters. This option can be changed within a pattern
+by a "(?i)" option setting.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MULTILINE"></a>
+		GLib.RegexCompileFlags.prototype.multiline
+		</p>
+	</td>
+	<td><p>By default, GRegex treats the strings as consisting
+of a single line of characters (even if it actually contains
+newlines). The "start of line" metacharacter ("^") matches only
+at the start of the string, while the "end of line" metacharacter
+("$") matches only at the end of the string, or before a terminating
+newline (unless <a href="gregex.html#G_REGEX_DOLLAR_ENDONLY">GLib.RegexCompileFlags.prototype.dollar_endonly</a> is set). When
+<a href="gregex.html#G_REGEX_MULTILINE">GLib.RegexCompileFlags.prototype.multiline</a> is set, the "start of line" and "end of line"
+constructs match immediately following or immediately before any
+newline in the string, respectively, as well as at the very start
+and end. This can be changed within a pattern by a "(?m)" option
+setting.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_DOTALL"></a>
+		GLib.RegexCompileFlags.prototype.dotall
+		</p>
+	</td>
+	<td><p>A dot metacharater (".") in the pattern matches all
+characters, including newlines. Without it, newlines are excluded.
+This option can be changed within a pattern by a ("?s") option setting.</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_EXTENDED"></a>
+		GLib.RegexCompileFlags.prototype.extended
+		</p>
+	</td>
+	<td><p>Whitespace data characters in the pattern are
+totally ignored except when escaped or inside a character class.
+Whitespace does not include the VT character (code 11). In addition,
+characters between an unescaped "#" outside a character class and
+the next newline character, inclusive, are also ignored. This can
+be changed within a pattern by a "(?x)" option setting.</p>
+</td>
+	<td>
+		<span class="value">Value: 8</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ANCHORED"></a>
+		GLib.RegexCompileFlags.prototype.anchored
+		</p>
+	</td>
+	<td><p>The pattern is forced to be "anchored", that is,
+it is constrained to match only at the first matching point in the
+string that is being searched. This effect can also be achieved by
+appropriate constructs in the pattern itself such as the "^"
+metacharater.</p>
+</td>
+	<td>
+		<span class="value">Value: 16</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_DOLLAR_ENDONLY"></a>
+		GLib.RegexCompileFlags.prototype.dollar_endonly
+		</p>
+	</td>
+	<td><p>A dollar metacharacter ("$") in the pattern
+matches only at the end of the string. Without this option, a
+dollar also matches immediately before the final character if
+it is a newline (but not before any other newlines). This option
+is ignored if <a href="gregex.html#G_REGEX_MULTILINE">GLib.RegexCompileFlags.prototype.multiline</a> is set.</p>
+</td>
+	<td>
+		<span class="value">Value: 32</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_UNGREEDY"></a>
+		GLib.RegexCompileFlags.prototype.ungreedy
+		</p>
+	</td>
+	<td><p>Inverts the "greediness" of the quantifiers so that
+they are not greedy by default, but become greedy if followed by "?".
+It can also be set by a "(?U)" option setting within the pattern.</p>
+</td>
+	<td>
+		<span class="value">Value: 512</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_RAW"></a>
+		GLib.RegexCompileFlags.prototype.raw
+		</p>
+	</td>
+	<td><p>Usually strings must be valid UTF-8 strings, using this
+flag they are considered as a raw sequence of bytes.</p>
+</td>
+	<td>
+		<span class="value">Value: 2048</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_NO_AUTO_CAPTURE"></a>
+		GLib.RegexCompileFlags.prototype.no_auto_capture
+		</p>
+	</td>
+	<td><p>Disables the use of numbered capturing
+parentheses in the pattern. Any opening parenthesis that is not
+followed by "?" behaves as if it were followed by "?:" but named
+parentheses can still be used for capturing (and they acquire numbers
+in the usual way).</p>
+</td>
+	<td>
+		<span class="value">Value: 4096</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_OPTIMIZE"></a>
+		GLib.RegexCompileFlags.prototype.optimize
+		</p>
+	</td>
+	<td><p>Optimize the regular expression. If the pattern will
+be used many times, then it may be worth the effort to optimize it
+to improve the speed of matches.</p>
+</td>
+	<td>
+		<span class="value">Value: 8192</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_FIRSTLINE"></a>
+		GLib.RegexCompileFlags.prototype.firstline
+		</p>
+	</td>
+	<td><p>Limits an unanchored pattern to match before (or at) the
+first newline. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 262144</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_DUPNAMES"></a>
+		GLib.RegexCompileFlags.prototype.dupnames
+		</p>
+	</td>
+	<td><p>Names used to identify capturing subpatterns need not
+be unique. This can be helpful for certain types of pattern when it
+is known that only one instance of the named subpattern can ever be
+matched.</p>
+</td>
+	<td>
+		<span class="value">Value: 524288</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_NEWLINE_CR"></a>
+		GLib.RegexCompileFlags.prototype.newline_cr
+		</p>
+	</td>
+	<td><p>Usually any newline character or character sequence is
+recognized. If this option is set, the only recognized newline character
+is '\r'.</p>
+</td>
+	<td>
+		<span class="value">Value: 1048576</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_NEWLINE_LF"></a>
+		GLib.RegexCompileFlags.prototype.newline_lf
+		</p>
+	</td>
+	<td><p>Usually any newline character or character sequence is
+recognized. If this option is set, the only recognized newline character
+is '\n'.</p>
+</td>
+	<td>
+		<span class="value">Value: 2097152</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_NEWLINE_CRLF"></a>
+		GLib.RegexCompileFlags.prototype.newline_crlf
+		</p>
+	</td>
+	<td><p>Usually any newline character or character sequence is
+recognized. If this option is set, the only recognized newline character
+sequence is '\r\n'.</p>
+</td>
+	<td>
+		<span class="value">Value: 3145728</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_NEWLINE_ANYCRLF"></a>
+		GLib.RegexCompileFlags.prototype.newline_anycrlf
+		</p>
+	</td>
+	<td><p>Usually any newline character or character sequence
+is recognized. If this option is set, the only recognized newline character
+sequences are '\r', '\n', and '\r\n'. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 5242880</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_BSR_ANYCRLF"></a>
+		GLib.RegexCompileFlags.prototype.bsr_anycrlf
+		</p>
+	</td>
+	<td><p>Usually any newline character or character sequence
+is recognised. If this option is set, then "\R" only recognizes the newline
+characters '\r', '\n' and '\r\n'. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 8388608</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_JAVASCRIPT_COMPAT"></a>
+		GLib.RegexCompileFlags.prototype.javascript_compat
+		</p>
+	</td>
+	<td><p>Changes behaviour so that it is compatible with
+JavaScript rather than PCRE. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 33554432</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="GRegexError">
+		
+<h3 id="enum-glibregexerror">
+		enum GLib.RegexError
+	</h3>
+
+		<p>Error codes returned by regular expressions functions.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members1">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_COMPILE"></a>
+		GLib.RegexError.prototype.compile
+		</p>
+	</td>
+	<td><p>Compilation of the regular expression failed.</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_OPTIMIZE"></a>
+		GLib.RegexError.prototype.optimize
+		</p>
+	</td>
+	<td><p>Optimization of the regular expression failed.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_REPLACE"></a>
+		GLib.RegexError.prototype.replace
+		</p>
+	</td>
+	<td><p>Replacement failed due to an ill-formed replacement
+string.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_MATCH"></a>
+		GLib.RegexError.prototype.match
+		</p>
+	</td>
+	<td><p>The match process failed.</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_INTERNAL"></a>
+		GLib.RegexError.prototype.internal
+		</p>
+	</td>
+	<td><p>Internal error of the regular expression engine.
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_STRAY_BACKSLASH"></a>
+		GLib.RegexError.prototype.stray_backslash
+		</p>
+	</td>
+	<td><p>"\" at end of pattern. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 101</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_MISSING_CONTROL_CHAR"></a>
+		GLib.RegexError.prototype.missing_control_char
+		</p>
+	</td>
+	<td><p>"\c" at end of pattern. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 102</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_UNRECOGNIZED_ESCAPE"></a>
+		GLib.RegexError.prototype.unrecognized_escape
+		</p>
+	</td>
+	<td><p>Unrecognized character follows "\".
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 103</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_QUANTIFIERS_OUT_OF_ORDER"></a>
+		GLib.RegexError.prototype.quantifiers_out_of_order
+		</p>
+	</td>
+	<td><p>Numbers out of order in "{}"
+quantifier. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 104</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_QUANTIFIER_TOO_BIG"></a>
+		GLib.RegexError.prototype.quantifier_too_big
+		</p>
+	</td>
+	<td><p>Number too big in "{}" quantifier.
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 105</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_UNTERMINATED_CHARACTER_CLASS"></a>
+		GLib.RegexError.prototype.unterminated_character_class
+		</p>
+	</td>
+	<td><p>Missing terminating "]" for
+character class. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 106</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_INVALID_ESCAPE_IN_CHARACTER_CLASS"></a>
+		GLib.RegexError.prototype.invalid_escape_in_character_class
+		</p>
+	</td>
+	<td><p>Invalid escape sequence
+in character class. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 107</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_RANGE_OUT_OF_ORDER"></a>
+		GLib.RegexError.prototype.range_out_of_order
+		</p>
+	</td>
+	<td><p>Range out of order in character class.
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 108</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_NOTHING_TO_REPEAT"></a>
+		GLib.RegexError.prototype.nothing_to_repeat
+		</p>
+	</td>
+	<td><p>Nothing to repeat. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 109</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_UNRECOGNIZED_CHARACTER"></a>
+		GLib.RegexError.prototype.unrecognized_character
+		</p>
+	</td>
+	<td><p>Unrecognized character after "(?",
+"(?&lt;" or "(?P". Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 112</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_POSIX_NAMED_CLASS_OUTSIDE_CLASS"></a>
+		GLib.RegexError.prototype.posix_named_class_outside_class
+		</p>
+	</td>
+	<td><p>POSIX named classes are
+supported only within a class. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 113</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_UNMATCHED_PARENTHESIS"></a>
+		GLib.RegexError.prototype.unmatched_parenthesis
+		</p>
+	</td>
+	<td><p>Missing terminating ")" or ")"
+without opening "(". Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 114</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_INEXISTENT_SUBPATTERN_REFERENCE"></a>
+		GLib.RegexError.prototype.inexistent_subpattern_reference
+		</p>
+	</td>
+	<td><p>Reference to non-existent
+subpattern. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 115</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_UNTERMINATED_COMMENT"></a>
+		GLib.RegexError.prototype.unterminated_comment
+		</p>
+	</td>
+	<td><p>Missing terminating ")" after comment.
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 118</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_EXPRESSION_TOO_LARGE"></a>
+		GLib.RegexError.prototype.expression_too_large
+		</p>
+	</td>
+	<td><p>Regular expression too large.
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 120</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_MEMORY_ERROR"></a>
+		GLib.RegexError.prototype.memory_error
+		</p>
+	</td>
+	<td><p>Failed to get memory. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 121</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_VARIABLE_LENGTH_LOOKBEHIND"></a>
+		GLib.RegexError.prototype.variable_length_lookbehind
+		</p>
+	</td>
+	<td><p>Lookbehind assertion is not
+fixed length. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 125</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_MALFORMED_CONDITION"></a>
+		GLib.RegexError.prototype.malformed_condition
+		</p>
+	</td>
+	<td><p>Malformed number or name after "(?(".
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 126</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_TOO_MANY_CONDITIONAL_BRANCHES"></a>
+		GLib.RegexError.prototype.too_many_conditional_branches
+		</p>
+	</td>
+	<td><p>Conditional group contains
+more than two branches. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 127</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_ASSERTION_EXPECTED"></a>
+		GLib.RegexError.prototype.assertion_expected
+		</p>
+	</td>
+	<td><p>Assertion expected after "(?(".
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 128</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_UNKNOWN_POSIX_CLASS_NAME"></a>
+		GLib.RegexError.prototype.unknown_posix_class_name
+		</p>
+	</td>
+	<td><p>Unknown POSIX class name.
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 130</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_POSIX_COLLATING_ELEMENTS_NOT_SUPPORTED"></a>
+		GLib.RegexError.prototype.posix_collating_elements_not_supported
+		</p>
+	</td>
+	<td><p>POSIX collating
+elements are not supported. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 131</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_HEX_CODE_TOO_LARGE"></a>
+		GLib.RegexError.prototype.hex_code_too_large
+		</p>
+	</td>
+	<td><p>Character value in "\x{...}" sequence
+is too large. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 134</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_INVALID_CONDITION"></a>
+		GLib.RegexError.prototype.invalid_condition
+		</p>
+	</td>
+	<td><p>Invalid condition "(?(0)". Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 135</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_SINGLE_BYTE_MATCH_IN_LOOKBEHIND"></a>
+		GLib.RegexError.prototype.single_byte_match_in_lookbehind
+		</p>
+	</td>
+	<td><p>\C not allowed in
+lookbehind assertion. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 136</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_INFINITE_LOOP"></a>
+		GLib.RegexError.prototype.infinite_loop
+		</p>
+	</td>
+	<td><p>Recursive call could loop indefinitely.
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 140</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_MISSING_SUBPATTERN_NAME_TERMINATOR"></a>
+		GLib.RegexError.prototype.missing_subpattern_name_terminator
+		</p>
+	</td>
+	<td><p>Missing terminator
+in subpattern name. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 142</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_DUPLICATE_SUBPATTERN_NAME"></a>
+		GLib.RegexError.prototype.duplicate_subpattern_name
+		</p>
+	</td>
+	<td><p>Two named subpatterns have
+the same name. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 143</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_MALFORMED_PROPERTY"></a>
+		GLib.RegexError.prototype.malformed_property
+		</p>
+	</td>
+	<td><p>Malformed "\P" or "\p" sequence.
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 146</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_UNKNOWN_PROPERTY"></a>
+		GLib.RegexError.prototype.unknown_property
+		</p>
+	</td>
+	<td><p>Unknown property name after "\P" or
+"\p". Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 147</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_SUBPATTERN_NAME_TOO_LONG"></a>
+		GLib.RegexError.prototype.subpattern_name_too_long
+		</p>
+	</td>
+	<td><p>Subpattern name is too long
+(maximum 32 characters). Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 148</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_TOO_MANY_SUBPATTERNS"></a>
+		GLib.RegexError.prototype.too_many_subpatterns
+		</p>
+	</td>
+	<td><p>Too many named subpatterns (maximum
+10,000). Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 149</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_INVALID_OCTAL_VALUE"></a>
+		GLib.RegexError.prototype.invalid_octal_value
+		</p>
+	</td>
+	<td><p>Octal value is greater than "\377".
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 151</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_TOO_MANY_BRANCHES_IN_DEFINE"></a>
+		GLib.RegexError.prototype.too_many_branches_in_define
+		</p>
+	</td>
+	<td><p>"DEFINE" group contains more
+than one branch. Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 154</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_DEFINE_REPETION"></a>
+		GLib.RegexError.prototype.define_repetion
+		</p>
+	</td>
+	<td><p>Repeating a "DEFINE" group is not allowed.
+This error is never raised. Since: 2.16 Deprecated: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 155</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_INCONSISTENT_NEWLINE_OPTIONS"></a>
+		GLib.RegexError.prototype.inconsistent_newline_options
+		</p>
+	</td>
+	<td><p>Inconsistent newline options.
+Since 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 156</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_MISSING_BACK_REFERENCE"></a>
+		GLib.RegexError.prototype.missing_back_reference
+		</p>
+	</td>
+	<td><p>"\g" is not followed by a braced,
+angle-bracketed, or quoted name or number, or by a plain number. Since: 2.16</p>
+</td>
+	<td>
+		<span class="value">Value: 157</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_INVALID_RELATIVE_REFERENCE"></a>
+		GLib.RegexError.prototype.invalid_relative_reference
+		</p>
+	</td>
+	<td><p>relative reference must not be zero. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 158</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_BACKTRACKING_CONTROL_VERB_ARGUMENT_FORBIDDEN"></a>
+		GLib.RegexError.prototype.backtracking_control_verb_argument_forbidden
+		</p>
+	</td>
+	<td><p>the backtracing
+control verb used does not allow an argument. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 159</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_UNKNOWN_BACKTRACKING_CONTROL_VERB"></a>
+		GLib.RegexError.prototype.unknown_backtracking_control_verb
+		</p>
+	</td>
+	<td><p>unknown backtracing
+control verb. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 160</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_NUMBER_TOO_BIG"></a>
+		GLib.RegexError.prototype.number_too_big
+		</p>
+	</td>
+	<td><p>number is too big in escape sequence. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 161</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_MISSING_SUBPATTERN_NAME"></a>
+		GLib.RegexError.prototype.missing_subpattern_name
+		</p>
+	</td>
+	<td><p>Missing subpattern name. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 162</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_MISSING_DIGIT"></a>
+		GLib.RegexError.prototype.missing_digit
+		</p>
+	</td>
+	<td><p>Missing digit. Since 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 163</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_INVALID_DATA_CHARACTER"></a>
+		GLib.RegexError.prototype.invalid_data_character
+		</p>
+	</td>
+	<td><p>In JavaScript compatibility mode,
+"[" is an invalid data character. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 164</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_EXTRA_SUBPATTERN_NAME"></a>
+		GLib.RegexError.prototype.extra_subpattern_name
+		</p>
+	</td>
+	<td><p>different names for subpatterns of the
+same number are not allowed. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 165</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_BACKTRACKING_CONTROL_VERB_ARGUMENT_REQUIRED"></a>
+		GLib.RegexError.prototype.backtracking_control_verb_argument_required
+		</p>
+	</td>
+	<td><p>the backtracing control
+verb requires an argument. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 166</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_INVALID_CONTROL_CHAR"></a>
+		GLib.RegexError.prototype.invalid_control_char
+		</p>
+	</td>
+	<td><p>"\c" must be followed by an ASCII
+character. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 168</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_MISSING_NAME"></a>
+		GLib.RegexError.prototype.missing_name
+		</p>
+	</td>
+	<td><p>"\k" is not followed by a braced, angle-bracketed, or
+quoted name. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 169</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_NOT_SUPPORTED_IN_CLASS"></a>
+		GLib.RegexError.prototype.not_supported_in_class
+		</p>
+	</td>
+	<td><p>"\N" is not supported in a class. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 171</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_TOO_MANY_FORWARD_REFERENCES"></a>
+		GLib.RegexError.prototype.too_many_forward_references
+		</p>
+	</td>
+	<td><p>too many forward references. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 172</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_NAME_TOO_LONG"></a>
+		GLib.RegexError.prototype.name_too_long
+		</p>
+	</td>
+	<td><p>the name is too long in "(*MARK)", "(*PRUNE)",
+"(*SKIP)", or "(*THEN)". Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 175</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_ERROR_CHARACTER_VALUE_TOO_LARGE"></a>
+		GLib.RegexError.prototype.character_value_too_large
+		</p>
+	</td>
+	<td><p>the character value in the \u sequence is
+too large. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 176</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="GRegexMatchFlags">
+		
+<h3 id="enum-glibregexmatchflags">
+		enum GLib.RegexMatchFlags
+	</h3>
+
+		<p>Flags specifying match-time options.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members2">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_ANCHORED"></a>
+		GLib.RegexMatchFlags.prototype.anchored
+		</p>
+	</td>
+	<td><p>The pattern is forced to be "anchored", that is,
+it is constrained to match only at the first matching point in the
+string that is being searched. This effect can also be achieved by
+appropriate constructs in the pattern itself such as the "^"
+metacharater.</p>
+</td>
+	<td>
+		<span class="value">Value: 16</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_NOTBOL"></a>
+		GLib.RegexMatchFlags.prototype.notbol
+		</p>
+	</td>
+	<td><p>Specifies that first character of the string is
+not the beginning of a line, so the circumflex metacharacter should
+not match before it. Setting this without <a href="gregex.html#G_REGEX_MULTILINE">GLib.RegexCompileFlags.prototype.multiline</a> (at
+compile time) causes circumflex never to match. This option affects
+only the behaviour of the circumflex metacharacter, it does not
+affect "\A".</p>
+</td>
+	<td>
+		<span class="value">Value: 128</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_NOTEOL"></a>
+		GLib.RegexMatchFlags.prototype.noteol
+		</p>
+	</td>
+	<td><p>Specifies that the end of the subject string is
+not the end of a line, so the dollar metacharacter should not match
+it nor (except in multiline mode) a newline immediately before it.
+Setting this without <a href="gregex.html#G_REGEX_MULTILINE">GLib.RegexCompileFlags.prototype.multiline</a> (at compile time) causes
+dollar never to match. This option affects only the behaviour of
+the dollar metacharacter, it does not affect "\Z" or "\z".</p>
+</td>
+	<td>
+		<span class="value">Value: 256</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_NOTEMPTY"></a>
+		GLib.RegexMatchFlags.prototype.notempty
+		</p>
+	</td>
+	<td><p>An empty string is not considered to be a valid
+match if this option is set. If there are alternatives in the pattern,
+they are tried. If all the alternatives match the empty string, the
+entire match fails. For example, if the pattern "a?b?" is applied to
+a string not beginning with "a" or "b", it matches the empty string
+at the start of the string. With this flag set, this match is not
+valid, so GRegex searches further into the string for occurrences
+of "a" or "b".</p>
+</td>
+	<td>
+		<span class="value">Value: 1024</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_PARTIAL"></a>
+		GLib.RegexMatchFlags.prototype.partial
+		</p>
+	</td>
+	<td><p>Turns on the partial matching feature, for more
+documentation on partial matching see <a href="gregex.html#g_match_info_is_partial_match">GLib.MatchInfo.prototype.is_partial_match</a>.</p>
+</td>
+	<td>
+		<span class="value">Value: 32768</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_NEWLINE_CR"></a>
+		GLib.RegexMatchFlags.prototype.newline_cr
+		</p>
+	</td>
+	<td><p>Overrides the newline definition set when
+creating a new <a href="gregex.html#GRegex">GLib.Regex</a>, setting the '\r' character as line terminator.</p>
+</td>
+	<td>
+		<span class="value">Value: 1048576</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_NEWLINE_LF"></a>
+		GLib.RegexMatchFlags.prototype.newline_lf
+		</p>
+	</td>
+	<td><p>Overrides the newline definition set when
+creating a new <a href="gregex.html#GRegex">GLib.Regex</a>, setting the '\n' character as line terminator.</p>
+</td>
+	<td>
+		<span class="value">Value: 2097152</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_NEWLINE_CRLF"></a>
+		GLib.RegexMatchFlags.prototype.newline_crlf
+		</p>
+	</td>
+	<td><p>Overrides the newline definition set when
+creating a new <a href="gregex.html#GRegex">GLib.Regex</a>, setting the '\r\n' characters sequence as line terminator.</p>
+</td>
+	<td>
+		<span class="value">Value: 3145728</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_NEWLINE_ANY"></a>
+		GLib.RegexMatchFlags.prototype.newline_any
+		</p>
+	</td>
+	<td><p>Overrides the newline definition set when
+creating a new <a href="gregex.html#GRegex">GLib.Regex</a>, any Unicode newline sequence
+is recognised as a newline. These are '\r', '\n' and '\rn', and the
+single characters U+000B LINE TABULATION, U+000C FORM FEED (FF),
+U+0085 NEXT LINE (NEL), U+2028 LINE SEPARATOR and
+U+2029 PARAGRAPH SEPARATOR.</p>
+</td>
+	<td>
+		<span class="value">Value: 4194304</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_NEWLINE_ANYCRLF"></a>
+		GLib.RegexMatchFlags.prototype.newline_anycrlf
+		</p>
+	</td>
+	<td><p>Overrides the newline definition set when
+creating a new <a href="gregex.html#GRegex">GLib.Regex</a>; any '\r', '\n', or '\r\n' character sequence
+is recognized as a newline. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 5242880</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_BSR_ANYCRLF"></a>
+		GLib.RegexMatchFlags.prototype.bsr_anycrlf
+		</p>
+	</td>
+	<td><p>Overrides the newline definition for "\R" set when
+creating a new <a href="gregex.html#GRegex">GLib.Regex</a>; only '\r', '\n', or '\r\n' character sequences
+are recognized as a newline by "\R". Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 8388608</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_BSR_ANY"></a>
+		GLib.RegexMatchFlags.prototype.bsr_any
+		</p>
+	</td>
+	<td><p>Overrides the newline definition for "\R" set when
+creating a new <a href="gregex.html#GRegex">GLib.Regex</a>; any Unicode newline character or character sequence
+are recognized as a newline by "\R". These are '\r', '\n' and '\rn', and the
+single characters U+000B LINE TABULATION, U+000C FORM FEED (FF),
+U+0085 NEXT LINE (NEL), U+2028 LINE SEPARATOR and
+U+2029 PARAGRAPH SEPARATOR. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 16777216</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_PARTIAL_SOFT"></a>
+		GLib.RegexMatchFlags.prototype.partial_soft
+		</p>
+	</td>
+	<td><p>An alias for <a href="gregex.html#G_REGEX_MATCH_PARTIAL">GLib.RegexMatchFlags.prototype.partial</a>. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 32768</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_PARTIAL_HARD"></a>
+		GLib.RegexMatchFlags.prototype.partial_hard
+		</p>
+	</td>
+	<td><p>Turns on the partial matching feature. In contrast to
+to <a href="gregex.html#G_REGEX_MATCH_PARTIAL_SOFT">GLib.RegexMatchFlags.prototype.partial_soft</a>, this stops matching as soon as a partial match
+is found, without continuing to search for a possible complete match. See
+<a href="gregex.html#g_match_info_is_partial_match">GLib.MatchInfo.prototype.is_partial_match</a> for more information. Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 134217728</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_REGEX_MATCH_NOTEMPTY_ATSTART"></a>
+		GLib.RegexMatchFlags.prototype.notempty_atstart
+		</p>
+	</td>
+	<td><p>Like <a href="gregex.html#G_REGEX_MATCH_NOTEMPTY">GLib.RegexMatchFlags.prototype.notempty</a>, but only applied to
+the start of the matched string. For anchored
+patterns this can only happen for pattern containing "\K". Since: 2.34</p>
+</td>
+	<td>
+		<span class="value">Value: 268435456</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="GRegexEvalCallback">
+		
+<h3 id="glibregexevalcallback">
+	<span><code>GLib.RegexEvalCallback</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+(*GLib.RegexEvalCallback) (<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>,
+                           <a title="GLib.String" href="strings.html#GString">GLib.String</a>,
+                           <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</pre>
+
+<p>Specifies the type of the function passed to <a href="../c/gregex.html#g_regex_replace_eval">g_regex_replace_eval (not introspectable)</a>.
+It is called for each occurrence of the pattern in the string passed
+to <a href="../c/gregex.html#g_regex_replace_eval">g_regex_replace_eval (not introspectable)</a>, and it should append the replacement to
+<em>result</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters39">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>match_info:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="gregex.html#GMatchInfo">GLib.MatchInfo</a> generated by the match.
+Use <a href="gregex.html#g_match_info_get_regex">GLib.MatchInfo.prototype.get_regex</a> and <a href="gregex.html#g_match_info_get_string">GLib.MatchInfo.prototype.get_string</a> if you
+need the <a href="gregex.html#GRegex">GLib.Regex</a> or the matched string.</p>
+</td>
+<td>
+<a title="GLib.MatchInfo" href="gregex.html#GMatchInfo">GLib.MatchInfo</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>result:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a> containing the new string</p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="../c/gregex.html#g_regex_replace_eval">g_regex_replace_eval (not introspectable)</a></p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns30">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">false</a> to continue the replacement process, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> to stop it</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

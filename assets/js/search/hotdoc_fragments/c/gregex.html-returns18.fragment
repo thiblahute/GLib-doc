@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gregex.html#returns18", "fragment": "\na NULL terminated array of gchar pointers. It must be freed using g_strfreev. If the previous match failed NULL is returned \nSince \n"});

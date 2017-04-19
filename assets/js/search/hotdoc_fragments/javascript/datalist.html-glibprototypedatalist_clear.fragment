@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/datalist.html#glibprototypedatalist_clear", "fragment": "GLib.prototype.datalist_clear \nFrees all the data elements of the datalist. The data elements destroy functions are called if they have been set. \n"});

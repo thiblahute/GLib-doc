@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/datalist.html#g_datalist_set_data_full1", "fragment": "g_datalist_set_data_full \nSets the data element corresponding to the given string identifier and the function to be called when the data element is removed. \n"});

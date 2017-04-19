@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hooks.html#glibhooklistinit", "fragment": "GLib.HookList.init \nInitializes a GLib.HookList. This must be called before the GLib.HookList is used. \n"});

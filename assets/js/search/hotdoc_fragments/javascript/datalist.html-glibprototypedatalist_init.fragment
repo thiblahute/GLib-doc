@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/datalist.html#glibprototypedatalist_init", "fragment": "GLib.prototype.datalist_init \nResets the datalist to null. It does not free any memory or call any destroy functions. \n"});

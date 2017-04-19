@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#glibsource_remove", "fragment": "GLib.SOURCE_REMOVE \nUse this macro as the return value of a GLib.SourceFunc to remove the GLib.Source from the main loop. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#glibiochannelset_line_term", "fragment": "GLib.IOChannel.set_line_term \nThis sets the string that GLib.IOChannel uses to determine where in the file a line break occurs. \n"});

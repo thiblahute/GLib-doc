@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdatesubtract_days", "fragment": "GLib.Date.subtract_days \nMoves a date some number of days into the past. To move by weeks just move by weeks days. The date must be valid. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/keyfile.html#parameters1", "fragment": "key_file \nan empty GKeyFile struct \nfile \na relative path to a filename to open and parse \nfull_path \nreturn location for a string containing the full path of the file or NULL \nflags \nflags from GKeyFileFlags \n"});

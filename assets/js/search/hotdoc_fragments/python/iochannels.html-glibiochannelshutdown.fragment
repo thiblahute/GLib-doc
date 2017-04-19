@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#glibiochannelshutdown", "fragment": "GLib.IOChannel.shutdown \nClose an IO channel. Any pending data to be written will be flushed if flush is True. The channel will not be freed until the last reference is dropped using GLib.IOChannel.unref. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gregex.html#glibregexget_pattern", "fragment": "GLib.Regex.get_pattern \nGets the pattern string associated with regex i.e. a copy of the string passed to GLib.Regex.new. \n"});

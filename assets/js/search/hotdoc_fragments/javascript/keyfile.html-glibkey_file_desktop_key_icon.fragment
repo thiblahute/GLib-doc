@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/keyfile.html#glibkey_file_desktop_key_icon", "fragment": "GLib.KEY_FILE_DESKTOP_KEY_ICON \nA key under GLib.KEY_FILE_DESKTOP_GROUP whose value is a localized string giving the name of the icon to be displayed for the desktop entry. \n"});

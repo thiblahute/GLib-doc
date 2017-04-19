@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/main.html#g_main_loop_quit1", "fragment": "g_main_loop_quit \nStops a GMainLoop from running. Any calls to g_main_loop_run for the loop will return. \nNote that sources that have already been dispatched when g_main_loop_quit is called will still be executed. \n"});

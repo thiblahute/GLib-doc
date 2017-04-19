@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GVariant Text Format</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="gvariant-text.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="python">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="gvariant-text.markdown">
+        <p>GVariant Text Format</p>
+<h1 id="gvariant-text-format">GVariant Text Format</h1>
+<p>This page attempts to document the GVariant text format as produced by
+<a href="../#g-variant-print"><code>g_variant_print()</code></a> and parsed by the
+<a href="../#g-variant-parse"><code>g_variant_parse()</code></a> family of functions. In most
+cases the style closely resembles the formatting of literals in Python
+but there are some additions and exceptions.</p>
+<p>The functions that deal with GVariant text format absolutely always deal
+in utf-8. Conceptually, GVariant text format is a string of Unicode
+characters -- not bytes. Non-ASCII but otherwise printable Unicode
+characters are not treated any differently from normal ASCII characters.</p>
+<p>The parser makes two passes. The purpose of the first pass is to
+determine the type of the value being parsed. The second pass does the
+actual parsing. Based on the fact that all elements in an array have to
+have the same type, GVariant is able to make some deductions that would
+not otherwise be possible. As an example:</p>
+<pre><code>[[1, 2, 3], [4, 5, 6]]
+</code></pre>
+<p>is parsed as an array of arrays of integers (type '<code>aai</code>'), but</p>
+<pre><code>[[1, 2, 3], [4, 5, 6.0]]
+</code></pre>
+<p>is parsed as a array of arrays of doubles (type '<code>aad</code>').</p>
+<p>As another example, GVariant is able to determine that</p>
+<pre><code>["hello", nothing]
+</code></pre>
+<p>is an array of maybe strings (type '<code>ams</code>').</p>
+<p>What the parser accepts as valid input is dependent on context. The API
+permits for out-of-band type information to be supplied to the parser
+(which will change its behaviour). This can be seen in the GSettings and
+GDBus command line utilities where the type information is available
+from the schema or the remote introspection information. The additional
+information can cause parses to succeed when they would not otherwise
+have been able to (by resolving ambiguous type information) or can cause
+them to fail (due to conflicting type information). Unless stated
+otherwise, the examples given in this section assume that no out-of-band
+type data has been given to the parser.</p>
+<h1 id="syntax-summary">Syntax Summary</h1>
+<p>The following table describes the rough meaning of symbols that may
+appear inside GVariant text format. Each symbol is described in detail
+in its own section, including usage examples.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><p><strong>Symbol</strong></p></td>
+<td><p><strong>Meaning</strong></p></td>
+</tr>
+<tr class="even">
+<td><p><strong><code>true</code></strong>, <strong><code>false</code></strong></p></td>
+<td><p><a href="gvariant-text.markdown#booleans">Booleans</a>.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong><code>""</code></strong>, <strong><code>''</code></strong></p></td>
+<td><p>String literal. See <a href="gvariant-text.markdown#strings">Strings</a> below.</p></td>
+</tr>
+<tr class="even">
+<td><p>numbers</p></td>
+<td><p>See <a href="gvariant-text.markdown#numbers">Numbers</a> below.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong><code>()</code></strong></p></td>
+<td><p><a href="gvariant-text.markdown#tuples">Tuples</a>.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong><code>[]</code></strong></p></td>
+<td><p><a href="gvariant-text.markdown#arrays">Arrays</a>.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong><code>{}</code></strong></p></td>
+<td><p><a href="gvariant-text.markdown#dictionaries-and-dictionary-entries">Dictionaries and Dictionary Entries</a>.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong><code>&lt;&gt;</code></strong></p></td>
+<td><p><a href="gvariant-text.markdown#variants">Variants</a>.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong><code>just</code></strong>, <strong><code>nothing</code></strong></p></td>
+<td><p><a href="gvariant-text.markdown#maybe-types">Maybe Types</a>.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong><code>@</code></strong></p></td>
+<td><p><a href="gvariant-text.markdown#type-annotations">Type Annotations</a>.</p></td>
+</tr>
+<tr class="odd">
+<td><p>type keywords</p></td>
+<td><p><code>boolean</code>, <code>byte</code>, <code>int16</code>, <code>uint16</code>, <code>int32</code>, <code>uint32</code>, <code>handle</code>, <code>int64</code>, <code>uint64</code>, <code>double</code>, <code>string</code>, <code>objectpath</code>, <code>signature</code></p>
+<p>See <a href="gvariant-text.markdown#type-annotations">Type Annotations</a> below.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong><code>b""</code></strong>, <strong><code>b''</code></strong></p></td>
+<td><p><a href="gvariant-text.markdown#bytestrings">Bytestrings</a>.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong><code>%</code></strong></p></td>
+<td><p><a href="gvariant-text.markdown#positional-parameters">Positional Parameters</a>.</p></td>
+</tr>
+</tbody>
+</table>
+<h2 id="booleans">Booleans</h2>
+<p>The strings <code>true</code> and <code>false</code> are parsed as booleans. This is the only
+way to specify a boolean value.</p>
+<h2 id="strings">Strings</h2>
+<p>Strings literals must be quoted using <code>""</code> or <code>''</code>. The two are
+completely equivalent (except for the fact that each one is unable to
+contain itself unescaped).</p>
+<p>Strings are Unicode strings with no particular encoding. For example, to
+specify the character <code>é</code>, you just write <code>'é'</code>. You could also give the
+Unicode codepoint of that character (U+E9) as the escape sequence
+<code>'\u00e9'</code>. Since the strings are pure Unicode, you should not attempt
+to encode the utf-8 byte sequence corresponding to the string using
+escapes; it won't work and you'll end up with the individual characters
+corresponding to each byte.</p>
+<p>Unicode escapes of the form <code>\uxxxx</code> and <code>\Uxxxxxxxx</code> are supported, in
+hexidecimal. The usual control sequence escapes <code>\a</code>, <code>\b</code>, <code>\f</code>, <code>\n</code>,
+<code>\r</code>, <code>\t</code> and <code>\v</code> are supported. Additionally, a <code>\</code> before a newline
+character causes the newline to be ignored. Finally, any other character
+following <code>\</code> is copied literally (for example, <code>\"</code> or <code>\\</code>) but for
+forwards compatibility with future additions you should only use this
+feature when necessary for escaping backslashes or quotes.</p>
+<p>The usual octal and hexidecimal escapes <code>\0nnn</code> and <code>\xnn</code> are not
+supported here. Those escapes are used to encode byte values and
+GVariant strings are Unicode.</p>
+<p>Single-character strings are not interpreted as bytes. Bytes must be
+specified by their numerical value.</p>
+<h2 id="numbers">Numbers</h2>
+<p>Numbers are given by default as decimal values. Octal and hex values can
+be given in the usual way (by prefixing with <code>0</code> or <code>0x</code>). Note that
+GVariant considers bytes to be unsigned integers and will print them as
+a two digit hexidecimal number by default.</p>
+<p>Floating point numbers can also be given in the usual ways, including
+scientific and hexidecimal notations.</p>
+<p>For lack of additional information, integers will be parsed as int32
+values by default. If the number has a point or an 'e' in it, then it
+will be parsed as a double precision floating point number by default.
+If type information is available (either explicitly or inferred) then
+that type will be used instead.</p>
+<p>Some examples:</p>
+<p><code>5</code> parses as the int32 value five.</p>
+<p><code>37.5</code> parses as a floating point value.</p>
+<p><code>3.75e1</code> parses the same as the value above.</p>
+<p><code>uint64 7</code> parses seven as a uint64. See <a href="gvariant-text.html#type-annotations">Type
+Annotations</a>.</p>
+<h2 id="tuples">Tuples</h2>
+<p>Tuples are formed using the same syntax as Python. Here are some
+examples:</p>
+<p><code>()</code> parses as the empty tuple.</p>
+<p><code>(5,)</code> is a tuple containing a single value.</p>
+<p><code>("hello", 42)</code> is a pair. Note that values of different types are
+permitted.</p>
+<h2 id="arrays">Arrays</h2>
+<p>Arrays are formed using the same syntax as Python uses for lists (which
+is arguably the term that GVariant should have used). Note that, unlike
+Python lists, GVariant arrays are statically typed. This has two
+implications.</p>
+<p>First, all items in the array must have the same type. Second, the type
+of the array must be known, even in the case that it is empty. This
+means that (unless there is some other way to infer it) type information
+will need to be given explicitly for empty arrays.</p>
+<p>The parser is able to infer some types based on the fact that all items
+in an array must have the same type. See the examples below:</p>
+<p><code>[1]</code> parses (without additional type information) as a one-item array
+of signed integers.</p>
+<p><code>[1, 2, 3]</code> parses (similarly) as a three-item array.</p>
+<p><code>[1, 2, 3.0]</code> parses as an array of doubles. This is the most simple
+case of the type inferencing in action.</p>
+<p><code>[(1, 2), (3, 4.0)]</code> causes the 2 to also be parsed as a double (but the
+1 and 4 are still integers).</p>
+<p><code>["", nothing]</code> parses as an array of maybe strings. The presence of
+"<code>nothing</code>" clearly implies that the array elements are nullable.</p>
+<p><code>[[], [""]]</code> will parse properly because the type of the first (empty)
+array can be inferred to be equal to the type of the second array (both
+are arrays of strings).</p>
+<p><code>[b'hello', []]</code> looks odd but will parse properly. See
+<a href="gvariant-text.html#bytestrings">Bytestrings</a></p>
+<p>And some examples of errors:</p>
+<p><code>["hello", 42]</code> fails to parse due to conflicting types.</p>
+<p><code>[]</code> will fail to parse without additional type information.</p>
+<h2 id="dictionaries-and-dictionary-entries">Dictionaries and Dictionary Entries</h2>
+<p>Dictionaries and dictionary entries are both specified using the <code>{}</code>
+characters.</p>
+<p>The dictionary syntax is more commonly used. This is what the printer
+elects to use in the normal case of dictionary entries appearing in an
+array (aka "a dictionary"). The separate syntax for dictionary entries
+is typically only used for when the entries appear on their own, outside
+of an array (which is valid but unusual). Of course, you are free to use
+the dictionary entry syntax within arrays but there is no good reason to
+do so (and the printer itself will never do so). Note that, as with
+arrays, the type of empty dictionaries must be established (either
+explicitly or through inference).</p>
+<p>The dictionary syntax is the same as Python's syntax for dictionaries.
+Some examples:</p>
+<p><code>@a{sv} {}</code> parses as the empty dictionary of everyone's favourite type.</p>
+<p><code>@a{sv} []</code> is the same as above (owing to the fact that dictionaries
+are really arrays).</p>
+<p><code>{1: "one", 2: "two", 3: "three"}</code> parses as a dictionary mapping
+integers to strings.</p>
+<p>The dictionary entry syntax looks just like a pair (2-tuple) that uses
+braces instead of parens. The presence of a comma immediately following
+the key differentiates it from the dictionary syntax (which features a
+colon after the first key). Some examples:</p>
+<p><code>{1, "one"}</code> is a free-standing dictionary entry that can be parsed on
+its own or as part of another container value.</p>
+<p><code>[{1, "one"}, {2, "two"}, {3, "three"}]</code> is exactly equivalent to the
+dictionary example given above.</p>
+<h2 id="variants">Variants</h2>
+<p>Variants are denoted using angle brackets (aka "XML brackets"), <code>&lt;&gt;</code>.
+They may not be omitted.</p>
+<p>Using <code>&lt;&gt;</code> effectively disrupts the type inferencing that occurs between
+array elements. This can have positive and negative effects.</p>
+<p><code>[&lt;"hello"&gt;, &lt;42&gt;]</code> will parse whereas <code>["hello", 42]</code> would not.</p>
+<p><code>[&lt;['']&gt;, &lt;[]&gt;]</code> will fail to parse even though <code>[[''], []]</code> parses
+successfully. You would need to specify <code>[&lt;['']&gt;, &lt;@as []&gt;]</code>.</p>
+<p><code>{"title": &lt;"frobit"&gt;, "enabled": &lt;true&gt;, width: &lt;800&gt;}</code> is an example
+of perhaps the most pervasive use of both dictionaries and variants.</p>
+<h2 id="maybe-types">Maybe Types</h2>
+<p>The syntax for specifying maybe types is inspired by Haskell.</p>
+<p>The null case is specified using the keyword <code>nothing</code> and the non-null
+case is explicitly specified using the keyword <code>just</code>. GVariant allows
+<code>just</code> to be omitted in every case that it is able to unambiguously
+determine the intention of the writer. There are two cases where it must
+be specified:</p>
+<ul>
+<li>
+<p>when using nested maybes, in order to specify the <code>just nothing</code>
+case</p>
+</li>
+<li>
+<p>to establish the nullability of the type of a value without
+explicitly specifying its full type</p>
+</li>
+</ul>
+<p>Some examples:</p>
+<p><code>just 'hello'</code> parses as a non-null nullable string.</p>
+<p><code>@ms 'hello'</code> is the same (demonstrating how <code>just</code> can be dropped if
+the type is already known).</p>
+<p><code>nothing</code> will not parse wtihout extra type information.</p>
+<p><code>@ms nothing</code> parses as a null nullable string.</p>
+<p><code>[just 3, nothing]</code> is an array of nullable integers</p>
+<p><code>[3, nothing]</code> is the same as the above (demonstrating another place
+were <code>just</code> can be dropped).</p>
+<p><code>[3, just nothing]</code> parses as an array of maybe maybe integers (type
+<code>'ammi'</code>).</p>
+<h2 id="type-annotations">Type Annotations</h2>
+<p>Type annotations allow additional type information to be given to the
+parser. Depending on the context, this type information can change the
+output of the parser, cause an error when parsing would otherwise have
+succeeded or resolve an error when parsing would have otherwise failed.</p>
+<p>Type annotations come in two forms: type codes and type keywords.</p>
+<p>Type keywords can be seen as more verbose (and more legible) versions of
+a common subset of the type codes. The type keywords <code>boolean</code>, <code>byte</code>,
+<code>int16</code>, <code>uint16</code>, <code>int32</code>, <code>uint32</code>, <code>handle</code>, <code>int64</code>, <code>uint64</code>,
+<code>double</code>, <code>string</code>, <code>objectpath</code> and literal <code>signature</code> are each
+exactly equivalent to their corresponding type code.</p>
+<p>Type codes are an <code>@</code> ("at" sign) followed by a definite GVariant type
+string. Some examples:</p>
+<p><code>uint32 5</code> causes the number to be parsed unsigned instead of signed
+(the default).</p>
+<p><code>@u 5</code> is the same</p>
+<p><code>objectpath "/org/gnome/xyz"</code> creates an object path instead of a normal
+string</p>
+<p><code>@au []</code> specifies the type of the empty array (which would not parse
+otherwise)</p>
+<p><code>@ms ""</code> indicates that a string value is meant to have a maybe type</p>
+<h2 id="bytestrings">Bytestrings</h2>
+<p>The bytestring syntax is a piece of syntactic sugar meant to complement
+the bytestring APIs in GVariant. It constructs arrays of non-nul bytes
+(type '<code>ay</code>') with a nul terminator at the end.</p>
+<p>Bytestrings are specified with either <code>b""</code> or <code>b''</code>. As with strings,
+there is no fundamental difference between the two different types of
+quotes.</p>
+<p>Bytestrings support the full range of escapes that you would expect (ie:
+those supported by <a href="../#g-strcompress"><code>g_strcompress()</code></a>. This includes
+the normal control sequence escapes (as mentioned in the section on
+strings) as well as octal and hexidecimal escapes of the forms <code>\0nnn</code>
+and <code>\xnn</code>.</p>
+<p><code>b'abc'</code> is equivalent to <code>[byte 0x97, 0x98, 0x99, 0]</code>.</p>
+<p>When formatting arrays of bytes, the printer will choose to display the
+array as a bytestring if it contains a nul character at the end and no
+other nul bytes within. Otherwise, it is formatted as a normal array.</p>
+<h2 id="positional-parameters">Positional Parameters</h2>
+<p>Positional parameters are not a part of the normal GVariant text format,
+but they are mentioned here because they can be used with
+<a href="../#g-variant-new-parsed"><code>g_variant_new_parsed()</code></a>.</p>
+<p>A positional parameter is indicated with a <code>%</code> followed by any valid
+<a href="gvariant-varargs.html">GVariant Format String</a>. Variable arguments
+are collected as specified by the format string and the resulting value
+is inserted at the current position.</p>
+<p>This feature is best explained by example:</p>
+<pre><code>char *t = "xyz";
+gboolean en = false;
+GVariant *value;
+
+value = g_variant_new_parsed ("{'title': &lt;%s&gt;, 'enabled': &lt;%b&gt;}", t, en);
+</code></pre>
+<p>This constructs a dictionary mapping strings to variants (type
+'<code>a{sv}</code>') with two items in it. The key names are parsed from the
+string and the values for those keys are taken as variable arguments
+parameters.</p>
+<p>The arguments are always collected in the order that they appear in the
+string to be parsed. Format strings that collect multiple arguments are
+permitted, so you may require more varargs parameters than the number of
+<code>%</code> signs that appear. You can also give format strings that collect no
+arguments, but there's no good reason to do so.</p>
+
+    </div>
+        
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

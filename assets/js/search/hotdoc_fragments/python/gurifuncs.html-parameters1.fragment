@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gurifuncs.html#parameters1", "fragment": "escaped_string \nA string may be None \nescaped_string_end \nPointer to end of escaped_string may be None \nillegal_characters \nAn optional string of illegal characters not to be allowed may be None \n"});

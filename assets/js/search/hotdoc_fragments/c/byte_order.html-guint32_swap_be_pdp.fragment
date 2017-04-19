@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/byte_order.html#guint32_swap_be_pdp", "fragment": "GUINT32_SWAP_BE_PDP \nConverts a guint32 value between big endian and pdp endian byte order. The conversion is symmetric so it can be used both ways. \n"});

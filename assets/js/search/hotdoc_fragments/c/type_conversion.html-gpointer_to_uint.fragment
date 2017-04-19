@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/type_conversion.html#gpointer_to_uint", "fragment": "GPOINTER_TO_UINT \nExtracts an unsigned integer from a pointer. The integer must have been stored in the pointer with GUINT_TO_POINTER. \n"});

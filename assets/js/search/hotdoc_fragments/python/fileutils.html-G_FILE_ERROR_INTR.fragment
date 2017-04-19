@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/fileutils.html#G_FILE_ERROR_INTR", "fragment": "Interrupted function call an asynchronous signal occurred and prevented completion of the call. When this happens you should try the call again. \nGLib.FileError.io \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hash_tables.html#glibhashtableiternext", "fragment": "GLib.HashTableIter.next \nAdvances iter and retrieves the key and or value that are now pointed to as a result of this advancement. If False is returned key and value are not set and the iterator becomes invalid. \n"});

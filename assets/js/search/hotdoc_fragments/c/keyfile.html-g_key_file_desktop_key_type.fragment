@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/keyfile.html#g_key_file_desktop_key_type", "fragment": "G_KEY_FILE_DESKTOP_KEY_TYPE \nA key under G_KEY_FILE_DESKTOP_GROUP whose value is a string giving the type of the desktop entry. Usually G_KEY_FILE_DESKTOP_TYPE_APPLICATION G_KEY_FILE_DESKTOP_TYPE_LINK or G_KEY_FILE_DESKTOP_TYPE_DIRECTORY. \n"});

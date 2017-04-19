@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibmaincontextdispatch", "fragment": "GLib.MainContext.dispatch \nDispatches all pending sources. \nYou must have successfully acquired the context with GLib.MainContext.acquire before you may call this function. \n"});

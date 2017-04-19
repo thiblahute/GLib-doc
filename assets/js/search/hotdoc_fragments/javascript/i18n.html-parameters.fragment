@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/i18n.html#parameters", "fragment": "domain \nthe translation domain to use or null to use the domain set with textdomain \nmsgid \nmessage to translate \ncategory \na locale category \n"});

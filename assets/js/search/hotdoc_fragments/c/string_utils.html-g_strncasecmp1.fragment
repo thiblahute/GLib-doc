@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_utils.html#g_strncasecmp1", "fragment": "g_strncasecmp \nA case insensitive string comparison corresponding to the standard strncasecmp function on platforms which support it. It is similar to g_strcasecmp except it only compares the first n characters of the strings. \n"});

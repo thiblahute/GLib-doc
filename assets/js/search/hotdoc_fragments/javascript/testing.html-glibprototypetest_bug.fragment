@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/testing.html#glibprototypetest_bug", "fragment": "GLib.prototype.test_bug \nThis function adds a message to test reports that associates a bug URI with a test case. Bug URIs are constructed from a base URI set with GLib.prototype.test_bug_base and bug_uri_snippet. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/fileutils.html#glibmappedfileprototypefree", "fragment": "GLib.MappedFile.prototype.free \nThis call existed before GLib.MappedFile had refcounting and is currently exactly the same as GLib.MappedFile.prototype.unref. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/trees-binary.html#g_tree_height1", "fragment": "g_tree_height \nGets the height of a GTree. \nIf the GTree contains no nodes the height is If the GTree contains only one root node the height is If the root node has children the height is etc. \n"});

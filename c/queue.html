@@ -1,0 +1,3316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GQueue</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="queue.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="queue.markdown">
+        <h1 id="gqueue">GQueue</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GQueue</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GQueueMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_unlink">
+		
+<h4 id="g_queue_unlink1">
+	<span><code>g_queue_unlink</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_queue_unlink (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+                <a title="GList" href="linked_lists_double.html#GList">GList</a> * link_)</pre>
+
+<p>Unlinks <em>link_</em> so that it will no longer be part of <em>queue</em>.
+The link is not freed.</p>
+<p><em>link_</em> must be part of <em>queue</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>link_:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_double.html#GList">GList</a> link that must be part of <em>queue</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_peek_nth">
+		
+<h4 id="g_queue_peek_nth1">
+	<span><code>g_queue_peek_nth</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_queue_peek_nth (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+                  guint n)</pre>
+
+<p>Returns the <em>n</em>'th element of <em>queue</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n:</code></em></i>
+		</p>
+	</td>
+		<td><p>the position of the element</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the data for the <em>n</em>'th element of <em>queue</em>,
+or <a href="macros.html#NULL">NULL</a> if <em>n</em> is off the end of <em>queue</em></p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_peek_head_link">
+		
+<h4 id="g_queue_peek_head_link1">
+	<span><code>g_queue_peek_head_link</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GList" href="linked_lists_double.html#GList">GList</a> *
+g_queue_peek_head_link (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue)</pre>
+
+<p>Returns the first link in <em>queue</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the first link in <em>queue</em>, or <a href="macros.html#NULL">NULL</a> if <em>queue</em> is empty</p>
+
+	</td>
+	<td>
+		<a title="GList" href="linked_lists_double.html#GList">GList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_queue_is_empty">
+		
+<h4 id="g_queue_is_empty1">
+	<span><code>g_queue_is_empty</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_queue_is_empty (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue)</pre>
+
+<p>Returns <a href="macros.html#TRUE">TRUE</a> if the queue is empty.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a>.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the queue is empty</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_reverse">
+		
+<h4 id="g_queue_reverse1">
+	<span><code>g_queue_reverse</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_queue_reverse (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue)</pre>
+
+<p>Reverses the order of the items in <em>queue</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_queue_push_tail">
+		
+<h4 id="g_queue_push_tail1">
+	<span><code>g_queue_push_tail</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_queue_push_tail (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+                   gpointer data)</pre>
+
+<p>Adds a new element at the tail of the queue.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data for the new element</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_remove_all">
+		
+<h4 id="g_queue_remove_all1">
+	<span><code>g_queue_remove_all</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint
+g_queue_remove_all (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+                    gconstpointer data)</pre>
+
+<p>Remove all elements whose data equals <em>data</em> from <em>queue</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data to remove</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of elements removed from <em>queue</em></p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_push_nth">
+		
+<h4 id="g_queue_push_nth1">
+	<span><code>g_queue_push_nth</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_queue_push_nth (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+                  gpointer data,
+                  gint n)</pre>
+
+<p>Inserts a new element into <em>queue</em> at the given position.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data for the new element</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n:</code></em></i>
+		</p>
+	</td>
+		<td><p>the position to insert the new element. If <em>n</em> is negative or
+larger than the number of elements in the <em>queue</em>, the element is
+added to the end of the queue.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_queue_push_tail_link">
+		
+<h4 id="g_queue_push_tail_link1">
+	<span><code>g_queue_push_tail_link</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_queue_push_tail_link (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+                        <a title="GList" href="linked_lists_double.html#GList">GList</a> * link_)</pre>
+
+<p>Adds a new element at the tail of the queue.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>link_:</code></em></i>
+		</p>
+	</td>
+		<td><p>a single <a href="linked_lists_double.html#GList">GList</a> element, not a list with more than one element</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_queue_push_head">
+		
+<h4 id="g_queue_push_head1">
+	<span><code>g_queue_push_head</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_queue_push_head (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+                   gpointer data)</pre>
+
+<p>Adds a new element at the head of the queue.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a>.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data for the new element.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_foreach">
+		
+<h4 id="g_queue_foreach1">
+	<span><code>g_queue_foreach</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_queue_foreach (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+                 <a title="GFunc" href="linked_lists_double.html#GFunc">GFunc</a> func,
+                 gpointer user_data)</pre>
+
+<p>Calls <em>func</em> for each element in the queue passing <em>user_data</em> to the
+function.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to call for each element's data</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data to pass to <em>func</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_pop_nth">
+		
+<h4 id="g_queue_pop_nth1">
+	<span><code>g_queue_pop_nth</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_queue_pop_nth (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+                 guint n)</pre>
+
+<p>Removes the <em>n</em>'th element of <em>queue</em> and returns its data.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n:</code></em></i>
+		</p>
+	</td>
+		<td><p>the position of the element</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the element's data, or <a href="macros.html#NULL">NULL</a> if <em>n</em> is off the end of <em>queue</em></p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_sort">
+		
+<h4 id="g_queue_sort1">
+	<span><code>g_queue_sort</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_queue_sort (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+              <a title="GCompareDataFunc" href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> compare_func,
+              gpointer user_data)</pre>
+
+<p>Sorts <em>queue</em> using <em>compare_func</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>compare_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> used to sort <em>queue</em>. This function
+is passed two elements of the queue and should return 0 if they are
+equal, a negative value if the first comes before the second, and
+a positive value if the second comes before the first.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <em>compare_func</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_insert_after">
+		
+<h4 id="g_queue_insert_after1">
+	<span><code>g_queue_insert_after</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_queue_insert_after (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+                      <a title="GList" href="linked_lists_double.html#GList">GList</a> * sibling,
+                      gpointer data)</pre>
+
+<p>Inserts <em>data</em> into <em>queue</em> after <em>sibling</em>.</p>
+<p><em>sibling</em> must be part of <em>queue</em>. Since GLib 2.44 a <a href="macros.html#NULL">NULL</a> sibling pushes the
+data at the head of the queue.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>sibling:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_double.html#GList">GList</a> link that must be part of <em>queue</em>, or <a href="macros.html#NULL">NULL</a> to
+push at the head of the queue.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data to insert</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_pop_nth_link">
+		
+<h4 id="g_queue_pop_nth_link1">
+	<span><code>g_queue_pop_nth_link</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GList" href="linked_lists_double.html#GList">GList</a> *
+g_queue_pop_nth_link (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+                      guint n)</pre>
+
+<p>Removes and returns the link at the given position.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n:</code></em></i>
+		</p>
+	</td>
+		<td><p>the link's position</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <em>n</em>'th link, or <a href="macros.html#NULL">NULL</a> if <em>n</em> is off the end of <em>queue</em></p>
+
+	</td>
+	<td>
+		<a title="GList" href="linked_lists_double.html#GList">GList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_queue_push_head_link">
+		
+<h4 id="g_queue_push_head_link1">
+	<span><code>g_queue_push_head_link</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_queue_push_head_link (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+                        <a title="GList" href="linked_lists_double.html#GList">GList</a> * link_)</pre>
+
+<p>Adds a new element at the head of the queue.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>link_:</code></em></i>
+		</p>
+	</td>
+		<td><p>a single <a href="linked_lists_double.html#GList">GList</a> element, not a list with more than one element</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_queue_peek_head">
+		
+<h4 id="g_queue_peek_head1">
+	<span><code>g_queue_peek_head</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_queue_peek_head (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue)</pre>
+
+<p>Returns the first element of the queue.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the data of the first element in the queue, or <a href="macros.html#NULL">NULL</a>
+if the queue is empty</p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_copy">
+		
+<h4 id="g_queue_copy1">
+	<span><code>g_queue_copy</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GQueue" href="queue.html#GQueue">GQueue</a> *
+g_queue_copy (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue)</pre>
+
+<p>Copies a <em>queue</em>. Note that is a shallow copy. If the elements in the
+queue consist of pointers to data, the pointers are copied, but the
+actual data is not.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a copy of <em>queue</em></p>
+
+	</td>
+	<td>
+		<a title="GQueue" href="queue.html#GQueue">GQueue</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_insert_before">
+		
+<h4 id="g_queue_insert_before1">
+	<span><code>g_queue_insert_before</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_queue_insert_before (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+                       <a title="GList" href="linked_lists_double.html#GList">GList</a> * sibling,
+                       gpointer data)</pre>
+
+<p>Inserts <em>data</em> into <em>queue</em> before <em>sibling</em>.</p>
+<p><em>sibling</em> must be part of <em>queue</em>. Since GLib 2.44 a <a href="macros.html#NULL">NULL</a> sibling pushes the
+data at the tail of the queue.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>sibling:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_double.html#GList">GList</a> link that must be part of <em>queue</em>, or <a href="macros.html#NULL">NULL</a> to
+push at the tail of the queue.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data to insert</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_queue_init">
+		
+<h4 id="g_queue_init1">
+	<span><code>g_queue_init</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_queue_init (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue)</pre>
+
+<p>A statically-allocated <a href="queue.html#GQueue">GQueue</a> must be initialized with this function
+before it can be used. Alternatively you can initialize it with
+<a href="queue.html#G_QUEUE_INIT">G_QUEUE_INIT</a>. It is not necessary to initialize queues created with
+<a href="queue.html#g_queue_new">g_queue_new</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>an uninitialized <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_queue_pop_tail_link">
+		
+<h4 id="g_queue_pop_tail_link1">
+	<span><code>g_queue_pop_tail_link</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GList" href="linked_lists_double.html#GList">GList</a> *
+g_queue_pop_tail_link (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue)</pre>
+
+<p>Removes and returns the last element of the queue.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="linked_lists_double.html#GList">GList</a> element at the tail of the queue, or <a href="macros.html#NULL">NULL</a>
+if the queue is empty</p>
+
+	</td>
+	<td>
+		<a title="GList" href="linked_lists_double.html#GList">GList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_queue_free_full">
+		
+<h4 id="g_queue_free_full1">
+	<span><code>g_queue_free_full</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_queue_free_full (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+                   <a title="GDestroyNotify" href="datasets.html#GDestroyNotify">GDestroyNotify</a> free_func)</pre>
+
+<p>Convenience method, which frees all the memory used by a <a href="queue.html#GQueue">GQueue</a>,
+and calls the specified destroy function on every element's data.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>free_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the function to be called to free each element's data</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_queue_pop_tail">
+		
+<h4 id="g_queue_pop_tail1">
+	<span><code>g_queue_pop_tail</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_queue_pop_tail (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue)</pre>
+
+<p>Removes the last element of the queue and returns its data.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the data of the last element in the queue, or <a href="macros.html#NULL">NULL</a>
+if the queue is empty</p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_peek_nth_link">
+		
+<h4 id="g_queue_peek_nth_link1">
+	<span><code>g_queue_peek_nth_link</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GList" href="linked_lists_double.html#GList">GList</a> *
+g_queue_peek_nth_link (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+                       guint n)</pre>
+
+<p>Returns the link at the given position</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n:</code></em></i>
+		</p>
+	</td>
+		<td><p>the position of the link</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the link at the <em>n</em>'th position, or <a href="macros.html#NULL">NULL</a>
+if <em>n</em> is off the end of the list</p>
+
+	</td>
+	<td>
+		<a title="GList" href="linked_lists_double.html#GList">GList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_get_length">
+		
+<h4 id="g_queue_get_length1">
+	<span><code>g_queue_get_length</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+guint
+g_queue_get_length (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue)</pre>
+
+<p>Returns the number of items in <em>queue</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of items in <em>queue</em></p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_find">
+		
+<h4 id="g_queue_find1">
+	<span><code>g_queue_find</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GList" href="linked_lists_double.html#GList">GList</a> *
+g_queue_find (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+              gconstpointer data)</pre>
+
+<p>Finds the first link in <em>queue</em> which contains <em>data</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>data to find</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the first link in <em>queue</em> which contains <em>data</em></p>
+
+	</td>
+	<td>
+		<a title="GList" href="linked_lists_double.html#GList">GList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_peek_tail_link">
+		
+<h4 id="g_queue_peek_tail_link1">
+	<span><code>g_queue_peek_tail_link</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GList" href="linked_lists_double.html#GList">GList</a> *
+g_queue_peek_tail_link (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue)</pre>
+
+<p>Returns the last link in <em>queue</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the last link in <em>queue</em>, or <a href="macros.html#NULL">NULL</a> if <em>queue</em> is empty</p>
+
+	</td>
+	<td>
+		<a title="GList" href="linked_lists_double.html#GList">GList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_remove">
+		
+<h4 id="g_queue_remove1">
+	<span><code>g_queue_remove</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_queue_remove (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+                gconstpointer data)</pre>
+
+<p>Removes the first element in <em>queue</em> that contains <em>data</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data to remove</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>data</em> was found and removed from <em>queue</em></p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_delete_link">
+		
+<h4 id="g_queue_delete_link1">
+	<span><code>g_queue_delete_link</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_queue_delete_link (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+                     <a title="GList" href="linked_lists_double.html#GList">GList</a> * link_)</pre>
+
+<p>Removes <em>link_</em> from <em>queue</em> and frees it.</p>
+<p><em>link_</em> must be part of <em>queue</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters28">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>link_:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_double.html#GList">GList</a> link that must be part of <em>queue</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_index">
+		
+<h4 id="g_queue_index1">
+	<span><code>g_queue_index</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint
+g_queue_index (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+               gconstpointer data)</pre>
+
+<p>Returns the position of the first element in <em>queue</em> which contains <em>data</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters29">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data to find</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the position of the first element in <em>queue</em> which
+contains <em>data</em>, or -1 if no element in <em>queue</em> contains <em>data</em></p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_queue_free">
+		
+<h4 id="g_queue_free1">
+	<span><code>g_queue_free</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_queue_free (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue)</pre>
+
+<p>Frees the memory allocated for the <a href="queue.html#GQueue">GQueue</a>. Only call this function
+if <em>queue</em> was created with <a href="queue.html#g_queue_new">g_queue_new</a>. If queue elements contain
+dynamically-allocated memory, they should be freed first.</p>
+<p>If queue elements contain dynamically-allocated memory, you should
+either use <a href="queue.html#g_queue_free_full">g_queue_free_full</a> or free them manually first.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters30">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_find_custom">
+		
+<h4 id="g_queue_find_custom1">
+	<span><code>g_queue_find_custom</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GList" href="linked_lists_double.html#GList">GList</a> *
+g_queue_find_custom (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+                     gconstpointer data,
+                     <a title="GCompareFunc" href="linked_lists_double.html#GCompareFunc">GCompareFunc</a> func)</pre>
+
+<p>Finds an element in a <a href="queue.html#GQueue">GQueue</a>, using a supplied function to find the
+desired element. It iterates over the queue, calling the given function
+which should return 0 when the desired element is found. The function
+takes two gconstpointer arguments, the <a href="queue.html#GQueue">GQueue</a> element's data as the
+first argument and the given user data as the second argument.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters31">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <em>func</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_double.html#GCompareFunc">GCompareFunc</a> to call for each element. It should return 0
+when the desired element is found</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the found link, or <a href="macros.html#NULL">NULL</a> if it wasn't found</p>
+
+	</td>
+	<td>
+		<a title="GList" href="linked_lists_double.html#GList">GList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_insert_sorted">
+		
+<h4 id="g_queue_insert_sorted1">
+	<span><code>g_queue_insert_sorted</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_queue_insert_sorted (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+                       gpointer data,
+                       <a title="GCompareDataFunc" href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> func,
+                       gpointer user_data)</pre>
+
+<p>Inserts <em>data</em> into <em>queue</em> using <em>func</em> to determine the new position.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters32">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>the data to insert</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="linked_lists_double.html#GCompareDataFunc">GCompareDataFunc</a> used to compare elements in the queue. It is
+called with two elements of the <em>queue</em> and <em>user_data</em>. It should
+return 0 if the elements are equal, a negative value if the first
+element comes before the second, and a positive value if the second
+element comes before the first.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <em>func</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_push_nth_link">
+		
+<h4 id="g_queue_push_nth_link1">
+	<span><code>g_queue_push_nth_link</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_queue_push_nth_link (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+                       gint n,
+                       <a title="GList" href="linked_lists_double.html#GList">GList</a> * link_)</pre>
+
+<p>Inserts <em>link</em> into <em>queue</em> at the given position.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters33">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n:</code></em></i>
+		</p>
+	</td>
+		<td><p>the position to insert the link. If this is negative or larger than
+the number of elements in <em>queue</em>, the link is added to the end of
+<em>queue</em>.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>link_:</code></em></i>
+		</p>
+	</td>
+		<td><p>the link to add to <em>queue</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_queue_pop_head_link">
+		
+<h4 id="g_queue_pop_head_link1">
+	<span><code>g_queue_pop_head_link</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GList" href="linked_lists_double.html#GList">GList</a> *
+g_queue_pop_head_link (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue)</pre>
+
+<p>Removes and returns the first element of the queue.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters34">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="linked_lists_double.html#GList">GList</a> element at the head of the queue, or <a href="macros.html#NULL">NULL</a>
+if the queue is empty</p>
+
+	</td>
+	<td>
+		<a title="GList" href="linked_lists_double.html#GList">GList</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_queue_pop_head">
+		
+<h4 id="g_queue_pop_head1">
+	<span><code>g_queue_pop_head</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_queue_pop_head (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue)</pre>
+
+<p>Removes the first element of the queue and returns its data.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters35">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the data of the first element in the queue, or <a href="macros.html#NULL">NULL</a>
+if the queue is empty</p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_queue_peek_tail">
+		
+<h4 id="g_queue_peek_tail1">
+	<span><code>g_queue_peek_tail</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gpointer
+g_queue_peek_tail (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue)</pre>
+
+<p>Returns the last element of the queue.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters36">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the data of the last element in the queue, or <a href="macros.html#NULL">NULL</a>
+if the queue is empty</p>
+
+	</td>
+	<td>
+		gpointer
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_queue_clear">
+		
+<h4 id="g_queue_clear1">
+	<span><code>g_queue_clear</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_queue_clear (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue)</pre>
+
+<p>Removes all the elements in <em>queue</em>. If queue elements contain
+dynamically-allocated memory, they should be freed first.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters37">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_queue_link_index">
+		
+<h4 id="g_queue_link_index1">
+	<span><code>g_queue_link_index</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gint
+g_queue_link_index (<a title="GQueue" href="queue.html#GQueue">GQueue</a> * queue,
+                    <a title="GList" href="linked_lists_double.html#GList">GList</a> * link_)</pre>
+
+<p>Returns the position of <em>link_</em> in <em>queue</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters38">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>queue:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="queue.html#GQueue">GQueue</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>link_:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="linked_lists_double.html#GList">GList</a> link</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the position of <em>link_</em>, or -1 if the link is
+not part of <em>queue</em></p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GQueueFunctions">Functions</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_queue_new">
+		
+<h4 id="g_queue_new1">
+	<span><code>g_queue_new</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GQueue" href="queue.html#GQueue">GQueue</a> *
+g_queue_new ()</pre>
+
+<p>Creates a new <a href="queue.html#GQueue">GQueue</a>.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns21">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated <a href="queue.html#GQueue">GQueue</a></p>
+
+	</td>
+	<td>
+		<a title="GQueue" href="queue.html#GQueue">GQueue</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GQueue">
+		
+<h3 id="struct-gqueue">
+		struct GQueue
+	</h3>
+
+		<pre class="raw_code">
+struct GQueue {
+    GList* head;
+    GList* tail;
+    guint length;
+};
+</pre>
+
+<p>Contains the public fields of a
+[Queue][glib-Double-ended-Queues].</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="fields">Fields</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GQueue.head">
+		<td>
+		<p>
+		<i><em><code><a title="GList" href="linked_lists_double.html#GList">GList</a> * <em><code>head</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to the first element of the queue</p>
+</td>
+</tr>
+
+						<tr id="GQueue.tail">
+		<td>
+		<p>
+		<i><em><code><a title="GList" href="linked_lists_double.html#GList">GList</a> * <em><code>tail</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to the last element of the queue</p>
+</td>
+</tr>
+
+						<tr id="GQueue.length">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>length</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of elements in the queue</p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="G_QUEUE_INIT">
+		
+<h3 class="constant" id="g_queue_init2">
+	G_QUEUE_INIT
+</h3>
+
+		<pre class="raw_code">
+#define G_QUEUE_INIT { NULL, NULL, 0 }
+</pre>
+
+<p>A statically-allocated <a href="queue.html#GQueue">GQueue</a> must be initialized with this
+macro before it can be used. This macro can be used to initialize
+a variable, but it cannot be assigned to a variable. In that case
+you have to use <a href="queue.html#g_queue_init">g_queue_init</a>.</p>
+<pre><code class="language-["> GQueue my_queue = G_QUEUE_INIT;
+</code></pre>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

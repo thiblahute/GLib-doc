@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date-time.html#g_date_time_to_unix1", "fragment": "g_date_time_to_unix \nGives the Unix time corresponding to datetime rounding down to the nearest second. \nUnix time is the number of seconds that have elapsed since UTC regardless of the time zone associated with datetime. \n"});

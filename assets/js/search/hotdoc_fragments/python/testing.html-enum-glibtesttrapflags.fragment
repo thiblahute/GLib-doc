@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/testing.html#enum-glibtesttrapflags", "fragment": "enum GLib.TestTrapFlags \nTest traps are guards around forked tests. These flags determine what traps to set. \n"});

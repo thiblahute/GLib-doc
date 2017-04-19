@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hmac.html#glibhmacprototypeupdate", "fragment": "GLib.Hmac.prototype.update \nFeeds data into an existing GLib.Hmac. \nThe HMAC must still be open that is GLib.Hmac.prototype.get_string or GLib.Hmac.prototype.get_digest must not have been called on hmac. \n"});

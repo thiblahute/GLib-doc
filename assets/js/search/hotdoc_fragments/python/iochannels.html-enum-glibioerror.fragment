@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#enum-glibioerror", "fragment": "enum GLib.IOError \nGLib.IOError is only used by the deprecated functions GLib.IOChannel.read GLib.IOChannel.write and GLib.IOChannel.seek. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/keyfile.html#G_KEY_FILE_DESKTOP_KEY_GENERIC_NAME", "fragment": "GLib.KEY_FILE_DESKTOP_KEY_GENERIC_NAME \nA key under GLib.KEY_FILE_DESKTOP_GROUP whose value is a localized string giving the generic name of the desktop entry. \n"});

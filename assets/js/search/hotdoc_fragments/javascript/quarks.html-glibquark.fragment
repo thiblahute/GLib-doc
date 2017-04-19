@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/quarks.html#glibquark", "fragment": "GLib.Quark \nA GQuark is a non zero integer which uniquely identifies a particular string. A GQuark value of zero is associated to null. \n"});

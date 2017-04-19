@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdatenew", "fragment": "GLib.Date.new \nAllocates a GLib.Date and initializes it to a sane state. The new date will be cleared as if you d called GLib.Date.clear but invalid it won t represent an existing day Free the return value with GLib.Date.free. \n"});

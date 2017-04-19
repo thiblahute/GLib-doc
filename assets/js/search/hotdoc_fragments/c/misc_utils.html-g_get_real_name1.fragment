@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/misc_utils.html#g_get_real_name1", "fragment": "g_get_real_name \nGets the real name of the user. This usually comes from the user s entry in the passwd file. The encoding of the returned string is system defined. On Windows it is however always UTF If the real user name cannot be determined the string Unknown is returned. \n"});

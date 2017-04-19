@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/conversions.html#glibprototypelocale_to_utf8", "fragment": "GLib.prototype.locale_to_utf8 \nConverts a string which is in the encoding used for strings by the C runtime usually the same as that used by the operating system in the current locale setlocale into a UTF string. \n"});

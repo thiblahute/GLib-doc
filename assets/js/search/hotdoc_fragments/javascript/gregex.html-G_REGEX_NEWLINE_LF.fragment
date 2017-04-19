@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gregex.html#G_REGEX_NEWLINE_LF", "fragment": "Usually any newline character or character sequence is recognized. If this option is set the only recognized newline character is n \nGLib.RegexCompileFlags.prototype.newline_crlf \n"});

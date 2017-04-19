@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/quarks.html#glibquark_from_string", "fragment": "GLib.quark_from_string \nGets the GLib.Quark identifying the given string. If the string does not currently have an associated GLib.Quark a new GLib.Quark is created using a copy of the string. \n"});

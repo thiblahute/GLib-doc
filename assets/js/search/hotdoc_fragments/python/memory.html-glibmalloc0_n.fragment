@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/memory.html#glibmalloc0_n", "fragment": "GLib.malloc0_n \nThis function is similar to GLib.malloc0 allocating n_blocks n_block_bytes bytes but care is taken to detect possible overflow during multiplication. \n"});

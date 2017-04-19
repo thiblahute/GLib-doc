@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/iochannels.html#g_io_channel_seek_position", "fragment": "GLib.IOChannel.prototype.seek_position \nReplacement for GLib.IOChannel.prototype.seek with the new API. \n"});

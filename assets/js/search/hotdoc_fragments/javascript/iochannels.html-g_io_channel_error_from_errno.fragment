@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/iochannels.html#g_io_channel_error_from_errno", "fragment": "GLib.prototype.io_channel_error_from_errno \nConverts an errno error number to a GLib.IOChannelError. \n"});

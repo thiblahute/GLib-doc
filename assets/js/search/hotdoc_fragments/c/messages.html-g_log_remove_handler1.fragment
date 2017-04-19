@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/messages.html#g_log_remove_handler1", "fragment": "g_log_remove_handler \nRemoves the log handler. \nThis has no effect if structured logging is enabled see Using Structured Logging using structured logging \n"});

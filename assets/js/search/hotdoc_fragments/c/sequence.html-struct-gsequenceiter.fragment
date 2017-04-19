@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/sequence.html#struct-gsequenceiter", "fragment": "struct GSequenceIter \nThe GSequenceIter struct is an opaque data type representing an iterator pointing into a GSequence. \n"});

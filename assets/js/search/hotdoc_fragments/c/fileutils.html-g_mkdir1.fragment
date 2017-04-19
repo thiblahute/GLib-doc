@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/fileutils.html#g_mkdir1", "fragment": "g_mkdir \nA wrapper for the POSIX mkdir function. The mkdir function attempts to create a directory with the given name and permissions. The mode argument is ignored on Windows. \nSee your C library manual for more details about mkdir. \n"});

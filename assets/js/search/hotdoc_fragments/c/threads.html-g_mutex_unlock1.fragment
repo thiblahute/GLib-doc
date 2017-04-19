@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#g_mutex_unlock1", "fragment": "g_mutex_unlock \nUnlocks mutex. If another thread is blocked in a g_mutex_lock call for mutex it will become unblocked and can lock mutex itself. \nCalling g_mutex_unlock on a mutex that is not locked by the current thread leads to undefined behaviour. \n"});

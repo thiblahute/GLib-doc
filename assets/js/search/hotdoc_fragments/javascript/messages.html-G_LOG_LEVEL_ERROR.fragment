@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/messages.html#G_LOG_LEVEL_ERROR", "fragment": "log level for errors see g_error not introspectable This level is also used for messages produced by g_assert not introspectable \nGLib.LogLevelFlags.prototype.level_critical \n"});

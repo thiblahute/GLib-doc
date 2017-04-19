@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvariant.html#g_variant_get_variant", "fragment": "GLib.Variant.prototype.get_variant \nUnboxes value. The result is the GLib.Variant instance that was contained in value. \n"});

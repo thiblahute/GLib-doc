@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdatedays_between", "fragment": "GLib.Date.days_between \nComputes the number of days between two dates. If date2 is prior to date1 the returned value is negative. Both dates must be valid. \n"});

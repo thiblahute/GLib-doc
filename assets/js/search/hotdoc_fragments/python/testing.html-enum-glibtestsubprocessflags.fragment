@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/testing.html#enum-glibtestsubprocessflags", "fragment": "enum GLib.TestSubprocessFlags \nFlags to pass to GLib.test_trap_subprocess to control input and output. \nNote that in contrast with GLib.test_trap_fork the default is to not show stdout and stderr. \n"});

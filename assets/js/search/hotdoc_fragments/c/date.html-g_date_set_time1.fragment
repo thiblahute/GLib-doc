@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date.html#g_date_set_time1", "fragment": "g_date_set_time \nSets the value of a date from a GTime value. The time to date conversion is done using the user s current timezone. \n"});

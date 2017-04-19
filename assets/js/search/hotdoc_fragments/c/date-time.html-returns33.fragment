@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date-time.html#returns33", "fragment": "\nthe time zone abbreviation. The returned string is owned by the GDateTime and it should not be modified or freed \nSince \n"});

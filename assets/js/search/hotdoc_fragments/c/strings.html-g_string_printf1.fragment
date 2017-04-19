@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/strings.html#g_string_printf1", "fragment": "g_string_printf \nWrites a formatted string into a GString. This is similar to the standard sprintf function except that the GString buffer automatically expands to contain the results. The previous contents of the GString are destroyed. \n"});

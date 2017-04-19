@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/sequence.html#g_sequence_sort1", "fragment": "g_sequence_sort \nSorts seq using cmp_func. \ncmp_func is passed two items of seq and should return if they are equal a negative value if the first comes before the second and a positive value if the second comes before the first. \n"});

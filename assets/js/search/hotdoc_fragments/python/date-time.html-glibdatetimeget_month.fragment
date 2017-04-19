@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date-time.html#glibdatetimeget_month", "fragment": "GLib.DateTime.get_month \nRetrieves the month of the year represented by datetime in the Gregorian calendar. \n"});

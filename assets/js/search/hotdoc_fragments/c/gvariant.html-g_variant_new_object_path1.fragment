@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_new_object_path1", "fragment": "g_variant_new_object_path \nCreates a D Bus object path GVariant with the contents of string. string must be a valid D Bus object path. Use g_variant_is_object_path if you re not sure. \n"});

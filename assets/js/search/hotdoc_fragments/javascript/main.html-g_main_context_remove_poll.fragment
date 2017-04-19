@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#g_main_context_remove_poll", "fragment": "GLib.MainContext.prototype.remove_poll \nRemoves file descriptor from the set of file descriptors to be polled for a particular context. \n"});

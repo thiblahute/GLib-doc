@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/timers.html#g_timer_new1", "fragment": "g_timer_new \nCreates a new timer and starts timing i.e. g_timer_start is implicitly called for you \n"});

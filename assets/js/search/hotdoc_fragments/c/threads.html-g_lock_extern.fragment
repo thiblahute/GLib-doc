@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#g_lock_extern", "fragment": "G_LOCK_EXTERN \nThis declares a lock that is defined with G_LOCK_DEFINE in another module. \n"});

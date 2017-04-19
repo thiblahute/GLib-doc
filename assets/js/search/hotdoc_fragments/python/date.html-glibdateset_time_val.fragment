@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdateset_time_val", "fragment": "GLib.Date.set_time_val \nSets the value of a date from a GLib.TimeVal value. Note that the tv_usec member is ignored because GLib.Date can t make use of the additional precision. \nThe time to date conversion is done using the user s current timezone. \n"});

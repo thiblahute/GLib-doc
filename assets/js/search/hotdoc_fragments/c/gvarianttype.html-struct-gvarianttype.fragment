@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvarianttype.html#struct-gvarianttype", "fragment": "struct GVariantType \nA type in the GVariant type system. \nTwo types may not be compared by value use g_variant_type_equal or g_variant_type_is_subtype_of. May be copied using g_variant_type_copy and freed using g_variant_type_free. \n"});

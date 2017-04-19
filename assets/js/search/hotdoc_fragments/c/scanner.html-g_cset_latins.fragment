@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/scanner.html#g_cset_latins", "fragment": "G_CSET_LATINS \nThe set of lowercase ISO alphabet characters which are not ASCII characters. Used for specifying valid identifier characters in GScannerConfig. \n"});

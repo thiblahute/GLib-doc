@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date-time.html#g_date_time_new_local1", "fragment": "g_date_time_new_local \nCreates a new GDateTime corresponding to the given date and time in the local time zone. \nThis call is equivalent to calling g_date_time_new with the time zone returned by g_time_zone_new_local. \n"});

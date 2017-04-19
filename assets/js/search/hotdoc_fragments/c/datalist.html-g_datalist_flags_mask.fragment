@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/datalist.html#g_datalist_flags_mask", "fragment": "G_DATALIST_FLAGS_MASK \nA bitmask that restricts the possible flags passed to g_datalist_set_flags. Passing a flags value where flags G_DATALIST_FLAGS_MASK is an error. \n"});

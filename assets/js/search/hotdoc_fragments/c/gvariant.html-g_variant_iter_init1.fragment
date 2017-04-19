@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_iter_init1", "fragment": "g_variant_iter_init \nInitialises without allocating a GVariantIter. iter may be completely uninitialised prior to this call its old value is ignored. \nThe iterator remains valid for as long as value exists and need not be freed in any way. \n"});

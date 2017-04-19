@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/markup.html#g_markup_parse_context_free", "fragment": "GLib.MarkupParseContext.prototype.free \nFrees a GLib.MarkupParseContext. \nThis function can t be called from inside one of the GLib.MarkupParser functions or while a subparser is pushed. \n"});

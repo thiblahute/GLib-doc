@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/fileutils.html#glibmappedfileget_length", "fragment": "GLib.MappedFile.get_length \nReturns the length of the contents of a GLib.MappedFile. \n"});

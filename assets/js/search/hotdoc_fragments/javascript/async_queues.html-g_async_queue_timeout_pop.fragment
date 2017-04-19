@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/async_queues.html#g_async_queue_timeout_pop", "fragment": "GLib.AsyncQueue.prototype.timeout_pop \nPops data from the queue. If the queue is empty blocks for timeout microseconds or until data becomes available. \nIf no data is received before the timeout null is returned. \n"});

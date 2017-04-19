@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_get_byte1", "fragment": "g_variant_get_byte \nReturns the byte value of value. \nIt is an error to call this function with a value of any type other than G_VARIANT_TYPE_BYTE. \n"});

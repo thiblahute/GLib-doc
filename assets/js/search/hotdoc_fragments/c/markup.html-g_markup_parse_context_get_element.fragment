@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/markup.html#g_markup_parse_context_get_element", "fragment": "g_markup_parse_context_get_element \nRetrieves the name of the currently open element. \nIf called from the start_element or end_element handlers this will give the element_name as passed to those functions. For the parent elements see g_markup_parse_context_get_element_stack. \n"});

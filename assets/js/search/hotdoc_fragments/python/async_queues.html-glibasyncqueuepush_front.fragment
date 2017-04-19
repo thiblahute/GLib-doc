@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/async_queues.html#glibasyncqueuepush_front", "fragment": "GLib.AsyncQueue.push_front \nPushes the item into the queue. item must not be None. In contrast to GLib.AsyncQueue.push this function pushes the new item ahead of the items already in the queue so that it will be the next one to be popped off the queue. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/strings.html#glibstringprepend", "fragment": "GLib.String.prepend \nAdds a string on to the start of a GLib.String expanding it if necessary. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gregex.html#glibmatchinfoget_string", "fragment": "GLib.MatchInfo.get_string \nReturns the string searched with match_info. This is the string passed to GLib.Regex.match or GLib.Regex.replace so you may not free it before calling this function. \n"});

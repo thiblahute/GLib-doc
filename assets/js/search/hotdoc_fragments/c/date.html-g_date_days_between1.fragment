@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date.html#g_date_days_between1", "fragment": "g_date_days_between \nComputes the number of days between two dates. If date2 is prior to date1 the returned value is negative. Both dates must be valid. \n"});

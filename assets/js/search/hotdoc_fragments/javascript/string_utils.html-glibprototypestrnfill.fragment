@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/string_utils.html#glibprototypestrnfill", "fragment": "GLib.prototype.strnfill \nCreates a new string length bytes long filled with fill_char. The returned string should be freed when no longer needed. \n"});

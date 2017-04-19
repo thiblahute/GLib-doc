@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/types.html#g_goffset_format", "fragment": "G_GOFFSET_FORMAT \nThis is the platform dependent conversion specifier for scanning and printing values of type goffset. See also G_GINT64_FORMAT. \n"});

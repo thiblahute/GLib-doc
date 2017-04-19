@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_utils.html#parameters53", "fragment": "nptr \nthe string to convert to a numeric value. \nendptr \nif non NULL it returns the character after the last character used in the conversion. \nbase \nto be used for the conversion or \n"});

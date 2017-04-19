@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/async_queues.html#g_async_queue_pop1", "fragment": "g_async_queue_pop \nPops data from the queue. If queue is empty this function blocks until data becomes available. \n"});

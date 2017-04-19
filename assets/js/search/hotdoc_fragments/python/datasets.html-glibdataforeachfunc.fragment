@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/datasets.html#glibdataforeachfunc", "fragment": "GLib.DataForeachFunc \nSpecifies the type of function passed to g_dataset_foreach not introspectable It is called with each GLib.Quark id and associated data element together with the user_data parameter supplied to g_dataset_foreach not introspectable \n"});

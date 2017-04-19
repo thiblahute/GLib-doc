@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/atomic_operations.html#g_atomic_int_set1", "fragment": "g_atomic_int_set \nSets the value of atomic to newval. \nThis call acts as a full compiler and hardware memory barrier after the set \n"});

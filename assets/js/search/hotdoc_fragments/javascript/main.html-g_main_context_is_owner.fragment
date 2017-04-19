@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#g_main_context_is_owner", "fragment": "GLib.MainContext.prototype.is_owner \nDetermines whether this thread holds the recursive ownership of this GLib.MainContext. This is useful to know before waiting on another thread that may be blocking to get ownership of context. \n"});

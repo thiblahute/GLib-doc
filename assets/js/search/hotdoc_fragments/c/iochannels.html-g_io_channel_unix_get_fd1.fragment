@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#g_io_channel_unix_get_fd1", "fragment": "g_io_channel_unix_get_fd \nReturns the file descriptor of the GIOChannel. \nOn Windows this function returns the file descriptor or socket of the GIOChannel. \n"});

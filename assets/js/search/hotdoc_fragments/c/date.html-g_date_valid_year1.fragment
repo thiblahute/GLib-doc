@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date.html#g_date_valid_year1", "fragment": "g_date_valid_year \nReturns TRUE if the year is valid. Any year greater than is valid though there is a bit limit to what GDate will understand. \n"});

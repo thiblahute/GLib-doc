@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/strings.html#glibstringappend_unichar", "fragment": "GLib.String.append_unichar \nConverts a Unicode character into UTF and appends it to the string. \n"});

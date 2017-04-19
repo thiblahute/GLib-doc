@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/unicode.html#g_unichar_ispunct1", "fragment": "g_unichar_ispunct \nDetermines whether a character is punctuation or a symbol. Given some UTF text obtain a character value with g_utf8_get_char. \n"});

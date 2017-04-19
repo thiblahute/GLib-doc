@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/arrays_byte.html#glibbyte_array_new_take", "fragment": "GLib.byte_array_new_take \nCreate byte array containing the data. The data will be owned by the array and will be freed with GLib.free i.e. it could be allocated using GLib.strdup. \n"});

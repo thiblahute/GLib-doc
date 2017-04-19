@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays_byte.html#g_byte_array_set_size1", "fragment": "g_byte_array_set_size \nSets the size of the GByteArray expanding it if necessary. \n"});

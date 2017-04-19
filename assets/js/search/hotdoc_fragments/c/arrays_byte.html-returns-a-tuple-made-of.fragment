@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays_byte.html#returns-a-tuple-made-of", "fragment": "\na pointer to the same byte data which should be freed with g_free \nsize \na pointer to the same byte data which should be freed with g_free \nSince \n"});

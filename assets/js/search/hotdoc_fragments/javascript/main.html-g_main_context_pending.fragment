@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#g_main_context_pending", "fragment": "GLib.MainContext.prototype.pending \nChecks if any sources have pending events for the given context. \n"});

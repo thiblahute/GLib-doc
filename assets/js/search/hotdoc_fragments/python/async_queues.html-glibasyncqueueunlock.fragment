@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/async_queues.html#glibasyncqueueunlock", "fragment": "GLib.AsyncQueue.unlock \nReleases the queue s lock. \nCalling this function when you have not acquired the with GLib.AsyncQueue.lock leads to undefined behaviour. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hooks.html#g_hook_get1", "fragment": "g_hook_get \nReturns the GHook with the given id or NULL if it is not found. \n"});

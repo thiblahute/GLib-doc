@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/scanner.html#GScannerConfig.scan_string_dq", "fragment": "guint numbers_2_int \nspecifies if binary octal and hexadecimal numbers are reported as G_TOKEN_INT the default is TRUE \n"});

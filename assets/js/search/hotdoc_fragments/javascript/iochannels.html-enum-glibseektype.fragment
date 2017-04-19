@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/iochannels.html#enum-glibseektype", "fragment": "enum GLib.SeekType \nAn enumeration specifying the base position for a GLib.IOChannel.prototype.seek_position operation. \n"});

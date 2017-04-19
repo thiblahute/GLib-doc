@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hash_tables.html#ghrfunc", "fragment": "GHRFunc \nSpecifies the type of the function passed to g_hash_table_foreach_remove. It is called with each key value pair together with the user_data parameter passed to g_hash_table_foreach_remove. It should return TRUE if the key value pair should be removed from the GHashTable. \n"});

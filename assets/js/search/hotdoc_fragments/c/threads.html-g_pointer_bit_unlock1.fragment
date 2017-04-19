@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#g_pointer_bit_unlock1", "fragment": "g_pointer_bit_unlock \nThis is equivalent to g_bit_unlock but working on pointers or other pointer sized values \nFor portability reasons you may only lock on the bottom bits of the pointer. \n"});

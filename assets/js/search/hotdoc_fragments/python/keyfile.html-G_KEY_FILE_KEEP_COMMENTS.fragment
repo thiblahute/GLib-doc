@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/keyfile.html#G_KEY_FILE_KEEP_COMMENTS", "fragment": "Use this flag if you plan to write the possibly modified contents of the key file back to a file otherwise all comments will be lost when the key file is written back. \nGLib.KeyFileFlags.keep_translations \n"});

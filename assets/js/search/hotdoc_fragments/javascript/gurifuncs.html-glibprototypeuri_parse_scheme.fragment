@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gurifuncs.html#glibprototypeuri_parse_scheme", "fragment": "GLib.prototype.uri_parse_scheme \nGets the scheme portion of a URI string. RFC decodes the scheme as \nCommon schemes include file http svn ssh etc. \n"});

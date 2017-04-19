@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#returns30", "fragment": "\nthe resulting character. If p points to a partial sequence at the end of a string that could begin a valid character or if max_len is zero returns gunichar otherwise if p does not point to a valid UTF encoded Unicode character returns gunichar \n"});

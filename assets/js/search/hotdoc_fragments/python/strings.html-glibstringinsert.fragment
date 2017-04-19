@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/strings.html#glibstringinsert", "fragment": "GLib.String.insert \nInserts a copy of a string into a GLib.String expanding it if necessary. \n"});

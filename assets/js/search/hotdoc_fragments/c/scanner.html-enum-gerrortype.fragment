@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/scanner.html#enum-gerrortype", "fragment": "enum GErrorType \nThe possible errors used in the v_error field of GTokenValue when the token is a G_TOKEN_ERROR. \n"});

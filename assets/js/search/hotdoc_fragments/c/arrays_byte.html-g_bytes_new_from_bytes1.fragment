@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays_byte.html#g_bytes_new_from_bytes1", "fragment": "g_bytes_new_from_bytes \nCreates a GBytes which is a subsection of another GBytes. The offset length may not be longer than the size of bytes. \nA reference to bytes will be held by the newly created GBytes until the byte data is no longer needed. \n"});

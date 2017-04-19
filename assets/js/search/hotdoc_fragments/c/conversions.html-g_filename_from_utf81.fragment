@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/conversions.html#g_filename_from_utf81", "fragment": "g_filename_from_utf8 \nConverts a string from UTF to the encoding GLib uses for filenames. Note that on Windows GLib uses UTF for filenames on other platforms this function indirectly depends on the current locale setlocale \n"});

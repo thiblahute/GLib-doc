@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/misc_utils.html#glibvoidfunc", "fragment": "GLib.VoidFunc \nDeclares a type of function which takes no arguments and has no return value. It is used to specify the type function passed to GLib.prototype.atexit. \n"});

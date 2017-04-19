@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/patterns.html#glibpatternspecfree", "fragment": "GLib.PatternSpec.free \nFrees the memory allocated for the GLib.PatternSpec. \n"});

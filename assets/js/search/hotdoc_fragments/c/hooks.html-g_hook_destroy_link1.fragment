@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hooks.html#g_hook_destroy_link1", "fragment": "g_hook_destroy_link \nRemoves one GHook from a GHookList marking it inactive and calling g_hook_unref on it. \n"});

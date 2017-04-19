@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibsourcefunc", "fragment": "GLib.SourceFunc \nSpecifies the type of function passed to g_timeout_add not introspectable GLib.timeout_add_full g_idle_add not introspectable and GLib.idle_add_full. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/option.html#G_OPTION_FLAG_NO_ARG", "fragment": "For options of the G_OPTION_ARG_CALLBACK kind this flag indicates that the callback does not take any argument like a G_OPTION_ARG_NONE option Since \nG_OPTION_FLAG_FILENAME \n"});

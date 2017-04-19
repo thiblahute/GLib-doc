@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/option.html#G_OPTION_FLAG_FILENAME", "fragment": "For options of the G_OPTION_ARG_CALLBACK kind this flag indicates that the argument should be passed to the callback in the GLib filename encoding rather than UTF Since \nG_OPTION_FLAG_OPTIONAL_ARG \n"});

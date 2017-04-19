@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/async_queues.html#g_async_queue_pop_unlocked", "fragment": "GLib.AsyncQueue.prototype.pop_unlocked \nPops data from the queue. If queue is empty this function blocks until data becomes available. \nThis function must be called while holding the queue s lock. \n"});

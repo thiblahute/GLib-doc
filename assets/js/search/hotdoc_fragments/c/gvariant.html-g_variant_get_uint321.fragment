@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_get_uint321", "fragment": "g_variant_get_uint32 \nReturns the bit unsigned integer value of value. \nIt is an error to call this function with a value of any type other than G_VARIANT_TYPE_UINT32. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvarianttype.html#g_variant_type_new_array1", "fragment": "g_variant_type_new_array \nConstructs the type corresponding to an array of elements of the type type. \nIt is appropriate to call g_variant_type_free on the return value. \n"});

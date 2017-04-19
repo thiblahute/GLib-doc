@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/markup.html#G_MARKUP_COLLECT_TRISTATE", "fragment": "as with GLib.MarkupCollectType.prototype.boolean but in the case of a missing attribute a value is set that compares equal to neither false nor true G_MARKUP_COLLECT_OPTIONAL is implied \nGLib.MarkupCollectType.prototype.optional \n"});

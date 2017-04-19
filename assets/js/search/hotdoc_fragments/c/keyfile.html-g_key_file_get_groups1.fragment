@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/keyfile.html#g_key_file_get_groups1", "fragment": "g_key_file_get_groups \nReturns all groups in the key file loaded with key_file. The array of returned groups will be NULL terminated so length may optionally be NULL. \n"});

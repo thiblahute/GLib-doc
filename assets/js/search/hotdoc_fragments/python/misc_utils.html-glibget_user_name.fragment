@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/misc_utils.html#glibget_user_name", "fragment": "GLib.get_user_name \nGets the user name of the current user. The encoding of the returned string is system defined. On UNIX it might be the preferred file name encoding or something else and there is no guarantee that it is even consistent on a machine. On Windows it is always UTF \n"});

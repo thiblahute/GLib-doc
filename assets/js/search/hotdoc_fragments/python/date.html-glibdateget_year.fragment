@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdateget_year", "fragment": "GLib.Date.get_year \nReturns the year of a GLib.Date. The date must be valid. \n"});

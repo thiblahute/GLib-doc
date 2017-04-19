@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hooks.html#glibhook_prepend", "fragment": "GLib.hook_prepend \nPrepends a GLib.Hook on the start of a GLib.HookList. \n"});

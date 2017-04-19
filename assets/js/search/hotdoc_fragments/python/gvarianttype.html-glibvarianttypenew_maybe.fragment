@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvarianttype.html#glibvarianttypenew_maybe", "fragment": "GLib.VariantType.new_maybe \nConstructs the type corresponding to a maybe instance containing type type or Nothing. \nIt is appropriate to call GLib.VariantType.free on the return value. \n"});

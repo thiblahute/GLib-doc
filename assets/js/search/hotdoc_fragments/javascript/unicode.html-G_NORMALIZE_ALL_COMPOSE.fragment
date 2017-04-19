@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/unicode.html#G_NORMALIZE_ALL_COMPOSE", "fragment": "like GLib.NormalizeMode.prototype.all but with composed forms rather than a maximally decomposed form \nGLib.NormalizeMode.prototype.nfkc \n"});

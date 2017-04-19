@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_chunks.html#g_string_chunk_free1", "fragment": "g_string_chunk_free \nFrees all memory allocated by the GStringChunk. After calling g_string_chunk_free it is not safe to access any of the strings which were contained within it. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/iochannels.html#g_io_channel_get_line_term", "fragment": "GLib.IOChannel.prototype.get_line_term \nThis returns the string that GLib.IOChannel uses to determine where in the file a line break occurs. A value of null indicates autodetection. \n"});

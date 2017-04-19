@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#g_private_get1", "fragment": "g_private_get \nReturns the current value of the thread local variable key. \nIf the value has not yet been set in this thread NULL is returned. Values are never copied between threads when a new thread is created for example \n"});

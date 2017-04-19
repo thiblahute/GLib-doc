@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/timers.html#g_timer_stop1", "fragment": "g_timer_stop \nMarks an end time so calls to g_timer_elapsed will return the difference between this end time and the start time. \n"});

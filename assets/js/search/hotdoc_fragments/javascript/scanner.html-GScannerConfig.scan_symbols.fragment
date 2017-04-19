@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/scanner.html#GScannerConfig.scan_symbols", "fragment": "guint scan_binary \nspecifies if binary numbers are recognized the default is FALSE \n"});

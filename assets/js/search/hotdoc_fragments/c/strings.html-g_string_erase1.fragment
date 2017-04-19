@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/strings.html#g_string_erase1", "fragment": "g_string_erase \nRemoves len bytes from a GString starting at position pos. The rest of the GString is shifted down to fill the gap. \n"});

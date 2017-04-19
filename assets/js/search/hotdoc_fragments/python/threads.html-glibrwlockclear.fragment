@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/threads.html#glibrwlockclear", "fragment": "GLib.RWLock.clear \nFrees the resources allocated to a lock with GLib.RWLock.init. \nThis function should not be used with a GLib.RWLock that has been statically allocated. \nCalling GLib.RWLock.clear when any thread holds the lock leads to undefined behaviour. \nSine \n"});

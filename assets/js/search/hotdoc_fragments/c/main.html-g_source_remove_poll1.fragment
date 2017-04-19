@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/main.html#g_source_remove_poll1", "fragment": "g_source_remove_poll \nRemoves a file descriptor from the set of file descriptors polled for this source. \nThis API is only intended to be used by implementations of GSource. Do not call this API on a GSource that you did not create. \n"});

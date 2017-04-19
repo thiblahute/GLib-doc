@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gregex.html#G_REGEX_NEWLINE_LF", "fragment": "Usually any newline character or character sequence is recognized. If this option is set the only recognized newline character is n \nG_REGEX_NEWLINE_CRLF \n"});

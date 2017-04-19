@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/trees-nary.html#glibnodedestroy", "fragment": "GLib.Node.destroy \nRemoves root and its children from the tree freeing any memory allocated. \n"});

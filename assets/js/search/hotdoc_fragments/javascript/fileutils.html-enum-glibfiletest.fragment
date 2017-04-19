@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/fileutils.html#enum-glibfiletest", "fragment": "enum GLib.FileTest \nA test to perform on a file using GLib.prototype.file_test. \n"});

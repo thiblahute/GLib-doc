@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdate_valid_julian", "fragment": "GLib.date_valid_julian \nReturns True if the Julian day is valid. Anything greater than zero is basically a valid Julian though there is a bit limit. \n"});

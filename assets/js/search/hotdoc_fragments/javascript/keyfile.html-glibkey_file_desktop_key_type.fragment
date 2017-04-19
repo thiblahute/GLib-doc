@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/keyfile.html#glibkey_file_desktop_key_type", "fragment": "GLib.KEY_FILE_DESKTOP_KEY_TYPE \nA key under GLib.KEY_FILE_DESKTOP_GROUP whose value is a string giving the type of the desktop entry. Usually GLib.KEY_FILE_DESKTOP_TYPE_APPLICATION GLib.KEY_FILE_DESKTOP_TYPE_LINK or GLib.KEY_FILE_DESKTOP_TYPE_DIRECTORY. \n"});

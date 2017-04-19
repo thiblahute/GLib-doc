@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/trees-binary.html#glibtreelookup_extended", "fragment": "GLib.Tree.lookup_extended \nLooks up a key in the GLib.Tree returning the original key and the associated value. This is useful if you need to free the memory allocated for the original key for example before calling GLib.Tree.remove. \n"});

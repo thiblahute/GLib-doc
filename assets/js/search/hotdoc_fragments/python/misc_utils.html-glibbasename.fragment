@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/misc_utils.html#glibbasename", "fragment": "GLib.basename \nGets the name of the file without any leading directory components. It returns a pointer into the given file name string. \n"});

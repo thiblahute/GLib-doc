@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#glibutf8_to_utf16", "fragment": "GLib.utf8_to_utf16 \nConvert a string from UTF to UTF A character will be added to the result after the converted text. \n"});

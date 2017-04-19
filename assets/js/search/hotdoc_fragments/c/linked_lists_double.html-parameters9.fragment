@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/linked_lists_double.html#parameters9", "fragment": "list \na pointer to a GList this must point to the top of the list \ndata \nthe data for the new element \nposition \nthe position to insert the element. If this is negative or is larger than the number of elements in the list the new element is added on to the end of the list. \n"});

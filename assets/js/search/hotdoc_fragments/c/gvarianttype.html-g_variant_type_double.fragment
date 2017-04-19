@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvarianttype.html#g_variant_type_double", "fragment": "G_VARIANT_TYPE_DOUBLE \nThe type of a double precision IEEE754 floating point number. These guys go up to about e308 plus and minus but miss out on some numbers in between. In any case that s far greater than the estimated number of fundamental particles in the observable universe. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_dict_insert1", "fragment": "g_variant_dict_insert \nInserts a value into a GVariantDict. \nThis call is a convenience wrapper that is exactly equivalent to calling g_variant_new followed by g_variant_dict_insert_value. \n"});

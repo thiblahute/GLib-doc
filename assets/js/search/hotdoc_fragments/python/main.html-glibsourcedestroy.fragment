@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibsourcedestroy", "fragment": "GLib.Source.destroy \nRemoves a source from its GLib.MainContext if any and mark it as destroyed. The source cannot be subsequently added to another context. It is safe to call this on sources which have already been removed from their context. \n"});

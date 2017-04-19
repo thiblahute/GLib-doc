@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/arrays_byte.html#glibbytesequal", "fragment": "GLib.Bytes.equal \nCompares the two GLib.Bytes values being pointed to and returns True if they are equal. \nThis function can be passed to g_hash_table_new not introspectable as the key_equal_func parameter when using non NULL GLib.Bytes pointers as keys in a GLib.HashTable. \n"});

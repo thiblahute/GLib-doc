@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/markup.html#glibmarkupparsecontextunref", "fragment": "GLib.MarkupParseContext.unref \nDecreases the reference count of context. When its reference count drops to it is freed. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_utils.html#parameters42", "fragment": "string \nthe string to convert \ndelimiters \na string containing the current delimiters or NULL to use the standard delimiters defined in G_STR_DELIMITERS \nnew_delimiter \nthe new delimiter character \n"});

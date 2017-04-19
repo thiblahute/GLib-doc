@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#glibutf8_strrchr", "fragment": "GLib.utf8_strrchr \nFind the rightmost occurrence of the given Unicode character in a UTF encoded string while limiting the search to len bytes. If len is allow unbounded search. \n"});

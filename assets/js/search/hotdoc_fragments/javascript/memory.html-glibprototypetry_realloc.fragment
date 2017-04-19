@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/memory.html#glibprototypetry_realloc", "fragment": "GLib.prototype.try_realloc \nAttempts to realloc mem to a new size n_bytes and returns null on failure. Contrast with GLib.prototype.realloc which aborts the program on failure. \nIf mem is null behaves the same as GLib.prototype.try_malloc. \n"});

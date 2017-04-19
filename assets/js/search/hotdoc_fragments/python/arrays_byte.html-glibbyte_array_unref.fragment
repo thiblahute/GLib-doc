@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/arrays_byte.html#glibbyte_array_unref", "fragment": "GLib.byte_array_unref \nAtomically decrements the reference count of array by one. If the reference count drops to all memory allocated by the array is released. This function is thread safe and may be called from any thread. \n"});

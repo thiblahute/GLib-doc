@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/types.html#glibguint16_format", "fragment": "GLib.GUINT16_FORMAT \nThis is the platform dependent conversion specifier for scanning and printing values of type guint16. See also GLib.GINT16_FORMAT \n"});

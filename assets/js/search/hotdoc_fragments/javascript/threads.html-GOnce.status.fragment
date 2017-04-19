@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/threads.html#GOnce.status", "fragment": "volatile gpointer retval \nthe value returned by the call to the function if status is G_ONCE_STATUS_READY \n"});

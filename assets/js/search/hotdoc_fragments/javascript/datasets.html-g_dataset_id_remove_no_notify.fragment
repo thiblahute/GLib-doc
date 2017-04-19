@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/datasets.html#g_dataset_id_remove_no_notify", "fragment": "GLib.prototype.dataset_id_remove_no_notify \nRemoves an element without calling its destroy notification function. \n"});

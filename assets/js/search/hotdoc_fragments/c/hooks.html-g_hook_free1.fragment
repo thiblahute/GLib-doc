@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hooks.html#g_hook_free1", "fragment": "g_hook_free \nCalls the GHookList finalize_hook function if it exists and frees the memory allocated for the GHook. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#g_source_remove_by_funcs_user_data", "fragment": "GLib.prototype.source_remove_by_funcs_user_data \nRemoves a source from the default main loop context given the source functions and user data. If multiple sources exist with the same source functions and user data only one will be destroyed. \n"});

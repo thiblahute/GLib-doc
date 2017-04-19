@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/misc_utils.html#glibset_prgname", "fragment": "GLib.set_prgname \nSets the name of the program. This name should not be localized in contrast to GLib.set_application_name. \nNote that for thread safety reasons this function can only be called once. \n"});

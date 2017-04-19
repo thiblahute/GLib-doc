@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/random_numbers.html#g_rand_new1", "fragment": "g_rand_new \nCreates a new random number generator initialized with a seed taken either from dev urandom if existing or from the current time as a fallback \nOn Windows the seed is taken from rand_s. \n"});

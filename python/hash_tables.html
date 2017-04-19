@@ -1,0 +1,2808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GHashTable</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="hash_tables.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="python">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="hash_tables.markdown">
+        <h1 id="ghashtable">GHashTable</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GHashTableIter</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GHashTableIterMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_hash_table_iter_next">
+		
+<h4 id="glibhashtableiternext">
+	<span><code>GLib.HashTableIter.next</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.HashTableIter.next (self):
+    #python wrapper for 'g_hash_table_iter_next'</pre>
+
+<p>Advances <em>iter</em> and retrieves the key and/or value that are now
+pointed to as a result of this advancement. If <a href="https://docs.python.org/2/library/constants.html#False">False</a> is returned,
+<em>key</em> and <em>value</em> are not set, and the iterator becomes invalid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>an initialized <a href="hash_tables.html#GHashTableIter">GLib.HashTableIter</a></p>
+</td>
+<td>
+<a title="GLib.HashTableIter" href="hash_tables.html#GHashTableIter">GLib.HashTableIter</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#False">False</a> if the end of the <a href="hash_tables.html#GHashTable">GLib.HashTable</a> has been reached.</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>key:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#False">False</a> if the end of the <a href="hash_tables.html#GHashTable">GLib.HashTable</a> has been reached.</p>
+
+	</td>
+	<td>
+		<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>value:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#False">False</a> if the end of the <a href="hash_tables.html#GHashTable">GLib.HashTable</a> has been reached.</p>
+
+	</td>
+	<td>
+		<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_hash_table_iter_replace">
+		
+<h4 id="glibhashtableiterreplace">
+	<span><code>GLib.HashTableIter.replace</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.HashTableIter.replace (self, value):
+    #python wrapper for 'g_hash_table_iter_replace'</pre>
+
+<p>Replaces the value currently pointed to by the iterator
+from its associated <a href="hash_tables.html#GHashTable">GLib.HashTable</a>. Can only be called after
+<a href="hash_tables.html#g_hash_table_iter_next">GLib.HashTableIter.next</a> returned <a href="https://docs.python.org/2/library/constants.html#True">True</a>.</p>
+<p>If you supplied a <em>value_destroy_func</em> when creating the
+<a href="hash_tables.html#GHashTable">GLib.HashTable</a>, the old value is freed using that function.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>an initialized <a href="hash_tables.html#GHashTableIter">GLib.HashTableIter</a></p>
+</td>
+<td>
+<a title="GLib.HashTableIter" href="hash_tables.html#GHashTableIter">GLib.HashTableIter</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>the value to replace with</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_hash_table_iter_remove">
+		
+<h4 id="glibhashtableiterremove">
+	<span><code>GLib.HashTableIter.remove</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.HashTableIter.remove (self):
+    #python wrapper for 'g_hash_table_iter_remove'</pre>
+
+<p>Removes the key/value pair currently pointed to by the iterator
+from its associated <a href="hash_tables.html#GHashTable">GLib.HashTable</a>. Can only be called after
+<a href="hash_tables.html#g_hash_table_iter_next">GLib.HashTableIter.next</a> returned <a href="https://docs.python.org/2/library/constants.html#True">True</a>, and cannot be called
+more than once for the same key/value pair.</p>
+<p>If the <a href="hash_tables.html#GHashTable">GLib.HashTable</a> was created using <a href="../c/hash_tables.html#g_hash_table_new_full">g_hash_table_new_full (not introspectable)</a>,
+the key and value are freed using the supplied destroy functions,
+otherwise you have to make sure that any dynamically allocated
+values are freed yourself.</p>
+<p>It is safe to continue iterating the <a href="hash_tables.html#GHashTable">GLib.HashTable</a> afterward:</p>
+<pre><code class="language-[&lt;!--"> while (g_hash_table_iter_next (&amp;iter, &amp;key, &amp;value))
+   {
+     if (condition)
+       g_hash_table_iter_remove (&amp;iter);
+   }
+</code></pre>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>an initialized <a href="hash_tables.html#GHashTableIter">GLib.HashTableIter</a></p>
+</td>
+<td>
+<a title="GLib.HashTableIter" href="hash_tables.html#GHashTableIter">GLib.HashTableIter</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_hash_table_iter_init">
+		
+<h4 id="glibhashtableiterinit">
+	<span><code>GLib.HashTableIter.init</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.HashTableIter.init (self, hash_table):
+    #python wrapper for 'g_hash_table_iter_init'</pre>
+
+<p>Initializes a key/value pair iterator and associates it with
+<em>hash_table</em>. Modifying the hash table after calling this function
+invalidates the returned iterator.</p>
+<pre><code class="language-[&lt;!--"> GHashTableIter iter;
+ gpointer key, value;
+
+ g_hash_table_iter_init (&amp;iter, hash_table);
+ while (g_hash_table_iter_next (&amp;iter, &amp;key, &amp;value))
+   {
+     // do something with key and value
+   }
+</code></pre>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>an uninitialized <a href="hash_tables.html#GHashTableIter">GLib.HashTableIter</a></p>
+</td>
+<td>
+<a title="GLib.HashTableIter" href="hash_tables.html#GHashTableIter">GLib.HashTableIter</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GLib.HashTable</a></p>
+</td>
+<td>
+<a title="GLib.HashTable" href="hash_tables.html#GHashTable">GLib.HashTable</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_hash_table_iter_steal">
+		
+<h4 id="glibhashtableitersteal">
+	<span><code>GLib.HashTableIter.steal</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.HashTableIter.steal (self):
+    #python wrapper for 'g_hash_table_iter_steal'</pre>
+
+<p>Removes the key/value pair currently pointed to by the
+iterator from its associated <a href="hash_tables.html#GHashTable">GLib.HashTable</a>, without calling
+the key and value destroy functions. Can only be called
+after <a href="hash_tables.html#g_hash_table_iter_next">GLib.HashTableIter.next</a> returned <a href="https://docs.python.org/2/library/constants.html#True">True</a>, and cannot
+be called more than once for the same key/value pair.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iter:</code></em></i>
+		</p>
+	</td>
+		<td><p>an initialized <a href="hash_tables.html#GHashTableIter">GLib.HashTableIter</a></p>
+</td>
+<td>
+<a title="GLib.HashTableIter" href="hash_tables.html#GHashTableIter">GLib.HashTableIter</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_size">
+		
+<h3 id="glibhash_table_size">
+	<span><code>GLib.hash_table_size</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.hash_table_size (hash_table):
+    #python wrapper for 'g_hash_table_size'</pre>
+
+<p>Returns the number of elements contained in the <a href="hash_tables.html#GHashTable">GLib.HashTable</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GLib.HashTable</a></p>
+</td>
+<td>
+<a title="GLib.HashTable" href="hash_tables.html#GHashTable">GLib.HashTable</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of key/value pairs in the <a href="hash_tables.html#GHashTable">GLib.HashTable</a>.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_lookup">
+		
+<h3 id="glibhash_table_lookup">
+	<span><code>GLib.hash_table_lookup</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.hash_table_lookup (hash_table, key):
+    #python wrapper for 'g_hash_table_lookup'</pre>
+
+<p>Looks up a key in a <a href="hash_tables.html#GHashTable">GLib.HashTable</a>. Note that this function cannot
+distinguish between a key that is not present and one which is present
+and has the value <a href="https://docs.python.org/2/library/constants.html#None">None</a>. If you need this distinction, use
+<a href="hash_tables.html#g_hash_table_lookup_extended">GLib.hash_table_lookup_extended</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GLib.HashTable</a></p>
+</td>
+<td>
+<a title="GLib.HashTable" href="hash_tables.html#GHashTable">GLib.HashTable</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to look up</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the associated value, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> if the key is not found</p>
+
+	</td>
+	<td>
+		<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_double_hash">
+		
+<h3 id="glibdouble_hash">
+	<span><code>GLib.double_hash</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.double_hash (v):
+    #python wrapper for 'g_double_hash'</pre>
+
+<p>Converts a pointer to a gdouble to a hash value.
+It can be passed to <a href="../c/hash_tables.html#g_hash_table_new">g_hash_table_new (not introspectable)</a> as the <em>hash_func</em> parameter,
+It can be passed to <a href="../c/hash_tables.html#g_hash_table_new">g_hash_table_new (not introspectable)</a> as the <em>hash_func</em> parameter,
+when using non-%NULL pointers to doubles as keys in a <a href="hash_tables.html#GHashTable">GLib.HashTable</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a gdouble key</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a hash value corresponding to the key.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_int64_equal">
+		
+<h3 id="glibint64_equal">
+	<span><code>GLib.int64_equal</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.int64_equal (v1, v2):
+    #python wrapper for 'g_int64_equal'</pre>
+
+<p>Compares the two gint64 values being pointed to and returns
+<a href="https://docs.python.org/2/library/constants.html#True">True</a> if they are equal.
+It can be passed to <a href="../c/hash_tables.html#g_hash_table_new">g_hash_table_new (not introspectable)</a> as the <em>key_equal_func</em>
+parameter, when using non-%NULL pointers to 64-bit integers as keys in a
+<a href="hash_tables.html#GHashTable">GLib.HashTable</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v1:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a gint64 key</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v2:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a gint64 key to compare with <em>v1</em></p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the two keys match.</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.10;" id="g_hash_table_unref">
+		
+<h3 id="glibhash_table_unref">
+	<span><code>GLib.hash_table_unref</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.hash_table_unref (hash_table):
+    #python wrapper for 'g_hash_table_unref'</pre>
+
+<p>Atomically decrements the reference count of <em>hash_table</em> by one.
+If the reference count drops to 0, all keys and values will be
+destroyed, and all memory allocated by the hash table is released.
+This function is MT-safe and may be called from any thread.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid <a href="hash_tables.html#GHashTable">GLib.HashTable</a></p>
+</td>
+<td>
+<a title="GLib.HashTable" href="hash_tables.html#GHashTable">GLib.HashTable</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.10
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_int64_hash">
+		
+<h3 id="glibint64_hash">
+	<span><code>GLib.int64_hash</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.int64_hash (v):
+    #python wrapper for 'g_int64_hash'</pre>
+
+<p>Converts a pointer to a gint64 to a hash value.</p>
+<p>It can be passed to <a href="../c/hash_tables.html#g_hash_table_new">g_hash_table_new (not introspectable)</a> as the <em>hash_func</em> parameter,
+when using non-%NULL pointers to 64-bit integer values as keys in a
+<a href="hash_tables.html#GHashTable">GLib.HashTable</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a gint64 key</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a hash value corresponding to the key.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_hash_table_steal_all">
+		
+<h3 id="glibhash_table_steal_all">
+	<span><code>GLib.hash_table_steal_all</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.hash_table_steal_all (hash_table):
+    #python wrapper for 'g_hash_table_steal_all'</pre>
+
+<p>Removes all keys and their associated values from a <a href="hash_tables.html#GHashTable">GLib.HashTable</a>
+without calling the key and value destroy functions.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GLib.HashTable</a></p>
+</td>
+<td>
+<a title="GLib.HashTable" href="hash_tables.html#GHashTable">GLib.HashTable</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_lookup_extended">
+		
+<h3 id="glibhash_table_lookup_extended">
+	<span><code>GLib.hash_table_lookup_extended</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.hash_table_lookup_extended (hash_table, lookup_key):
+    #python wrapper for 'g_hash_table_lookup_extended'</pre>
+
+<p>Looks up a key in the <a href="hash_tables.html#GHashTable">GLib.HashTable</a>, returning the original key and the
+associated value and a gboolean which is <a href="https://docs.python.org/2/library/constants.html#True">True</a> if the key was found. This
+is useful if you need to free the memory allocated for the original key,
+for example before calling <a href="hash_tables.html#g_hash_table_remove">GLib.hash_table_remove</a>.</p>
+<p>You can actually pass <a href="https://docs.python.org/2/library/constants.html#None">None</a> for <em>lookup_key</em> to test
+whether the <a href="https://docs.python.org/2/library/constants.html#None">None</a> key exists, provided the hash and equal functions
+of <em>hash_table</em> are <a href="https://docs.python.org/2/library/constants.html#None">None</a>-safe.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GLib.HashTable</a></p>
+</td>
+<td>
+<a title="GLib.HashTable" href="hash_tables.html#GHashTable">GLib.HashTable</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>lookup_key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to look up</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of1">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the key was found in the <a href="hash_tables.html#GHashTable">GLib.HashTable</a></p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>orig_key:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the key was found in the <a href="hash_tables.html#GHashTable">GLib.HashTable</a></p>
+
+	</td>
+	<td>
+		<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>value:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the key was found in the <a href="hash_tables.html#GHashTable">GLib.HashTable</a></p>
+
+	</td>
+	<td>
+		<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_hash_table_contains">
+		
+<h3 id="glibhash_table_contains">
+	<span><code>GLib.hash_table_contains</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.hash_table_contains (hash_table, key):
+    #python wrapper for 'g_hash_table_contains'</pre>
+
+<p>Checks if <em>key</em> is in <em>hash_table</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GLib.HashTable</a></p>
+</td>
+<td>
+<a title="GLib.HashTable" href="hash_tables.html#GHashTable">GLib.HashTable</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key to check</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if <em>key</em> is in <em>hash_table</em>, <a href="https://docs.python.org/2/library/constants.html#False">False</a> otherwise.</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_str_equal">
+		
+<h3 id="glibstr_equal">
+	<span><code>GLib.str_equal</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.str_equal (v1, v2):
+    #python wrapper for 'g_str_equal'</pre>
+
+<p>Compares two strings for byte-by-byte equality and returns <a href="https://docs.python.org/2/library/constants.html#True">True</a>
+if they are equal. It can be passed to <a href="../c/hash_tables.html#g_hash_table_new">g_hash_table_new (not introspectable)</a> as the
+<em>key_equal_func</em> parameter, when using non-%NULL strings as keys in a
+<a href="hash_tables.html#GHashTable">GLib.HashTable</a>.</p>
+<p>Note that this function is primarily meant as a hash table comparison
+function. For a general-purpose, <a href="https://docs.python.org/2/library/constants.html#None">None</a>-safe string comparison function,
+see <a href="string_utils.html#g_strcmp0">GLib.strcmp0</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v1:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v2:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key to compare with <em>v1</em></p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the two keys match</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_str_hash">
+		
+<h3 id="glibstr_hash">
+	<span><code>GLib.str_hash</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.str_hash (v):
+    #python wrapper for 'g_str_hash'</pre>
+
+<p>Converts a string to a hash value.</p>
+<p>This function implements the widely used "djb" hash apparently
+posted by Daniel Bernstein to comp.lang.c some time ago.  The 32
+bit unsigned hash value starts at 5381 and for each byte 'c' in
+the string, is updated: <code>hash = hash * 33 + c</code>. This function
+uses the signed value of each byte.</p>
+<p>It can be passed to <a href="../c/hash_tables.html#g_hash_table_new">g_hash_table_new (not introspectable)</a> as the <em>hash_func</em> parameter,
+when using non-%NULL strings as keys in a <a href="hash_tables.html#GHashTable">GLib.HashTable</a>.</p>
+<p>Note that this function may not be a perfect fit for all use cases.
+For example, it produces some hash collisions with strings as short
+as 2.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string key</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a hash value corresponding to the key</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_replace">
+		
+<h3 id="glibhash_table_replace">
+	<span><code>GLib.hash_table_replace</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.hash_table_replace (hash_table, key, value):
+    #python wrapper for 'g_hash_table_replace'</pre>
+
+<p>Inserts a new key and value into a <a href="hash_tables.html#GHashTable">GLib.HashTable</a> similar to
+<a href="hash_tables.html#g_hash_table_insert">GLib.hash_table_insert</a>. The difference is that if the key
+already exists in the <a href="hash_tables.html#GHashTable">GLib.HashTable</a>, it gets replaced by the
+new key. If you supplied a <em>value_destroy_func</em> when creating
+the <a href="hash_tables.html#GHashTable">GLib.HashTable</a>, the old value is freed using that function.
+If you supplied a <em>key_destroy_func</em> when creating the
+<a href="hash_tables.html#GHashTable">GLib.HashTable</a>, the old key is freed using that function.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GLib.HashTable</a></p>
+</td>
+<td>
+<a title="GLib.HashTable" href="hash_tables.html#GHashTable">GLib.HashTable</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key to insert</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>the value to associate with the key</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the key did not exist yet</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_double_equal">
+		
+<h3 id="glibdouble_equal">
+	<span><code>GLib.double_equal</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.double_equal (v1, v2):
+    #python wrapper for 'g_double_equal'</pre>
+
+<p>Compares the two gdouble values being pointed to and returns
+<a href="https://docs.python.org/2/library/constants.html#True">True</a> if they are equal.
+It can be passed to <a href="../c/hash_tables.html#g_hash_table_new">g_hash_table_new (not introspectable)</a> as the <em>key_equal_func</em>
+parameter, when using non-%NULL pointers to doubles as keys in a
+<a href="hash_tables.html#GHashTable">GLib.HashTable</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v1:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a gdouble key</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v2:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a gdouble key to compare with <em>v1</em></p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the two keys match.</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_int_equal">
+		
+<h3 id="glibint_equal">
+	<span><code>GLib.int_equal</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.int_equal (v1, v2):
+    #python wrapper for 'g_int_equal'</pre>
+
+<p>Compares the two gint values being pointed to and returns
+<a href="https://docs.python.org/2/library/constants.html#True">True</a> if they are equal.
+It can be passed to <a href="../c/hash_tables.html#g_hash_table_new">g_hash_table_new (not introspectable)</a> as the <em>key_equal_func</em>
+parameter, when using non-%NULL pointers to integers as keys in a
+<a href="hash_tables.html#GHashTable">GLib.HashTable</a>.</p>
+<p>Note that this function acts on pointers to gint, not on gint
+directly: if your hash table's keys are of the form
+<code>GINT_TO_POINTER (n)</code>, use <a href="hash_tables.html#g_direct_equal">GLib.direct_equal</a> instead.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v1:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a gint key</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v2:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a gint key to compare with <em>v1</em></p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the two keys match.</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_remove">
+		
+<h3 id="glibhash_table_remove">
+	<span><code>GLib.hash_table_remove</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.hash_table_remove (hash_table, key):
+    #python wrapper for 'g_hash_table_remove'</pre>
+
+<p>Removes a key and its associated value from a <a href="hash_tables.html#GHashTable">GLib.HashTable</a>.</p>
+<p>If the <a href="hash_tables.html#GHashTable">GLib.HashTable</a> was created using <a href="../c/hash_tables.html#g_hash_table_new_full">g_hash_table_new_full (not introspectable)</a>, the
+key and value are freed using the supplied destroy functions, otherwise
+you have to make sure that any dynamically allocated values are freed
+yourself.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GLib.HashTable</a></p>
+</td>
+<td>
+<a title="GLib.HashTable" href="hash_tables.html#GHashTable">GLib.HashTable</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to remove</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the key was found and removed from the <a href="hash_tables.html#GHashTable">GLib.HashTable</a></p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_int_hash">
+		
+<h3 id="glibint_hash">
+	<span><code>GLib.int_hash</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.int_hash (v):
+    #python wrapper for 'g_int_hash'</pre>
+
+<p>Converts a pointer to a gint to a hash value.
+It can be passed to <a href="../c/hash_tables.html#g_hash_table_new">g_hash_table_new (not introspectable)</a> as the <em>hash_func</em> parameter,
+when using non-%NULL pointers to integer values as keys in a <a href="hash_tables.html#GHashTable">GLib.HashTable</a>.</p>
+<p>Note that this function acts on pointers to gint, not on gint
+directly: if your hash table's keys are of the form
+<code>GINT_TO_POINTER (n)</code>, use <a href="hash_tables.html#g_direct_hash">GLib.direct_hash</a> instead.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a gint key</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a hash value corresponding to the key.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_direct_hash">
+		
+<h3 id="glibdirect_hash">
+	<span><code>GLib.direct_hash</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.direct_hash (v):
+    #python wrapper for 'g_direct_hash'</pre>
+
+<p>Converts a gpointer to a hash value.
+It can be passed to <a href="../c/hash_tables.html#g_hash_table_new">g_hash_table_new (not introspectable)</a> as the <em>hash_func</em> parameter,
+when using opaque pointers compared by pointer value as keys in a
+<a href="hash_tables.html#GHashTable">GLib.HashTable</a>.</p>
+<p>This hash function is also appropriate for keys that are integers
+stored in pointers, such as <code>GINT_TO_POINTER (n)</code>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v:</code></em></i>
+		</p>
+	</td>
+		<td><p>a gpointer key</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a hash value corresponding to the key.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_insert">
+		
+<h3 id="glibhash_table_insert">
+	<span><code>GLib.hash_table_insert</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.hash_table_insert (hash_table, key, value):
+    #python wrapper for 'g_hash_table_insert'</pre>
+
+<p>Inserts a new key and value into a <a href="hash_tables.html#GHashTable">GLib.HashTable</a>.</p>
+<p>If the key already exists in the <a href="hash_tables.html#GHashTable">GLib.HashTable</a> its current
+value is replaced with the new value. If you supplied a
+<em>value_destroy_func</em> when creating the <a href="hash_tables.html#GHashTable">GLib.HashTable</a>, the old
+value is freed using that function. If you supplied a
+<em>key_destroy_func</em> when creating the <a href="hash_tables.html#GHashTable">GLib.HashTable</a>, the passed
+key is freed using that function.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GLib.HashTable</a></p>
+</td>
+<td>
+<a title="GLib.HashTable" href="hash_tables.html#GHashTable">GLib.HashTable</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key to insert</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>the value to associate with the key</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the key did not exist yet</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_steal">
+		
+<h3 id="glibhash_table_steal">
+	<span><code>GLib.hash_table_steal</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.hash_table_steal (hash_table, key):
+    #python wrapper for 'g_hash_table_steal'</pre>
+
+<p>Removes a key and its associated value from a <a href="hash_tables.html#GHashTable">GLib.HashTable</a> without
+calling the key and value destroy functions.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GLib.HashTable</a></p>
+</td>
+<td>
+<a title="GLib.HashTable" href="hash_tables.html#GHashTable">GLib.HashTable</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to remove</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the key was found and removed from the <a href="hash_tables.html#GHashTable">GLib.HashTable</a></p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_hash_table_remove_all">
+		
+<h3 id="glibhash_table_remove_all">
+	<span><code>GLib.hash_table_remove_all</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.hash_table_remove_all (hash_table):
+    #python wrapper for 'g_hash_table_remove_all'</pre>
+
+<p>Removes all keys and their associated values from a <a href="hash_tables.html#GHashTable">GLib.HashTable</a>.</p>
+<p>If the <a href="hash_tables.html#GHashTable">GLib.HashTable</a> was created using <a href="../c/hash_tables.html#g_hash_table_new_full">g_hash_table_new_full (not introspectable)</a>,
+the keys and values are freed using the supplied destroy functions,
+otherwise you have to make sure that any dynamically allocated
+values are freed yourself.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GLib.HashTable</a></p>
+</td>
+<td>
+<a title="GLib.HashTable" href="hash_tables.html#GHashTable">GLib.HashTable</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_hash_table_destroy">
+		
+<h3 id="glibhash_table_destroy">
+	<span><code>GLib.hash_table_destroy</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.hash_table_destroy (hash_table):
+    #python wrapper for 'g_hash_table_destroy'</pre>
+
+<p>Destroys all keys and values in the <a href="hash_tables.html#GHashTable">GLib.HashTable</a> and decrements its
+reference count by 1. If keys and/or values are dynamically allocated,
+you should either free them first or create the <a href="hash_tables.html#GHashTable">GLib.HashTable</a> with destroy
+notifiers using <a href="../c/hash_tables.html#g_hash_table_new_full">g_hash_table_new_full (not introspectable)</a>. In the latter case the destroy
+functions you supplied will be called on all keys and values during the
+destruction phase.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GLib.HashTable</a></p>
+</td>
+<td>
+<a title="GLib.HashTable" href="hash_tables.html#GHashTable">GLib.HashTable</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_direct_equal">
+		
+<h3 id="glibdirect_equal">
+	<span><code>GLib.direct_equal</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.direct_equal (v1, v2):
+    #python wrapper for 'g_direct_equal'</pre>
+
+<p>Compares two gpointer arguments and returns <a href="https://docs.python.org/2/library/constants.html#True">True</a> if they are equal.
+It can be passed to <a href="../c/hash_tables.html#g_hash_table_new">g_hash_table_new (not introspectable)</a> as the <em>key_equal_func</em>
+parameter, when using opaque pointers compared by pointer value as
+keys in a <a href="hash_tables.html#GHashTable">GLib.HashTable</a>.</p>
+<p>This equality function is also appropriate for keys that are integers
+stored in pointers, such as <code>GINT_TO_POINTER (n)</code>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v1:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v2:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key to compare with <em>v1</em></p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the two keys match.</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_hash_table_add">
+		
+<h3 id="glibhash_table_add">
+	<span><code>GLib.hash_table_add</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.hash_table_add (hash_table, key):
+    #python wrapper for 'g_hash_table_add'</pre>
+
+<p>This is a convenience function for using a <a href="hash_tables.html#GHashTable">GLib.HashTable</a> as a set.  It
+is equivalent to calling <a href="hash_tables.html#g_hash_table_replace">GLib.hash_table_replace</a> with <em>key</em> as both the
+key and the value.</p>
+<p>When a hash table only ever contains keys that have themselves as the
+corresponding value it is able to be stored more efficiently.  See
+the discussion in the section description.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hash_table:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hash_tables.html#GHashTable">GLib.HashTable</a></p>
+</td>
+<td>
+<a title="GLib.HashTable" href="hash_tables.html#GHashTable">GLib.HashTable</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key to insert</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the key did not exist yet</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHashTable">
+		<h3 id="glibhashtable">
+	GLib.HashTable
+</h3>
+
+		<p>The <a href="hash_tables.html#GHashTable">GLib.HashTable</a> struct is an opaque data structure to represent a
+[Hash Table][glib-Hash-Tables]. It should only be accessed via the
+following functions.</p>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHashTableIter">
+		<h3 id="glibhashtableiter">
+	GLib.HashTableIter
+</h3>
+
+		<p>A GHashTableIter structure represents an iterator that can be used
+to iterate over the elements of a <a href="hash_tables.html#GHashTable">GLib.HashTable</a>. GHashTableIter
+structures are typically allocated on the stack and then initialized
+with <a href="hash_tables.html#g_hash_table_iter_init">GLib.HashTableIter.init</a>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="attributes">Attributes</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GHashTableIter.dummy1">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>dummy1</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GHashTableIter.dummy2">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>dummy2</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GHashTableIter.dummy3">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>dummy3</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GHashTableIter.dummy4">
+		<td>
+		<p>
+		<i><em><code>int <em><code>dummy4</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GHashTableIter.dummy5">
+		<td>
+		<p>
+		<i><em><code>gboolean <em><code>dummy5</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						<tr id="GHashTableIter.dummy6">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>dummy6</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td></td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GEqualFunc">
+		
+<h3 id="glibequalfunc">
+	<span><code>GLib.EqualFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+(*GLib.EqualFunc) (<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>,
+                   <a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>)</pre>
+
+<p>Specifies the type of a function used to test two values for
+equality. The function should return <a href="https://docs.python.org/2/library/constants.html#True">True</a> if both values are equal
+and <a href="https://docs.python.org/2/library/constants.html#False">False</a> otherwise.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters28">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>a:</code></em></i>
+		</p>
+	</td>
+		<td><p>a value</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>b:</code></em></i>
+		</p>
+	</td>
+		<td><p>a value to compare with</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if <em>a</em> = <em>b</em>; <a href="https://docs.python.org/2/library/constants.html#False">False</a> otherwise</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHFunc">
+		
+<h3 id="glibhfunc">
+	<span><code>GLib.HFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void (not introspectable)
+(*GLib.HFunc) (<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>,
+               <a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>,
+               <a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>)</pre>
+
+<p>Specifies the type of the function passed to <a href="../c/hash_tables.html#g_hash_table_foreach">g_hash_table_foreach (not introspectable)</a>.
+It is called with each key/value pair, together with the <em>user_data</em>
+parameter which is passed to <a href="../c/hash_tables.html#g_hash_table_foreach">g_hash_table_foreach (not introspectable)</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters29">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>the value corresponding to the key</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="../c/hash_tables.html#g_hash_table_foreach">g_hash_table_foreach (not introspectable)</a></p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void (not introspectable)
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHashFunc">
+		
+<h3 id="glibhashfunc">
+	<span><code>GLib.HashFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+(*GLib.HashFunc) (<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>)</pre>
+
+<p>Specifies the type of the hash function which is passed to
+<a href="../c/hash_tables.html#g_hash_table_new">g_hash_table_new (not introspectable)</a> when a <a href="hash_tables.html#GHashTable">GLib.HashTable</a> is created.</p>
+<p>The function is passed a key and should return a guint hash value.
+The functions <a href="hash_tables.html#g_direct_hash">GLib.direct_hash</a>, <a href="hash_tables.html#g_int_hash">GLib.int_hash</a> and <a href="hash_tables.html#g_str_hash">GLib.str_hash</a> provide
+hash functions which can be used when the key is a gpointer, gint*,
+and gchar* respectively.</p>
+<p><a href="hash_tables.html#g_direct_hash">GLib.direct_hash</a> is also the appropriate hash function for keys
+of the form <code>GINT_TO_POINTER (n)</code> (or similar macros).</p>
+ <!-- FIXME: Need more here. --> A good hash functions should produce
+<p>hash values that are evenly distributed over a fairly large range.
+The modulus is taken with the hash table size (a prime number) to
+find the 'bucket' to place each key into. The function should also
+be very fast, since it is called for each key lookup.</p>
+<p>Note that the hash functions provided by GLib have these qualities,
+but are not particularly robust against manufactured keys that
+cause hash collisions. Therefore, you should consider choosing
+a more secure hash function when using a GHashTable with keys
+that originate in untrusted data (such as HTTP requests).
+Using <a href="hash_tables.html#g_str_hash">GLib.str_hash</a> in that situation might make your application
+vulerable to
+<a href="https://lwn.net/Articles/474912/">Algorithmic Complexity Attacks</a>.</p>
+<p>The key to choosing a good hash is unpredictability.  Even
+cryptographic hashes are very easy to find collisions for when the
+remainder is taken modulo a somewhat predictable prime number.  There
+must be an element of randomness that an attacker is unable to guess.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters30">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the hash value corresponding to the key</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GHRFunc">
+		
+<h3 id="glibhrfunc">
+	<span><code>GLib.HRFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+(*GLib.HRFunc) (<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>,
+                <a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>,
+                <a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>)</pre>
+
+<p>Specifies the type of the function passed to
+<a href="../c/hash_tables.html#g_hash_table_foreach_remove">g_hash_table_foreach_remove (not introspectable)</a>. It is called with each key/value
+pair, together with the <em>user_data</em> parameter passed to
+<a href="../c/hash_tables.html#g_hash_table_foreach_remove">g_hash_table_foreach_remove (not introspectable)</a>. It should return <a href="https://docs.python.org/2/library/constants.html#True">True</a> if the
+key/value pair should be removed from the <a href="hash_tables.html#GHashTable">GLib.HashTable</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters31">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>a key</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>the value associated with the key</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data passed to <a href="hash_tables.html#g_hash_table_remove">GLib.hash_table_remove</a></p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns21">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the key/value pair should be removed from the
+<a href="hash_tables.html#GHashTable">GLib.HashTable</a></p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

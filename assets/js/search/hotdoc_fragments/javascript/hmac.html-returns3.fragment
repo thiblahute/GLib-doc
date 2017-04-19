@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hmac.html#returns3", "fragment": "\nthe HMAC of the binary data as a string in hexadecimal. The returned string should be freed with GLib.prototype.free when done using it. \nSince \n"});

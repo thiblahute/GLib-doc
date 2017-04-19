@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays_pointer.html#g_ptr_array_set_free_func1", "fragment": "g_ptr_array_set_free_func \nSets a function for freeing each element when array is destroyed either via g_ptr_array_unref when g_ptr_array_free is called with free_segment set to TRUE or when removing elements. \n"});

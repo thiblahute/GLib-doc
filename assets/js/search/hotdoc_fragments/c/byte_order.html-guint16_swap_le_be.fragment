@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/byte_order.html#guint16_swap_le_be", "fragment": "GUINT16_SWAP_LE_BE \nConverts a guint16 value between little endian and big endian byte order. The conversion is symmetric so it can be used both ways. \n"});

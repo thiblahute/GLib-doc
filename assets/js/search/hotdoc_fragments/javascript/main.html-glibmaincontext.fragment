@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#glibmaincontext", "fragment": "GLib.MainContext \nThe GMainContext struct is an opaque data type representing a set of sources to be handled in a main loop. \n"});

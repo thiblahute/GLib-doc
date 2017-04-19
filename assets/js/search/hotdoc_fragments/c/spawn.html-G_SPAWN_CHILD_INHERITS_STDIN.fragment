@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/spawn.html#G_SPAWN_CHILD_INHERITS_STDIN", "fragment": "the child will inherit the parent s standard input by default the child s standard input is attached to dev null \nG_SPAWN_FILE_AND_ARGV_ZERO \n"});

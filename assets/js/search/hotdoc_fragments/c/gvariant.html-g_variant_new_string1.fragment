@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_new_string1", "fragment": "g_variant_new_string \nCreates a string GVariant with the contents of string. \nstring must be valid UTF and must not be NULL. To encode potentially NULL strings use g_variant_new with ms as the format string gvariant format strings maybe types \n"});

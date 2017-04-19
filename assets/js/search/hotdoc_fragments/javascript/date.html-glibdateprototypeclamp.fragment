@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#glibdateprototypeclamp", "fragment": "GLib.Date.prototype.clamp \nIf date is prior to min_date sets date equal to min_date. If date falls after max_date sets date equal to max_date. Otherwise date is unchanged. Either of min_date and max_date may be null. All non NULL dates must be valid. \n"});

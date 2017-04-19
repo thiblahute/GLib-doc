@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#g_trylock", "fragment": "G_TRYLOCK \nWorks like g_mutex_trylock but for a lock defined with G_LOCK_DEFINE. \n"});

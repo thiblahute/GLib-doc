@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/scanner.html#glibscannercur_line", "fragment": "GLib.Scanner.cur_line \nReturns the current line in the input stream counting from This is the line of the last token parsed via GLib.Scanner.get_next_token. \n"});

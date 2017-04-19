@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#glibiochannelseek", "fragment": "GLib.IOChannel.seek \nSets the current position in the GLib.IOChannel similar to the standard library function fseek. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#glibdateprototypeset_time_t", "fragment": "GLib.Date.prototype.set_time_t \nSets the value of a date to the date corresponding to a time specified as a time_t. The time to date conversion is done using the user s current timezone. \nTo set the value of a date to the current day you could write \n"});

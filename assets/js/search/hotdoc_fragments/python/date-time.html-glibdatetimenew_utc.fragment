@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date-time.html#glibdatetimenew_utc", "fragment": "GLib.DateTime.new_utc \nCreates a new GLib.DateTime corresponding to the given date and time in UTC. \nThis call is equivalent to calling GLib.DateTime.new with the time zone returned by GLib.TimeZone.new_utc. \n"});

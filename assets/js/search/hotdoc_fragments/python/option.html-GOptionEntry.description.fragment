@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/option.html#GOptionEntry.description", "fragment": "const gchar arg_description \nThe placeholder to use for the extra argument parsed by the option in help output. The arg_description is translated using the translate_func of the group see g_option_group_set_translation_domain. \n"});

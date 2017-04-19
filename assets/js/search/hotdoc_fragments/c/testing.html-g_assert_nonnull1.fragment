@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/testing.html#g_assert_nonnull1", "fragment": "g_assert_nonnull \nDebugging macro to check an expression is not NULL. \nIf the assertion fails i.e. the expression is NULL an error message is logged and the application is either terminated or the testcase marked as failed. \nSee g_test_set_nonfatal_assertions. \n"});

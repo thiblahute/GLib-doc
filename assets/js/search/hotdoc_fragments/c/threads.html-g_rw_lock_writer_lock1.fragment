@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#g_rw_lock_writer_lock1", "fragment": "g_rw_lock_writer_lock \nObtain a write lock on rw_lock. If any thread already holds a read or write lock on rw_lock the current thread will block until all other threads have dropped their locks on rw_lock. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/thread_pools.html#returns6", "fragment": "\nthe maximum interval milliseconds to wait for new tasks in the thread pool before stopping the thread \nSince \n"});

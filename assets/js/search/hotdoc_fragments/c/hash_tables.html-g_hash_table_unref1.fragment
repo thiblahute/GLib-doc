@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hash_tables.html#g_hash_table_unref1", "fragment": "g_hash_table_unref \nAtomically decrements the reference count of hash_table by one. If the reference count drops to all keys and values will be destroyed and all memory allocated by the hash table is released. This function is MT safe and may be called from any thread. \n"});

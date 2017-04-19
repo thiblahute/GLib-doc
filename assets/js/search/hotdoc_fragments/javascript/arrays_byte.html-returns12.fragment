@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/arrays_byte.html#returns12", "fragment": "\nthe element data if free_segment is false otherwise null. The element data should be freed using GLib.prototype.free. \n"});

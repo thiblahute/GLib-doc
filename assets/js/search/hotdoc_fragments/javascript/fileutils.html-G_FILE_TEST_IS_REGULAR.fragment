@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/fileutils.html#G_FILE_TEST_IS_REGULAR", "fragment": "true if the file is a regular file not a directory Note that this test will also return true if the tested file is a symlink to a regular file. \nGLib.FileTest.prototype.is_symlink \n"});

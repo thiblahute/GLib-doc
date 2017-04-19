@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#g_private_set1", "fragment": "g_private_set \nSets the thread local variable key to have the value value in the current thread. \nThis function differs from g_private_replace in the following way the GDestroyNotify for key is not called on the old value. \n"});

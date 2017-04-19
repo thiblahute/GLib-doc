@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date.html#g_date_get_year1", "fragment": "g_date_get_year \nReturns the year of a GDate. The date must be valid. \n"});

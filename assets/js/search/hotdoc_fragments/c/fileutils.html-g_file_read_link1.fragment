@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/fileutils.html#g_file_read_link1", "fragment": "g_file_read_link \nReads the contents of the symbolic link filename like the POSIX readlink function. The returned string is in the encoding used for filenames. Use g_filename_to_utf8 to convert it to UTF \n"});

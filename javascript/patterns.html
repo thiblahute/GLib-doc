@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GPatternSpec</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="patterns.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="javascript">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="patterns.markdown">
+        <h1 id="gpatternspec">GPatternSpec</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GPatternSpec</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GPatternSpecMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_pattern_spec_equal">
+		
+<h4 id="glibpatternspecprototypeequal">
+	<span><code>GLib.PatternSpec.prototype.equal</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.PatternSpec.prototype.equal(pspec2: <a title="GLib.PatternSpec" href="patterns.html#GPatternSpec">GLib.PatternSpec</a>): {
+    // javascript wrapper for 'g_pattern_spec_equal'
+}</pre>
+
+<p>Compares two compiled pattern specs and returns whether they will
+match the same set of strings.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pspec1:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="patterns.html#GPatternSpec">GLib.PatternSpec</a></p>
+</td>
+<td>
+<a title="GLib.PatternSpec" href="patterns.html#GPatternSpec">GLib.PatternSpec</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pspec2:</code></em></i>
+		</p>
+	</td>
+		<td><p>another <a href="patterns.html#GPatternSpec">GLib.PatternSpec</a></p>
+</td>
+<td>
+<a title="GLib.PatternSpec" href="patterns.html#GPatternSpec">GLib.PatternSpec</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>Whether the compiled patterns are equal</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_pattern_spec_free">
+		
+<h4 id="glibpatternspecprototypefree">
+	<span><code>GLib.PatternSpec.prototype.free</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.PatternSpec.prototype.free(): {
+    // javascript wrapper for 'g_pattern_spec_free'
+}</pre>
+
+<p>Frees the memory allocated for the <a href="patterns.html#GPatternSpec">GLib.PatternSpec</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pspec:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="patterns.html#GPatternSpec">GLib.PatternSpec</a></p>
+</td>
+<td>
+<a title="GLib.PatternSpec" href="patterns.html#GPatternSpec">GLib.PatternSpec</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_pattern_match">
+		
+<h3 id="glibprototypepattern_match">
+	<span><code>GLib.prototype.pattern_match</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.pattern_match(pspec: <a title="GLib.PatternSpec" href="patterns.html#GPatternSpec">GLib.PatternSpec</a>, string_length: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, string: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, string_reversed: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_pattern_match'
+}</pre>
+
+<p>Matches a string against a compiled pattern. Passing the correct
+length of the string given is mandatory. The reversed string can be
+omitted by passing <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>, this is more efficient if the reversed
+version of the string to be matched is not at hand, as
+<a href="patterns.html#g_pattern_match">GLib.prototype.pattern_match</a> will only construct it if the compiled pattern
+requires reverse matches.</p>
+<p>Note that, if the user code will (possibly) match a string against a
+multitude of patterns containing wildcards, chances are high that
+some patterns will require a reversed string. In this case, it's
+more efficient to provide the reversed string to avoid multiple
+constructions thereof in the various calls to <a href="patterns.html#g_pattern_match">GLib.prototype.pattern_match</a>.</p>
+<p>Note also that the reverse of a UTF-8 encoded string can in general
+not be obtained by <a href="string_utils.html#g_strreverse">GLib.prototype.strreverse</a>. This works only if the string
+does not contain any multibyte characters. GLib offers the
+<a href="unicode.html#g_utf8_strreverse">GLib.prototype.utf8_strreverse</a> function to reverse UTF-8 encoded strings.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pspec:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="patterns.html#GPatternSpec">GLib.PatternSpec</a></p>
+</td>
+<td>
+<a title="GLib.PatternSpec" href="patterns.html#GPatternSpec">GLib.PatternSpec</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string_length:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of <em>string</em> (in bytes, i.e. strlen,
+not <a href="unicode.html#g_utf8_strlen">GLib.prototype.utf8_strlen</a>)</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the UTF-8 encoded string to match</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string_reversed:</code></em></i>
+		</p>
+	</td>
+		<td><p>the reverse of <em>string</em> or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if <em>string</em> matches <em>pspec</em></p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_pattern_match_string">
+		
+<h3 id="glibprototypepattern_match_string">
+	<span><code>GLib.prototype.pattern_match_string</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.pattern_match_string(pspec: <a title="GLib.PatternSpec" href="patterns.html#GPatternSpec">GLib.PatternSpec</a>, string: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_pattern_match_string'
+}</pre>
+
+<p>Matches a string against a compiled pattern. If the string is to be
+matched against more than one pattern, consider using
+<a href="patterns.html#g_pattern_match">GLib.prototype.pattern_match</a> instead while supplying the reversed string.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pspec:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="patterns.html#GPatternSpec">GLib.PatternSpec</a></p>
+</td>
+<td>
+<a title="GLib.PatternSpec" href="patterns.html#GPatternSpec">GLib.PatternSpec</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the UTF-8 encoded string to match</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if <em>string</em> matches <em>pspec</em></p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_pattern_match_simple">
+		
+<h3 id="glibprototypepattern_match_simple">
+	<span><code>GLib.prototype.pattern_match_simple</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.pattern_match_simple(pattern: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, string: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_pattern_match_simple'
+}</pre>
+
+<p>Matches a string against a pattern given as a string. If this
+function is to be called in a loop, it's more efficient to compile
+the pattern once with <a href="../c/patterns.html#g_pattern_spec_new">g_pattern_spec_new (not introspectable)</a> and call
+<a href="patterns.html#g_pattern_match_string">GLib.prototype.pattern_match_string</a> repeatedly.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pattern:</code></em></i>
+		</p>
+	</td>
+		<td><p>the UTF-8 encoded pattern</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the UTF-8 encoded string to match</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if <em>string</em> matches <em>pspec</em></p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GPatternSpec">
+		<h3 id="glibpatternspec">
+	GLib.PatternSpec
+</h3>
+
+		<p>A GPatternSpec struct is the 'compiled' form of a pattern. This
+structure is opaque and its fields cannot be accessed directly.</p>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

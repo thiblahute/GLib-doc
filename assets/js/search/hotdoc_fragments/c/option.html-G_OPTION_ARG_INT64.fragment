@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/option.html#G_OPTION_ARG_INT64", "fragment": "The option takes a bit integer. Like G_OPTION_ARG_INT but for larger numbers. The number can be in decimal base or in hexadecimal when prefixed with x for example xffffffff Since \n"});

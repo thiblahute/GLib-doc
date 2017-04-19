@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#glibiochannelget_encoding", "fragment": "GLib.IOChannel.get_encoding \nGets the encoding for the input output of the channel. The internal encoding is always UTF The encoding None makes the channel safe for binary data. \n"});

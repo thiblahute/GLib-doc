@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GError</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="error_reporting.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="python">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="error_reporting.markdown">
+        <h1 id="gerror">GError</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GError</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GErrorConstructors">Constructors</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_error_new_literal">
+		
+<h4 id="gliberrornew_literal">
+	<span><code>GLib.Error.new_literal</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Error.new_literal (domain, code, message):
+    #python wrapper for 'g_error_new_literal'</pre>
+
+<p>Creates a new <a href="error_reporting.html#GError">GLib.Error</a>; unlike <a href="../c/error_reporting.html#g_error_new">g_error_new (not introspectable)</a>, <em>message</em> is
+not a printf-style format string. Use this function if
+<em>message</em> contains text you don't have control over,
+that could include printf escape sequences.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>error domain</p>
+</td>
+<td>
+<a title="GLib.Quark" href="quarks.html#GQuark">GLib.Quark</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>code:</code></em></i>
+		</p>
+	</td>
+		<td><p>error code</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>message:</code></em></i>
+		</p>
+	</td>
+		<td><p>error message</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="error_reporting.html#GError">GLib.Error</a></p>
+
+	</td>
+	<td>
+		<a title="GLib.Error" href="error_reporting.html#GError">GLib.Error</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GErrorMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_error_free">
+		
+<h4 id="gliberrorfree">
+	<span><code>GLib.Error.free</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Error.free (self):
+    #python wrapper for 'g_error_free'</pre>
+
+<p>Frees a <a href="error_reporting.html#GError">GLib.Error</a> and associated resources.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>error:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="error_reporting.html#GError">GLib.Error</a></p>
+</td>
+<td>
+<a title="GLib.Error" href="error_reporting.html#GError">GLib.Error</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_error_copy">
+		
+<h4 id="gliberrorcopy">
+	<span><code>GLib.Error.copy</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Error.copy (self):
+    #python wrapper for 'g_error_copy'</pre>
+
+<p>Makes a copy of <em>error</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>error:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="error_reporting.html#GError">GLib.Error</a></p>
+</td>
+<td>
+<a title="GLib.Error" href="error_reporting.html#GError">GLib.Error</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="error_reporting.html#GError">GLib.Error</a></p>
+
+	</td>
+	<td>
+		<a title="GLib.Error" href="error_reporting.html#GError">GLib.Error</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_error_matches">
+		
+<h4 id="gliberrormatches">
+	<span><code>GLib.Error.matches</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Error.matches (self, domain, code):
+    #python wrapper for 'g_error_matches'</pre>
+
+<p>Returns <a href="https://docs.python.org/2/library/constants.html#True">True</a> if <em>error</em> matches <em>domain</em> and <em>code</em>, <a href="https://docs.python.org/2/library/constants.html#False">False</a>
+otherwise. In particular, when <em>error</em> is <a href="https://docs.python.org/2/library/constants.html#None">None</a>, <a href="https://docs.python.org/2/library/constants.html#False">False</a> will
+be returned.</p>
+<p>If <em>domain</em> contains a <code>FAILED</code> (or otherwise generic) error code,
+you should generally not check for it explicitly, but should
+instead treat any not-explicitly-recognized error code as being
+equivalent to the <code>FAILED</code> code. This way, if the domain is
+extended in the future to provide a more specific error code for
+a certain case, your code will still work.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>error:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="error_reporting.html#GError">GLib.Error</a></p>
+</td>
+<td>
+<a title="GLib.Error" href="error_reporting.html#GError">GLib.Error</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>an error domain</p>
+</td>
+<td>
+<a title="GLib.Quark" href="quarks.html#GQuark">GLib.Quark</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>code:</code></em></i>
+		</p>
+	</td>
+		<td><p>an error code</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>whether <em>error</em> has <em>domain</em> and <em>code</em></p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_clear_error">
+		
+<h3 id="glibclear_error">
+	<span><code>GLib.clear_error</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.clear_error ():
+    #python wrapper for 'g_clear_error'</pre>
+
+<p>If <em>err</em> or *@err is <a href="https://docs.python.org/2/library/constants.html#None">None</a>, does nothing. Otherwise,
+calls <a href="error_reporting.html#g_error_free">GLib.Error.free</a> on *@err and sets *@err to <a href="https://docs.python.org/2/library/constants.html#None">None</a>.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_propagate_error">
+		
+<h3 id="glibpropagate_error">
+	<span><code>GLib.propagate_error</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.propagate_error (src):
+    #python wrapper for 'g_propagate_error'</pre>
+
+<p>If <em>dest</em> is <a href="https://docs.python.org/2/library/constants.html#None">None</a>, free <em>src</em>; otherwise, moves <em>src</em> into *@dest.
+The error variable <em>dest</em> points to must be <a href="https://docs.python.org/2/library/constants.html#None">None</a>.</p>
+<p><em>src</em> must be non-%NULL.</p>
+<p>Note that <em>src</em> is no longer valid after this call. If you want
+to keep using the same GError*, you need to set it to <a href="https://docs.python.org/2/library/constants.html#None">None</a>
+after calling this function on it.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>src:</code></em></i>
+		</p>
+	</td>
+		<td><p>error to move into the return location</p>
+</td>
+<td>
+<a title="GLib.Error" href="error_reporting.html#GError">GLib.Error</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				<i>dest:</i>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		<a title="GLib.Error" href="error_reporting.html#GError">GLib.Error</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.18;" id="g_set_error_literal">
+		
+<h3 id="glibset_error_literal">
+	<span><code>GLib.set_error_literal</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.set_error_literal (domain, code, message):
+    #python wrapper for 'g_set_error_literal'</pre>
+
+<p>Does nothing if <em>err</em> is <a href="https://docs.python.org/2/library/constants.html#None">None</a>; if <em>err</em> is non-%NULL, then *@err
+must be <a href="https://docs.python.org/2/library/constants.html#None">None</a>. A new <a href="error_reporting.html#GError">GLib.Error</a> is created and assigned to *@err.
+Unlike <a href="../c/error_reporting.html#g_set_error">g_set_error (not introspectable)</a>, <em>message</em> is not a printf-style format string.
+Use this function if <em>message</em> contains text you don't have control over,
+that could include printf escape sequences.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>error domain</p>
+</td>
+<td>
+<a title="GLib.Quark" href="quarks.html#GQuark">GLib.Quark</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>code:</code></em></i>
+		</p>
+	</td>
+		<td><p>error code</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>message:</code></em></i>
+		</p>
+	</td>
+		<td><p>error message</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				<i>err:</i>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		<a title="GLib.Error" href="error_reporting.html#GError">GLib.Error</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.18
+		</p>
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GError">
+		<h3 id="gliberror">
+	GLib.Error
+</h3>
+
+		<p>The <code>GError</code> structure contains information about
+an error that has occurred.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="attributes">Attributes</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GError.domain">
+		<td>
+		<p>
+		<i><em><code><a title="GQuark" href="quarks.html#GQuark">GQuark</a> <em><code>domain</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>error domain, e.g. <a href="fileutils.html#G_FILE_ERROR">G_FILE_ERROR</a></p>
+</td>
+</tr>
+
+						<tr id="GError.code">
+		<td>
+		<p>
+		<i><em><code>gint <em><code>code</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>error code, e.g. <a href="fileutils.html#G_FILE_ERROR_NOENT">G_FILE_ERROR_NOENT</a></p>
+</td>
+</tr>
+
+						<tr id="GError.message">
+		<td>
+		<p>
+		<i><em><code>gchar* <em><code>message</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>human-readable informative error message</p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

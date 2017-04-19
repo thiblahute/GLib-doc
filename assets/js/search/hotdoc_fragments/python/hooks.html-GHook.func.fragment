@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hooks.html#GHook.func", "fragment": "GDestroyNotify destroy \nthe default finalize_hook function of a GHookList calls this member of the hook that is being finalized \n"});

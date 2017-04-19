@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/testing.html#glibtestlogmsgprototypefree", "fragment": "GLib.TestLogMsg.prototype.free \nInternal function for gtester to free test log messages no ABI guarantees provided. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/memory_slices.html#g_slice_alloc01", "fragment": "g_slice_alloc0 \nAllocates a block of memory via g_slice_alloc and initializes the returned memory to Note that the underlying slice allocation mechanism can be changed with the G_SLICE always malloc G_SLICE environment variable. \n"});

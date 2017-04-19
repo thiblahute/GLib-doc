@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/conversions.html#returns6", "fragment": "\nIf the conversion was successful a newly allocated nul terminated string which must be freed with GLib.prototype.free. Otherwise null and error will be set. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/messages.html#parameters17", "fragment": "log_level \nlog level either from GLogLevelFlags or a user defined level \nfields \nkey value pairs of structured data forming the log message \nn_fields \nnumber of elements in the fields array \nuser_data \nuser data passed to g_log_set_writer_func \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date-time.html#glibprototypedate_time_hash", "fragment": "GLib.prototype.date_time_hash \nHashes datetime into a guint suitable for use within GLib.HashTable. \n"});

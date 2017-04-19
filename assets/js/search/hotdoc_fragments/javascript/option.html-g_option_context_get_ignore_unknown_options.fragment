@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/option.html#g_option_context_get_ignore_unknown_options", "fragment": "GLib.OptionContext.prototype.get_ignore_unknown_options \nReturns whether unknown options are ignored or not. See GLib.OptionContext.prototype.set_ignore_unknown_options. \n"});

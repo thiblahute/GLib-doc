@@ -1,0 +1,3738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GOptionGroup</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="option.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="option.markdown">
+        <h1 id="goptiongroup">GOptionGroup</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GOptionContext</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GOptionContextMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_option_context_get_summary">
+		
+<h4 id="g_option_context_get_summary1">
+	<span><code>g_option_context_get_summary</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+const gchar*
+g_option_context_get_summary (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context)</pre>
+
+<p>Returns the summary. See <a href="option.html#g_option_context_set_summary">g_option_context_set_summary</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionContext">GOptionContext</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the summary</p>
+
+	</td>
+	<td>
+		const gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_option_context_set_translate_func">
+		
+<h4 id="g_option_context_set_translate_func1">
+	<span><code>g_option_context_set_translate_func</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_option_context_set_translate_func (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context,
+                                     <a title="GTranslateFunc" href="option.html#GTranslateFunc">GTranslateFunc</a> func,
+                                     gpointer data,
+                                     <a title="GDestroyNotify" href="datasets.html#GDestroyNotify">GDestroyNotify</a> destroy_notify)</pre>
+
+<p>Sets the function which is used to translate the contexts
+user-visible strings, for <code>--help</code> output. If <em>func</em> is <a href="macros.html#NULL">NULL</a>,
+strings are not translated.</p>
+<p>Note that option groups have their own translation functions,
+this function only affects the <em>parameter_string</em> (see <a href="option.html#g_option_context_new">g_option_context_new</a>),
+the summary (see <a href="option.html#g_option_context_set_summary">g_option_context_set_summary</a>) and the description
+(see <a href="option.html#g_option_context_set_description">g_option_context_set_description</a>).</p>
+<p>If you are using gettext, you only need to set the translation
+domain, see <a href="option.html#g_option_context_set_translation_domain">g_option_context_set_translation_domain</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionContext">GOptionContext</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="option.html#GTranslateFunc">GTranslateFunc</a>, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data to pass to <em>func</em>, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>destroy_notify:</code></em></i>
+		</p>
+	</td>
+		<td><p>a function which gets called to free <em>data</em>, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_option_context_set_description">
+		
+<h4 id="g_option_context_set_description1">
+	<span><code>g_option_context_set_description</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_option_context_set_description (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context,
+                                  const gchar* description)</pre>
+
+<p>Adds a string to be displayed in <code>--help</code> output after the list
+of options. This text often includes a bug reporting address.</p>
+<p>Note that the summary is translated (see
+<a href="option.html#g_option_context_set_translate_func">g_option_context_set_translate_func</a>).</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionContext">GOptionContext</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>description:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string to be shown in <code>--help</code> output
+after the list of options, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_option_context_get_main_group">
+		
+<h4 id="g_option_context_get_main_group1">
+	<span><code>g_option_context_get_main_group</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GOptionGroup" href="option.html#GOptionGroup">GOptionGroup</a> *
+g_option_context_get_main_group (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context)</pre>
+
+<p>Returns a pointer to the main group of <em>context</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionContext">GOptionContext</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the main group of <em>context</em>, or <a href="macros.html#NULL">NULL</a> if
+<em>context</em> doesn't have a main group. Note that group belongs to
+<em>context</em> and should not be modified or freed.</p>
+
+	</td>
+	<td>
+		<a title="GOptionGroup" href="option.html#GOptionGroup">GOptionGroup</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Don't free data after the code is done"><span class="acronym">transfer: none</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_option_context_get_help_enabled">
+		
+<h4 id="g_option_context_get_help_enabled1">
+	<span><code>g_option_context_get_help_enabled</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_option_context_get_help_enabled (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context)</pre>
+
+<p>Returns whether automatic <code>--help</code> generation
+is turned on for <em>context</em>. See <a href="option.html#g_option_context_set_help_enabled">g_option_context_set_help_enabled</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionContext">GOptionContext</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if automatic help generation is turned on.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_option_context_get_description">
+		
+<h4 id="g_option_context_get_description1">
+	<span><code>g_option_context_get_description</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+const gchar*
+g_option_context_get_description (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context)</pre>
+
+<p>Returns the description. See <a href="option.html#g_option_context_set_description">g_option_context_set_description</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionContext">GOptionContext</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the description</p>
+
+	</td>
+	<td>
+		const gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.40;" id="g_option_context_parse_strv">
+		
+<h4 id="g_option_context_parse_strv1">
+	<span><code>g_option_context_parse_strv</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_option_context_parse_strv (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context,
+                             gchar** arguments)</pre>
+
+<p>Parses the command line arguments.</p>
+<p>This function is similar to <a href="option.html#g_option_context_parse">g_option_context_parse</a> except that it
+respects the normal memory rules when dealing with a strv instead of
+assuming that the passed-in array is the argv of the main function.</p>
+<p>In particular, strings that are removed from the arguments list will
+be freed using <a href="memory.html#g_free">g_free</a>.</p>
+<p>On Windows, the strings are expected to be in UTF-8.  This is in
+contrast to <a href="option.html#g_option_context_parse">g_option_context_parse</a> which expects them to be in the
+system codepage, which is how they are passed as <em>argv</em> to main.
+See g_win32_get_command_line for a solution.</p>
+<p>This function is useful if you are trying to use <a href="option.html#GOptionContext">GOptionContext</a> with
+GApplication.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionContext">GOptionContext</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>arguments:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to the
+command line arguments (which must be in UTF-8 on Windows)</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for input and for returning results"><span class="acronym">inout</span></abbr>]</span>
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> null-terminated=1]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the parsing was successful,
+<a href="macros.html#FALSE">FALSE</a> if an error occurred</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>arguments:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the parsing was successful,
+<a href="macros.html#FALSE">FALSE</a> if an error occurred</p>
+
+	</td>
+	<td>
+		gchar**
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.40
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_option_context_set_help_enabled">
+		
+<h4 id="g_option_context_set_help_enabled1">
+	<span><code>g_option_context_set_help_enabled</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_option_context_set_help_enabled (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context,
+                                   gboolean help_enabled)</pre>
+
+<p>Enables or disables automatic generation of <code>--help</code> output.
+By default, <a href="option.html#g_option_context_parse">g_option_context_parse</a> recognizes <code>--help</code>, <code>-h</code>,
+<code>-?</code>, <code>--help-all</code> and <code>--help-groupname</code> and creates suitable
+output to stdout.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionContext">GOptionContext</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>help_enabled:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#TRUE">TRUE</a> to enable <code>--help</code>, <a href="macros.html#FALSE">FALSE</a> to disable it</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_option_context_set_summary">
+		
+<h4 id="g_option_context_set_summary1">
+	<span><code>g_option_context_set_summary</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_option_context_set_summary (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context,
+                              const gchar* summary)</pre>
+
+<p>Adds a string to be displayed in <code>--help</code> output before the list
+of options. This is typically a summary of the program functionality.</p>
+<p>Note that the summary is translated (see
+<a href="option.html#g_option_context_set_translate_func">g_option_context_set_translate_func</a> and
+<a href="option.html#g_option_context_set_translation_domain">g_option_context_set_translation_domain</a>).</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionContext">GOptionContext</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>summary:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string to be shown in <code>--help</code> output
+before the list of options, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_option_context_set_translation_domain">
+		
+<h4 id="g_option_context_set_translation_domain1">
+	<span><code>g_option_context_set_translation_domain</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_option_context_set_translation_domain (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context,
+                                         const gchar* domain)</pre>
+
+<p>A convenience function to use gettext for translating
+user-visible strings.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionContext">GOptionContext</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the domain to use</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_option_context_get_ignore_unknown_options">
+		
+<h4 id="g_option_context_get_ignore_unknown_options1">
+	<span><code>g_option_context_get_ignore_unknown_options</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_option_context_get_ignore_unknown_options (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context)</pre>
+
+<p>Returns whether unknown options are ignored or not. See
+<a href="option.html#g_option_context_set_ignore_unknown_options">g_option_context_set_ignore_unknown_options</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionContext">GOptionContext</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if unknown options are ignored.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_option_context_get_help">
+		
+<h4 id="g_option_context_get_help1">
+	<span><code>g_option_context_get_help</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gchar*
+g_option_context_get_help (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context,
+                           gboolean main_help,
+                           <a title="GOptionGroup" href="option.html#GOptionGroup">GOptionGroup</a> * group)</pre>
+
+<p>Returns a formatted, translated help text for the given context.
+To obtain the text produced by <code>--help</code>, call
+<code>g_option_context_get_help (context, TRUE, NULL)</code>.
+To obtain the text produced by <code>--help-all</code>, call
+<code>g_option_context_get_help (context, FALSE, NULL)</code>.
+To obtain the help text for an option group, call
+<code>g_option_context_get_help (context, FALSE, group)</code>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionContext">GOptionContext</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>main_help:</code></em></i>
+		</p>
+	</td>
+		<td><p>if <a href="macros.html#TRUE">TRUE</a>, only include the main group</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="option.html#GOptionGroup">GOptionGroup</a> to create help for, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A newly allocated string containing the help text</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.44;" id="g_option_context_get_strict_posix">
+		
+<h4 id="g_option_context_get_strict_posix1">
+	<span><code>g_option_context_get_strict_posix</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_option_context_get_strict_posix (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context)</pre>
+
+<p>Returns whether strict POSIX code is enabled.</p>
+<p>See <a href="option.html#g_option_context_set_strict_posix">g_option_context_set_strict_posix</a> for more information.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a GoptionContext</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if strict POSIX is enabled, <a href="macros.html#FALSE">FALSE</a> otherwise.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.44
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_option_context_set_ignore_unknown_options">
+		
+<h4 id="g_option_context_set_ignore_unknown_options1">
+	<span><code>g_option_context_set_ignore_unknown_options</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_option_context_set_ignore_unknown_options (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context,
+                                             gboolean ignore_unknown)</pre>
+
+<p>Sets whether to ignore unknown options or not. If an argument is
+ignored, it is left in the <em>argv</em> array after parsing. By default,
+<a href="option.html#g_option_context_parse">g_option_context_parse</a> treats unknown options as error.</p>
+<p>This setting does not affect non-option arguments (i.e. arguments
+which don't start with a dash). But note that GOption cannot reliably
+determine whether a non-option belongs to a preceding unknown option.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionContext">GOptionContext</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>ignore_unknown:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#TRUE">TRUE</a> to ignore unknown options, <a href="macros.html#FALSE">FALSE</a> to produce
+an error when unknown options are met</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_option_context_set_main_group">
+		
+<h4 id="g_option_context_set_main_group1">
+	<span><code>g_option_context_set_main_group</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_option_context_set_main_group (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context,
+                                 <a title="GOptionGroup" href="option.html#GOptionGroup">GOptionGroup</a> * group)</pre>
+
+<p>Sets a <a href="option.html#GOptionGroup">GOptionGroup</a> as main group of the <em>context</em>.
+This has the same effect as calling <a href="option.html#g_option_context_add_group">g_option_context_add_group</a>,
+the only difference is that the options in the main group are
+treated differently when generating <code>--help</code> output.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionContext">GOptionContext</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group:</code></em></i>
+		</p>
+	</td>
+		<td><p>the group to set as main group</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_option_context_add_main_entries">
+		
+<h4 id="g_option_context_add_main_entries1">
+	<span><code>g_option_context_add_main_entries</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_option_context_add_main_entries (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context,
+                                   const <a title="GOptionEntry" href="option.html#GOptionEntry">GOptionEntry</a> * entries,
+                                   const gchar* translation_domain)</pre>
+
+<p>A convenience function which creates a main group if it doesn't
+exist, adds the <em>entries</em> to it and sets the translation domain.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionContext">GOptionContext</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>entries:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="macros.html#NULL">NULL</a>-terminated array of <a href="option.html#GOptionEntry">GOptionEntry</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>translation_domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>a translation domain to use for translating
+the <code>--help</code> output for the options in <em>entries</em>
+with gettext, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_option_context_add_group">
+		
+<h4 id="g_option_context_add_group1">
+	<span><code>g_option_context_add_group</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_option_context_add_group (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context,
+                            <a title="GOptionGroup" href="option.html#GOptionGroup">GOptionGroup</a> * group)</pre>
+
+<p>Adds a <a href="option.html#GOptionGroup">GOptionGroup</a> to the <em>context</em>, so that parsing with <em>context</em>
+will recognize the options in the group. Note that this will take
+ownership of the <em>group</em> and thus the <em>group</em> should not be freed.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionContext">GOptionContext</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group:</code></em></i>
+		</p>
+	</td>
+		<td><p>the group to add</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_option_context_free">
+		
+<h4 id="g_option_context_free1">
+	<span><code>g_option_context_free</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_option_context_free (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context)</pre>
+
+<p>Frees context and all the groups which have been
+added to it.</p>
+<p>Please note that parsed arguments need to be freed separately (see
+<a href="option.html#GOptionEntry">GOptionEntry</a>).</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionContext">GOptionContext</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.44;" id="g_option_context_set_strict_posix">
+		
+<h4 id="g_option_context_set_strict_posix1">
+	<span><code>g_option_context_set_strict_posix</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_option_context_set_strict_posix (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context,
+                                   gboolean strict_posix)</pre>
+
+<p>Sets strict POSIX mode.</p>
+<p>By default, this mode is disabled.</p>
+<p>In strict POSIX mode, the first non-argument parameter encountered
+(eg: filename) terminates argument processing.  Remaining arguments
+are treated as non-options and are not attempted to be parsed.</p>
+<p>If strict POSIX mode is disabled then parsing is done in the GNU way
+where option arguments can be freely mixed with non-options.</p>
+<p>As an example, consider "ls foo -l".  With GNU style parsing, this
+will list "foo" in long mode.  In strict POSIX style, this will list
+the files named "foo" and "-l".</p>
+<p>It may be useful to force strict POSIX mode when creating "verb
+style" command line tools.  For example, the "gsettings" command line
+tool supports the global option "--schemadir" as well as many
+subcommands ("get", "set", etc.) which each have their own set of
+arguments.  Using strict POSIX mode will allow parsing the global
+options up to the verb name while leaving the remaining options to be
+parsed by the relevant subcommand (which can be determined by
+examining the verb name, which should be present in argv[1] after
+parsing).</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a GoptionContext</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>strict_posix:</code></em></i>
+		</p>
+	</td>
+		<td><p>the new value</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.44
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_option_context_parse">
+		
+<h4 id="g_option_context_parse1">
+	<span><code>g_option_context_parse</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+gboolean
+g_option_context_parse (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context,
+                        gint* argc,
+                        gchar** argv)</pre>
+
+<p>Parses the command line arguments, recognizing options
+which have been added to <em>context</em>. A side-effect of
+calling this function is that <a href="misc_utils.html#g_set_prgname">g_set_prgname</a> will be
+called.</p>
+<p>If the parsing is successful, any parsed arguments are
+removed from the array and <em>argc</em> and <em>argv</em> are updated
+accordingly. A '--' option is stripped from <em>argv</em>
+unless there are unparsed options before and after it,
+or some of the options after it start with '-'. In case
+of an error, <em>argc</em> and <em>argv</em> are left unmodified.</p>
+<p>If automatic <code>--help</code> support is enabled
+(see <a href="option.html#g_option_context_set_help_enabled">g_option_context_set_help_enabled</a>), and the
+<em>argv</em> array contains one of the recognized help options,
+this function will produce help output to stdout and
+call <code>exit (0)</code>.</p>
+<p>Note that function depends on the [current locale][setlocale] for
+automatic character set conversion of string and filename
+arguments.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionContext">GOptionContext</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>argc:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to the number of command line arguments</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for input and for returning results"><span class="acronym">inout</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>argv:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to the array of command line arguments</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for input and for returning results"><span class="acronym">inout</span></abbr>]</span>
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> length=argc]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of1">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the parsing was successful,
+<a href="macros.html#FALSE">FALSE</a> if an error occurred</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>argc:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the parsing was successful,
+<a href="macros.html#FALSE">FALSE</a> if an error occurred</p>
+
+	</td>
+	<td>
+		gint*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>argv:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the parsing was successful,
+<a href="macros.html#FALSE">FALSE</a> if an error occurred</p>
+
+	</td>
+	<td>
+		gchar**
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GOptionContextFunctions">Functions</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_option_context_new">
+		
+<h4 id="g_option_context_new1">
+	<span><code>g_option_context_new</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> *
+g_option_context_new (const gchar* parameter_string)</pre>
+
+<p>Creates a new option context.</p>
+<p>The <em>parameter_string</em> can serve multiple purposes. It can be used
+to add descriptions for "rest" arguments, which are not parsed by
+the <a href="option.html#GOptionContext">GOptionContext</a>, typically something like "FILES" or
+"FILE1 FILE2...". If you are using <a href="option.html#G_OPTION_REMAINING">G_OPTION_REMAINING</a> for
+collecting "rest" arguments, GLib handles this automatically by
+using the <em>arg_description</em> of the corresponding <a href="option.html#GOptionEntry">GOptionEntry</a> in
+the usage summary.</p>
+<p>Another usage is to give a short summary of the program
+functionality, like " - frob the strings", which will be displayed
+in the same line as the usage. For a longer description of the
+program functionality that should be displayed as a paragraph
+below the usage line, use <a href="option.html#g_option_context_set_summary">g_option_context_set_summary</a>.</p>
+<p>Note that the <em>parameter_string</em> is translated using the
+function set with <a href="option.html#g_option_context_set_translate_func">g_option_context_set_translate_func</a>, so
+it should normally be passed untranslated.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>parameter_string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string which is displayed in
+the first line of <code>--help</code> output, after the usage summary
+<code>programname [OPTION...]</code></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly created <a href="option.html#GOptionContext">GOptionContext</a>, which must be
+freed with <a href="option.html#g_option_context_free">g_option_context_free</a> after use.</p>
+
+	</td>
+	<td>
+		<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+
+
+            <h2 class="symbol_section" id="">GOptionGroup</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GOptionGroupConstructors">Constructors</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_option_group_new">
+		
+<h4 id="g_option_group_new1">
+	<span><code>g_option_group_new</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GOptionGroup" href="option.html#GOptionGroup">GOptionGroup</a> *
+g_option_group_new (const gchar* name,
+                    const gchar* description,
+                    const gchar* help_description,
+                    gpointer user_data,
+                    <a title="GDestroyNotify" href="datasets.html#GDestroyNotify">GDestroyNotify</a> destroy)</pre>
+
+<p>Creates a new <a href="option.html#GOptionGroup">GOptionGroup</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>name:</code></em></i>
+		</p>
+	</td>
+		<td><p>the name for the option group, this is used to provide
+help for the options in this group with <code>--help-</code>@name</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>description:</code></em></i>
+		</p>
+	</td>
+		<td><p>a description for this group to be shown in
+<code>--help</code>. This string is translated using the translation
+domain or translation function of the group</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>help_description:</code></em></i>
+		</p>
+	</td>
+		<td><p>a description for the <code>--help-</code>@name option.
+This string is translated using the translation domain or translation function
+of the group</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>user_data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data that will be passed to the pre- and post-parse hooks,
+the error hook and to callbacks of <a href="option.html#G_OPTION_ARG_CALLBACK">G_OPTION_ARG_CALLBACK</a> options, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>destroy:</code></em></i>
+		</p>
+	</td>
+		<td><p>a function that will be called to free <em>user_data</em>, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly created option group. It should be added
+to a <a href="option.html#GOptionContext">GOptionContext</a> or freed with <a href="option.html#g_option_group_unref">g_option_group_unref</a>.</p>
+
+	</td>
+	<td>
+		<a title="GOptionGroup" href="option.html#GOptionGroup">GOptionGroup</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GOptionGroupMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_option_group_set_translate_func">
+		
+<h4 id="g_option_group_set_translate_func1">
+	<span><code>g_option_group_set_translate_func</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_option_group_set_translate_func (<a title="GOptionGroup" href="option.html#GOptionGroup">GOptionGroup</a> * group,
+                                   <a title="GTranslateFunc" href="option.html#GTranslateFunc">GTranslateFunc</a> func,
+                                   gpointer data,
+                                   <a title="GDestroyNotify" href="datasets.html#GDestroyNotify">GDestroyNotify</a> destroy_notify)</pre>
+
+<p>Sets the function which is used to translate user-visible strings,
+for <code>--help</code> output. Different groups can use different
+<a href="option.html#GTranslateFunc">GTranslateFunc</a>. If <em>func</em> is <a href="macros.html#NULL">NULL</a>, strings are not translated.</p>
+<p>If you are using gettext, you only need to set the translation
+domain, see <a href="option.html#g_option_group_set_translation_domain">g_option_group_set_translation_domain</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionGroup">GOptionGroup</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>func:</code></em></i>
+		</p>
+	</td>
+		<td><p>the <a href="option.html#GTranslateFunc">GTranslateFunc</a>, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data to pass to <em>func</em>, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>destroy_notify:</code></em></i>
+		</p>
+	</td>
+		<td><p>a function which gets called to free <em>data</em>, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.44;" id="g_option_group_unref">
+		
+<h4 id="g_option_group_unref1">
+	<span><code>g_option_group_unref</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_option_group_unref (<a title="GOptionGroup" href="option.html#GOptionGroup">GOptionGroup</a> * group)</pre>
+
+<p>Decrements the reference count of <em>group</em> by one.
+If the reference count drops to 0, the <em>group</em> will be freed.
+and all memory allocated by the <em>group</em> is released.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionGroup">GOptionGroup</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.44
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_option_group_add_entries">
+		
+<h4 id="g_option_group_add_entries1">
+	<span><code>g_option_group_add_entries</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_option_group_add_entries (<a title="GOptionGroup" href="option.html#GOptionGroup">GOptionGroup</a> * group,
+                            const <a title="GOptionEntry" href="option.html#GOptionEntry">GOptionEntry</a> * entries)</pre>
+
+<p>Adds the options specified in <em>entries</em> to <em>group</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionGroup">GOptionGroup</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>entries:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="macros.html#NULL">NULL</a>-terminated array of <a href="option.html#GOptionEntry">GOptionEntry</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_option_group_set_parse_hooks">
+		
+<h4 id="g_option_group_set_parse_hooks1">
+	<span><code>g_option_group_set_parse_hooks</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_option_group_set_parse_hooks (<a title="GOptionGroup" href="option.html#GOptionGroup">GOptionGroup</a> * group,
+                                <a title="GOptionParseFunc" href="option.html#GOptionParseFunc">GOptionParseFunc</a> pre_parse_func,
+                                <a title="GOptionParseFunc" href="option.html#GOptionParseFunc">GOptionParseFunc</a> post_parse_func)</pre>
+
+<p>Associates two functions with <em>group</em> which will be called
+from <a href="option.html#g_option_context_parse">g_option_context_parse</a> before the first option is parsed
+and after the last option has been parsed, respectively.</p>
+<p>Note that the user data to be passed to <em>pre_parse_func</em> and
+<em>post_parse_func</em> can be specified when constructing the group
+with <a href="option.html#g_option_group_new">g_option_group_new</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionGroup">GOptionGroup</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pre_parse_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>a function to call before parsing, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>post_parse_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>a function to call after parsing, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.44;" id="g_option_group_ref">
+		
+<h4 id="g_option_group_ref1">
+	<span><code>g_option_group_ref</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GOptionGroup" href="option.html#GOptionGroup">GOptionGroup</a> *
+g_option_group_ref (<a title="GOptionGroup" href="option.html#GOptionGroup">GOptionGroup</a> * group)</pre>
+
+<p>Increments the reference count of <em>group</em> by one.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionGroup">GOptionGroup</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a GoptionGroup</p>
+
+	</td>
+	<td>
+		<a title="GOptionGroup" href="option.html#GOptionGroup">GOptionGroup</a> *
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.44
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_option_group_set_translation_domain">
+		
+<h4 id="g_option_group_set_translation_domain1">
+	<span><code>g_option_group_set_translation_domain</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_option_group_set_translation_domain (<a title="GOptionGroup" href="option.html#GOptionGroup">GOptionGroup</a> * group,
+                                       const gchar* domain)</pre>
+
+<p>A convenience function to use gettext for translating
+user-visible strings.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionGroup">GOptionGroup</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the domain to use</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_option_group_set_error_hook">
+		
+<h4 id="g_option_group_set_error_hook1">
+	<span><code>g_option_group_set_error_hook</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_option_group_set_error_hook (<a title="GOptionGroup" href="option.html#GOptionGroup">GOptionGroup</a> * group,
+                               <a title="GOptionErrorFunc" href="option.html#GOptionErrorFunc">GOptionErrorFunc</a> error_func)</pre>
+
+<p>Associates a function with <em>group</em> which will be called
+from <a href="option.html#g_option_context_parse">g_option_context_parse</a> when an error occurs.</p>
+<p>Note that the user data to be passed to <em>error_func</em> can be
+specified when constructing the group with <a href="option.html#g_option_group_new">g_option_group_new</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters28">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionGroup">GOptionGroup</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>error_func:</code></em></i>
+		</p>
+	</td>
+		<td><p>a function to call when an error occurs</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;deprecated:2.44;" id="g_option_group_free">
+		
+<h4 id="g_option_group_free1">
+	<span><code>g_option_group_free</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+void
+g_option_group_free (<a title="GOptionGroup" href="option.html#GOptionGroup">GOptionGroup</a> * group)</pre>
+
+<p>Frees a <a href="option.html#GOptionGroup">GOptionGroup</a>. Note that you must not free groups
+which have been added to a <a href="option.html#GOptionContext">GOptionContext</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters29">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="option.html#GOptionGroup">GOptionGroup</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+	<p>
+	deprecated			: 2.44: Use g_option_group_unref() instead.
+		</p>
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_option_error_quark">
+		
+<h3 id="g_option_error_quark1">
+	<span><code>g_option_error_quark</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+<a title="GQuark" href="quarks.html#GQuark">GQuark</a>
+g_option_error_quark ()</pre>
+
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		<a title="GQuark" href="quarks.html#GQuark">GQuark</a>
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GOptionGroup">
+		
+<h3 id="struct-goptiongroup">
+		struct GOptionGroup
+	</h3>
+
+		<pre class="raw_code">
+struct GOptionGroup {
+};
+</pre>
+
+<p>A <code>GOptionGroup</code> struct defines the options in a single
+group. The struct has only private fields and should not be directly accessed.</p>
+<p>All options in a group share the same translation function. Libraries which
+need to parse commandline options are expected to provide a function for
+getting a <code>GOptionGroup</code> holding their options, which
+the application can then add to its <a href="option.html#GOptionContext">GOptionContext</a>.</p>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GOptionContext">
+		
+<h3 id="struct-goptioncontext">
+		struct GOptionContext
+	</h3>
+
+		<pre class="raw_code">
+struct GOptionContext {
+};
+</pre>
+
+<p>A <code>GOptionContext</code> struct defines which options
+are accepted by the commandline option parser. The struct has only private
+fields and should not be directly accessed.</p>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GOptionEntry">
+		
+<h3 id="struct-goptionentry">
+		struct GOptionEntry
+	</h3>
+
+		<pre class="raw_code">
+struct GOptionEntry {
+    const gchar* long_name;
+    gchar short_name;
+    gint flags;
+    GOptionArg arg;
+    gpointer arg_data;
+    const gchar* description;
+    const gchar* arg_description;
+};
+</pre>
+
+<p>A GOptionEntry struct defines a single option. To have an effect, they
+must be added to a <a href="option.html#GOptionGroup">GOptionGroup</a> with <a href="option.html#g_option_context_add_main_entries">g_option_context_add_main_entries</a>
+or <a href="option.html#g_option_group_add_entries">g_option_group_add_entries</a>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="fields">Fields</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GOptionEntry.long_name">
+		<td>
+		<p>
+		<i><em><code>const gchar* <em><code>long_name</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>The long name of an option can be used to specify it
+in a commandline as <code>--long_name</code>. Every option must have a
+long name. To resolve conflicts if multiple option groups contain
+the same long name, it is also possible to specify the option as
+<code>--groupname-long_name</code>.</p>
+</td>
+</tr>
+
+						<tr id="GOptionEntry.short_name">
+		<td>
+		<p>
+		<i><em><code>gchar <em><code>short_name</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>If an option has a short name, it can be specified
+<code>-short_name</code> in a commandline. <em>short_name</em> must be  a printable
+ASCII character different from '-', or zero if the option has no
+short name.</p>
+</td>
+</tr>
+
+						<tr id="GOptionEntry.flags">
+		<td>
+		<p>
+		<i><em><code>gint <em><code>flags</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>Flags from <a href="option.html#GOptionFlags">GOptionFlags</a></p>
+</td>
+</tr>
+
+						<tr id="GOptionEntry.arg">
+		<td>
+		<p>
+		<i><em><code><a title="GOptionArg" href="option.html#GOptionArg">GOptionArg</a> <em><code>arg</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>The type of the option, as a <a href="option.html#GOptionArg">GOptionArg</a></p>
+</td>
+</tr>
+
+						<tr id="GOptionEntry.arg_data">
+		<td>
+		<p>
+		<i><em><code>gpointer <em><code>arg_data</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>If the <em>arg</em> type is <a href="option.html#G_OPTION_ARG_CALLBACK">G_OPTION_ARG_CALLBACK</a>, then <em>arg_data</em>
+must point to a <a href="option.html#GOptionArgFunc">GOptionArgFunc</a> callback function, which will be
+called to handle the extra argument. Otherwise, <em>arg_data</em> is a
+pointer to a location to store the value, the required type of
+the location depends on the <em>arg</em> type:
+- <a href="option.html#G_OPTION_ARG_NONE">G_OPTION_ARG_NONE</a>: gboolean
+- <a href="option.html#G_OPTION_ARG_STRING">G_OPTION_ARG_STRING</a>: gchar*
+- <a href="option.html#G_OPTION_ARG_INT">G_OPTION_ARG_INT</a>: gint
+- <a href="option.html#G_OPTION_ARG_FILENAME">G_OPTION_ARG_FILENAME</a>: gchar*
+- <a href="option.html#G_OPTION_ARG_STRING_ARRAY">G_OPTION_ARG_STRING_ARRAY</a>: gchar**
+- <a href="option.html#G_OPTION_ARG_FILENAME_ARRAY">G_OPTION_ARG_FILENAME_ARRAY</a>: gchar**
+- <a href="option.html#G_OPTION_ARG_DOUBLE">G_OPTION_ARG_DOUBLE</a>: gdouble
+If <em>arg</em> type is <a href="option.html#G_OPTION_ARG_STRING">G_OPTION_ARG_STRING</a> or <a href="option.html#G_OPTION_ARG_FILENAME">G_OPTION_ARG_FILENAME</a>,
+the location will contain a newly allocated string if the option
+was given. That string needs to be freed by the callee using <a href="memory.html#g_free">g_free</a>.
+Likewise if <em>arg</em> type is <a href="option.html#G_OPTION_ARG_STRING_ARRAY">G_OPTION_ARG_STRING_ARRAY</a> or
+<a href="option.html#G_OPTION_ARG_FILENAME_ARRAY">G_OPTION_ARG_FILENAME_ARRAY</a>, the data should be freed using <a href="string_utils.html#g_strfreev">g_strfreev</a>.</p>
+</td>
+</tr>
+
+						<tr id="GOptionEntry.description">
+		<td>
+		<p>
+		<i><em><code>const gchar* <em><code>description</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the description for the option in <code>--help</code>
+output. The <em>description</em> is translated using the <em>translate_func</em>
+of the group, see <a href="option.html#g_option_group_set_translation_domain">g_option_group_set_translation_domain</a>.</p>
+</td>
+</tr>
+
+						<tr id="GOptionEntry.arg_description">
+		<td>
+		<p>
+		<i><em><code>const gchar* <em><code>arg_description</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>The placeholder to use for the extra argument parsed
+by the option in <code>--help</code> output. The <em>arg_description</em> is translated
+using the <em>translate_func</em> of the group, see
+<a href="option.html#g_option_group_set_translation_domain">g_option_group_set_translation_domain</a>.</p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GOptionArg">
+		
+<h3 id="enum-goptionarg">
+		enum GOptionArg
+	</h3>
+
+		<p>The <a href="option.html#GOptionArg">GOptionArg</a> enum values determine which type of extra argument the
+options expect to find. If an option expects an extra argument, it can
+be specified in several ways; with a short option: <code>-x arg</code>, with a long
+option: <code>--name arg</code> or combined in a single argument: <code>--name=arg</code>.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_OPTION_ARG_NONE"></a>
+		G_OPTION_ARG_NONE
+		</p>
+	</td>
+	<td><p>No extra argument. This is useful for simple flags.</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_OPTION_ARG_STRING"></a>
+		G_OPTION_ARG_STRING
+		</p>
+	</td>
+	<td><p>The option takes a string argument.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_OPTION_ARG_INT"></a>
+		G_OPTION_ARG_INT
+		</p>
+	</td>
+	<td><p>The option takes an integer argument.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_OPTION_ARG_CALLBACK"></a>
+		G_OPTION_ARG_CALLBACK
+		</p>
+	</td>
+	<td><p>The option provides a callback (of type
+<a href="option.html#GOptionArgFunc">GOptionArgFunc</a>) to parse the extra argument.</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_OPTION_ARG_FILENAME"></a>
+		G_OPTION_ARG_FILENAME
+		</p>
+	</td>
+	<td><p>The option takes a filename as argument.</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_OPTION_ARG_STRING_ARRAY"></a>
+		G_OPTION_ARG_STRING_ARRAY
+		</p>
+	</td>
+	<td><p>The option takes a string argument, multiple
+uses of the option are collected into an array of strings.</p>
+</td>
+	<td>
+		<span class="value">Value: 5</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_OPTION_ARG_FILENAME_ARRAY"></a>
+		G_OPTION_ARG_FILENAME_ARRAY
+		</p>
+	</td>
+	<td><p>The option takes a filename as argument,
+multiple uses of the option are collected into an array of strings.</p>
+</td>
+	<td>
+		<span class="value">Value: 6</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_OPTION_ARG_DOUBLE"></a>
+		G_OPTION_ARG_DOUBLE
+		</p>
+	</td>
+	<td><p>The option takes a double argument. The argument
+can be formatted either for the user's locale or for the "C" locale.
+Since 2.12</p>
+</td>
+	<td>
+		<span class="value">Value: 7</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_OPTION_ARG_INT64"></a>
+		G_OPTION_ARG_INT64
+		</p>
+	</td>
+	<td><p>The option takes a 64-bit integer. Like
+<a href="option.html#G_OPTION_ARG_INT">G_OPTION_ARG_INT</a> but for larger numbers. The number can be in
+decimal base, or in hexadecimal (when prefixed with <code>0x</code>, for
+example, <code>0xffffffff</code>). Since 2.12</p>
+</td>
+	<td>
+		<span class="value">Value: 8</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GOptionFlags">
+		
+<h3 id="enum-goptionflags">
+		enum GOptionFlags
+	</h3>
+
+		<p>Flags which modify individual options.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members1">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_OPTION_FLAG_NONE"></a>
+		G_OPTION_FLAG_NONE
+		</p>
+	</td>
+	<td><p>No flags. Since: 2.42.</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_OPTION_FLAG_HIDDEN"></a>
+		G_OPTION_FLAG_HIDDEN
+		</p>
+	</td>
+	<td><p>The option doesn't appear in <code>--help</code> output.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_OPTION_FLAG_IN_MAIN"></a>
+		G_OPTION_FLAG_IN_MAIN
+		</p>
+	</td>
+	<td><p>The option appears in the main section of the
+<code>--help</code> output, even if it is defined in a group.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_OPTION_FLAG_REVERSE"></a>
+		G_OPTION_FLAG_REVERSE
+		</p>
+	</td>
+	<td><p>For options of the <a href="option.html#G_OPTION_ARG_NONE">G_OPTION_ARG_NONE</a> kind, this
+flag indicates that the sense of the option is reversed.</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_OPTION_FLAG_NO_ARG"></a>
+		G_OPTION_FLAG_NO_ARG
+		</p>
+	</td>
+	<td><p>For options of the <a href="option.html#G_OPTION_ARG_CALLBACK">G_OPTION_ARG_CALLBACK</a> kind,
+this flag indicates that the callback does not take any argument
+(like a <a href="option.html#G_OPTION_ARG_NONE">G_OPTION_ARG_NONE</a> option). Since 2.8</p>
+</td>
+	<td>
+		<span class="value">Value: 8</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_OPTION_FLAG_FILENAME"></a>
+		G_OPTION_FLAG_FILENAME
+		</p>
+	</td>
+	<td><p>For options of the <a href="option.html#G_OPTION_ARG_CALLBACK">G_OPTION_ARG_CALLBACK</a>
+kind, this flag indicates that the argument should be passed to the
+callback in the GLib filename encoding rather than UTF-8. Since 2.8</p>
+</td>
+	<td>
+		<span class="value">Value: 16</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_OPTION_FLAG_OPTIONAL_ARG"></a>
+		G_OPTION_FLAG_OPTIONAL_ARG
+		</p>
+	</td>
+	<td><p>For options of the <a href="option.html#G_OPTION_ARG_CALLBACK">G_OPTION_ARG_CALLBACK</a>
+kind, this flag indicates that the argument supply is optional.
+If no argument is given then data of <a href="option.html#GOptionParseFunc">GOptionParseFunc</a> will be
+set to NULL. Since 2.8</p>
+</td>
+	<td>
+		<span class="value">Value: 32</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_OPTION_FLAG_NOALIAS"></a>
+		G_OPTION_FLAG_NOALIAS
+		</p>
+	</td>
+	<td><p>This flag turns off the automatic conflict
+resolution which prefixes long option names with <code>groupname-</code> if
+there is a conflict. This option should only be used in situations
+where aliasing is necessary to model some legacy commandline interface.
+It is not safe to use this option, unless all option groups are under
+your direct control. Since 2.8.</p>
+</td>
+	<td>
+		<span class="value">Value: 64</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GOptionError">
+		
+<h3 id="enum-goptionerror">
+		enum GOptionError
+	</h3>
+
+		<p>Error codes returned by option parsing.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members2">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_OPTION_ERROR_UNKNOWN_OPTION"></a>
+		G_OPTION_ERROR_UNKNOWN_OPTION
+		</p>
+	</td>
+	<td><p>An option was not known to the parser.
+This error will only be reported, if the parser hasn't been instructed
+to ignore unknown options, see <a href="option.html#g_option_context_set_ignore_unknown_options">g_option_context_set_ignore_unknown_options</a>.</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_OPTION_ERROR_BAD_VALUE"></a>
+		G_OPTION_ERROR_BAD_VALUE
+		</p>
+	</td>
+	<td><p>A value couldn't be parsed.</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_OPTION_ERROR_FAILED"></a>
+		G_OPTION_ERROR_FAILED
+		</p>
+	</td>
+	<td><p>A <a href="option.html#GOptionArgFunc">GOptionArgFunc</a> callback failed.</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="G_OPTION_REMAINING">
+		
+<h3 class="constant" id="g_option_remaining">
+	G_OPTION_REMAINING
+</h3>
+
+		<pre class="raw_code">
+#define G_OPTION_REMAINING ""
+</pre>
+
+<p>If a long option in the main group has this name, it is not treated as a
+regular option. Instead it collects all non-option arguments which would
+otherwise be left in <code>argv</code>. The option must be of type
+<a href="option.html#G_OPTION_ARG_CALLBACK">G_OPTION_ARG_CALLBACK</a>, <a href="option.html#G_OPTION_ARG_STRING_ARRAY">G_OPTION_ARG_STRING_ARRAY</a>
+or <a href="option.html#G_OPTION_ARG_FILENAME_ARRAY">G_OPTION_ARG_FILENAME_ARRAY</a>.</p>
+<p>Using <a href="option.html#G_OPTION_REMAINING">G_OPTION_REMAINING</a> instead of simply scanning <code>argv</code>
+for leftover arguments has the advantage that GOption takes care of
+necessary encoding conversions for strings or filenames.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_OPTION_ERROR">
+		
+<h3 class="constant" id="g_option_error">
+	G_OPTION_ERROR
+</h3>
+
+		<pre class="raw_code">
+#define G_OPTION_ERROR (g_option_error_quark ())
+</pre>
+
+<p>Error domain for option parsing. Errors in this domain will
+be from the <a href="option.html#GOptionError">GOptionError</a> enumeration. See <a href="error_reporting.html#GError">GError</a> for information on
+error domains.</p>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Callbacks">Callbacks</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GOptionParseFunc">
+		
+<h3 id="goptionparsefunc">
+	<span><code>GOptionParseFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+(*GOptionParseFunc) (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context,
+                     <a title="GOptionGroup" href="option.html#GOptionGroup">GOptionGroup</a> * group,
+                     gpointer data)</pre>
+
+<p>The type of function that can be called before and after parsing.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters30">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>The active <a href="option.html#GOptionContext">GOptionContext</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group:</code></em></i>
+		</p>
+	</td>
+		<td><p>The group to which the function belongs</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>User data added to the <a href="option.html#GOptionGroup">GOptionGroup</a> containing the option when it
+was created with <a href="option.html#g_option_group_new">g_option_group_new</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the function completed successfully, <a href="macros.html#FALSE">FALSE</a> if an error
+occurred, in which case <em>error</em> should be set with <a href="error_reporting.html#g_set_error">g_set_error</a></p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GOptionErrorFunc">
+		
+<h3 id="goptionerrorfunc">
+	<span><code>GOptionErrorFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+(*GOptionErrorFunc) (<a title="GOptionContext" href="option.html#GOptionContext">GOptionContext</a> * context,
+                     <a title="GOptionGroup" href="option.html#GOptionGroup">GOptionGroup</a> * group,
+                     gpointer data)</pre>
+
+<p>The type of function to be used as callback when a parse error occurs.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters31">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>The active <a href="option.html#GOptionContext">GOptionContext</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>group:</code></em></i>
+		</p>
+	</td>
+		<td><p>The group to which the function belongs</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>User data added to the <a href="option.html#GOptionGroup">GOptionGroup</a> containing the option when it
+was created with <a href="option.html#g_option_group_new">g_option_group_new</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		
+	</td>
+	<td>
+		void
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GTranslateFunc">
+		
+<h3 id="gtranslatefunc">
+	<span><code>GTranslateFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+const gchar*
+(*GTranslateFunc) (const gchar* str,
+                   gpointer data)</pre>
+
+<p>The type of functions which are used to translate user-visible
+strings, for <option>--help</option> output.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters32">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>the untranslated string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>user data specified when installing the function, e.g.
+in <a href="option.html#g_option_group_set_translate_func">g_option_group_set_translate_func</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a translation of the string for the current locale.
+The returned string is owned by GLib and must not be freed.</p>
+
+	</td>
+	<td>
+		const gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GOptionArgFunc">
+		
+<h3 id="goptionargfunc">
+	<span><code>GOptionArgFunc</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+(*GOptionArgFunc) (const gchar* option_name,
+                   const gchar* value,
+                   gpointer data)</pre>
+
+<p>The type of function to be passed as callback for <a href="option.html#G_OPTION_ARG_CALLBACK">G_OPTION_ARG_CALLBACK</a>
+options.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters33">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>option_name:</code></em></i>
+		</p>
+	</td>
+		<td><p>The name of the option being parsed. This will be either a
+single dash followed by a single letter (for a short name) or two dashes
+followed by a long option name.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>value:</code></em></i>
+		</p>
+	</td>
+		<td><p>The value to be parsed.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>User data added to the <a href="option.html#GOptionGroup">GOptionGroup</a> containing the option when it
+was created with <a href="option.html#g_option_group_new">g_option_group_new</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if the option was successfully parsed, <a href="macros.html#FALSE">FALSE</a> if an error
+occurred, in which case <em>error</em> should be set with <a href="error_reporting.html#g_set_error">g_set_error</a></p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

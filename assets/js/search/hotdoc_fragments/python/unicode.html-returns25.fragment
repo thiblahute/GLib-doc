@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#returns25", "fragment": "\nNone if the string does not contain the character otherwise a pointer to the start of the rightmost occurrence of the character in the string. \n"});

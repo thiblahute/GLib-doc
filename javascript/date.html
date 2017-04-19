@@ -1,0 +1,4616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GDateDay</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="date.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="javascript">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="date.markdown">
+        <h1 id="gdateday">GDateDay</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GDate</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GDateConstructors">Constructors</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_new_dmy">
+		
+<h4 id="glibdateprototypenew_dmy">
+	<span><code>GLib.Date.prototype.new_dmy</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.new_dmy(day: <a title="GLib.DateDay" href="date.html#GDateDay">GLib.DateDay</a>, month: <a title="GLib.DateMonth" href="date.html#GDateMonth">GLib.DateMonth</a>, year: <a title="GLib.DateYear" href="date.html#GDateYear">GLib.DateYear</a>): {
+    // javascript wrapper for 'g_date_new_dmy'
+}</pre>
+
+<p>Like <a href="date.html#g_date_new">GLib.Date.prototype.new</a>, but also sets the value of the date. Assuming the
+day-month-year triplet you pass in represents an existing day, the
+returned date will be valid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>day:</code></em></i>
+		</p>
+	</td>
+		<td><p>day of the month</p>
+</td>
+<td>
+<a title="GLib.DateDay" href="date.html#GDateDay">GLib.DateDay</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>month:</code></em></i>
+		</p>
+	</td>
+		<td><p>month of the year</p>
+</td>
+<td>
+<a title="GLib.DateMonth" href="date.html#GDateMonth">GLib.DateMonth</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>year:</code></em></i>
+		</p>
+	</td>
+		<td><p>year</p>
+</td>
+<td>
+<a title="GLib.DateYear" href="date.html#GDateYear">GLib.DateYear</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated <a href="date.html#GDate">GLib.Date</a> initialized with <em>day</em>, <em>month</em>, and <em>year</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_new_julian">
+		
+<h4 id="glibdateprototypenew_julian">
+	<span><code>GLib.Date.prototype.new_julian</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.new_julian(julian_day: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_date_new_julian'
+}</pre>
+
+<p>Like <a href="date.html#g_date_new">GLib.Date.prototype.new</a>, but also sets the value of the date. Assuming the
+Julian day number you pass in is valid (greater than 0, less than an
+unreasonably large number), the returned date will be valid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>julian_day:</code></em></i>
+		</p>
+	</td>
+		<td><p>days since January 1, Year 1</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated <a href="date.html#GDate">GLib.Date</a> initialized with <em>julian_day</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_new">
+		
+<h4 id="glibdateprototypenew">
+	<span><code>GLib.Date.prototype.new</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.new(): {
+    // javascript wrapper for 'g_date_new'
+}</pre>
+
+<p>Allocates a <a href="date.html#GDate">GLib.Date</a> and initializes
+it to a sane state. The new date will
+be cleared (as if you'd called <a href="date.html#g_date_clear">GLib.Date.prototype.clear</a>) but invalid (it won't
+represent an existing day). Free the return value with <a href="date.html#g_date_free">GLib.Date.prototype.free</a>.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated <a href="date.html#GDate">GLib.Date</a></p>
+
+	</td>
+	<td>
+		<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GDateMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_free">
+		
+<h4 id="glibdateprototypefree">
+	<span><code>GLib.Date.prototype.free</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.free(): {
+    // javascript wrapper for 'g_date_free'
+}</pre>
+
+<p>Frees a <a href="date.html#GDate">GLib.Date</a> returned from <a href="date.html#g_date_new">GLib.Date.prototype.new</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a> to free</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_set_julian">
+		
+<h4 id="glibdateprototypeset_julian">
+	<span><code>GLib.Date.prototype.set_julian</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.set_julian(julian_date: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_date_set_julian'
+}</pre>
+
+<p>Sets the value of a <a href="date.html#GDate">GLib.Date</a> from a Julian day number.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a></p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>julian_date:</code></em></i>
+		</p>
+	</td>
+		<td><p>Julian day number (days since January 1, Year 1)</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_clear">
+		
+<h4 id="glibdateprototypeclear">
+	<span><code>GLib.Date.prototype.clear</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.clear(n_dates: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_date_clear'
+}</pre>
+
+<p>Initializes one or more <a href="date.html#GDate">GLib.Date</a> structs to a sane but invalid
+state. The cleared dates will not represent an existing date, but will
+not contain garbage. Useful to init a date declared on the stack.
+Validity can be tested with <a href="date.html#g_date_valid">GLib.Date.prototype.valid</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>pointer to one or more dates to clear</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n_dates:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of dates to clear</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_add_months">
+		
+<h4 id="glibdateprototypeadd_months">
+	<span><code>GLib.Date.prototype.add_months</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.add_months(n_months: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_date_add_months'
+}</pre>
+
+<p>Increments a date by some number of months.
+If the day of the month is greater than 28,
+this routine may change the day of the month
+(because the destination month may not have
+the current day in it). The date must be valid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a> to increment</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n_months:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of months to move forward</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_get_day_of_year">
+		
+<h4 id="glibdateprototypeget_day_of_year">
+	<span><code>GLib.Date.prototype.get_day_of_year</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.get_day_of_year(): {
+    // javascript wrapper for 'g_date_get_day_of_year'
+}</pre>
+
+<p>Returns the day of the year, where Jan 1 is the first day of the
+year. The date must be valid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a> to extract day of year from</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>day of the year</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.10;" id="g_date_set_time_val">
+		
+<h4 id="glibdateprototypeset_time_val">
+	<span><code>GLib.Date.prototype.set_time_val</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.set_time_val(timeval: <a title="GLib.TimeVal" href="date.html#GTimeVal">GLib.TimeVal</a>): {
+    // javascript wrapper for 'g_date_set_time_val'
+}</pre>
+
+<p>Sets the value of a date from a <a href="date.html#GTimeVal">GLib.TimeVal</a> value.  Note that the
+<em>tv_usec</em> member is ignored, because <a href="date.html#GDate">GLib.Date</a> can't make use of the
+additional precision.</p>
+<p>The time to date conversion is done using the user's current timezone.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a></p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>timeval:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="date.html#GTimeVal">GLib.TimeVal</a> value to set</p>
+</td>
+<td>
+<a title="GLib.TimeVal" href="date.html#GTimeVal">GLib.TimeVal</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.10
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.10;" id="g_date_set_time">
+		
+<h4 id="glibdateprototypeset_time">
+	<span><code>GLib.Date.prototype.set_time</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.set_time(time_: <a title="GLib.Time" href="date.html#GTime">GLib.Time</a>): {
+    // javascript wrapper for 'g_date_set_time'
+}</pre>
+
+<p>Sets the value of a date from a <a href="date.html#GTime">GLib.Time</a> value.
+The time to date conversion is done using the user's current timezone.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a>.</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>time_:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="date.html#GTime">GLib.Time</a> value to set.</p>
+</td>
+<td>
+<a title="GLib.Time" href="date.html#GTime">GLib.Time</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	deprecated			: 2.10: Use g_date_set_time_t() instead.
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_is_first_of_month">
+		
+<h4 id="glibdateprototypeis_first_of_month">
+	<span><code>GLib.Date.prototype.is_first_of_month</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.is_first_of_month(): {
+    // javascript wrapper for 'g_date_is_first_of_month'
+}</pre>
+
+<p>Returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the date is on the first of a month.
+The date must be valid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a> to check</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the date is the first of the month</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_set_day">
+		
+<h4 id="glibdateprototypeset_day">
+	<span><code>GLib.Date.prototype.set_day</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.set_day(day: <a title="GLib.DateDay" href="date.html#GDateDay">GLib.DateDay</a>): {
+    // javascript wrapper for 'g_date_set_day'
+}</pre>
+
+<p>Sets the day of the month for a <a href="date.html#GDate">GLib.Date</a>. If the resulting
+day-month-year triplet is invalid, the date will be invalid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a></p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>day:</code></em></i>
+		</p>
+	</td>
+		<td><p>day to set</p>
+</td>
+<td>
+<a title="GLib.DateDay" href="date.html#GDateDay">GLib.DateDay</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_set_parse">
+		
+<h4 id="glibdateprototypeset_parse">
+	<span><code>GLib.Date.prototype.set_parse</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.set_parse(str: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_date_set_parse'
+}</pre>
+
+<p>Parses a user-inputted string <em>str</em>, and try to figure out what date it
+represents, taking the [current locale][setlocale] into account. If the
+string is successfully parsed, the date will be valid after the call.
+Otherwise, it will be invalid. You should check using <a href="date.html#g_date_valid">GLib.Date.prototype.valid</a>
+to see whether the parsing succeeded.</p>
+<p>This function is not appropriate for file formats and the like; it
+isn't very precise, and its exact behavior varies with the locale.
+It's intended to be a heuristic routine that guesses what the user
+means by a given string (and it does work pretty well in that
+capacity).</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a> to fill in</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>string to parse</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_subtract_days">
+		
+<h4 id="glibdateprototypesubtract_days">
+	<span><code>GLib.Date.prototype.subtract_days</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.subtract_days(n_days: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_date_subtract_days'
+}</pre>
+
+<p>Moves a date some number of days into the past.
+To move by weeks, just move by weeks*7 days.
+The date must be valid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a> to decrement</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n_days:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of days to move</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_add_years">
+		
+<h4 id="glibdateprototypeadd_years">
+	<span><code>GLib.Date.prototype.add_years</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.add_years(n_years: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_date_add_years'
+}</pre>
+
+<p>Increments a date by some number of years.
+If the date is February 29, and the destination
+year is not a leap year, the date will be changed
+to February 28. The date must be valid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a> to increment</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n_years:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of years to move forward</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_is_last_of_month">
+		
+<h4 id="glibdateprototypeis_last_of_month">
+	<span><code>GLib.Date.prototype.is_last_of_month</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.is_last_of_month(): {
+    // javascript wrapper for 'g_date_is_last_of_month'
+}</pre>
+
+<p>Returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the date is the last day of the month.
+The date must be valid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a> to check</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the date is the last day of the month</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_to_struct_tm">
+		
+<h4 id="glibdateprototypeto_struct_tm">
+	<span><code>GLib.Date.prototype.to_struct_tm</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.to_struct_tm(tm: <a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): {
+    // javascript wrapper for 'g_date_to_struct_tm'
+}</pre>
+
+<p>Fills in the date-related bits of a struct tm using the <em>date</em> value.
+Initializes the non-date parts with something sane but meaningless.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a> to set the struct tm from</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>tm:</code></em></i>
+		</p>
+	</td>
+		<td><p>struct tm to fill</p>
+</td>
+<td>
+<a title="Object" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_get_sunday_week_of_year">
+		
+<h4 id="glibdateprototypeget_sunday_week_of_year">
+	<span><code>GLib.Date.prototype.get_sunday_week_of_year</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.get_sunday_week_of_year(): {
+    // javascript wrapper for 'g_date_get_sunday_week_of_year'
+}</pre>
+
+<p>Returns the week of the year during which this date falls, if
+weeks are understood to begin on Sunday. The date must be valid.
+Can return 0 if the day is before the first Sunday of the year.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a></p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>week number</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_subtract_years">
+		
+<h4 id="glibdateprototypesubtract_years">
+	<span><code>GLib.Date.prototype.subtract_years</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.subtract_years(n_years: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_date_subtract_years'
+}</pre>
+
+<p>Moves a date some number of years into the past.
+If the current day doesn't exist in the destination
+year (i.e. it's February 29 and you move to a non-leap-year)
+then the day is changed to February 29. The date
+must be valid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a> to decrement</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n_years:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of years to move</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_get_weekday">
+		
+<h4 id="glibdateprototypeget_weekday">
+	<span><code>GLib.Date.prototype.get_weekday</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.get_weekday(): {
+    // javascript wrapper for 'g_date_get_weekday'
+}</pre>
+
+<p>Returns the day of the week for a <a href="date.html#GDate">GLib.Date</a>. The date must be valid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a></p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>day of the week as a <a href="date.html#GDateWeekday">GLib.DateWeekday</a>.</p>
+
+	</td>
+	<td>
+		<a title="GLib.DateWeekday" href="date.html#GDateWeekday">GLib.DateWeekday</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_get_julian">
+		
+<h4 id="glibdateprototypeget_julian">
+	<span><code>GLib.Date.prototype.get_julian</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.get_julian(): {
+    // javascript wrapper for 'g_date_get_julian'
+}</pre>
+
+<p>Returns the Julian day or "serial number" of the <a href="date.html#GDate">GLib.Date</a>. The
+Julian day is simply the number of days since January 1, Year 1; i.e.,
+January 1, Year 1 is Julian day 1; January 2, Year 1 is Julian day 2,
+etc. The date must be valid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a> to extract the Julian day from</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>Julian day</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_valid">
+		
+<h4 id="glibdateprototypevalid">
+	<span><code>GLib.Date.prototype.valid</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.valid(): {
+    // javascript wrapper for 'g_date_valid'
+}</pre>
+
+<p>Returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the <a href="date.html#GDate">GLib.Date</a> represents an existing day. The date must not
+contain garbage; it should have been initialized with <a href="date.html#g_date_clear">GLib.Date.prototype.clear</a>
+if it wasn't allocated by one of the <a href="date.html#g_date_new">GLib.Date.prototype.new</a> variants.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a> to check</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>Whether the date is valid</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_set_month">
+		
+<h4 id="glibdateprototypeset_month">
+	<span><code>GLib.Date.prototype.set_month</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.set_month(month: <a title="GLib.DateMonth" href="date.html#GDateMonth">GLib.DateMonth</a>): {
+    // javascript wrapper for 'g_date_set_month'
+}</pre>
+
+<p>Sets the month of the year for a <a href="date.html#GDate">GLib.Date</a>.  If the resulting
+day-month-year triplet is invalid, the date will be invalid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a></p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>month:</code></em></i>
+		</p>
+	</td>
+		<td><p>month to set</p>
+</td>
+<td>
+<a title="GLib.DateMonth" href="date.html#GDateMonth">GLib.DateMonth</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_set_year">
+		
+<h4 id="glibdateprototypeset_year">
+	<span><code>GLib.Date.prototype.set_year</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.set_year(year: <a title="GLib.DateYear" href="date.html#GDateYear">GLib.DateYear</a>): {
+    // javascript wrapper for 'g_date_set_year'
+}</pre>
+
+<p>Sets the year for a <a href="date.html#GDate">GLib.Date</a>. If the resulting day-month-year
+triplet is invalid, the date will be invalid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a></p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>year:</code></em></i>
+		</p>
+	</td>
+		<td><p>year to set</p>
+</td>
+<td>
+<a title="GLib.DateYear" href="date.html#GDateYear">GLib.DateYear</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_get_month">
+		
+<h4 id="glibdateprototypeget_month">
+	<span><code>GLib.Date.prototype.get_month</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.get_month(): {
+    // javascript wrapper for 'g_date_get_month'
+}</pre>
+
+<p>Returns the month of the year. The date must be valid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a> to get the month from</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>month of the year as a <a href="date.html#GDateMonth">GLib.DateMonth</a></p>
+
+	</td>
+	<td>
+		<a title="GLib.DateMonth" href="date.html#GDateMonth">GLib.DateMonth</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.10;" id="g_date_set_time_t">
+		
+<h4 id="glibdateprototypeset_time_t">
+	<span><code>GLib.Date.prototype.set_time_t</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.set_time_t(timet: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_date_set_time_t'
+}</pre>
+
+<p>Sets the value of a date to the date corresponding to a time
+specified as a time_t. The time to date conversion is done using
+the user's current timezone.</p>
+<p>To set the value of a date to the current day, you could write:</p>
+<pre><code class="language-[&lt;!--">  g_date_set_time_t (date, time (NULL));
+</code></pre>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a></p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>timet:</code></em></i>
+		</p>
+	</td>
+		<td><p>time_t value to set</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.10
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_set_dmy">
+		
+<h4 id="glibdateprototypeset_dmy">
+	<span><code>GLib.Date.prototype.set_dmy</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.set_dmy(day: <a title="GLib.DateDay" href="date.html#GDateDay">GLib.DateDay</a>, month: <a title="GLib.DateMonth" href="date.html#GDateMonth">GLib.DateMonth</a>, y: <a title="GLib.DateYear" href="date.html#GDateYear">GLib.DateYear</a>): {
+    // javascript wrapper for 'g_date_set_dmy'
+}</pre>
+
+<p>Sets the value of a <a href="date.html#GDate">GLib.Date</a> from a day, month, and year.
+The day-month-year triplet must be valid; if you aren't
+sure it is, call <a href="date.html#g_date_valid_dmy">GLib.prototype.date_valid_dmy</a> to check before you
+set it.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a></p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>day:</code></em></i>
+		</p>
+	</td>
+		<td><p>day</p>
+</td>
+<td>
+<a title="GLib.DateDay" href="date.html#GDateDay">GLib.DateDay</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>month:</code></em></i>
+		</p>
+	</td>
+		<td><p>month</p>
+</td>
+<td>
+<a title="GLib.DateMonth" href="date.html#GDateMonth">GLib.DateMonth</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>y:</code></em></i>
+		</p>
+	</td>
+		<td><p>year</p>
+</td>
+<td>
+<a title="GLib.DateYear" href="date.html#GDateYear">GLib.DateYear</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_subtract_months">
+		
+<h4 id="glibdateprototypesubtract_months">
+	<span><code>GLib.Date.prototype.subtract_months</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.subtract_months(n_months: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_date_subtract_months'
+}</pre>
+
+<p>Moves a date some number of months into the past.
+If the current day of the month doesn't exist in
+the destination month, the day of the month
+may change. The date must be valid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a> to decrement</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n_months:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of months to move</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_clamp">
+		
+<h4 id="glibdateprototypeclamp">
+	<span><code>GLib.Date.prototype.clamp</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.clamp(min_date: <a title="GLib.Date" href="date.html#GDate">GLib.Date</a>, max_date: <a title="GLib.Date" href="date.html#GDate">GLib.Date</a>): {
+    // javascript wrapper for 'g_date_clamp'
+}</pre>
+
+<p>If <em>date</em> is prior to <em>min_date</em>, sets <em>date</em> equal to <em>min_date</em>.
+If <em>date</em> falls after <em>max_date</em>, sets <em>date</em> equal to <em>max_date</em>.
+Otherwise, <em>date</em> is unchanged.
+Either of <em>min_date</em> and <em>max_date</em> may be <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a>.
+All non-%NULL dates must be valid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a> to clamp</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>min_date:</code></em></i>
+		</p>
+	</td>
+		<td><p>minimum accepted value for <em>date</em></p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>max_date:</code></em></i>
+		</p>
+	</td>
+		<td><p>maximum accepted value for <em>date</em></p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_get_monday_week_of_year">
+		
+<h4 id="glibdateprototypeget_monday_week_of_year">
+	<span><code>GLib.Date.prototype.get_monday_week_of_year</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.get_monday_week_of_year(): {
+    // javascript wrapper for 'g_date_get_monday_week_of_year'
+}</pre>
+
+<p>Returns the week of the year, where weeks are understood to start on
+Monday. If the date is before the first Monday of the year, return 0.
+The date must be valid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters28">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a></p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>week of the year</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_date_get_iso8601_week_of_year">
+		
+<h4 id="glibdateprototypeget_iso8601_week_of_year">
+	<span><code>GLib.Date.prototype.get_iso8601_week_of_year</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.get_iso8601_week_of_year(): {
+    // javascript wrapper for 'g_date_get_iso8601_week_of_year'
+}</pre>
+
+<p>Returns the week of the year, where weeks are interpreted according
+to ISO 8601.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters29">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid <a href="date.html#GDate">GLib.Date</a></p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>ISO 8601 week number of the year.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_order">
+		
+<h4 id="glibdateprototypeorder">
+	<span><code>GLib.Date.prototype.order</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.order(date2: <a title="GLib.Date" href="date.html#GDate">GLib.Date</a>): {
+    // javascript wrapper for 'g_date_order'
+}</pre>
+
+<p>Checks if <em>date1</em> is less than or equal to <em>date2</em>,
+and swap the values if this is not the case.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters30">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date1:</code></em></i>
+		</p>
+	</td>
+		<td><p>the first date</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date2:</code></em></i>
+		</p>
+	</td>
+		<td><p>the second date</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_days_between">
+		
+<h4 id="glibdateprototypedays_between">
+	<span><code>GLib.Date.prototype.days_between</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.days_between(date2: <a title="GLib.Date" href="date.html#GDate">GLib.Date</a>): {
+    // javascript wrapper for 'g_date_days_between'
+}</pre>
+
+<p>Computes the number of days between two dates.
+If <em>date2</em> is prior to <em>date1</em>, the returned value is negative.
+Both dates must be valid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters31">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date1:</code></em></i>
+		</p>
+	</td>
+		<td><p>the first date</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date2:</code></em></i>
+		</p>
+	</td>
+		<td><p>the second date</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of days between <em>date1</em> and <em>date2</em></p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_compare">
+		
+<h4 id="glibdateprototypecompare">
+	<span><code>GLib.Date.prototype.compare</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.compare(rhs: <a title="GLib.Date" href="date.html#GDate">GLib.Date</a>): {
+    // javascript wrapper for 'g_date_compare'
+}</pre>
+
+<p>qsort-style comparison function for dates.
+Both dates must be valid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters32">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>lhs:</code></em></i>
+		</p>
+	</td>
+		<td><p>first date to compare</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rhs:</code></em></i>
+		</p>
+	</td>
+		<td><p>second date to compare</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>0 for equal, less than zero if <em>lhs</em> is less than <em>rhs</em>,
+greater than zero if <em>lhs</em> is greater than <em>rhs</em></p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_get_day">
+		
+<h4 id="glibdateprototypeget_day">
+	<span><code>GLib.Date.prototype.get_day</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.get_day(): {
+    // javascript wrapper for 'g_date_get_day'
+}</pre>
+
+<p>Returns the day of the month. The date must be valid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters33">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a> to extract the day of the month from</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>day of the month</p>
+
+	</td>
+	<td>
+		<a title="GLib.DateDay" href="date.html#GDateDay">GLib.DateDay</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_add_days">
+		
+<h4 id="glibdateprototypeadd_days">
+	<span><code>GLib.Date.prototype.add_days</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.add_days(n_days: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_date_add_days'
+}</pre>
+
+<p>Increments a date some number of days.
+To move forward by weeks, add weeks*7 days.
+The date must be valid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters34">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a> to increment</p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n_days:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of days to move the date forward</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_get_year">
+		
+<h4 id="glibdateprototypeget_year">
+	<span><code>GLib.Date.prototype.get_year</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Date.prototype.get_year(): {
+    // javascript wrapper for 'g_date_get_year'
+}</pre>
+
+<p>Returns the year of a <a href="date.html#GDate">GLib.Date</a>. The date must be valid.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters35">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GDate">GLib.Date</a></p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>year in which the date falls</p>
+
+	</td>
+	<td>
+		<a title="GLib.DateYear" href="date.html#GDateYear">GLib.DateYear</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+            <h2 class="symbol_section" id="">GTimeVal</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GTimeValMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_time_val_to_iso8601">
+		
+<h4 id="glibtimevalprototypeto_iso8601">
+	<span><code>GLib.TimeVal.prototype.to_iso8601</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.TimeVal.prototype.to_iso8601(): {
+    // javascript wrapper for 'g_time_val_to_iso8601'
+}</pre>
+
+<p>Converts <em>time_</em> into an RFC 3339 encoded string, relative to the
+Coordinated Universal Time (UTC). This is one of the many formats
+allowed by ISO 8601.</p>
+<p>ISO 8601 allows a large number of date/time formats, with or without
+punctuation and optional elements. The format returned by this function
+is a complete date and time, with optional punctuation included, the
+UTC time zone represented as "Z", and the <em>tv_usec</em> part included if
+and only if it is nonzero, i.e. either
+"YYYY-MM-DDTHH:MM:SSZ" or "YYYY-MM-DDTHH:MM:SS.fffffZ".</p>
+<p>This corresponds to the Internet date/time format defined by
+<a href="https://www.ietf.org/rfc/rfc3339.txt">RFC 3339</a>,
+and to either of the two most-precise formats defined by
+the W3C Note
+<a href="http://www.w3.org/TR/NOTE-datetime-19980827">Date and Time Formats</a>.
+Both of these documents are profiles of ISO 8601.</p>
+<p>Use <a href="date-time.html#g_date_time_format">GLib.DateTime.prototype.format</a> or <a href="../c/string_utils.html#g_strdup_printf">g_strdup_printf (not introspectable)</a> if a different
+variation of ISO 8601 format is required.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters36">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>time_:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GTimeVal">GLib.TimeVal</a></p>
+</td>
+<td>
+<a title="GLib.TimeVal" href="date.html#GTimeVal">GLib.TimeVal</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string containing an ISO 8601 date</p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_time_val_add">
+		
+<h4 id="glibtimevalprototypeadd">
+	<span><code>GLib.TimeVal.prototype.add</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.TimeVal.prototype.add(microseconds: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_time_val_add'
+}</pre>
+
+<p>Adds the given number of microseconds to <em>time_</em>. <em>microseconds</em> can
+also be negative to decrease the value of <em>time_</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters37">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>time_:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="date.html#GTimeVal">GLib.TimeVal</a></p>
+</td>
+<td>
+<a title="GLib.TimeVal" href="date.html#GTimeVal">GLib.TimeVal</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>microseconds:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of microseconds to add to <em>time</em></p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_usleep">
+		
+<h3 id="glibprototypeusleep">
+	<span><code>GLib.prototype.usleep</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.usleep(microseconds: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_usleep'
+}</pre>
+
+<p>Pauses the current thread for the given number of microseconds.</p>
+<p>There are 1 million microseconds per second (represented by the
+<a href="date.html#G_USEC_PER_SEC">GLib.USEC_PER_SEC</a> macro). <a href="date.html#g_usleep">GLib.prototype.usleep</a> may have limited precision,
+depending on hardware and operating system; don't rely on the exact
+length of the sleep.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters38">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>microseconds:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of microseconds to pause</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_strftime">
+		
+<h3 id="glibprototypedate_strftime">
+	<span><code>GLib.prototype.date_strftime</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.date_strftime(s: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, slen: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, format: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, date: <a title="GLib.Date" href="date.html#GDate">GLib.Date</a>): {
+    // javascript wrapper for 'g_date_strftime'
+}</pre>
+
+<p>Generates a printed representation of the date, in a
+[locale][setlocale]-specific way.
+Works just like the platform's C library strftime function,
+but only accepts date-related formats; time-related formats
+give undefined results. Date must be valid. Unlike strftime
+(which uses the locale encoding), works on a UTF-8 format
+string and stores a UTF-8 result.</p>
+<p>This function does not provide any conversion specifiers in
+addition to those implemented by the platform's C library.
+For example, don't expect that using <a href="date.html#g_date_strftime">GLib.prototype.date_strftime</a> would
+make the %F provided by the C99 strftime work on Windows
+where the C library only complies to C89.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters39">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>s:</code></em></i>
+		</p>
+	</td>
+		<td><p>destination buffer</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>slen:</code></em></i>
+		</p>
+	</td>
+		<td><p>buffer size</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>format:</code></em></i>
+		</p>
+	</td>
+		<td><p>format string</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>date:</code></em></i>
+		</p>
+	</td>
+		<td><p>valid <a href="date.html#GDate">GLib.Date</a></p>
+</td>
+<td>
+<a title="GLib.Date" href="date.html#GDate">GLib.Date</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>number of characters written to the buffer, or 0 the buffer was too small</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_valid_weekday">
+		
+<h3 id="glibprototypedate_valid_weekday">
+	<span><code>GLib.prototype.date_valid_weekday</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.date_valid_weekday(weekday: <a title="GLib.DateWeekday" href="date.html#GDateWeekday">GLib.DateWeekday</a>): {
+    // javascript wrapper for 'g_date_valid_weekday'
+}</pre>
+
+<p>Returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the weekday is valid. The seven <a href="date.html#GDateWeekday">GLib.DateWeekday</a> enumeration
+values are the only valid weekdays.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters40">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>weekday:</code></em></i>
+		</p>
+	</td>
+		<td><p>weekday</p>
+</td>
+<td>
+<a title="GLib.DateWeekday" href="date.html#GDateWeekday">GLib.DateWeekday</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the weekday is valid</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_get_sunday_weeks_in_year">
+		
+<h3 id="glibprototypedate_get_sunday_weeks_in_year">
+	<span><code>GLib.prototype.date_get_sunday_weeks_in_year</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.date_get_sunday_weeks_in_year(year: <a title="GLib.DateYear" href="date.html#GDateYear">GLib.DateYear</a>): {
+    // javascript wrapper for 'g_date_get_sunday_weeks_in_year'
+}</pre>
+
+<p>Returns the number of weeks in the year, where weeks
+are taken to start on Sunday. Will be 52 or 53. The
+date must be valid. (Years always have 52 7-day periods,
+plus 1 or 2 extra days depending on whether it's a leap
+year. This function is basically telling you how many
+Sundays are in the year, i.e. there are 53 Sundays if
+one of the extra days happens to be a Sunday.)</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters41">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>year:</code></em></i>
+		</p>
+	</td>
+		<td><p>year to count weeks in</p>
+</td>
+<td>
+<a title="GLib.DateYear" href="date.html#GDateYear">GLib.DateYear</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of weeks in <em>year</em></p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_valid_day">
+		
+<h3 id="glibprototypedate_valid_day">
+	<span><code>GLib.prototype.date_valid_day</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.date_valid_day(day: <a title="GLib.DateDay" href="date.html#GDateDay">GLib.DateDay</a>): {
+    // javascript wrapper for 'g_date_valid_day'
+}</pre>
+
+<p>Returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the day of the month is valid (a day is valid if it's
+between 1 and 31 inclusive).</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters42">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>day:</code></em></i>
+		</p>
+	</td>
+		<td><p>day to check</p>
+</td>
+<td>
+<a title="GLib.DateDay" href="date.html#GDateDay">GLib.DateDay</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns21">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the day is valid</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.28;" id="g_get_real_time">
+		
+<h3 id="glibprototypeget_real_time">
+	<span><code>GLib.prototype.get_real_time</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.get_real_time(): {
+    // javascript wrapper for 'g_get_real_time'
+}</pre>
+
+<p>Queries the system wall-clock time.</p>
+<p>This call is functionally equivalent to <a href="date.html#g_get_current_time">GLib.prototype.get_current_time</a> except
+that the return value is often more convenient than dealing with a
+<a href="date.html#GTimeVal">GLib.TimeVal</a>.</p>
+<p>You should only use this call if you are actually interested in the real
+wall-clock time.  <a href="date.html#g_get_monotonic_time">GLib.prototype.get_monotonic_time</a> is probably more useful for
+measuring intervals.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns22">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of microseconds since January 1, 1970 UTC.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.28
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.28;" id="g_get_monotonic_time">
+		
+<h3 id="glibprototypeget_monotonic_time">
+	<span><code>GLib.prototype.get_monotonic_time</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.get_monotonic_time(): {
+    // javascript wrapper for 'g_get_monotonic_time'
+}</pre>
+
+<p>Queries the system monotonic time.</p>
+<p>The monotonic clock will always increase and doesn't suffer
+discontinuities when the user (or NTP) changes the system time.  It
+may or may not continue to tick during times where the machine is
+suspended.</p>
+<p>We try to use the clock that corresponds as closely as possible to
+the passage of time as measured by system calls such as poll but it
+may not always be possible to do this.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns23">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the monotonic time, in microseconds</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.28
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_valid_dmy">
+		
+<h3 id="glibprototypedate_valid_dmy">
+	<span><code>GLib.prototype.date_valid_dmy</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.date_valid_dmy(day: <a title="GLib.DateDay" href="date.html#GDateDay">GLib.DateDay</a>, month: <a title="GLib.DateMonth" href="date.html#GDateMonth">GLib.DateMonth</a>, year: <a title="GLib.DateYear" href="date.html#GDateYear">GLib.DateYear</a>): {
+    // javascript wrapper for 'g_date_valid_dmy'
+}</pre>
+
+<p>Returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the day-month-year triplet forms a valid, existing day
+in the range of days <a href="date.html#GDate">GLib.Date</a> understands (Year 1 or later, no more than
+a few thousand years in the future).</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters43">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>day:</code></em></i>
+		</p>
+	</td>
+		<td><p>day</p>
+</td>
+<td>
+<a title="GLib.DateDay" href="date.html#GDateDay">GLib.DateDay</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>month:</code></em></i>
+		</p>
+	</td>
+		<td><p>month</p>
+</td>
+<td>
+<a title="GLib.DateMonth" href="date.html#GDateMonth">GLib.DateMonth</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>year:</code></em></i>
+		</p>
+	</td>
+		<td><p>year</p>
+</td>
+<td>
+<a title="GLib.DateYear" href="date.html#GDateYear">GLib.DateYear</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns24">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the date is a valid one</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_get_current_time">
+		
+<h3 id="glibprototypeget_current_time">
+	<span><code>GLib.prototype.get_current_time</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.get_current_time(result: <a title="GLib.TimeVal" href="date.html#GTimeVal">GLib.TimeVal</a>): {
+    // javascript wrapper for 'g_get_current_time'
+}</pre>
+
+<p>Equivalent to the UNIX gettimeofday function, but portable.</p>
+<p>You may find <a href="date.html#g_get_real_time">GLib.prototype.get_real_time</a> to be more convenient.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters44">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>result:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="date.html#GTimeVal">GLib.TimeVal</a> structure in which to store current time.</p>
+</td>
+<td>
+<a title="GLib.TimeVal" href="date.html#GTimeVal">GLib.TimeVal</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_get_monday_weeks_in_year">
+		
+<h3 id="glibprototypedate_get_monday_weeks_in_year">
+	<span><code>GLib.prototype.date_get_monday_weeks_in_year</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.date_get_monday_weeks_in_year(year: <a title="GLib.DateYear" href="date.html#GDateYear">GLib.DateYear</a>): {
+    // javascript wrapper for 'g_date_get_monday_weeks_in_year'
+}</pre>
+
+<p>Returns the number of weeks in the year, where weeks
+are taken to start on Monday. Will be 52 or 53. The
+date must be valid. (Years always have 52 7-day periods,
+plus 1 or 2 extra days depending on whether it's a leap
+year. This function is basically telling you how many
+Mondays are in the year, i.e. there are 53 Mondays if
+one of the extra days happens to be a Monday.)</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters45">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>year:</code></em></i>
+		</p>
+	</td>
+		<td><p>a year</p>
+</td>
+<td>
+<a title="GLib.DateYear" href="date.html#GDateYear">GLib.DateYear</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns25">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>number of Mondays in the year</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_valid_year">
+		
+<h3 id="glibprototypedate_valid_year">
+	<span><code>GLib.prototype.date_valid_year</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.date_valid_year(year: <a title="GLib.DateYear" href="date.html#GDateYear">GLib.DateYear</a>): {
+    // javascript wrapper for 'g_date_valid_year'
+}</pre>
+
+<p>Returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the year is valid. Any year greater than 0 is valid,
+though there is a 16-bit limit to what <a href="date.html#GDate">GLib.Date</a> will understand.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters46">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>year:</code></em></i>
+		</p>
+	</td>
+		<td><p>year</p>
+</td>
+<td>
+<a title="GLib.DateYear" href="date.html#GDateYear">GLib.DateYear</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns26">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the year is valid</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_is_leap_year">
+		
+<h3 id="glibprototypedate_is_leap_year">
+	<span><code>GLib.prototype.date_is_leap_year</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.date_is_leap_year(year: <a title="GLib.DateYear" href="date.html#GDateYear">GLib.DateYear</a>): {
+    // javascript wrapper for 'g_date_is_leap_year'
+}</pre>
+
+<p>Returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the year is a leap year.</p>
+<p>For the purposes of this function, leap year is every year
+divisible by 4 unless that year is divisible by 100. If it
+is divisible by 100 it would be a leap year only if that year
+is also divisible by 400.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters47">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>year:</code></em></i>
+		</p>
+	</td>
+		<td><p>year to check</p>
+</td>
+<td>
+<a title="GLib.DateYear" href="date.html#GDateYear">GLib.DateYear</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns27">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the year is a leap year</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_valid_month">
+		
+<h3 id="glibprototypedate_valid_month">
+	<span><code>GLib.prototype.date_valid_month</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.date_valid_month(month: <a title="GLib.DateMonth" href="date.html#GDateMonth">GLib.DateMonth</a>): {
+    // javascript wrapper for 'g_date_valid_month'
+}</pre>
+
+<p>Returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the month value is valid. The 12 <a href="date.html#GDateMonth">GLib.DateMonth</a>
+enumeration values are the only valid months.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters48">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>month:</code></em></i>
+		</p>
+	</td>
+		<td><p>month</p>
+</td>
+<td>
+<a title="GLib.DateMonth" href="date.html#GDateMonth">GLib.DateMonth</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns28">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the month is valid</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_valid_julian">
+		
+<h3 id="glibprototypedate_valid_julian">
+	<span><code>GLib.prototype.date_valid_julian</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.date_valid_julian(julian_date: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_date_valid_julian'
+}</pre>
+
+<p>Returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the Julian day is valid. Anything greater than zero
+is basically a valid Julian, though there is a 32-bit limit.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters49">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>julian_date:</code></em></i>
+		</p>
+	</td>
+		<td><p>Julian day to check</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns29">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the Julian day is valid</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_time_val_from_iso8601">
+		
+<h3 id="glibprototypetime_val_from_iso8601">
+	<span><code>GLib.prototype.time_val_from_iso8601</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.time_val_from_iso8601(iso_date: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): {
+    // javascript wrapper for 'g_time_val_from_iso8601'
+}</pre>
+
+<p>Converts a string containing an ISO 8601 encoded date and time
+to a <a href="date.html#GTimeVal">GLib.TimeVal</a> and puts it into <em>time_</em>.</p>
+<p><em>iso_date</em> must include year, month, day, hours, minutes, and
+seconds. It can optionally include fractions of a second and a time
+zone indicator. (In the absence of any time zone indication, the
+timestamp is assumed to be in local time.)</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters50">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>iso_date:</code></em></i>
+		</p>
+	</td>
+		<td><p>an ISO 8601 encoded date string</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the conversion was successful.</p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>time_:</i>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">true</a> if the conversion was successful.</p>
+
+	</td>
+	<td>
+		<a title="GLib.TimeVal" href="date.html#GTimeVal">GLib.TimeVal</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_date_get_days_in_month">
+		
+<h3 id="glibprototypedate_get_days_in_month">
+	<span><code>GLib.prototype.date_get_days_in_month</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.date_get_days_in_month(month: <a title="GLib.DateMonth" href="date.html#GDateMonth">GLib.DateMonth</a>, year: <a title="GLib.DateYear" href="date.html#GDateYear">GLib.DateYear</a>): {
+    // javascript wrapper for 'g_date_get_days_in_month'
+}</pre>
+
+<p>Returns the number of days in a month, taking leap
+years into account.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters51">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>month:</code></em></i>
+		</p>
+	</td>
+		<td><p>month</p>
+</td>
+<td>
+<a title="GLib.DateMonth" href="date.html#GDateMonth">GLib.DateMonth</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>year:</code></em></i>
+		</p>
+	</td>
+		<td><p>year</p>
+</td>
+<td>
+<a title="GLib.DateYear" href="date.html#GDateYear">GLib.DateYear</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns30">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>number of days in <em>month</em> during the <em>year</em></p>
+
+	</td>
+	<td>
+		<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GDate">
+		<h3 id="glibdate">
+	GLib.Date
+</h3>
+
+		<p>Represents a day between January 1, Year 1 and a few thousand years in
+the future. None of its members should be accessed directly.</p>
+<p>If the <a href="date.html#GDate">GLib.Date</a>-struct is obtained from <a href="date.html#g_date_new">GLib.Date.prototype.new</a>, it will be safe
+to mutate but invalid and thus not safe for calendrical computations.</p>
+<p>If it's declared on the stack, it will contain garbage so must be
+initialized with <a href="date.html#g_date_clear">GLib.Date.prototype.clear</a>. <a href="date.html#g_date_clear">GLib.Date.prototype.clear</a> makes the date invalid
+but sane. An invalid date doesn't represent a day, it's "empty." A date
+becomes valid after you set it to a Julian day or you set a day, month,
+and year.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="attributes">Attributes</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GDate.julian_days">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>julian_days</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the Julian representation of the date</p>
+</td>
+</tr>
+
+						<tr id="GDate.julian">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>julian</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>this bit is set if <em>julian_days</em> is valid</p>
+</td>
+</tr>
+
+						<tr id="GDate.dmy">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>dmy</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>this is set if <em>day</em>, <em>month</em> and <em>year</em> are valid</p>
+</td>
+</tr>
+
+						<tr id="GDate.day">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>day</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the day of the day-month-year representation of the date,
+as a number between 1 and 31</p>
+</td>
+</tr>
+
+						<tr id="GDate.month">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>month</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the day of the day-month-year representation of the date,
+as a number between 1 and 12</p>
+</td>
+</tr>
+
+						<tr id="GDate.year">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>year</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the day of the day-month-year representation of the date</p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GTimeVal">
+		<h3 id="glibtimeval">
+	GLib.TimeVal
+</h3>
+
+		<p>Represents a precise time, with seconds and microseconds.
+Similar to the struct timeval returned by the gettimeofday
+UNIX system call.</p>
+<p>GLib is attempting to unify around the use of 64bit integers to
+represent microsecond-precision time. As such, this type will be
+removed from a future version of GLib.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="attributes1">Attributes</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GTimeVal.tv_sec">
+		<td>
+		<p>
+		<i><em><code>glong <em><code>tv_sec</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>seconds</p>
+</td>
+</tr>
+
+						<tr id="GTimeVal.tv_usec">
+		<td>
+		<p>
+		<i><em><code>glong <em><code>tv_usec</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>microseconds</p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GDateWeekday">
+		
+<h3 id="enum-glibdateweekday">
+		enum GLib.DateWeekday
+	</h3>
+
+		<p>Enumeration representing a day of the week; <a href="date.html#G_DATE_MONDAY">GLib.DateWeekday.prototype.monday</a>,
+<a href="date.html#G_DATE_TUESDAY">GLib.DateWeekday.prototype.tuesday</a>, etc. <a href="date.html#G_DATE_BAD_WEEKDAY">GLib.DateWeekday.prototype.bad_weekday</a> is an invalid weekday.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_BAD_WEEKDAY"></a>
+		GLib.DateWeekday.prototype.bad_weekday
+		</p>
+	</td>
+	<td><p>invalid value</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_MONDAY"></a>
+		GLib.DateWeekday.prototype.monday
+		</p>
+	</td>
+	<td><p>Monday</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_TUESDAY"></a>
+		GLib.DateWeekday.prototype.tuesday
+		</p>
+	</td>
+	<td><p>Tuesday</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_WEDNESDAY"></a>
+		GLib.DateWeekday.prototype.wednesday
+		</p>
+	</td>
+	<td><p>Wednesday</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_THURSDAY"></a>
+		GLib.DateWeekday.prototype.thursday
+		</p>
+	</td>
+	<td><p>Thursday</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_FRIDAY"></a>
+		GLib.DateWeekday.prototype.friday
+		</p>
+	</td>
+	<td><p>Friday</p>
+</td>
+	<td>
+		<span class="value">Value: 5</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_SATURDAY"></a>
+		GLib.DateWeekday.prototype.saturday
+		</p>
+	</td>
+	<td><p>Saturday</p>
+</td>
+	<td>
+		<span class="value">Value: 6</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_SUNDAY"></a>
+		GLib.DateWeekday.prototype.sunday
+		</p>
+	</td>
+	<td><p>Sunday</p>
+</td>
+	<td>
+		<span class="value">Value: 7</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GDateMonth">
+		
+<h3 id="enum-glibdatemonth">
+		enum GLib.DateMonth
+	</h3>
+
+		<p>Enumeration representing a month; values are <a href="date.html#G_DATE_JANUARY">GLib.DateMonth.prototype.january</a>,
+<a href="date.html#G_DATE_FEBRUARY">GLib.DateMonth.prototype.february</a>, etc. <a href="date.html#G_DATE_BAD_MONTH">GLib.DateMonth.prototype.bad_month</a> is the invalid value.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members1">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_BAD_MONTH"></a>
+		GLib.DateMonth.prototype.bad_month
+		</p>
+	</td>
+	<td><p>invalid value</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_JANUARY"></a>
+		GLib.DateMonth.prototype.january
+		</p>
+	</td>
+	<td><p>January</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_FEBRUARY"></a>
+		GLib.DateMonth.prototype.february
+		</p>
+	</td>
+	<td><p>February</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_MARCH"></a>
+		GLib.DateMonth.prototype.march
+		</p>
+	</td>
+	<td><p>March</p>
+</td>
+	<td>
+		<span class="value">Value: 3</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_APRIL"></a>
+		GLib.DateMonth.prototype.april
+		</p>
+	</td>
+	<td><p>April</p>
+</td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_MAY"></a>
+		GLib.DateMonth.prototype.may
+		</p>
+	</td>
+	<td><p>May</p>
+</td>
+	<td>
+		<span class="value">Value: 5</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_JUNE"></a>
+		GLib.DateMonth.prototype.june
+		</p>
+	</td>
+	<td><p>June</p>
+</td>
+	<td>
+		<span class="value">Value: 6</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_JULY"></a>
+		GLib.DateMonth.prototype.july
+		</p>
+	</td>
+	<td><p>July</p>
+</td>
+	<td>
+		<span class="value">Value: 7</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_AUGUST"></a>
+		GLib.DateMonth.prototype.august
+		</p>
+	</td>
+	<td><p>August</p>
+</td>
+	<td>
+		<span class="value">Value: 8</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_SEPTEMBER"></a>
+		GLib.DateMonth.prototype.september
+		</p>
+	</td>
+	<td><p>September</p>
+</td>
+	<td>
+		<span class="value">Value: 9</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_OCTOBER"></a>
+		GLib.DateMonth.prototype.october
+		</p>
+	</td>
+	<td><p>October</p>
+</td>
+	<td>
+		<span class="value">Value: 10</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_NOVEMBER"></a>
+		GLib.DateMonth.prototype.november
+		</p>
+	</td>
+	<td><p>November</p>
+</td>
+	<td>
+		<span class="value">Value: 11</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_DECEMBER"></a>
+		GLib.DateMonth.prototype.december
+		</p>
+	</td>
+	<td><p>December</p>
+</td>
+	<td>
+		<span class="value">Value: 12</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GDateDMY">
+		
+<h3 id="enum-glibdatedmy">
+		enum GLib.DateDMY
+	</h3>
+
+		<p>This enumeration isn't used in the API, but may be useful if you need
+to mark a number as a day, month, or year.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members2">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_DAY"></a>
+		GLib.DateDMY.prototype.day
+		</p>
+	</td>
+	<td><p>a day</p>
+</td>
+	<td>
+		<span class="value">Value: 0</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_MONTH"></a>
+		GLib.DateDMY.prototype.month
+		</p>
+	</td>
+	<td><p>a month</p>
+</td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_DATE_YEAR"></a>
+		GLib.DateDMY.prototype.year
+		</p>
+	</td>
+	<td><p>a year</p>
+</td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_USEC_PER_SEC">
+		
+<h3 class="constant" id="glibusec_per_sec">
+	GLib.USEC_PER_SEC
+</h3>
+
+		<p>Number of microseconds in one second (1 million).
+This macro is provided for code readability.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_DATE_BAD_DAY">
+		
+<h3 class="constant" id="glibdate_bad_day">
+	GLib.DATE_BAD_DAY
+</h3>
+
+		<p>Represents an invalid <a href="date.html#GDateDay">GLib.DateDay</a>.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_DATE_BAD_YEAR">
+		
+<h3 class="constant" id="glibdate_bad_year">
+	GLib.DATE_BAD_YEAR
+</h3>
+
+		<p>Represents an invalid year.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_DATE_BAD_JULIAN">
+		
+<h3 class="constant" id="glibdate_bad_julian">
+	GLib.DATE_BAD_JULIAN
+</h3>
+
+		<p>Represents an invalid Julian day number.</p>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Aliases">Aliases</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GDateDay">
+		
+<h3 id="glibdateday">
+	GLib.DateDay
+</h3>
+
+		<pre>
+typedef <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a> GLib.DateDay</pre>
+<p>Integer representing a day of the month; between 1 and 31.
+<a href="date.html#G_DATE_BAD_DAY">GLib.DATE_BAD_DAY</a> represents an invalid day of the month.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GDateYear">
+		
+<h3 id="glibdateyear">
+	GLib.DateYear
+</h3>
+
+		<pre>
+typedef <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a> GLib.DateYear</pre>
+<p>Integer representing a year; <a href="date.html#G_DATE_BAD_YEAR">GLib.DATE_BAD_YEAR</a> is the invalid
+value. The year must be 1 or higher; negative (BC) years are not
+allowed. The year is represented with four digits.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GTime">
+		
+<h3 id="glibtime">
+	GLib.Time
+</h3>
+
+		<pre>
+typedef <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a> GLib.Time</pre>
+<p>Simply a replacement for time_t. It has been deprecated
+since it is not equivalent to time_t on 64-bit platforms
+with a 64-bit time_t. Unrelated to <a href="timers.html#GTimer">GLib.Timer</a>.</p>
+<p>Note that <a href="date.html#GTime">GLib.Time</a> is defined to always be a 32-bit integer,
+unlike time_t which may be 64-bit on some systems. Therefore,
+<a href="date.html#GTime">GLib.Time</a> will overflow in the year 2038, and you cannot use the
+address of a <a href="date.html#GTime">GLib.Time</a> variable as argument to the UNIX time
+function.</p>
+<p>Instead, do the following:</p>
+<pre><code class="language-[&lt;!--"> time_t ttime;
+ GTime gtime;
+
+ time (&amp;ttime);
+ gtime = (GTime)ttime;
+</code></pre>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

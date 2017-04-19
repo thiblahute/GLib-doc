@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays_pointer.html#g_ptr_array_sized_new1", "fragment": "g_ptr_array_sized_new \nCreates a new GPtrArray with reserved_size pointers preallocated and a reference count of This avoids frequent reallocation if you are going to add many pointers to the array. Note however that the size of the array is still \n"});

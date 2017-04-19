@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvarianttype.html#glibvarianttypenew_array", "fragment": "GLib.VariantType.new_array \nConstructs the type corresponding to an array of elements of the type type. \nIt is appropriate to call GLib.VariantType.free on the return value. \n"});

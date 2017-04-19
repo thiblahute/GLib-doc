@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/queue.html#glibqueueprototypeget_length", "fragment": "GLib.Queue.prototype.get_length \nReturns the number of items in queue. \n"});

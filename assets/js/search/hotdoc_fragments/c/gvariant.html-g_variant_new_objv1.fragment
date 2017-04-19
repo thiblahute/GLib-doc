@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_new_objv1", "fragment": "g_variant_new_objv \nConstructs an array of object paths GVariant from the given array of strings. \nEach string must be a valid GVariant object path see g_variant_is_object_path. \nIf length is then strv is NULL terminated. \n"});

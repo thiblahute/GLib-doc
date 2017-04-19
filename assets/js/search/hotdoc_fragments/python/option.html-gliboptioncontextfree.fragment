@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/option.html#gliboptioncontextfree", "fragment": "GLib.OptionContext.free \nFrees context and all the groups which have been added to it. \nPlease note that parsed arguments need to be freed separately see GLib.OptionEntry \n"});

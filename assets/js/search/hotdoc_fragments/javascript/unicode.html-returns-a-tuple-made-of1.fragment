@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/unicode.html#returns-a-tuple-made-of1", "fragment": "\na pointer to a newly allocated UCS string. This value must be freed with GLib.prototype.free. \nitems_written \na pointer to a newly allocated UCS string. This value must be freed with GLib.prototype.free. \n"});

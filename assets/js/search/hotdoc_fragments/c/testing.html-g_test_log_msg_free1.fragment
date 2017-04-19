@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/testing.html#g_test_log_msg_free1", "fragment": "g_test_log_msg_free \nInternal function for gtester to free test log messages no ABI guarantees provided. \n"});

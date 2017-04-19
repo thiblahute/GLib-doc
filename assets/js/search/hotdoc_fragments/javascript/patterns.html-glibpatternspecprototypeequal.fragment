@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/patterns.html#glibpatternspecprototypeequal", "fragment": "GLib.PatternSpec.prototype.equal \nCompares two compiled pattern specs and returns whether they will match the same set of strings. \n"});

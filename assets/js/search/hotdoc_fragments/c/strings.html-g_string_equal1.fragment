@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/strings.html#g_string_equal1", "fragment": "g_string_equal \nCompares two strings for equality returning TRUE if they are equal. For use with GHashTable. \n"});

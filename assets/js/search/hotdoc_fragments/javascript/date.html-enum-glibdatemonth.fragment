@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#enum-glibdatemonth", "fragment": "enum GLib.DateMonth \nEnumeration representing a month values are GLib.DateMonth.prototype.january GLib.DateMonth.prototype.february etc. GLib.DateMonth.prototype.bad_month is the invalid value. \n"});

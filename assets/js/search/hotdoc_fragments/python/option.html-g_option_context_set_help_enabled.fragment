@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/option.html#g_option_context_set_help_enabled", "fragment": "GLib.OptionContext.set_help_enabled \nEnables or disables automatic generation of help output. By default GLib.OptionContext.parse recognizes help h help all and help groupname and creates suitable output to stdout. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/atomic_operations.html#glibprototypeatomic_int_inc", "fragment": "GLib.prototype.atomic_int_inc \nIncrements the value of atomic by \nThink of this operation as an atomic version of atomic \nThis call acts as a full compiler and hardware memory barrier. \n"});

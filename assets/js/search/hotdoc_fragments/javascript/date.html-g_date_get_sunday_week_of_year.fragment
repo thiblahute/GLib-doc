@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#g_date_get_sunday_week_of_year", "fragment": "GLib.Date.prototype.get_sunday_week_of_year \nReturns the week of the year during which this date falls if weeks are understood to begin on Sunday. The date must be valid. Can return if the day is before the first Sunday of the year. \n"});

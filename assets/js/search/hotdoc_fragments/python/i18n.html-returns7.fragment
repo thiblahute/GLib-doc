@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/i18n.html#returns7", "fragment": "\na newly allocated array of newly allocated strings with the locale variants. Free with GLib.strfreev. \nSince \n"});

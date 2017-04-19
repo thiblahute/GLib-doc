@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gurifuncs.html#returns-a-tuple-made-of", "fragment": "\na newly allocated string holding the resulting filename or None on an error. \nhostname \na newly allocated string holding the resulting filename or None on an error. \n"});

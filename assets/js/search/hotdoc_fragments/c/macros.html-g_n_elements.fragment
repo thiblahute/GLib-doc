@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/macros.html#g_n_elements", "fragment": "G_N_ELEMENTS \nDetermines the number of elements in an array. The array must be declared so the compiler knows its size at compile time this macro will not work on an array allocated on the heap only static arrays or arrays on the stack. \n"});

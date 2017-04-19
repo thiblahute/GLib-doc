@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvarianttype.html#g_variant_type_value1", "fragment": "g_variant_type_value \nDetermines the value type of a dictionary entry type. \nThis function may only be used with a dictionary entry type. \n"});

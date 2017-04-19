@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/messages.html#g_log_writer_supports_color", "fragment": "GLib.prototype.log_writer_supports_color \nCheck whether the given output_fd file descriptor supports ANSI color escape sequences. If so they can safely be used when formatting log messages. \n"});

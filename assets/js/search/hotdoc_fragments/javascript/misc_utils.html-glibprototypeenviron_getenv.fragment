@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/misc_utils.html#glibprototypeenviron_getenv", "fragment": "GLib.prototype.environ_getenv \nReturns the value of the environment variable variable in the provided list envp. \n"});

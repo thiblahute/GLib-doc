@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/testing.html#g_assert_not_reached1", "fragment": "g_assert_not_reached \nDebugging macro to terminate the application if it is ever reached. If it is reached an error message is logged and the application is terminated. \nThe macro can be turned off in final releases of code by defining G_DISABLE_ASSERT when compiling the application. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvariant.html#glibvariantget_type_string", "fragment": "GLib.Variant.get_type_string \nReturns the type string of value. Unlike the result of calling g_variant_type_peek_string not introspectable this string is nul terminated. This string belongs to GLib.Variant and must not be freed. \n"});

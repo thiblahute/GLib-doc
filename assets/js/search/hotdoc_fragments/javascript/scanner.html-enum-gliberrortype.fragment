@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/scanner.html#enum-gliberrortype", "fragment": "enum GLib.ErrorType \nThe possible errors used in the v_error field of GTokenValue when the token is a GLib.TokenType.prototype.error. \n"});

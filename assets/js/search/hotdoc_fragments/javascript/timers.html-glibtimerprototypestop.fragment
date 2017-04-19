@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/timers.html#glibtimerprototypestop", "fragment": "GLib.Timer.prototype.stop \nMarks an end time so calls to GLib.Timer.prototype.elapsed will return the difference between this end time and the start time. \n"});

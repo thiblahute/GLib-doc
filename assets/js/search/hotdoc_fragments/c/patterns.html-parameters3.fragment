@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/patterns.html#parameters3", "fragment": "pspec \na GPatternSpec \nstring_length \nthe length of string in bytes i.e. strlen not g_utf8_strlen \nstring \nthe UTF encoded string to match \nstring_reversed \nthe reverse of string or NULL \n"});

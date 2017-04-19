@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hooks.html#glibhooklistclear", "fragment": "GLib.HookList.clear \nRemoves all the GLib.Hook elements from a GLib.HookList. \n"});

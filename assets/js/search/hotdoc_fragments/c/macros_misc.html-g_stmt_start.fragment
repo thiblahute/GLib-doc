@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/macros_misc.html#g_stmt_start", "fragment": "G_STMT_START \nUsed within multi statement macros so that they can be used in places where only one statement is expected by the compiler. \n"});

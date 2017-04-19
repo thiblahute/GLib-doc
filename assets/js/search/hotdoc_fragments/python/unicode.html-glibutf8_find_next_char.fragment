@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#glibutf8_find_next_char", "fragment": "GLib.utf8_find_next_char \nFinds the start of the next UTF character in the string after p. \np does not have to be at the beginning of a UTF character. No check is made to see if the character found is actually valid other than it starts with an appropriate byte. \n"});

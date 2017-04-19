@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdate_valid_month", "fragment": "GLib.date_valid_month \nReturns True if the month value is valid. The GLib.DateMonth enumeration values are the only valid months. \n"});

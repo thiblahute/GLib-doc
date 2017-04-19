@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/i18n.html#parameters3", "fragment": "domain \nthe translation domain to use or NULL to use the domain set with textdomain \nmsgid \nmessage to translate \nmsgid_plural \nplural form of the message \nn \nthe quantity for which translation is needed \n"});

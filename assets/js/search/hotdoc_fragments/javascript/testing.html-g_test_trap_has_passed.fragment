@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/testing.html#g_test_trap_has_passed", "fragment": "GLib.prototype.test_trap_has_passed \nCheck the result of the last GLib.prototype.test_trap_subprocess call. \n"});

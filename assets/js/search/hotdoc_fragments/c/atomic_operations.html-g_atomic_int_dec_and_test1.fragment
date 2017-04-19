@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/atomic_operations.html#g_atomic_int_dec_and_test1", "fragment": "g_atomic_int_dec_and_test \nDecrements the value of atomic by \nThink of this operation as an atomic version of atomic return atomic \nThis call acts as a full compiler and hardware memory barrier. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gregex.html#returns", "fragment": "\na GLib.Regex structure or null if an error occured. Call GLib.Regex.prototype.unref when you are done with it \nSince \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/bookmarkfile.html#g_bookmark_file_get_title", "fragment": "GLib.BookmarkFile.prototype.get_title \nReturns the title of the bookmark for uri. \nIf uri is null the title of bookmark is returned. \nIn the event the URI cannot be found null is returned and error is set to GLib.BookmarkFileError.prototype.uri_not_found. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/scanner.html#glibscannerprototypedestroy", "fragment": "GLib.Scanner.prototype.destroy \nFrees all memory used by the GLib.Scanner. \n"});

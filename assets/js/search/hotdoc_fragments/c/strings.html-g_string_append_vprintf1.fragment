@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/strings.html#g_string_append_vprintf1", "fragment": "g_string_append_vprintf \nAppends a formatted string onto the end of a GString. This function is similar to g_string_append_printf except that the arguments to the format string are passed as a va_list. \n"});

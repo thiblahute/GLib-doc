@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvarianttype.html#g_variant_type_new_maybe1", "fragment": "g_variant_type_new_maybe \nConstructs the type corresponding to a maybe instance containing type type or Nothing. \nIt is appropriate to call g_variant_type_free on the return value. \n"});

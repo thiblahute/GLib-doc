@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hash_tables.html#g_hash_table_steal_all1", "fragment": "g_hash_table_steal_all \nRemoves all keys and their associated values from a GHashTable without calling the key and value destroy functions. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/base64.html#returns", "fragment": "\na newly allocated zero terminated Base encoded string representing data. The returned string must be freed with GLib.free. \nSince \n"});

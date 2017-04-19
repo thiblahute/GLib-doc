@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#g_main_context_add_poll", "fragment": "GLib.MainContext.prototype.add_poll \nAdds a file descriptor to the set of file descriptors polled for this context. This will very seldom be used directly. Instead a typical event source will use GLib.Source.prototype.add_unix_fd instead. \n"});

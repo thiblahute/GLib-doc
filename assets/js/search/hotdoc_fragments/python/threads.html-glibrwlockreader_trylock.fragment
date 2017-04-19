@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/threads.html#glibrwlockreader_trylock", "fragment": "GLib.RWLock.reader_trylock \nTries to obtain a read lock on rw_lock and returns True if the read lock was successfully obtained. Otherwise it returns False. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/trees-nary.html#parameters23", "fragment": "node \na GNode \ncopy_func \nthe function which is called to copy the data inside each node or NULL to use the original data. \ndata \ndata to pass to copy_func \n"});

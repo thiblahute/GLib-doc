@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hmac.html#parameters6", "fragment": "digest_type \na GLib.ChecksumType to use for the HMAC \nkey \nthe key to use in the HMAC \nkey_len \nthe length of the key \ndata \nbinary blob to compute the HMAC of \nlength \nlength of data \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_unref1", "fragment": "g_variant_unref \nDecreases the reference count of value. When its reference count drops to the memory used by the variant is freed. \n"});

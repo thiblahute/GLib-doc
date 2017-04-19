@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hooks.html#glibhookcompare_ids", "fragment": "GLib.Hook.compare_ids \nCompares the ids of two GLib.Hook elements returning a negative value if the second id is greater than the first. \n"});

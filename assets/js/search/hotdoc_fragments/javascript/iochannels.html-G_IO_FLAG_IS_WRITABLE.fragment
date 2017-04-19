@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/iochannels.html#G_IO_FLAG_IS_WRITABLE", "fragment": "indicates that the io channel is writable. This flag cannot be changed. \nGLib.IOFlags.prototype.is_writeable \n"});

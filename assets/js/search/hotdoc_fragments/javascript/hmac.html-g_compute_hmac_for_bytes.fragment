@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hmac.html#g_compute_hmac_for_bytes", "fragment": "GLib.prototype.compute_hmac_for_bytes \nComputes the HMAC for a binary data. This is a convenience wrapper for g_hmac_new not introspectable GLib.Hmac.prototype.get_string and GLib.Hmac.prototype.unref. \nThe hexadecimal string returned will be in lower case. \n"});

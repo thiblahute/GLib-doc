@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gregex.html#glibregexget_match_flags", "fragment": "GLib.Regex.get_match_flags \nReturns the match options that regex was created with. \n"});

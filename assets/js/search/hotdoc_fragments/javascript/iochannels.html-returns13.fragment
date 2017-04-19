@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/iochannels.html#returns13", "fragment": "\nGLib.IOError.prototype.none if the operation was successful. \ndeprecated Use g_io_channel_write_chars instead. \n"});

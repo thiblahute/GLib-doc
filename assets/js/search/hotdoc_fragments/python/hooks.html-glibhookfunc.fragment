@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hooks.html#glibhookfunc", "fragment": "GLib.HookFunc \nDefines the type of a hook function that can be invoked by GLib.HookList.invoke. \n"});

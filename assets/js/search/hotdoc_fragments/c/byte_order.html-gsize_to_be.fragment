@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/byte_order.html#gsize_to_be", "fragment": "GSIZE_TO_BE \nConverts a gsize value from host byte order to big endian. \n"});

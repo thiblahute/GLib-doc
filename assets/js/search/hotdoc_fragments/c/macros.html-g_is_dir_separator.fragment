@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/macros.html#g_is_dir_separator", "fragment": "G_IS_DIR_SEPARATOR \nChecks whether a character is a directory separator. It returns TRUE for on UNIX machines and for or under Windows. \n"});

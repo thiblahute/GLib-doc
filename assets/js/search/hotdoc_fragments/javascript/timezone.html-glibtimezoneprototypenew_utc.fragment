@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/timezone.html#glibtimezoneprototypenew_utc", "fragment": "GLib.TimeZone.prototype.new_utc \nCreates a GLib.TimeZone corresponding to UTC. \nThis is equivalent to calling GLib.TimeZone.prototype.new with a value like Z UTC etc. \nYou should release the return value by calling GLib.TimeZone.prototype.unref when you are done with it. \n"});

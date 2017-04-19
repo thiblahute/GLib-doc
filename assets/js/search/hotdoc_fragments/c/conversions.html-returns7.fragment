@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/conversions.html#returns7", "fragment": "\nIf the conversion was successful a newly allocated nul terminated string which must be freed with g_free. Otherwise NULL and error will be set. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/fileutils.html#glibmappedfile", "fragment": "GLib.MappedFile \nThe GLib.MappedFile represents a file mapping created with GLib.MappedFile.new. It has only private members and should not be accessed directly. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date.html#g_date_valid1", "fragment": "g_date_valid \nReturns TRUE if the GDate represents an existing day. The date must not contain garbage it should have been initialized with g_date_clear if it wasn t allocated by one of the g_date_new variants. \n"});

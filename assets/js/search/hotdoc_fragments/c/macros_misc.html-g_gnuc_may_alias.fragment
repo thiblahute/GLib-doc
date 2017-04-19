@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/macros_misc.html#g_gnuc_may_alias", "fragment": "G_GNUC_MAY_ALIAS \nExpands to the GNU C may_alias type attribute if the compiler is gcc. Types with this attribute will not be subjected to type based alias analysis but are assumed to alias with any other type just like char. \nSee the GNU C documentation for details. \n"});

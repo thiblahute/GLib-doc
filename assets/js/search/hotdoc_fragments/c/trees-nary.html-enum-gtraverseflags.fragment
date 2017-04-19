@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/trees-nary.html#enum-gtraverseflags", "fragment": "enum GTraverseFlags \nSpecifies which nodes are visited during several of the tree functions including g_node_traverse and g_node_find. \n"});

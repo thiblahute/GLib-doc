@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdateto_struct_tm", "fragment": "GLib.Date.to_struct_tm \nFills in the date related bits of a struct tm using the date value. Initializes the non date parts with something sane but meaningless. \n"});

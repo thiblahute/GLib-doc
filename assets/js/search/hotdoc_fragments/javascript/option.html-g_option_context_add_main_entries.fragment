@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/option.html#g_option_context_add_main_entries", "fragment": "GLib.OptionContext.prototype.add_main_entries \nA convenience function which creates a main group if it doesn t exist adds the entries to it and sets the translation domain. \n"});

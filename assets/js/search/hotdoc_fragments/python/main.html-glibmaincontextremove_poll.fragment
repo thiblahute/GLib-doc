@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibmaincontextremove_poll", "fragment": "GLib.MainContext.remove_poll \nRemoves file descriptor from the set of file descriptors to be polled for a particular context. \n"});

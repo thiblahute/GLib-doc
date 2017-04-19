@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>i18n</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="i18n.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="python">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="i18n.markdown">
+    </div>
+        
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.26;" id="g_dcgettext">
+		
+<h3 id="glibdcgettext">
+	<span><code>GLib.dcgettext</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.dcgettext (domain, msgid, category):
+    #python wrapper for 'g_dcgettext'</pre>
+
+<p>This is a variant of <a href="i18n.html#g_dgettext">GLib.dgettext</a> that allows specifying a locale
+category instead of always using <code>LC_MESSAGES</code>. See <a href="i18n.html#g_dgettext">GLib.dgettext</a> for
+more information about how this functions differs from calling
+dcgettext directly.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the translation domain to use, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> to use
+the domain set with textdomain</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>msgid:</code></em></i>
+		</p>
+	</td>
+		<td><p>message to translate</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>category:</code></em></i>
+		</p>
+	</td>
+		<td><p>a locale category</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the translated string for the given locale category</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.26
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.18;" id="g_dpgettext2">
+		
+<h3 id="glibdpgettext2">
+	<span><code>GLib.dpgettext2</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.dpgettext2 (domain, context, msgid):
+    #python wrapper for 'g_dpgettext2'</pre>
+
+<p>This function is a variant of <a href="i18n.html#g_dgettext">GLib.dgettext</a> which supports
+a disambiguating message context. GNU gettext uses the
+'\004' character to separate the message context and
+message id in <em>msgctxtid</em>.</p>
+<p>This uses <a href="i18n.html#g_dgettext">GLib.dgettext</a> internally. See that functions for differences
+with dgettext proper.</p>
+<p>This function differs from <a href="../c/i18n.html#C_">C_ (not introspectable)</a> in that it is not a macro and
+thus you may use non-string-literals as context and msgid arguments.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the translation domain to use, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> to use
+the domain set with textdomain</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>context:</code></em></i>
+		</p>
+	</td>
+		<td><p>the message context</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>msgid:</code></em></i>
+		</p>
+	</td>
+		<td><p>the message</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The translated string</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.18
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_get_language_names">
+		
+<h3 id="glibget_language_names">
+	<span><code>GLib.get_language_names</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.get_language_names ():
+    #python wrapper for 'g_get_language_names'</pre>
+
+<p>Computes a list of applicable locale names, which can be used to
+e.g. construct locale-dependent filenames or search paths. The returned
+list is sorted from most desirable to least desirable and always contains
+the default locale "C".</p>
+<p>For example, if LANGUAGE=de:en_US, then the returned list is
+"de", "en_US", "en", "C".</p>
+<p>This function consults the environment variables <code>LANGUAGE</code>, <code>LC_ALL</code>,
+<code>LC_MESSAGES</code> and <code>LANG</code> to find the list of locales specified by the
+user.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a <a href="https://docs.python.org/2/library/constants.html#None">None</a>-terminated array of strings owned by GLib
+that must not be modified or freed.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_strip_context">
+		
+<h3 id="glibstrip_context">
+	<span><code>GLib.strip_context</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.strip_context (msgid, msgval):
+    #python wrapper for 'g_strip_context'</pre>
+
+<p>An auxiliary function for gettext support (see <a href="../c/i18n.html#Q_">Q_ (not introspectable)</a>).</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>msgid:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>msgval:</code></em></i>
+		</p>
+	</td>
+		<td><p>another string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>msgval</em>, unless <em>msgval</em> is identical to <em>msgid</em>
+and contains a '|' character, in which case a pointer to
+the substring of msgid after the first '|' character is returned.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.18;" id="g_dngettext">
+		
+<h3 id="glibdngettext">
+	<span><code>GLib.dngettext</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.dngettext (domain, msgid, msgid_plural, n):
+    #python wrapper for 'g_dngettext'</pre>
+
+<p>This function is a wrapper of dngettext which does not translate
+the message if the default domain as set with textdomain has no
+translations for the current locale.</p>
+<p>See <a href="i18n.html#g_dgettext">GLib.dgettext</a> for details of how this differs from dngettext
+proper.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the translation domain to use, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> to use
+the domain set with textdomain</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>msgid:</code></em></i>
+		</p>
+	</td>
+		<td><p>message to translate</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>msgid_plural:</code></em></i>
+		</p>
+	</td>
+		<td><p>plural form of the message</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n:</code></em></i>
+		</p>
+	</td>
+		<td><p>the quantity for which translation is needed</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The translated string</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.18
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_dpgettext">
+		
+<h3 id="glibdpgettext">
+	<span><code>GLib.dpgettext</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.dpgettext (domain, msgctxtid, msgidoffset):
+    #python wrapper for 'g_dpgettext'</pre>
+
+<p>This function is a variant of <a href="i18n.html#g_dgettext">GLib.dgettext</a> which supports
+a disambiguating message context. GNU gettext uses the
+'\004' character to separate the message context and
+message id in <em>msgctxtid</em>.
+If 0 is passed as <em>msgidoffset</em>, this function will fall back to
+trying to use the deprecated convention of using "|" as a separation
+character.</p>
+<p>This uses <a href="i18n.html#g_dgettext">GLib.dgettext</a> internally. See that functions for differences
+with dgettext proper.</p>
+<p>Applications should normally not use this function directly,
+but use the <a href="../c/i18n.html#C_">C_ (not introspectable)</a> macro for translations with context.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the translation domain to use, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> to use
+the domain set with textdomain</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>msgctxtid:</code></em></i>
+		</p>
+	</td>
+		<td><p>a combined message context and message id, separated
+by a \004 character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>msgidoffset:</code></em></i>
+		</p>
+	</td>
+		<td><p>the offset of the message id in <em>msgctxid</em></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The translated string</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.18;" id="g_dgettext">
+		
+<h3 id="glibdgettext">
+	<span><code>GLib.dgettext</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.dgettext (domain, msgid):
+    #python wrapper for 'g_dgettext'</pre>
+
+<p>This function is a wrapper of dgettext which does not translate
+the message if the default domain as set with textdomain has no
+translations for the current locale.</p>
+<p>The advantage of using this function over dgettext proper is that
+libraries using this function (like GTK+) will not use translations
+if the application using the library does not have translations for
+the current locale.  This results in a consistent English-only
+interface instead of one having partial translations.  For this
+feature to work, the call to textdomain and setlocale should
+precede any <a href="i18n.html#g_dgettext">GLib.dgettext</a> invocations.  For GTK+, it means calling
+textdomain before gtk_init or its variants.</p>
+<p>This function disables translations if and only if upon its first
+call all the following conditions hold:</p>
+<ul>
+<li>
+<p><em>domain</em> is not <a href="https://docs.python.org/2/library/constants.html#None">None</a></p>
+</li>
+<li>
+<p>textdomain has been called to set a default text domain</p>
+</li>
+<li>
+<p>there is no translations available for the default text domain
+and the current locale</p>
+</li>
+<li>
+<p>current locale is not "C" or any English locales (those
+starting with "en_")</p>
+</li>
+</ul>
+<p>Note that this behavior may not be desired for example if an application
+has its untranslated messages in a language other than English. In those
+cases the application should call textdomain after initializing GTK+.</p>
+<p>Applications should normally not use this function directly,
+but use the <a href="../c/i18n.html#_">_ (not introspectable)</a> macro for translations.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>domain:</code></em></i>
+		</p>
+	</td>
+		<td><p>the translation domain to use, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> to use
+the domain set with textdomain</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>msgid:</code></em></i>
+		</p>
+	</td>
+		<td><p>message to translate</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The translated string</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.18
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.28;" id="g_get_locale_variants">
+		
+<h3 id="glibget_locale_variants">
+	<span><code>GLib.get_locale_variants</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.get_locale_variants (locale):
+    #python wrapper for 'g_get_locale_variants'</pre>
+
+<p>Returns a list of derived variants of <em>locale</em>, which can be used to
+e.g. construct locale-dependent filenames or search paths. The returned
+list is sorted from most desirable to least desirable.
+This function handles territory, charset and extra locale modifiers.</p>
+<p>For example, if <em>locale</em> is "fr_BE", then the returned list
+is "fr_BE", "fr".</p>
+<p>If you need the list of variants for the current locale,
+use <a href="i18n.html#g_get_language_names">GLib.get_language_names</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>locale:</code></em></i>
+		</p>
+	</td>
+		<td><p>a locale identifier</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly
+allocated array of newly allocated strings with the locale variants. Free with
+<a href="string_utils.html#g_strfreev">GLib.strfreev</a>.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.28
+		</p>
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

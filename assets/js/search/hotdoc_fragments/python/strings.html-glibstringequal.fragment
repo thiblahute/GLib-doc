@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/strings.html#glibstringequal", "fragment": "GLib.String.equal \nCompares two strings for equality returning True if they are equal. For use with GLib.HashTable. \n"});

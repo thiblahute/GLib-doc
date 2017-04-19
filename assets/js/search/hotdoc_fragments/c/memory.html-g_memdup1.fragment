@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/memory.html#g_memdup1", "fragment": "g_memdup \nAllocates byte_size bytes of memory and copies byte_size bytes into it from mem. If mem is NULL it returns NULL. \n"});

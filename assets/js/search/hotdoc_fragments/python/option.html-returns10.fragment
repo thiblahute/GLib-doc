@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/option.html#returns10", "fragment": "\nTrue if the function completed successfully False if an error occurred in which case error should be set with g_set_error not introspectable \n"});

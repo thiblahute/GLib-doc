@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/sequence.html#g_sequence_get_length", "fragment": "GLib.Sequence.prototype.get_length \nReturns the length of seq. Note that this method is O h where h is the height of the tree. It is thus more efficient to use GLib.Sequence.prototype.is_empty when comparing the length to zero. \n"});

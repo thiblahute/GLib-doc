@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date.html#g_date_get_weekday1", "fragment": "g_date_get_weekday \nReturns the day of the week for a GDate. The date must be valid. \n"});

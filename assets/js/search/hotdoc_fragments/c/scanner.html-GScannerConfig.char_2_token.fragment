@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/scanner.html#GScannerConfig.char_2_token", "fragment": "guint symbol_2_token \nspecifies if symbols are reported by setting token v_symbol or as G_TOKEN_SYMBOL the default is FALSE \n"});

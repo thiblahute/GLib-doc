@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/unicode.html#glibprototypeutf8_to_utf16", "fragment": "GLib.prototype.utf8_to_utf16 \nConvert a string from UTF to UTF A character will be added to the result after the converted text. \n"});

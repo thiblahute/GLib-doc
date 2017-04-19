@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvarianttype.html#glibvarianttype", "fragment": "GLib.VariantType \nA type in the GVariant type system. \nTwo types may not be compared by value use GLib.VariantType.prototype.equal or GLib.VariantType.prototype.is_subtype_of. May be copied using GLib.VariantType.prototype.copy and freed using GLib.VariantType.prototype.free. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/misc_utils.html#glibprototypebit_nth_lsf", "fragment": "GLib.prototype.bit_nth_lsf \nFind the position of the first bit set in mask searching from but not including nth_bit upwards. Bits are numbered from least significant to sizeof gulong or usually To start searching from the th bit set nth_bit to \n"});

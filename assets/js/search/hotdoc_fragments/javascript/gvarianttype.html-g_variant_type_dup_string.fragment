@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvarianttype.html#g_variant_type_dup_string", "fragment": "GLib.VariantType.prototype.dup_string \nReturns a newly allocated copy of the type string corresponding to type. The returned string is nul terminated. It is appropriate to call GLib.prototype.free on the return value. \n"});

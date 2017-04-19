@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hash_tables.html#glibequalfunc", "fragment": "GLib.EqualFunc \nSpecifies the type of a function used to test two values for equality. The function should return True if both values are equal and False otherwise. \n"});

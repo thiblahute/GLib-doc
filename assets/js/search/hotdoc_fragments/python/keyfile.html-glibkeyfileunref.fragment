@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/keyfile.html#glibkeyfileunref", "fragment": "GLib.KeyFile.unref \nDecreases the reference count of key_file by If the reference count reaches zero frees the key file and all its allocated memory. \n"});

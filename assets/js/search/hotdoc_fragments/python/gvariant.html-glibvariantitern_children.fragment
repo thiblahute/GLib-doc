@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvariant.html#glibvariantitern_children", "fragment": "GLib.VariantIter.n_children \nQueries the number of child items in the container that we are iterating over. This is the total number of items not the number of items remaining. \nThis function might be useful for preallocation of arrays. \n"});

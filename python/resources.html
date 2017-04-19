@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Mailing lists and bug reports</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="resources.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="python">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="resources.markdown">
+        <p>Mailing lists and bug reports</p>
+<p>3</p>
+<p>Mailing lists and bug reports</p>
+<h1 id="filing-a-bug-report-or-feature-request">Filing a bug report or feature request</h1>
+<p>If you encounter a bug, misfeature, or missing feature in GLib, please
+file a bug report on <a href="http://bugzilla.gnome.org">http://bugzilla.gnome.org</a>. We'd also appreciate
+reports of incomplete or misleading information in the GLib
+documentation; file those against the "docs" component of the "glib"
+product in Bugzilla.</p>
+<p>Don't hesitate to file a bug report, even if you think we may know about
+it already, or aren't sure of the details. Just give us as much
+information as you have, and if it's already fixed or has already been
+discussed, we'll add a note to that effect in the report.</p>
+<p>The bug tracker should definitely be used for feature requests, it's not
+only for bugs. We track all GLib development in Bugzilla, so it's the
+way to be sure the GLib developers won't forget about an issue.</p>
+<h1 id="submitting-patches">Submitting Patches</h1>
+<p>If you develop a bugfix or enhancement for GLib, please file that in
+Bugzilla as well. Bugzilla allows you to attach files; please attach a
+patch generated by the <code>diff</code> utility, using the <code>-u</code> option to make the
+patch more readable. All patches must be offered under the terms of the
+GNU LGPL license, so be sure you are authorized to give us the patch
+under those terms.</p>
+<p>If you want to discuss your patch before or after developing it, mail
+<a href="mailto:gtk-devel-list@gnome.org">gtk-devel-list@gnome.org</a>. But be sure to file the Bugzilla report as
+well; if the patch is only on the list and not in Bugzilla, it's likely
+to slip through the cracks.</p>
+<h1 id="mailing-lists">Mailing lists</h1>
+<p>There are several mailing lists dedicated to GTK+ and related libraries.
+Discussion of GLib generally takes place on these lists. You can
+subscribe or view the archives of these lists on
+<a href="http://mail.gnome.org">http://mail.gnome.org</a>.</p>
+<ul>
+<li>
+<p><a href="mailto:gtk-list@gnome.org">gtk-list@gnome.org</a><br>
+gtk-list covers general GTK+ (and GLib) topics; questions about
+using GLib in programs, GLib from a user standpoint, announcements
+of GLib-related projects would all be on-topic. The bulk of the
+traffic consists of GTK+ programming questions.</p>
+</li>
+<li>
+<p><a href="mailto:gtk-devel-list@gnome.org">gtk-devel-list@gnome.org</a><br>
+gtk-devel-list is for discussion of work on GTK+ (and GLib) itself,
+it is <em>not</em> for asking questions about how to use GTK+ (or GLib) in
+applications. gtk-devel-list is appropriate for discussion of
+patches, bugs, proposed features, and so on.</p>
+</li>
+<li>
+<p><a href="mailto:gtk-doc-list@gnome.org">gtk-doc-list@gnome.org</a><br>
+gtk-doc-list is for discussion of the gtk-doc documentation system
+(used to document GTK+ and Glib), and for work on the GTK+ (and
+GLib) documentation.</p>
+</li>
+</ul>
+
+    </div>
+        
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

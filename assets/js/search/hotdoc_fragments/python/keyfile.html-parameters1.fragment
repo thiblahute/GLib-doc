@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/keyfile.html#parameters1", "fragment": "key_file \nan empty GLib.KeyFile struct \nfile \na relative path to a filename to open and parse \nflags \nflags from GLib.KeyFileFlags \n"});

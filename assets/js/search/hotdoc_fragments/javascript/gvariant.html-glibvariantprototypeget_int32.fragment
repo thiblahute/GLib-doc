@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvariant.html#glibvariantprototypeget_int32", "fragment": "GLib.Variant.prototype.get_int32 \nReturns the bit signed integer value of value. \nIt is an error to call this function with a value of any type other than G_VARIANT_TYPE_INT32 not introspectable \n"});

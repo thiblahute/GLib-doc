@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/bookmarkfile.html#g_bookmark_file_to_file", "fragment": "GLib.BookmarkFile.prototype.to_file \nThis function outputs bookmark into a file. The write process is guaranteed to be atomic by using GLib.prototype.file_set_contents internally. \n"});

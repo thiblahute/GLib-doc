@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/string_utils.html#glibprototypestrfreev", "fragment": "GLib.prototype.strfreev \nFrees a null terminated array of strings as well as each string it contains. \nIf str_array is null this function simply returns. \n"});

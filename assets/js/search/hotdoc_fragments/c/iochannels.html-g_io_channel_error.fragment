@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#g_io_channel_error", "fragment": "G_IO_CHANNEL_ERROR \nError domain for GIOChannel operations. Errors in this domain will be from the GIOChannelError enumeration. See GError for information on error domains. \n"});

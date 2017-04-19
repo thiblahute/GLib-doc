@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/string_utils.html#glibascii_dtostr_buf_size", "fragment": "GLib.ASCII_DTOSTR_BUF_SIZE \nA good size for a buffer to be passed into GLib.prototype.ascii_dtostr. It is guaranteed to be enough for all output of that function on systems with bit IEEE compatible doubles. \nThe typical usage would be something like \n"});

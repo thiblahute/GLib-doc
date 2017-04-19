@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#g_io_channel_shutdown1", "fragment": "g_io_channel_shutdown \nClose an IO channel. Any pending data to be written will be flushed if flush is TRUE. The channel will not be freed until the last reference is dropped using g_io_channel_unref. \n"});

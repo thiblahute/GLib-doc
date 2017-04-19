@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#g_io_channel_get_buffered1", "fragment": "g_io_channel_get_buffered \nReturns whether channel is buffered. \nReturn Value TRUE if the channel is buffered. \n"});

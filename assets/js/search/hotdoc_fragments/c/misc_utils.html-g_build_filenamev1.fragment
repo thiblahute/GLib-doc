@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/misc_utils.html#g_build_filenamev1", "fragment": "g_build_filenamev \nBehaves exactly like g_build_filename but takes the path elements as a string array instead of varargs. This function is mainly meant for language bindings. \n"});

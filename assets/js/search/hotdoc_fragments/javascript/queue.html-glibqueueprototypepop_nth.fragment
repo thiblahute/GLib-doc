@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/queue.html#glibqueueprototypepop_nth", "fragment": "GLib.Queue.prototype.pop_nth \nRemoves the n th element of queue and returns its data. \n"});

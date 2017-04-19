@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date-time.html#glibdatetimeget_seconds", "fragment": "GLib.DateTime.get_seconds \nRetrieves the number of seconds since the start of the last minute including the fractional part. \n"});

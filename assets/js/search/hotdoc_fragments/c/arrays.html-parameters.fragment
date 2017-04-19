@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays.html#parameters", "fragment": "zero_terminated \nTRUE if the array should have an extra element at the end with all bits cleared \nclear_ \nTRUE if all bits in the array should be cleared to on allocation \nelement_size \nsize of each element in the array \nreserved_size \nnumber of elements preallocated \n"});

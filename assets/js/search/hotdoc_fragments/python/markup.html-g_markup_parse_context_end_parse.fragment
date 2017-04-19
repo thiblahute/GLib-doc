@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/markup.html#g_markup_parse_context_end_parse", "fragment": "GLib.MarkupParseContext.end_parse \nSignals to the GLib.MarkupParseContext that all data has been fed into the parse context with GLib.MarkupParseContext.parse. \nThis function reports an error if the document isn t complete for example if elements are still open. \n"});

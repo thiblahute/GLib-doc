@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/misc_utils.html#gvoidfunc", "fragment": "GVoidFunc \nDeclares a type of function which takes no arguments and has no return value. It is used to specify the type function passed to g_atexit. \n"});

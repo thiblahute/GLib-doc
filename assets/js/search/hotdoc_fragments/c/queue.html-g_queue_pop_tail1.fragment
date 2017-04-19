@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/queue.html#g_queue_pop_tail1", "fragment": "g_queue_pop_tail \nRemoves the last element of the queue and returns its data. \n"});

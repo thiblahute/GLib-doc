@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvarianttype.html#g_variant_type_string_is_valid", "fragment": "GLib.variant_type_string_is_valid \nChecks if type_string is a valid GVariant type string. This call is equivalent to calling GLib.variant_type_string_scan and confirming that the following character is a nul terminator. \n"});

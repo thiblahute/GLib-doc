@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/i18n.html#glibprototypedngettext", "fragment": "GLib.prototype.dngettext \nThis function is a wrapper of dngettext which does not translate the message if the default domain as set with textdomain has no translations for the current locale. \nSee GLib.prototype.dgettext for details of how this differs from dngettext proper. \n"});

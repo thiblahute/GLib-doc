@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvariant.html#glibvariantnew_signature", "fragment": "GLib.Variant.new_signature \nCreates a D Bus type signature GLib.Variant with the contents of string. string must be a valid D Bus type signature. Use GLib.variant_is_signature if you re not sure. \n"});

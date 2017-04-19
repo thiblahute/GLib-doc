@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/quarks.html#g_quark_from_string", "fragment": "GLib.prototype.quark_from_string \nGets the GLib.Quark identifying the given string. If the string does not currently have an associated GLib.Quark a new GLib.Quark is created using a copy of the string. \n"});

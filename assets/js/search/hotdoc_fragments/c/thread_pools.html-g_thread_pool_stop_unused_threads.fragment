@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/thread_pools.html#g_thread_pool_stop_unused_threads", "fragment": "g_thread_pool_stop_unused_threads \nStops all currently unused threads. This does not change the maximal number of unused threads. This function can be used to regularly stop all unused threads e.g. from g_timeout_add. \n"});

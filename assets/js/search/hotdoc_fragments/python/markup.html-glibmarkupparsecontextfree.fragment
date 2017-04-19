@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/markup.html#glibmarkupparsecontextfree", "fragment": "GLib.MarkupParseContext.free \nFrees a GLib.MarkupParseContext. \nThis function can t be called from inside one of the GLib.MarkupParser functions or while a subparser is pushed. \n"});

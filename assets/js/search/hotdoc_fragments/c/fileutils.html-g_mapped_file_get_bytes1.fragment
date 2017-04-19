@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/fileutils.html#g_mapped_file_get_bytes1", "fragment": "g_mapped_file_get_bytes \nCreates a new GBytes which references the data mapped from file. The mapped contents of the file must not be modified after creating this bytes object because a GBytes should be immutable. \n"});

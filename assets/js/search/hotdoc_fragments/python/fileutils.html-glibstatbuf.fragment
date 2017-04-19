@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/fileutils.html#glibstatbuf", "fragment": "GLib.StatBuf \nA type corresponding to the appropriate struct type for the stat system call depending on the platform and or compiler being used. \nSee g_stat not introspectable for more information. \n"});

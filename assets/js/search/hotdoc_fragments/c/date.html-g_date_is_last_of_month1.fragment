@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date.html#g_date_is_last_of_month1", "fragment": "g_date_is_last_of_month \nReturns TRUE if the date is the last day of the month. The date must be valid. \n"});

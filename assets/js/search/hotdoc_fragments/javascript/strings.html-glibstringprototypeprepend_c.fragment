@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/strings.html#glibstringprototypeprepend_c", "fragment": "GLib.String.prototype.prepend_c \nAdds a byte onto the start of a GLib.String expanding it if necessary. \n"});

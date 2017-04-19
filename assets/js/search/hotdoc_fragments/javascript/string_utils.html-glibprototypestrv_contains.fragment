@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/string_utils.html#glibprototypestrv_contains", "fragment": "GLib.prototype.strv_contains \nChecks if strv contains str. strv must not be null. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gregex.html#G_REGEX_MATCH_NEWLINE_ANYCRLF", "fragment": "Overrides the newline definition set when creating a new GRegex any r n or r n character sequence is recognized as a newline. Since \nG_REGEX_MATCH_BSR_ANYCRLF \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/keyfile.html#parameters9", "fragment": "key_file \nan empty GKeyFile struct \nfile \nthe path of a filename to load in the GLib filename encoding \nflags \nflags from GKeyFileFlags \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/misc_utils.html#glibprototypeformat_size_full", "fragment": "GLib.prototype.format_size_full \nFormats a size. \nThis function is similar to GLib.prototype.format_size but allows for flags that modify the output. See GLib.FormatSizeFlags. \n"});

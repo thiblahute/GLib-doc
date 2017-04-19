@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/strings.html#glibstringfree", "fragment": "GLib.String.free \nFrees the memory allocated for the GLib.String. If free_segment is True it also frees the character data. If it s False the caller gains ownership of the buffer and must free it after use with GLib.free. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hooks.html#g_hook_list_invoke_check1", "fragment": "g_hook_list_invoke_check \nCalls all of the GHook functions in a GHookList. Any function which returns FALSE is removed from the GHookList. \n"});

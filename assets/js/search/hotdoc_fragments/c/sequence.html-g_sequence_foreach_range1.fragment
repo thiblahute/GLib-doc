@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/sequence.html#g_sequence_foreach_range1", "fragment": "g_sequence_foreach_range \nCalls func for each item in the range begin end passing user_data to the function. \n"});

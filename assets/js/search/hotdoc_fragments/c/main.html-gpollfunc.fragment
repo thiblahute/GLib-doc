@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/main.html#gpollfunc", "fragment": "GPollFunc \nSpecifies the type of function passed to g_main_context_set_poll_func. The semantics of the function should match those of the poll system call. \n"});

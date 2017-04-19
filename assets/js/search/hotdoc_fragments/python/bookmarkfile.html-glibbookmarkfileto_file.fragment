@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/bookmarkfile.html#glibbookmarkfileto_file", "fragment": "GLib.BookmarkFile.to_file \nThis function outputs bookmark into a file. The write process is guaranteed to be atomic by using GLib.file_set_contents internally. \n"});

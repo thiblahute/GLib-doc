@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/misc_utils.html#glibfreefunc", "fragment": "GLib.FreeFunc \nDeclares a type of function which takes an arbitrary data pointer argument and has no return value. It is not currently used in GLib or GTK \n"});

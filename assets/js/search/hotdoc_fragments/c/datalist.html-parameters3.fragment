@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/datalist.html#parameters3", "fragment": "datalist \nlocation of a datalist \nkey_id \nthe GQuark identifying a data element \ndup_func \nfunction to duplicate the old value \nuser_data \npassed as user_data to dup_func \n"});

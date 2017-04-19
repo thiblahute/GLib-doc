@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvariant.html#glibvariantbuilderref", "fragment": "GLib.VariantBuilder.ref \nIncreases the reference count on builder. \nDon t call this on stack allocated GLib.VariantBuilder instances or bad things will happen. \n"});

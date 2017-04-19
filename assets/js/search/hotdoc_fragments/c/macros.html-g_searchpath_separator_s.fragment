@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/macros.html#g_searchpath_separator_s", "fragment": "G_SEARCHPATH_SEPARATOR_S \nThe search path separator as a string. This is on UNIX machines and under Windows. \n"});

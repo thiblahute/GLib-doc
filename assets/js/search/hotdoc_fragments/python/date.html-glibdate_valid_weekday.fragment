@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdate_valid_weekday", "fragment": "GLib.date_valid_weekday \nReturns True if the weekday is valid. The seven GLib.DateWeekday enumeration values are the only valid weekdays. \n"});

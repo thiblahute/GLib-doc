@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/keyfile.html#glibkeyfileget_groups", "fragment": "GLib.KeyFile.get_groups \nReturns all groups in the key file loaded with key_file. The array of returned groups will be None terminated so length may optionally be None. \n"});

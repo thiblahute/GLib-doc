@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/messages.html#parameters3", "fragment": "log_domain \nlog domain usually GLib.LOG_DOMAIN \nlog_level \nlog level either from GLib.LogLevelFlags or a user defined level \nfields \na dictionary GVariant of the type G_VARIANT_TYPE_VARDICT not introspectable containing the key value pairs of message data. \nSince \n"});

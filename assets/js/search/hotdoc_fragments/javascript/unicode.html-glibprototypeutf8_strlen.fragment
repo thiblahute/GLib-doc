@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/unicode.html#glibprototypeutf8_strlen", "fragment": "GLib.prototype.utf8_strlen \nComputes the length of the string in characters not including the terminating nul character. If the max th byte falls in the middle of a character the last partial character is not counted. \n"});

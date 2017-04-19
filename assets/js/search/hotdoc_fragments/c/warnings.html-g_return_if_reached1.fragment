@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/warnings.html#g_return_if_reached1", "fragment": "g_return_if_reached \nLogs a critical message and returns from the current function. This can only be used in functions which do not return a value. \n"});

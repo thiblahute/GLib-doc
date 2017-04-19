@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvariant.html#g_variant_new_variant", "fragment": "GLib.Variant.prototype.new_variant \nBoxes value. The result is a GLib.Variant instance representing a variant containing the original value. \nIf child is a floating reference see GLib.Variant.prototype.ref_sink the new instance takes ownership of child. \n"});

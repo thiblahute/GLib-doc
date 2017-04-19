@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#g_variant_new_signature1", "fragment": "g_variant_new_signature \nCreates a D Bus type signature GVariant with the contents of string. string must be a valid D Bus type signature. Use g_variant_is_signature if you re not sure. \n"});

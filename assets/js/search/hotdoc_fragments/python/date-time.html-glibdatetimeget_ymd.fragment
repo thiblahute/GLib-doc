@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date-time.html#glibdatetimeget_ymd", "fragment": "GLib.DateTime.get_ymd \nRetrieves the Gregorian day month and year of a given GLib.DateTime. \n"});

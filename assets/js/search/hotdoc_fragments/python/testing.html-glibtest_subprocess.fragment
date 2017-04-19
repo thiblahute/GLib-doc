@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/testing.html#glibtest_subprocess", "fragment": "GLib.test_subprocess \nReturns True after g_test_init not introspectable has been called if the test program is running under GLib.test_trap_subprocess. \n"});

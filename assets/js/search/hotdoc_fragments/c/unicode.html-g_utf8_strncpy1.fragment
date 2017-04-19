@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/unicode.html#g_utf8_strncpy1", "fragment": "g_utf8_strncpy \nLike the standard C strncpy function but copies a given number of characters instead of a given number of bytes. The src string must be valid UTF encoded text. Use g_utf8_validate on all text before trying to use UTF utility functions with it. \n"});

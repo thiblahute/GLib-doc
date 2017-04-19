@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/conversions.html#g_convert_error", "fragment": "G_CONVERT_ERROR \nError domain for character set conversions. Errors in this domain will be from the GConvertError enumeration. See GError for information on error domains. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/checksum.html#glibchecksumcopy", "fragment": "GLib.Checksum.copy \nCopies a GLib.Checksum. If checksum has been closed by calling GLib.Checksum.get_string or g_checksum_get_digest not introspectable the copied checksum will be closed as well. \n"});

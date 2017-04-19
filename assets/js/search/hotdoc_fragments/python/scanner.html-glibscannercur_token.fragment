@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/scanner.html#glibscannercur_token", "fragment": "GLib.Scanner.cur_token \nGets the current token type. This is simply the token field in the GLib.Scanner structure. \n"});

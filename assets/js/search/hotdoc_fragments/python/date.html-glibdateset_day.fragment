@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdateset_day", "fragment": "GLib.Date.set_day \nSets the day of the month for a GLib.Date. If the resulting day month year triplet is invalid the date will be invalid. \n"});

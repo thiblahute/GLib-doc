@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/trash_stack.html#g_trash_stack_height1", "fragment": "g_trash_stack_height \nReturns the height of a GTrashStack. \nNote that execution of this function is of O N complexity where N denotes the number of items on the stack. \n"});

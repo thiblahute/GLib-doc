@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_utils.html#g_strdupv1", "fragment": "g_strdupv \nCopies NULL terminated array of strings. The copy is a deep copy the new array should be freed by first freeing each string then the array itself. g_strfreev does this for you. If called on a NULL value g_strdupv simply returns NULL. \n"});

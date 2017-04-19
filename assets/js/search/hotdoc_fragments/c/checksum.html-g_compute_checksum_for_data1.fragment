@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/checksum.html#g_compute_checksum_for_data1", "fragment": "g_compute_checksum_for_data \nComputes the checksum for a binary data of length. This is a convenience wrapper for g_checksum_new g_checksum_get_string and g_checksum_free. \nThe hexadecimal string returned will be in lower case. \n"});

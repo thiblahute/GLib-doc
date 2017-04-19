@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/bookmarkfile.html#g_bookmark_file_has_group", "fragment": "GLib.BookmarkFile.prototype.has_group \nChecks whether group appears in the list of groups to which the bookmark for uri belongs to. \nIn the event the URI cannot be found false is returned and error is set to GLib.BookmarkFileError.prototype.uri_not_found. \n"});

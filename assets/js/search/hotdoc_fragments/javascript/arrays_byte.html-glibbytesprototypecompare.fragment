@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/arrays_byte.html#glibbytesprototypecompare", "fragment": "GLib.Bytes.prototype.compare \nCompares the two GLib.Bytes values. \nThis function can be used to sort GBytes instances in lexographical order. \n"});

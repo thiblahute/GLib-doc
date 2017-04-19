@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/string_utils.html#g_strcompress1", "fragment": "g_strcompress \nReplaces all escaped characters with their one byte equivalent. \nThis function does the reverse conversion of g_strescape. \n"});

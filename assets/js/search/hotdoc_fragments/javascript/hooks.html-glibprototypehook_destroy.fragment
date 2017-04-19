@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hooks.html#glibprototypehook_destroy", "fragment": "GLib.prototype.hook_destroy \nDestroys a GLib.Hook given its ID. \n"});

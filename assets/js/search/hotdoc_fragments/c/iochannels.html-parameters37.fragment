@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#parameters37", "fragment": "source \nthe GIOChannel event source \ncondition \nthe condition which has been satisfied \ndata \nuser data set in g_io_add_watch or g_io_add_watch_full \n"});

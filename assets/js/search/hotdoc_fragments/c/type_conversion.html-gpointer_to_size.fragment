@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/type_conversion.html#gpointer_to_size", "fragment": "GPOINTER_TO_SIZE \nExtracts a gsize from a pointer. The gsize must have been stored in the pointer with GSIZE_TO_POINTER. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/version.html#glibminor_version", "fragment": "GLib.MINOR_VERSION \nThe minor version number of the GLib library. \nLike gtk_minor_version but from the headers used at application compile time rather than from the library linked against at application run time. \n"});

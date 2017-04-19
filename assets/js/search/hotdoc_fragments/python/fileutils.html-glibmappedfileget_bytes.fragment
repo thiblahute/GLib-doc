@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/fileutils.html#glibmappedfileget_bytes", "fragment": "GLib.MappedFile.get_bytes \nCreates a new GLib.Bytes which references the data mapped from file. The mapped contents of the file must not be modified after creating this bytes object because a GLib.Bytes should be immutable. \n"});

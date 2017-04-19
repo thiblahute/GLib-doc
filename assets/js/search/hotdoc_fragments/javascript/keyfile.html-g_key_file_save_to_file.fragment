@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/keyfile.html#g_key_file_save_to_file", "fragment": "GLib.KeyFile.prototype.save_to_file \nWrites the contents of key_file to filename using GLib.prototype.file_set_contents. \nThis function can fail for any of the reasons that GLib.prototype.file_set_contents may fail. \n"});

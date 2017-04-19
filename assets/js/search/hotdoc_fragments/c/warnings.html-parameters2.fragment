@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/warnings.html#parameters2", "fragment": "prg_name \nthe program name needed by gdb for the S tack trace option. If prg_name is NULL g_get_prgname is called to get the program name which will work correctly if gdk_init or gtk_init has been called \n"});

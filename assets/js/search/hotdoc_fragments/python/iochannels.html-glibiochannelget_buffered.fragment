@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#glibiochannelget_buffered", "fragment": "GLib.IOChannel.get_buffered \nReturns whether channel is buffered. \nReturn Value True if the channel is buffered. \n"});

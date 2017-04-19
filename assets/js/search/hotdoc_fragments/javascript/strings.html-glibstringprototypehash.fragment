@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/strings.html#glibstringprototypehash", "fragment": "GLib.String.prototype.hash \nCreates a hash code for str for use with GLib.HashTable. \n"});

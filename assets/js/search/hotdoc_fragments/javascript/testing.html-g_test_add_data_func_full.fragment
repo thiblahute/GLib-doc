@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/testing.html#g_test_add_data_func_full", "fragment": "GLib.prototype.test_add_data_func_full \nCreate a new test case as with GLib.prototype.test_add_data_func but freeing test_data after the test run is complete. \n"});

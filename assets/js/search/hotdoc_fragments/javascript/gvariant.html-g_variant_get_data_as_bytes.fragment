@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvariant.html#g_variant_get_data_as_bytes", "fragment": "GLib.Variant.prototype.get_data_as_bytes \nReturns a pointer to the serialised form of a GLib.Variant instance. The semantics of this function are exactly the same as GLib.Variant.prototype.get_data except that the returned GLib.Bytes holds a reference to the variant data. \n"});

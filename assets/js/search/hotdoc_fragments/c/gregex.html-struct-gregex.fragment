@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gregex.html#struct-gregex", "fragment": "struct GRegex \nA GRegex is the compiled form of a regular expression pattern. This structure is opaque and its fields cannot be accessed directly. \n"});

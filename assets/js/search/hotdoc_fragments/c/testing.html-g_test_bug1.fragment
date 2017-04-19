@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/testing.html#g_test_bug1", "fragment": "g_test_bug \nThis function adds a message to test reports that associates a bug URI with a test case. Bug URIs are constructed from a base URI set with g_test_bug_base and bug_uri_snippet. \n"});

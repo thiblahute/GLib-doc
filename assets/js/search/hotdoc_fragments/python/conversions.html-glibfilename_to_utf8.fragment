@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/conversions.html#glibfilename_to_utf8", "fragment": "GLib.filename_to_utf8 \nConverts a string which is in the encoding used by GLib for filenames into a UTF string. Note that on Windows GLib uses UTF for filenames on other platforms this function indirectly depends on the current locale setlocale \n"});

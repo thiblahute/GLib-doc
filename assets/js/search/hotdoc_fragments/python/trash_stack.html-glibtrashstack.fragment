@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/trash_stack.html#glibtrashstack", "fragment": "GLib.TrashStack \nEach piece of memory that is pushed onto the stack is cast to a GTrashStack \n"});

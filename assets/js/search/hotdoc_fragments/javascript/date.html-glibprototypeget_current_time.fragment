@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#glibprototypeget_current_time", "fragment": "GLib.prototype.get_current_time \nEquivalent to the UNIX gettimeofday function but portable. \nYou may find GLib.prototype.get_real_time to be more convenient. \n"});

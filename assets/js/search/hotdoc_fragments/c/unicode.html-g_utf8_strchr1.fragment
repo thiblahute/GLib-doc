@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/unicode.html#g_utf8_strchr1", "fragment": "g_utf8_strchr \nFinds the leftmost occurrence of the given Unicode character in a UTF encoded string while limiting the search to len bytes. If len is allow unbounded search. \n"});

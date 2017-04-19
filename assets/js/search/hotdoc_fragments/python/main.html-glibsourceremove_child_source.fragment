@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibsourceremove_child_source", "fragment": "GLib.Source.remove_child_source \nDetaches child_source from source and destroys it. \nThis API is only intended to be used by implementations of GLib.Source. Do not call this API on a GLib.Source that you did not create. \n"});

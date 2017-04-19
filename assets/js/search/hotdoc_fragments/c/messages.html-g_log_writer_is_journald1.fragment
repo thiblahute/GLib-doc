@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/messages.html#g_log_writer_is_journald1", "fragment": "g_log_writer_is_journald \nCheck whether the given output_fd file descriptor is a connection to the systemd journal or something else like a log file or stdout or stderr \n"});

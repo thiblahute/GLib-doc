@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date-time.html#glibdatetimeprototypeunref", "fragment": "GLib.DateTime.prototype.unref \nAtomically decrements the reference count of datetime by one. \nWhen the reference count reaches zero the resources allocated by datetime are freed \n"});

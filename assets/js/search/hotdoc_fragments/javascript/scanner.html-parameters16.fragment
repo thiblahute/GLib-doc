@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/scanner.html#parameters16", "fragment": "scanner \na GLib.Scanner \nmessage \nthe message \nerror \ntrue if the message signals an error false if it signals a warning. \n"});

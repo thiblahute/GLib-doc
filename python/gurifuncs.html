@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>gurifuncs</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="gurifuncs.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="python">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="gurifuncs.markdown">
+    </div>
+        
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_uri_list_extract_uris">
+		
+<h3 id="gliburi_list_extract_uris">
+	<span><code>GLib.uri_list_extract_uris</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.uri_list_extract_uris (uri_list):
+    #python wrapper for 'g_uri_list_extract_uris'</pre>
+
+<p>Splits an URI list conforming to the text/uri-list
+mime type defined in RFC 2483 into individual URIs,
+discarding any comments. The URIs are not validated.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri_list:</code></em></i>
+		</p>
+	</td>
+		<td><p>an URI list</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated <a href="https://docs.python.org/2/library/constants.html#None">None</a>-terminated list
+of strings holding the individual URIs. The array should be freed
+with <a href="string_utils.html#g_strfreev">GLib.strfreev</a>.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_uri_unescape_segment">
+		
+<h3 id="gliburi_unescape_segment">
+	<span><code>GLib.uri_unescape_segment</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.uri_unescape_segment (escaped_string, escaped_string_end, illegal_characters):
+    #python wrapper for 'g_uri_unescape_segment'</pre>
+
+<p>Unescapes a segment of an escaped string.</p>
+<p>If any of the characters in <em>illegal_characters</em> or the character zero appears
+as an escaped character in <em>escaped_string</em> then that is an error and <a href="https://docs.python.org/2/library/constants.html#None">None</a>
+will be returned. This is useful it you want to avoid for instance having a
+slash being expanded in an escaped path element, which might confuse pathname
+handling.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>escaped_string:</code></em></i>
+		</p>
+	</td>
+		<td><p>A string, may be <a href="https://docs.python.org/2/library/constants.html#None">None</a></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>escaped_string_end:</code></em></i>
+		</p>
+	</td>
+		<td><p>Pointer to end of <em>escaped_string</em>, may be <a href="https://docs.python.org/2/library/constants.html#None">None</a></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>illegal_characters:</code></em></i>
+		</p>
+	</td>
+		<td><p>An optional string of illegal characters not to be allowed, may be <a href="https://docs.python.org/2/library/constants.html#None">None</a></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>an unescaped version of <em>escaped_string</em> or <a href="https://docs.python.org/2/library/constants.html#None">None</a> on error.
+The returned string should be freed when no longer needed.  As a
+special case if <a href="https://docs.python.org/2/library/constants.html#None">None</a> is given for <em>escaped_string</em>, this function
+will return <a href="https://docs.python.org/2/library/constants.html#None">None</a>.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_filename_to_uri">
+		
+<h3 id="glibfilename_to_uri">
+	<span><code>GLib.filename_to_uri</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.filename_to_uri (filename, hostname):
+    #python wrapper for 'g_filename_to_uri'</pre>
+
+<p>Converts an absolute filename to an escaped ASCII-encoded URI, with the path
+component following Section 3.3. of RFC 2396.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>filename:</code></em></i>
+		</p>
+	</td>
+		<td><p>an absolute filename specified in the GLib file
+name encoding, which is the on-disk file name bytes on Unix, and UTF-8
+on Windows</p>
+</td>
+<td>
+<a title="str" href="https://docs.python.org/2.7/library/functions.html#str">str</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hostname:</code></em></i>
+		</p>
+	</td>
+		<td><p>A UTF-8 encoded hostname, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> for none.</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated string holding the resulting
+URI, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> on an error.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_uri_parse_scheme">
+		
+<h3 id="gliburi_parse_scheme">
+	<span><code>GLib.uri_parse_scheme</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.uri_parse_scheme (uri):
+    #python wrapper for 'g_uri_parse_scheme'</pre>
+
+<p>Gets the scheme portion of a URI string. RFC 3986 decodes the scheme as:</p>
+<pre><code class="language-["> URI = scheme ":" hier-part [ "?" query ] [ "#" fragment ]
+</code></pre>
+<p>Common schemes include "file", "http", "svn+ssh", etc.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a valid URI.</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The "Scheme" component of the URI, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> on error.
+The returned string should be freed when no longer needed.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_filename_from_uri">
+		
+<h3 id="glibfilename_from_uri">
+	<span><code>GLib.filename_from_uri</code></span>
+</h3>
+
+		<pre class="programlisting">
+@raises(<a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html">GLib.GError</a>)
+def GLib.filename_from_uri (uri):
+    #python wrapper for 'g_filename_from_uri'</pre>
+
+<p>Converts an escaped ASCII-encoded URI to a local filename in the
+encoding used for filenames.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>uri:</code></em></i>
+		</p>
+	</td>
+		<td><p>a uri describing a filename (escaped, encoded in ASCII).</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated string holding
+the resulting filename, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> on an error.</p>
+
+	</td>
+	<td>
+		<a title="str" href="https://docs.python.org/2.7/library/functions.html#str">str</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>hostname:</i>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated string holding
+the resulting filename, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> on an error.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_uri_escape_string">
+		
+<h3 id="gliburi_escape_string">
+	<span><code>GLib.uri_escape_string</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.uri_escape_string (unescaped, reserved_chars_allowed, allow_utf8):
+    #python wrapper for 'g_uri_escape_string'</pre>
+
+<p>Escapes a string for use in a URI.</p>
+<p>Normally all characters that are not "unreserved" (i.e. ASCII alphanumerical
+characters plus dash, dot, underscore and tilde) are escaped.
+But if you specify characters in <em>reserved_chars_allowed</em> they are not
+escaped. This is useful for the "reserved" characters in the URI
+specification, since those are allowed unescaped in some portions of
+a URI.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>unescaped:</code></em></i>
+		</p>
+	</td>
+		<td><p>the unescaped input string.</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>reserved_chars_allowed:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string of reserved characters that
+are allowed to be used, or <a href="https://docs.python.org/2/library/constants.html#None">None</a>.</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>allow_utf8:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the result can include UTF-8 characters.</p>
+</td>
+<td>
+<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>an escaped version of <em>unescaped</em>. The returned string should be
+freed when no longer needed.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_uri_unescape_string">
+		
+<h3 id="gliburi_unescape_string">
+	<span><code>GLib.uri_unescape_string</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.uri_unescape_string (escaped_string, illegal_characters):
+    #python wrapper for 'g_uri_unescape_string'</pre>
+
+<p>Unescapes a whole escaped string.</p>
+<p>If any of the characters in <em>illegal_characters</em> or the character zero appears
+as an escaped character in <em>escaped_string</em> then that is an error and <a href="https://docs.python.org/2/library/constants.html#None">None</a>
+will be returned. This is useful it you want to avoid for instance having a
+slash being expanded in an escaped path element, which might confuse pathname
+handling.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>escaped_string:</code></em></i>
+		</p>
+	</td>
+		<td><p>an escaped string to be unescaped.</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>illegal_characters:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string of illegal characters not to be
+allowed, or <a href="https://docs.python.org/2/library/constants.html#None">None</a>.</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>an unescaped version of <em>escaped_string</em>. The returned string
+should be freed when no longer needed.</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_URI_RESERVED_CHARS_SUBCOMPONENT_DELIMITERS">
+		
+<h3 class="constant" id="gliburi_reserved_chars_subcomponent_delimiters">
+	GLib.URI_RESERVED_CHARS_SUBCOMPONENT_DELIMITERS
+</h3>
+
+		<p>Subcomponent delimiter characters as defined in RFC 3986. Includes "!$&amp;'()*+,;=".</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_URI_RESERVED_CHARS_GENERIC_DELIMITERS">
+		
+<h3 class="constant" id="gliburi_reserved_chars_generic_delimiters">
+	GLib.URI_RESERVED_CHARS_GENERIC_DELIMITERS
+</h3>
+
+		<p>Generic delimiters characters as defined in RFC 3986. Includes ":/?#[]@".</p>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

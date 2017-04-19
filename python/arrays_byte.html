@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GByteArray</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="arrays_byte.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="python">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="arrays_byte.markdown">
+        <h1 id="gbytearray">GByteArray</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GBytes</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GBytesConstructors">Constructors</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_new_take">
+		
+<h4 id="glibbytesnew_take">
+	<span><code>GLib.Bytes.new_take</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Bytes.new_take (data, size):
+    #python wrapper for 'g_bytes_new_take'</pre>
+
+<p>Creates a new <a href="arrays_byte.html#GBytes">GLib.Bytes</a> from <em>data</em>.</p>
+<p>After this call, <em>data</em> belongs to the bytes and may no longer be
+modified by the caller.  <a href="memory.html#g_free">GLib.free</a> will be called on <em>data</em> when the
+bytes is no longer in use. Because of this <em>data</em> must have been created by
+a call to <a href="memory.html#g_malloc">GLib.malloc</a>, <a href="memory.html#g_malloc0">GLib.malloc0</a> or <a href="memory.html#g_realloc">GLib.realloc</a> or by one of the many
+functions that wrap these calls (such as <a href="../c/memory.html#g_new">g_new (not introspectable)</a>, <a href="string_utils.html#g_strdup">GLib.strdup</a>, etc).</p>
+<p>For creating <a href="arrays_byte.html#GBytes">GLib.Bytes</a> with memory from other allocators, see
+<a href="../c/arrays_byte.html#g_bytes_new_with_free_func">g_bytes_new_with_free_func (not introspectable)</a>.</p>
+<p><em>data</em> may be <a href="https://docs.python.org/2/library/constants.html#None">None</a> if <em>size</em> is 0.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>(transfer full) (array length=size) (element-type guint8) (nullable):
+the data to be used for the bytes</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>size:</code></em></i>
+		</p>
+	</td>
+		<td><p>the size of <em>data</em></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="arrays_byte.html#GBytes">GLib.Bytes</a></p>
+
+	</td>
+	<td>
+		<a title="GLib.Bytes" href="arrays_byte.html#GBytes">GLib.Bytes</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_new">
+		
+<h4 id="glibbytesnew">
+	<span><code>GLib.Bytes.new</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Bytes.new (data, size):
+    #python wrapper for 'g_bytes_new'</pre>
+
+<p>Creates a new <a href="arrays_byte.html#GBytes">GLib.Bytes</a> from <em>data</em>.</p>
+<p><em>data</em> is copied. If <em>size</em> is 0, <em>data</em> may be <a href="https://docs.python.org/2/library/constants.html#None">None</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>(transfer none) (array length=size) (element-type guint8) (nullable):
+the data to be used for the bytes</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>size:</code></em></i>
+		</p>
+	</td>
+		<td><p>the size of <em>data</em></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="arrays_byte.html#GBytes">GLib.Bytes</a></p>
+
+	</td>
+	<td>
+		<a title="GLib.Bytes" href="arrays_byte.html#GBytes">GLib.Bytes</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+
+
+
+            <h3 class="symbol_section" id="GBytesMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_unref_to_array">
+		
+<h4 id="glibbytesunref_to_array">
+	<span><code>GLib.Bytes.unref_to_array</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Bytes.unref_to_array (self):
+    #python wrapper for 'g_bytes_unref_to_array'</pre>
+
+<p>Unreferences the bytes, and returns a new mutable <a href="arrays_byte.html#GByteArray">GLib.ByteArray</a> containing
+the same byte data.</p>
+<p>As an optimization, the byte data is transferred to the array without copying
+if this was the last reference to bytes and bytes was created with
+<a href="arrays_byte.html#g_bytes_new">GLib.Bytes.new</a>, <a href="arrays_byte.html#g_bytes_new_take">GLib.Bytes.new_take</a> or <a href="arrays_byte.html#g_byte_array_free_to_bytes">GLib.byte_array_free_to_bytes</a>. In all
+other cases the data is copied.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GBytes">GLib.Bytes</a></p>
+</td>
+<td>
+<a title="GLib.Bytes" href="arrays_byte.html#GBytes">GLib.Bytes</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new mutable <a href="arrays_byte.html#GByteArray">GLib.ByteArray</a> containing the same byte data</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_new_from_bytes">
+		
+<h4 id="glibbytesnew_from_bytes">
+	<span><code>GLib.Bytes.new_from_bytes</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Bytes.new_from_bytes (self, offset, length):
+    #python wrapper for 'g_bytes_new_from_bytes'</pre>
+
+<p>Creates a <a href="arrays_byte.html#GBytes">GLib.Bytes</a> which is a subsection of another <a href="arrays_byte.html#GBytes">GLib.Bytes</a>. The <em>offset</em> +
+<em>length</em> may not be longer than the size of <em>bytes</em>.</p>
+<p>A reference to <em>bytes</em> will be held by the newly created <a href="arrays_byte.html#GBytes">GLib.Bytes</a> until
+the byte data is no longer needed.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GBytes">GLib.Bytes</a></p>
+</td>
+<td>
+<a title="GLib.Bytes" href="arrays_byte.html#GBytes">GLib.Bytes</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>offset:</code></em></i>
+		</p>
+	</td>
+		<td><p>offset which subsection starts at</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of subsection</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="arrays_byte.html#GBytes">GLib.Bytes</a></p>
+
+	</td>
+	<td>
+		<a title="GLib.Bytes" href="arrays_byte.html#GBytes">GLib.Bytes</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_unref_to_data">
+		
+<h4 id="glibbytesunref_to_data">
+	<span><code>GLib.Bytes.unref_to_data</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Bytes.unref_to_data (self):
+    #python wrapper for 'g_bytes_unref_to_data'</pre>
+
+<p>Unreferences the bytes, and returns a pointer the same byte data
+contents.</p>
+<p>As an optimization, the byte data is returned without copying if this was
+the last reference to bytes and bytes was created with <a href="arrays_byte.html#g_bytes_new">GLib.Bytes.new</a>,
+<a href="arrays_byte.html#g_bytes_new_take">GLib.Bytes.new_take</a> or <a href="arrays_byte.html#g_byte_array_free_to_bytes">GLib.byte_array_free_to_bytes</a>. In all other cases the
+data is copied.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GBytes">GLib.Bytes</a></p>
+</td>
+<td>
+<a title="GLib.Bytes" href="arrays_byte.html#GBytes">GLib.Bytes</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to the same byte data, which should be
+freed with <a href="memory.html#g_free">GLib.free</a></p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>size:</i>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to the same byte data, which should be
+freed with <a href="memory.html#g_free">GLib.free</a></p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_hash">
+		
+<h4 id="glibbyteshash">
+	<span><code>GLib.Bytes.hash</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Bytes.hash (self):
+    #python wrapper for 'g_bytes_hash'</pre>
+
+<p>Creates an integer hash code for the byte data in the <a href="arrays_byte.html#GBytes">GLib.Bytes</a>.</p>
+<p>This function can be passed to <a href="../c/hash_tables.html#g_hash_table_new">g_hash_table_new (not introspectable)</a> as the <em>key_hash_func</em>
+parameter, when using non-%NULL <a href="arrays_byte.html#GBytes">GLib.Bytes</a> pointers as keys in a <a href="hash_tables.html#GHashTable">GLib.HashTable</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a <a href="arrays_byte.html#GBytes">GLib.Bytes</a> key</p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a hash value corresponding to the key.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_ref">
+		
+<h4 id="glibbytesref">
+	<span><code>GLib.Bytes.ref</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Bytes.ref (self):
+    #python wrapper for 'g_bytes_ref'</pre>
+
+<p>Increase the reference count on <em>bytes</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GBytes">GLib.Bytes</a></p>
+</td>
+<td>
+<a title="GLib.Bytes" href="arrays_byte.html#GBytes">GLib.Bytes</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="arrays_byte.html#GBytes">GLib.Bytes</a></p>
+
+	</td>
+	<td>
+		<a title="GLib.Bytes" href="arrays_byte.html#GBytes">GLib.Bytes</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_get_data">
+		
+<h4 id="glibbytesget_data">
+	<span><code>GLib.Bytes.get_data</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Bytes.get_data (self):
+    #python wrapper for 'g_bytes_get_data'</pre>
+
+<p>Get the byte data in the <a href="arrays_byte.html#GBytes">GLib.Bytes</a>. This data should not be modified.</p>
+<p>This function will always return the same pointer for a given <a href="arrays_byte.html#GBytes">GLib.Bytes</a>.</p>
+<p><a href="https://docs.python.org/2/library/constants.html#None">None</a> may be returned if <em>size</em> is 0. This is not guaranteed, as the <a href="arrays_byte.html#GBytes">GLib.Bytes</a>
+may represent an empty string with <em>data</em> non-%NULL and <em>size</em> as 0. <a href="https://docs.python.org/2/library/constants.html#None">None</a> will
+not be returned if <em>size</em> is non-zero.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GBytes">GLib.Bytes</a></p>
+</td>
+<td>
+<a title="GLib.Bytes" href="arrays_byte.html#GBytes">GLib.Bytes</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 data-toc-skip="true" id="returns-a-tuple-made-of1">Returns a tuple made of</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>(transfer none) (array length=size) (element-type guint8) (nullable):
+a pointer to the byte data, or <a href="https://docs.python.org/2/library/constants.html#None">None</a></p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>size:</i>
+				</p>
+	</td>
+	<td>
+		<p>(transfer none) (array length=size) (element-type guint8) (nullable):
+a pointer to the byte data, or <a href="https://docs.python.org/2/library/constants.html#None">None</a></p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_get_size">
+		
+<h4 id="glibbytesget_size">
+	<span><code>GLib.Bytes.get_size</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Bytes.get_size (self):
+    #python wrapper for 'g_bytes_get_size'</pre>
+
+<p>Get the size of the byte data in the <a href="arrays_byte.html#GBytes">GLib.Bytes</a>.</p>
+<p>This function will always return the same value for a given <a href="arrays_byte.html#GBytes">GLib.Bytes</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GBytes">GLib.Bytes</a></p>
+</td>
+<td>
+<a title="GLib.Bytes" href="arrays_byte.html#GBytes">GLib.Bytes</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the size</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_compare">
+		
+<h4 id="glibbytescompare">
+	<span><code>GLib.Bytes.compare</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Bytes.compare (self, bytes2):
+    #python wrapper for 'g_bytes_compare'</pre>
+
+<p>Compares the two <a href="arrays_byte.html#GBytes">GLib.Bytes</a> values.</p>
+<p>This function can be used to sort GBytes instances in lexographical order.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes1:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a <a href="arrays_byte.html#GBytes">GLib.Bytes</a></p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes2:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a <a href="arrays_byte.html#GBytes">GLib.Bytes</a> to compare with <em>bytes1</em></p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a negative value if bytes2 is lesser, a positive value if bytes2 is
+greater, and zero if bytes2 is equal to bytes1</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_unref">
+		
+<h4 id="glibbytesunref">
+	<span><code>GLib.Bytes.unref</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Bytes.unref (self):
+    #python wrapper for 'g_bytes_unref'</pre>
+
+<p>Releases a reference on <em>bytes</em>.  This may result in the bytes being
+freed.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GBytes">GLib.Bytes</a></p>
+</td>
+<td>
+<a title="GLib.Bytes" href="arrays_byte.html#GBytes">GLib.Bytes</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_bytes_equal">
+		
+<h4 id="glibbytesequal">
+	<span><code>GLib.Bytes.equal</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.Bytes.equal (self, bytes2):
+    #python wrapper for 'g_bytes_equal'</pre>
+
+<p>Compares the two <a href="arrays_byte.html#GBytes">GLib.Bytes</a> values being pointed to and returns
+<a href="https://docs.python.org/2/library/constants.html#True">True</a> if they are equal.</p>
+<p>This function can be passed to <a href="../c/hash_tables.html#g_hash_table_new">g_hash_table_new (not introspectable)</a> as the <em>key_equal_func</em>
+parameter, when using non-%NULL <a href="arrays_byte.html#GBytes">GLib.Bytes</a> pointers as keys in a <a href="hash_tables.html#GHashTable">GLib.HashTable</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes1:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a <a href="arrays_byte.html#GBytes">GLib.Bytes</a></p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>bytes2:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to a <a href="arrays_byte.html#GBytes">GLib.Bytes</a> to compare with <em>bytes1</em></p>
+</td>
+<td>
+<a title="object" href="https://docs.python.org/2.7/library/functions.html#object">object</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the two keys match.</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.22;" id="g_byte_array_unref">
+		
+<h3 id="glibbyte_array_unref">
+	<span><code>GLib.byte_array_unref</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.byte_array_unref (array):
+    #python wrapper for 'g_byte_array_unref'</pre>
+
+<p>Atomically decrements the reference count of <em>array</em> by one. If the
+reference count drops to 0, all memory allocated by the array is
+released. This function is thread-safe and may be called from any
+thread.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>A <a href="arrays_byte.html#GByteArray">GLib.ByteArray</a></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.22
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_byte_array_new_take">
+		
+<h3 id="glibbyte_array_new_take">
+	<span><code>GLib.byte_array_new_take</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.byte_array_new_take (data, len):
+    #python wrapper for 'g_byte_array_new_take'</pre>
+
+<p>Create byte array containing the data. The data will be owned by the array
+and will be freed with <a href="memory.html#g_free">GLib.free</a>, i.e. it could be allocated using <a href="string_utils.html#g_strdup">GLib.strdup</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>byte data for the array</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>data</em></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="arrays_byte.html#GByteArray">GLib.ByteArray</a></p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="g_byte_array_free_to_bytes">
+		
+<h3 id="glibbyte_array_free_to_bytes">
+	<span><code>GLib.byte_array_free_to_bytes</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.byte_array_free_to_bytes (array):
+    #python wrapper for 'g_byte_array_free_to_bytes'</pre>
+
+<p>Transfers the data from the <a href="arrays_byte.html#GByteArray">GLib.ByteArray</a> into a new immutable <a href="arrays_byte.html#GBytes">GLib.Bytes</a>.</p>
+<p>The <a href="arrays_byte.html#GByteArray">GLib.ByteArray</a> is freed unless the reference count of <em>array</em> is greater
+than one, the <a href="arrays_byte.html#GByteArray">GLib.ByteArray</a> wrapper is preserved but the size of <em>array</em>
+will be set to zero.</p>
+<p>This is identical to using <a href="arrays_byte.html#g_bytes_new_take">GLib.Bytes.new_take</a> and <a href="arrays_byte.html#g_byte_array_free">GLib.byte_array_free</a>
+together.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GByteArray">GLib.ByteArray</a></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new immutable <a href="arrays_byte.html#GBytes">GLib.Bytes</a> representing same
+byte data that was in the array</p>
+
+	</td>
+	<td>
+		<a title="GLib.Bytes" href="arrays_byte.html#GBytes">GLib.Bytes</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.32
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_byte_array_new">
+		
+<h3 id="glibbyte_array_new">
+	<span><code>GLib.byte_array_new</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.byte_array_new ():
+    #python wrapper for 'g_byte_array_new'</pre>
+
+<p>Creates a new <a href="arrays_byte.html#GByteArray">GLib.ByteArray</a> with a reference count of 1.</p>
+
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new <a href="arrays_byte.html#GByteArray">GLib.ByteArray</a></p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_byte_array_free">
+		
+<h3 id="glibbyte_array_free">
+	<span><code>GLib.byte_array_free</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.byte_array_free (array, free_segment):
+    #python wrapper for 'g_byte_array_free'</pre>
+
+<p>Frees the memory allocated by the <a href="arrays_byte.html#GByteArray">GLib.ByteArray</a>. If <em>free_segment</em> is
+<a href="https://docs.python.org/2/library/constants.html#True">True</a> it frees the actual byte data. If the reference count of
+<em>array</em> is greater than one, the <a href="arrays_byte.html#GByteArray">GLib.ByteArray</a> wrapper is preserved but
+the size of <em>array</em> will be set to zero.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="arrays_byte.html#GByteArray">GLib.ByteArray</a></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>free_segment:</code></em></i>
+		</p>
+	</td>
+		<td><p>if <a href="https://docs.python.org/2/library/constants.html#True">True</a> the actual byte data is freed as well</p>
+</td>
+<td>
+<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the element data if <em>free_segment</em> is <a href="https://docs.python.org/2/library/constants.html#False">False</a>, otherwise
+<a href="https://docs.python.org/2/library/constants.html#None">None</a>.  The element data should be freed using <a href="memory.html#g_free">GLib.free</a>.</p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GByteArray">
+		<h3 id="glibbytearray">
+	GLib.ByteArray
+</h3>
+
+		<p>Contains the public fields of a GByteArray.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="attributes">Attributes</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GByteArray.data">
+		<td>
+		<p>
+		<i><em><code>guint8* <em><code>data</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>a pointer to the element data. The data may be moved as
+elements are added to the <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+</td>
+</tr>
+
+						<tr id="GByteArray.len">
+		<td>
+		<p>
+		<i><em><code>guint <em><code>len</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of elements in the <a href="arrays_byte.html#GByteArray">GByteArray</a></p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.32;" id="GBytes">
+		<h3 id="glibbytes">
+	GLib.Bytes
+</h3>
+
+		<p>A simple refcounted data type representing an immutable sequence of zero or
+more bytes from an unspecified origin.</p>
+<p>The purpose of a <a href="arrays_byte.html#GBytes">GLib.Bytes</a> is to keep the memory region that it holds
+alive for as long as anyone holds a reference to the bytes.  When
+the last reference count is dropped, the memory is released. Multiple
+unrelated callers can use byte data in the <a href="arrays_byte.html#GBytes">GLib.Bytes</a> without coordinating
+their activities, resting assured that the byte data will not change or
+move while they hold a reference.</p>
+<p>A <a href="arrays_byte.html#GBytes">GLib.Bytes</a> can come from many different origins that may have
+different procedures for freeing the memory region.  Examples are
+memory from <a href="memory.html#g_malloc">GLib.malloc</a>, from memory slices, from a <a href="fileutils.html#GMappedFile">GLib.MappedFile</a> or
+memory from other allocators.</p>
+<p><a href="arrays_byte.html#GBytes">GLib.Bytes</a> work well as keys in <a href="hash_tables.html#GHashTable">GLib.HashTable</a>. Use <a href="arrays_byte.html#g_bytes_equal">GLib.Bytes.equal</a> and
+<a href="arrays_byte.html#g_bytes_hash">GLib.Bytes.hash</a> as parameters to <a href="../c/hash_tables.html#g_hash_table_new">g_hash_table_new (not introspectable)</a> or <a href="../c/hash_tables.html#g_hash_table_new_full">g_hash_table_new_full (not introspectable)</a>.
+<a href="arrays_byte.html#GBytes">GLib.Bytes</a> can also be used as keys in a <a href="trees-binary.html#GTree">GLib.Tree</a> by passing the <a href="arrays_byte.html#g_bytes_compare">GLib.Bytes.compare</a>
+function to <a href="../c/trees-binary.html#g_tree_new">g_tree_new (not introspectable)</a>.</p>
+<p>The data pointed to by this bytes must not be modified. For a mutable
+array of bytes see <a href="arrays_byte.html#GByteArray">GLib.ByteArray</a>. Use <a href="arrays_byte.html#g_bytes_unref_to_array">GLib.Bytes.unref_to_array</a> to create a
+mutable array for a <a href="arrays_byte.html#GBytes">GLib.Bytes</a> sequence. To create an immutable <a href="arrays_byte.html#GBytes">GLib.Bytes</a> from
+a mutable <a href="arrays_byte.html#GByteArray">GLib.ByteArray</a>, use the <a href="arrays_byte.html#g_byte_array_free_to_bytes">GLib.byte_array_free_to_bytes</a> function.</p>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

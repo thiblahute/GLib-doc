@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/queue.html#glibqueueprototypefree_full", "fragment": "GLib.Queue.prototype.free_full \nConvenience method which frees all the memory used by a GLib.Queue and calls the specified destroy function on every element s data. \n"});

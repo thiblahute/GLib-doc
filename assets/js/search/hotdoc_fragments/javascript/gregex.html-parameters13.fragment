@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gregex.html#parameters13", "fragment": "regex \na GLib.Regex structure from GLib.Regex.prototype.new \nstring \nthe string to scan for matches \nstring_len \nthe length of string or if string is nul terminated \nstart_position \nstarting index of the string to match in bytes \nmatch_options \nmatch options \n"});

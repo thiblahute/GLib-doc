@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/arrays_byte.html#glibbytesnew", "fragment": "GLib.Bytes.new \nCreates a new GLib.Bytes from data. \ndata is copied. If size is data may be None. \n"});

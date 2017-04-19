@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#g_main_context_find_source_by_user_data", "fragment": "GLib.MainContext.find_source_by_user_data \nFinds a source with the given user data for the callback. If multiple sources exist with the same user data the first one found will be returned. \n"});

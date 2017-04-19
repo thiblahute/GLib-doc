@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#parameters20", "fragment": "element_type \nthe GVariantType of each element \nelements \na pointer to the fixed array of contiguous elements \nn_elements \nthe number of elements \nelement_size \nthe size of each element \n"});

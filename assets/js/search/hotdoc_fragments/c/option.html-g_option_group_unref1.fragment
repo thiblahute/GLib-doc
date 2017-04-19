@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/option.html#g_option_group_unref1", "fragment": "g_option_group_unref \nDecrements the reference count of group by one. If the reference count drops to the group will be freed. and all memory allocated by the group is released. \n"});

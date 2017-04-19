@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hooks.html#glibhooklistprototypeinit", "fragment": "GLib.HookList.prototype.init \nInitializes a GLib.HookList. This must be called before the GLib.HookList is used. \n"});

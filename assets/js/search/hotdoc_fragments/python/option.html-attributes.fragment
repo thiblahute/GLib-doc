@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/option.html#attributes", "fragment": "const gchar long_name \nThe long name of an option can be used to specify it in a commandline as long_name. Every option must have a long name. To resolve conflicts if multiple option groups contain the same long name it is also possible to specify the option as groupname long_name. \n"});

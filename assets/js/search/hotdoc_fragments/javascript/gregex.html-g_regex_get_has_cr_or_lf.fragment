@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gregex.html#g_regex_get_has_cr_or_lf", "fragment": "GLib.Regex.prototype.get_has_cr_or_lf \nChecks whether the pattern contains explicit CR or LF references. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvariant.html#g_variant_new_boolean", "fragment": "GLib.Variant.prototype.new_boolean \nCreates a new boolean GLib.Variant instance either true or false. \n"});

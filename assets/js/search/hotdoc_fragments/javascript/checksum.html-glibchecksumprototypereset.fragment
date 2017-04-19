@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/checksum.html#glibchecksumprototypereset", "fragment": "GLib.Checksum.prototype.reset \nResets the state of the checksum back to its initial state. \n"});

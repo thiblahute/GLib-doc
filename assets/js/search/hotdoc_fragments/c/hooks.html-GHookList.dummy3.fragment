@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hooks.html#GHookList.dummy3", "fragment": "GHookFinalizeFunc finalize_hook \nthe function to call to finalize a GHook element. The default behaviour is to call the hooks destroy function \n"});

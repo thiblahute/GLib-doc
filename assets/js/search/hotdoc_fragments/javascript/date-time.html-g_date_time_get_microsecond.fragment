@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date-time.html#g_date_time_get_microsecond", "fragment": "GLib.DateTime.prototype.get_microsecond \nRetrieves the microsecond of the date represented by datetime \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/quarks.html#g_quark_from_string1", "fragment": "g_quark_from_string \nGets the GQuark identifying the given string. If the string does not currently have an associated GQuark a new GQuark is created using a copy of the string. \n"});

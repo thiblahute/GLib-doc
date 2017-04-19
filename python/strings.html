@@ -1,0 +1,2687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GString</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="strings.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="python">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="strings.markdown">
+        <h1 id="gstring">GString</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GString</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GStringMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_truncate">
+		
+<h4 id="glibstringtruncate">
+	<span><code>GLib.String.truncate</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.truncate (self, len):
+    #python wrapper for 'g_string_truncate'</pre>
+
+<p>Cuts off the end of the GString, leaving the first <em>len</em> bytes.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the new size of <em>string</em></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_prepend_len">
+		
+<h4 id="glibstringprepend_len">
+	<span><code>GLib.String.prepend_len</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.prepend_len (self, val, len):
+    #python wrapper for 'g_string_prepend_len'</pre>
+
+<p>Prepends <em>len</em> bytes of <em>val</em> to <em>string</em>.
+Because <em>len</em> is provided, <em>val</em> may contain
+embedded nuls and need not be nul-terminated.</p>
+<p>Since this function does not stop at nul bytes,
+it is the caller's responsibility to ensure that
+<em>val</em> has at least <em>len</em> addressable bytes.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>bytes to prepend</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of bytes in <em>val</em> to prepend</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_insert">
+		
+<h4 id="glibstringinsert">
+	<span><code>GLib.String.insert</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.insert (self, pos, val):
+    #python wrapper for 'g_string_insert'</pre>
+
+<p>Inserts a copy of a string into a <a href="strings.html#GString">GLib.String</a>,
+expanding it if necessary.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pos:</code></em></i>
+		</p>
+	</td>
+		<td><p>the position to insert the copy of the string</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to insert</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_hash">
+		
+<h4 id="glibstringhash">
+	<span><code>GLib.String.hash</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.hash (self):
+    #python wrapper for 'g_string_hash'</pre>
+
+<p>Creates a hash code for <em>str</em>; for use with <a href="hash_tables.html#GHashTable">GLib.HashTable</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string to hash</p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>hash code for <em>str</em></p>
+
+	</td>
+	<td>
+		<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_prepend_unichar">
+		
+<h4 id="glibstringprepend_unichar">
+	<span><code>GLib.String.prepend_unichar</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.prepend_unichar (self, wc):
+    #python wrapper for 'g_string_prepend_unichar'</pre>
+
+<p>Converts a Unicode character into UTF-8, and prepends it
+to the string.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>wc:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_append_c">
+		
+<h4 id="glibstringappend_c">
+	<span><code>GLib.String.append_c</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.append_c (self, c):
+    #python wrapper for 'g_string_append_c'</pre>
+
+<p>Adds a byte onto the end of a <a href="strings.html#GString">GLib.String</a>, expanding
+it if necessary.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>the byte to append onto the end of <em>string</em></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_equal">
+		
+<h4 id="glibstringequal">
+	<span><code>GLib.String.equal</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.equal (self, v2):
+    #python wrapper for 'g_string_equal'</pre>
+
+<p>Compares two strings for equality, returning <a href="https://docs.python.org/2/library/constants.html#True">True</a> if they are equal.
+For use with <a href="hash_tables.html#GHashTable">GLib.HashTable</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>v2:</code></em></i>
+		</p>
+	</td>
+		<td><p>another <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="https://docs.python.org/2/library/constants.html#True">True</a> if the strings are the same length and contain the
+same bytes</p>
+
+	</td>
+	<td>
+		<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.2;" id="g_string_down">
+		
+<h4 id="glibstringdown">
+	<span><code>GLib.String.down</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.down (self):
+    #python wrapper for 'g_string_down'</pre>
+
+<p>Converts a <a href="strings.html#GString">GLib.String</a> to lowercase.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the <a href="strings.html#GString">GLib.String</a></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	deprecated			: 2.2: This function uses the locale-specific
+     tolower() function, which is almost never the right thing.
+     Use g_string_ascii_down() or g_utf8_strdown() instead.
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_assign">
+		
+<h4 id="glibstringassign">
+	<span><code>GLib.String.assign</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.assign (self, rval):
+    #python wrapper for 'g_string_assign'</pre>
+
+<p>Copies the bytes from a string into a <a href="strings.html#GString">GLib.String</a>,
+destroying any previous contents. It is rather like
+the standard strcpy function, except that you do not
+have to worry about having enough space to copy the string.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the destination <a href="strings.html#GString">GLib.String</a>. Its current contents
+are destroyed.</p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>rval:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to copy into <em>string</em></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_erase">
+		
+<h4 id="glibstringerase">
+	<span><code>GLib.String.erase</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.erase (self, pos, len):
+    #python wrapper for 'g_string_erase'</pre>
+
+<p>Removes <em>len</em> bytes from a <a href="strings.html#GString">GLib.String</a>, starting at position <em>pos</em>.
+The rest of the <a href="strings.html#GString">GLib.String</a> is shifted down to fill the gap.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pos:</code></em></i>
+		</p>
+	</td>
+		<td><p>the position of the content to remove</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of bytes to remove, or -1 to remove all
+following bytes</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_insert_len">
+		
+<h4 id="glibstringinsert_len">
+	<span><code>GLib.String.insert_len</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.insert_len (self, pos, val, len):
+    #python wrapper for 'g_string_insert_len'</pre>
+
+<p>Inserts <em>len</em> bytes of <em>val</em> into <em>string</em> at <em>pos</em>.
+Because <em>len</em> is provided, <em>val</em> may contain embedded
+nuls and need not be nul-terminated. If <em>pos</em> is -1,
+bytes are inserted at the end of the string.</p>
+<p>Since this function does not stop at nul bytes, it is
+the caller's responsibility to ensure that <em>val</em> has at
+least <em>len</em> addressable bytes.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pos:</code></em></i>
+		</p>
+	</td>
+		<td><p>position in <em>string</em> where insertion should
+happen, or -1 for at the end</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>bytes to insert</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of bytes of <em>val</em> to insert</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_append_len">
+		
+<h4 id="glibstringappend_len">
+	<span><code>GLib.String.append_len</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.append_len (self, val, len):
+    #python wrapper for 'g_string_append_len'</pre>
+
+<p>Appends <em>len</em> bytes of <em>val</em> to <em>string</em>. Because <em>len</em> is
+provided, <em>val</em> may contain embedded nuls and need not
+be nul-terminated.</p>
+<p>Since this function does not stop at nul bytes, it is
+the caller's responsibility to ensure that <em>val</em> has at
+least <em>len</em> addressable bytes.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>bytes to append</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of bytes of <em>val</em> to use</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_string_overwrite">
+		
+<h4 id="glibstringoverwrite">
+	<span><code>GLib.String.overwrite</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.overwrite (self, pos, val):
+    #python wrapper for 'g_string_overwrite'</pre>
+
+<p>Overwrites part of a string, lengthening it if necessary.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pos:</code></em></i>
+		</p>
+	</td>
+		<td><p>the position at which to start overwriting</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string that will overwrite the <em>string</em> starting at <em>pos</em></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.14;" id="g_string_overwrite_len">
+		
+<h4 id="glibstringoverwrite_len">
+	<span><code>GLib.String.overwrite_len</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.overwrite_len (self, pos, val, len):
+    #python wrapper for 'g_string_overwrite_len'</pre>
+
+<p>Overwrites part of a string, lengthening it if necessary.
+This function will work with embedded nuls.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pos:</code></em></i>
+		</p>
+	</td>
+		<td><p>the position at which to start overwriting</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string that will overwrite the <em>string</em> starting at <em>pos</em></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of bytes to write from <em>val</em></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.14
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_append">
+		
+<h4 id="glibstringappend">
+	<span><code>GLib.String.append</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.append (self, val):
+    #python wrapper for 'g_string_append'</pre>
+
+<p>Adds a string onto the end of a <a href="strings.html#GString">GLib.String</a>, expanding
+it if necessary.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to append onto the end of <em>string</em></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_string_append_uri_escaped">
+		
+<h4 id="glibstringappend_uri_escaped">
+	<span><code>GLib.String.append_uri_escaped</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.append_uri_escaped (self, unescaped, reserved_chars_allowed, allow_utf8):
+    #python wrapper for 'g_string_append_uri_escaped'</pre>
+
+<p>Appends <em>unescaped</em> to <em>string</em>, escaped any characters that
+are reserved in URIs using URI-style escape sequences.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>unescaped:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>reserved_chars_allowed:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string of reserved characters allowed
+to be used, or <a href="https://docs.python.org/2/library/constants.html#None">None</a></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>allow_utf8:</code></em></i>
+		</p>
+	</td>
+		<td><p>set <a href="https://docs.python.org/2/library/constants.html#True">True</a> if the escaped string may include UTF8 characters</p>
+</td>
+<td>
+<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_free">
+		
+<h4 id="glibstringfree">
+	<span><code>GLib.String.free</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.free (self, free_segment):
+    #python wrapper for 'g_string_free'</pre>
+
+<p>Frees the memory allocated for the <a href="strings.html#GString">GLib.String</a>.
+If <em>free_segment</em> is <a href="https://docs.python.org/2/library/constants.html#True">True</a> it also frees the character data.  If
+it's <a href="https://docs.python.org/2/library/constants.html#False">False</a>, the caller gains ownership of the buffer and must
+free it after use with <a href="memory.html#g_free">GLib.free</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>free_segment:</code></em></i>
+		</p>
+	</td>
+		<td><p>if <a href="https://docs.python.org/2/library/constants.html#True">True</a>, the actual character data is freed as well</p>
+</td>
+<td>
+<a title="bool" href="https://docs.python.org/2.7/library/functions.html#bool">bool</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the character data of <em>string</em>
+(i.e. <a href="https://docs.python.org/2/library/constants.html#None">None</a> if <em>free_segment</em> is <a href="https://docs.python.org/2/library/constants.html#True">True</a>)</p>
+
+	</td>
+	<td>
+		<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_append_unichar">
+		
+<h4 id="glibstringappend_unichar">
+	<span><code>GLib.String.append_unichar</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.append_unichar (self, wc):
+    #python wrapper for 'g_string_append_unichar'</pre>
+
+<p>Converts a Unicode character into UTF-8, and appends it
+to the string.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>wc:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.2;" id="g_string_up">
+		
+<h4 id="glibstringup">
+	<span><code>GLib.String.up</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.up (self):
+    #python wrapper for 'g_string_up'</pre>
+
+<p>Converts a <a href="strings.html#GString">GLib.String</a> to uppercase.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	deprecated			: 2.2: This function uses the locale-specific
+     toupper() function, which is almost never the right thing.
+     Use g_string_ascii_up() or g_utf8_strup() instead.
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_insert_c">
+		
+<h4 id="glibstringinsert_c">
+	<span><code>GLib.String.insert_c</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.insert_c (self, pos, c):
+    #python wrapper for 'g_string_insert_c'</pre>
+
+<p>Inserts a byte into a <a href="strings.html#GString">GLib.String</a>, expanding it if necessary.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pos:</code></em></i>
+		</p>
+	</td>
+		<td><p>the position to insert the byte</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>the byte to insert</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_prepend_c">
+		
+<h4 id="glibstringprepend_c">
+	<span><code>GLib.String.prepend_c</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.prepend_c (self, c):
+    #python wrapper for 'g_string_prepend_c'</pre>
+
+<p>Adds a byte onto the start of a <a href="strings.html#GString">GLib.String</a>,
+expanding it if necessary.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>the byte to prepend on the start of the <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_prepend">
+		
+<h4 id="glibstringprepend">
+	<span><code>GLib.String.prepend</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.prepend (self, val):
+    #python wrapper for 'g_string_prepend'</pre>
+
+<p>Adds a string on to the start of a <a href="strings.html#GString">GLib.String</a>,
+expanding it if necessary.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>val:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to prepend on the start of <em>string</em></p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns21">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_set_size">
+		
+<h4 id="glibstringset_size">
+	<span><code>GLib.String.set_size</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.set_size (self, len):
+    #python wrapper for 'g_string_set_size'</pre>
+
+<p>Sets the length of a <a href="strings.html#GString">GLib.String</a>. If the length is less than
+the current length, the string will be truncated. If the
+length is greater than the current length, the contents
+of the newly added area are undefined. (However, as
+always, string-&gt;str[string-&gt;len] will be a nul byte.)</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the new length</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns22">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.34;" id="g_string_free_to_bytes">
+		
+<h4 id="glibstringfree_to_bytes">
+	<span><code>GLib.String.free_to_bytes</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.free_to_bytes (self):
+    #python wrapper for 'g_string_free_to_bytes'</pre>
+
+<p>Transfers ownership of the contents of <em>string</em> to a newly allocated
+<a href="arrays_byte.html#GBytes">GLib.Bytes</a>.  The <a href="strings.html#GString">GLib.String</a> structure itself is deallocated, and it is
+therefore invalid to use <em>string</em> after invoking this function.</p>
+<p>Note that while <a href="strings.html#GString">GLib.String</a> ensures that its buffer always has a
+trailing nul character (not reflected in its "len"), the returned
+<a href="arrays_byte.html#GBytes">GLib.Bytes</a> does not include this extra nul; i.e. it has length exactly
+equal to the "len" member.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns23">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>A newly allocated <a href="arrays_byte.html#GBytes">GLib.Bytes</a> containing contents of <em>string</em>; <em>string</em> itself is freed</p>
+
+	</td>
+	<td>
+		<a title="GLib.Bytes" href="arrays_byte.html#GBytes">GLib.Bytes</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.34
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_insert_unichar">
+		
+<h4 id="glibstringinsert_unichar">
+	<span><code>GLib.String.insert_unichar</code></span>
+</h4>
+
+		<pre class="programlisting">
+def GLib.String.insert_unichar (self, pos, wc):
+    #python wrapper for 'g_string_insert_unichar'</pre>
+
+<p>Converts a Unicode character into UTF-8, and insert it
+into the string at the given position.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="strings.html#GString">GLib.String</a></p>
+</td>
+<td>
+<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>pos:</code></em></i>
+		</p>
+	</td>
+		<td><p>the position at which to insert character, or -1
+to append at the end of the string</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>wc:</code></em></i>
+		</p>
+	</td>
+		<td><p>a Unicode character</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns24">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_new">
+		
+<h3 id="glibstring_new">
+	<span><code>GLib.string_new</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.string_new (init):
+    #python wrapper for 'g_string_new'</pre>
+
+<p>Creates a new <a href="strings.html#GString">GLib.String</a>, initialized with the given string.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>init:</code></em></i>
+		</p>
+	</td>
+		<td><p>the initial text to copy into the string, or <a href="https://docs.python.org/2/library/constants.html#None">None</a> to
+start with an empty string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns25">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new <a href="strings.html#GString">GLib.String</a></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_sized_new">
+		
+<h3 id="glibstring_sized_new">
+	<span><code>GLib.string_sized_new</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.string_sized_new (dfl_size):
+    #python wrapper for 'g_string_sized_new'</pre>
+
+<p>Creates a new <a href="strings.html#GString">GLib.String</a>, with enough space for <em>dfl_size</em>
+bytes. This is useful if you are going to add a lot of
+text to the string and don't want it to be reallocated
+too often.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dfl_size:</code></em></i>
+		</p>
+	</td>
+		<td><p>the default size of the space allocated to
+hold the string</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns26">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the new <a href="strings.html#GString">GLib.String</a></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_new_len">
+		
+<h3 id="glibstring_new_len">
+	<span><code>GLib.string_new_len</code></span>
+</h3>
+
+		<pre class="programlisting">
+def GLib.string_new_len (init, len):
+    #python wrapper for 'g_string_new_len'</pre>
+
+<p>Creates a new <a href="strings.html#GString">GLib.String</a> with <em>len</em> bytes of the <em>init</em> buffer.
+Because a length is provided, <em>init</em> need not be nul-terminated,
+and can contain embedded nul bytes.</p>
+<p>Since this function does not stop at nul bytes, it is the caller's
+responsibility to ensure that <em>init</em> has at least <em>len</em> addressable
+bytes.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>init:</code></em></i>
+		</p>
+	</td>
+		<td><p>initial contents of the string</p>
+</td>
+<td>
+<a title="unicode" href="https://docs.python.org/2/library/functions.html#unicode">unicode</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>init</em> to use</p>
+</td>
+<td>
+<a title="int" href="https://docs.python.org/2/library/functions.html#int">int</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns27">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="strings.html#GString">GLib.String</a></p>
+
+	</td>
+	<td>
+		<a title="GLib.String" href="strings.html#GString">GLib.String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GString">
+		<h3 id="glibstring">
+	GLib.String
+</h3>
+
+		<p>The GString struct contains the public fields of a GString.</p>
+
+
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="attributes">Attributes</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr id="GString.str">
+		<td>
+		<p>
+		<i><em><code>gchar* <em><code>str</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>points to the character data. It may move as text is added.
+The <em>str</em> field is null-terminated and so
+can be used as an ordinary C string.</p>
+</td>
+</tr>
+
+						<tr id="GString.len">
+		<td>
+		<p>
+		<i><em><code>gsize <em><code>len</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>contains the length of the string, not including the
+terminating nul byte.</p>
+</td>
+</tr>
+
+						<tr id="GString.allocated_len">
+		<td>
+		<p>
+		<i><em><code>gsize <em><code>allocated_len</code></em>:</code></em></i>
+		</p>
+	</td>
+		<td><p>the number of bytes that can be stored in the
+string before it needs to be reallocated. May be larger than <em>len</em>.</p>
+</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

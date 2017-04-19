@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/queue.html#glibqueueprototyperemove_all", "fragment": "GLib.Queue.prototype.remove_all \nRemove all elements whose data equals data from queue. \n"});

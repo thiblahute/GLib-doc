@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#g_rec_mutex_clear1", "fragment": "g_rec_mutex_clear \nFrees the resources allocated to a recursive mutex with g_rec_mutex_init. \nThis function should not be used with a GRecMutex that has been statically allocated. \nCalling g_rec_mutex_clear on a locked recursive mutex leads to undefined behaviour. \nSine \n"});

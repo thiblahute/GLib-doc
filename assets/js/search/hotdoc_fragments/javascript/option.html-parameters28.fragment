@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/option.html#parameters28", "fragment": "context \nThe active GLib.OptionContext \ngroup \nThe group to which the function belongs \ndata \nUser data added to the GLib.OptionGroup containing the option when it was created with GLib.OptionGroup.prototype.new \n"});

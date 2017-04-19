@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/memory_slices.html#returns", "fragment": "\na pointer to the allocated memory block which will be None if and only if mem_size is \nSince \n"});

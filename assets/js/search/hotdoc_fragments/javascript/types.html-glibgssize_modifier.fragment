@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/types.html#glibgssize_modifier", "fragment": "GLib.GSSIZE_MODIFIER \nThe platform dependent length modifier for conversion specifiers for scanning and printing values of type gssize. It is a string literal. \n"});

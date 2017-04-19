@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/testing.html#g_test_log_buffer_new1", "fragment": "g_test_log_buffer_new \nInternal function for gtester to decode test log messages no ABI guarantees provided. \n"});

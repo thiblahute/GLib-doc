@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays_byte.html#g_bytes_new1", "fragment": "g_bytes_new \nCreates a new GBytes from data. \ndata is copied. If size is data may be NULL. \n"});

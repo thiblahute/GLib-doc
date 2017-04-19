@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date-time.html#glibdatetimeadd_years", "fragment": "GLib.DateTime.add_years \nCreates a copy of datetime and adds the specified number of years to the copy. Add negative values to subtract years. \n"});

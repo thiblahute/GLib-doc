@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/spawn.html#enum-glibspawnflags", "fragment": "enum GLib.SpawnFlags \nFlags passed to GLib.spawn_sync GLib.spawn_async and GLib.spawn_async_with_pipes. \n"});

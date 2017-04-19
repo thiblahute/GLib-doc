@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#returns6", "fragment": "\nthe status of the operation One of GLib.IOStatus.normal GLib.IOStatus.again or GLib.IOStatus.error. \n"});

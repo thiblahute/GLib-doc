@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/atomic_operations.html#glibatomic_int_and", "fragment": "GLib.atomic_int_and \nPerforms an atomic bitwise and of the value of atomic and val storing the result back in atomic. \nThis call acts as a full compiler and hardware memory barrier. \nThink of this operation as an atomic version of tmp atomic atomic val return tmp \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/checksum.html#glibcompute_checksum_for_data", "fragment": "GLib.compute_checksum_for_data \nComputes the checksum for a binary data of length. This is a convenience wrapper for GLib.Checksum.new GLib.Checksum.get_string and GLib.Checksum.free. \nThe hexadecimal string returned will be in lower case. \n"});

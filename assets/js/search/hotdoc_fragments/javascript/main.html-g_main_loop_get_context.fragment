@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#g_main_loop_get_context", "fragment": "GLib.MainLoop.prototype.get_context \nReturns the GLib.MainContext of loop. \n"});

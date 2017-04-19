@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibmainloopquit", "fragment": "GLib.MainLoop.quit \nStops a GLib.MainLoop from running. Any calls to GLib.MainLoop.run for the loop will return. \nNote that sources that have already been dispatched when GLib.MainLoop.quit is called will still be executed. \n"});

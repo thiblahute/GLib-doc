@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/trees-nary.html#glibnodeprototypedepth", "fragment": "GLib.Node.prototype.depth \nGets the depth of a GLib.Node. \nIf node is null the depth is The root node has a depth of For the children of the root node the depth is And so on. \n"});

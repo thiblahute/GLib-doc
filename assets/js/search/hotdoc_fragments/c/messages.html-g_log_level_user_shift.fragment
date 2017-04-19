@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/messages.html#g_log_level_user_shift", "fragment": "G_LOG_LEVEL_USER_SHIFT \nLog levels below G_LOG_LEVEL_USER_SHIFT are used by GLib. Higher bits can be used for user defined log levels. \n"});

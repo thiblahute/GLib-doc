@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvariant.html#glibvariantget_maybe", "fragment": "GLib.Variant.get_maybe \nGiven a maybe typed GLib.Variant instance extract its value. If the value is Nothing then this function returns None. \n"});

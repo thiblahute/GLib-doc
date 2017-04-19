@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#returns9", "fragment": "\nWhether the channel will be closed on the final unref of the GIOChannel data structure. \n"});

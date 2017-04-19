@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/types.html#g_gssize_format", "fragment": "G_GSSIZE_FORMAT \nThis is the platform dependent conversion specifier for scanning and printing values of type gssize. See also G_GINT16_FORMAT. \n"});

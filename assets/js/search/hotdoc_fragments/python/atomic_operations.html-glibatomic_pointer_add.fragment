@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/atomic_operations.html#glibatomic_pointer_add", "fragment": "GLib.atomic_pointer_add \nAtomically adds val to the value of atomic. \nThink of this operation as an atomic version of tmp atomic atomic val return tmp \nThis call acts as a full compiler and hardware memory barrier. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvarianttype.html#glibvarianttypeprototypefree", "fragment": "GLib.VariantType.prototype.free \nFrees a GLib.VariantType that was allocated with GLib.VariantType.prototype.copy GLib.VariantType.prototype.new or one of the container type constructor functions. \nIn the case that type is null this function does nothing. \nSince \n"});

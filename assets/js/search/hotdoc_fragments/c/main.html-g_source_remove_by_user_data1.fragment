@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/main.html#g_source_remove_by_user_data1", "fragment": "g_source_remove_by_user_data \nRemoves a source from the default main loop context given the user data for the callback. If multiple sources exist with the same user data only one will be destroyed. \n"});

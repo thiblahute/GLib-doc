@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/string_utils.html#parameters36", "fragment": "dest \ndestination buffer already containing one nul terminated string \nsrc \nsource buffer \ndest_size \nlength of dest buffer in bytes not length of existing string inside dest \n"});

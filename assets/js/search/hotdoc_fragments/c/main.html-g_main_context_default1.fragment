@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/main.html#g_main_context_default1", "fragment": "g_main_context_default \nReturns the global default main context. This is the main context used for main loop functions when a main loop is not explicitly specified and corresponds to the main main loop. See also g_main_context_get_thread_default. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date.html#g_date_valid_julian1", "fragment": "g_date_valid_julian \nReturns TRUE if the Julian day is valid. Anything greater than zero is basically a valid Julian though there is a bit limit. \n"});

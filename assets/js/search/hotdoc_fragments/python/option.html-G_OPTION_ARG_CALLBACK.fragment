@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/option.html#G_OPTION_ARG_CALLBACK", "fragment": "The option provides a callback of type GLib.OptionArgFunc to parse the extra argument. \nGLib.OptionArg.filename \n"});

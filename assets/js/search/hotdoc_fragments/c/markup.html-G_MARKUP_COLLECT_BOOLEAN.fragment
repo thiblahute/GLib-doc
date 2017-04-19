@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/markup.html#G_MARKUP_COLLECT_BOOLEAN", "fragment": "expects a parameter of type gboolean and parses the attribute value as a boolean. Sets FALSE if the attribute isn t present. Valid boolean values consist of case insensitive false f no n and true t yes y \nG_MARKUP_COLLECT_TRISTATE \n"});

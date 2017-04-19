@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/main.html#glibsourceprototypeattach", "fragment": "GLib.Source.prototype.attach \nAdds a GLib.Source to a context so that it will be executed within that context. Remove it by calling GLib.Source.prototype.destroy. \n"});

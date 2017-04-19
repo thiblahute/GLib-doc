@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/markup.html#G_MARKUP_COLLECT_STRDUP", "fragment": "as with G_MARKUP_COLLECT_STRING but expects a parameter of type char and g_strdups the returned pointer. The pointer must be freed with g_free \nG_MARKUP_COLLECT_BOOLEAN \n"});

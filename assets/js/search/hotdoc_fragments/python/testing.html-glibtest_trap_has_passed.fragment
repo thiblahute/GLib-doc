@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/testing.html#glibtest_trap_has_passed", "fragment": "GLib.test_trap_has_passed \nCheck the result of the last GLib.test_trap_subprocess call. \n"});

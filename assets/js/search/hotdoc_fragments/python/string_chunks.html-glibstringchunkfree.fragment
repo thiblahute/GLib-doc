@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/string_chunks.html#glibstringchunkfree", "fragment": "GLib.StringChunk.free \nFrees all memory allocated by the GLib.StringChunk. After calling GLib.StringChunk.free it is not safe to access any of the strings which were contained within it. \n"});

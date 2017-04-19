@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/keyfile.html#glibkeyfilesave_to_file", "fragment": "GLib.KeyFile.save_to_file \nWrites the contents of key_file to filename using GLib.file_set_contents. \nThis function can fail for any of the reasons that GLib.file_set_contents may fail. \n"});

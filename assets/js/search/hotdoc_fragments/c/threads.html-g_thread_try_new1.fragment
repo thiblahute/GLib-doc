@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/threads.html#g_thread_try_new1", "fragment": "g_thread_try_new \nThis function is the same as g_thread_new except that it allows for the possibility of failure. \nIf a thread can not be created due to resource limits error is set and NULL is returned. \n"});

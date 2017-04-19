@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/string_utils.html#glibstrrstr_len", "fragment": "GLib.strrstr_len \nSearches the string haystack for the last occurrence of the string needle limiting the length of the search to haystack_len. \n"});

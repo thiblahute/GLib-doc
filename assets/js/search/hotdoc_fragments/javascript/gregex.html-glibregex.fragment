@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gregex.html#glibregex", "fragment": "GLib.Regex \nA GRegex is the compiled form of a regular expression pattern. This structure is opaque and its fields cannot be accessed directly. \n"});

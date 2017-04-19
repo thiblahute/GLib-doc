@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/keyfile.html#g_key_file_remove_comment", "fragment": "GLib.KeyFile.prototype.remove_comment \nRemoves a comment above key from group_name. If key is null then comment will be removed above group_name. If both key and group_name are null then comment will be removed above the first group in the file. \n"});

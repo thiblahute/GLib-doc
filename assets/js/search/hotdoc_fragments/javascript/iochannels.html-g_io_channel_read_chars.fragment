@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/iochannels.html#g_io_channel_read_chars", "fragment": "GLib.IOChannel.prototype.read_chars \nReplacement for GLib.IOChannel.prototype.read with the new API. \n"});

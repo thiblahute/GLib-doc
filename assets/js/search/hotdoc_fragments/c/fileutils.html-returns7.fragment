@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/fileutils.html#returns7", "fragment": "\na newly allocated GDir on success NULL on failure. If non NULL you must free the result with g_dir_close when you are finished with it. \n"});

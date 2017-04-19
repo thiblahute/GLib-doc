@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/unicode.html#glibutf16_to_ucs4", "fragment": "GLib.utf16_to_ucs4 \nConvert a string from UTF to UCS The result will be nul terminated. \n"});

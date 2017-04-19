@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/hooks.html#glibhookcheckfunc", "fragment": "GLib.HookCheckFunc \nDefines the type of a hook function that can be invoked by GLib.HookList.prototype.invoke_check. \n"});

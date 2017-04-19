@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/trees-binary.html#struct-gtree", "fragment": "struct GTree \nThe GTree struct is an opaque data structure representing a balanced binary tree glib Balanced Binary Trees It should be accessed only by using the following functions. \n"});

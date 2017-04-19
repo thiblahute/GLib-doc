@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/fileutils.html#g_mapped_file_get_length", "fragment": "GLib.MappedFile.prototype.get_length \nReturns the length of the contents of a GLib.MappedFile. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/checksum.html#g_compute_checksum_for_string", "fragment": "g_compute_checksum_for_string \nComputes the checksum of a string. \nThe hexadecimal string returned will be in lower case. \n"});

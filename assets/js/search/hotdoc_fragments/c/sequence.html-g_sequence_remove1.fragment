@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/sequence.html#g_sequence_remove1", "fragment": "g_sequence_remove \nRemoves the item pointed to by iter. It is an error to pass the end iterator to this function. \nIf the sequence has a data destroy function associated with it this function is called on the data for the removed item. \n"});

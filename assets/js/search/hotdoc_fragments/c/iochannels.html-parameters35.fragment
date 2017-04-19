@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#parameters35", "fragment": "channel \na GIOChannel \npriority \nthe priority of the GIOChannel source \ncondition \nthe condition to watch for \nfunc \nthe function to call when the condition is satisfied \nuser_data \nuser data to pass to func \nnotify \nthe function to call when the source is removed \n"});

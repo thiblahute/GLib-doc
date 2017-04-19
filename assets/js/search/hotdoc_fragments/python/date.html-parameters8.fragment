@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#parameters8", "fragment": "date \na GLib.Date. \ntime_ \nGLib.Time value to set. \ndeprecated Use g_date_set_time_t instead. \n"});

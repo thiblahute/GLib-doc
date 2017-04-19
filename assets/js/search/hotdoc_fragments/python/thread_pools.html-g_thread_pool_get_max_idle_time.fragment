@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/thread_pools.html#g_thread_pool_get_max_idle_time", "fragment": "GLib.thread_pool_get_max_idle_time \nThis function will return the maximum interval that a thread will wait in the thread pool for new tasks before being stopped. \nIf this function returns threads waiting in the thread pool for new work are not stopped. \n"});

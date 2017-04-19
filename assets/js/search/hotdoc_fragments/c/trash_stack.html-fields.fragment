@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/trash_stack.html#fields", "fragment": "GTrashStack next \npointer to the previous element of the stack gets stored in the first sizeof gpointer bytes of the element \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/arrays_byte.html#g_bytes_get_size1", "fragment": "g_bytes_get_size \nGet the size of the byte data in the GBytes. \nThis function will always return the same value for a given GBytes. \n"});

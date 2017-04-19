@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/misc_utils.html#returns22", "fragment": "\na None terminated list of strings which must be freed with GLib.strfreev. \nSince \n"});

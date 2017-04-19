@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/option.html#g_option_context_get_description", "fragment": "GLib.OptionContext.prototype.get_description \nReturns the description. See GLib.OptionContext.prototype.set_description. \n"});

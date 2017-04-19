@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#enum-glibdatemonth", "fragment": "enum GLib.DateMonth \nEnumeration representing a month values are GLib.DateMonth.january GLib.DateMonth.february etc. GLib.DateMonth.bad_month is the invalid value. \n"});

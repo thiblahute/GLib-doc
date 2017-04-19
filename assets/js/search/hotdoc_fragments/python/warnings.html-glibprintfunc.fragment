@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/warnings.html#glibprintfunc", "fragment": "GLib.PrintFunc \nSpecifies the type of the print handler functions. These are called with the complete formatted string to output. \n"});

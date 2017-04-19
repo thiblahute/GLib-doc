@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/trees-nary.html#parameters19", "fragment": "root \nthe root GNode of the tree to search \norder \nthe order in which nodes are visited G_IN_ORDER G_PRE_ORDER G_POST_ORDER or G_LEVEL_ORDER \nflags \nwhich types of children are to be searched one of G_TRAVERSE_ALL G_TRAVERSE_LEAVES and G_TRAVERSE_NON_LEAVES \ndata \nthe data to find \n"});

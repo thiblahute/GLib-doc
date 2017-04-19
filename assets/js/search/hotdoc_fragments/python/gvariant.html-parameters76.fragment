@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/gvariant.html#parameters76", "fragment": "dictionary \na dictionary GLib.Variant \nkey \nthe key to lookup in the dictionary \nexpected_type \na GLib.VariantType or None \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/quarks.html#returns5", "fragment": "\nthe GLib.Quark associated with the string or if string is null or there is no GLib.Quark associated with it \n"});

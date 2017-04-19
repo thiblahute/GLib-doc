@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hooks.html#g_hook_is_valid", "fragment": "G_HOOK_IS_VALID \nReturns TRUE if the GHook is valid i.e. it is in a GHookList it is active and it has not been destroyed. \n"});

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/patterns.html#glibpattern_match_string", "fragment": "GLib.pattern_match_string \nMatches a string against a compiled pattern. If the string is to be matched against more than one pattern consider using GLib.pattern_match instead while supplying the reversed string. \n"});

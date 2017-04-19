@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/string_utils.html#returns33", "fragment": "\nthe result of converting c to lower case. If c is not an ASCII upper case letter c is returned unchanged. \n"});

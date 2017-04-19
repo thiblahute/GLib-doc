@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date-time.html#g_date_time_get_day_of_year", "fragment": "GLib.DateTime.prototype.get_day_of_year \nRetrieves the day of the year represented by datetime in the Gregorian calendar. \n"});

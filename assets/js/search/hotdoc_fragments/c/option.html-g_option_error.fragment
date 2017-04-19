@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/option.html#g_option_error", "fragment": "G_OPTION_ERROR \nError domain for option parsing. Errors in this domain will be from the GOptionError enumeration. See GError for information on error domains. \n"});

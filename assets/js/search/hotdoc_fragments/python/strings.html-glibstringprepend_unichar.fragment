@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/strings.html#glibstringprepend_unichar", "fragment": "GLib.String.prepend_unichar \nConverts a Unicode character into UTF and prepends it to the string. \n"});

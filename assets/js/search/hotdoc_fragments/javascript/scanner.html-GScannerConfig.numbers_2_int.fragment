@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/scanner.html#GScannerConfig.numbers_2_int", "fragment": "guint int_2_float \nspecifies if all numbers are reported as G_TOKEN_FLOAT the default is FALSE \n"});

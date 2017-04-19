@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/string_utils.html#glibprototypestrv_length", "fragment": "GLib.prototype.strv_length \nReturns the length of the given null terminated string array str_array. \n"});

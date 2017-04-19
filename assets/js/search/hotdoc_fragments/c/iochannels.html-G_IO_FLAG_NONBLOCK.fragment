@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/iochannels.html#G_IO_FLAG_NONBLOCK", "fragment": "turns on nonblocking mode corresponds to O_NONBLOCK O_NDELAY see the documentation of the UNIX open syscall \nG_IO_FLAG_IS_READABLE \n"});

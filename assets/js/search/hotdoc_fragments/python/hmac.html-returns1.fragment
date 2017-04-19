@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hmac.html#returns1", "fragment": "\nthe HMAC of the binary data as a string in hexadecimal. The returned string should be freed with GLib.free when done using it. \nSince \n"});

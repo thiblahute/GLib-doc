@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/types.html#g_goffset_modifier", "fragment": "G_GOFFSET_MODIFIER \nThe platform dependent length modifier for conversion specifiers for scanning and printing values of type goffset. It is a string literal. See also G_GINT64_MODIFIER. \n"});

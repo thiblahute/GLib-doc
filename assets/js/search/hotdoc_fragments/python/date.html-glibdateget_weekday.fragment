@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdateget_weekday", "fragment": "GLib.Date.get_weekday \nReturns the day of the week for a GLib.Date. The date must be valid. \n"});

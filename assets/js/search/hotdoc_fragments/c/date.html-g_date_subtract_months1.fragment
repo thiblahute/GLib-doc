@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/date.html#g_date_subtract_months1", "fragment": "g_date_subtract_months \nMoves a date some number of months into the past. If the current day of the month doesn t exist in the destination month the day of the month may change. The date must be valid. \n"});

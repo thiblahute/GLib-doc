@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/option.html#gliboptiongroupprototypefree", "fragment": "GLib.OptionGroup.prototype.free \nFrees a GLib.OptionGroup. Note that you must not free groups which have been added to a GLib.OptionContext. \n"});

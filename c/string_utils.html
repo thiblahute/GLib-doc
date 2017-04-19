@@ -1,0 +1,7395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GStrv</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="string_utils.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="c">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="string_utils.markdown">
+        <h1 id="gstrv">GStrv</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GString</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GStringMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_ascii_down">
+		
+<h4 id="g_string_ascii_down1">
+	<span><code>g_string_ascii_down</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GString" href="strings.html#GString">GString</a> *
+g_string_ascii_down (<a title="GString" href="strings.html#GString">GString</a> * string)</pre>
+
+<p>Converts all uppercase ASCII letters to lowercase ASCII letters.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a GString</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>passed-in <em>string</em> pointer, with all the
+uppercase characters converted to lowercase in place,
+with semantics that exactly match <a href="string_utils.html#g_ascii_tolower">g_ascii_tolower</a>.</p>
+
+	</td>
+	<td>
+		<a title="GString" href="strings.html#GString">GString</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Don't free data after the code is done"><span class="acronym">transfer: none</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_string_ascii_up">
+		
+<h4 id="g_string_ascii_up1">
+	<span><code>g_string_ascii_up</code></span>
+</h4>
+
+		
+
+<pre class="prototype">
+<a title="GString" href="strings.html#GString">GString</a> *
+g_string_ascii_up (<a title="GString" href="strings.html#GString">GString</a> * string)</pre>
+
+<p>Converts all lowercase ASCII letters to uppercase ASCII letters.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a GString</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>passed-in <em>string</em> pointer, with all the
+lowercase characters converted to uppercase in place,
+with semantics that exactly match <a href="string_utils.html#g_ascii_toupper">g_ascii_toupper</a>.</p>
+
+	</td>
+	<td>
+		<a title="GString" href="strings.html#GString">GString</a> *
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Don't free data after the code is done"><span class="acronym">transfer: none</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.2;" id="g_str_has_prefix">
+		
+<h3 id="g_str_has_prefix1">
+	<span><code>g_str_has_prefix</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_str_has_prefix (const gchar* str,
+                  const gchar* prefix)</pre>
+
+<p>Looks whether the string <em>str</em> begins with <em>prefix</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a nul-terminated string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>prefix:</code></em></i>
+		</p>
+	</td>
+		<td><p>the nul-terminated prefix to look for</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>str</em> begins with <em>prefix</em>, <a href="macros.html#FALSE">FALSE</a> otherwise.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.2
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_strdown">
+		
+<h3 id="g_ascii_strdown1">
+	<span><code>g_ascii_strdown</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_ascii_strdown (const gchar* str,
+                 gssize len)</pre>
+
+<p>Converts all upper case ASCII letters to lower case ASCII letters.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>str</em> in bytes, or -1 if <em>str</em> is nul-terminated</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated string, with all the upper case
+characters in <em>str</em> converted to lower case, with semantics that
+exactly match <a href="string_utils.html#g_ascii_tolower">g_ascii_tolower</a>. (Note that this is unlike the
+old <a href="string_utils.html#g_strdown">g_strdown</a>, which modified the string in place.)</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strdup_printf">
+		
+<h3 id="g_strdup_printf1">
+	<span><code>g_strdup_printf</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_strdup_printf (const gchar* format,
+                 ... ...)</pre>
+
+<p>Similar to the standard C sprintf function but safer, since it
+calculates the maximum space required and allocates memory to hold
+the result. The returned string should be freed with <a href="memory.html#g_free">g_free</a> when no
+longer needed.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>format:</code></em></i>
+		</p>
+	</td>
+		<td><p>a standard printf format string, but notice
+[string precision pitfalls][string-precision]</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>the parameters to insert into the format string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns4">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated string holding the result</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strcompress">
+		
+<h3 id="g_strcompress1">
+	<span><code>g_strcompress</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_strcompress (const gchar* source)</pre>
+
+<p>Replaces all escaped characters with their one byte equivalent.</p>
+<p>This function does the reverse conversion of <a href="string_utils.html#g_strescape">g_strescape</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>source:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string to compress</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns5">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated copy of <em>source</em> with all escaped
+character compressed</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strdupv">
+		
+<h3 id="g_strdupv1">
+	<span><code>g_strdupv</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+utf8*
+g_strdupv (gchar** str_array)</pre>
+
+<p>Copies <a href="macros.html#NULL">NULL</a>-terminated array of strings. The copy is a deep copy;
+the new array should be freed by first freeing each string, then
+the array itself. <a href="string_utils.html#g_strfreev">g_strfreev</a> does this for you. If called
+on a <a href="macros.html#NULL">NULL</a> value, <a href="string_utils.html#g_strdupv">g_strdupv</a> simply returns <a href="macros.html#NULL">NULL</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str_array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="macros.html#NULL">NULL</a>-terminated array of strings</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns6">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a new <a href="macros.html#NULL">NULL</a>-terminated array of strings.</p>
+
+	</td>
+	<td>
+		utf8*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strstr_len">
+		
+<h3 id="g_strstr_len1">
+	<span><code>g_strstr_len</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_strstr_len (const gchar* haystack,
+              gssize haystack_len,
+              const gchar* needle)</pre>
+
+<p>Searches the string <em>haystack</em> for the first occurrence
+of the string <em>needle</em>, limiting the length of the search
+to <em>haystack_len</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters7">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>haystack:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>haystack_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum length of <em>haystack</em>. Note that -1 is
+a valid length, if <em>haystack</em> is nul-terminated, meaning it will
+search through the whole string.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>needle:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to search for</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns7">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to the found occurrence, or
+<a href="macros.html#NULL">NULL</a> if not found.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.2;" id="g_fprintf">
+		
+<h3 id="g_fprintf1">
+	<span><code>g_fprintf</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_fprintf (FILE* file,
+           gchar* format,
+           ... ...)</pre>
+
+<p>An implementation of the standard fprintf function which supports
+positional parameters, as specified in the Single Unix Specification.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters8">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td><p>the stream to write to.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>format:</code></em></i>
+		</p>
+	</td>
+		<td><p>a standard printf format string, but notice
+[string precision pitfalls][string-precision]</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>the arguments to insert in the output.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns8">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of bytes printed.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.2
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.2;" id="g_vsprintf">
+		
+<h3 id="g_vsprintf1">
+	<span><code>g_vsprintf</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_vsprintf (gchar* string,
+            gchar* format,
+            va_list args)</pre>
+
+<p>An implementation of the standard vsprintf function which supports
+positional parameters, as specified in the Single Unix Specification.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters9">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the buffer to hold the output.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>format:</code></em></i>
+		</p>
+	</td>
+		<td><p>a standard printf format string, but notice
+[string precision pitfalls][string-precision]</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>args:</code></em></i>
+		</p>
+	</td>
+		<td><p>the list of arguments to insert in the output.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns9">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of bytes printed.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.2
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.40;" id="g_str_is_ascii">
+		
+<h3 id="g_str_is_ascii1">
+	<span><code>g_str_is_ascii</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_str_is_ascii (const gchar* str)</pre>
+
+<p>Determines if a string is pure ASCII. A string is pure ASCII if it
+contains no bytes with the high bit set.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters10">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns10">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>str</em> is ASCII</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.40
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strfreev">
+		
+<h3 id="g_strfreev1">
+	<span><code>g_strfreev</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+void
+g_strfreev (gchar** str_array)</pre>
+
+<p>Frees a <a href="macros.html#NULL">NULL</a>-terminated array of strings, as well as each
+string it contains.</p>
+<p>If <em>str_array</em> is <a href="macros.html#NULL">NULL</a>, this function simply returns.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters11">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str_array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="macros.html#NULL">NULL</a>-terminated array of strings to free</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_strncasecmp">
+		
+<h3 id="g_ascii_strncasecmp1">
+	<span><code>g_ascii_strncasecmp</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_ascii_strncasecmp (const gchar* s1,
+                     const gchar* s2,
+                     gsize n)</pre>
+
+<p>Compare <em>s1</em> and <em>s2</em>, ignoring the case of ASCII characters and any
+characters after the first <em>n</em> in each string.</p>
+<p>Unlike the BSD strcasecmp function, this only recognizes standard
+ASCII letters and ignores the locale, treating all non-ASCII
+characters as if they are not letters.</p>
+<p>The same warning as in <a href="string_utils.html#g_ascii_strcasecmp">g_ascii_strcasecmp</a> applies: Use this
+function only on strings known to be in encodings where bytes
+corresponding to ASCII letters always represent themselves.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters12">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>s1:</code></em></i>
+		</p>
+	</td>
+		<td><p>string to compare with <em>s2</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>s2:</code></em></i>
+		</p>
+	</td>
+		<td><p>string to compare with <em>s1</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n:</code></em></i>
+		</p>
+	</td>
+		<td><p>number of characters to compare</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns11">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>0 if the strings match, a negative value if <em>s1</em> &lt; <em>s2</em>,
+or a positive value if <em>s1</em> &gt; <em>s2</em>.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_toupper">
+		
+<h3 id="g_ascii_toupper1">
+	<span><code>g_ascii_toupper</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar
+g_ascii_toupper (gchar c)</pre>
+
+<p>Convert a character to ASCII upper case.</p>
+<p>Unlike the standard C library toupper function, this only
+recognizes standard ASCII letters and ignores the locale, returning
+all non-ASCII characters unchanged, even if they are upper case
+letters in a particular character set. Also unlike the standard
+library function, this takes and returns a char, not an int, so
+don't call it on EOF but no need to worry about casting to guchar
+before passing a possibly non-ASCII character in.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters13">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>any character</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns12">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the result of converting <em>c</em> to upper case. If <em>c</em> is not
+an ASCII lower case letter, <em>c</em> is returned unchanged.</p>
+
+	</td>
+	<td>
+		gchar
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.2;" id="g_strup">
+		
+<h3 id="g_strup1">
+	<span><code>g_strup</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_strup (gchar* string)</pre>
+
+<p>Converts a string to upper case.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters14">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to convert</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns13">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the string</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	deprecated			: 2.2: This function is totally broken for the reasons
+     discussed in the g_strncasecmp() docs - use g_ascii_strup()
+     or g_utf8_strup() instead.
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.2;" id="g_printf">
+		
+<h3 id="g_printf1">
+	<span><code>g_printf</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_printf (gchar* format,
+          ... ...)</pre>
+
+<p>An implementation of the standard printf function which supports
+positional parameters, as specified in the Single Unix Specification.</p>
+<p>As with the standard printf, this does not automatically append a trailing
+new-line character to the message, so typically <em>format</em> should end with its
+own new-line character.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters15">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>format:</code></em></i>
+		</p>
+	</td>
+		<td><p>a standard printf format string, but notice
+[string precision pitfalls][string-precision]</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>the arguments to insert in the output.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns14">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of bytes printed.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.2
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.2;" id="g_vprintf">
+		
+<h3 id="g_vprintf1">
+	<span><code>g_vprintf</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_vprintf (gchar* format,
+           va_list args)</pre>
+
+<p>An implementation of the standard vprintf function which supports
+positional parameters, as specified in the Single Unix Specification.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters16">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>format:</code></em></i>
+		</p>
+	</td>
+		<td><p>a standard printf format string, but notice
+[string precision pitfalls][string-precision]</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>args:</code></em></i>
+		</p>
+	</td>
+		<td><p>the list of arguments to insert in the output.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns15">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of bytes printed.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.2
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.2;" id="g_strcasecmp">
+		
+<h3 id="g_strcasecmp1">
+	<span><code>g_strcasecmp</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_strcasecmp (const gchar* s1,
+              const gchar* s2)</pre>
+
+<p>A case-insensitive string comparison, corresponding to the standard
+strcasecmp function on platforms which support it.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters17">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>s1:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>s2:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string to compare with <em>s1</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns16">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>0 if the strings match, a negative value if <em>s1</em> &lt; <em>s2</em>,
+or a positive value if <em>s1</em> &gt; <em>s2</em>.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	deprecated			: 2.2: See g_strncasecmp() for a discussion of why this
+     function is deprecated and how to replace it.
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.12;" id="g_ascii_strtoll">
+		
+<h3 id="g_ascii_strtoll1">
+	<span><code>g_ascii_strtoll</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint64
+g_ascii_strtoll (const gchar* nptr,
+                 gchar** endptr,
+                 guint base)</pre>
+
+<p>Converts a string to a gint64 value.
+This function behaves like the standard strtoll function
+does in the C locale. It does this without actually
+changing the current locale, since that would not be
+thread-safe.</p>
+<p>This function is typically used when reading configuration
+files or other non-user input that should be locale independent.
+To handle input from the user you should normally use the
+locale-sensitive system strtoll function.</p>
+<p>If the correct value would cause overflow, <a href="types.html#G_MAXINT64">G_MAXINT64</a> or <a href="types.html#G_MININT64">G_MININT64</a>
+is returned, and <code>ERANGE</code> is stored in <code>errno</code>.
+If the base is outside the valid range, zero is returned, and
+<code>EINVAL</code> is stored in <code>errno</code>. If the
+string conversion fails, zero is returned, and <em>endptr</em> returns <em>nptr</em>
+(if <em>endptr</em> is non-%NULL).</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters18">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>nptr:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to convert to a numeric value.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>endptr:</code></em></i>
+		</p>
+	</td>
+		<td><p>if non-%NULL, it returns the
+character after the last character used in the conversion.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="Don't free data after the code is done"><span class="acronym">transfer: none</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>base:</code></em></i>
+		</p>
+	</td>
+		<td><p>to be used for the conversion, 2..36 or 0</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the gint64 value or zero on error.</p>
+
+	</td>
+	<td>
+		gint64
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>endptr:</i>
+				</p>
+	</td>
+	<td>
+		<p>the gint64 value or zero on error.</p>
+
+	</td>
+	<td>
+		gchar**
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.12
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_snprintf">
+		
+<h3 id="g_snprintf1">
+	<span><code>g_snprintf</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_snprintf (gchar* string,
+            gulong n,
+            gchar* format,
+            ... ...)</pre>
+
+<p>A safer form of the standard sprintf function. The output is guaranteed
+to not exceed <em>n</em> characters (including the terminating nul character), so
+it is easy to ensure that a buffer overflow cannot occur.</p>
+<p>See also <a href="string_utils.html#g_strdup_printf">g_strdup_printf</a>.</p>
+<p>In versions of GLib prior to 1.2.3, this function may return -1 if the
+output was truncated, and the truncated string may not be nul-terminated.
+In versions prior to 1.3.12, this function returns the length of the output
+string.</p>
+<p>The return value of <a href="string_utils.html#g_snprintf">g_snprintf</a> conforms to the snprintf
+function as standardized in ISO C99. Note that this is different from
+traditional snprintf, which returns the length of the output string.</p>
+<p>The format string may contain positional parameters, as specified in
+the Single Unix Specification.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters19">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the buffer to hold the output.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum number of bytes to produce (including the
+terminating nul character).</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>format:</code></em></i>
+		</p>
+	</td>
+		<td><p>a standard printf format string, but notice
+[string precision pitfalls][string-precision]</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>the arguments to insert in the output.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns17">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of bytes which would be produced if the buffer
+was large enough.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strchug">
+		
+<h3 id="g_strchug1">
+	<span><code>g_strchug</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_strchug (gchar* string)</pre>
+
+<p>Removes leading whitespace from a string, by moving the rest
+of the characters forward.</p>
+<p>This function doesn't allocate or reallocate any memory;
+it modifies <em>string</em> in place. Therefore, it cannot be used on
+statically allocated strings.</p>
+<p>The pointer to <em>string</em> is returned to allow the nesting of functions.</p>
+<p>Also see <a href="string_utils.html#g_strchomp">g_strchomp</a> and <a href="string_utils.html#g_strstrip">g_strstrip</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters20">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string to remove the leading whitespace from</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns18">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_formatd">
+		
+<h3 id="g_ascii_formatd1">
+	<span><code>g_ascii_formatd</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_ascii_formatd (gchar* buffer,
+                 gint buf_len,
+                 const gchar* format,
+                 gdouble d)</pre>
+
+<p>Converts a gdouble to a string, using the '.' as
+decimal point. To format the number you pass in
+a printf-style format string. Allowed conversion
+specifiers are 'e', 'E', 'f', 'F', 'g' and 'G'.</p>
+<p>The returned buffer is guaranteed to be nul-terminated.</p>
+<p>If you just want to want to serialize the value into a
+string, use <a href="string_utils.html#g_ascii_dtostr">g_ascii_dtostr</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters21">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>buffer:</code></em></i>
+		</p>
+	</td>
+		<td><p>A buffer to place the resulting string in</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>buf_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>The length of the buffer.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>format:</code></em></i>
+		</p>
+	</td>
+		<td><p>The printf-style format to use for the
+code to use for converting.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>d:</code></em></i>
+		</p>
+	</td>
+		<td><p>The gdouble to convert</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns19">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The pointer to the buffer with the converted string.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.40;" id="g_str_to_ascii">
+		
+<h3 id="g_str_to_ascii1">
+	<span><code>g_str_to_ascii</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_str_to_ascii (const gchar* str,
+                const gchar* from_locale)</pre>
+
+<p>Transliterate <em>str</em> to plain ASCII.</p>
+<p>For best results, <em>str</em> should be in composed normalised form.</p>
+<p>This function performs a reasonably good set of character
+replacements.  The particular set of replacements that is done may
+change by version or even by runtime environment.</p>
+<p>If the source language of <em>str</em> is known, it can used to improve the
+accuracy of the translation by passing it as <em>from_locale</em>.  It should
+be a valid POSIX locale string (of the form
+"language[_territory][.codeset][@modifier]").</p>
+<p>If <em>from_locale</em> is <a href="macros.html#NULL">NULL</a> then the current locale is used.</p>
+<p>If you want to do translation for no specific locale, and you want it
+to be done independently of the currently locale, specify "C" for
+<em>from_locale</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters22">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string, in UTF-8</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>from_locale:</code></em></i>
+		</p>
+	</td>
+		<td><p>the source locale, if known</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns20">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a string in plain ASCII</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.40
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strescape">
+		
+<h3 id="g_strescape1">
+	<span><code>g_strescape</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_strescape (const gchar* source,
+             const gchar* exceptions)</pre>
+
+<p>Escapes the special characters '\b', '\f', '\n', '\r', '\t', '\v', ''
+and '"' in the string <em>source</em> by inserting a '' before
+them. Additionally all characters in the range 0x01-0x1F (everything
+below SPACE) and in the range 0x7F-0xFF (all non-ASCII chars) are
+replaced with a '' followed by their octal representation.
+Characters supplied in <em>exceptions</em> are not escaped.</p>
+<p><a href="string_utils.html#g_strcompress">g_strcompress</a> does the reverse conversion.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters23">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>source:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string to escape</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>exceptions:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string of characters not to escape in <em>source</em></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns21">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated copy of <em>source</em> with certain
+characters escaped. See above.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strsplit">
+		
+<h3 id="g_strsplit1">
+	<span><code>g_strsplit</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+utf8*
+g_strsplit (const gchar* string,
+            const gchar* delimiter,
+            gint max_tokens)</pre>
+
+<p>Splits a string into a maximum of <em>max_tokens</em> pieces, using the given
+<em>delimiter</em>. If <em>max_tokens</em> is reached, the remainder of <em>string</em> is
+appended to the last token.</p>
+<p>As an example, the result of g_strsplit (":a:bc::d:", ":", -1) is a
+<a href="macros.html#NULL">NULL</a>-terminated vector containing the six strings "", "a", "bc", "", "d"
+and "".</p>
+<p>As a special case, the result of splitting the empty string "" is an empty
+vector, not a vector containing a single string. The reason for this
+special case is that being able to represent a empty vector is typically
+more useful than consistent handling of empty elements. If you do need
+to represent empty elements, you'll need to check for the empty string
+before calling <a href="string_utils.html#g_strsplit">g_strsplit</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters24">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string to split</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>delimiter:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string which specifies the places at which to split
+the string. The delimiter is not included in any of the resulting
+strings, unless <em>max_tokens</em> is reached.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>max_tokens:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum number of pieces to split <em>string</em> into.
+If this is less than 1, the string is split completely.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns22">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated <a href="macros.html#NULL">NULL</a>-terminated array of strings. Use
+<a href="string_utils.html#g_strfreev">g_strfreev</a> to free it.</p>
+
+	</td>
+	<td>
+		utf8*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strndup">
+		
+<h3 id="g_strndup1">
+	<span><code>g_strndup</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_strndup (const gchar* str,
+           gsize n)</pre>
+
+<p>Duplicates the first <em>n</em> bytes of a string, returning a newly-allocated
+buffer <em>n</em> + 1 bytes long which will always be nul-terminated. If <em>str</em>
+is less than <em>n</em> bytes long the buffer is padded with nuls. If <em>str</em> is
+<a href="macros.html#NULL">NULL</a> it returns <a href="macros.html#NULL">NULL</a>. The returned value should be freed when no longer
+needed.</p>
+<p>To copy a number of characters from a UTF-8 encoded string,
+use <a href="unicode.html#g_utf8_strncpy">g_utf8_strncpy</a> instead.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters25">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to duplicate</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum number of bytes to copy from <em>str</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns23">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated buffer containing the first <em>n</em> bytes
+of <em>str</em>, nul-terminated</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.2;" id="g_strdown">
+		
+<h3 id="g_strdown1">
+	<span><code>g_strdown</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_strdown (gchar* string)</pre>
+
+<p>Converts a string to lower case.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters26">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to convert.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns24">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the string</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	deprecated			: 2.2: This function is totally broken for the reasons discussed
+ in the g_strncasecmp() docs - use g_ascii_strdown() or g_utf8_strdown()
+ instead.
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strconcat">
+		
+<h3 id="g_strconcat1">
+	<span><code>g_strconcat</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_strconcat (const gchar* string1,
+             ... ...)</pre>
+
+<p>Concatenates all of the given strings into one long string. The
+returned string should be freed with <a href="memory.html#g_free">g_free</a> when no longer needed.</p>
+<p>The variable argument list must end with <a href="macros.html#NULL">NULL</a>. If you forget the <a href="macros.html#NULL">NULL</a>,
+<a href="string_utils.html#g_strconcat">g_strconcat</a> will start appending random memory junk to your string.</p>
+<p>Note that this function is usually not the right function to use to
+assemble a translated message from pieces, since proper translation
+often requires the pieces to be reordered.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters27">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string1:</code></em></i>
+		</p>
+	</td>
+		<td><p>the first string to add, which must not be <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="macros.html#NULL">NULL</a>-terminated list of strings to append to the string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns25">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated string containing all the string arguments</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_strup">
+		
+<h3 id="g_ascii_strup1">
+	<span><code>g_ascii_strup</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_ascii_strup (const gchar* str,
+               gssize len)</pre>
+
+<p>Converts all lower case ASCII letters to upper case ASCII letters.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters28">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>len:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>str</em> in bytes, or -1 if <em>str</em> is nul-terminated</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns26">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly allocated string, with all the lower case
+characters in <em>str</em> converted to upper case, with semantics that
+exactly match <a href="string_utils.html#g_ascii_toupper">g_ascii_toupper</a>. (Note that this is unlike the
+old <a href="string_utils.html#g_strup">g_strup</a>, which modified the string in place.)</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.44;" id="g_strv_contains">
+		
+<h3 id="g_strv_contains1">
+	<span><code>g_strv_contains</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_strv_contains (const gchar*const ** strv,
+                 const gchar* str)</pre>
+
+<p>Checks if <em>strv</em> contains <em>str</em>. <em>strv</em> must not be <a href="macros.html#NULL">NULL</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters29">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>strv:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="macros.html#NULL">NULL</a>-terminated array of strings</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns27">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>str</em> is an element of <em>strv</em>, according to <a href="hash_tables.html#g_str_equal">g_str_equal</a>.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.44
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.2;" id="g_sprintf">
+		
+<h3 id="g_sprintf1">
+	<span><code>g_sprintf</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_sprintf (gchar* string,
+           gchar* format,
+           ... ...)</pre>
+
+<p>An implementation of the standard sprintf function which supports
+positional parameters, as specified in the Single Unix Specification.</p>
+<p>Note that it is usually better to use <a href="string_utils.html#g_snprintf">g_snprintf</a>, to avoid the
+risk of buffer overflow.</p>
+<p>See also <a href="string_utils.html#g_strdup_printf">g_strdup_printf</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters30">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>A pointer to a memory buffer to contain the resulting string. It
+is up to the caller to ensure that the allocated buffer is large
+enough to hold the formatted result</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>format:</code></em></i>
+		</p>
+	</td>
+		<td><p>a standard printf format string, but notice
+[string precision pitfalls][string-precision]</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>the arguments to insert in the output.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns28">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of bytes printed.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.2
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strjoinv">
+		
+<h3 id="g_strjoinv1">
+	<span><code>g_strjoinv</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_strjoinv (const gchar* separator,
+            gchar** str_array)</pre>
+
+<p>Joins a number of strings together to form one long string, with the
+optional <em>separator</em> inserted between each of them. The returned string
+should be freed with <a href="memory.html#g_free">g_free</a>.</p>
+<p>If <em>str_array</em> has no items, the return value will be an
+empty string. If <em>str_array</em> contains a single item, <em>separator</em> will not
+appear in the resulting string.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters31">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>separator:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string to insert between each of the
+strings, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str_array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="macros.html#NULL">NULL</a>-terminated array of strings to join</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns29">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated string containing all of the strings joined
+together, with <em>separator</em> between them</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strdup">
+		
+<h3 id="g_strdup1">
+	<span><code>g_strdup</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_strdup (const gchar* str)</pre>
+
+<p>Duplicates a string. If <em>str</em> is <a href="macros.html#NULL">NULL</a> it returns <a href="macros.html#NULL">NULL</a>.
+The returned string should be freed with <a href="memory.html#g_free">g_free</a>
+when no longer needed.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters32">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to duplicate</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns30">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated copy of <em>str</em></p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strrstr">
+		
+<h3 id="g_strrstr1">
+	<span><code>g_strrstr</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_strrstr (const gchar* haystack,
+           const gchar* needle)</pre>
+
+<p>Searches the string <em>haystack</em> for the last occurrence
+of the string <em>needle</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters33">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>haystack:</code></em></i>
+		</p>
+	</td>
+		<td><p>a nul-terminated string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>needle:</code></em></i>
+		</p>
+	</td>
+		<td><p>the nul-terminated string to search for</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns31">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to the found occurrence, or
+<a href="macros.html#NULL">NULL</a> if not found.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.40;" id="g_str_tokenize_and_fold">
+		
+<h3 id="g_str_tokenize_and_fold1">
+	<span><code>g_str_tokenize_and_fold</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+utf8*
+g_str_tokenize_and_fold (const gchar* string,
+                         const gchar* translit_locale,
+                         gchar** ascii_alternates)</pre>
+
+<p>Tokenises <em>string</em> and performs folding on each token.</p>
+<p>A token is a non-empty sequence of alphanumeric characters in the
+source string, separated by non-alphanumeric characters.  An
+"alphanumeric" character for this purpose is one that matches
+<a href="unicode.html#g_unichar_isalnum">g_unichar_isalnum</a> or <a href="unicode.html#g_unichar_ismark">g_unichar_ismark</a>.</p>
+<p>Each token is then (Unicode) normalised and case-folded.  If
+<em>ascii_alternates</em> is non-%NULL and some of the returned tokens
+contain non-ASCII characters, ASCII alternatives will be generated.</p>
+<p>The number of ASCII alternatives that are generated and the method
+for doing so is unspecified, but <em>translit_locale</em> (if specified) may
+improve the transliteration if the language of the source string is
+known.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters34">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>translit_locale:</code></em></i>
+		</p>
+	</td>
+		<td><p>the language code (like 'de' or
+'en_GB') from which <em>string</em> originates</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>ascii_alternates:</code></em></i>
+		</p>
+	</td>
+		<td><p>a
+return location for ASCII alternates</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of1">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the folded tokens</p>
+
+	</td>
+	<td>
+		utf8*
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>ascii_alternates:</i>
+				</p>
+	</td>
+	<td>
+		<p>the folded tokens</p>
+
+	</td>
+	<td>
+		gchar**
+	</td>
+				<td>
+	
+<span class="annotation">[<abbr title="Free data after the code is done"><span class="acronym">transfer: full</span></abbr>]</span>
+<span class="annotation">[<abbr title="Parameter points to an array of items"><span class="acronym">array</span></abbr> zero-terminated=1]</span>
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.40
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.2;" id="g_str_has_suffix">
+		
+<h3 id="g_str_has_suffix1">
+	<span><code>g_str_has_suffix</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_str_has_suffix (const gchar* str,
+                  const gchar* suffix)</pre>
+
+<p>Looks whether the string <em>str</em> ends with <em>suffix</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters35">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>a nul-terminated string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>suffix:</code></em></i>
+		</p>
+	</td>
+		<td><p>the nul-terminated suffix to look for</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns32">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>str</em> end with <em>suffix</em>, <a href="macros.html#FALSE">FALSE</a> otherwise.</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.2
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_vasprintf">
+		
+<h3 id="g_vasprintf1">
+	<span><code>g_vasprintf</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_vasprintf (gchar** string,
+             gchar* format,
+             va_list args)</pre>
+
+<p>An implementation of the GNU vasprintf function which supports
+positional parameters, as specified in the Single Unix Specification.
+This function is similar to <a href="string_utils.html#g_vsprintf">g_vsprintf</a>, except that it allocates a
+string to hold the output, instead of putting the output in a buffer
+you allocate in advance.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters36">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the return location for the newly-allocated string.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>format:</code></em></i>
+		</p>
+	</td>
+		<td><p>a standard printf format string, but notice
+[string precision pitfalls][string-precision]</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>args:</code></em></i>
+		</p>
+	</td>
+		<td><p>the list of arguments to insert in the output.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns33">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of bytes printed.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_dtostr">
+		
+<h3 id="g_ascii_dtostr1">
+	<span><code>g_ascii_dtostr</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_ascii_dtostr (gchar* buffer,
+                gint buf_len,
+                gdouble d)</pre>
+
+<p>Converts a gdouble to a string, using the '.' as
+decimal point.</p>
+<p>This function generates enough precision that converting
+the string back using <a href="string_utils.html#g_ascii_strtod">g_ascii_strtod</a> gives the same machine-number
+(on machines with IEEE compatible 64bit doubles). It is
+guaranteed that the size of the resulting string will never
+be larger than <em>G_ASCII_DTOSTR_BUF_SIZE</em> bytes, including the terminating
+nul character, which is always added.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters37">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>buffer:</code></em></i>
+		</p>
+	</td>
+		<td><p>A buffer to place the resulting string in</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>buf_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>The length of the buffer.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>d:</code></em></i>
+		</p>
+	</td>
+		<td><p>The gdouble to convert</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns34">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>The pointer to the buffer with the converted string.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.6;" id="g_strv_length">
+		
+<h3 id="g_strv_length1">
+	<span><code>g_strv_length</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+guint
+g_strv_length (gchar** str_array)</pre>
+
+<p>Returns the length of the given <a href="macros.html#NULL">NULL</a>-terminated
+string array <em>str_array</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters38">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str_array:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="macros.html#NULL">NULL</a>-terminated array of strings</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns35">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>length of <em>str_array</em>.</p>
+
+	</td>
+	<td>
+		guint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.6
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strcanon">
+		
+<h3 id="g_strcanon1">
+	<span><code>g_strcanon</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_strcanon (gchar* string,
+            const gchar* valid_chars,
+            gchar substitutor)</pre>
+
+<p>For each character in <em>string</em>, if the character is not in <em>valid_chars</em>,
+replaces the character with <em>substitutor</em>. Modifies <em>string</em> in place,
+and return <em>string</em> itself, not a copy. The return value is to allow
+nesting such as</p>
+<pre><code class="language-[&lt;!--">   g_ascii_strup (g_strcanon (str, "abc", '?'))
+</code></pre>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters39">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a nul-terminated array of bytes</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>valid_chars:</code></em></i>
+		</p>
+	</td>
+		<td><p>bytes permitted in <em>string</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>substitutor:</code></em></i>
+		</p>
+	</td>
+		<td><p>replacement character for disallowed bytes</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns36">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.40;" id="g_str_match_string">
+		
+<h3 id="g_str_match_string1">
+	<span><code>g_str_match_string</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gboolean
+g_str_match_string (const gchar* search_term,
+                    const gchar* potential_hit,
+                    gboolean accept_alternates)</pre>
+
+<p>Checks if a search conducted for <em>search_term</em> should match
+<em>potential_hit</em>.</p>
+<p>This function calls <a href="string_utils.html#g_str_tokenize_and_fold">g_str_tokenize_and_fold</a> on both
+<em>search_term</em> and <em>potential_hit</em>.  ASCII alternates are never taken
+for <em>search_term</em> but will be taken for <em>potential_hit</em> according to
+the value of <em>accept_alternates</em>.</p>
+<p>A hit occurs when each folded token in <em>search_term</em> is a prefix of a
+folded token from <em>potential_hit</em>.</p>
+<p>Depending on how you're performing the search, it will typically be
+faster to call <a href="string_utils.html#g_str_tokenize_and_fold">g_str_tokenize_and_fold</a> on each string in
+your corpus and build an index on the returned folded tokens, then
+call <a href="string_utils.html#g_str_tokenize_and_fold">g_str_tokenize_and_fold</a> on the search term and
+perform lookups into that index.</p>
+<p>As some examples, searching for "fred" would match the potential hit
+"Smith, Fred" and also "Frédéric".  Searching for "Fréd" would match
+"FrÃ©dÃ©ric" but not "Frederic" (due to the one-directional nature of
+accent matching).  Searching "fo" would match "Foo" and "Bar Foo
+Baz", but not "SFO" (because no word as "fo" as a prefix).</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters40">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>search_term:</code></em></i>
+		</p>
+	</td>
+		<td><p>the search term from the user</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>potential_hit:</code></em></i>
+		</p>
+	</td>
+		<td><p>the text that may be a hit</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>accept_alternates:</code></em></i>
+		</p>
+	</td>
+		<td><p><a href="macros.html#TRUE">TRUE</a> to accept ASCII alternates</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns37">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><a href="macros.html#TRUE">TRUE</a> if <em>potential_hit</em> is a hit</p>
+
+	</td>
+	<td>
+		gboolean
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.40
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strjoin">
+		
+<h3 id="g_strjoin1">
+	<span><code>g_strjoin</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_strjoin (const gchar* separator,
+           ... ...)</pre>
+
+<p>Joins a number of strings together to form one long string, with the
+optional <em>separator</em> inserted between each of them. The returned string
+should be freed with <a href="memory.html#g_free">g_free</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters41">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>separator:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string to insert between each of the
+strings, or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>...:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="macros.html#NULL">NULL</a>-terminated list of strings to join</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns38">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated string containing all of the strings joined
+together, with <em>separator</em> between them</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strdelimit">
+		
+<h3 id="g_strdelimit1">
+	<span><code>g_strdelimit</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_strdelimit (gchar* string,
+              const gchar* delimiters,
+              gchar new_delimiter)</pre>
+
+<p>Converts any delimiter characters in <em>string</em> to <em>new_delimiter</em>.
+Any characters in <em>string</em> which are found in <em>delimiters</em> are
+changed to the <em>new_delimiter</em> character. Modifies <em>string</em> in place,
+and returns <em>string</em> itself, not a copy. The return value is to
+allow nesting such as</p>
+<pre><code class="language-[&lt;!--">   g_ascii_strup (g_strdelimit (str, "abc", '?'))
+</code></pre>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters42">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to convert</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>delimiters:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string containing the current delimiters,
+or <a href="macros.html#NULL">NULL</a> to use the standard delimiters defined in <a href="string_utils.html#G_STR_DELIMITERS">G_STR_DELIMITERS</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>new_delimiter:</code></em></i>
+		</p>
+	</td>
+		<td><p>the new delimiter character</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns39">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_digit_value">
+		
+<h3 id="g_ascii_digit_value1">
+	<span><code>g_ascii_digit_value</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_ascii_digit_value (gchar c)</pre>
+
+<p>Determines the numeric value of a character as a decimal digit.
+Differs from <a href="unicode.html#g_unichar_digit_value">g_unichar_digit_value</a> because it takes a char, so
+there's no worry about sign extension if characters are signed.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters43">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>an ASCII character</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns40">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>If <em>c</em> is a decimal digit (according to <a href="string_utils.html#g_ascii_isdigit">g_ascii_isdigit</a>),
+its numeric value. Otherwise, -1.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_strtod">
+		
+<h3 id="g_ascii_strtod1">
+	<span><code>g_ascii_strtod</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gdouble
+g_ascii_strtod (const gchar* nptr,
+                gchar** endptr)</pre>
+
+<p>Converts a string to a gdouble value.</p>
+<p>This function behaves like the standard strtod function
+does in the C locale. It does this without actually changing
+the current locale, since that would not be thread-safe.
+A limitation of the implementation is that this function
+will still accept localized versions of infinities and NANs.</p>
+<p>This function is typically used when reading configuration
+files or other non-user input that should be locale independent.
+To handle input from the user you should normally use the
+locale-sensitive system strtod function.</p>
+<p>To convert from a gdouble to a string in a locale-insensitive
+way, use <a href="string_utils.html#g_ascii_dtostr">g_ascii_dtostr</a>.</p>
+<p>If the correct value would cause overflow, plus or minus HUGE_VAL
+is returned (according to the sign of the value), and ERANGE is
+stored in errno. If the correct value would cause underflow,
+zero is returned and ERANGE is stored in errno.</p>
+<p>This function resets errno before calling strtod so that
+you can reliably detect overflow and underflow.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters44">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>nptr:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to convert to a numeric value.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>endptr:</code></em></i>
+		</p>
+	</td>
+		<td><p>if non-%NULL, it returns the
+character after the last character used in the conversion.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="Don't free data after the code is done"><span class="acronym">transfer: none</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of2">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the gdouble value.</p>
+
+	</td>
+	<td>
+		gdouble
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>endptr:</i>
+				</p>
+	</td>
+	<td>
+		<p>the gdouble value.</p>
+
+	</td>
+	<td>
+		gchar**
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_xdigit_value">
+		
+<h3 id="g_ascii_xdigit_value1">
+	<span><code>g_ascii_xdigit_value</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_ascii_xdigit_value (gchar c)</pre>
+
+<p>Determines the numeric value of a character as a hexidecimal
+digit. Differs from <a href="unicode.html#g_unichar_xdigit_value">g_unichar_xdigit_value</a> because it takes
+a char, so there's no worry about sign extension if characters
+are signed.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters45">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>an ASCII character.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns41">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>If <em>c</em> is a hex digit (according to <a href="string_utils.html#g_ascii_isxdigit">g_ascii_isxdigit</a>),
+its numeric value. Otherwise, -1.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_strcasecmp">
+		
+<h3 id="g_ascii_strcasecmp1">
+	<span><code>g_ascii_strcasecmp</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_ascii_strcasecmp (const gchar* s1,
+                    const gchar* s2)</pre>
+
+<p>Compare two strings, ignoring the case of ASCII characters.</p>
+<p>Unlike the BSD strcasecmp function, this only recognizes standard
+ASCII letters and ignores the locale, treating all non-ASCII
+bytes as if they are not letters.</p>
+<p>This function should be used only on strings that are known to be
+in encodings where the bytes corresponding to ASCII letters always
+represent themselves. This includes UTF-8 and the ISO-8859-*
+charsets, but not for instance double-byte encodings like the
+Windows Codepage 932, where the trailing bytes of double-byte
+characters include all ASCII letters. If you compare two CP932
+strings using this function, you will get false matches.</p>
+<p>Both <em>s1</em> and <em>s2</em> must be non-%NULL.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters46">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>s1:</code></em></i>
+		</p>
+	</td>
+		<td><p>string to compare with <em>s2</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>s2:</code></em></i>
+		</p>
+	</td>
+		<td><p>string to compare with <em>s1</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns42">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>0 if the strings match, a negative value if <em>s1</em> &lt; <em>s2</em>,
+or a positive value if <em>s1</em> &gt; <em>s2</em>.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strdup_vprintf">
+		
+<h3 id="g_strdup_vprintf1">
+	<span><code>g_strdup_vprintf</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_strdup_vprintf (const gchar* format,
+                  va_list args)</pre>
+
+<p>Similar to the standard C vsprintf function but safer, since it
+calculates the maximum space required and allocates memory to hold
+the result. The returned string should be freed with <a href="memory.html#g_free">g_free</a> when
+no longer needed.</p>
+<p>See also <a href="string_utils.html#g_vasprintf">g_vasprintf</a>, which offers the same functionality, but
+additionally returns the length of the allocated string.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters47">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>format:</code></em></i>
+		</p>
+	</td>
+		<td><p>a standard printf format string, but notice
+[string precision pitfalls][string-precision]</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>args:</code></em></i>
+		</p>
+	</td>
+		<td><p>the list of parameters to insert into the format string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns43">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated string holding the result</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strnfill">
+		
+<h3 id="g_strnfill1">
+	<span><code>g_strnfill</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_strnfill (gsize length,
+            gchar fill_char)</pre>
+
+<p>Creates a new string <em>length</em> bytes long filled with <em>fill_char</em>.
+The returned string should be freed when no longer needed.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters48">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of the new string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>fill_char:</code></em></i>
+		</p>
+	</td>
+		<td><p>the byte to fill the string with</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns44">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated string filled the <em>fill_char</em></p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strlcat">
+		
+<h3 id="g_strlcat1">
+	<span><code>g_strlcat</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gsize
+g_strlcat (gchar* dest,
+           const gchar* src,
+           gsize dest_size)</pre>
+
+<p>Portability wrapper that calls strlcat on systems which have it,
+and emulates it otherwise. Appends nul-terminated <em>src</em> string to <em>dest</em>,
+guaranteeing nul-termination for <em>dest</em>. The total size of <em>dest</em> won't
+exceed <em>dest_size</em>.</p>
+<p>At most <em>dest_size</em> - 1 characters will be copied. Unlike strncat,
+<em>dest_size</em> is the full size of dest, not the space left over. This
+function does not allocate memory. It always nul-terminates (unless
+<em>dest_size</em> == 0 or there were no nul characters in the <em>dest_size</em>
+characters of dest to start with).</p>
+<p>Caveat: this is supposedly a more secure alternative to strcat or
+strncat, but for real security <a href="string_utils.html#g_strconcat">g_strconcat</a> is harder to mess up.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters49">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dest:</code></em></i>
+		</p>
+	</td>
+		<td><p>destination buffer, already containing one nul-terminated string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>src:</code></em></i>
+		</p>
+	</td>
+		<td><p>source buffer</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dest_size:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>dest</em> buffer in bytes (not length of existing string
+inside <em>dest</em>)</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns45">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>size of attempted result, which is MIN (dest_size, strlen
+(original dest)) + strlen (src), so if retval &gt;= dest_size,
+truncation occurred.</p>
+
+	</td>
+	<td>
+		gsize
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_vsnprintf">
+		
+<h3 id="g_vsnprintf1">
+	<span><code>g_vsnprintf</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_vsnprintf (gchar* string,
+             gulong n,
+             gchar* format,
+             va_list args)</pre>
+
+<p>A safer form of the standard vsprintf function. The output is guaranteed
+to not exceed <em>n</em> characters (including the terminating nul character), so
+it is easy to ensure that a buffer overflow cannot occur.</p>
+<p>See also <a href="string_utils.html#g_strdup_vprintf">g_strdup_vprintf</a>.</p>
+<p>In versions of GLib prior to 1.2.3, this function may return -1 if the
+output was truncated, and the truncated string may not be nul-terminated.
+In versions prior to 1.3.12, this function returns the length of the output
+string.</p>
+<p>The return value of <a href="string_utils.html#g_vsnprintf">g_vsnprintf</a> conforms to the vsnprintf function
+as standardized in ISO C99. Note that this is different from traditional
+vsnprintf, which returns the length of the output string.</p>
+<p>The format string may contain positional parameters, as specified in
+the Single Unix Specification.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters50">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the buffer to hold the output.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum number of bytes to produce (including the
+terminating nul character).</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>format:</code></em></i>
+		</p>
+	</td>
+		<td><p>a standard printf format string, but notice
+string precision pitfalls][string-precision]</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>args:</code></em></i>
+		</p>
+	</td>
+		<td><p>the list of arguments to insert in the output.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns46">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of bytes which would be produced if the buffer
+was large enough.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_tolower">
+		
+<h3 id="g_ascii_tolower1">
+	<span><code>g_ascii_tolower</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar
+g_ascii_tolower (gchar c)</pre>
+
+<p>Convert a character to ASCII lower case.</p>
+<p>Unlike the standard C library tolower function, this only
+recognizes standard ASCII letters and ignores the locale, returning
+all non-ASCII characters unchanged, even if they are lower case
+letters in a particular character set. Also unlike the standard
+library function, this takes and returns a char, not an int, so
+don't call it on EOF but no need to worry about casting to guchar
+before passing a possibly non-ASCII character in.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters51">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>c:</code></em></i>
+		</p>
+	</td>
+		<td><p>any character</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns47">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the result of converting <em>c</em> to lower case. If <em>c</em> is
+not an ASCII upper case letter, <em>c</em> is returned unchanged.</p>
+
+	</td>
+	<td>
+		gchar
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strtod">
+		
+<h3 id="g_strtod1">
+	<span><code>g_strtod</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gdouble
+g_strtod (const gchar* nptr,
+          gchar** endptr)</pre>
+
+<p>Converts a string to a gdouble value.
+It calls the standard strtod function to handle the conversion, but
+if the string is not completely converted it attempts the conversion
+again with <a href="string_utils.html#g_ascii_strtod">g_ascii_strtod</a>, and returns the best match.</p>
+<p>This function should seldom be used. The normal situation when reading
+numbers not for human consumption is to use <a href="string_utils.html#g_ascii_strtod">g_ascii_strtod</a>. Only when
+you know that you must expect both locale formatted and C formatted numbers
+should you use this. Make sure that you don't pass strings such as comma
+separated lists of values, since the commas may be interpreted as a decimal
+point in some locales, causing unexpected results.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters52">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>nptr:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to convert to a numeric value.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>endptr:</code></em></i>
+		</p>
+	</td>
+		<td><p>if non-%NULL, it returns the
+character after the last character used in the conversion.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="Don't free data after the code is done"><span class="acronym">transfer: none</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of3">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the gdouble value.</p>
+
+	</td>
+	<td>
+		gdouble
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>endptr:</i>
+				</p>
+	</td>
+	<td>
+		<p>the gdouble value.</p>
+
+	</td>
+	<td>
+		gchar**
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.2;" id="g_ascii_strtoull">
+		
+<h3 id="g_ascii_strtoull1">
+	<span><code>g_ascii_strtoull</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+guint64
+g_ascii_strtoull (const gchar* nptr,
+                  gchar** endptr,
+                  guint base)</pre>
+
+<p>Converts a string to a guint64 value.
+This function behaves like the standard strtoull function
+does in the C locale. It does this without actually
+changing the current locale, since that would not be
+thread-safe.</p>
+<p>This function is typically used when reading configuration
+files or other non-user input that should be locale independent.
+To handle input from the user you should normally use the
+locale-sensitive system strtoull function.</p>
+<p>If the correct value would cause overflow, <a href="types.html#G_MAXUINT64">G_MAXUINT64</a>
+is returned, and <code>ERANGE</code> is stored in <code>errno</code>.
+If the base is outside the valid range, zero is returned, and
+<code>EINVAL</code> is stored in <code>errno</code>.
+If the string conversion fails, zero is returned, and <em>endptr</em> returns
+<em>nptr</em> (if <em>endptr</em> is non-%NULL).</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters53">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>nptr:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to convert to a numeric value.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>endptr:</code></em></i>
+		</p>
+	</td>
+		<td><p>if non-%NULL, it returns the
+character after the last character used in the conversion.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="Parameter for returning results"><span class="acronym">out</span></abbr>]</span>
+<span class="annotation">[<abbr title="Don't free data after the code is done"><span class="acronym">transfer: none</span></abbr>]</span>
+<span class="annotation">[<abbr title="NULL may be passed instead of a pointer to a location"><span class="acronym">optional</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>base:</code></em></i>
+		</p>
+	</td>
+		<td><p>to be used for the conversion, 2..36 or 0</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 data-toc-skip="true" id="returns-a-tuple-made-of4">Returns a tuple made of</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the guint64 value or zero on error.</p>
+
+	</td>
+	<td>
+		guint64
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+						<tr>
+	<td>
+		<p>
+				<i>endptr:</i>
+				</p>
+	</td>
+	<td>
+		<p>the guint64 value or zero on error.</p>
+
+	</td>
+	<td>
+		gchar**
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.2
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="deprecated:2.2;" id="g_strncasecmp">
+		
+<h3 id="g_strncasecmp1">
+	<span><code>g_strncasecmp</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_strncasecmp (const gchar* s1,
+               const gchar* s2,
+               guint n)</pre>
+
+<p>A case-insensitive string comparison, corresponding to the standard
+strncasecmp function on platforms which support it. It is similar
+to <a href="string_utils.html#g_strcasecmp">g_strcasecmp</a> except it only compares the first <em>n</em> characters of
+the strings.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters54">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>s1:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>s2:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string to compare with <em>s1</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>n:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum number of characters to compare</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns48">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>0 if the strings match, a negative value if <em>s1</em> &lt; <em>s2</em>,
+or a positive value if <em>s1</em> &gt; <em>s2</em>.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	deprecated			: 2.2: The problem with g_strncasecmp() is that it does
+     the comparison by calling toupper()/tolower(). These functions
+     are locale-specific and operate on single bytes. However, it is
+     impossible to handle things correctly from an internationalization
+     standpoint by operating on bytes, since characters may be multibyte.
+     Thus g_strncasecmp() is broken if your string is guaranteed to be
+     ASCII, since it is locale-sensitive, and it's broken if your string
+     is localized, since it doesn't work on many encodings at all,
+     including UTF-8, EUC-JP, etc.
+
+     There are therefore two replacement techniques: g_ascii_strncasecmp(),
+     which only works on ASCII and is not locale-sensitive, and
+     g_utf8_casefold() followed by strcmp() on the resulting strings,
+     which is good for case-insensitive sorting of UTF-8.
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strrstr_len">
+		
+<h3 id="g_strrstr_len1">
+	<span><code>g_strrstr_len</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_strrstr_len (const gchar* haystack,
+               gssize haystack_len,
+               const gchar* needle)</pre>
+
+<p>Searches the string <em>haystack</em> for the last occurrence
+of the string <em>needle</em>, limiting the length of the search
+to <em>haystack_len</em>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters55">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>haystack:</code></em></i>
+		</p>
+	</td>
+		<td><p>a nul-terminated string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>haystack_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the maximum length of <em>haystack</em></p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>needle:</code></em></i>
+		</p>
+	</td>
+		<td><p>the nul-terminated string to search for</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns49">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to the found occurrence, or
+<a href="macros.html#NULL">NULL</a> if not found.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strerror">
+		
+<h3 id="g_strerror1">
+	<span><code>g_strerror</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+const gchar*
+g_strerror (gint errnum)</pre>
+
+<p>Returns a string corresponding to the given error code, e.g. "no
+such process". Unlike strerror, this always returns a string in
+UTF-8 encoding, and the pointer is guaranteed to remain valid for
+the lifetime of the process.</p>
+<p>Note that the string may be translated according to the current locale.</p>
+<p>The value of errno will not be changed by this function.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters56">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>errnum:</code></em></i>
+		</p>
+	</td>
+		<td><p>the system error number. See the standard C errno
+documentation</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns50">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a UTF-8 string describing the error code. If the error code
+is unknown, it returns a string like "unknown error (<code>)".</code></p>
+
+	</td>
+	<td>
+		const gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.16;" id="g_strcmp0">
+		
+<h3 id="g_strcmp01">
+	<span><code>g_strcmp0</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+int
+g_strcmp0 (const char* str1,
+           const char* str2)</pre>
+
+<p>Compares <em>str1</em> and <em>str2</em> like strcmp. Handles <a href="macros.html#NULL">NULL</a>
+gracefully by sorting it before non-%NULL strings.
+Comparing two <a href="macros.html#NULL">NULL</a> pointers returns 0.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters57">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str1:</code></em></i>
+		</p>
+	</td>
+		<td><p>a C string or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str2:</code></em></i>
+		</p>
+	</td>
+		<td><p>another C string or <a href="macros.html#NULL">NULL</a></p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL may be passed to the value"><span class="acronym">nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns51">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>an integer less than, equal to, or greater than zero, if <em>str1</em> is &lt;, == or &gt; than <em>str2</em>.</p>
+
+	</td>
+	<td>
+		int
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.16
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strreverse">
+		
+<h3 id="g_strreverse1">
+	<span><code>g_strreverse</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_strreverse (gchar* string)</pre>
+
+<p>Reverses all of the bytes in a string. For example,
+<code>g_strreverse ("abcdef")</code> will result in "fedcba".</p>
+<p>Note that <a href="string_utils.html#g_strreverse">g_strreverse</a> doesn't work on UTF-8 strings
+containing multibyte characters. For that purpose, use
+<a href="unicode.html#g_utf8_strreverse">g_utf8_strreverse</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters58">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to reverse</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns52">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the same pointer passed in as <em>string</em></p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.4;" id="g_strsplit_set">
+		
+<h3 id="g_strsplit_set1">
+	<span><code>g_strsplit_set</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+utf8*
+g_strsplit_set (const gchar* string,
+                const gchar* delimiters,
+                gint max_tokens)</pre>
+
+<p>Splits <em>string</em> into a number of tokens not containing any of the characters
+in <em>delimiter</em>. A token is the (possibly empty) longest string that does not
+contain any of the characters in <em>delimiters</em>. If <em>max_tokens</em> is reached, the
+remainder is appended to the last token.</p>
+<p>For example the result of g_strsplit_set ("abc:def/ghi", ":/", -1) is a
+<a href="macros.html#NULL">NULL</a>-terminated vector containing the three strings "abc", "def",
+and "ghi".</p>
+<p>The result of g_strsplit_set (":def/ghi:", ":/", -1) is a <a href="macros.html#NULL">NULL</a>-terminated
+vector containing the four strings "", "def", "ghi", and "".</p>
+<p>As a special case, the result of splitting the empty string "" is an empty
+vector, not a vector containing a single string. The reason for this
+special case is that being able to represent a empty vector is typically
+more useful than consistent handling of empty elements. If you do need
+to represent empty elements, you'll need to check for the empty string
+before calling <a href="string_utils.html#g_strsplit_set">g_strsplit_set</a>.</p>
+<p>Note that this function works on bytes not characters, so it can't be used
+to delimit UTF-8 strings for anything but ASCII characters.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters59">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>The string to be tokenized</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>delimiters:</code></em></i>
+		</p>
+	</td>
+		<td><p>A nul-terminated string containing bytes that are used
+to split the string.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>max_tokens:</code></em></i>
+		</p>
+	</td>
+		<td><p>The maximum number of tokens to split <em>string</em> into.
+If this is less than 1, the string is split completely</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns53">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a newly-allocated <a href="macros.html#NULL">NULL</a>-terminated array of strings. Use
+<a href="string_utils.html#g_strfreev">g_strfreev</a> to free it.</p>
+
+	</td>
+	<td>
+		utf8*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.4
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_printf_string_upper_bound">
+		
+<h3 id="g_printf_string_upper_bound1">
+	<span><code>g_printf_string_upper_bound</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gsize
+g_printf_string_upper_bound (const gchar* format,
+                             va_list args)</pre>
+
+<p>Calculates the maximum space needed to store the output
+of the sprintf function.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters60">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>format:</code></em></i>
+		</p>
+	</td>
+		<td><p>the format string. See the printf documentation</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>args:</code></em></i>
+		</p>
+	</td>
+		<td><p>the parameters to be inserted into the format string</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns54">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the maximum space needed to store the formatted string</p>
+
+	</td>
+	<td>
+		gsize
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strchomp">
+		
+<h3 id="g_strchomp1">
+	<span><code>g_strchomp</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_strchomp (gchar* string)</pre>
+
+<p>Removes trailing whitespace from a string.</p>
+<p>This function doesn't allocate or reallocate any memory;
+it modifies <em>string</em> in place. Therefore, it cannot be used
+on statically allocated strings.</p>
+<p>The pointer to <em>string</em> is returned to allow the nesting of functions.</p>
+<p>Also see <a href="string_utils.html#g_strchug">g_strchug</a> and <a href="string_utils.html#g_strstrip">g_strstrip</a>.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters61">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>string:</code></em></i>
+		</p>
+	</td>
+		<td><p>a string to remove the trailing whitespace from</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns55">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p><em>string</em></p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strsignal">
+		
+<h3 id="g_strsignal1">
+	<span><code>g_strsignal</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+const gchar*
+g_strsignal (gint signum)</pre>
+
+<p>Returns a string describing the given signal, e.g. "Segmentation fault".
+You should use this function in preference to strsignal, because it
+returns a string in UTF-8 encoding, and since not all platforms support
+the strsignal function.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters62">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>signum:</code></em></i>
+		</p>
+	</td>
+		<td><p>the signal number. See the <code>signal</code> documentation</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns56">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a UTF-8 string describing the signal. If the signal is unknown,
+it returns "unknown signal (<signum>)".</signum></p>
+
+	</td>
+	<td>
+		const gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_stpcpy">
+		
+<h3 id="g_stpcpy1">
+	<span><code>g_stpcpy</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gchar*
+g_stpcpy (gchar* dest,
+          const char* src)</pre>
+
+<p>Copies a nul-terminated string into the dest buffer, include the
+trailing nul, and return a pointer to the trailing nul byte.
+This is useful for concatenating multiple strings together
+without having to repeatedly scan for the end.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters63">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dest:</code></em></i>
+		</p>
+	</td>
+		<td><p>destination buffer.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>src:</code></em></i>
+		</p>
+	</td>
+		<td><p>source string.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns57">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>a pointer to trailing nul byte.</p>
+
+	</td>
+	<td>
+		gchar*
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.2;" id="g_vfprintf">
+		
+<h3 id="g_vfprintf1">
+	<span><code>g_vfprintf</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gint
+g_vfprintf (FILE* file,
+            gchar* format,
+            va_list args)</pre>
+
+<p>An implementation of the standard fprintf function which supports
+positional parameters, as specified in the Single Unix Specification.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters64">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>file:</code></em></i>
+		</p>
+	</td>
+		<td><p>the stream to write to.</p>
+</td>
+<td>
+
+<span class="annotation">[<abbr title="NULL is *not* OK, either for passing or returning"><span class="acronym">not nullable</span></abbr>]</span>
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>format:</code></em></i>
+		</p>
+	</td>
+		<td><p>a standard printf format string, but notice
+[string precision pitfalls][string-precision]</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>args:</code></em></i>
+		</p>
+	</td>
+		<td><p>the list of arguments to insert in the output.</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns58">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the number of bytes printed.</p>
+
+	</td>
+	<td>
+		gint
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.2
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strlcpy">
+		
+<h3 id="g_strlcpy1">
+	<span><code>g_strlcpy</code></span>
+</h3>
+
+		
+
+<pre class="prototype">
+gsize
+g_strlcpy (gchar* dest,
+           const gchar* src,
+           gsize dest_size)</pre>
+
+<p>Portability wrapper that calls strlcpy on systems which have it,
+and emulates strlcpy otherwise. Copies <em>src</em> to <em>dest</em>; <em>dest</em> is
+guaranteed to be nul-terminated; <em>src</em> must be nul-terminated;
+<em>dest_size</em> is the buffer size, not the number of bytes to copy.</p>
+<p>At most <em>dest_size</em> - 1 characters will be copied. Always nul-terminates
+(unless <em>dest_size</em> is 0). This function does not allocate memory. Unlike
+strncpy, this function doesn't pad <em>dest</em> (so it's often faster). It
+returns the size of the attempted result, strlen (src), so if
+<em>retval</em> &gt;= <em>dest_size</em>, truncation occurred.</p>
+<p>Caveat: strlcpy is supposedly more secure than strcpy or strncpy,
+but if you really want to avoid screwups, <a href="string_utils.html#g_strdup">g_strdup</a> is an even better
+idea.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters65">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dest:</code></em></i>
+		</p>
+	</td>
+		<td><p>destination buffer</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>src:</code></em></i>
+		</p>
+	</td>
+		<td><p>source buffer</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>dest_size:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>dest</em> in bytes</p>
+</td>
+<td>
+
+
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns59">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>length of <em>src</em></p>
+
+	</td>
+	<td>
+		gsize
+	</td>
+				<td>
+	
+
+	</td>
+		</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Function_Macros">Function Macros</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_isspace">
+		
+<h3 id="g_ascii_isspace1">
+	<span><code>g_ascii_isspace</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_ascii_isspace(c) \
+  ((g_ascii_table[(guchar) (c)] &amp; G_ASCII_SPACE) != 0)
+</pre>
+
+<p>Determines whether a character is a white-space character.</p>
+<p>Unlike the standard C library isspace function, this only
+recognizes standard ASCII white-space and ignores the locale,
+returning <a href="macros.html#FALSE">FALSE</a> for all non-ASCII characters. Also, unlike
+the standard library function, this takes a char, not an int,
+so don't call it on EOF, but no need to cast to guchar before
+passing a possibly non-ASCII character in.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_islower">
+		
+<h3 id="g_ascii_islower1">
+	<span><code>g_ascii_islower</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_ascii_islower(c) \
+  ((g_ascii_table[(guchar) (c)] &amp; G_ASCII_LOWER) != 0)
+</pre>
+
+<p>Determines whether a character is an ASCII lower case letter.</p>
+<p>Unlike the standard C library islower function, this only
+recognizes standard ASCII letters and ignores the locale,
+returning <a href="macros.html#FALSE">FALSE</a> for all non-ASCII characters. Also, unlike
+the standard library function, this takes a char, not an int,
+so don't call it on EOF, but no need to worry about casting
+to guchar before passing a possibly non-ASCII character in.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_isprint">
+		
+<h3 id="g_ascii_isprint1">
+	<span><code>g_ascii_isprint</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_ascii_isprint(c) \
+  ((g_ascii_table[(guchar) (c)] &amp; G_ASCII_PRINT) != 0)
+</pre>
+
+<p>Determines whether a character is a printing character.</p>
+<p>Unlike the standard C library isprint function, this only
+recognizes standard ASCII characters and ignores the locale,
+returning <a href="macros.html#FALSE">FALSE</a> for all non-ASCII characters. Also, unlike
+the standard library function, this takes a char, not an int,
+so don't call it on EOF, but no need to cast to guchar before
+passing a possibly non-ASCII character in.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_isdigit">
+		
+<h3 id="g_ascii_isdigit1">
+	<span><code>g_ascii_isdigit</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_ascii_isdigit(c) \
+  ((g_ascii_table[(guchar) (c)] &amp; G_ASCII_DIGIT) != 0)
+</pre>
+
+<p>Determines whether a character is digit (0-9).</p>
+<p>Unlike the standard C library isdigit function, this takes
+a char, not an int, so don't call it  on EOF, but no need to
+cast to guchar before passing a possibly non-ASCII character in.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_isupper">
+		
+<h3 id="g_ascii_isupper1">
+	<span><code>g_ascii_isupper</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_ascii_isupper(c) \
+  ((g_ascii_table[(guchar) (c)] &amp; G_ASCII_UPPER) != 0)
+</pre>
+
+<p>Determines whether a character is an ASCII upper case letter.</p>
+<p>Unlike the standard C library isupper function, this only
+recognizes standard ASCII letters and ignores the locale,
+returning <a href="macros.html#FALSE">FALSE</a> for all non-ASCII characters. Also, unlike
+the standard library function, this takes a char, not an int,
+so don't call it on EOF, but no need to worry about casting
+to guchar before passing a possibly non-ASCII character in.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_ispunct">
+		
+<h3 id="g_ascii_ispunct1">
+	<span><code>g_ascii_ispunct</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_ascii_ispunct(c) \
+  ((g_ascii_table[(guchar) (c)] &amp; G_ASCII_PUNCT) != 0)
+</pre>
+
+<p>Determines whether a character is a punctuation character.</p>
+<p>Unlike the standard C library ispunct function, this only
+recognizes standard ASCII letters and ignores the locale,
+returning <a href="macros.html#FALSE">FALSE</a> for all non-ASCII characters. Also, unlike
+the standard library function, this takes a char, not an int,
+so don't call it on EOF, but no need to cast to guchar before
+passing a possibly non-ASCII character in.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_isalnum">
+		
+<h3 id="g_ascii_isalnum1">
+	<span><code>g_ascii_isalnum</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_ascii_isalnum(c) \
+  ((g_ascii_table[(guchar) (c)] &amp; G_ASCII_ALNUM) != 0)
+</pre>
+
+<p>Determines whether a character is alphanumeric.</p>
+<p>Unlike the standard C library isalnum function, this only
+recognizes standard ASCII letters and ignores the locale,
+returning <a href="macros.html#FALSE">FALSE</a> for all non-ASCII characters. Also, unlike
+the standard library function, this takes a char, not an int,
+so don't call it on EOF, but no need to cast to guchar before
+passing a possibly non-ASCII character in.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_iscntrl">
+		
+<h3 id="g_ascii_iscntrl1">
+	<span><code>g_ascii_iscntrl</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_ascii_iscntrl(c) \
+  ((g_ascii_table[(guchar) (c)] &amp; G_ASCII_CNTRL) != 0)
+</pre>
+
+<p>Determines whether a character is a control character.</p>
+<p>Unlike the standard C library iscntrl function, this only
+recognizes standard ASCII control characters and ignores the
+locale, returning <a href="macros.html#FALSE">FALSE</a> for all non-ASCII characters. Also,
+unlike the standard library function, this takes a char, not
+an int, so don't call it on EOF, but no need to cast to guchar
+before passing a possibly non-ASCII character in.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_isalpha">
+		
+<h3 id="g_ascii_isalpha1">
+	<span><code>g_ascii_isalpha</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_ascii_isalpha(c) \
+  ((g_ascii_table[(guchar) (c)] &amp; G_ASCII_ALPHA) != 0)
+</pre>
+
+<p>Determines whether a character is alphabetic (i.e. a letter).</p>
+<p>Unlike the standard C library isalpha function, this only
+recognizes standard ASCII letters and ignores the locale,
+returning <a href="macros.html#FALSE">FALSE</a> for all non-ASCII characters. Also, unlike
+the standard library function, this takes a char, not an int,
+so don't call it on EOF, but no need to cast to guchar before
+passing a possibly non-ASCII character in.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_isgraph">
+		
+<h3 id="g_ascii_isgraph1">
+	<span><code>g_ascii_isgraph</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_ascii_isgraph(c) \
+  ((g_ascii_table[(guchar) (c)] &amp; G_ASCII_GRAPH) != 0)
+</pre>
+
+<p>Determines whether a character is a printing character and not a space.</p>
+<p>Unlike the standard C library isgraph function, this only
+recognizes standard ASCII characters and ignores the locale,
+returning <a href="macros.html#FALSE">FALSE</a> for all non-ASCII characters. Also, unlike
+the standard library function, this takes a char, not an int,
+so don't call it on EOF, but no need to cast to guchar before
+passing a possibly non-ASCII character in.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_ascii_isxdigit">
+		
+<h3 id="g_ascii_isxdigit1">
+	<span><code>g_ascii_isxdigit</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_ascii_isxdigit(c) \
+  ((g_ascii_table[(guchar) (c)] &amp; G_ASCII_XDIGIT) != 0)
+</pre>
+
+<p>Determines whether a character is a hexadecimal-digit character.</p>
+<p>Unlike the standard C library isxdigit function, this takes
+a char, not an int, so don't call it on EOF, but no need to
+cast to guchar before passing a possibly non-ASCII character in.</p>
+
+
+
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="g_strstrip">
+		
+<h3 id="g_strstrip1">
+	<span><code>g_strstrip</code></span>
+</h3>
+
+		<pre class="raw_code">
+#define g_strstrip( string )	g_strchomp (g_strchug (string))
+</pre>
+
+<p>Removes leading and trailing whitespace from a string.
+See <a href="string_utils.html#g_strchomp">g_strchomp</a> and <a href="string_utils.html#g_strchug">g_strchug</a>.</p>
+
+
+
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Enumerations">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GAsciiType">
+		
+<h3 id="enum-gasciitype">
+		enum GAsciiType
+	</h3>
+
+		
+<div class="member_details">
+	
+	<h4 class="always-hide-toc" data-toc-skip="true" id="members">Members</h4>
+	<div class="member_container">
+		<table>
+			<tbody>
+						<tr>
+	<td>
+		<p>
+		<a id="G_ASCII_ALNUM"></a>
+		G_ASCII_ALNUM
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 1</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_ASCII_ALPHA"></a>
+		G_ASCII_ALPHA
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 2</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_ASCII_CNTRL"></a>
+		G_ASCII_CNTRL
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 4</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_ASCII_DIGIT"></a>
+		G_ASCII_DIGIT
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 8</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_ASCII_GRAPH"></a>
+		G_ASCII_GRAPH
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 16</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_ASCII_LOWER"></a>
+		G_ASCII_LOWER
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 32</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_ASCII_PRINT"></a>
+		G_ASCII_PRINT
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 64</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_ASCII_PUNCT"></a>
+		G_ASCII_PUNCT
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 128</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_ASCII_SPACE"></a>
+		G_ASCII_SPACE
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 256</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_ASCII_UPPER"></a>
+		G_ASCII_UPPER
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 512</span>
+	</td>
+</tr>
+
+						<tr>
+	<td>
+		<p>
+		<a id="G_ASCII_XDIGIT"></a>
+		G_ASCII_XDIGIT
+		</p>
+	</td>
+	<td></td>
+	<td>
+		<span class="value">Value: 1024</span>
+	</td>
+</tr>
+
+						</tbody>
+		</table>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Constants">Constants</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_STR_DELIMITERS">
+		
+<h3 class="constant" id="g_str_delimiters">
+	G_STR_DELIMITERS
+</h3>
+
+		<pre class="raw_code">
+#define G_STR_DELIMITERS	"_-|&gt; &lt;."
+</pre>
+
+<p>The standard delimiters, used in <a href="string_utils.html#g_strdelimit">g_strdelimit</a>.</p>
+
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="G_ASCII_DTOSTR_BUF_SIZE">
+		
+<h3 class="constant" id="g_ascii_dtostr_buf_size">
+	G_ASCII_DTOSTR_BUF_SIZE
+</h3>
+
+		<pre class="raw_code">
+#define G_ASCII_DTOSTR_BUF_SIZE (29 + 10)
+</pre>
+
+<p>A good size for a buffer to be passed into <a href="string_utils.html#g_ascii_dtostr">g_ascii_dtostr</a>.
+It is guaranteed to be enough for all output of that function
+on systems with 64bit IEEE-compatible doubles.</p>
+<p>The typical usage would be something like:</p>
+<pre><code class="language-[&lt;!--">   char buf[G_ASCII_DTOSTR_BUF_SIZE];
+
+   fprintf (out, "value=%s\n", g_ascii_dtostr (buf, sizeof (buf), value));
+</code></pre>
+
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Aliases">Aliases</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="GStrv">
+		
+<h3 id="gstrv1">
+	GStrv
+</h3>
+
+		<pre>
+typedef gpointer GStrv</pre>
+<p>A typedef alias for gchar**. This is mostly useful when used together with
+<a href="macros_misc.html#g_auto">g_auto</a>.</p>
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

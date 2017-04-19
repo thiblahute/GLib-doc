@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/threads.html#glibprivateset", "fragment": "GLib.Private.set \nSets the thread local variable key to have the value value in the current thread. \nThis function differs from GLib.Private.replace in the following way the GLib.DestroyNotify for key is not called on the old value. \n"});

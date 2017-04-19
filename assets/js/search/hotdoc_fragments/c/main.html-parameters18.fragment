@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/main.html#parameters18", "fragment": "context \na GMainContext \nmax_priority \nthe maximum numerical priority of sources to check \nfds \narray of GPollFD s that was passed to the last call to g_main_context_query \nn_fds \nreturn value of g_main_context_query \n"});

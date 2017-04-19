@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gvarianttype.html#g_variant_type_new_dict_entry", "fragment": "GLib.VariantType.prototype.new_dict_entry \nConstructs the type corresponding to a dictionary entry with a key of type key and a value of type value. \nIt is appropriate to call GLib.VariantType.prototype.free on the return value. \n"});

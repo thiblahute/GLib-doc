@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/main.html#glibmainloopref", "fragment": "GLib.MainLoop.ref \nIncreases the reference count on a GLib.MainLoop object by one. \n"});

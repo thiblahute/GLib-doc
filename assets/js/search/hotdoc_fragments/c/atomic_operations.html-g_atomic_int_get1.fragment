@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/atomic_operations.html#g_atomic_int_get1", "fragment": "g_atomic_int_get \nGets the current value of atomic. \nThis call acts as a full compiler and hardware memory barrier before the get \n"});

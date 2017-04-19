@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/hmac.html#g_hmac_update1", "fragment": "g_hmac_update \nFeeds data into an existing GHmac. \nThe HMAC must still be open that is g_hmac_get_string or g_hmac_get_digest must not have been called on hmac. \n"});

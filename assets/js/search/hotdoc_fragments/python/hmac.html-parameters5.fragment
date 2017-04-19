@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/hmac.html#parameters5", "fragment": "digest_type \na GLib.ChecksumType to use for the HMAC \nkey \nthe key to use in the HMAC \nkey_len \nthe length of the key \nstr \nthe string to compute the HMAC for \nlength \nthe length of the string or if the string is nul terminated \n"});

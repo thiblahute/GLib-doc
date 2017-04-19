@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/gvariant.html#parameters101", "fragment": "dict \na GVariantDict \nkey \nthe key to insert a value for \nformat_string \na GVariant varargs format string \n\narguments as per format_string \nSince \n"});

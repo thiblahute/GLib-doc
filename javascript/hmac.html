@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GHmac</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="70">
+
+<nav class="navbar navbar-fixed-top navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="home-link" class="hotdoc-navbar-brand">
+				
+<img src="assets/images/home.svg" alt="Home" id="home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+						<form action="" class="navbar-form navbar-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                       </form>
+		</div>
+	</div>
+</nav>
+
+<main class="page-row page-row-expanded">
+<div data-extension="gi-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="GLib-2.0" data-hotdoc-ref="hmac.html" class="page_container" id="page-wrapper" data-hotdoc-meta-gi-languages="c,python,javascript" data-hotdoc-meta-gi-language="javascript">
+	<div class="row">
+		
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-2" id="sidenav-column">
+	<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+		<div id="sitenav-wrapper">
+			<div class="sidenav-main-panel-body">
+				<div id="site-navigation">
+				</div>
+			</div>
+		</div>
+	</div>
+	<button id="offcanvasleft" class="btn btn-xs" type="button" data-toggle="offcanvasleft">
+		<i class="glyphicon glyphicon-chevron-right" id="offcanvasleft-chevron"></i>
+	</button>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="content-column">
+
+	<div id="main">
+				    <div id="page-description" data-hotdoc-source="hmac.markdown">
+        <h1 id="ghmac">GHmac</h1>
+    </div>
+        
+
+            <h2 class="symbol_section" id="">GHmac</h2>
+        
+
+
+
+            <h3 class="symbol_section" id="GHmacMethods">Methods</h3>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_hmac_update">
+		
+<h4 id="glibhmacprototypeupdate">
+	<span><code>GLib.Hmac.prototype.update</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Hmac.prototype.update(data: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, length: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_hmac_update'
+}</pre>
+
+<p>Feeds <em>data</em> into an existing <a href="hmac.html#GHmac">GLib.Hmac</a>.</p>
+<p>The HMAC must still be open, that is <a href="hmac.html#g_hmac_get_string">GLib.Hmac.prototype.get_string</a> or
+<a href="hmac.html#g_hmac_get_digest">GLib.Hmac.prototype.get_digest</a> must not have been called on <em>hmac</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hmac:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hmac.html#GHmac">GLib.Hmac</a></p>
+</td>
+<td>
+<a title="GLib.Hmac" href="hmac.html#GHmac">GLib.Hmac</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>buffer used to compute the checksum</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>size of the buffer, or -1 if it is a nul-terminated string</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_hmac_get_string">
+		
+<h4 id="glibhmacprototypeget_string">
+	<span><code>GLib.Hmac.prototype.get_string</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Hmac.prototype.get_string(): {
+    // javascript wrapper for 'g_hmac_get_string'
+}</pre>
+
+<p>Gets the HMAC as an hexadecimal string.</p>
+<p>Once this function has been called the <a href="hmac.html#GHmac">GLib.Hmac</a> can no longer be
+updated with <a href="hmac.html#g_hmac_update">GLib.Hmac.prototype.update</a>.</p>
+<p>The hexadecimal characters will be lower case.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters1">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hmac:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hmac.html#GHmac">GLib.Hmac</a></p>
+</td>
+<td>
+<a title="GLib.Hmac" href="hmac.html#GHmac">GLib.Hmac</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h5 class="always-hide-toc" data-toc-skip="true" id="returns">Returns:</h5>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the hexadecimal representation of the HMAC. The
+returned string is owned by the HMAC and should not be modified
+or freed.</p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_hmac_get_digest">
+		
+<h4 id="glibhmacprototypeget_digest">
+	<span><code>GLib.Hmac.prototype.get_digest</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Hmac.prototype.get_digest(buffer: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, digest_len: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_hmac_get_digest'
+}</pre>
+
+<p>Gets the digest from <em>checksum</em> as a raw binary array and places it
+into <em>buffer</em>. The size of the digest depends on the type of checksum.</p>
+<p>Once this function has been called, the <a href="hmac.html#GHmac">GLib.Hmac</a> is closed and can
+no longer be updated with <a href="checksum.html#g_checksum_update">GLib.Checksum.prototype.update</a>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters2">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hmac:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hmac.html#GHmac">GLib.Hmac</a></p>
+</td>
+<td>
+<a title="GLib.Hmac" href="hmac.html#GHmac">GLib.Hmac</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>buffer:</code></em></i>
+		</p>
+	</td>
+		<td><p>output buffer</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>digest_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>an inout parameter. The caller initializes it to the
+size of <em>buffer</em>. After the call it contains the length of the digest</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_hmac_unref">
+		
+<h4 id="glibhmacprototypeunref">
+	<span><code>GLib.Hmac.prototype.unref</code></span>
+</h4>
+
+		<pre class="programlisting">
+function GLib.Hmac.prototype.unref(): {
+    // javascript wrapper for 'g_hmac_unref'
+}</pre>
+
+<p>Atomically decrements the reference count of <em>hmac</em> by one.</p>
+<p>If the reference count drops to 0, all keys and values will be
+destroyed, and all memory allocated by the hash table is released.
+This function is MT-safe and may be called from any thread.
+Frees the memory allocated for <em>hmac</em>.</p>
+
+
+	<div class="parameter_container">
+		<h5 class="always-hide-toc" data-toc-skip="true" id="parameters3">Parameters</h5>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>hmac:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="hmac.html#GHmac">GLib.Hmac</a></p>
+</td>
+<td>
+<a title="GLib.Hmac" href="hmac.html#GHmac">GLib.Hmac</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+
+
+        
+
+
+
+            <h2 class="symbol_section" id="Functions">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.50;" id="g_compute_hmac_for_bytes">
+		
+<h3 id="glibprototypecompute_hmac_for_bytes">
+	<span><code>GLib.prototype.compute_hmac_for_bytes</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.compute_hmac_for_bytes(digest_type: <a title="GLib.ChecksumType" href="checksum.html#GChecksumType">GLib.ChecksumType</a>, key: <a title="GLib.Bytes" href="arrays_byte.html#GBytes">GLib.Bytes</a>, data: <a title="GLib.Bytes" href="arrays_byte.html#GBytes">GLib.Bytes</a>): {
+    // javascript wrapper for 'g_compute_hmac_for_bytes'
+}</pre>
+
+<p>Computes the HMAC for a binary <em>data</em>. This is a
+convenience wrapper for <a href="../c/hmac.html#g_hmac_new">g_hmac_new (not introspectable)</a>, <a href="hmac.html#g_hmac_get_string">GLib.Hmac.prototype.get_string</a>
+and <a href="hmac.html#g_hmac_unref">GLib.Hmac.prototype.unref</a>.</p>
+<p>The hexadecimal string returned will be in lower case.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters4">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>digest_type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="checksum.html#GChecksumType">GLib.ChecksumType</a> to use for the HMAC</p>
+</td>
+<td>
+<a title="GLib.ChecksumType" href="checksum.html#GChecksumType">GLib.ChecksumType</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to use in the HMAC</p>
+</td>
+<td>
+<a title="GLib.Bytes" href="arrays_byte.html#GBytes">GLib.Bytes</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>binary blob to compute the HMAC of</p>
+</td>
+<td>
+<a title="GLib.Bytes" href="arrays_byte.html#GBytes">GLib.Bytes</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns1">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the HMAC of the binary data as a string in hexadecimal.
+The returned string should be freed with <a href="memory.html#g_free">GLib.prototype.free</a> when done using it.</p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.50
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_compute_hmac_for_string">
+		
+<h3 id="glibprototypecompute_hmac_for_string">
+	<span><code>GLib.prototype.compute_hmac_for_string</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.compute_hmac_for_string(digest_type: <a title="GLib.ChecksumType" href="checksum.html#GChecksumType">GLib.ChecksumType</a>, key: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, key_len: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, str: <a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, length: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_compute_hmac_for_string'
+}</pre>
+
+<p>Computes the HMAC for a string.</p>
+<p>The hexadecimal string returned will be in lower case.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters5">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>digest_type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="checksum.html#GChecksumType">GLib.ChecksumType</a> to use for the HMAC</p>
+</td>
+<td>
+<a title="GLib.ChecksumType" href="checksum.html#GChecksumType">GLib.ChecksumType</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to use in the HMAC</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of the key</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>str:</code></em></i>
+		</p>
+	</td>
+		<td><p>the string to compute the HMAC for</p>
+</td>
+<td>
+<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of the string, or -1 if the string is nul-terminated</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns2">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the HMAC as a hexadecimal string.
+The returned string should be freed with <a href="memory.html#g_free">GLib.prototype.free</a>
+when done using it.</p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="g_compute_hmac_for_data">
+		
+<h3 id="glibprototypecompute_hmac_for_data">
+	<span><code>GLib.prototype.compute_hmac_for_data</code></span>
+</h3>
+
+		<pre class="programlisting">
+function GLib.prototype.compute_hmac_for_data(digest_type: <a title="GLib.ChecksumType" href="checksum.html#GChecksumType">GLib.ChecksumType</a>, key: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, key_len: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, data: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>, length: <a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>): {
+    // javascript wrapper for 'g_compute_hmac_for_data'
+}</pre>
+
+<p>Computes the HMAC for a binary <em>data</em> of <em>length</em>. This is a
+convenience wrapper for <a href="../c/hmac.html#g_hmac_new">g_hmac_new (not introspectable)</a>, <a href="hmac.html#g_hmac_get_string">GLib.Hmac.prototype.get_string</a>
+and <a href="hmac.html#g_hmac_unref">GLib.Hmac.prototype.unref</a>.</p>
+<p>The hexadecimal string returned will be in lower case.</p>
+
+
+	<div class="parameter_container">
+		<h4 class="always-hide-toc" data-toc-skip="true" id="parameters6">Parameters</h4>
+		<table>
+			<tbody>
+									<tr>
+		<td>
+		<p>
+		<i><em><code>digest_type:</code></em></i>
+		</p>
+	</td>
+		<td><p>a <a href="checksum.html#GChecksumType">GLib.ChecksumType</a> to use for the HMAC</p>
+</td>
+<td>
+<a title="GLib.ChecksumType" href="checksum.html#GChecksumType">GLib.ChecksumType</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key:</code></em></i>
+		</p>
+	</td>
+		<td><p>the key to use in the HMAC</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>key_len:</code></em></i>
+		</p>
+	</td>
+		<td><p>the length of the key</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>data:</code></em></i>
+		</p>
+	</td>
+		<td><p>binary blob to compute the HMAC of</p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+									<tr>
+		<td>
+		<p>
+		<i><em><code>length:</code></em></i>
+		</p>
+	</td>
+		<td><p>length of <em>data</em></p>
+</td>
+<td>
+<a title="Number" href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a>
+</td>
+</tr>
+
+							</tbody>
+		</table>
+	</div>
+
+	<div class="multi_return_value_container">
+	
+			<h4 class="always-hide-toc" data-toc-skip="true" id="returns3">Returns:</h4>
+		<table>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+						<tr>
+	<td>
+		<p>
+				</p>
+	</td>
+	<td>
+		<p>the HMAC of the binary data as a string in hexadecimal.
+The returned string should be freed with <a href="memory.html#g_free">GLib.prototype.free</a> when done using it.</p>
+
+	</td>
+	<td>
+		<a title="String" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+	</td>
+	</tr>
+
+					</tbody>
+	</table>
+</div>
+
+
+
+	<p>
+	Since			: 2.30
+		</p>
+
+</div>
+
+
+
+
+            <h2 class="symbol_section" id="Structures">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="since:2.30;" id="GHmac">
+		<h3 id="glibhmac">
+	GLib.Hmac
+</h3>
+
+		<p>An opaque structure representing a HMAC operation.
+To create a new GHmac, use <a href="../c/hmac.html#g_hmac_new">g_hmac_new (not introspectable)</a>. To free
+a GHmac, use <a href="hmac.html#g_hmac_unref">GLib.Hmac.prototype.unref</a>.</p>
+
+
+
+
+</div>
+
+
+
+
+
+
+		<div id="subpages"></div>
+		</div>
+		<div id="search_results">
+			<p>The results of the search are</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2">
+	<div id="toc-column">
+		
+					<div class="edit-button">
+				
+
+			</div>
+				<div id="toc-wrapper">
+			<nav id="toc"></nav>
+		</div>
+	</div>
+</div>
+	</div>
+
+</main>
+
+
+<footer class="page-row">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-2" id="footer-left-column"></div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-8" id="footer-content-column">
+						    
+
+		</div>
+		<div class="hidden-xs hidden-sm hidden-md col-lg-2 col-xl-2" id="footer-right-column"></div>
+	</div>
+</div>
+</footer>
+
+</body>
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</html>

@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/strings.html#parameters8", "fragment": "string \nthe destination GLib.String. Its current contents are destroyed. \nrval \nthe string to copy into string \n"});

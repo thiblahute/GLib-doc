@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/unicode.html#parameters34", "fragment": "p \na pointer to a position within a UTF encoded string \nend \na pointer to the byte following the end of the string or NULL to indicate that the string is nul terminated \n"});

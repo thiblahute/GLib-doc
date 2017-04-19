@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdatesubtract_years", "fragment": "GLib.Date.subtract_years \nMoves a date some number of years into the past. If the current day doesn t exist in the destination year i.e. it s February and you move to a non leap year then the day is changed to February The date must be valid. \n"});

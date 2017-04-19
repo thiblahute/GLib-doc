@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#glibdateadd_months", "fragment": "GLib.Date.add_months \nIncrements a date by some number of months. If the day of the month is greater than this routine may change the day of the month because the destination month may not have the current day in it The date must be valid. \n"});

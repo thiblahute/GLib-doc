@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/gregex.html#G_REGEX_MATCH_NEWLINE_ANYCRLF", "fragment": "Overrides the newline definition set when creating a new GLib.Regex any r n or r n character sequence is recognized as a newline. Since \nGLib.RegexMatchFlags.prototype.bsr_anycrlf \n"});

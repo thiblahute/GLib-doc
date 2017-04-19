@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "javascript/date.html#g_date_get_days_in_month", "fragment": "GLib.prototype.date_get_days_in_month \nReturns the number of days in a month taking leap years into account. \n"});

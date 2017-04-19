@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/iochannels.html#parameters29", "fragment": "channel \na GLib.IOChannel \nbuf \na buffer to write data from \ncount \nthe size of the buffer. If the buffer is taken to be a nul terminated string. \n"});

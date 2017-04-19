@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/messages.html#G_LOG_LEVEL_CRITICAL", "fragment": "log level for critical warning messages see g_critical. This level is also used for messages produced by g_return_if_fail and g_return_val_if_fail. \nG_LOG_LEVEL_WARNING \n"});

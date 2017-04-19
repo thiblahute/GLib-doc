@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "python/date.html#enum-glibdateweekday", "fragment": "enum GLib.DateWeekday \nEnumeration representing a day of the week GLib.DateWeekday.monday GLib.DateWeekday.tuesday etc. GLib.DateWeekday.bad_weekday is an invalid weekday. \n"});

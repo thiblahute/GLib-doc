@@ -1,0 +1,1 @@
+fragment_downloaded_cb({"url": "c/option.html#g_option_context_free1", "fragment": "g_option_context_free \nFrees context and all the groups which have been added to it. \nPlease note that parsed arguments need to be freed separately see GOptionEntry \n"});
