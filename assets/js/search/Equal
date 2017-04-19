@@ -1,1 +1,1 @@
-urls_downloaded_cb({"token": "Equal", "urls": ["c/date-time.html#g_date_time_equal1", "python/date-time.html#glibdate_time_equal", "javascript/date-time.html#glibprototypedate_time_equal"]});
+urls_downloaded_cb({"token": "Equal", "urls": ["python/date-time.html#glibdate_time_equal", "c/date-time.html#g_date_time_equal1", "javascript/date-time.html#glibprototypedate_time_equal"]});

@@ -1,1 +1,1 @@
-urls_downloaded_cb({"token": "do_encode", "urls": ["python/iochannels.html#GIOChannel.use_buffer", "c/iochannels.html#GIOChannel.use_buffer", "javascript/iochannels.html#GIOChannel.use_buffer"]});
+urls_downloaded_cb({"token": "do_encode", "urls": ["c/iochannels.html#GIOChannel.use_buffer", "python/iochannels.html#GIOChannel.use_buffer", "javascript/iochannels.html#GIOChannel.use_buffer"]});

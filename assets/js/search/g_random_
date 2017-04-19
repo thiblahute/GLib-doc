@@ -1,1 +1,1 @@
-urls_downloaded_cb({"token": "g_random_", "urls": ["c/random_numbers.html#g_random_set_seed1", "python/random_numbers.html#glibrandom_set_seed", "javascript/random_numbers.html#glibprototyperandom_set_seed"]});
+urls_downloaded_cb({"token": "g_random_", "urls": ["python/random_numbers.html#glibrandom_set_seed", "c/random_numbers.html#g_random_set_seed1", "javascript/random_numbers.html#glibprototyperandom_set_seed"]});

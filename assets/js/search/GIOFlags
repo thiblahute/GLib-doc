@@ -1,1 +1,1 @@
-urls_downloaded_cb({"token": "GIOFlags", "urls": ["c/iochannels.html#enum-gioflags", "python/iochannels.html#GIOFuncs.io_set_flags()", "c/iochannels.html#GIOFuncs.io_set_flags()", "javascript/iochannels.html#GIOFuncs.io_set_flags()"]});
+urls_downloaded_cb({"token": "GIOFlags", "urls": ["c/iochannels.html#enum-gioflags", "c/iochannels.html#GIOFuncs.io_set_flags()", "python/iochannels.html#GIOFuncs.io_set_flags()", "javascript/iochannels.html#GIOFuncs.io_set_flags()"]});

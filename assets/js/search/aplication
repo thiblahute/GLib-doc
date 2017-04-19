@@ -1,1 +1,1 @@
-urls_downloaded_cb({"token": "aplication", "urls": ["c/messages.html#g_log_default_handler1", "python/messages.html#gliblog_default_handler", "javascript/messages.html#g_log_default_handler"]});
+urls_downloaded_cb({"token": "aplication", "urls": ["python/messages.html#gliblog_default_handler", "c/messages.html#g_log_default_handler1", "javascript/messages.html#g_log_default_handler"]});

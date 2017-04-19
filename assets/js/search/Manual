@@ -1,1 +1,1 @@
-urls_downloaded_cb({"token": "Manual", "urls": ["index.html#glib-reference-manual"]});
+urls_downloaded_cb({"token": "Manual", "urls": ["javascript/index.html#glib-reference-manual", "python/index.html#glib-reference-manual", "c/index.html#glib-reference-manual"]});

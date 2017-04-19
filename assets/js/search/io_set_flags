@@ -1,1 +1,1 @@
-urls_downloaded_cb({"token": "io_set_flags", "urls": ["python/iochannels.html#GIOFuncs.io_free()", "c/iochannels.html#GIOFuncs.io_free()", "javascript/iochannels.html#GIOFuncs.io_free()"]});
+urls_downloaded_cb({"token": "io_set_flags", "urls": ["c/iochannels.html#GIOFuncs.io_free()", "python/iochannels.html#GIOFuncs.io_free()", "javascript/iochannels.html#GIOFuncs.io_free()"]});

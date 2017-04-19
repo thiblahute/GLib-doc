@@ -1,1 +1,1 @@
-urls_downloaded_cb({"token": "use_buffer", "urls": ["python/iochannels.html#GIOChannel.partial_write_buf", "c/iochannels.html#GIOChannel.partial_write_buf", "javascript/iochannels.html#GIOChannel.partial_write_buf"]});
+urls_downloaded_cb({"token": "use_buffer", "urls": ["c/iochannels.html#GIOChannel.partial_write_buf", "python/iochannels.html#GIOChannel.partial_write_buf", "javascript/iochannels.html#GIOChannel.partial_write_buf"]});

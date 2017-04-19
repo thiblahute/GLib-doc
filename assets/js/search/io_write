@@ -1,1 +1,1 @@
-urls_downloaded_cb({"token": "io_write", "urls": ["python/iochannels.html#GIOFuncs.io_read()", "c/iochannels.html#GIOFuncs.io_read()", "javascript/iochannels.html#GIOFuncs.io_read()"]});
+urls_downloaded_cb({"token": "io_write", "urls": ["c/iochannels.html#GIOFuncs.io_read()", "python/iochannels.html#GIOFuncs.io_read()", "javascript/iochannels.html#GIOFuncs.io_read()"]});

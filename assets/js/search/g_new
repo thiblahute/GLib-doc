@@ -1,1 +1,1 @@
-urls_downloaded_cb({"token": "g_new", "urls": ["c/memory.html#g_new1", "c/memory.html#g_try_new1", "c/arrays_byte.html#g_bytes_new_take1", "python/arrays_byte.html#glibbytesnew_take", "javascript/arrays_byte.html#glibbytesprototypenew_take"]});
+urls_downloaded_cb({"token": "g_new", "urls": ["c/memory.html#g_new1", "c/memory.html#g_try_new1", "python/arrays_byte.html#glibbytesnew_take", "c/arrays_byte.html#g_bytes_new_take1", "javascript/arrays_byte.html#glibbytesprototypenew_take"]});

@@ -1,1 +1,1 @@
-urls_downloaded_cb({"token": "write_cd", "urls": ["python/iochannels.html#GIOChannel.read_cd", "c/iochannels.html#GIOChannel.read_cd", "javascript/iochannels.html#GIOChannel.read_cd"]});
+urls_downloaded_cb({"token": "write_cd", "urls": ["c/iochannels.html#GIOChannel.read_cd", "python/iochannels.html#GIOChannel.read_cd", "javascript/iochannels.html#GIOChannel.read_cd"]});

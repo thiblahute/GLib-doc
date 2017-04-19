@@ -1,1 +1,1 @@
-urls_downloaded_cb({"token": "is_seekable", "urls": ["python/iochannels.html#GIOChannel.is_writeable", "c/iochannels.html#GIOChannel.is_writeable", "javascript/iochannels.html#GIOChannel.is_writeable"]});
+urls_downloaded_cb({"token": "is_seekable", "urls": ["c/iochannels.html#GIOChannel.is_writeable", "python/iochannels.html#GIOChannel.is_writeable", "javascript/iochannels.html#GIOChannel.is_writeable"]});

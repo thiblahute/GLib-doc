@@ -1,1 +1,1 @@
-urls_downloaded_cb({"token": "read_buf", "urls": ["python/iochannels.html#GIOChannel.buf_size", "c/iochannels.html#GIOChannel.buf_size", "javascript/iochannels.html#GIOChannel.buf_size"]});
+urls_downloaded_cb({"token": "read_buf", "urls": ["c/iochannels.html#GIOChannel.buf_size", "python/iochannels.html#GIOChannel.buf_size", "javascript/iochannels.html#GIOChannel.buf_size"]});
